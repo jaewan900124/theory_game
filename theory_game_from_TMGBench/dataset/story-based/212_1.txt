@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "TechCorp, a large technology company",
+  "B": "InnoStart, a small innovative startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate with InnoStart",
+  "A2": "Compete against InnoStart",
+  "B1": "Share technology with TechCorp",
+  "B2": "Keep technology proprietary"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain access to InnoStart's technology without sharing",
+    3: "Compete successfully against InnoStart",
+    2: "Collaborate with InnoStart",
+    1: "Lose market share to InnoStart"
+  },
+  "B": {
+    4: "Collaborate with TechCorp while keeping technology proprietary",
+    3: "Share technology with TechCorp for collaboration",
+    2: "Successfully compete against TechCorp",
+    1: "Lose market share to TechCorp"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 1 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the rapidly evolving tech industry, TechCorp, a large established company, faces a dilemma regarding its relationship with InnoStart, a small but innovative startup. TechCorp must decide whether to collaborate with InnoStart or compete against them, while InnoStart must choose whether to share its groundbreaking technology or keep it proprietary.
+
+TechCorp's ideal scenario is to gain access to InnoStart's technology without sharing its own resources (preference 4), followed by successfully competing against InnoStart (preference 3). Collaboration is their third choice (preference 2), while losing market share to InnoStart is their least desired outcome (preference 1).
+
+InnoStart, on the other hand, prefers to collaborate with TechCorp while keeping its technology proprietary (preference 4), followed by sharing its technology for a mutually beneficial collaboration (preference 3). Successfully competing against TechCorp is their third choice (preference 2), and losing market share to TechCorp is their least preferred outcome (preference 1).
+
+If TechCorp chooses to collaborate (A1) and InnoStart shares its technology (B1), both companies benefit from the partnership, but InnoStart gains more from TechCorp's resources (2 \ 4). If TechCorp collaborates (A1) but InnoStart keeps its technology proprietary (B2), TechCorp gains the most by accessing InnoStart's innovation without full reciprocation (4 \ 3).
+
+In a competitive scenario, if TechCorp competes (A2) and InnoStart shares its technology (B1), both companies suffer as they engage in a costly market battle (1 \ 1). However, if TechCorp competes (A2) and InnoStart keeps its technology proprietary (B2), TechCorp has a slight advantage due to its larger market presence and resources (3 \ 2).
+
+The two companies must carefully consider their strategies, balancing the potential for collaboration against the risks of competition, all while trying to protect their own interests and innovations in this high-stakes game of technological advancement and market dominance.
+[/Scenario]

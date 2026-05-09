@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, head of the research department"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Allocate more funding to patient care",
+  "A2": "Allocate more funding to medical research",
+  "B1": "Focus on short-term research projects",
+  "B2": "Focus on long-term research projects"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "More funding for research and long-term projects",
+    3: "More funding for patient care and short-term projects",
+    2: "More funding for research and short-term projects",
+    1: "More funding for patient care and long-term projects"
+  },
+  "B": {
+    4: "More funding for patient care and short-term projects",
+    3: "More funding for research and long-term projects",
+    2: "More funding for patient care and long-term projects",
+    1: "More funding for research and short-term projects"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 2 |
+| A2    | 2 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood Medical Center, Dr. Sarah Chen, the hospital administrator, and Dr. Mark Johnson, head of the research department, are facing a crucial decision about allocating the hospital's limited resources. They must choose between prioritizing patient care or medical research, and between short-term or long-term research projects.
+
+Dr. Chen, responsible for the overall operation of the hospital, is torn between improving immediate patient care and investing in future medical advancements. She knows that allocating more funds to patient care (A1) could lead to better short-term outcomes and patient satisfaction. However, she also recognizes the potential long-term benefits of investing in medical research (A2).
+
+Dr. Johnson, on the other hand, is passionate about advancing medical knowledge but must balance the pressure for quick results with the potential for groundbreaking discoveries. He can choose to focus on short-term research projects (B1) that yield faster results or long-term research projects (B2) that might lead to more significant breakthroughs.
+
+Their preferences reflect their roles and perspectives:
+
+Dr. Chen's ideal scenario is allocating more funding to research with a focus on long-term projects (A2, B2), as she believes this will ultimately benefit the hospital the most. Her least preferred outcome is allocating more to patient care while the research department focuses on long-term projects (A1, B2), as she fears this might lead to stagnation in both areas.
+
+Dr. Johnson prefers a scenario where more funding goes to patient care, and he can focus on short-term research projects (A1, B1). This allows him to show quick results while ensuring the hospital maintains its reputation for excellent patient care. His least preferred outcome is when more funding goes to research, but he has to focus on short-term projects (A2, B1), as he feels this pressure for quick results might compromise the quality of research.
+
+As they sit down to discuss their decision, both Dr. Chen and Dr. Johnson realize that their choices will significantly impact the future of Greenwood Medical Center. They must carefully consider their options, knowing that their decision will affect not only the hospital's immediate performance but also its long-term success and contribution to medical science.
+[/Scenario]

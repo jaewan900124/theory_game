@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, a patent attorney",
+  "B": "Mark, a tech startup founder"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer a standard fee contract",
+  "A2": "Propose a contingency fee arrangement",
+  "B1": "Accept full legal representation",
+  "B2": "Seek limited legal consultation"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Contingency fee with limited consultation",
+    3: "Standard fee with full representation",
+    2: "Contingency fee with full representation",
+    1: "Standard fee with limited consultation"
+  },
+  "B": {
+    4: "Standard fee with full representation",
+    3: "Standard fee with limited consultation",
+    2: "Contingency fee with limited consultation",
+    1: "Contingency fee with full representation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 3 |
+| A2    | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a seasoned patent attorney, meets with Mark, the founder of a promising tech startup, to discuss legal representation for his company's intellectual property matters. Both parties are aware of the potential value of Mark's innovations but also the uncertainties in the tech market.
+
+Sarah has two options: offer a standard fee contract (A1) or propose a contingency fee arrangement (A2). Mark, in turn, can choose between accepting full legal representation (B1) or seeking limited legal consultation (B2).
+
+Sarah prefers the contingency fee arrangement with limited consultation (A2, B2) as it offers the highest potential payoff with minimal time investment. Her second choice would be a standard fee with full representation (A1, B1), ensuring a stable income. She's less enthusiastic about a contingency fee with full representation (A2, B1) due to the time commitment, and least prefers a standard fee with limited consultation (A1, B2) as it provides minimal benefits.
+
+Mark, on the other hand, favors full legal representation with a standard fee (A1, B1), believing it offers the best protection for his intellectual property. His second preference is limited consultation with a standard fee (A1, B2), which would save costs. He's less keen on limited consultation with a contingency fee (A2, B2) and least prefers full representation with a contingency fee (A2, B1), fearing it could be costly if his startup succeeds.
+
+As they negotiate, both Sarah and Mark must consider their options carefully, weighing the potential benefits and risks of each scenario. Their choices will not only affect their professional relationship but also the future of Mark's startup and its intellectual property protection.
+[/Scenario]

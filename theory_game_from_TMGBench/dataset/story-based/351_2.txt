@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "General Alexander",
+  "B": "General Bjorn"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Fortify defensive positions",
+  "A2": "Launch a surprise attack",
+  "B1": "Maintain current positions",
+  "B2": "Propose a temporary ceasefire"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Fortify while enemy proposes ceasefire",
+    3: "Both fortify and maintain positions",
+    2: "Launch surprise attack while enemy maintains positions",
+    1: "Launch surprise attack during ceasefire proposal"
+  },
+  "B": {
+    4: "Propose ceasefire while enemy fortifies",
+    3: "Both maintain and fortify positions",
+    2: "Propose ceasefire during enemy's surprise attack",
+    1: "Maintain positions during enemy's surprise attack"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Maintain) | B2 (Ceasefire) |
+|-------|---------------|----------------|
+| A1 (Fortify) | 3 \ 3         | 4 \ 4          |
+| A2 (Attack)  | 2 \ 1         | 1 \ 2          |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, two seasoned commanders, General Alexander and General Bjorn, find themselves at a critical juncture. Their armies face each other across a strategic valley, and both generals must decide on their next move.
+
+General Alexander has two options: he can either fortify his defensive positions (A1) or launch a surprise attack (A2). Similarly, General Bjorn must choose between maintaining his current positions (B1) or proposing a temporary ceasefire (B2).
+
+Both generals prefer scenarios where they can strengthen their positions without immediate conflict. For Alexander, the ideal outcome is fortifying while Bjorn proposes a ceasefire, as this allows him to strengthen his defenses without opposition. His second preference is a mutual fortification and maintenance of positions, which preserves the status quo. Launching a surprise attack is less desirable, with attacking during a ceasefire proposal being the least preferred option due to potential backlash.
+
+Bjorn's preferences mirror Alexander's. He most desires proposing a ceasefire while Alexander fortifies, as this paints him in a positive light while allowing time for strategic planning. His second choice is also the mutual fortification scenario. Proposing a ceasefire during an enemy attack is his third choice, as it might halt the assault, while maintaining positions during an attack is least preferred due to potential losses.
+
+The payoff matrix reflects these preferences, with the highest mutual benefit (4,4) occurring when Alexander fortifies and Bjorn proposes a ceasefire. The second-best mutual outcome (3,3) is when both maintain/fortify their positions. The asymmetric outcomes (2,1) and (1,2) represent scenarios where one general gains a slight advantage at the other's expense.
+
+As dawn breaks, both generals must make their decisions, knowing that their choices will significantly impact the future of the conflict and the lives of their soldiers. The tension is palpable as they weigh their options, each trying to anticipate the other's move in this high-stakes game of military strategy.
+[/Scenario]

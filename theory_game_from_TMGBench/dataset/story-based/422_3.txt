@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emily, a sociology professor",
+  "B": "Mark, Emily's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research credit",
+  "A2": "Claim sole authorship",
+  "B1": "Contribute additional data",
+  "B2": "Withhold extra information"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Claim sole authorship while receiving additional data",
+    3: "Share credit while receiving additional data",
+    2: "Share credit without additional data",
+    1: "Claim sole authorship without additional data"
+  },
+  "B": {
+    4: "Receive credit while withholding extra information",
+    3: "Receive credit while contributing additional data",
+    2: "No credit, but withhold extra information",
+    1: "No credit and contribute additional data"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 3 \ 4 |
+| A2    | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Emily, a sociology professor, and her research assistant Mark are working on a groundbreaking study about social media's impact on community engagement. As they near publication, they face a dilemma about how to proceed with their findings and credit distribution.
+
+Emily has two choices: she can either share the research credit with Mark (A1) or claim sole authorship (A2). Meanwhile, Mark has discovered some additional data that could significantly enhance the study. He can choose to contribute this additional data (B1) or withhold the extra information (B2).
+
+Emily's most preferred outcome is to claim sole authorship while receiving the additional data from Mark (A2, B1). Her second preference is to share credit while still getting the extra information (A1, B1). She would rather share credit without the additional data (A1, B2) than claim sole authorship without Mark's contribution (A2, B2).
+
+Mark, on the other hand, most prefers to receive credit for his work while withholding the extra information (A1, B2). His second choice would be to receive credit and contribute the additional data (A1, B1). If he doesn't receive credit, he would rather withhold the extra information (A2, B2) than contribute it without recognition (A2, B1).
+
+The situation creates a complex dynamic where both Emily and Mark must consider the potential outcomes based on their choices and the other person's decision. Their choices will not only affect the quality and impact of the research but also their professional relationship and future collaborations.
+
+As they sit in Emily's office, contemplating their next moves, the tension is palpable. Emily values her reputation and the potential accolades from a sole-authored paper, but she also recognizes the importance of Mark's contributions. Mark, feeling undervalued, weighs the benefits of withholding information against the potential advancement of their field if he shares his discoveries.
+
+Their decisions will shape not only the outcome of this particular study but also set a precedent for how credit and collaboration are handled in their department. The choices they make will reflect broader sociological themes of power dynamics, cooperation, and competition within academic settings.
+[/Scenario]

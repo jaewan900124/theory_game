@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "General Zhao, commander of the Eastern Army",
+  "B": "General Li, commander of the Western Army"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Launch a surprise attack",
+  "A2": "Maintain defensive position",
+  "B1": "Reinforce defenses",
+  "B2": "Propose a peace treaty"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch a surprise attack while B proposes peace (easy victory)",
+    3: "Maintain defensive position while B reinforces (status quo)",
+    2: "Maintain defensive position while B proposes peace (missed opportunity)",
+    1: "Launch a surprise attack while B reinforces (heavy losses)"
+  },
+  "B": {
+    4: "Propose peace while A launches attack (diplomatic victory)",
+    3: "Propose peace while A maintains defense (peaceful resolution)",
+    2: "Reinforce defenses while A maintains defense (costly stalemate)",
+    1: "Reinforce defenses while A launches attack (suffer losses)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Reinforce) | B2 (Peace)  |
+|-------|----------------|-------------|
+| A1 (Attack) | 3 \ 1         | 4 \ 4       |
+| A2 (Defend) | 1 \ 2         | 2 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+In a war-torn land, two powerful armies face each other across a vast plain. General Zhao of the Eastern Army and General Li of the Western Army are locked in a tense standoff, each weighing their options carefully.
+
+General Zhao, known for his aggressive tactics, is considering a surprise attack. He believes that if successful, it could decisively end the war in his favor. However, he's aware of the risks involved, especially if General Li has fortified his defenses.
+
+General Li, on the other hand, is torn between strengthening his defenses and proposing a peace treaty. He knows that reinforcing his position could lead to a prolonged, costly conflict, but it might be necessary if Zhao attacks. Alternatively, offering peace could potentially end the war without further bloodshed, but it might be seen as a sign of weakness.
+
+If Zhao attacks while Li reinforces, the Eastern Army would gain a slight advantage (3), but the Western Army would suffer significant losses (1). If Zhao attacks while Li proposes peace, both sides could claim a diplomatic victory (4,4) as the surprise attack could be used as leverage in peace negotiations.
+
+If Zhao remains defensive while Li reinforces, it would result in a costly stalemate, benefiting neither side much (1,2). However, if Zhao stays defensive while Li proposes peace, it could lead to a peaceful resolution slightly favoring the Western Army (2,3).
+
+As the sun sets on the battlefield, both generals retreat to their tents to make their decisions. The fate of their armies and the entire region hangs in the balance, dependent on the choices these two leaders will make.
+[/Scenario]

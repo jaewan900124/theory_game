@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a talented software developer",
+  "B": "TechCorp, a growing tech company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept TechCorp's job offer",
+  "A2": "Negotiate for better terms",
+  "B1": "Maintain the initial job offer",
+  "B2": "Improve the job offer"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Negotiate and receive an improved offer",
+    3: "Accept the initial job offer",
+    2: "Negotiate but receive no improvements",
+    1: "Lose the job opportunity due to negotiations"
+  },
+  "B": {
+    4: "Sarah accepts the initial job offer",
+    3: "Improve the offer and Sarah accepts",
+    2: "Maintain the initial offer and Sarah accepts",
+    1: "Sarah rejects the offer after negotiations"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 1 \ 4 |
+| A2    | 2 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a talented software developer, has just received a job offer from TechCorp, a growing tech company. Both Sarah and TechCorp find themselves in a delicate situation where their decisions will impact the outcome of the employment opportunity.
+
+Sarah has two choices: she can either accept TechCorp's initial job offer (A1) or attempt to negotiate for better terms (A2). TechCorp, on the other hand, can choose to maintain their initial job offer (B1) or improve it (B2).
+
+Sarah's most preferred outcome is to negotiate and receive an improved offer from TechCorp. She values this scenario the highest (preference degree 4) as it would provide her with better compensation and benefits. Her second preference is to accept the initial job offer, which she considers a good opportunity (preference degree 3). If she negotiates but receives no improvements, she would still consider taking the job, but with some disappointment (preference degree 2). Her least preferred outcome is losing the job opportunity due to negotiations (preference degree 1).
+
+TechCorp's preferences are slightly different. Their most desired outcome is for Sarah to accept their initial job offer (preference degree 4), as this would allow them to acquire her talent without increasing their costs. Their second preference is to improve the offer and have Sarah accept it (preference degree 3), recognizing the value she could bring to the company. If they maintain the initial offer and Sarah accepts, they would still be satisfied (preference degree 2). Their least preferred outcome is Sarah rejecting the offer after negotiations (preference degree 1), as they would lose a promising candidate.
+
+The payoff matrix represents these preferences numerically. For example, if Sarah accepts the initial offer (A1) and TechCorp maintains it (B1), Sarah receives a payoff of 3 (her second-best outcome), while TechCorp receives a payoff of 2 (their third-best outcome).
+
+As Sarah contemplates her decision, she must weigh the potential benefits of negotiation against the risk of losing the opportunity. TechCorp, aware of Sarah's talent, must decide whether to stand firm on their initial offer or be open to improvements to secure her employment. Their choices will determine the final outcome of this employment scenario, highlighting the strategic nature of job offer negotiations in the tech industry.
+[/Scenario]

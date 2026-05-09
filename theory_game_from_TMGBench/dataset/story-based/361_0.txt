@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly technology",
+  "A2": "Pursue profit-driven projects",
+  "B1": "Advocate for strict environmental regulations",
+  "B2": "Collaborate with companies on sustainable initiatives"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on sustainable initiatives",
+    3: "Develop eco-friendly technology independently",
+    2: "Pursue profit-driven projects with less regulation",
+    1: "Face strict regulations while pursuing profit"
+  },
+  "B": {
+    4: "Collaborate on sustainable initiatives",
+    3: "Successfully advocate for strict regulations",
+    2: "Collaborate with companies on less impactful projects",
+    1: "Fail to influence company decisions or regulations"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 1 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a world grappling with environmental challenges, EcoTech, a sustainable technology company, and GreenForest, a conservation organization, find themselves at a crossroads. Their decisions will significantly impact the local ecosystem and the future of sustainable development.
+
+EcoTech faces a critical choice: they can either invest in developing eco-friendly technology (A1) or pursue more profitable but less sustainable projects (A2). Meanwhile, GreenForest must decide whether to advocate for strict environmental regulations (B1) or collaborate directly with companies on sustainable initiatives (B2).
+
+If EcoTech chooses to develop eco-friendly technology (A1) and GreenForest advocates for strict regulations (B1), both entities will achieve moderate success. EcoTech will create innovative solutions within a challenging regulatory framework, while GreenForest will see its advocacy efforts pay off. This scenario results in a payoff of 3 for both parties.
+
+The most beneficial outcome for both occurs when EcoTech develops eco-friendly technology (A1) and GreenForest collaborates on sustainable initiatives (B2). This synergy leads to groundbreaking innovations and significant positive environmental impact, resulting in the highest payoff of 4 for both organizations.
+
+If EcoTech pursues profit-driven projects (A2) and GreenForest advocates for strict regulations (B1), both entities face their least preferred outcome. EcoTech struggles with regulatory constraints, while GreenForest fails to influence corporate decisions effectively. This scenario yields the lowest payoff of 1 for both parties.
+
+Lastly, if EcoTech focuses on profit-driven projects (A2) and GreenForest opts to collaborate (B2), they achieve a slightly better outcome than the previous scenario. However, the collaboration is less impactful due to EcoTech's profit-first approach, resulting in a payoff of 2 for both organizations.
+
+The story highlights the potential for mutual benefit when companies and environmental organizations work together towards sustainability, as well as the challenges faced when profit-driven motives clash with conservation efforts. The decisions made by EcoTech and GreenForest will shape the future of their local ecosystem and set a precedent for sustainable development in their region.
+[/Scenario]

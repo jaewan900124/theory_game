@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Emma",
+  "B": "Liam"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share project idea",
+  "A2": "Keep project idea secret",
+  "B1": "Work independently",
+  "B2": "Collaborate"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Share idea and collaborate",
+    3: "Share idea but work independently",
+    2: "Keep idea secret and work independently",
+    1: "Keep idea secret but collaborate"
+  },
+  "B": {
+    4: "Emma shares idea and they collaborate",
+    3: "Emma keeps idea secret but they collaborate",
+    2: "Both work independently",
+    1: "Emma shares idea but they work independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Liam | Work independently | Collaborate |
+|--------------|---------------------|-------------|
+| Share idea   | 3 \ 1               | 4 \ 4       |
+| Keep secret  | 2 \ 2               | 1 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Liam are talented software developers working for the same tech company. They've been assigned to develop innovative solutions for an upcoming project, but they haven't been explicitly told to work together.
+
+Emma has come up with a brilliant idea that could revolutionize their approach to the project. She now faces a dilemma: should she share her idea with Liam or keep it to herself? Simultaneously, Liam is considering whether to work independently or propose collaboration with Emma.
+
+Emma's preferences:
+1. She would most prefer to share her idea and have Liam collaborate, as this would likely yield the best results and recognition for both of them.
+2. Her second choice would be to share the idea but work independently, allowing her to maintain control while still potentially impressing management with her openness.
+3. Keeping the idea secret and working independently is her third choice, as it's safe but limits the project's potential.
+4. Her least preferred option is keeping the idea secret while collaborating, as this would hinder effective teamwork and potentially lead to conflicts.
+
+Liam's preferences:
+1. He would most prefer Emma to share her idea and for them to collaborate, recognizing the potential for a superior outcome.
+2. His second choice would be to collaborate even if Emma keeps her idea secret, hoping to create a strong project through teamwork.
+3. If collaboration isn't possible, he'd prefer both of them to work independently to maintain a level playing field.
+4. His least preferred scenario is Emma sharing her idea but them working independently, as he'd feel at a disadvantage.
+
+The payoff matrix reflects these preferences, with higher numbers indicating greater satisfaction for each character in different scenarios. Emma and Liam must now decide their actions, each unaware of the other's choice, but understanding that their decisions will significantly impact the project's outcome and their professional relationship.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma",
+  "B": "Jack"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share project idea",
+  "A2": "Keep idea secret",
+  "B1": "Work independently",
+  "B2": "Collaborate"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Share idea and collaborate",
+    3: "Share idea, Jack works independently",
+    2: "Keep idea secret, Jack collaborates",
+    1: "Keep idea secret, Jack works independently"
+  },
+  "B": {
+    4: "Emma shares idea and collaborate",
+    3: "Emma keeps idea secret, collaborate",
+    2: "Emma shares idea, work independently",
+    1: "Emma keeps idea secret, work independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Jack | Work independently | Collaborate |
+|-------------|---------------------|-------------|
+| Share idea  | 3 \ 2               | 4 \ 4       |
+| Keep secret | 1 \ 1               | 2 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Jack are talented software developers working for the same tech company. They've been assigned to develop a new innovative app, but they can choose to work together or independently.
+
+Emma has come up with a brilliant idea for the app. She now faces a dilemma: should she share her idea with Jack or keep it to herself? Sharing could lead to a better outcome if they collaborate, but it also risks Jack using the idea without giving her credit.
+
+Jack, unaware of Emma's idea, is considering whether to propose collaboration or work independently on his own concept.
+
+If Emma shares her idea and Jack decides to collaborate (A1, B2), both benefit greatly, achieving their most preferred outcome (4,4). The project excels, and they both receive recognition and potential promotions.
+
+If Emma shares but Jack works independently (A1, B1), Emma still benefits from expressing her idea (3), while Jack gains some insight but misses the full potential (2).
+
+If Emma keeps her idea secret and Jack proposes collaboration (A2, B2), Jack benefits from the teamwork (3), but Emma's contribution is limited without sharing her best idea (2).
+
+The least favorable outcome for both is if Emma keeps her idea secret and Jack works independently (A2, B1), resulting in a suboptimal project and missed opportunities (1,1).
+
+Emma and Jack must now decide their actions, each unaware of the other's choice, but understanding the potential outcomes of their combined decisions.
+[/Scenario]

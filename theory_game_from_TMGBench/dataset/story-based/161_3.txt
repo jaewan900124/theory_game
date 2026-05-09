@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a ride-sharing app driver",
+  "B": "Blake, a commuter"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer a shared ride",
+  "A2": "Offer a private ride",
+  "B1": "Accept a shared ride",
+  "B2": "Request a private ride"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Offer a private ride, passenger requests private (highest fare)",
+    3: "Offer a shared ride, passenger accepts shared (moderate fare, fuel-efficient)",
+    2: "Offer a private ride, passenger accepts shared (moderate fare, less efficient)",
+    1: "Offer a shared ride, passenger requests private (lowest fare, potential negative review)"
+  },
+  "B": {
+    4: "Accept a shared ride, driver offers shared (lowest cost, eco-friendly)",
+    3: "Request a private ride, driver offers private (privacy, comfort)",
+    2: "Accept a shared ride, driver offers private (moderate cost, unexpected privacy)",
+    1: "Request a private ride, driver offers shared (highest cost, inconvenience)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept shared) | B2 (Request private) |
+|-------|--------------------|-----------------------|
+| A1 (Offer shared) | 1 \ 4               | 2 \ 3                |
+| A2 (Offer private) | 3 \ 2               | 4 \ 1                |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Alex, a ride-sharing app driver, and Blake, a daily commuter, find themselves in a game of transportation choices. Alex must decide whether to offer a shared or private ride, while Blake chooses between accepting a shared ride or requesting a private one.
+
+Alex prefers offering private rides for higher fares but also considers the benefits of shared rides for fuel efficiency. Blake, on the other hand, prioritizes cost-saving and eco-friendliness but also values privacy and comfort.
+
+Their choices create four possible scenarios:
+
+1. If Alex offers a shared ride (A1) and Blake accepts it (B1), Alex receives a moderate fare and operates fuel-efficiently, but it's not the highest possible earning (payoff 1). Blake gets the lowest cost and an eco-friendly option, which is ideal (payoff 4).
+
+2. If Alex offers a shared ride (A1) but Blake requests a private ride (B2), Alex faces the risk of a low fare and a potential negative review (payoff 2). Blake settles for a private ride at a higher cost than expected (payoff 3).
+
+3. If Alex offers a private ride (A2) and Blake accepts a shared ride (B1), Alex gets a moderate fare but operates less efficiently (payoff 3). Blake unexpectedly gets a private ride at a shared ride price (payoff 2).
+
+4. If Alex offers a private ride (A2) and Blake requests one (B2), Alex maximizes earnings with the highest fare (payoff 4). However, Blake pays the highest price, which is least preferred (payoff 1).
+
+This scenario demonstrates the complex interplay between a driver's profit motivation and a passenger's desire for affordability and comfort in the ride-sharing economy. The outcome depends on how well Alex and Blake can anticipate each other's choices and preferences.
+[/Scenario]

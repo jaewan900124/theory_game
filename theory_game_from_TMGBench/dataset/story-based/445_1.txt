@@ -1,0 +1,64 @@
+[Characters]
+{
+  "A": "Alex, a taxi driver",
+  "B": "Sam, a ride-sharing app driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Operate in the city center",
+  "A2": "Operate in the suburbs",
+  "B1": "Operate with standard pricing",
+  "B2": "Operate with surge pricing"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Operating in suburbs while Sam uses surge pricing in the city",
+    3: "Operating in city center while Sam uses standard pricing",
+    2: "Operating in suburbs while Sam uses standard pricing",
+    1: "Operating in city center while Sam uses surge pricing"
+  },
+  "B": {
+    4: "Using surge pricing while Alex operates in city center",
+    3: "Using surge pricing while Alex operates in suburbs",
+    2: "Using standard pricing while Alex operates in suburbs",
+    1: "Using standard pricing while Alex operates in city center"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Standard) | B2 (Surge) |
+|-------|---------------|------------|
+| A1 (City)  | 3 \ 1         | 1 \ 4      |
+| A2 (Suburbs) | 2 \ 2         | 4 \ 3      |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling metropolitan area, Alex, a traditional taxi driver, and Sam, a ride-sharing app driver, are both trying to maximize their earnings during a busy weekend. They each have to decide where to operate and how to price their services.
+
+Alex can choose to operate in the city center (A1) or in the suburbs (A2). The city center is usually busier, but competition is fierce. The suburbs have fewer customers, but less competition.
+
+Sam, using a ride-sharing app, can choose to operate with standard pricing (B1) or activate surge pricing (B2). Surge pricing can attract more drivers to busy areas but may deter some customers.
+
+Their choices lead to four possible scenarios:
+
+1. If Alex operates in the city center and Sam uses standard pricing, Alex benefits from the high demand (3), while Sam struggles to compete with regular taxis (1).
+
+2. If Alex operates in the city center and Sam uses surge pricing, Alex loses customers to the higher-paying rides (1), while Sam maximizes profits (4).
+
+3. If Alex operates in the suburbs and Sam uses standard pricing, both drivers have moderate success (2,2) as they're operating in different areas with different strategies.
+
+4. If Alex operates in the suburbs and Sam uses surge pricing, Alex benefits from being the only affordable option in the suburbs (4), while Sam still makes good money from surge pricing in the city (3).
+
+Alex prefers scenario 4 the most, as it allows him to be the primary option in the suburbs while Sam's surge pricing drives customers away from the city. His least preferred scenario is operating in the city while Sam uses surge pricing, as he loses out on high-paying customers.
+
+Sam's most preferred scenario is using surge pricing while Alex operates in the city center, as it allows him to maximize profits without competition from Alex. His least preferred scenario is using standard pricing while Alex operates in the city center, as he struggles to compete with Alex's established taxi service.
+
+Both drivers must decide their strategies simultaneously, without knowing what the other will choose, leading to a classic game theory scenario in the transportation industry.
+[/Scenario]

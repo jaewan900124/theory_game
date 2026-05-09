@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a product manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use existing technology",
+  "A2": "Develop new technology",
+  "B1": "Focus on current market",
+  "B2": "Expand to new market"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop new technology for new market",
+    3: "Develop new technology for current market",
+    2: "Use existing technology for current market",
+    1: "Use existing technology for new market"
+  },
+  "B": {
+    4: "Use existing technology for new market",
+    3: "Develop new technology for new market",
+    2: "Use existing technology for current market",
+    1: "Develop new technology for current market"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Current Market) | B2 (New Market) |
+|-------|---------------------|-----------------|
+| A1 (Existing Tech) | 2 \ 2             | 1 \ 4           |
+| A2 (New Tech)      | 3 \ 1             | 4 \ 3           |
+[/Payoff Matrix]
+
+[Scenario]
+TechInnovate, a leading software company, is at a crossroads. Alex, a brilliant software engineer, and Blake, an ambitious product manager, are tasked with deciding the company's next big move.
+
+Alex is passionate about pushing technological boundaries. He believes that developing new technology (A2) will give the company a competitive edge, regardless of the market. His ideal scenario is to create cutting-edge technology for a new market (4), as it would showcase his skills and potentially revolutionize the industry. His second preference is to develop new technology for the current market (3), still allowing for innovation. Using existing technology is less appealing to Alex, especially for a new market (1) which he sees as a missed opportunity.
+
+Blake, on the other hand, is more focused on market expansion and immediate returns. She sees entering a new market using existing technology (B2) as the safest and most profitable option (4). Her second choice would be to enter this new market with new technology (3), balancing risk and reward. Staying in the current market is less exciting for Blake, but she prefers using existing technology (2) over new technology (1) in this scenario, as it's less risky.
+
+The payoff matrix reflects their preferences:
+- If they choose to use existing technology (A1) and focus on the current market (B1), both get moderate satisfaction (2,2).
+- If Alex pushes for new technology (A2) while Blake insists on the current market (B1), Alex is somewhat satisfied (3) but Blake is disappointed (1).
+- If they use existing technology (A1) for a new market (B2), Blake is thrilled (4) but Alex is frustrated (1).
+- The ideal compromise is developing new technology (A2) for a new market (B2), where both are quite satisfied (4,3).
+
+As they sit in the conference room, debating their options, the tension is palpable. Alex argues passionately for investment in new technology, while Blake emphasizes the potential of new markets. They both know their decision will shape the future of TechInnovate. Will they find a way to cooperate and reach the optimal solution, or will one perspective dominate, potentially leading to a suboptimal outcome for the company?
+[/Scenario]

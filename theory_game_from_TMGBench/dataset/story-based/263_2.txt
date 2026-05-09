@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Maria"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Conduct collaborative research",
+  "A2": "Focus on individual projects",
+  "B1": "Assist in research",
+  "B2": "Pursue independent study"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Conduct collaborative research while Maria pursues independent study",
+    3: "Conduct collaborative research with Maria's assistance",
+    2: "Focus on individual projects while Maria pursues independent study",
+    1: "Focus on individual projects while Maria assists in research"
+  },
+  "B": {
+    4: "Assist in collaborative research",
+    3: "Pursue independent study while Professor Smith focuses on individual projects",
+    2: "Pursue independent study while Professor Smith conducts collaborative research",
+    1: "Assist in research while Professor Smith focuses on individual projects"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Assist) | B2 (Independent) |
+|-------|-------------|-------------------|
+| A1 (Collaborate) | 3 \ 4       | 4 \ 2             |
+| A2 (Individual)  | 1 \ 1       | 2 \ 3             |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Professor Smith, a renowned sociologist, and Maria, a promising graduate student, find themselves at a crossroads in their academic pursuits. Professor Smith is considering whether to initiate a collaborative research project or focus on his individual work. Simultaneously, Maria must decide between assisting in research or pursuing an independent study.
+
+Professor Smith's ideal scenario is to conduct collaborative research while Maria pursues independent study, as this would allow him to benefit from her insights without direct competition. His second preference is to collaborate with Maria's assistance, which would boost productivity but potentially overshadow her individual growth. His least desired outcome is to focus on individual projects while Maria assists, as this might lead to missed opportunities for both.
+
+Maria, on the other hand, most prefers to assist in collaborative research, seeing it as a valuable learning experience and networking opportunity. Her second choice is to pursue independent study while Professor Smith focuses on his projects, allowing her autonomy but maintaining a connection. She least desires assisting in research while Professor Smith works individually, fearing her contributions might go unnoticed.
+
+The situation creates a complex dynamic where their ideal outcomes don't align perfectly. If they both choose their most preferred options (collaborate and assist), it results in a suboptimal outcome for Professor Smith but the best for Maria. However, if Professor Smith chooses to collaborate and Maria pursues independent study, it creates the best outcome for him but a less favorable one for her.
+
+This scenario illustrates the intricate balance between mentorship, collaboration, and individual growth in academia. Their choices will not only affect their immediate research outputs but also shape their long-term professional relationships and career trajectories in the field of sociology.
+[/Scenario]

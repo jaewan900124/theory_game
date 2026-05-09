@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Impose trade tariffs",
+  "A2": "Maintain free trade",
+  "B1": "Retaliate with tariffs",
+  "B2": "Maintain free trade"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Impose tariffs while China maintains free trade",
+    3: "Both maintain free trade",
+    2: "Both impose tariffs",
+    1: "Maintain free trade while China imposes tariffs"
+  },
+  "B": {
+    4: "Impose tariffs while US maintains free trade",
+    3: "Both maintain free trade",
+    2: "Both impose tariffs",
+    1: "Maintain free trade while US imposes tariffs"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| US \ China | Retaliate (B1) | Free Trade (B2) |
+|------------|----------------|-----------------|
+| Tariffs (A1)| 1 \ 4         | 4 \ 1           |
+| Free Trade (A2)| 3 \ 2      | 2 \ 3           |
+[/Payoff Matrix]
+
+[Scenario]
+In the realm of international relations, the United States and China find themselves at a crossroads in their trade relationship. Both nations are considering whether to impose trade tariffs or maintain free trade policies.
+
+The United States, led by its economic advisors, is weighing the option of imposing tariffs on Chinese goods. They believe this could protect domestic industries and potentially force China to address concerns about intellectual property theft and unfair trade practices. However, they're also aware that such a move could spark a trade war and harm American consumers and businesses that rely on Chinese imports.
+
+China, on the other hand, is considering whether to retaliate with its own tariffs if the US makes the first move, or to maintain its current free trade stance. Chinese leadership understands that retaliatory tariffs could protect their domestic market and show strength on the global stage, but they also recognize the potential damage to their export-driven economy.
+
+Both nations prefer a scenario where they impose tariffs while the other maintains free trade, as this would give them an economic advantage. Their second preference is mutual free trade, which would maintain the status quo and continue to benefit both economies. The least preferred option for each is to maintain free trade while the other imposes tariffs, as this would put them at a significant disadvantage.
+
+The situation creates a classic prisoner's dilemma. If both countries choose to cooperate by maintaining free trade, they both receive moderate benefits (payoff 2,3). However, there's a temptation for each to defect by imposing tariffs, hoping to gain an advantage if the other doesn't retaliate (payoffs 4,1 or 1,4). If both defect and impose tariffs, they both end up worse off than if they had cooperated (payoff 1,4).
+
+As tensions rise and economic advisors present their analyses, both the US and Chinese leadership must decide their course of action, knowing that their choice will have significant implications for their own economy and the global trade landscape.
+[/Scenario]

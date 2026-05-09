@@ -1,0 +1,61 @@
+[Characters]
+{
+  "A": "Alice, a talented software developer",
+  "B": "Bob, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work exclusively for Bob's startup",
+  "A2": "Work as a freelancer for multiple companies",
+  "B1": "Offer Alice a standard employment contract",
+  "B2": "Offer Alice a partnership role with equity"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Partnership role with equity at Bob's startup",
+    3: "Freelancing for multiple companies",
+    2: "Standard employment at Bob's startup",
+    1: "Exclusive work for Bob's startup without partnership"
+  },
+  "B": {
+    4: "Alice as a partner with equity",
+    3: "Alice as a freelancer",
+    2: "Alice as a standard employee",
+    1: "Alice working exclusively without partnership"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 4 \ 4 |
+| A2    | 2 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alice, a talented software developer, has been in talks with Bob, the CEO of a promising tech startup, about joining his company. Both Alice and Bob are trying to navigate the best possible arrangement for their professional relationship.
+
+Alice has two choices: she can either work exclusively for Bob's startup (A1) or work as a freelancer for multiple companies, including Bob's (A2). Bob, on the other hand, can offer Alice either a standard employment contract (B1) or a partnership role with equity in the company (B2).
+
+Their preferences for the outcomes differ based on their individual goals and risk tolerance. Alice's most preferred outcome is to have a partnership role with equity in Bob's startup, as it offers her both stability and potential for significant financial gain. Her least preferred outcome is to work exclusively for Bob's startup without the benefits of partnership, as it limits her earning potential and career growth.
+
+Bob's preferences align somewhat with Alice's. His most preferred outcome is to have Alice as a partner with equity, recognizing her value to the company. His least preferred outcome is to have Alice work exclusively for the startup without a partnership agreement, as it might lead to her feeling undervalued and potentially leaving the company.
+
+The payoff matrix reveals an interesting dynamic:
+
+1. If Alice chooses to work exclusively (A1) and Bob offers a standard contract (B1), both receive their least preferred outcome (1,1).
+2. If Alice chooses to freelance (A2) and Bob offers a standard contract (B1), both achieve their second-least preferred outcome (2,2).
+3. If Alice chooses to freelance (A2) and Bob offers a partnership (B2), both achieve their second-most preferred outcome (3,3).
+4. If Alice chooses to work exclusively (A1) and Bob offers a partnership (B2), both achieve their most preferred outcome (4,4).
+
+This scenario demonstrates that the best outcome for both Alice and Bob is to cooperate, with Alice committing exclusively to the startup and Bob offering her a partnership role. However, reaching this outcome requires trust and communication from both parties. If either party chooses to act more cautiously (Alice freelancing or Bob offering a standard contract), they may end up with a suboptimal result for both.
+
+The challenge for Alice and Bob is to overcome their potential fears and uncertainties to reach the mutually beneficial outcome of a partnership. This situation highlights the importance of open communication and alignment of interests in employment negotiations, especially in the dynamic world of tech startups.
+[/Scenario]

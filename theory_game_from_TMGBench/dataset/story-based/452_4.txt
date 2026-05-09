@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a tech startup founder",
+  "B": "Becca, a venture capitalist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a user-friendly app",
+  "A2": "Develop a complex, feature-rich software",
+  "B1": "Provide moderate funding",
+  "B2": "Provide substantial funding"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop complex software with substantial funding",
+    3: "Develop complex software with moderate funding",
+    2: "Develop user-friendly app with moderate funding",
+    1: "Develop user-friendly app with substantial funding"
+  },
+  "B": {
+    4: "Fund user-friendly app substantially",
+    3: "Fund user-friendly app moderately",
+    2: "Fund complex software moderately",
+    1: "Fund complex software substantially"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 1 \ 4 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling tech hub of Silicon Valley, Alex, a brilliant software engineer, has founded a promising startup. He's at a crucial juncture, deciding between developing a user-friendly app that could quickly gain traction in the market, or a complex, feature-rich software that could revolutionize the industry but might take longer to perfect.
+
+Becca, a seasoned venture capitalist, is interested in investing in Alex's startup. She's weighing her options between providing moderate funding, which would be a safer bet, or substantial funding, which could potentially yield higher returns but comes with greater risk.
+
+Alex's preference is to develop the complex software, as he believes it has the potential to make a significant impact. His ideal scenario would be to receive substantial funding (A2, B2) to support this ambitious project. However, he's also open to developing it with moderate funding (A2, B1) if necessary. His least preferred option is to develop the user-friendly app with substantial funding (A1, B2), as he feels it would be a waste of resources.
+
+Becca, on the other hand, sees more potential in the user-friendly app. Her ideal scenario is to provide substantial funding for the app (A1, B2), believing it could quickly dominate the market. She's also content with providing moderate funding for the app (A1, B1). Her least preferred option is to provide substantial funding for the complex software (A2, B2), as she considers it too risky.
+
+The two find themselves in a delicate negotiation. Alex needs to decide whether to stick to his vision of a complex software or pivot to a more marketable app. Becca must determine how much she's willing to invest and in which direction. Their choices will not only shape the future of the startup but also their potential partnership.
+
+As they sit across from each other in a sleek conference room, the tension is palpable. Alex begins his pitch, passionately describing his vision for the complex software. Becca listens intently, her eyes occasionally darting to the financial projections on her tablet. The decision they make in the next hour could change the course of their careers and potentially the tech industry itself.
+[/Scenario]

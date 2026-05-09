@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, an aspiring painter",
+  "B": "Alex, a gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create traditional art",
+  "A2": "Create avant-garde art",
+  "B1": "Collaborate exclusively",
+  "B2": "Open call for artists"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create avant-garde art and have it featured in an open call exhibition",
+    3: "Create avant-garde art and collaborate exclusively with Alex",
+    2: "Create traditional art and collaborate exclusively with Alex",
+    1: "Create traditional art and compete in an open call exhibition"
+  },
+  "B": {
+    4: "Collaborate exclusively with Emma on traditional art",
+    3: "Collaborate exclusively with Emma on avant-garde art",
+    2: "Feature Emma's avant-garde art in an open call exhibition",
+    1: "Feature Emma's traditional art in an open call exhibition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 1 |
+| A2    | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, an aspiring painter, and Alex, a gallery owner, find themselves at a crossroads in the art world. Emma is contemplating her next artistic direction, while Alex is deciding on how to curate his upcoming exhibition.
+
+Emma has two choices: she can either create traditional art (A1) or venture into avant-garde art (A2). Traditional art might be safer and more marketable, but avant-garde art could potentially make a bigger splash in the art scene.
+
+Alex, on the other hand, is considering whether to collaborate exclusively with Emma (B1) or to open a call for artists (B2) for his next exhibition. Collaborating exclusively with Emma would mean a focused partnership, while an open call could bring in a diverse range of artworks.
+
+Emma's preferences are clear: she's most excited about the prospect of creating avant-garde art and having it featured in an open call exhibition (4). Her second choice would be to create avant-garde art in an exclusive collaboration with Alex (3). If she must stick to traditional art, she'd prefer an exclusive collaboration (2) over competing in an open call (1).
+
+Alex has different priorities. He's most interested in collaborating exclusively with Emma on traditional art (4), believing it to be a safe bet. His second choice would be to collaborate exclusively on avant-garde art (3). If he decides to do an open call, he'd prefer to feature Emma's avant-garde art (2) rather than her traditional pieces (1).
+
+The payoff matrix reveals the complex dynamics of their choices. If Emma creates traditional art and Alex collaborates exclusively (A1, B1), Emma gets her third-best outcome (2) while Alex achieves his most desired outcome (4). However, if Emma creates avant-garde art and Alex opens a call for artists (A2, B2), Emma achieves her most desired outcome (4) while Alex gets his third-best result (2).
+
+The scenario presents a classic game theory dilemma. Emma and Alex must navigate their individual preferences while considering the potential actions of the other. Will Emma prioritize her artistic vision or play it safe? Will Alex stick to his preference for exclusive collaboration or take a risk with an open call? Their decisions will shape not only their individual successes but also the nature of their professional relationship and the art that will be presented to the world.
+[/Scenario]

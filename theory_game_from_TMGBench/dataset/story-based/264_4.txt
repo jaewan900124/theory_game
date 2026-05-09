@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Blake, Alex's doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Train intensively for the upcoming tournament",
+  "A2": "Take it easy and focus on individual practice",
+  "B1": "Train intensively with Alex",
+  "B2": "Focus on personal fitness and solo practice"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Train intensively while Blake focuses on personal fitness",
+    3: "Both train intensively together",
+    2: "Both take it easy with individual practice",
+    1: "Take it easy while Blake trains intensively"
+  },
+  "B": {
+    4: "Both train intensively together",
+    3: "Focus on personal fitness while Alex trains intensively",
+    2: "Take it easy with individual practice while Alex does the same",
+    1: "Train intensively while Alex takes it easy"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 1 |
+| A2    | 1 \ 2 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake, professional tennis players and doubles partners, are preparing for a major tournament. They need to decide on their training strategy for the next two weeks leading up to the event.
+
+Alex, known for his aggressive playstyle, believes that intensive training is crucial for success. However, he also recognizes the importance of rest and recovery. His ideal scenario would be to train intensively while Blake focuses on personal fitness, allowing Alex to dominate the court during their matches.
+
+Blake, on the other hand, values teamwork and believes that training together intensively would yield the best results. He's willing to put in the extra effort to improve their coordination and synergy on the court.
+
+Their choices create four possible scenarios:
+
+1. If both choose to train intensively together (A1, B1), they'll improve their teamwork and stand a good chance at the tournament. Alex sees this as his second-best option (3), while it's Blake's most preferred outcome (4).
+
+2. If Alex trains intensively while Blake focuses on personal fitness (A1, B2), Alex gets his most preferred outcome (4), but Blake feels left behind and unprepared (1).
+
+3. If Alex takes it easy while Blake trains intensively (A2, B1), Alex feels underprepared and at a disadvantage (1), while Blake sees some personal improvement but lacks team coordination (2).
+
+4. If both choose to focus on individual practice (A2, B2), they maintain their current level without significant improvement. This is Alex's third choice (2) and Blake's second-best option (3).
+
+The challenge lies in finding a strategy that satisfies both players' needs while maximizing their chances of success in the upcoming tournament. Their decision will not only affect their performance but also their relationship as doubles partners.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on developing a proprietary software solution",
+  "A2": "Develop an open-source software platform",
+  "B1": "Design custom hardware components",
+  "B2": "Use off-the-shelf hardware components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop open-source software with off-the-shelf hardware",
+    3: "Develop proprietary software with custom hardware",
+    2: "Develop open-source software with custom hardware",
+    1: "Develop proprietary software with off-the-shelf hardware"
+  },
+  "B": {
+    4: "Use off-the-shelf hardware with proprietary software",
+    3: "Design custom hardware with open-source software",
+    2: "Use off-the-shelf hardware with open-source software",
+    1: "Design custom hardware with proprietary software"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 1 \ 4 |
+| A2    | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a cutting-edge robotics project for their company. Alex, the software engineer, is responsible for developing the control system, while Blake, the hardware engineer, is in charge of designing the physical components.
+
+As they begin the project, they realize that their decisions will significantly impact each other's work and the overall success of the project. They each have two choices to make:
+
+Alex can either focus on developing a proprietary software solution (A1) or create an open-source software platform (A2). Blake can either design custom hardware components (B1) or use off-the-shelf hardware components (B2).
+
+Alex's ideal scenario is to develop an open-source software platform that works with off-the-shelf hardware (A2, B2). This would allow for greater flexibility and community contributions. His second preference is to create proprietary software that works with custom hardware (A1, B1), as it would showcase his skills but limit future adaptability. His third choice would be to develop open-source software for custom hardware (A2, B1), which is challenging but could lead to innovative solutions. His least preferred option is to create proprietary software for off-the-shelf hardware (A1, B2), as it limits both flexibility and innovation.
+
+Blake, on the other hand, prefers to use off-the-shelf hardware components with proprietary software (B2, A1). This would simplify his work while ensuring the company maintains control over the product. His second choice is to design custom hardware for open-source software (B1, A2), which would showcase his skills and allow for community input. His third preference is to use off-the-shelf hardware with open-source software (B2, A2), which is easier but less impressive. His least favored option is to design custom hardware for proprietary software (B1, A1), as it's the most challenging and limits future modifications.
+
+As they discuss their options, they realize that their individual preferences don't align perfectly. They must decide whether to prioritize their own interests or find a compromise that benefits the project as a whole. The success of the robotics project hangs in the balance as Alex and Blake weigh their options and consider the long-term implications of their choices.
+[/Scenario]

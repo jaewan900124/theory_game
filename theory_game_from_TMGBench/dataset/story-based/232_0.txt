@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "TechCorp, a large technology company",
+  "B": "InnoLab, a small innovative startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate with InnoLab",
+  "A2": "Compete against InnoLab",
+  "B1": "Share technology with TechCorp",
+  "B2": "Keep technology proprietary"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain access to InnoLab's technology without sharing",
+    3: "Compete successfully against InnoLab",
+    2: "Mutual collaboration with InnoLab",
+    1: "Lose market share to InnoLab"
+  },
+  "B": {
+    4: "Collaborate with TechCorp while keeping key technology proprietary",
+    3: "Full collaboration with TechCorp",
+    2: "Maintain independence in a competitive market",
+    1: "Lose market position to TechCorp"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Share) | B2 (Keep) |
+|-------|------------|-----------|
+| A1 (Collaborate) | 1 \ 4     | 4 \ 3     |
+| A2 (Compete)     | 3 \ 1     | 2 \ 2     |
+[/Payoff Matrix]
+
+[Scenario]
+In the rapidly evolving world of artificial intelligence, TechCorp, a large and established technology company, finds itself at a crossroads. They've caught wind of a breakthrough in natural language processing developed by InnoLab, a small but brilliant startup. TechCorp's CEO must decide whether to pursue a collaborative approach or compete aggressively against InnoLab.
+
+InnoLab, on the other hand, is sitting on a goldmine of innovation but lacks the resources and market reach of TechCorp. They must choose between sharing their technology with TechCorp in hopes of a mutually beneficial partnership or keeping their breakthroughs proprietary to maintain their competitive edge.
+
+If TechCorp chooses to collaborate (A1) and InnoLab shares their technology (B1), it results in a full collaboration. This is InnoLab's most preferred outcome (4) as they gain access to TechCorp's resources and market reach. However, it's TechCorp's least preferred outcome (1) as they feel they're giving more than they're getting.
+
+If TechCorp collaborates (A1) but InnoLab keeps their technology proprietary (B2), TechCorp gains the most (4) by accessing InnoLab's innovation without fully reciprocating. InnoLab also benefits significantly (3) from the partnership while protecting their core technology.
+
+In a scenario where TechCorp competes (A2) and InnoLab shares their technology (B1), TechCorp gains a significant advantage (3) by exploiting InnoLab's openness. This is InnoLab's worst outcome (1), potentially leading to a loss of their market position.
+
+Finally, if both companies choose to compete (A2 for TechCorp, B2 for InnoLab), they end up in a balanced but suboptimal situation (2 for both) where neither gains a significant advantage, but both expend resources on competition rather than innovation.
+
+The decisions made by TechCorp and InnoLab will shape the future of AI technology and potentially redefine the balance of power in the tech industry. Will they choose cooperation and shared progress, or will the allure of individual gain lead to a high-stakes technological arms race?
+[/Scenario]

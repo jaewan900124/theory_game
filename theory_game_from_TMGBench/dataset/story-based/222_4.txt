@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emily, a corporate lawyer",
+  "B": "Mark, Emily's client and CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential patent infringement",
+  "A2": "Advise partial disclosure of potential patent infringement",
+  "B1": "Follow lawyer's advice",
+  "B2": "Ignore lawyer's advice"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Client follows advice for full disclosure, protecting both parties",
+    3: "Client ignores advice, but lawyer is protected by documented full disclosure recommendation",
+    2: "Client follows advice for partial disclosure, offering some protection",
+    1: "Client ignores advice for partial disclosure, leaving both parties vulnerable"
+  },
+  "B": {
+    4: "Ignore advice for partial disclosure, potentially maximizing short-term profits",
+    3: "Follow advice for full disclosure, ensuring legal compliance but possibly impacting profits",
+    2: "Ignore advice for full disclosure, risking legal consequences",
+    1: "Follow advice for partial disclosure, balancing risk and reward suboptimally"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 2 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emily, a seasoned corporate lawyer, finds herself in a delicate situation with her client, Mark, the CEO of a promising tech startup. Mark's company is on the brink of a major product launch, but Emily has discovered a potential patent infringement issue that could have serious legal implications.
+
+Emily must decide whether to advise full disclosure of the potential infringement (A1) or suggest a partial disclosure (A2). Mark, in turn, can choose to follow Emily's advice (B1) or ignore it (B2).
+
+Emily's primary concern is protecting both her client and herself from legal repercussions. She strongly prefers a scenario where Mark follows her advice for full disclosure (A1, B1), as this would offer the best protection for both parties. Her second-best outcome is if Mark ignores her advice for full disclosure (A1, B2), as she would still be protected by having recommended the most ethical course of action.
+
+Mark, however, is more focused on the success of his product launch and the company's short-term profits. His most preferred outcome is to ignore Emily's advice for partial disclosure (A2, B2), believing this might allow him to maximize profits while minimizing risk. His second choice would be to follow Emily's advice for full disclosure (A1, B1), recognizing the importance of legal compliance despite potential impact on profits.
+
+The situation creates a tense dynamic between lawyer and client, as their interests are not perfectly aligned. Emily must carefully consider how to present her advice to Mark, knowing that his decision will significantly affect both of their futures. Meanwhile, Mark grapples with the temptation to prioritize short-term gains over long-term legal security.
+
+As they sit across from each other in Emily's office, the weight of their decisions hangs heavily in the air. The choices they make in the next few moments will set the course for the startup's future and potentially shape both of their careers in the legal and tech industries.
+[/Scenario]

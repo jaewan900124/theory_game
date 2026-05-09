@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Blake, Alex's project manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work overtime on the project",
+  "A2": "Maintain regular working hours",
+  "B1": "Provide a performance bonus",
+  "B2": "Withhold the bonus"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive bonus without working overtime",
+    3: "Maintain regular hours without bonus",
+    2: "Work overtime without bonus",
+    1: "Work overtime and receive bonus"
+  },
+  "B": {
+    4: "Alex works overtime with no bonus given",
+    3: "Alex maintains regular hours with no bonus given",
+    2: "Alex receives bonus without working overtime",
+    1: "Alex works overtime and receives bonus"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Bonus)   | B2 (No Bonus) |
+|-------|--------------|---------------|
+| A1 (Overtime) | 1 \ 4 | 4 \ 2 |
+| A2 (Regular)  | 2 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, is working on a critical project for his company. The project deadline is approaching, and his project manager, Blake, is considering ways to ensure its timely completion while managing the budget.
+
+Blake has two options: offer a performance bonus to motivate Alex or withhold the bonus to save costs. Meanwhile, Alex can choose to work overtime to speed up the project or maintain regular working hours.
+
+Alex's ideal scenario would be to receive the bonus without working extra hours (preference 4). He values his work-life balance, so maintaining regular hours without a bonus is his second choice (preference 3). Working overtime without a bonus is less desirable (preference 2), and working overtime even with a bonus is his least preferred option (preference 1) as he highly values his personal time.
+
+Blake, on the other hand, would prefer Alex to work overtime without providing a bonus (preference 4), as this would ensure project completion while minimizing costs. Her second choice would be for Alex to maintain regular hours without a bonus (preference 3), as this at least saves money. Giving Alex a bonus without him working overtime is less desirable (preference 2), and the least preferred option is providing a bonus for overtime work (preference 1) as it's the most expensive option.
+
+The situation creates a complex dynamic where both Alex and Blake must consider each other's potential actions. If Alex works overtime and Blake offers a bonus, Alex receives his least preferred outcome (1) while Blake gets her most preferred (4). If Alex works regular hours and Blake withholds the bonus, they both receive their second-best outcome (3).
+
+This scenario illustrates the tensions between employee welfare, project demands, and budget constraints in a workplace setting. The choices made by Alex and Blake will not only affect the project's outcome but also their working relationship and job satisfaction.
+[/Scenario]

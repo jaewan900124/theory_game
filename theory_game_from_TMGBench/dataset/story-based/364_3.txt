@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Amelia Chen, a geneticist",
+  "B": "Professor Blake Thompson, a bioengineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data openly",
+  "A2": "Keep research data confidential",
+  "B1": "Withhold new technology",
+  "B2": "Collaborate and share technology"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain access to new technology while keeping own research data",
+    3: "Share data openly while others withhold technology",
+    2: "Both parties share data and technology",
+    1: "Keep data confidential while missing out on new technology"
+  },
+  "B": {
+    4: "Gain access to research data while keeping own technology",
+    3: "Withhold technology while others share data openly",
+    2: "Both parties share data and technology",
+    1: "Share technology while others keep data confidential"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 4 \ 4 |
+| A2    | 1 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Amelia Chen, a brilliant geneticist, and Professor Blake Thompson, an innovative bioengineer, are at the forefront of a groundbreaking project to develop a new gene therapy for a rare genetic disorder. Their research has the potential to revolutionize treatment for thousands of patients worldwide.
+
+Dr. Chen has made significant progress in identifying the genetic markers associated with the disorder, while Professor Thompson has developed a cutting-edge delivery system for gene therapies. Both scientists are aware that combining their findings could lead to a major breakthrough, but they are also conscious of the competitive nature of their field and the potential for individual recognition and accolades.
+
+They each face a crucial decision: whether to share their findings openly or keep them confidential. Dr. Chen must decide whether to share her research data (A1) or keep it confidential (A2). Similarly, Professor Thompson must choose between withholding his new technology (B1) or collaborating and sharing it (B2).
+
+Their preferences reflect the complex nature of scientific collaboration and competition. Dr. Chen's ideal scenario would be to gain access to Thompson's new technology while keeping her own research data confidential, allowing her to make the most progress while maintaining a competitive edge. Her least preferred outcome would be to keep her data confidential while missing out on the new technology.
+
+Professor Thompson, on the other hand, would most prefer to gain access to Chen's research data while keeping his own technology under wraps. His least desirable outcome would be to share his technology while Chen keeps her data confidential.
+
+The payoff matrix reflects these preferences, with the highest payoff (4) for each scientist occurring when they receive information from the other while withholding their own. The second-best outcome (3) for each is when they share openly while the other withholds. If both choose to share, they each receive a moderate payoff (2), representing the benefits of collaboration but the loss of individual advantage. The worst outcome (1) for each is when they withhold while the other shares.
+
+As they prepare for a crucial meeting to discuss their project's future, both Dr. Chen and Professor Thompson must weigh the potential benefits of collaboration against the allure of individual success. Their decisions will not only impact their personal careers but also the progress of potentially life-saving research.
+[/Scenario]

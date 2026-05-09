@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly solar panels in the forest",
+  "A2": "Abandon the forest project",
+  "B1": "Support EcoTech's project",
+  "B2": "Oppose EcoTech's project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop solar panels with GreenForest's support",
+    3: "Develop solar panels despite GreenForest's opposition",
+    2: "Abandon the project with mutual agreement",
+    1: "Abandon the project due to GreenForest's opposition"
+  },
+  "B": {
+    4: "EcoTech abandons the project due to GreenForest's opposition",
+    3: "EcoTech develops solar panels with GreenForest's support",
+    2: "EcoTech abandons the project with mutual agreement",
+    1: "EcoTech develops solar panels despite GreenForest's opposition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 3 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush green forest on the outskirts of a bustling city, EcoTech, a sustainable technology company, sees an opportunity to develop innovative eco-friendly solar panels. They believe this project could provide clean energy to the nearby urban area while minimizing environmental impact. However, the local conservation group, GreenForest, is concerned about any development in the forest ecosystem.
+
+EcoTech (A) has two choices: develop the solar panels in the forest (A1) or abandon the project (A2). GreenForest (B) can either support EcoTech's project (B1) or oppose it (B2).
+
+EcoTech's most preferred outcome is to develop the solar panels with GreenForest's support (A1B1, payoff 4), as this would allow them to proceed smoothly and gain positive publicity. Their second preference is to develop the panels despite opposition (A1B2, payoff 3), as they still achieve their goal but face potential public relations challenges. Abandoning the project with mutual agreement (A2B2, payoff 2) is their third choice, while their least preferred outcome is abandoning the project due to opposition (A2B1, payoff 1), as this would be a significant setback for the company.
+
+GreenForest, on the other hand, most prefers that EcoTech abandons the project due to their opposition (A2B1, payoff 4), as this would preserve the forest in its current state. Their second preference is for EcoTech to develop the panels with their support (A1B1, payoff 3), as they could ensure the project adheres to strict environmental standards. The third choice for GreenForest is a mutual agreement to abandon the project (A2B2, payoff 2), while their least preferred outcome is EcoTech developing the panels despite their opposition (A1B2, payoff 1), as this could potentially harm the ecosystem without their input.
+
+The two organizations must now navigate this complex situation, balancing ecological preservation with sustainable energy development. Their decisions will not only impact the local environment but also set a precedent for future collaborations between technology companies and conservation groups in the region.
+[/Scenario]

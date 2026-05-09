@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Emma, a talented but struggling painter",
+  "B": "Marcus, an established art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional, commercially appealing painting",
+  "A2": "Create an innovative, avant-garde masterpiece",
+  "B1": "Maintain traditional art selection for the gallery",
+  "B2": "Take a risk and showcase cutting-edge art"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create conventional art and have it showcased in a cutting-edge gallery",
+    3: "Create avant-garde art and have it displayed in a cutting-edge gallery",
+    2: "Create avant-garde art but have it rejected by a traditional gallery",
+    1: "Create conventional art and have it lost among other traditional pieces"
+  },
+  "B": {
+    4: "Showcase cutting-edge art that includes a commercially appealing piece",
+    3: "Maintain a traditional gallery with a commercially appealing new addition",
+    2: "Take a risk on cutting-edge art that includes an avant-garde masterpiece",
+    1: "Maintain a traditional gallery with no notable new additions"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 4 \ 4 |
+| A2    | 2 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling art scene of a metropolitan city, Emma, a talented but struggling painter, finds herself at a crossroads. She has been working tirelessly on her latest piece, torn between creating a conventional, commercially appealing painting (A1) or pursuing her true passion with an innovative, avant-garde masterpiece (A2).
+
+Across town, Marcus, an established art gallery owner, faces his own dilemma. His gallery has long been known for its traditional art selection, but he's considering taking a risk and showcasing cutting-edge art (B2) instead of maintaining his usual conservative approach (B1).
+
+Emma knows that creating a conventional piece might be safer, but it doesn't excite her artistically. However, if she creates an avant-garde masterpiece, she risks it being rejected by traditional galleries. Her ultimate dream is to have her work showcased in a cutting-edge gallery, especially if she can achieve this with a more conventional piece that still satisfies her artistic integrity.
+
+Marcus, on the other hand, is aware that maintaining his traditional gallery is a safe bet, but he yearns for something more exciting. He's most intrigued by the idea of showcasing cutting-edge art that includes a commercially appealing piece, as this would satisfy both his desire for innovation and his business acumen.
+
+If Emma chooses to create a conventional piece (A1) and Marcus maintains his traditional gallery (B1), both will find themselves in their least preferred scenario (1\1). Emma's work will be lost among other traditional pieces, and Marcus's gallery will lack any notable new additions.
+
+However, if Emma creates her conventional piece (A1) and Marcus decides to take a risk with cutting-edge art (B2), they both achieve their most preferred outcome (4\4). Emma's commercially appealing work stands out in the innovative setting, while Marcus successfully showcases cutting-edge art that includes a commercially viable piece.
+
+If Emma opts for her avant-garde masterpiece (A2) and Marcus sticks to his traditional gallery (B1), Emma will find her work rejected by the conventional setting, but it's not her worst-case scenario (2\3). Marcus, meanwhile, maintains a traditional gallery but with an intriguing new addition, which he finds somewhat satisfying.
+
+Lastly, if Emma creates her avant-garde piece (A2) and Marcus chooses to showcase cutting-edge art (B2), Emma will be pleased to have her work in an innovative gallery, though she would have preferred this outcome with a more conventional piece (3\2). Marcus takes a risk on cutting-edge art that includes an avant-garde masterpiece, which is exciting but not as commercially viable as he'd hoped.
+
+As Emma puts the finishing touches on her canvas and Marcus prepares for his next exhibition, their decisions will shape not only their individual futures but also the landscape of the city's art scene.
+[/Scenario]

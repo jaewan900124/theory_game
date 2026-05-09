@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a cloud-based solution",
+  "A2": "Develop an on-premise solution",
+  "B1": "Design custom hardware",
+  "B2": "Use off-the-shelf components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Cloud-based solution with off-the-shelf components",
+    3: "On-premise solution with custom hardware",
+    2: "On-premise solution with off-the-shelf components",
+    1: "Cloud-based solution with custom hardware"
+  },
+  "B": {
+    4: "Cloud-based solution with custom hardware",
+    3: "Cloud-based solution with off-the-shelf components",
+    2: "On-premise solution with custom hardware",
+    1: "On-premise solution with off-the-shelf components"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Custom)    | B2 (Off-shelf) |
+|-------|----------------|----------------|
+| A1 (Cloud)    | 1 \ 4         | 4 \ 3         |
+| A2 (On-premise)| 3 \ 2         | 2 \ 1         |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a tech startup developing a new smart home system. They need to make crucial decisions about the software and hardware components of their product.
+
+Alex, the software developer, is considering two options: developing a cloud-based solution (A1) or an on-premise solution (A2). The cloud-based solution would offer more flexibility and easier updates, but it might have higher ongoing costs. The on-premise solution would provide more control over data but could be more challenging to maintain and update.
+
+Blake, the hardware engineer, is deciding between designing custom hardware (B1) or using off-the-shelf components (B2). Custom hardware could offer better performance and unique features but would be more expensive and time-consuming to develop. Off-the-shelf components would be cheaper and faster to implement but might limit the product's capabilities.
+
+Their preferences differ based on their expertise and vision for the product:
+
+Alex prefers a cloud-based solution with off-the-shelf components (A1B2) the most, as it allows for rapid development and easy scalability. His least preferred option is a cloud-based solution with custom hardware (A1B1), as he believes it unnecessarily complicates the system.
+
+Blake, on the other hand, favors a cloud-based solution with custom hardware (A1B1) the most, as it would showcase his engineering skills and provide the best performance. His least preferred option is an on-premise solution with off-the-shelf components (A2B2), which he sees as limiting the product's potential.
+
+The payoff matrix reflects their preferences, with each number representing the degree of satisfaction for each scenario (4 being the highest and 1 the lowest).
+
+As they discuss their options, they realize that their individual preferences might not align perfectly. They must find a way to collaborate and make a decision that balances their expertise, the company's resources, and the product's potential for success in the competitive smart home market.
+[/Scenario]

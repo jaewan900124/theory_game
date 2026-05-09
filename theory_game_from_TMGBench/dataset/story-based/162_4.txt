@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new integrated health care system",
+  "A2": "Maintain the current fragmented system",
+  "B1": "Join the integrated health care network",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain current system while Dr. Johnson joins network",
+    3: "Implement new system while Dr. Johnson remains independent",
+    2: "Implement new system with Dr. Johnson joining",
+    1: "Maintain current system with Dr. Johnson remaining independent"
+  },
+  "B": {
+    4: "Join network while current system is maintained",
+    3: "Remain independent while new system is implemented",
+    2: "Remain independent while current system is maintained",
+    1: "Join network while new system is implemented"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Join) | B2 (Remain) |
+|-------|-----------|-------------|
+| A1 (Implement) | 1 \ 1     | 2 \ 3       |
+| A2 (Maintain)  | 3 \ 4     | 4 \ 2       |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, the local health care landscape is at a crossroads. Dr. Sarah Chen, the administrator of the city's main hospital, is considering implementing a new integrated health care system that would streamline patient care and reduce costs. However, the success of this system largely depends on the participation of local private practice physicians.
+
+Dr. Mark Johnson, a respected private practice physician, finds himself in a dilemma. He values his independence but also recognizes the potential benefits of joining a larger network.
+
+Dr. Chen's choices are to either implement the new integrated system (A1) or maintain the current fragmented system (A2). Dr. Johnson must decide whether to join the integrated network (B1) or remain independent (B2).
+
+Dr. Chen's most preferred outcome is to maintain the current system while Dr. Johnson joins the network (A2, B1), as this would allow her to benefit from Dr. Johnson's participation without the costs and risks of implementing a new system. Her least preferred outcome is implementing the new system while Dr. Johnson remains independent (A1, B1), as this would be costly and potentially unsuccessful without key physician participation.
+
+Dr. Johnson, on the other hand, most prefers to join the network while the current system is maintained (A2, B1), as this would give him the benefits of network participation without significant changes to his practice. His least preferred outcome is joining the network while the new system is implemented (A1, B1), as this would require the most adaptation and potential loss of autonomy.
+
+The scenario creates a complex decision-making process where both parties must consider not only their own preferences but also anticipate the other's actions. The outcome will significantly impact the future of health care delivery in their community, affecting both medical professionals and patients alike.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Collins, a clinical psychologist",
+  "B": "Alex Thompson, her patient with anxiety disorder"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional therapy methods",
+  "A2": "Implement an experimental therapy approach",
+  "B1": "Fully engage in the therapy process",
+  "B2": "Resist therapy and maintain current coping mechanisms"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Patient improves significantly with traditional methods",
+    3: "Patient shows moderate improvement with experimental approach",
+    2: "Patient shows minimal improvement with experimental approach",
+    1: "Patient doesn't improve with traditional methods"
+  },
+  "B": {
+    4: "Overcome anxiety without changing current lifestyle",
+    3: "Reduce anxiety through gradual lifestyle changes",
+    2: "Minimal anxiety reduction with significant lifestyle changes",
+    1: "No improvement in anxiety despite major lifestyle changes"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 1 |
+| A2    | 3 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Collins, a respected clinical psychologist, faces a challenging case with her new patient, Alex Thompson, who suffers from severe anxiety disorder. Emma must decide between using traditional therapy methods (A1) or implementing an experimental therapy approach (A2). Meanwhile, Alex can choose to fully engage in the therapy process (B1) or resist therapy and maintain his current coping mechanisms (B2).
+
+Emma's primary goal is to help Alex overcome his anxiety, but she also considers the broader implications for her research and professional reputation. She prefers scenarios where Alex shows significant improvement, especially if it validates her chosen method.
+
+Alex, on the other hand, wants to overcome his anxiety but is hesitant about making major changes to his lifestyle. He prefers scenarios where he can improve without disrupting his current routines and coping mechanisms.
+
+If Emma chooses traditional methods (A1) and Alex fully engages (B1), Alex might overcome his anxiety without significant lifestyle changes, which is ideal for him (4) but less satisfying for Emma professionally (1). If Emma uses traditional methods (A1) and Alex resists (B2), Emma might see this as a validation of her expertise (4), while Alex experiences no improvement (1).
+
+If Emma implements the experimental approach (A2) and Alex engages (B1), both might see moderate improvement and satisfaction (3,3). However, if Emma chooses the experimental approach (A2) and Alex resists (B2), both might experience minimal benefits and disappointment (2,2).
+
+The outcome of their therapy sessions depends on how well Emma and Alex can align their strategies and cooperate, balancing professional goals with personal well-being.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a commuter who lives in the suburbs",
+  "B": "Blake, the city's transportation department manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use public transportation",
+  "A2": "Drive personal car",
+  "B1": "Invest in public transportation",
+  "B2": "Expand road infrastructure"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Drive personal car on expanded roads",
+    3: "Use improved public transportation",
+    2: "Drive personal car with current road infrastructure",
+    1: "Use current public transportation"
+  },
+  "B": {
+    4: "Commuters use improved public transportation",
+    3: "Commuters drive on current roads",
+    2: "Commuters drive on expanded roads",
+    1: "Commuters use current public transportation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 1 |
+| A2    | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a growing suburban city, Alex, a daily commuter, and Blake, the city's transportation department manager, face a dilemma regarding the future of the city's transportation system.
+
+Alex, like many suburban residents, has to decide between using public transportation or driving his personal car to work. His preference is to drive, especially if the roads are expanded, as it offers him the most convenience and flexibility. However, he would consider using public transportation if significant improvements were made to the system.
+
+Blake, on the other hand, is responsible for managing the city's transportation budget and infrastructure. She must decide whether to invest in improving public transportation or expanding the road infrastructure. Blake's primary goal is to reduce traffic congestion and promote sustainable transportation options.
+
+The city can only afford to implement one major transportation project, so Blake must choose wisely. If she invests in public transportation and Alex (representing the majority of commuters) decides to use it, this would be the best outcome for the city (4 for Blake). However, if Blake improves public transportation and Alex still chooses to drive, it would result in underutilized public resources and continued traffic congestion (3 for Alex, 1 for Blake).
+
+If Blake decides to expand road infrastructure and Alex drives, it would be Alex's preferred outcome (4 for Alex) but not ideal for the city's long-term sustainability goals (2 for Blake). If Blake expands roads but Alex opts for public transportation, it would be a suboptimal use of resources for both parties (3 for Alex, 1 for Blake).
+
+The most challenging scenario for both is if Blake invests in public transportation, but it remains in its current state due to budget constraints, and Alex continues to use it despite its inefficiencies (1 for Alex, 4 for Blake). This situation might arise if there's a strong push for public transportation use without sufficient improvements to the system.
+
+Alex and Blake must now consider their options carefully, knowing that their decisions will impact not only themselves but the entire community's transportation future.
+[/Scenario]

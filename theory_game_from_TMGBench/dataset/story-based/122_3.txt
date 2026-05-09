@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a freelance graphic designer",
+  "B": "Bailey, a small business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deliver a standard design",
+  "A2": "Create a premium, time-consuming design",
+  "B1": "Pay the full agreed price",
+  "B2": "Negotiate for a lower price"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a premium design and receive full payment",
+    3: "Deliver a standard design and receive full payment",
+    2: "Deliver a standard design and accept a lower price",
+    1: "Create a premium design but receive a lower payment"
+  },
+  "B": {
+    4: "Receive a standard design and pay the full price",
+    3: "Receive a premium design and negotiate a lower price",
+    2: "Receive a premium design and pay the full price",
+    1: "Receive a standard design and negotiate a lower price"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 3 |
+| A2    | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented freelance graphic designer, has been hired by Bailey, a small business owner, to create a new logo for Bailey's company. They've agreed on a price, but haven't specified the exact quality of the design. Now, both Alex and Bailey face a decision that will affect their interaction and the outcome of the project.
+
+Alex has two choices: deliver a standard design (A1) that meets the basic requirements but doesn't push creative boundaries, or create a premium, time-consuming design (A2) that showcases his best work but requires significantly more effort.
+
+Bailey, on the other hand, can choose to pay the full agreed price (B1) or attempt to negotiate for a lower price (B2) once the design is delivered.
+
+Alex's ideal scenario is to create a premium design and receive full payment (4), as it allows him to showcase his skills and be fairly compensated. His least preferred outcome is to put in extra effort for a premium design but receive a lower payment (1).
+
+Bailey prefers to receive a standard design and pay the full price (4), as it meets her needs without extra cost. Her least desired outcome is to receive a standard design and still try to negotiate a lower price (1), as it might damage the relationship with Alex without gaining any additional value.
+
+If Alex delivers a standard design (A1) and Bailey pays the full price (B1), Alex feels satisfied but not thrilled (2), while Bailey is perfectly happy (4). If Bailey tries to negotiate a lower price for the standard design (B2), Alex actually prefers this slightly (3) as he can justify not putting in extra effort, while Bailey finds this acceptable but not ideal (3).
+
+In the case where Alex creates a premium design (A2) and Bailey pays the full price (B1), Alex is disappointed (1) because the extra effort isn't reflected in the payment, and Bailey feels she's overpaying (1). However, if Bailey negotiates a lower price for the premium design (B2), Alex is thrilled with the outcome (4) as his work is appreciated, while Bailey is satisfied but feels she could have gotten a better deal (2).
+
+As they both consider their options, Alex and Bailey must weigh their personal preferences against the potential reactions of the other party, creating a complex dynamic of cooperation and competition in their business interaction.
+[/Scenario]

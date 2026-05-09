@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "EcoTech, a renewable energy company",
+  "B": "ForestGuard, a conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop solar farms in cleared forest areas",
+  "A2": "Invest in vertical urban solar panels",
+  "B1": "Allow limited forest clearing for solar farms",
+  "B2": "Oppose any forest clearing for energy projects"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Invest in vertical urban solar panels while ForestGuard opposes forest clearing",
+    3: "Develop solar farms in cleared forest areas while ForestGuard allows limited clearing",
+    2: "Develop solar farms in cleared forest areas while ForestGuard allows limited clearing",
+    1: "Invest in vertical urban solar panels while ForestGuard allows limited forest clearing"
+  },
+  "B": {
+    4: "EcoTech develops solar farms in cleared areas while ForestGuard allows limited clearing",
+    3: "EcoTech invests in vertical urban solar panels while ForestGuard opposes forest clearing",
+    2: "EcoTech invests in vertical urban solar panels while ForestGuard allows limited clearing",
+    1: "EcoTech develops solar farms in cleared areas while ForestGuard opposes forest clearing"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 2 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a rapidly developing region, EcoTech, a renewable energy company, and ForestGuard, a conservation organization, find themselves at a crossroads. The local government has tasked them with collaborating on a sustainable energy project that balances environmental preservation with clean energy production.
+
+EcoTech has two options: develop solar farms in cleared forest areas (A1) or invest in vertical urban solar panels (A2). ForestGuard can either allow limited forest clearing for solar farms (B1) or oppose any forest clearing for energy projects (B2).
+
+EcoTech's most preferred outcome is to invest in vertical urban solar panels while ForestGuard opposes forest clearing (A2B2). This scenario allows them to showcase innovative technology and maintain a positive public image. Their second choice is to develop solar farms in cleared areas with ForestGuard's limited approval (A1B1), as it provides ample space for energy production. Their least preferred option is investing in vertical urban panels while ForestGuard allows forest clearing (A2B1), as it doesn't maximize their potential and may seem like a missed opportunity.
+
+ForestGuard's top preference is for EcoTech to develop solar farms in cleared areas while they allow limited clearing (A1B1). This balances their conservation efforts with practical energy needs. Their second choice is EcoTech investing in vertical urban panels while they oppose forest clearing (A2B2), as it fully protects the forest but may not be as efficient for energy production. Their least desired outcome is EcoTech developing solar farms while they oppose clearing (A1B2), as it creates the most conflict and potential for environmental damage.
+
+The two organizations must navigate these choices, considering their own preferences and the potential for cooperation or competition. Their decisions will shape the future of both renewable energy implementation and forest conservation in the region, highlighting the delicate balance between ecological preservation and sustainable development.
+[/Scenario]

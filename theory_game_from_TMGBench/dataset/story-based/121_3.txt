@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Hawke",
+  "B": "Admiral Storm"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Launch a land assault",
+  "A2": "Hold position and fortify",
+  "B1": "Conduct naval bombardment",
+  "B2": "Deploy amphibious forces"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Hold position while enemy deploys amphibious forces",
+    3: "Launch land assault during enemy's amphibious deployment",
+    2: "Launch land assault during naval bombardment",
+    1: "Hold position during naval bombardment"
+  },
+  "B": {
+    4: "Conduct naval bombardment during enemy's land assault",
+    3: "Deploy amphibious forces during enemy's land assault",
+    2: "Conduct naval bombardment while enemy holds position",
+    1: "Deploy amphibious forces while enemy holds position"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 3 |
+| A2    | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Hawke of the land forces and Admiral Storm of the naval fleet face a critical decision that could determine the outcome of the conflict. Their choices will shape the course of the battle and potentially the war itself.
+
+General Hawke, commanding the land forces, must decide whether to launch a daring land assault (A1) or hold position and fortify their defenses (A2). Each choice carries significant risks and potential rewards.
+
+Admiral Storm, leading the naval fleet, must choose between conducting a naval bombardment (B1) or deploying amphibious forces (B2). The success of the naval strategy could greatly influence the battle's outcome.
+
+General Hawke's ideal scenario is to hold position while Admiral Storm deploys amphibious forces, allowing Hawke to repel the invasion from a fortified position. His least preferred outcome is holding position during a naval bombardment, leaving his forces vulnerable without engaging the enemy.
+
+Admiral Storm, on the other hand, would prefer to conduct a naval bombardment while General Hawke launches a land assault, maximizing damage to the enemy forces. His least desired outcome is deploying amphibious forces while Hawke's troops are fortified and ready to repel the invasion.
+
+The tension mounts as both leaders consider their options, knowing that their decisions will have far-reaching consequences. They must anticipate each other's moves and make choices that best serve their strategic interests while potentially outmaneuvering their opponent.
+
+As they prepare to give their orders, both General Hawke and Admiral Storm are acutely aware that the fate of their forces and the outcome of the battle hang in the balance. The question remains: will they choose cooperation or competition in this high-stakes military engagement?
+[/Scenario]

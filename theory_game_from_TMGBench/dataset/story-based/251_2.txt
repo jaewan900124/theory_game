@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Alexander",
+  "B": "Admiral Beatrice"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops to coastal areas",
+  "A2": "Fortify inland positions",
+  "B1": "Launch naval blockade",
+  "B2": "Conduct amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Troops deployed to coast, enemy conducts amphibious assault",
+    3: "Troops deployed to coast, enemy launches naval blockade",
+    2: "Fortify inland, enemy launches naval blockade",
+    1: "Fortify inland, enemy conducts amphibious assault"
+  },
+  "B": {
+    4: "Enemy deploys to coast, launch naval blockade",
+    3: "Enemy deploys to coast, conduct amphibious assault",
+    2: "Enemy fortifies inland, launch naval blockade",
+    1: "Enemy fortifies inland, conduct amphibious assault"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 2 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense geopolitical standoff, two military leaders find themselves at the crossroads of a critical decision. General Alexander, commander of the land forces, and Admiral Beatrice, leader of the naval fleet, must each make a strategic choice that will determine the fate of their nation.
+
+General Alexander faces a dilemma: should he deploy his troops to coastal areas (A1) to defend against a potential sea-based attack, or fortify inland positions (A2) to protect vital infrastructure and resources? Meanwhile, Admiral Beatrice must decide between launching a naval blockade (B1) to cut off enemy supply lines or conducting a risky amphibious assault (B2) to gain a foothold on enemy territory.
+
+Both leaders have their preferences based on the potential outcomes:
+
+General Alexander's ideal scenario is to have his troops deployed along the coast when Admiral Beatrice attempts an amphibious assault, as this would give him the best chance to repel the attack and potentially deal a decisive blow to the enemy forces. His second-best option is to have coastal defenses in place while facing a naval blockade, which would at least allow him to maintain a strong defensive position.
+
+Admiral Beatrice, on the other hand, would prefer to implement a naval blockade while General Alexander's forces are deployed to the coast, as this would effectively trap the enemy troops and cut off their supplies. Her second choice would be to conduct an amphibious assault against coastal defenses, which, although riskier, could lead to a significant strategic advantage if successful.
+
+Both leaders consider fortifying inland positions as a less desirable option, as it leaves the coast vulnerable. However, if forced to choose, they would prefer to face a naval blockade in this scenario rather than an amphibious assault, which could be disastrous against unprepared inland defenses.
+
+The payoff matrix reflects these preferences, with each leader trying to maximize their strategic advantage while anticipating the other's move. The outcome of this military standoff hangs in the balance, dependent on the choices made by these two seasoned commanders.
+[/Scenario]

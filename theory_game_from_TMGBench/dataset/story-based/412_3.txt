@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a microbiologist",
+  "B": "Dr. James Lee, a geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on traditional antibiotic research",
+  "A2": "Explore innovative phage therapy",
+  "B1": "Concentrate on gene editing techniques",
+  "B2": "Investigate antibiotic resistance mechanisms"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successful phage therapy research with minimal competition",
+    3: "Traditional antibiotic research with support from gene editing",
+    2: "Phage therapy research with competition from antibiotic resistance studies",
+    1: "Traditional antibiotic research with competition from gene editing"
+  },
+  "B": {
+    4: "Antibiotic resistance research supported by traditional antibiotic studies",
+    3: "Gene editing research complemented by traditional antibiotic studies",
+    2: "Gene editing research with competition from phage therapy",
+    1: "Antibiotic resistance research competing with innovative phage therapy"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 3 \ 4 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious microbiology research institute, Dr. Emma Chen and Dr. James Lee find themselves at a crossroads in their research paths. Both scientists are working on solving the growing problem of antibiotic resistance, but they have different approaches and must decide how to allocate their limited resources.
+
+Dr. Chen, a microbiologist with a background in antibiotics, is torn between continuing her work on traditional antibiotic research (A1) and exploring the promising field of phage therapy (A2). Traditional research is safer and more familiar, but phage therapy could be groundbreaking if successful.
+
+Dr. Lee, a geneticist, is deciding between focusing on gene editing techniques to modify bacterial DNA (B1) or investigating the mechanisms of antibiotic resistance (B2). Gene editing is his area of expertise, but understanding resistance mechanisms could have a more immediate impact on the field.
+
+Their choices will not only affect their own research but also influence each other's work and the overall progress in combating antibiotic resistance.
+
+If both scientists stick to their traditional areas (A1, B1), Dr. Chen will struggle to make significant progress in the saturated field of antibiotics, while Dr. Lee's gene editing research will benefit from the established antibiotic knowledge.
+
+If Dr. Chen focuses on traditional antibiotics and Dr. Lee investigates resistance mechanisms (A1, B2), both will make steady progress, with Dr. Lee's work directly complementing Dr. Chen's research.
+
+If Dr. Chen pursues phage therapy while Dr. Lee concentrates on gene editing (A2, B1), they will both face challenges in their innovative approaches but avoid direct competition.
+
+The most polarizing scenario occurs if Dr. Chen explores phage therapy and Dr. Lee studies antibiotic resistance (A2, B2). This combination could lead to a breakthrough in phage therapy for Dr. Chen, but Dr. Lee's research on antibiotic resistance might become less relevant if phage therapy proves successful.
+
+As they prepare to submit their research proposals, both scientists must carefully consider their options, weighing the potential for groundbreaking discoveries against the risks of pursuing less conventional research paths.
+[/Scenario]

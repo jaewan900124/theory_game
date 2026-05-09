@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "General Alexander",
+  "B": "Admiral Beatrice"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops to the border",
+  "A2": "Launch a surprise naval attack",
+  "B1": "Strengthen coastal defenses",
+  "B2": "Send fleet for a preemptive strike"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch a successful naval attack while enemy is unprepared",
+    3: "Launch a naval attack against strengthened coastal defenses",
+    2: "Both sides maintain current positions",
+    1: "Deploy troops while enemy launches preemptive strike"
+  },
+  "B": {
+    4: "Launch preemptive strike against enemy's border deployment",
+    3: "Both sides engage in offensive actions",
+    2: "Both sides maintain current positions",
+    1: "Strengthen defenses while enemy launches surprise attack"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 1 \ 4 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense geopolitical climate, two neighboring nations find themselves on the brink of conflict. General Alexander, the land forces commander of Country A, and Admiral Beatrice, the naval chief of Country B, must make critical decisions that will shape the course of the impending war.
+
+General Alexander faces a choice between deploying troops to the border (A1) or launching a surprise naval attack (A2). Meanwhile, Admiral Beatrice must decide whether to strengthen coastal defenses (B1) or send the fleet for a preemptive strike (B2).
+
+Both leaders prefer offensive actions that catch the enemy off-guard, but they also recognize the value of a strong defense. General Alexander's ideal scenario is to launch a successful naval attack while the enemy is unprepared, giving him the highest payoff of 4. His least preferred outcome is deploying troops to the border while facing a preemptive strike from Admiral Beatrice, resulting in a payoff of 1.
+
+Admiral Beatrice, on the other hand, would most prefer to launch a preemptive strike against Alexander's border deployment, earning her a payoff of 4. Her worst-case scenario is strengthening defenses while Alexander launches a surprise naval attack, leaving her with a payoff of 1.
+
+If both leaders choose to maintain their current positions (A1, B1), they each receive a payoff of 2, representing a cautious stalemate. However, if both decide to launch offensive actions (A2, B2), they engage in a high-stakes confrontation where Alexander slightly edges out Beatrice with payoffs of 4 and 3, respectively.
+
+As tensions mount and intelligence reports flood in, General Alexander and Admiral Beatrice must carefully weigh their options, considering not only their own preferred outcomes but also anticipating the other's moves. Their decisions will determine the fate of their nations and the balance of power in the region.
+[/Scenario]

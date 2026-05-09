@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, CEO of a tech startup",
+  "B": "Mark, CEO of a larger tech company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint project",
+  "A2": "Develop a competing product",
+  "B1": "Collaborate on a joint project",
+  "B2": "Attempt to acquire Sarah's startup"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop a competing product successfully while avoiding acquisition",
+    3: "Collaborate on a successful joint project",
+    2: "Develop a competing product but face tough competition",
+    1: "Collaborate on a project that benefits the larger company more"
+  },
+  "B": {
+    4: "Successfully collaborate on a joint project",
+    3: "Acquire Sarah's startup",
+    2: "Attempt acquisition but face a competing product",
+    1: "Fail to acquire or collaborate, facing new competition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 3 |
+| A2    | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling tech industry of Silicon Valley, Sarah, the ambitious CEO of a promising startup, finds herself at a crossroads. Her company has developed a groundbreaking AI algorithm that has caught the attention of Mark, the CEO of a larger, well-established tech company.
+
+Mark sees potential in Sarah's technology and proposes two options: a collaboration on a joint project to integrate their technologies or an attempt to acquire Sarah's startup outright. Sarah, valuing her company's independence, considers these options while also contemplating the development of a competing product using their proprietary algorithm.
+
+Sarah's ideal scenario (preference 4) is to develop a competing product successfully while maintaining her company's independence. However, she recognizes the potential benefits of collaboration (preference 3) if it leads to a mutually beneficial outcome. Her least preferred option (preference 1) is a collaboration that disproportionately benefits Mark's company.
+
+Mark, on the other hand, sees the greatest value in a successful collaboration (preference 4), which would allow his company to integrate Sarah's innovative technology without the complexities of an acquisition. His second choice (preference 3) is to acquire Sarah's startup, bringing the technology fully under his control. His least desired outcome (preference 1) is failing to secure either a collaboration or acquisition, potentially facing new competition in the market.
+
+If they both choose to collaborate (A1, B1), it results in a moderately positive outcome for Sarah (3) and the best outcome for Mark (4). If Sarah agrees to collaborate but Mark attempts to acquire (A1, B2), it leads to Sarah's least preferred outcome (1) but is still beneficial for Mark (3).
+
+Should Sarah decide to develop a competing product while Mark seeks collaboration (A2, B1), it results in a suboptimal outcome for Sarah (2) due to tough competition and the worst outcome for Mark (1). However, if Sarah develops a competing product while Mark attempts to acquire (A2, B2), it leads to Sarah's most preferred outcome (4) but a less favorable result for Mark (2).
+
+As both CEOs contemplate their decisions, they must consider not only their own preferences but also anticipate the other's choice, knowing that their decisions will significantly impact the future of both companies in the competitive tech landscape.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Sarah, a carpooling app user",
+  "B": "Mark, another carpooling app user"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Sarah chooses to carpool",
+  "A2": "Sarah chooses to drive alone",
+  "B1": "Mark chooses to drive alone",
+  "B2": "Mark chooses to carpool"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both carpool, sharing costs and reducing traffic",
+    3: "Sarah carpools, Mark drives alone, moderate cost savings",
+    2: "Both drive alone, normal commute",
+    1: "Sarah drives alone, Mark carpools, no benefits for Sarah"
+  },
+  "B": {
+    4: "Both carpool, sharing costs and reducing traffic",
+    3: "Mark drives alone, Sarah carpools, no extra effort for Mark",
+    2: "Both drive alone, normal commute",
+    1: "Mark carpools, Sarah drives alone, no benefits for Mark"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Drive alone) | B2 (Carpool) |
+|-------|-------------------|--------------|
+| A1 (Carpool) | 3 \ 3           | 4 \ 4        |
+| A2 (Drive alone) | 2 \ 2           | 1 \ 1        |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah and Mark are two professionals working in the same office complex in a bustling city. They live in the same suburban neighborhood but don't know each other personally. Both have recently downloaded a new carpooling app that matches commuters for shared rides.
+
+Each morning, Sarah and Mark independently decide whether to use the app to carpool or drive alone. Their choices lead to four possible scenarios:
+
+1. If both choose to carpool (A1, B2), they match on the app and share a ride. This results in the best outcome (4,4) as they both save on fuel costs, reduce their carbon footprint, and potentially form a new social connection.
+
+2. If Sarah chooses to carpool but Mark drives alone (A1, B1), Sarah might match with another carpooler, still gaining some benefits, while Mark has a normal commute (3,3).
+
+3. If Mark chooses to carpool but Sarah drives alone (A2, B2), Mark might match with another carpooler, still gaining some benefits, while Sarah has a normal commute (1,1).
+
+4. If both choose to drive alone (A2, B1), they both experience a normal commute with no additional benefits or drawbacks (2,2).
+
+The challenge lies in the fact that neither knows what the other will choose on any given day. The ideal outcome requires both to cooperate by choosing to carpool, but there's always the temptation to "free ride" by hoping the other will carpool while enjoying the flexibility of driving alone.
+
+This scenario demonstrates how individual choices in transportation can lead to different societal and personal outcomes, highlighting the importance of cooperation in achieving optimal results for traffic reduction and environmental benefits.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Davis"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the infrastructure bill",
+  "A2": "Oppose the infrastructure bill",
+  "B1": "Endorse Senator Thompson's re-election campaign",
+  "B2": "Remain neutral in the senatorial race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Bill passes with Governor's endorsement",
+    3: "Bill passes without Governor's endorsement",
+    2: "Bill fails with Governor's endorsement",
+    1: "Bill fails without Governor's endorsement",
+  },
+  "B": {
+    4: "Senator supports bill and receives endorsement",
+    3: "Senator opposes bill and Governor remains neutral",
+    2: "Both support bill without endorsement",
+    1: "Senator supports bill but Governor remains neutral"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 1 |
+| A2    | 2 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling state capital, Senator Sarah Thompson and Governor Mark Davis find themselves at a critical juncture in their political careers. A controversial infrastructure bill is on the table, and their decisions could shape not only the state's future but also their own political fortunes.
+
+Senator Thompson, up for re-election, must decide whether to support or oppose the infrastructure bill. The bill promises significant improvements to the state's roads, bridges, and public transportation, but it comes with a hefty price tag that could alienate fiscally conservative voters.
+
+Governor Davis, on the other hand, holds a powerful card: his endorsement in the upcoming senatorial race. He must choose whether to endorse Senator Thompson's re-election campaign or remain neutral.
+
+Senator Thompson's ideal scenario (preference 4) is to see the bill pass while securing the Governor's endorsement, boosting both her legislative achievement and re-election prospects. Her second-best outcome (preference 3) is still getting the bill passed, even without the Governor's endorsement. She least prefers (preference 1) the situation where the bill fails and she doesn't receive the Governor's endorsement.
+
+Governor Davis, however, has different priorities. His most preferred outcome (preference 4) is to see the Senator support the bill while he endorses her campaign, allowing him to claim credit for both the infrastructure improvements and backing a successful candidate. His least preferred scenario (preference 1) is endorsing the Senator if she supports the bill, as this could be seen as political quid pro quo.
+
+If Senator Thompson supports the bill (A1) and Governor Davis endorses her (B1), they achieve a mutually beneficial outcome (3,4). However, if the Senator supports the bill (A1) but the Governor remains neutral (B2), the Senator still gets her preferred outcome, but the Governor faces his least preferred scenario (4,1).
+
+If the Senator opposes the bill (A2) and the Governor endorses her (B1), both face a suboptimal outcome (2,2). If the Senator opposes the bill (A2) and the Governor remains neutral (B2), the Governor achieves his third-best outcome, while the Senator faces her second-worst scenario (1,3).
+
+As they weigh their options, both politicians must consider not only their immediate goals but also the long-term implications of their choices on their political careers and the state's future. The tension builds as they approach the deadline for their decisions, knowing that their choices will have far-reaching consequences in this high-stakes political game.
+[/Scenario]

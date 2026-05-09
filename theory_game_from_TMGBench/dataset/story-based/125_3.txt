@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Shoot the ball",
+  "B1": "Set a screen",
+  "B2": "Call for the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Shoot and score",
+    3: "Pass and teammate scores",
+    2: "Pass and teammate misses",
+    1: "Shoot and miss"
+  },
+  "B": {
+    4: "Receive pass and score",
+    3: "Set screen and teammate scores",
+    2: "Set screen and teammate misses",
+    1: "Call for ball but don't receive it"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set screen) | B2 (Call for ball) |
+|-------|-----------------|---------------------|
+| A1 (Pass) | 2 \ 4           | 3 \ 1               |
+| A2 (Shoot) | 1 \ 3           | 4 \ 2               |
+[/Payoff Matrix]
+
+[Scenario]
+In the final seconds of a crucial basketball game, teammates Alex and Blake find themselves in a high-stakes situation. Their team is down by one point, and they have one last chance to win the game.
+
+Alex, known for his shooting skills, has the ball. He has two choices: pass the ball to Blake or take the shot himself. Blake, equally talented but in a different position, can either set a screen for Alex or call for the ball.
+
+Alex's preference is to shoot and score (4), but he also values a successful pass that leads to a score (3). He's less satisfied with a pass that results in a miss (2) and least happy with taking a shot and missing (1).
+
+Blake prefers receiving a pass and scoring (4), followed by setting a screen that helps Alex score (3). He's less content with setting a screen that doesn't result in a score (2) and least satisfied with calling for the ball but not receiving it (1).
+
+The payoff matrix reflects their preferences in different scenarios:
+
+1. If Alex passes (A1) and Blake sets a screen (B1), Alex gets his third preference (2) while Blake gets his top preference (4). This represents Blake receiving the pass after setting a screen and scoring.
+
+2. If Alex passes (A1) and Blake calls for the ball (B2), Alex gets his second preference (3) as the pass is successful, but Blake gets his least preferred outcome (1) as he called for the ball but didn't receive it.
+
+3. If Alex shoots (A2) and Blake sets a screen (B1), Alex gets his least preferred outcome (1) as he misses the shot, while Blake gets his third preference (3) for setting a useful screen.
+
+4. If Alex shoots (A2) and Blake calls for the ball (B2), Alex gets his top preference (4) by making the shot, while Blake gets his second preference (2) as the team scores but he didn't directly contribute.
+
+This scenario highlights the complex dynamics of teamwork and individual ambition in sports, where players must balance personal glory with team success.
+[/Scenario]

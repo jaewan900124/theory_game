@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a microbiologist",
+  "B": "Dr. Alex Rodriguez, a geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual research",
+  "A2": "Collaborate on joint project",
+  "B1": "Share research findings",
+  "B2": "Withhold research findings"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Sole credit for groundbreaking discovery",
+    3: "Shared credit for significant breakthrough",
+    2: "Minor progress in individual research",
+    1: "No progress due to lack of crucial information"
+  },
+  "B": {
+    4: "Exclusive access to crucial information",
+    3: "Shared credit for significant breakthrough",
+    2: "Minor contribution to joint project",
+    1: "Missed opportunity for recognition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Share)    | B2 (Withhold) |
+|-------|---------------|---------------|
+| A1 (Individual) | 1 \ 4         | 4 \ 1         |
+| A2 (Collaborate) | 2 \ 3         | 3 \ 2         |
+[/Payoff Matrix]
+
+[Scenario]
+In a cutting-edge research facility, Dr. Emma Chen, a brilliant microbiologist, and Dr. Alex Rodriguez, a renowned geneticist, are both working on projects related to a newly discovered microorganism with potential applications in medicine and biotechnology. Their research paths have unexpectedly intersected, presenting them with a dilemma that could shape their careers and the future of their field.
+
+Dr. Chen has been focusing on the microorganism's unique metabolic processes, while Dr. Rodriguez has made significant progress in understanding its genetic makeup. Both scientists realize that combining their knowledge could lead to a groundbreaking discovery. However, they also recognize the potential for individual recognition if they continue their separate research paths.
+
+Dr. Chen (A) must decide whether to focus on her individual research (A1) or collaborate with Dr. Rodriguez on a joint project (A2). Similarly, Dr. Rodriguez (B) faces the choice of sharing his research findings (B1) or withholding them (B2).
+
+If Dr. Chen chooses to focus on her individual research (A1) and Dr. Rodriguez shares his findings (B1), Dr. Chen will make no progress due to lack of crucial information (preference 1), while Dr. Rodriguez will have exclusive access to crucial information (preference 4).
+
+If Dr. Chen pursues individual research (A1) and Dr. Rodriguez withholds his findings (B2), Dr. Chen might achieve sole credit for a groundbreaking discovery (preference 4), while Dr. Rodriguez would miss an opportunity for recognition (preference 1).
+
+If Dr. Chen opts to collaborate (A2) and Dr. Rodriguez shares his findings (B1), Dr. Chen will make minor progress in the joint project (preference 2), while Dr. Rodriguez will receive shared credit for a significant breakthrough (preference 3).
+
+Lastly, if Dr. Chen collaborates (A2) and Dr. Rodriguez withholds his findings (B2), Dr. Chen could achieve shared credit for a significant breakthrough (preference 3), while Dr. Rodriguez would make a minor contribution to the joint project (preference 2).
+
+As the deadline for their research grant renewal approaches, both scientists must weigh their options carefully. Their decisions will not only impact their individual careers but also the potential advancement of biological science in this crucial area of study. The tension between personal achievement and collaborative progress hangs in the air as Dr. Chen and Dr. Rodriguez contemplate their next moves.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Senator Smith",
+  "B": "Governor Jones"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan bill",
+  "A2": "Oppose bipartisan bill",
+  "B1": "Endorse Senator Smith",
+  "B2": "Remain neutral"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill and get endorsed",
+    3: "Oppose bill without endorsement",
+    2: "Support bill and remain unendorsed",
+    1: "Support bill and get endorsed"
+  },
+  "B": {
+    4: "Remain neutral while bill is supported",
+    3: "Endorse Smith and bill is opposed",
+    2: "Endorse Smith and bill is supported",
+    1: "Remain neutral while bill is opposed"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support)   | 1 \ 2        | 2 \ 4        |
+| A2 (Oppose)    | 3 \ 3        | 4 \ 1        |
+[/Payoff Matrix]
+
+[Scenario]
+Senator Smith and Governor Jones find themselves at a political crossroads. A controversial bipartisan bill is on the table, and their decisions could shape their political futures.
+
+Senator Smith is weighing whether to support or oppose the bill. Supporting it could demonstrate bipartisanship but might alienate his base. Opposing it could energize his supporters but paint him as obstructionist.
+
+Governor Jones, meanwhile, is considering whether to endorse Senator Smith or remain neutral. An endorsement could boost Smith's profile, but Jones risks his own political capital if Smith makes an unpopular move.
+
+Smith's ideal scenario is to oppose the bill and receive Jones' endorsement, solidifying his position with both the party base and the state's leadership. His least preferred outcome is supporting the bill and getting the endorsement, which could be seen as political maneuvering.
+
+Jones, on the other hand, would prefer to remain neutral while Smith supports the bill, maintaining his own flexibility while the bipartisan effort succeeds. His worst-case scenario is staying neutral while Smith opposes the bill, potentially being seen as indecisive during a crucial moment.
+
+If Smith supports the bill and Jones endorses him, it's a mediocre outcome for both: Smith gains an ally but risks his base, while Jones associates himself with a potentially unpopular decision.
+
+Should Smith oppose the bill and Jones remain neutral, Smith stands to gain political points with his base, but Jones might be criticized for not taking a stand.
+
+As they contemplate their moves, both politicians must consider not only their immediate gains but also the long-term implications for their careers and the state's political landscape.
+[/Scenario]

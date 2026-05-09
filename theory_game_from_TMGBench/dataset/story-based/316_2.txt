@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Sarah, a corporate lawyer",
+  "B": "Mark, a small business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer a standard contract",
+  "A2": "Offer a customized contract",
+  "B1": "Accept the contract as-is",
+  "B2": "Negotiate the contract terms"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Standard contract accepted (A1, B1)",
+    3: "Customized contract negotiated (A2, B2)",
+    2: "Standard contract negotiated (A1, B2)",
+    1: "Customized contract accepted (A2, B1)"
+  },
+  "B": {
+    4: "Standard contract negotiated (A1, B2)",
+    3: "Customized contract negotiated (A2, B2)",
+    2: "Standard contract accepted (A1, B1)",
+    1: "Customized contract accepted (A2, B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept) | B2 (Negotiate) |
+|-------|-------------|----------------|
+| A1 (Standard)   | 2 \ 2      | 4 \ 4         |
+| A2 (Customized) | 1 \ 1      | 3 \ 3         |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a corporate lawyer, has been approached by Mark, a small business owner, who needs legal assistance for his growing company. Sarah must decide whether to offer a standard contract (A1) or a customized contract (A2) to Mark. Meanwhile, Mark has to choose between accepting the contract as-is (B1) or negotiating the terms (B2).
+
+Sarah prefers offering a standard contract that Mark accepts without negotiation, as it saves her time and resources. Her least preferred outcome is spending time on a customized contract that Mark accepts without discussion, as it might not fully address his needs and could lead to future complications.
+
+Mark, on the other hand, prefers negotiating a standard contract to ensure it meets his specific business needs. His least desired outcome is accepting a customized contract without negotiation, as it might include unnecessary clauses or miss crucial points for his business.
+
+If Sarah offers a standard contract (A1) and Mark accepts it (B1), both parties achieve a moderately satisfactory outcome (2,2). This scenario is straightforward but may not fully address Mark's unique needs.
+
+If Sarah offers a standard contract (A1) and Mark negotiates (B2), both parties achieve their most preferred outcome (4,4). Sarah saves time by starting with a standard template, while Mark ensures the contract suits his business through negotiation.
+
+If Sarah offers a customized contract (A2) and Mark accepts it (B1), both parties end up in their least preferred situation (1,1). Sarah has spent extra time tailoring the contract, but without Mark's input, it may not be ideal for his needs.
+
+If Sarah offers a customized contract (A2) and Mark negotiates (B2), they reach a fairly good outcome for both (3,3). Although it requires more time and effort from both parties, it results in a well-tailored agreement.
+
+The game theory aspect of this scenario highlights the importance of communication and cooperation in legal negotiations. The best outcome for both parties occurs when they engage in a collaborative process, starting with a standard framework and working together to refine it to suit the client's needs.
+[/Scenario]

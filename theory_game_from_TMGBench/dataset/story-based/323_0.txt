@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Alexander",
+  "B": "Admiral Beatrice"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Launch a ground assault",
+  "A2": "Maintain defensive positions",
+  "B1": "Deploy naval blockade",
+  "B2": "Provide air support"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successful ground assault with air support",
+    3: "Maintaining defensive positions while enemy deploys naval blockade",
+    2: "Maintaining defensive positions with air support",
+    1: "Failed ground assault against naval blockade"
+  },
+  "B": {
+    4: "Providing air support for successful ground assault",
+    3: "Deploying naval blockade against defensive positions",
+    2: "Deploying naval blockade against ground assault",
+    1: "Providing air support for defensive positions"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Deploy naval blockade) | B2 (Provide air support) |
+|-------|----------------------------|--------------------------|
+| A1 (Launch ground assault) | 1 \ 2 | 4 \ 4 |
+| A2 (Maintain defensive positions) | 2 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Alexander of the land forces and Admiral Beatrice of the naval and air forces find themselves at a critical juncture. Their decisions will determine the outcome of a crucial battle in a contested coastal region.
+
+General Alexander has two options: launch a daring ground assault (A1) or maintain defensive positions (A2). Admiral Beatrice can either deploy a naval blockade (B1) or provide air support (B2).
+
+Alexander's preference is to launch a successful ground assault with air support, which would be a decisive victory. His least desired outcome is a failed ground assault against a naval blockade, which could result in heavy casualties.
+
+Beatrice, on the other hand, sees providing air support for a successful ground assault as the best outcome, solidifying their military superiority. Her least preferred scenario is providing air support for defensive positions, which she views as a waste of resources.
+
+If Alexander launches a ground assault (A1) and Beatrice deploys a naval blockade (B1), it results in a failed assault for Alexander (payoff 1) but a moderate success for Beatrice (payoff 2). If Alexander maintains defensive positions (A2) while Beatrice deploys a naval blockade (B1), it's a moderate outcome for Alexander (payoff 2) and a good outcome for Beatrice (payoff 3).
+
+The ideal scenario for both is when Alexander launches a ground assault (A1) and Beatrice provides air support (B2), resulting in a decisive victory (payoff 4 for both). However, if Alexander maintains defensive positions (A2) and Beatrice provides air support (B2), it's a moderately good outcome for Alexander (payoff 3) but the worst outcome for Beatrice (payoff 1).
+
+As they weigh their options, both leaders must consider not only their own preferences but also anticipate the other's decision to achieve the best possible outcome in this high-stakes military engagement.
+[/Scenario]

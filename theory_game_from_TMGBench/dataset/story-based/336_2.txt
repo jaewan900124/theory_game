@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Tom, a talented basketball player",
+  "B": "Sarah, Tom's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball to Sarah",
+  "A2": "Attempt to score himself",
+  "B1": "Set a screen for Tom",
+  "B2": "Call for the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pass to Sarah, who calls for the ball, resulting in a successful play",
+    3: "Attempt to score himself while Sarah sets a screen, potentially improving his personal stats",
+    2: "Attempt to score himself while Sarah calls for the ball, potentially causing team tension",
+    1: "Pass to Sarah who sets a screen, resulting in a missed opportunity"
+  },
+  "B": {
+    4: "Call for the ball and receive a pass from Tom, showcasing her skills",
+    3: "Call for the ball while Tom attempts to score, demonstrating her eagerness to contribute",
+    2: "Set a screen for Tom who passes the ball, supporting the team play",
+    1: "Set a screen for Tom who attempts to score, potentially being overlooked"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set screen) | B2 (Call for ball) |
+|-------|-----------------|---------------------|
+| A1 (Pass) | 1 \ 2           | 4 \ 4               |
+| A2 (Score) | 3 \ 1           | 2 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+It's the final seconds of a crucial basketball game, and Tom's team is down by one point. Tom has just received the ball and is looking to make a play that could win the game. His teammate Sarah is also on the court, and their decision-making in this moment will determine the outcome of the game.
+
+Tom (A) has two choices: he can either pass the ball to Sarah (A1) or attempt to score himself (A2). Sarah (B) also has two options: she can set a screen for Tom (B1) or call for the ball (B2).
+
+Tom's most preferred outcome (4) is to pass the ball to Sarah when she calls for it, resulting in a successful play. This would showcase their teamwork and potentially win the game. His second preference (3) is to attempt scoring himself while Sarah sets a screen, which could improve his personal stats. His third choice (2) is to try scoring while Sarah calls for the ball, which might cause some team tension. His least preferred scenario (1) is passing to Sarah when she's setting a screen, potentially missing an opportunity to score.
+
+Sarah's top preference (4) is to call for the ball and receive a pass from Tom, allowing her to showcase her skills. Her second choice (3) is to call for the ball even if Tom attempts to score, demonstrating her eagerness to contribute. Her third preference (2) is to set a screen for Tom who then passes the ball, supporting the team play. Her least preferred outcome (1) is setting a screen for Tom who then attempts to score, potentially leaving her contribution overlooked.
+
+The payoff matrix reflects these preferences, with each cell showing the preference levels for Tom and Sarah respectively. For example, if Tom passes (A1) and Sarah calls for the ball (B2), they both achieve their most preferred outcome (4,4).
+
+As the clock ticks down, Tom and Sarah must make their decisions quickly, each hoping to maximize their personal preference while also considering the team's success. Their choices in this moment will not only affect the outcome of the game but also their relationship as teammates and rivals.
+[/Scenario]

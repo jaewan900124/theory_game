@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a small organic farm owner",
+  "B": "Lucas, owner of a local grocery store"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current production levels",
+  "A2": "Increase production",
+  "B1": "Keep current pricing",
+  "B2": "Offer promotional pricing"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain production, Lucas offers promotional pricing",
+    3: "Increase production, Lucas keeps current pricing",
+    2: "Maintain production, Lucas keeps current pricing",
+    1: "Increase production, Lucas offers promotional pricing"
+  },
+  "B": {
+    4: "Emma maintains production, offer promotional pricing",
+    3: "Emma increases production, keep current pricing",
+    2: "Emma maintains production, keep current pricing",
+    1: "Emma increases production, offer promotional pricing"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Keep current pricing | Offer promotional pricing |
+|--------------|----------------------|---------------------------|
+| Maintain     | 2 \ 2                | 4 \ 4                     |
+| Increase     | 1 \ 3                | 3 \ 1                     |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town, Emma, an organic farm owner, and Lucas, the proprietor of a local grocery store, find themselves in a delicate economic dance. Their decisions will significantly impact each other's businesses and the local food market.
+
+Emma faces a choice: she can either maintain her current production levels or increase her output. Meanwhile, Lucas must decide whether to keep his current pricing strategy or offer promotional pricing on Emma's products.
+
+If both maintain their status quo (Emma keeps production steady and Lucas maintains current pricing), they both achieve moderate success (2,2). This scenario provides stability but limits growth potential for both parties.
+
+Should Emma maintain her production while Lucas offers promotional pricing, both would benefit greatly (4,4). This scenario represents the ideal cooperation, where Lucas's promotions drive more sales of Emma's produce, benefiting both businesses.
+
+If Emma increases production while Lucas keeps current pricing, Lucas benefits more than Emma (1,3). In this case, Lucas has more products to sell without reducing his margins, while Emma faces potential oversupply issues.
+
+Lastly, if Emma increases production and Lucas offers promotional pricing, Emma benefits more than Lucas (3,1). Here, Emma's increased output is moved through Lucas's store, but at a cost to Lucas's profit margins.
+
+The challenge for Emma and Lucas is to communicate and coordinate their strategies to achieve the most mutually beneficial outcome. Their decisions will not only affect their individual businesses but also influence the local economy and consumers' access to fresh, organic produce.
+
+As they contemplate their choices, both Emma and Lucas must consider the long-term implications of their decisions, balancing immediate gains against sustained business growth and community impact. The outcome of their choices will demonstrate the delicate balance between cooperation and competition in a small-scale economic ecosystem.
+[/Scenario]

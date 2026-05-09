@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Roberts"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the infrastructure bill",
+  "A2": "Oppose the infrastructure bill",
+  "B1": "Focus on local projects",
+  "B2": "Collaborate on national initiatives"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Support the bill and collaborate nationally",
+    3: "Support the bill with local focus",
+    2: "Oppose the bill but collaborate nationally",
+    1: "Oppose the bill with local focus"
+  },
+  "B": {
+    4: "Collaborate nationally with bill support",
+    3: "Focus locally with bill opposition",
+    2: "Focus locally with bill support",
+    1: "Collaborate nationally with bill opposition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Local) | B2 (National) |
+|-------|------------|---------------|
+| A1 (Support) | 3 \ 2 | 4 \ 4 |
+| A2 (Oppose) | 1 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Senator Sarah Thompson and Governor Mark Roberts find themselves at a critical juncture in their political careers. A major infrastructure bill is up for debate, and their decisions will significantly impact both their constituents and their political futures.
+
+Senator Thompson, representing her state at the federal level, has to decide whether to support or oppose the infrastructure bill. Governor Roberts, meanwhile, must choose between focusing on local projects or collaborating on national initiatives.
+
+Thompson prefers supporting the bill, especially if it leads to national collaboration, as this would boost her profile on the national stage. Her second-best option is supporting the bill while Roberts focuses locally, which still allows her to claim credit for bringing federal funding to the state. Her least preferred outcome is opposing the bill, particularly if Roberts focuses locally, as this could make her appear ineffective.
+
+Roberts, on the other hand, sees the greatest benefit in collaborating nationally if the bill is supported, as this would give him a platform for higher office. His second choice is to focus locally if the bill is opposed, as he could then blame federal inaction for any local issues. He least prefers collaborating nationally if the bill is opposed, as this could make him appear weak on the national stage.
+
+If Thompson supports the bill and Roberts focuses locally (A1, B1), Thompson gains some national recognition (3) while Roberts maintains his local base (2). If they both choose to collaborate nationally with the bill supported (A1, B2), both benefit greatly (4,4) as they can claim credit for a major bipartisan achievement.
+
+If Thompson opposes the bill and Roberts focuses locally (A2, B1), both suffer politically (1,1) as they appear unable to secure federal funding or make progress. If Thompson opposes but Roberts still pushes for national collaboration (A2, B2), Roberts can position himself as a bipartisan leader (3) while Thompson's opposition appears obstructionist but not entirely damaging (2).
+
+As they weigh their options, both politicians must consider not only their immediate political gains but also the long-term implications for their careers and their state's future.
+[/Scenario]

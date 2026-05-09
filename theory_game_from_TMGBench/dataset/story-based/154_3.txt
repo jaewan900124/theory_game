@@ -1,0 +1,59 @@
+[Characters]
+{
+  "A": "Alex, a seasoned mechanical engineer",
+  "B": "Blake, a young software engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional mechanical design",
+  "A2": "Integrate AI-driven design optimization",
+  "B1": "Develop custom software for the project",
+  "B2": "Use off-the-shelf software solutions"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Integrate AI-driven design with off-the-shelf software",
+    3: "Integrate AI-driven design with custom software",
+    2: "Use traditional design with custom software",
+    1: "Use traditional design with off-the-shelf software"
+  },
+  "B": {
+    4: "Use traditional design with custom software",
+    3: "Integrate AI-driven design with off-the-shelf software",
+    2: "Integrate AI-driven design with custom software",
+    1: "Use traditional design with off-the-shelf software"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 1 |
+| A2    | 3 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a revolutionary robotic arm project for a major manufacturing company. Alex, with years of experience in mechanical engineering, is responsible for the physical design of the arm. Blake, a recent graduate specializing in software engineering, is tasked with developing the control system.
+
+The two engineers must decide on their approach to the project. Alex is torn between using traditional mechanical design methods (A1) or integrating AI-driven design optimization (A2). Meanwhile, Blake is considering whether to develop custom software for the project (B1) or use off-the-shelf software solutions (B2).
+
+Alex's preference is to integrate AI-driven design optimization, as he believes it will lead to a more efficient and innovative product. He's most excited about combining this with off-the-shelf software, thinking it will streamline the process. His least preferred option is sticking to traditional design methods with off-the-shelf software, feeling it lacks innovation.
+
+Blake, on the other hand, is eager to showcase his programming skills by developing custom software. He believes this approach, combined with Alex's traditional design, would allow for the most tailored and effective solution. His least preferred scenario is using off-the-shelf software with traditional design, feeling it doesn't utilize either of their strengths.
+
+The payoff matrix reflects their preferences:
+
+1. If Alex chooses traditional design (A1) and Blake develops custom software (B1), Alex gets his third choice (2) while Blake gets his top choice (4).
+2. If Alex chooses traditional design (A1) and Blake uses off-the-shelf software (B2), both get their least preferred outcome (1).
+3. If Alex integrates AI-driven design (A2) and Blake develops custom software (B1), Alex gets his second choice (3) while Blake gets his third choice (2).
+4. If Alex integrates AI-driven design (A2) and Blake uses off-the-shelf software (B2), Alex gets his top choice (4) while Blake gets his second choice (3).
+
+The engineers must now decide their approach, balancing their individual preferences with the potential for cooperation and the overall success of the project.
+[/Scenario]

@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emma, a talented graphic designer",
+  "B": "Alex, a skilled copywriter"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently while Alex collaborates",
+    3: "Both work independently",
+    2: "Both collaborate",
+    1: "Collaborate while Alex works independently"
+  },
+  "B": {
+    4: "Both collaborate",
+    3: "Both work independently",
+    2: "Emma collaborates while Alex works independently",
+    1: "Emma works independently while Alex collaborates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 2 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Alex, two freelance creatives, have been approached by a prestigious advertising agency to work on a high-profile campaign. The agency has given them the option to either collaborate or work independently on the project.
+
+Emma, the graphic designer, prefers working independently as she believes it allows her more creative freedom. Her ideal scenario would be to work independently while Alex contributes, as this would give her full control over the visual aspects while still benefiting from Alex's copywriting skills. Her least preferred option is to collaborate while Alex works independently, as she feels this would limit her creative input.
+
+Alex, on the other hand, strongly believes in the power of collaboration. His ideal scenario is for both of them to work together, combining their skills for the best possible outcome. His least preferred option is to collaborate while Emma works independently, as he feels this would limit the project's potential and his contribution.
+
+If they both choose to collaborate (A1, B1), Emma would find it somewhat satisfying (2), while Alex would be thrilled (4). If Emma collaborates but Alex works independently (A1, B2), Emma would be least satisfied (1), and Alex would find it acceptable (2). If Emma works independently but Alex collaborates (A2, B1), Emma would be very pleased (3), but Alex would be least satisfied (1). Finally, if both work independently (A2, B2), Emma would be most satisfied (4), and Alex would find it satisfactory (3).
+
+The challenge for Emma and Alex is to navigate their different preferences and working styles to produce the best possible outcome for the project, while also considering their personal satisfaction and professional growth.
+[/Scenario]

@@ -1,0 +1,59 @@
+[Characters]
+{
+  "A": "Sarah, a talented software developer",
+  "B": "TechCorp, a growing tech company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept TechCorp's job offer",
+  "A2": "Decline TechCorp's job offer and start a freelance career",
+  "B1": "Offer competitive salary and benefits",
+  "B2": "Offer lower salary with potential future benefits"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Freelance career with high income potential",
+    3: "Secure job with competitive salary and benefits",
+    2: "Job with lower salary but potential future benefits",
+    1: "Freelance career with uncertain income"
+  },
+  "B": {
+    4: "Hire talented employee with competitive offer",
+    3: "Hire talented employee with lower initial costs",
+    2: "Save on hiring costs but lose potential talent",
+    1: "Lose potential talent and market competitiveness"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 1 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a talented software developer, finds herself at a crossroads in her career. She has received a job offer from TechCorp, a growing tech company looking to expand its team. Both Sarah and TechCorp face a decision that will impact their future.
+
+Sarah has two choices: accept TechCorp's job offer (A1) or decline it and start a freelance career (A2). TechCorp, on the other hand, can either offer a competitive salary and benefits package (B1) or propose a lower salary with potential future benefits (B2).
+
+Sarah's preferences are clear. Her most desired outcome is to have a successful freelance career with high income potential (preference 4). However, she also values the security of a good job with competitive pay (preference 3). A job with lower initial pay but future potential is less appealing (preference 2), and her least preferred scenario is a struggling freelance career (preference 1).
+
+TechCorp's priorities are different. Their ideal scenario is to hire Sarah with a competitive offer, securing her talent (preference 4). They would also be satisfied hiring her at a lower initial cost (preference 3). Failing to hire Sarah but saving on costs is less desirable (preference 2), and their worst-case scenario is losing both Sarah and their market competitiveness (preference 1).
+
+The payoff matrix reveals the complexity of their decisions:
+
+1. If Sarah accepts the offer (A1) and TechCorp provides a competitive package (B1), both parties are relatively satisfied (3,4).
+2. If Sarah accepts (A1) but TechCorp offers a lower salary (B2), Sarah is less happy, and TechCorp risks losing her (2,1).
+3. If Sarah declines to freelance (A2) and TechCorp had offered competitively (B1), Sarah risks an uncertain income while TechCorp loses out on talent but saves money (1,2).
+4. If Sarah declines to freelance (A2) and TechCorp had offered a lower salary (B2), Sarah potentially gains high income, while TechCorp saves on immediate costs but loses talent (4,3).
+
+This scenario highlights the strategic nature of employment decisions, where both employers and potential employees must consider their own preferences and the potential actions of the other party to achieve the best possible outcome.
+[/Scenario]

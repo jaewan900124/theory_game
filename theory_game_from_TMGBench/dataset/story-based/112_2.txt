@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emma, a small coffee shop owner",
+  "B": "Lucas, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Maintain current prices",
+  "B2": "Lower prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices while Lucas maintains prices",
+    3: "Both maintain current prices",
+    2: "Both lower prices",
+    1: "Maintain prices while Lucas lowers prices"
+  },
+  "B": {
+    4: "Maintain prices while Emma maintains prices",
+    3: "Both lower prices",
+    2: "Lower prices while Emma maintains prices",
+    1: "Maintain prices while Emma lowers prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 3 |
+| A2    | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Emma, a passionate small coffee shop owner, faces stiff competition from Lucas, the owner of a large coffee chain. Both are contemplating their pricing strategies for the upcoming quarter.
+
+Emma's cozy shop, "Bean There," has a loyal customer base but struggles to compete with Lucas's "CoffeeMax" chain in terms of volume. She knows that lowering her prices could attract more customers but might strain her profit margins. On the other hand, maintaining her current prices could preserve her margins but might risk losing customers to CoffeeMax if they decide to lower their prices.
+
+Lucas, with his extensive resources, has more flexibility. He's aware that maintaining current prices while Emma does the same would be ideal for his profits (his most preferred outcome). However, he's also considering lowering prices to potentially drive Emma out of business, even though this would mean lower profits in the short term.
+
+If both maintain their current prices, it's a stable situation for Lucas (his top preference) but not ideal for Emma (her third preference). If Emma lowers her prices while Lucas maintains his, she could gain market share (her top preference) while Lucas would face his least preferred outcome. If both lower their prices, it's a compromise situation (Emma's second-best, Lucas's third-best outcome). Finally, if Emma maintains her prices while Lucas lowers his, it's the worst-case scenario for Emma and only the second-best for Lucas.
+
+As they both prepare to make their decisions, tension builds in the local coffee market. Emma, in her small shop, anxiously reviews her finances, while Lucas, in his corporate office, analyzes market reports. Their choices will not only impact their businesses but also shape the local coffee culture and economy. The aroma of freshly brewed coffee fills the air as both entrepreneurs contemplate their next move in this high-stakes game of economic strategy.
+[/Scenario]

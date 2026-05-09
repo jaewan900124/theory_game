@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Take the shot",
+  "B1": "Set a screen",
+  "B2": "Call for the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Take the shot and score",
+    3: "Pass the ball and teammate scores",
+    2: "Take the shot but miss",
+    1: "Pass the ball but teammate misses"
+  },
+  "B": {
+    4: "Receive the pass and score",
+    3: "Set a screen and teammate scores",
+    2: "Call for the ball but teammate scores instead",
+    1: "Set a screen but play fails"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set a screen) | B2 (Call for the ball) |
+|-------|-------------------|------------------------|
+| A1 (Pass the ball) | 3 \ 3 | 1 \ 4 |
+| A2 (Take the shot) | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+It's the final seconds of the championship game, and the team of Alex and Blake is down by one point. Alex has the ball and is approaching the three-point line. Blake, positioned near the basket, must decide whether to set a screen or call for the ball. Meanwhile, Alex must choose between passing to Blake or taking the shot himself.
+
+If Alex passes (A1) and Blake sets a screen (B1), they execute a well-practiced play. Alex gets an open shot and scores, resulting in a satisfying outcome for both (3,3).
+
+If Alex passes (A1) but Blake calls for the ball (B2), Blake receives the pass and scores, which is Blake's ideal scenario but less preferred by Alex who wanted to take the winning shot (1,4).
+
+If Alex decides to take the shot (A2) and Blake sets a screen (B1), Alex misses the shot. This is a poor outcome for both, but slightly better for Alex who at least took the shot (2,1).
+
+If Alex takes the shot (A2) while Blake calls for the ball (B2), Alex scores the winning basket. This is Alex's best outcome but not ideal for Blake who wanted the ball (4,2).
+
+The tension mounts as both players must make their decision in a split second, weighing their personal glory against team success and the chance of winning the championship. Their choices will determine not only the outcome of the game but also potentially impact their relationship as teammates and rivals.
+[/Scenario]

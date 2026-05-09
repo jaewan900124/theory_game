@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a cognitive psychologist",
+  "B": "Dr. Mark Thompson, a behavioral psychologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue individual research",
+  "B1": "Collaborate on a joint research project",
+  "B2": "Pursue individual research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue individual research while Dr. Thompson collaborates",
+    3: "Both pursue individual research",
+    2: "Both collaborate on a joint project",
+    1: "Collaborate while Dr. Thompson pursues individual research"
+  },
+  "B": {
+    4: "Pursue individual research while Dr. Chen collaborates",
+    3: "Both collaborate on a joint project",
+    2: "Both pursue individual research",
+    1: "Collaborate while Dr. Chen pursues individual research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 1 \ 4 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Dr. Mark Thompson are renowned psychologists at a prestigious university. They have been offered a unique opportunity to either collaborate on a groundbreaking joint research project or pursue their individual research interests with increased funding.
+
+Dr. Chen, a cognitive psychologist, is excited about the potential of the joint project but also has a promising individual study on memory formation that she's eager to pursue. Dr. Thompson, a behavioral psychologist, sees great value in collaboration but is also on the verge of a breakthrough in his personal research on decision-making processes.
+
+Both researchers must decide whether to collaborate or pursue their individual projects. Their choices will impact not only their immediate research outcomes but also their long-term career prospects and the advancement of psychological science.
+
+If they both choose to collaborate (A1, B1), they will produce a solid joint study, benefiting both but not maximizing either's potential. This scenario is Dr. Chen's third preference (2) and Dr. Thompson's second preference (3).
+
+If Dr. Chen collaborates while Dr. Thompson pursues individual research (A1, B2), Dr. Chen's contribution to the joint project will be overshadowed by Dr. Thompson's individual breakthrough. This is Dr. Chen's least preferred outcome (1) but Dr. Thompson's most preferred (4).
+
+If Dr. Chen pursues individual research while Dr. Thompson collaborates (A2, B1), Dr. Chen will make significant progress in her study while Dr. Thompson's efforts are divided. This is Dr. Chen's most preferred outcome (4) but Dr. Thompson's least preferred (1).
+
+If both choose to pursue individual research (A2, B2), they will both make moderate progress in their respective fields. This is Dr. Chen's second preference (3) and Dr. Thompson's third preference (2).
+
+As they contemplate their decisions, both researchers must weigh the potential benefits of collaboration against the allure of individual achievement, knowing that their choices will significantly impact their careers and the field of psychology.
+[/Scenario]

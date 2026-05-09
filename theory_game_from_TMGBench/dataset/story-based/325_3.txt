@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alice, a corporate lawyer",
+  "B": "Bob, a rival corporate lawyer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pursue an aggressive litigation strategy",
+  "A2": "Propose an out-of-court settlement",
+  "B1": "Pursue an aggressive litigation strategy",
+  "B2": "Accept an out-of-court settlement"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Win the case through aggressive litigation",
+    3: "Reach a mutually beneficial settlement",
+    2: "Settle for a less favorable outcome",
+    1: "Lose the case through aggressive litigation"
+  },
+  "B": {
+    4: "Win the case through aggressive litigation",
+    3: "Reach a mutually beneficial settlement",
+    2: "Settle for a less favorable outcome",
+    1: "Lose the case through aggressive litigation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Aggressive) | B2 (Settle) |
+|-------|-----------------|-------------|
+| A1 (Aggressive) | 1 \ 1           | 4 \ 4       |
+| A2 (Settle)     | 2 \ 2           | 3 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+Alice and Bob are rival corporate lawyers representing two large tech companies in a high-stakes patent infringement case. Both lawyers are known for their aggressive tactics and have a history of courtroom victories.
+
+As they prepare for the upcoming trial, each lawyer must decide on their strategy: pursue an aggressive litigation approach or propose an out-of-court settlement. Their choices will determine the outcome of the case and their professional reputations.
+
+If both Alice and Bob choose to pursue aggressive litigation (A1, B1), the case will likely result in a prolonged, expensive trial with an uncertain outcome. This scenario is the least preferred for both lawyers, as it could damage their clients' public image and potentially lead to a loss in court (payoff: 1,1).
+
+If Alice proposes a settlement (A2) while Bob pursues aggressive litigation (B1), Alice's client might be forced into a less favorable settlement due to the pressure of potential litigation. This scenario is slightly better than a full trial but still not ideal for either lawyer (payoff: 2,2).
+
+The same applies if Alice pursues aggressive litigation (A1) while Bob accepts a settlement (B2). In this case, Bob's client might be forced into a less favorable settlement due to Alice's aggressive stance (payoff: 4,4).
+
+However, if both Alice and Bob choose to settle (A2, B2), they can negotiate a mutually beneficial agreement that satisfies both clients without the risks and costs associated with a trial. This outcome is the second-most preferred for both lawyers, as it demonstrates their ability to resolve conflicts efficiently (payoff: 3,3).
+
+The most preferred outcome for each lawyer is to win the case through aggressive litigation while the other proposes a settlement (A1,B2 or A2,B1). In these scenarios, the aggressive lawyer would likely secure a more favorable outcome for their client, boosting their reputation (payoff: 4,4).
+
+As the trial date approaches, Alice and Bob must carefully consider their strategies, weighing the potential risks and rewards of each choice. Their decisions will not only impact the outcome of this case but also shape their future careers in corporate law.
+[/Scenario]

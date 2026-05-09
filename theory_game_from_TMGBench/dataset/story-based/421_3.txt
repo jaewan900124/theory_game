@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alice, a talented graphic designer",
+  "B": "Bob, a skilled web developer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently while Bob collaborates",
+    3: "Both collaborate on the project",
+    2: "Both work independently",
+    1: "Collaborate while Bob works independently"
+  },
+  "B": {
+    4: "Work independently while Alice collaborates",
+    3: "Both collaborate on the project",
+    2: "Both work independently",
+    1: "Collaborate while Alice works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 3 \ 4 |
+| A2    | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alice and Bob are freelancers who have been offered a joint project by a prestigious client. The project requires both graphic design and web development skills. They must decide whether to collaborate or work independently on their respective parts of the project.
+
+Alice, the graphic designer, prefers working independently as it allows her more creative freedom. However, she recognizes the potential benefits of collaboration. Bob, the web developer, shares similar sentiments about his work.
+
+If they both choose to collaborate (A1, B1), they'll create a cohesive product, resulting in moderate satisfaction for both (2 for Alice, 3 for Bob). This scenario represents their second-best and third-best outcomes, respectively.
+
+If Alice collaborates but Bob works independently (A1, B2), Bob gets his most preferred outcome (4) as he can work freely while benefiting from Alice's collaborative efforts. Alice finds this scenario acceptable (3) as she can still influence the overall design.
+
+If Bob collaborates but Alice works independently (A2, B1), Alice achieves her most preferred outcome (4), having full creative control while still benefiting from Bob's collaborative input. Bob finds this his least preferred scenario (1), feeling his efforts are undervalued.
+
+If both decide to work independently (A2, B2), Alice is quite satisfied (3) with her creative freedom, while Bob is less pleased (2) due to potential integration issues.
+
+The least preferred scenario for Alice (1) is when she collaborates but Bob doesn't, feeling her efforts are underappreciated. For Bob, the least preferred scenario (1) is when he collaborates but Alice doesn't, for similar reasons.
+
+This situation creates a complex decision-making process where both Alice and Bob must consider not only their own preferences but also anticipate the other's choice to maximize their satisfaction with the project outcome.
+[/Scenario]

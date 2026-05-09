@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Peterson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the infrastructure bill",
+  "A2": "Oppose the infrastructure bill",
+  "B1": "Endorse Senator Thompson for re-election",
+  "B2": "Remain neutral in the senatorial race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill and gain the Governor's endorsement",
+    3: "Support the bill without the Governor's endorsement",
+    2: "Support the bill and gain the Governor's endorsement",
+    1: "Oppose the bill without the Governor's endorsement"
+  },
+  "B": {
+    4: "Senator supports the bill and receives endorsement",
+    3: "Senator opposes the bill and doesn't receive endorsement",
+    2: "Senator opposes the bill and receives endorsement",
+    1: "Senator supports the bill and doesn't receive endorsement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support)   | 2 \ 4        | 1 \ 3        |
+| A2 (Oppose)    | 3 \ 1        | 4 \ 2        |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling state capital, Senator Sarah Thompson and Governor Mark Peterson find themselves at a critical juncture in their political careers. A controversial infrastructure bill is up for vote in the Senate, and the upcoming senatorial race looms on the horizon.
+
+Senator Thompson, a seasoned politician known for her pragmatic approach, must decide whether to support or oppose the infrastructure bill. The bill promises significant investments in the state's roads, bridges, and public transportation, but it comes with a hefty price tag that could increase taxes.
+
+Governor Peterson, a rising star in the party, holds considerable sway over the electorate. His endorsement could significantly boost Senator Thompson's re-election chances. However, he must weigh the political implications of his decision carefully.
+
+If Senator Thompson supports the bill and Governor Peterson endorses her (A1, B1), it would be ideal for the Governor (4) as it aligns with his vision for the state. However, it's only moderately beneficial for the Senator (2) as it might alienate some of her fiscally conservative base.
+
+If the Senator supports the bill but the Governor remains neutral (A1, B2), it's the least preferred outcome for the Senator (1) as she takes a political risk without gaining the Governor's backing. It's moderately good for the Governor (3) as he avoids potential backlash while the bill he favors still gets support.
+
+If the Senator opposes the bill and receives the Governor's endorsement (A2, B1), it's highly favorable for the Senator (3) as she maintains her fiscal conservative image and gains powerful support. However, it's the least preferred outcome for the Governor (1) as it goes against his infrastructure plans.
+
+Finally, if the Senator opposes the bill and the Governor remains neutral (A2, B2), it's the best outcome for the Senator (4) as she can claim independence and fiscal responsibility. It's moderately unfavorable for the Governor (2) as the bill he supports fails, but he avoids direct conflict with the Senator.
+
+As they navigate this complex political landscape, both Senator Thompson and Governor Peterson must carefully consider their choices, weighing personal political gain against their vision for the state's future. Their decisions will not only impact their own careers but also the lives of millions of citizens who depend on their leadership.
+[/Scenario]

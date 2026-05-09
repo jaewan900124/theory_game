@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Sam, Alex's doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play aggressively",
+  "A2": "Play defensively",
+  "B1": "Cover the net",
+  "B2": "Cover the baseline"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play defensively while Sam covers the baseline",
+    3: "Play aggressively while Sam covers the net",
+    2: "Play aggressively while Sam covers the baseline",
+    1: "Play defensively while Sam covers the net"
+  },
+  "B": {
+    4: "Alex plays aggressively while covering the net",
+    3: "Alex plays defensively while covering the baseline",
+    2: "Alex plays defensively while covering the net",
+    1: "Alex plays aggressively while covering the baseline"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Cover net) | B2 (Cover baseline) |
+|-------|----------------|---------------------|
+| A1 (Aggressive) | 3 \ 4           | 2 \ 1               |
+| A2 (Defensive)  | 1 \ 2           | 4 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Sam, professional tennis doubles partners, are preparing for a crucial point in the finals of a major tournament. They need to decide on their strategy for the upcoming serve from their opponents.
+
+Alex, known for his powerful shots, is considering whether to play aggressively or defensively. Sam, with quick reflexes, must choose between covering the net or the baseline. Their decision will significantly impact their chances of winning the point and, potentially, the match.
+
+If Alex plays aggressively (A1) and Sam covers the net (B1), they have a solid chance of winning the point. This scenario is Sam's most preferred (4) as it allows them to utilize their strengths effectively. It's Alex's second-best option (3), as he enjoys playing aggressively but knows the risks involved.
+
+If Alex plays aggressively (A1) while Sam covers the baseline (B2), they leave themselves vulnerable at the net. This is Alex's third preference (2) and Sam's least preferred option (1), as it doesn't maximize their team's strengths.
+
+If Alex plays defensively (A2) and Sam covers the net (B1), they might struggle to return powerful shots from their opponents. This is Alex's least preferred scenario (1) and Sam's third choice (2), as it doesn't allow them to play to their full potential.
+
+The ideal scenario for Alex is to play defensively (A2) while Sam covers the baseline (B2). This is Alex's top preference (4) as it allows him to set up powerful counterattacks. It's also Sam's second-best option (3), providing a balanced approach to their game.
+
+As they prepare for the serve, both players must consider not only their own preferences but also their partner's strengths and the overall team strategy. Their choice will determine the outcome of this crucial point and potentially the match itself.
+[/Scenario]

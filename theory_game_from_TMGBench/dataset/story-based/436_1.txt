@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play as a team player",
+  "A2": "Play selfishly for personal glory",
+  "B1": "Support Alex's plays",
+  "B2": "Compete for the spotlight"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Personal glory with team success",
+    3: "Team success with shared credit",
+    2: "Personal glory but team struggles",
+    1: "Team struggles and personal failure"
+  },
+  "B": {
+    4: "Personal success while Alex struggles",
+    3: "Team success with personal recognition",
+    2: "Shared team success",
+    1: "Team and personal failure"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Support) | B2 (Compete) |
+|-------|--------------|--------------|
+| A1 (Team) | 3 \ 2       | 2 \ 4        |
+| A2 (Self) | 1 \ 1       | 4 \ 3        |
+[/Payoff Matrix]
+
+[Scenario]
+The championship game is underway, and the Starlight Cougars are trailing by a slim margin. The team's success hinges on the performance of their two star players, Alex and Blake. As the clock ticks down, both players face a crucial decision that will determine not only the outcome of the game but also their personal legacies.
+
+Alex, known for his exceptional skills and leadership, must choose between playing as a team player (A1) or pursuing personal glory (A2). Blake, equally talented but often overshadowed by Alex, has to decide whether to support Alex's plays (B1) or compete for the spotlight (B2).
+
+If both Alex and Blake choose to play as team players (A1, B1), they will achieve moderate success. The team will perform well, and both players will receive recognition, though Blake slightly less so. This scenario is Alex's second-best outcome (3) and Blake's third-best (2).
+
+Should Alex play selflessly while Blake competes for attention (A1, B2), the team's performance will suffer slightly. Alex's reputation as a team player will remain intact, but Blake will gain more personal recognition. This is Alex's third-best outcome (2) and Blake's most preferred scenario (4).
+
+If Alex decides to play selfishly while Blake supports him (A2, B1), both players will struggle. The team's performance will decline significantly, and neither player will shine. This is the least preferred outcome for both Alex (1) and Blake (1).
+
+However, if both Alex and Blake choose to play selfishly (A2, B2), an interesting dynamic emerges. Their individual brilliance will lead to personal success and team victory, despite the lack of coordination. This scenario represents Alex's most preferred outcome (4) and Blake's second-best (3).
+
+As the final minutes of the game approach, Alex and Blake exchange knowing glances. They must make their choices, knowing that their decisions will not only impact the game's outcome but also their relationships, reputations, and future prospects in the sport. The tension is palpable as they step onto the court, ready to make their moves in this high-stakes game of basketball and strategy.
+[/Scenario]

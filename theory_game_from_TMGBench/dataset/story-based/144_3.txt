@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Tom, a talented college basketball player",
+  "B": "Coach Smith, the head coach of the college basketball team"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play team-oriented basketball",
+  "A2": "Play individually to showcase personal skills",
+  "B1": "Give Tom more playing time",
+  "B2": "Limit Tom's playing time"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Showcase personal skills and get more playing time",
+    3: "Play team-oriented basketball and get more playing time",
+    2: "Showcase personal skills but with limited playing time",
+    1: "Play team-oriented basketball with limited playing time"
+  },
+  "B": {
+    4: "Tom plays team-oriented basketball with more playing time",
+    3: "Tom showcases personal skills but with limited playing time",
+    2: "Tom plays team-oriented basketball with limited playing time",
+    1: "Tom showcases personal skills with more playing time"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Tom \ Coach | Give more playing time | Limit playing time |
+|-------------|------------------------|---------------------|
+| Team-oriented | 3 \ 4                  | 1 \ 1               |
+| Individual    | 2 \ 2                  | 4 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+Tom, a talented college basketball player, finds himself at a crossroads in his athletic career. He's caught between his desire to showcase his individual skills to attract the attention of professional scouts and the need to play team-oriented basketball to help his college team succeed. On the other side, Coach Smith, the head coach of the college basketball team, is focused on team success but also wants to develop his players for potential professional careers.
+
+Tom has two choices: he can either play team-oriented basketball (A1) or focus on showcasing his personal skills (A2). Coach Smith, in turn, can either give Tom more playing time (B1) or limit his minutes on the court (B2).
+
+Tom's ultimate preference is to showcase his skills while getting more playing time, as this would give him the best chance to impress professional scouts. His least preferred scenario is playing team-oriented basketball with limited playing time, as this would neither help his professional prospects nor satisfy his desire for more court time.
+
+Coach Smith, on the other hand, most prefers Tom to play team-oriented basketball while giving him more playing time, as this would benefit both the team and Tom's development. His least preferred scenario is Tom showcasing his individual skills with more playing time, as this could disrupt team chemistry and potentially lead to losses.
+
+The payoff matrix reflects these preferences. If Tom plays team-oriented basketball and Coach Smith gives him more playing time (A1, B1), it results in a good outcome for both (3,4). If Tom plays individually and Coach Smith limits his time (A2, B2), it's not ideal but workable for both (4,3). The worst-case scenario for both is when Tom plays team-oriented but gets limited time (A1, B2), resulting in (1,1).
+
+As the season progresses, Tom and Coach Smith must navigate this complex dynamic. Their decisions will not only impact the team's success but also Tom's future in basketball. The tension between individual ambition and team success creates a classic game theory scenario, where the optimal outcome requires cooperation and understanding from both parties.
+[/Scenario]

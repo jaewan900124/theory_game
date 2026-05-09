@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Elara Vega, astrophysicist and mission specialist",
+  "B": "Captain Zain Orion, experienced space pilot"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Follow strict mission protocols",
+  "A2": "Pursue a risky but potentially groundbreaking discovery",
+  "B1": "Maintain the planned course",
+  "B2": "Deviate from the course to explore an anomaly"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Make a groundbreaking discovery with full support",
+    3: "Pursue the discovery independently",
+    2: "Complete the mission as planned",
+    1: "Miss out on the discovery while following protocols"
+  },
+  "B": {
+    4: "Explore the anomaly with Dr. Vega's support",
+    3: "Support Dr. Vega's discovery while maintaining course",
+    2: "Complete the mission as planned",
+    1: "Risk ship safety for an unsupported exploration"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 1 \ 4 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+The year is 2085, and humanity's first interstellar mission is underway. The starship Nebula Seeker is on a crucial exploration mission to the nearby Proxima Centauri system. Dr. Elara Vega, a brilliant astrophysicist, and Captain Zain Orion, an experienced space pilot, are key members of the crew.
+
+As they approach the outskirts of the Proxima Centauri system, Dr. Vega detects an unusual energy signature emanating from an uncharted region of space. This signature could potentially lead to a groundbreaking discovery about the nature of dark matter, a mystery that has puzzled scientists for centuries.
+
+Dr. Vega is faced with a difficult decision. She can either follow the strict mission protocols (A1), which prioritize the safety of the crew and the completion of their primary objectives, or she can pursue this risky but potentially revolutionary discovery (A2).
+
+Captain Orion, responsible for the ship's navigation and the crew's safety, must also make a choice. He can maintain the planned course (B1), ensuring they meet their mission objectives on schedule, or he can deviate from the course to explore the anomaly (B2), supporting Dr. Vega's scientific pursuits but potentially jeopardizing the mission's timeline and safety.
+
+If both decide to stick to the original plan (A1, B1), they will complete the mission as intended, achieving moderate success but missing out on the potential discovery. This scenario is their second-least preferred option for both (2,2).
+
+If Dr. Vega insists on following protocols while Captain Orion decides to explore (A1, B2), Dr. Vega will miss out on the discovery, her least preferred outcome (1), while Captain Orion gets to satisfy his curiosity, his most preferred outcome (4).
+
+If Dr. Vega chooses to pursue the discovery without support (A2, B1), she might make progress on her research, her second-most preferred outcome (3), but Captain Orion would be in his least preferred situation (1), worried about the safety implications.
+
+The ideal scenario for both would be if they agree to pursue the discovery together (A2, B2). This would be Dr. Vega's most preferred outcome (4), potentially leading to a groundbreaking discovery, and Captain Orion's second-most preferred outcome (3), as he gets to support the scientific mission while still maintaining some level of control over the ship's course.
+
+As the energy signature grows stronger on their sensors, Dr. Vega and Captain Orion must quickly decide their course of action, weighing the potential for scientific breakthrough against the risks and their mission objectives. Their choices will not only affect the success of the mission but could also shape the future of human understanding of the universe.
+[/Scenario]

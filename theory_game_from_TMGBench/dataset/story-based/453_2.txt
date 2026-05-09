@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blair, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a standard software solution",
+  "A2": "Create a custom software solution",
+  "B1": "Use off-the-shelf hardware components",
+  "B2": "Design custom hardware components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Custom software with off-the-shelf hardware",
+    3: "Custom software with custom hardware",
+    2: "Standard software with off-the-shelf hardware",
+    1: "Standard software with custom hardware"
+  },
+  "B": {
+    4: "Standard software with custom hardware",
+    3: "Custom software with off-the-shelf hardware",
+    2: "Standard software with off-the-shelf hardware",
+    1: "Custom software with custom hardware"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Off-the-shelf) | B2 (Custom) |
+|-------|---------------------|-------------|
+| A1 (Standard) | 2 \ 2             | 1 \ 4       |
+| A2 (Custom)   | 3 \ 3             | 4 \ 1       |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blair are engineers working on a new smart home system for their company. They need to decide on the software and hardware components for the project, balancing innovation, cost-effectiveness, and project timeline.
+
+Alex, the software engineer, has two choices: develop a standard software solution (A1) that's quicker to implement but less flexible, or create a custom software solution (A2) that's more time-consuming but offers greater functionality and adaptability.
+
+Blair, the hardware engineer, also faces two options: use off-the-shelf hardware components (B1) that are readily available and cost-effective, or design custom hardware components (B2) that provide unique features but require more time and resources to develop.
+
+Their preferences differ based on their expertise and project goals. Alex prefers creating custom software, especially if it can work with off-the-shelf hardware, as it showcases his skills without complicating the hardware side. Blair, on the other hand, favors designing custom hardware, particularly if it can be paired with standard software, as it highlights her innovation without adding complexity to the software development.
+
+If they both choose their standard options (A1, B1), they'll complete the project quickly but with less innovation, resulting in a moderately satisfying outcome for both (2,2). If Alex creates custom software while Blair uses off-the-shelf hardware (A2, B1), they'll achieve a good balance of innovation and practicality, leading to a favorable outcome for both (3,3).
+
+However, if Alex develops standard software and Blair designs custom hardware (A1, B2), it will be Blair's ideal scenario but Alex's least preferred (1,4). Conversely, if Alex creates custom software and Blair uses custom hardware (A2, B2), it will be Alex's ideal scenario but Blair's least preferred (4,1).
+
+The engineers must carefully consider their choices, weighing their personal preferences against the project's overall success and their working relationship. Their decision will significantly impact the final product's features, development time, and cost, as well as their individual satisfaction with the project.
+[/Scenario]

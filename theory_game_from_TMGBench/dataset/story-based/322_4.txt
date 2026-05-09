@@ -1,0 +1,64 @@
+[Characters]
+{
+  "A": "Alice, a commuter",
+  "B": "Bob, a ride-sharing driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use ride-sharing app",
+  "A2": "Take public transportation",
+  "B1": "Accept ride request",
+  "B2": "Decline ride request"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a ride quickly and comfortably",
+    3: "Take public transportation without issues",
+    2: "Take public transportation with some inconvenience",
+    1: "Fail to get a ride and miss an important meeting"
+  },
+  "B": {
+    4: "Get a high-paying ride with a generous tip",
+    3: "Accept a standard ride with average pay",
+    2: "Decline a ride but quickly find another passenger",
+    1: "Decline a ride and waste time without finding another passenger"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept) | B2 (Decline) |
+|-------|-------------|--------------|
+| A1 (Ride-sharing) | 1 \ 3 | 4 \ 4 |
+| A2 (Public transport) | 2 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+It's a busy Monday morning in the city. Alice, a marketing executive, needs to get to an important client meeting across town. She's running late and is debating whether to use a ride-sharing app or take public transportation.
+
+Bob, a ride-sharing driver, is cruising the streets looking for passengers. He receives a ride request from Alice but notices it's during rush hour and might get stuck in traffic.
+
+Alice's choices:
+A1: Use the ride-sharing app, hoping for a quick and comfortable ride.
+A2: Take public transportation, which might be slower but more predictable.
+
+Bob's choices:
+B1: Accept Alice's ride request.
+B2: Decline the request, hoping for a better fare elsewhere.
+
+If Alice chooses ride-sharing (A1) and Bob accepts (B1), Alice will likely be late for her meeting due to traffic (her least preferred outcome, 1), while Bob gets an average fare (his second-best outcome, 3).
+
+If Alice chooses ride-sharing (A1) and Bob declines (B2), Alice quickly finds another driver who knows a shortcut, getting her to the meeting on time (her best outcome, 4). Surprisingly, Bob also finds a high-paying ride with a generous tip right after declining Alice's request (his best outcome, 4).
+
+If Alice opts for public transportation (A2) and Bob accepts her initial request (B1), Alice faces some inconvenience but manages to reach her meeting (her third-best outcome, 2). Bob, having accepted Alice's request, misses out on other potential rides (his third-best outcome, 2).
+
+Finally, if Alice takes public transportation (A2) and Bob declines her request (B2), Alice arrives at her meeting without issues (her second-best outcome, 3). However, Bob struggles to find another passenger and wastes time driving around empty (his worst outcome, 1).
+
+This scenario illustrates the complex decision-making process in urban transportation, where individual choices can lead to unexpected outcomes for both parties involved.
+[/Scenario]

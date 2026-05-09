@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Sarah, a daily commuter",
+  "B": "Tom, a rideshare driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use public transportation",
+  "A2": "Request a rideshare",
+  "B1": "Accept Sarah's ride request",
+  "B2": "Decline Sarah's ride request"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a rideshare quickly",
+    3: "Use public transportation",
+    2: "Wait longer for a rideshare",
+    1: "Miss the rideshare and use crowded public transportation"
+  },
+  "B": {
+    4: "Sarah uses public transportation, freeing Tom to accept a more profitable ride",
+    3: "Accept Sarah's ride request",
+    2: "Decline Sarah's request but receive no other requests",
+    1: "Decline Sarah's request and miss out on potential earnings"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 2 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+It's a busy Monday morning in the city. Sarah, a daily commuter, is preparing for her journey to work. She has two options: use public transportation or request a rideshare. Tom, a rideshare driver, is online and available for ride requests.
+
+Sarah knows that public transportation can be crowded and less comfortable, but it's a reliable option. Requesting a rideshare could be faster and more comfortable, but there's a risk of not getting a ride if drivers are busy.
+
+Tom, on the other hand, is trying to maximize his earnings. He knows that declining a ride request might lead to a more profitable ride, but it could also result in no rides at all.
+
+If Sarah chooses public transportation (A1) and Tom accepts her non-existent request (B1), Sarah ends up on crowded public transport (her least preferred option, 1), while Tom is free to accept a more profitable ride (his most preferred option, 4).
+
+If Sarah chooses public transportation (A1) and Tom declines her non-existent request (B2), Sarah has a smooth public transport journey (her third preference, 3), and Tom accepts another ride request (his third preference, 3).
+
+If Sarah requests a rideshare (A2) and Tom accepts (B1), Sarah waits a bit longer but gets her ride (her second preference, 2), and Tom gets an average fare (his second preference, 2).
+
+If Sarah requests a rideshare (A2) and Tom declines (B2), Sarah quickly finds another driver (her most preferred option, 4), but Tom misses out on potential earnings (his least preferred option, 1).
+
+This scenario illustrates the complex decision-making process in the rideshare economy, where both passengers and drivers must weigh their options carefully to achieve their best possible outcomes.
+[/Scenario]

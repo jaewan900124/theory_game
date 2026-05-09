@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alice, a small coffee shop owner",
+  "B": "Bob, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Maintain current prices",
+  "B2": "Lower prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices while Bob maintains prices",
+    3: "Both maintain current prices",
+    2: "Both lower prices",
+    1: "Maintain prices while Bob lowers prices"
+  },
+  "B": {
+    4: "Lower prices while Alice maintains prices",
+    3: "Both lower prices",
+    2: "Both maintain current prices",
+    1: "Maintain prices while Alice lowers prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 1 \ 4 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Alice owns a small, charming coffee shop that has been a local favorite for years. Recently, Bob's large coffee chain has opened a new branch just down the street, creating intense competition in the neighborhood.
+
+Both Alice and Bob are now faced with a crucial decision: whether to maintain their current prices or lower them to attract more customers. This decision will significantly impact their businesses and market share.
+
+Alice prefers to maintain her current prices (A1) if Bob does the same (B1), as this scenario (3,1) allows her to keep her profit margins while retaining her loyal customer base. However, her most desired outcome is to lower her prices (A2) while Bob maintains his (B1), giving her a competitive edge (4,2).
+
+Bob, with his larger operation and economies of scale, can afford to lower prices (B2) more easily. His ideal scenario is to lower prices (B2) while Alice maintains hers (A1), allowing him to potentially capture a larger market share (1,4).
+
+If both Alice and Bob decide to lower their prices (A2, B2), it results in a scenario (4,3) where both may see an increase in customers but at the cost of reduced profit margins. This is Alice's second-best outcome but Bob's third choice.
+
+The least preferred scenario for Alice is maintaining her prices (A1) while Bob lowers his (B2), potentially losing customers to the cheaper alternative (1,4). Conversely, Bob's least preferred outcome is maintaining prices (B1) while Alice lowers hers (A2), risking loss of market share to the smaller, now more affordable, coffee shop (2,2).
+
+As they both contemplate their strategies, Alice and Bob must consider not only their own choices but also anticipate each other's moves in this high-stakes game of economic competition.
+[/Scenario]

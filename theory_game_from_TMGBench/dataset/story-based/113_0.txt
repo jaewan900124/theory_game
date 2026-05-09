@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a rising star tennis player",
+  "B": "Blake, Alex's longtime doubles partner and friend"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Continue playing doubles with Blake",
+  "A2": "Focus solely on singles career",
+  "B1": "Maintain partnership with Alex",
+  "B2": "Seek a new doubles partner"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Focus on singles and Blake finds a new partner",
+    3: "Continue doubles partnership with Blake",
+    2: "Focus on singles while Blake wants to maintain partnership",
+    1: "Continue doubles partnership while Blake seeks a new partner"
+  },
+  "B": {
+    4: "Maintain partnership while Alex continues doubles",
+    3: "Find a new partner while Alex focuses on singles",
+    2: "Maintain partnership while Alex focuses on singles",
+    1: "Seek a new partner while Alex wants to continue doubles"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 2 |
+| A2    | 2 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake have been successful doubles partners on the professional tennis circuit for several years. However, Alex's singles career has been taking off, and she's considering focusing solely on individual play to maximize her potential. Blake, on the other hand, has always preferred doubles and values their partnership both professionally and personally.
+
+Alex is torn between continuing their successful doubles partnership (A1) and focusing entirely on her singles career (A2). She knows that focusing on singles could potentially lead to greater individual success and fame, but she also values her friendship and partnership with Blake.
+
+Blake must decide whether to maintain the partnership with Alex (B1) or seek a new doubles partner (B2). While Blake would prefer to continue playing with Alex, he's also aware that Alex's divided attention could hinder their doubles performance.
+
+If Alex chooses to continue doubles (A1) and Blake maintains the partnership (B1), Alex would be somewhat satisfied but not fully committed (1), while Blake would be thrilled (4). If Alex continues doubles but Blake seeks a new partner (B2), Alex would be relieved to focus on singles without guilt (3), and Blake would be disappointed but understanding (2).
+
+If Alex decides to focus on singles (A2) and Blake tries to maintain the partnership (B1), Alex would feel guilty but somewhat relieved (2), while Blake would be frustrated and disappointed (1). However, if Alex focuses on singles and Blake seeks a new partner (B2), Alex would be fully satisfied with her decision (4), and Blake would be content with moving on (3).
+
+The situation creates a complex dynamic where both players must consider their personal goals, their partnership, and the potential consequences of their choices on their careers and friendship.
+[/Scenario]

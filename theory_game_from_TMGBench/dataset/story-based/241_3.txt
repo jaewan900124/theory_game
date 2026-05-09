@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a small coffee shop owner",
+  "B": "Mark, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Keep prices stable",
+  "A2": "Lower prices",
+  "B1": "Maintain current operations",
+  "B2": "Expand aggressively in Sarah's area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep prices stable while Mark expands (increased customer base)",
+    3: "Lower prices while Mark maintains operations (short-term profit increase)",
+    2: "Keep prices stable while Mark maintains operations (status quo)",
+    1: "Lower prices while Mark expands (price war, lowest profit)"
+  },
+  "B": {
+    4: "Sarah keeps prices stable while Mark maintains operations (highest profit margin)",
+    3: "Sarah keeps prices stable while Mark expands (increased market share)",
+    2: "Sarah lowers prices while Mark maintains operations (maintain market share)",
+    1: "Sarah lowers prices while Mark expands (price war, lowest profit)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 3 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Sarah, a passionate small coffee shop owner, faces a critical decision as Mark, the owner of a large coffee chain, contemplates his next move in the local market. Their choices will shape the competitive landscape of the city's coffee industry.
+
+Sarah must decide whether to keep her prices stable (A1) or lower them (A2) to attract more customers. Meanwhile, Mark is considering either maintaining his current operations (B1) or aggressively expanding into Sarah's area (B2).
+
+Sarah's ideal scenario is to keep her prices stable while Mark expands (A1, B2). This would allow her to benefit from the increased foot traffic that Mark's expansion might bring, without compromising her profit margins. Her least preferred outcome is lowering her prices while Mark expands (A2, B2), as this would lead to a devastating price war.
+
+Mark, on the other hand, would prefer that Sarah keeps her prices stable while he maintains his current operations (A1, B1). This scenario allows him to enjoy the highest profit margins without increased competition. His least desired outcome aligns with Sarah's: a price war resulting from his expansion and Sarah's price reduction (A2, B2).
+
+The status quo (A1, B1) is Sarah's third choice and Mark's top preference, as it maintains the current market equilibrium. If Sarah lowers her prices while Mark stays put (A2, B1), it's her second-best option as she might gain some market share, but it's Mark's third choice as he loses some business to Sarah.
+
+As both Sarah and Mark contemplate their strategies, they must consider not only their own preferences but also anticipate each other's moves. Their decisions will determine the future of the local coffee market and their respective businesses.
+[/Scenario]

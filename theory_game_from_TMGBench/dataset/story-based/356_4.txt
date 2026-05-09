@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Prof. Sarah Thompson, a university professor",
+  "B": "Dr. Michael Chen, the department head"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a traditional lecture-based curriculum",
+  "A2": "Develop an innovative project-based learning approach",
+  "B1": "Maintain current departmental policies",
+  "B2": "Support and fund new teaching initiatives"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement innovative approach with departmental support",
+    3: "Implement traditional approach with current policies",
+    2: "Implement innovative approach without support",
+    1: "Implement traditional approach with new initiatives"
+  },
+  "B": {
+    4: "Support new initiatives with innovative teaching approach",
+    3: "Support new initiatives with traditional teaching approach",
+    2: "Maintain current policies with traditional teaching approach",
+    1: "Maintain current policies with innovative teaching approach"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 2 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Prof. Sarah Thompson, a passionate educator, is contemplating a significant change in her teaching approach for the upcoming semester. She's considering moving away from traditional lecture-based methods (A1) to implement an innovative project-based learning curriculum (A2). However, the success of her plans largely depends on the support from Dr. Michael Chen, the department head.
+
+Dr. Chen faces his own dilemma. He can either maintain the current departmental policies (B1), which are tried and tested but somewhat outdated, or he can choose to support and fund new teaching initiatives (B2), which could potentially revolutionize the department's educational approach but also carries risks.
+
+Prof. Thompson's ideal scenario would be to implement her innovative approach with full departmental support (A2, B2), as this would allow her to fully realize her vision for enhanced student engagement and learning outcomes. Her second preference would be to continue with the traditional approach under current policies (A1, B1), as this is a comfortable and familiar option. She's less enthusiastic about implementing her innovative approach without proper support (A2, B1), as this could be challenging and potentially unsuccessful. Her least preferred option is to stick with the traditional approach while the department invests in new initiatives (A1, B2), as she would feel she's missing out on an opportunity for growth.
+
+Dr. Chen, on the other hand, would most prefer to support new initiatives that align with innovative teaching approaches (A2, B2), as this could potentially put the department at the forefront of educational innovation. His second choice would be to support new initiatives even with traditional teaching methods (A1, B2), as this still represents progress. Maintaining current policies with traditional teaching (A1, B1) is his third preference, as it's safe but doesn't drive growth. His least preferred scenario is maintaining current policies while professors attempt innovative approaches without proper support (A2, B1), as this could lead to chaos and unsuccessful outcomes.
+
+The decision they make will significantly impact the future of education in their department, affecting both faculty teaching methods and student learning experiences. Their choices will determine whether the department embraces innovation or sticks to traditional methods, and whether it provides the necessary support for educational initiatives or maintains the status quo.
+[/Scenario]

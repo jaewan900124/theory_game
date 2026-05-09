@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current hospital-physician relationship",
+  "A2": "Propose integrated care model",
+  "B1": "Continue independent practice",
+  "B2": "Join hospital network"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement integrated care model with physician cooperation",
+    3: "Propose integrated care model, physician remains independent",
+    2: "Maintain current relationship, physician joins network",
+    1: "Status quo: no changes to current relationship"
+  },
+  "B": {
+    4: "Join hospital network, maintain current hospital relationship",
+    3: "Join integrated care model",
+    2: "Continue independent practice, maintain current hospital relationship",
+    1: "Continue independent practice, hospital proposes changes"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 2 \ 4 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the administrator of Central Hospital, faces a critical decision regarding the facility's relationship with local physicians. Dr. Mark Johnson, a respected private practice physician, is also contemplating his future in the changing healthcare landscape.
+
+Dr. Chen is considering proposing an integrated care model that would bring physicians like Dr. Johnson into closer collaboration with the hospital. This model promises improved patient outcomes and operational efficiency but requires significant changes for both parties. Alternatively, she could maintain the current arms-length relationship between the hospital and independent physicians.
+
+Dr. Johnson, on the other hand, is weighing the benefits of joining the hospital network against continuing his independent practice. Joining the network could provide more resources and a steady patient flow but would mean giving up some autonomy.
+
+Their decisions will significantly impact each other and the local healthcare ecosystem. If Dr. Chen maintains the status quo (A1) and Dr. Johnson continues his independent practice (B1), both will see minimal changes, but also minimal improvements in care coordination (payoff: 1 for A, 2 for B).
+
+If Dr. Chen proposes the integrated model (A2) but Dr. Johnson chooses to remain independent (B1), the hospital will make some progress in modernizing its approach, but won't achieve full benefits without physician buy-in (payoff: 3 for A, 1 for B).
+
+If Dr. Chen maintains the current system (A1) but Dr. Johnson decides to join the hospital network (B2), there will be some improvements in care coordination, but the full potential of integration won't be realized (payoff: 2 for A, 4 for B).
+
+The optimal outcome for overall healthcare quality would occur if Dr. Chen proposes the integrated model (A2) and Dr. Johnson agrees to join (B2). This would result in the highest level of care coordination and resource optimization (payoff: 4 for A, 3 for B).
+
+Both Dr. Chen and Dr. Johnson must carefully consider their options, balancing personal preferences with the potential for improved patient care and operational efficiency in their community's healthcare system.
+[/Scenario]

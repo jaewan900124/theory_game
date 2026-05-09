@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented but egotistical basketball player",
+  "B": "Blake, the team's strategic coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play as a team player",
+  "A2": "Play selfishly for personal glory",
+  "B1": "Focus on Alex as the star player",
+  "B2": "Implement a balanced team strategy"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play selfishly and receive star treatment",
+    3: "Play as a team player and receive star treatment",
+    2: "Play as a team player under a balanced strategy",
+    1: "Play selfishly under a balanced strategy"
+  },
+  "B": {
+    4: "Alex plays as a team player while focused on as the star",
+    3: "Implement a balanced strategy with Alex playing selfishly",
+    2: "Implement a balanced strategy with Alex as a team player",
+    1: "Focus on Alex as the star while he plays selfishly"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Focus on Alex) | B2 (Balanced strategy) |
+|-------|--------------------|-----------------------|
+| A1 (Team player) | 3 \ 4             | 2 \ 2                  |
+| A2 (Selfish)     | 1 \ 1             | 4 \ 3                  |
+[/Payoff Matrix]
+
+[Scenario]
+The Riverside Rockets are preparing for the championship game, and tension is high between star player Alex and Coach Blake. Alex, known for his exceptional skills but also his ego, is torn between playing for the team and chasing personal glory. Coach Blake must decide whether to build the entire strategy around Alex or opt for a more balanced approach.
+
+If Alex chooses to be a team player (A1) and Blake focuses the strategy on him (B1), the team performs well, and Alex gets recognition (3 for Alex, 4 for Blake). This is Blake's ideal scenario, but Alex slightly prefers more personal glory.
+
+If Alex plays selfishly (A2) while Blake implements a balanced strategy (B2), Alex shines individually, and the team still manages to perform decently (4 for Alex, 3 for Blake). This is Alex's preferred outcome, as he gets the glory he craves.
+
+When both cooperate - Alex playing as a team player (A1) and Blake using a balanced strategy (B2) - the team performs moderately well, but neither feels fully satisfied (2 for both).
+
+The worst-case scenario occurs when Alex plays selfishly (A2) while Blake focuses the strategy on him (B1). This leads to poor team performance and frustration for both (1 for both).
+
+As the championship game approaches, Alex and Blake must make their decisions. Will Alex's desire for personal glory overshadow the team's needs? Will Blake risk everything on his star player or opt for a safer, balanced approach? Their choices will determine not only the outcome of the game but also the future of their professional relationship and the team's dynamics.
+[/Scenario]

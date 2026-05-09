@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Alex"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Teach traditional lecture-style",
+  "A2": "Implement interactive learning methods",
+  "B1": "Actively participate in class",
+  "B2": "Passively attend class"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Interactive teaching with engaged students",
+    3: "Traditional teaching with engaged students",
+    2: "Interactive teaching with passive students",
+    1: "Traditional teaching with passive students"
+  },
+  "B": {
+    4: "Traditional teaching while actively participating",
+    3: "Interactive teaching while actively participating",
+    2: "Interactive teaching while passively attending",
+    1: "Traditional teaching while passively attending"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Actively participate) | B2 (Passively attend) |
+|-------|---------------------------|------------------------|
+| A1 (Traditional lecture) | 3 \ 4                   | 1 \ 1                  |
+| A2 (Interactive methods) | 2 \ 2                   | 4 \ 3                  |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is preparing for the upcoming semester's Introduction to Psychology course. He's contemplating whether to stick with his traditional lecture-style approach or implement new interactive learning methods. Meanwhile, Student Alex, enrolled in the course, is deciding how to approach their studies.
+
+Professor Smith prefers interactive teaching with engaged students the most, as it allows for dynamic discussions and better learning outcomes. However, he also values traditional teaching methods when students are actively participating. His least preferred scenario is traditional teaching with passive students, as it feels ineffective and unfulfilling.
+
+Student Alex, on the other hand, prefers traditional teaching while actively participating the most. They find comfort in familiar lecture structures and enjoy asking questions and engaging in discussions. Alex's least preferred scenario is passive attendance in a traditional lecture, feeling it's a waste of time and learning opportunities.
+
+If Professor Smith chooses traditional lectures (A1) and Alex actively participates (B1), both benefit significantly (3,4). The professor appreciates the engagement, while Alex thrives in their preferred learning environment.
+
+If Smith implements interactive methods (A2) and Alex actively participates (B1), both receive moderate benefits (2,2). The professor is pleased with the engagement but feels the new methods need refinement, while Alex finds the change challenging but still engages.
+
+If Smith uses interactive methods (A2) and Alex passively attends (B2), the professor achieves his most preferred outcome (4) as the interactive format encourages participation from other students. Alex finds some benefit (3) from the engaging environment despite their passive approach.
+
+The least favorable outcome for both (1,1) occurs when Smith lectures traditionally (A1) and Alex attends passively (B2), resulting in an uninspiring and ineffective learning experience.
+
+As the semester begins, both Professor Smith and Student Alex must decide their approaches, knowing that their choices will significantly impact the course's success and their educational experience.
+[/Scenario]

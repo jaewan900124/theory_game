@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Lisa, an aspiring street artist",
+  "B": "Mark, the owner of a trendy art gallery"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative mural on a public wall",
+  "A2": "Submit a traditional painting to the gallery",
+  "B1": "Ignore Lisa's street art",
+  "B2": "Promote Lisa's street art in the gallery"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create provocative mural and get promoted by the gallery",
+    3: "Create provocative mural without gallery support",
+    2: "Submit traditional painting to the gallery",
+    1: "Submit traditional painting and get ignored"
+  },
+  "B": {
+    4: "Promote Lisa's provocative street art in the gallery",
+    3: "Showcase Lisa's traditional painting in the gallery",
+    2: "Ignore Lisa's provocative street art",
+    1: "Ignore Lisa's traditional painting submission"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 2 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city known for its vibrant art scene, Lisa, an aspiring street artist, finds herself at a crossroads in her career. She's torn between creating a provocative mural on a public wall, which aligns with her artistic vision, or submitting a more traditional painting to the prestigious local gallery owned by Mark.
+
+Mark, the gallery owner, has noticed Lisa's talent and is intrigued by her potential. He's considering whether to ignore her street art, maintaining his gallery's conventional image, or to take a risk and promote her edgy street art, potentially attracting a new audience.
+
+Lisa's preference is to create her provocative mural, especially if it gains recognition from the gallery. Her least preferred outcome is to compromise her style with a traditional painting only to be ignored by the gallery.
+
+Mark, on the other hand, is most excited about the prospect of promoting Lisa's street art in his gallery, seeing it as an opportunity to revitalize his business. His least preferred scenario is to ignore a traditional painting submission, as it doesn't align with his vision for the gallery's future.
+
+If Lisa creates her mural and Mark promotes it (A1, B2), both achieve their most preferred outcome (4,4). If Lisa creates the mural but Mark ignores it (A1, B1), Lisa still feels artistically fulfilled (3) while Mark maintains his status quo (2). If Lisa submits a traditional painting and Mark promotes it (A2, B2), Mark finds some satisfaction in a new artist (3), but Lisa feels unfulfilled (1). Lastly, if Lisa submits a traditional painting and Mark ignores it (A2, B1), both end up in their least preferred situations (2,1).
+
+The tension builds as Lisa contemplates her artistic integrity versus potential recognition, while Mark weighs the risks and rewards of embracing a new art form. Their decisions will not only shape their individual careers but also potentially influence the local art scene.
+[/Scenario]

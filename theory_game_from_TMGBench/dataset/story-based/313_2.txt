@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented young tennis player",
+  "B": "Blake, Alex's main rival and training partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Train collaboratively with Blake",
+  "A2": "Train independently and keep strategies secret",
+  "B1": "Train collaboratively with Alex",
+  "B2": "Train independently and keep strategies secret"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both train collaboratively, leading to mutual improvement",
+    3: "Train independently while Blake trains collaboratively",
+    2: "Both train independently, maintaining current skill levels",
+    1: "Train collaboratively while Blake trains independently"
+  },
+  "B": {
+    4: "Both train collaboratively, leading to mutual improvement",
+    3: "Train independently while Alex trains collaboratively",
+    2: "Both train independently, maintaining current skill levels",
+    1: "Train collaboratively while Alex trains independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 4 \ 4 |
+| A2    | 1 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are rising stars in the tennis world, both eyeing a spot in the upcoming Grand Slam tournament. They've been training at the same academy for years and have developed a complex relationship as both friends and rivals.
+
+As the tournament approaches, they face a crucial decision: whether to train collaboratively or independently. Collaborating would allow them to challenge each other, share strategies, and potentially improve their skills faster. However, it also means revealing their strengths and weaknesses to their main competitor.
+
+If both choose to train collaboratively (A1, B1), they would see moderate improvement in their skills, represented by a payoff of 2 for each. This scenario is their second-least preferred option, as they both benefit but also risk revealing too much to their rival.
+
+If one chooses to train collaboratively while the other trains independently (A1, B2 or A2, B1), the independent trainer gains a significant advantage. They benefit from their rival's openness while keeping their own strategies secret. This is represented by a payoff of 4 for the independent trainer and 1 for the collaborative one. For the independent trainer, this is the most preferred outcome, while for the collaborative trainer, it's the least preferred.
+
+If both choose to train independently (A2, B2), they maintain their current skill levels without giving away any secrets. This scenario is their third preference, represented by a payoff of 3 for each. It's a cautious approach that neither helps nor harms their relative positions.
+
+The optimal outcome for both players would be to train collaboratively (A1, B1), which would lead to the greatest overall improvement in their skills. However, the temptation to gain an advantage by training independently while the other collaborates creates a classic prisoner's dilemma scenario.
+
+As the tournament draws near, Alex and Blake must decide whether to trust each other and collaborate for mutual benefit, or to prioritize their individual interests at the potential cost of their friendship and shared growth.
+[/Scenario]

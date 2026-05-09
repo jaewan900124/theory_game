@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, a daily commuter",
+  "B": "Tom, a ride-sharing app driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use ride-sharing app",
+  "A2": "Take public transportation",
+  "B1": "Decline ride request",
+  "B2": "Accept ride request"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Use ride-sharing app and get accepted",
+    3: "Use public transportation and avoid waiting",
+    2: "Take public transportation and potentially wait",
+    1: "Use ride-sharing app but get declined"
+  },
+  "B": {
+    4: "Accept ride request during surge pricing",
+    3: "Accept ride request during normal pricing",
+    2: "Decline ride request and wait for surge pricing",
+    1: "Decline ride request and miss out on fare"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Decline) | B2 (Accept) |
+|-------|--------------|-------------|
+| A1 (Ride-share) | 3 \ 1       | 4 \ 4       |
+| A2 (Public) | 1 \ 2       | 2 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+It's a busy Monday morning in the city. Sarah, a daily commuter, is deciding how to get to work. She has two options: use a ride-sharing app or take public transportation. Tom, a ride-sharing app driver, is online and available for ride requests.
+
+Sarah prefers using the ride-sharing app if she can get a ride quickly (A1), as it's more comfortable and faster than public transportation. Her second choice would be to take public transportation if she can avoid waiting (A2 when B1). Her least preferred scenario is requesting a ride and getting declined (A1 when B1), as it would waste time and might make her late.
+
+Tom, on the other hand, is hoping for surge pricing to maximize his earnings. His most preferred scenario is accepting a ride during surge pricing (B2 when A1). His second choice is accepting a ride during normal pricing (B2 when A2). He would rather decline and wait for potential surge pricing (B1 when A2) than accept a low-fare ride. His least preferred option is declining a ride and missing out on any fare (B1 when A1).
+
+Sarah opens the app and sees that prices are slightly higher than usual due to increased demand. She decides to request a ride despite the higher cost (A1). At the same time, Tom receives Sarah's ride request. He notices the surge pricing and quickly accepts the ride (B2).
+
+This scenario results in the best outcome for both Sarah and Tom (4,4). Sarah gets her preferred mode of transportation, arriving at work comfortably and on time. Tom benefits from the surge pricing, maximizing his earnings for the morning. Their choices align in a mutually beneficial way, demonstrating how individual preferences can sometimes lead to cooperative outcomes in transportation dynamics.
+[/Scenario]

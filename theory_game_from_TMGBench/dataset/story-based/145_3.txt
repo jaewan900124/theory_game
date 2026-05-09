@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a shared electronic health record (EHR) system",
+  "A2": "Maintain separate record systems",
+  "B1": "Join the hospital network",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain separate systems while Dr. Johnson remains independent",
+    3: "Implement shared EHR system with Dr. Johnson joining the network",
+    2: "Maintain separate systems with Dr. Johnson joining the network",
+    1: "Implement shared EHR system while Dr. Johnson remains independent"
+  },
+  "B": {
+    4: "Join the hospital network with shared EHR system implemented",
+    3: "Join the hospital network with separate record systems",
+    2: "Remain independent with separate record systems maintained",
+    1: "Remain independent with shared EHR system implemented"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 1 |
+| A2    | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling metropolitan area, Dr. Emma Chen, the forward-thinking administrator of Central City Hospital, faces a critical decision regarding the institution's health record system. Simultaneously, Dr. Mark Johnson, a respected private practice physician in the community, contemplates whether to join the hospital's growing network or maintain his independence.
+
+Dr. Chen is considering implementing a shared electronic health record (EHR) system that would streamline patient care across the hospital and affiliated practices. However, this would require significant investment and cooperation from local physicians. Her alternative is to maintain the current separate record systems, which are less efficient but give the hospital more control over its data.
+
+Dr. Johnson, known for his personalized care, is weighing the benefits of joining the hospital network. Doing so could provide him with more resources and a larger patient base, but it might also mean losing some autonomy in his practice.
+
+If Dr. Chen implements the shared EHR system and Dr. Johnson joins the network (A1, B1), it would create a highly efficient healthcare ecosystem. This scenario is most preferred by Dr. Johnson (4) as it provides him with advanced tools and a broader patient base. Dr. Chen also sees this as a positive outcome (3) due to improved patient care, though it requires a substantial investment.
+
+If Dr. Chen maintains separate systems and Dr. Johnson joins the network (A2, B1), it's still beneficial for Dr. Johnson (3) as he gains the advantages of the network. Dr. Chen finds this scenario acceptable (2) as it expands the hospital's reach without the cost of a new EHR system.
+
+Dr. Chen's most preferred scenario (4) is maintaining separate systems while Dr. Johnson remains independent (A2, B2). This gives her the most control over hospital operations. For Dr. Johnson, this is less ideal (2) as he misses out on network benefits, but retains his independence.
+
+The least preferred scenario for both (1, 1) is if Dr. Chen implements the shared EHR system while Dr. Johnson remains independent (A1, B2). This leaves Dr. Chen with a costly system without full utilization, and Dr. Johnson feeling pressured to adopt a system he didn't choose.
+
+As they prepare to make their decisions, both Dr. Chen and Dr. Johnson must carefully consider the long-term implications for patient care, operational efficiency, and their professional satisfaction in this complex healthcare landscape.
+[/Scenario]

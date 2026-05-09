@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Sarah, a defense attorney",
+  "B": "Michael, a prosecutor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Proceed to trial",
+  "A2": "Negotiate a plea deal",
+  "B1": "Proceed to trial",
+  "B2": "Offer a plea deal"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Win the case at trial",
+    3: "Negotiate a favorable plea deal",
+    2: "Accept an unfavorable plea deal",
+    1: "Lose the case at trial"
+  },
+  "B": {
+    4: "Win the case at trial",
+    3: "Secure a conviction through a plea deal",
+    2: "Offer a lenient plea deal",
+    1: "Lose the case at trial"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Proceed to trial) | B2 (Offer a plea deal) |
+|-------|-------|-------|
+| A1 (Proceed to trial) | 1 \ 1 | 4 \ 4 |
+| A2 (Negotiate a plea deal) | 3 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a skilled defense attorney, and Michael, an experienced prosecutor, find themselves facing off in a high-profile criminal case. The defendant, accused of white-collar fraud, has maintained his innocence, but the evidence is complex and circumstantial.
+
+Sarah believes in her client's innocence and thinks she has a strong case, but she's also aware of the risks of going to trial. Michael, on the other hand, is confident in the prosecution's evidence but recognizes the challenges of proving guilt beyond a reasonable doubt in a complicated financial case.
+
+Both attorneys must decide whether to proceed to trial or engage in plea negotiations. Their choices will determine the outcome of the case and their professional reputations.
+
+If both Sarah and Michael choose to go to trial (A1, B1), they face the highest risk and potentially the lowest reward. A trial could be lengthy, expensive, and unpredictable, with both sides risking a loss that could damage their careers (1 \ 1).
+
+If Sarah decides to proceed to trial while Michael offers a plea deal (A1, B2), Sarah could potentially win the case outright, vindicating her client and boosting her reputation. Michael, by offering a plea deal, would secure a conviction without the risks of a trial, also benefiting his career (4 \ 4).
+
+If Sarah chooses to negotiate a plea deal while Michael wants to go to trial (A2, B1), they might reach a mutually beneficial agreement. Sarah could secure a favorable deal for her client, while Michael would still obtain a conviction without the uncertainty of a trial (3 \ 3).
+
+Lastly, if both Sarah and Michael opt for plea negotiations (A2, B2), they might settle on a compromise that's less than ideal for both parties. Sarah might have to accept harsher terms than she'd like, while Michael might have to offer more leniency than he initially wanted (2 \ 2).
+
+As they prepare for their next court appearance, both Sarah and Michael must carefully consider their strategies, weighing the potential risks and rewards of each choice. Their decisions will not only affect the outcome of this case but could also have lasting implications for their careers in law.
+[/Scenario]

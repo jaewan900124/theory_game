@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a sociology graduate student",
+  "B": "Dr. Martinez, Emma's thesis advisor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on collaborative research",
+  "A2": "Pursue an independent project",
+  "B1": "Provide extensive mentorship",
+  "B2": "Maintain minimal involvement"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive extensive mentorship while pursuing an independent project",
+    3: "Focus on collaborative research with extensive mentorship",
+    2: "Focus on collaborative research with minimal advisor involvement",
+    1: "Pursue an independent project with minimal advisor involvement"
+  },
+  "B": {
+    4: "Provide extensive mentorship for collaborative research",
+    3: "Maintain minimal involvement in an independent project",
+    2: "Provide minimal involvement in collaborative research",
+    1: "Provide extensive mentorship for an independent project"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Dr. Martinez | Provide extensive mentorship | Maintain minimal involvement |
+|----------------------|------------------------------|------------------------------|
+| Collaborative research | 3 \ 4                      | 4 \ 1                        |
+| Independent project    | 2 \ 2                      | 1 \ 3                        |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a promising sociology graduate student, is about to embark on her thesis research. Her advisor, Dr. Martinez, is a renowned sociologist known for his groundbreaking work in urban sociology. As they prepare to discuss Emma's research direction, both face a critical decision that will shape their academic relationship and Emma's future career.
+
+Emma has two choices: she can either focus on collaborative research aligned with Dr. Martinez's ongoing projects or pursue an independent project exploring a novel area of sociology. Meanwhile, Dr. Martinez must decide whether to provide extensive mentorship, investing significant time and resources in Emma's work, or maintain minimal involvement, allowing Emma more autonomy but with less guidance.
+
+Emma's ideal scenario would be to receive extensive mentorship while pursuing an independent project. This would allow her to benefit from Dr. Martinez's expertise while carving out her own niche in the field. However, she also recognizes the value of collaborative research, especially if it comes with Dr. Martinez's full support.
+
+Dr. Martinez, on the other hand, strongly prefers to provide extensive mentorship for collaborative research. This aligns with his ongoing projects and could lead to high-impact publications. His least preferred scenario is to invest heavily in mentoring an independent project that may not align with his research interests.
+
+The payoff matrix reveals the complexity of their choices. If Emma chooses collaborative research and Dr. Martinez provides extensive mentorship, both benefit significantly (3,4). However, if Emma pursues an independent project while Dr. Martinez maintains minimal involvement, it results in the worst outcome for Emma but a decent outcome for Dr. Martinez (1,3).
+
+As Emma enters Dr. Martinez's office for their crucial meeting, the tension is palpable. The decision they make will not only affect their working relationship but also the trajectory of Emma's academic career and the potential contributions to the field of sociology. Both must carefully consider their choices, weighing personal preferences against potential outcomes and the impact on their professional relationship.
+[/Scenario]

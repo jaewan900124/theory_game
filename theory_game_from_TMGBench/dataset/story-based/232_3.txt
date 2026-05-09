@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Alex, a startup founder developing AI software",
+  "B": "Blake, a venture capitalist interested in AI investments"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a cutting-edge AI product",
+  "A2": "Create a more conservative, market-ready AI solution",
+  "B1": "Invest heavily in Alex's startup",
+  "B2": "Make a smaller, cautious investment"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive heavy investment for cutting-edge AI product",
+    3: "Develop cutting-edge AI product with minimal investment",
+    2: "Create conservative AI solution with minimal investment",
+    1: "Receive heavy investment for conservative AI solution"
+  },
+  "B": {
+    4: "Invest heavily in cutting-edge AI product",
+    3: "Make small investment in cutting-edge AI product",
+    2: "Make small investment in conservative AI solution",
+    1: "Invest heavily in conservative AI solution"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 3 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling tech hub of Silicon Valley, Alex, a brilliant software engineer, has founded a startup focused on developing revolutionary AI technology. Alex's vision is to create an AI system that could potentially transform multiple industries, but it's a high-risk, high-reward endeavor that requires significant funding.
+
+Blake, a seasoned venture capitalist with a keen interest in AI, has taken notice of Alex's startup. Blake is intrigued by the potential of Alex's ideas but is also aware of the risks involved in such cutting-edge technology.
+
+Alex faces a crucial decision: should they pursue their dream of developing a cutting-edge AI product (A1) that could revolutionize the industry but might take years to perfect, or create a more conservative, market-ready AI solution (A2) that could generate immediate revenue but might not be as groundbreaking?
+
+Similarly, Blake must decide whether to invest heavily in Alex's startup (B1), potentially reaping massive rewards if the technology succeeds, or make a smaller, cautious investment (B2) to minimize risk.
+
+Their preferences and potential outcomes are as follows:
+
+1. If Alex chooses to develop the cutting-edge AI (A1) and Blake invests heavily (B1), Alex would receive substantial funding but feel pressured to deliver results quickly, potentially compromising the product's quality (Alex's least preferred outcome: 1). Blake would be taking a big risk but could potentially see enormous returns (Blake's most preferred outcome: 4).
+
+2. If Alex develops the cutting-edge AI (A1) and Blake makes a small investment (B2), Alex would have the freedom to pursue their vision with less pressure (Alex's most preferred outcome: 4). Blake would have a stake in a potentially revolutionary technology with minimal risk (Blake's second-most preferred outcome: 3).
+
+3. If Alex creates the conservative AI solution (A2) and Blake invests heavily (B1), Alex would have ample funding but feel they've compromised their vision (Alex's third-most preferred outcome: 3). Blake would likely see steady but unexciting returns (Blake's least preferred outcome: 1).
+
+4. If Alex creates the conservative AI solution (A2) and Blake makes a small investment (B2), both parties would be playing it safe but potentially missing out on a big opportunity (Both Alex and Blake's third-most preferred outcome: 2).
+
+As Alex and Blake sit down for their crucial meeting, the tension is palpable. The decisions they make today could shape the future of AI technology and their own careers. Will they choose to cooperate and pursue a bold vision, or will their competing interests lead them down a more cautious path?
+[/Scenario]

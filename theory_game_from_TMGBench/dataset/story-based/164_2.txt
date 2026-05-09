@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a freelance graphic designer",
+  "B": "Alex, a small business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Charge standard rate",
+  "A2": "Offer discounted rate",
+  "B1": "Hire for one-time project",
+  "B2": "Offer long-term contract"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Discounted rate with long-term contract",
+    3: "Standard rate with one-time project",
+    2: "Standard rate with long-term contract",
+    1: "Discounted rate with one-time project"
+  },
+  "B": {
+    4: "Standard rate with one-time project",
+    3: "Discounted rate with long-term contract",
+    2: "Standard rate with long-term contract",
+    1: "Discounted rate with one-time project"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Alex | Hire for one-time project | Offer long-term contract |
+|-------------|---------------------------|--------------------------|
+| Standard rate | 1 \ 4                   | 2 \ 1                    |
+| Discounted rate | 3 \ 2                 | 4 \ 3                    |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented freelance graphic designer, receives a project proposal from Alex, the owner of a small but growing business. Alex needs a new logo and branding materials for his company. Both Emma and Alex face decisions that will impact their professional relationship and potential future collaborations.
+
+Emma has two choices: she can either charge her standard rate or offer a discounted rate to potentially secure a long-term client. Alex, on the other hand, must decide whether to hire Emma for just this one-time project or offer her a long-term contract for ongoing design work.
+
+Emma's preferences are influenced by her desire for job security and consistent income. Her most preferred outcome is to offer a discounted rate and secure a long-term contract, as this would provide her with steady work and the potential for future projects. Her least preferred scenario is offering a discounted rate for a one-time project, as this would mean less income without the benefit of a lasting professional relationship.
+
+Alex's preferences are driven by his need for high-quality design work and budget considerations. His most preferred outcome is to get Emma's standard-rate work for a one-time project, as this would ensure top-quality results without a long-term financial commitment. His least preferred scenario is paying the discounted rate for a one-time project, as he values quality over cost savings for this important branding work.
+
+The situation creates an interesting dynamic where both Emma and Alex must consider their immediate needs versus long-term benefits. Emma might be tempted to offer a discount to secure a long-term contract, while Alex might prefer to test the waters with a one-time project before committing to a long-term arrangement.
+
+Their decisions will not only affect the immediate project but also set the tone for their potential future professional relationship. The outcome will depend on how well they can communicate their needs and negotiate a mutually beneficial arrangement.
+[/Scenario]

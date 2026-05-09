@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a psychology researcher",
+  "B": "Alex Thompson, Sarah's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate and contribute ideas",
+  "B2": "Work independently on a separate project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while assistant works independently",
+    3: "Share findings openly while assistant collaborates",
+    2: "Keep findings private while assistant collaborates",
+    1: "Share findings openly while assistant works independently"
+  },
+  "B": {
+    4: "Dr. Chen shares findings openly while collaborating",
+    3: "Dr. Chen keeps findings private while collaborating",
+    2: "Dr. Chen keeps findings private while working independently",
+    1: "Dr. Chen shares findings openly while working independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 1 |
+| A2    | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Sarah Chen, a renowned psychology researcher, is working on a groundbreaking study on cognitive biases in decision-making. Her research assistant, Alex Thompson, is an ambitious graduate student eager to make a name for himself in the field. They find themselves at a crucial juncture in their research, facing a dilemma that will test their professional relationship and personal ethics.
+
+Dr. Chen must decide whether to share her research findings openly with Alex (A1) or keep them private (A2). Simultaneously, Alex must choose between collaborating closely with Dr. Chen and contributing his ideas (B1) or working independently on a separate but related project (B2).
+
+Dr. Chen's ideal scenario is to keep her findings private while Alex works independently (A2, B2), as this would allow her to maintain full control over her research while potentially benefiting from Alex's separate work. Her second preference is to share her findings openly while Alex collaborates (A1, B1), fostering a productive teamwork environment. She least prefers sharing her findings openly while Alex works independently (A1, B2), as this could lead to her losing credit for her work without gaining any collaborative benefits.
+
+Alex, on the other hand, most desires Dr. Chen to share her findings openly while he collaborates (A1, B1), as this would provide him with the most learning opportunities and potential for recognition. His second choice is for Dr. Chen to keep her findings private while he collaborates (A2, B1), still allowing him to contribute and learn. Alex least prefers the scenario where Dr. Chen shares her findings openly but he works independently (A1, B2), as he would miss out on the collaborative opportunity while potentially feeling pressure to compete with Dr. Chen's published work.
+
+The situation creates a complex interplay of trust, ambition, and scientific ethics. If they both choose to cooperate (A1, B1), they could achieve a mutually beneficial outcome, fostering scientific progress and strengthening their professional relationship. However, the temptation for individual gain and the fear of being taken advantage of looms large, potentially pushing them towards less optimal choices.
+
+As they stand at this crossroads, both Dr. Chen and Alex must weigh their personal ambitions against the potential benefits of collaboration, all while considering the broader implications for their research and the field of psychology as a whole.
+[/Scenario]

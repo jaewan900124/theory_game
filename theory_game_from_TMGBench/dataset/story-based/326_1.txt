@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Alice Chen, a geneticist",
+  "B": "Dr. Bob Smith, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual research",
+  "A2": "Collaborate on joint research",
+  "B1": "Focus on individual research",
+  "B2": "Collaborate on joint research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Sole credit for breakthrough while benefiting from collaboration",
+    3: "Shared credit for collaborative breakthrough",
+    2: "Minor individual progress",
+    1: "No significant progress"
+  },
+  "B": {
+    4: "Shared credit for collaborative breakthrough",
+    3: "Shared credit for collaborative breakthrough",
+    2: "Minor individual progress",
+    1: "No significant progress"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 4 \ 4 |
+| A2    | 2 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious research institute, Dr. Alice Chen and Dr. Bob Smith are working on similar projects in the field of antibiotic resistance. Their research has the potential to revolutionize treatment for drug-resistant bacterial infections.
+
+Dr. Chen, known for her ambitious nature, is torn between focusing on her individual research and collaborating with Dr. Smith. She knows that collaboration could lead to faster results, but she's also tempted by the possibility of a solo breakthrough that could earn her sole credit and recognition.
+
+Dr. Smith, on the other hand, believes in the power of collaboration and is more inclined towards working together. He sees the potential for greater progress through shared knowledge and resources.
+
+Both scientists have two choices: focus on individual research or collaborate on joint research. Their decisions will lead to four possible scenarios:
+
+1. If both choose to focus on individual research (A1, B1), they make little progress due to limited resources and knowledge overlap. This is the least preferred outcome for Dr. Chen (1) and the second-least preferred for Dr. Smith (2).
+
+2. If Dr. Chen collaborates while Dr. Smith focuses on individual research (A2, B1), Dr. Chen makes some progress but feels her efforts are undervalued (2), while Dr. Smith struggles without collaboration (1).
+
+3. If Dr. Chen focuses on individual research while Dr. Smith attempts to collaborate (A1, B2), Dr. Chen might make a breakthrough using some of Dr. Smith's shared insights, leading to her most preferred outcome (4). Dr. Smith also benefits from this partial collaboration, achieving his most preferred outcome (4).
+
+4. If both choose to collaborate (A2, B2), they make significant progress together, sharing credit for the breakthrough. This is the second-most preferred outcome for Dr. Chen (3) and the most preferred for Dr. Smith (4, tied with the previous scenario).
+
+As they prepare to make their decisions, both scientists weigh their options carefully, considering the potential outcomes and their personal goals in the field of antibiotic resistance research.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Captain Zara, leader of the Earth Space Agency (ESA)",
+  "B": "Commander Krix, representative of the Martian Colony"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share advanced propulsion technology",
+  "A2": "Withhold advanced propulsion technology",
+  "B1": "Provide access to rare Martian resources",
+  "B2": "Restrict access to rare Martian resources"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain access to Martian resources while keeping advanced technology",
+    3: "Mutual cooperation: share technology and gain resource access",
+    2: "Neither side shares their assets",
+    1: "Share technology but don't gain resource access"
+  },
+  "B": {
+    4: "Gain advanced technology while keeping resource control",
+    3: "Mutual cooperation: gain technology and share resources",
+    2: "Neither side shares their assets",
+    1: "Share resources but don't gain advanced technology"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 2 |
+| A2    | 1 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2150, humanity has established a thriving colony on Mars. However, tensions have arisen between Earth and Mars due to limited resources and technological disparities. Captain Zara of the Earth Space Agency (ESA) and Commander Krix of the Martian Colony find themselves in a crucial negotiation that could shape the future of space exploration and interplanetary relations.
+
+Captain Zara possesses advanced propulsion technology that could revolutionize space travel, potentially allowing for faster and more efficient exploration of the solar system. On the other hand, Commander Krix controls access to rare Martian resources that are vital for sustaining long-term space missions and developing new technologies.
+
+Both leaders must decide whether to share their respective assets or keep them for their own benefit. Their choices will determine the outcome of the negotiation and the future of space exploration.
+
+If both parties choose to cooperate (A1 and B1), they would achieve a mutually beneficial outcome. Earth would gain access to rare Martian resources, accelerating their space program, while Mars would receive advanced propulsion technology, enhancing their capabilities. This scenario is Captain Zara's second-best outcome (3) and Commander Krix's most preferred outcome (4).
+
+If Captain Zara shares the technology but Commander Krix restricts resource access (A1 and B2), both parties would be in a suboptimal situation. Earth would have given away its technological advantage without gaining benefits, while Mars would have advanced technology but missed an opportunity for resource trade. This is the third-best outcome for both parties (2).
+
+If Captain Zara withholds the technology and Commander Krix provides resource access (A2 and B1), it would be the worst-case scenario for both leaders. Earth would miss out on valuable resources, and Mars would not receive the needed technological boost. This is the least preferred outcome for both parties (1).
+
+Finally, if both leaders choose not to share (A2 and B2), Earth would maintain its technological edge, and Mars would keep control of its resources. This scenario is Captain Zara's most preferred outcome (4) and Commander Krix's second-best outcome (3).
+
+The negotiation hangs in the balance as both leaders contemplate their choices, knowing that their decisions will have far-reaching consequences for the future of space exploration and the relationship between Earth and Mars.
+[/Scenario]

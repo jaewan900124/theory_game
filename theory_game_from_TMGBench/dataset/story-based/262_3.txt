@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on developing a new software platform",
+  "A2": "Assist with hardware integration",
+  "B1": "Develop custom hardware components",
+  "B2": "Use off-the-shelf components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop new software platform while Blake uses off-the-shelf components",
+    3: "Develop new software platform while Blake develops custom hardware",
+    2: "Assist with hardware integration while Blake uses off-the-shelf components",
+    1: "Assist with hardware integration while Blake develops custom hardware"
+  },
+  "B": {
+    4: "Develop custom hardware while Alex focuses on new software platform",
+    3: "Use off-the-shelf components while Alex focuses on new software platform",
+    2: "Use off-the-shelf components while Alex assists with hardware integration",
+    1: "Develop custom hardware while Alex assists with hardware integration"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 1 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a cutting-edge robotics project for their company. They need to decide how to allocate their efforts to maximize the project's success.
+
+Alex, the software engineer, has two choices: focus on developing a new software platform (A1) or assist with hardware integration (A2). Blake, the hardware engineer, can either develop custom hardware components (B1) or use off-the-shelf components (B2).
+
+Alex's ideal scenario is to develop the new software platform while Blake uses off-the-shelf components (A1, B2). This allows Alex to innovate in their area of expertise while working with standardized hardware. Alex's second preference is to develop the software platform while Blake creates custom hardware (A1, B1), as it still allows for software innovation but may require more coordination.
+
+Blake's top choice is to develop custom hardware while Alex focuses on the new software platform (A1, B1). This scenario lets Blake showcase their hardware design skills while working with cutting-edge software. Blake's second preference is to use off-the-shelf components while Alex develops the new software platform (A1, B2), as it's less challenging but still results in an advanced product.
+
+Both engineers least prefer the scenario where Alex assists with hardware integration while Blake develops custom hardware (A2, B1). This situation doesn't play to either of their strengths and could lead to inefficiencies.
+
+The project manager has asked Alex and Blake to make their decisions independently, without knowing what the other will choose. They must consider not only their preferences but also how their colleague might act, as their combined choices will determine the project's direction and their individual satisfaction with their roles.
+
+As they contemplate their decisions, both Alex and Blake face a dilemma. Should they choose what's best for themselves individually, or should they consider what might be best for the project as a whole? The outcome of their choices will not only affect the project's success but also their professional satisfaction and future opportunities within the company.
+[/Scenario]

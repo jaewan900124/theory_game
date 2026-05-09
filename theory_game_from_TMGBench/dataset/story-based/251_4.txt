@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emma, a sociology graduate student",
+  "B": "Professor Martinez, Emma's thesis advisor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Work independently on her own research",
+  "B1": "Provide extensive mentorship and resources",
+  "B2": "Offer minimal guidance and focus on his own work"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive extensive mentorship while working on a joint project",
+    3: "Work independently with minimal guidance",
+    2: "Collaborate on a joint project with minimal guidance",
+    1: "Work independently without support"
+  },
+  "B": {
+    4: "Provide extensive mentorship on a joint project",
+    3: "Offer minimal guidance while student works independently",
+    2: "Provide extensive mentorship for independent work",
+    1: "Offer minimal guidance on a joint project"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 2 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a passionate sociology graduate student, is at a crucial point in her academic career. She's about to embark on her thesis research and must decide how to proceed with her work. Her advisor, the renowned Professor Martinez, is known for his groundbreaking studies in urban sociology but is also notoriously busy with his own research.
+
+Emma has two choices: she can either propose a collaborative research project with Professor Martinez (A1) or decide to work independently on her own research topic (A2). Similarly, Professor Martinez can choose to provide extensive mentorship and resources (B1) or offer minimal guidance and focus on his own work (B2).
+
+Emma's ideal scenario would be to receive extensive mentorship while working on a joint project (A1B1), as this would give her the best opportunity to learn from Professor Martinez's expertise and potentially co-author a significant paper. Her second preference would be to work independently with minimal guidance (A2B2), as she values the freedom to pursue her own ideas. Her third choice would be to collaborate on a joint project with minimal guidance (A1B2), which would still give her the prestige of working with Professor Martinez but without much support. Her least preferred option would be to work independently without support (A2B1), as she fears this might lead to a subpar thesis.
+
+Professor Martinez, on the other hand, most prefers to provide extensive mentorship on a joint project (A1B1), as he enjoys nurturing talent and sees potential in Emma's work. His second choice would be to offer minimal guidance while Emma works independently (A2B2), allowing him to focus on his own research. His third preference is to provide extensive mentorship for independent work (A2B1), as he values supporting students but prefers when their work aligns closely with his interests. His least preferred scenario is to offer minimal guidance on a joint project (A1B2), as he feels this would neither benefit Emma nor his own work significantly.
+
+The situation creates an interesting dynamic where both Emma and Professor Martinez have incentives to cooperate, but also potential reasons to pursue their own interests. Their choices will not only affect the quality of Emma's thesis but also the future of their professional relationship and potentially the field of urban sociology itself.
+[/Scenario]

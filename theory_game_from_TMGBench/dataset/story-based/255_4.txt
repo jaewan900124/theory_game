@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a corporate lawyer",
+  "B": "Michael, Sarah's client and CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential patent infringement",
+  "A2": "Advise minimal disclosure of potential patent infringement",
+  "B1": "Follow lawyer's advice",
+  "B2": "Ignore lawyer's advice"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Full disclosure advised and followed",
+    3: "Full disclosure advised but ignored",
+    2: "Minimal disclosure advised and followed",
+    1: "Minimal disclosure advised but ignored"
+  },
+  "B": {
+    4: "Full disclosure advised and followed",
+    3: "Minimal disclosure advised and followed",
+    2: "Minimal disclosure advised but ignored",
+    1: "Full disclosure advised but ignored"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 1 |
+| A2    | 2 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a seasoned corporate lawyer, finds herself in a delicate situation with her client Michael, the CEO of a promising tech startup. Michael's company is on the verge of a major product launch, but Sarah has uncovered a potential patent infringement issue that could derail the entire project.
+
+Sarah must decide whether to advise full disclosure of the potential infringement (A1) or suggest minimal disclosure (A2). Meanwhile, Michael has the option to either follow Sarah's advice (B1) or ignore it (B2).
+
+Sarah's primary concern is maintaining her professional integrity and protecting her client's long-term interests. She strongly prefers advising full disclosure and having Michael follow through (3,4). Even if Michael ignores her advice for full disclosure (4,1), she feels she's done her due diligence. Her least preferred outcome is advising minimal disclosure and having Michael ignore even that (1,2).
+
+Michael, on the other hand, is torn between his desire for a successful launch and the need to mitigate legal risks. He realizes that following Sarah's advice for full disclosure (3,4) is the best long-term strategy, even though it might delay the launch. His worst-case scenario is ignoring Sarah's advice for full disclosure (4,1), which could lead to severe legal consequences.
+
+The payoff matrix reveals an interesting dynamic: while both Sarah and Michael prefer the scenario where full disclosure is advised and followed (3,4), they have different second choices. This creates a potential conflict if they don't communicate effectively or if Michael succumbs to short-term pressures.
+
+As the product launch date looms, Sarah and Michael must navigate this complex legal and ethical landscape. Their decisions will not only impact the immediate future of the startup but also their professional relationship and potentially the broader tech industry. The outcome hinges on their ability to align their interests and make choices that balance legal compliance with business objectives.
+[/Scenario]

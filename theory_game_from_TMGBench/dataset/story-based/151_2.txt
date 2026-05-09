@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a structural engineer",
+  "B": "Blake, a software engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional building materials",
+  "A2": "Implement innovative eco-friendly materials",
+  "B1": "Develop a basic building management system",
+  "B2": "Create an advanced AI-powered smart building system"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement eco-friendly materials with basic management system",
+    3: "Use traditional materials with basic management system",
+    2: "Use traditional materials with advanced AI system",
+    1: "Implement eco-friendly materials with advanced AI system"
+  },
+  "B": {
+    4: "Create AI system with traditional materials",
+    3: "Create AI system with eco-friendly materials",
+    2: "Develop basic system with traditional materials",
+    1: "Develop basic system with eco-friendly materials"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 3 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers collaborating on a groundbreaking smart building project. As the structural engineer, Alex is responsible for selecting the building materials, while Blake, the software engineer, is in charge of developing the building management system.
+
+Alex has two choices: stick with traditional building materials (A1) or implement innovative eco-friendly materials (A2). Alex prefers eco-friendly materials but is concerned about their compatibility with advanced technologies.
+
+Blake also faces two options: develop a basic building management system (B1) or create an advanced AI-powered smart building system (B2). Blake is excited about pushing technological boundaries but worries about potential integration issues with new materials.
+
+Their preferences and the project outcomes depend on how their choices combine:
+
+1. If Alex chooses traditional materials (A1) and Blake develops a basic system (B1), the project is safe but unremarkable. Alex finds this acceptable (2), while Blake is quite satisfied (4).
+
+2. If Alex uses traditional materials (A1) and Blake creates an advanced AI system (B2), the building is technologically impressive but not environmentally friendly. Alex is least satisfied with this outcome (1), but Blake is still pleased (3).
+
+3. If Alex implements eco-friendly materials (A2) and Blake develops a basic system (B1), the building is environmentally sustainable with simple management. This is Alex's most preferred outcome (4), but Blake's second-least preferred (2).
+
+4. If Alex uses eco-friendly materials (A2) and Blake creates an advanced AI system (B2), the project is ambitious but risky due to potential compatibility issues. Alex is concerned but sees potential (3), while Blake is least satisfied due to the challenges (1).
+
+As they prepare to make their decisions, both engineers must consider not only their own preferences but also how their choices will interact with their colleague's decision, ultimately determining the success of their innovative building project.
+[/Scenario]

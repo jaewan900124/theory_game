@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a cognitive psychologist",
+  "B": "Dr. Michael Rodriguez, a behavioral psychologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue an independent research project",
+  "B1": "Share research data and resources",
+  "B2": "Withhold research data and resources"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue independent research with exclusive access to resources",
+    3: "Collaborate with shared resources",
+    2: "Collaborate with limited resources",
+    1: "Pursue independent research with limited resources"
+  },
+  "B": {
+    4: "Collaborate with exclusive access to resources",
+    3: "Collaborate with shared resources",
+    2: "Withhold resources while others share",
+    1: "Withhold resources while others also withhold"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 3 |
+| A2    | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Sarah Chen and Dr. Michael Rodriguez are two prominent psychologists working at the same university. They have been presented with an opportunity to collaborate on a groundbreaking research project studying the effects of social media on cognitive development and behavior.
+
+Dr. Chen, known for her innovative approaches in cognitive psychology, is considering whether to collaborate with Dr. Rodriguez or pursue an independent research project. She prefers having exclusive access to resources but also sees value in collaboration.
+
+Dr. Rodriguez, an expert in behavioral psychology, is deciding whether to share his extensive research data and resources or keep them for his own studies. He values collaboration but is also protective of his work.
+
+Their choices will determine the outcome of their research and potentially impact their careers:
+
+1. If both choose to collaborate and share resources (A1, B1), they will produce solid research, but Dr. Chen feels slightly constrained while Dr. Rodriguez benefits most from the shared knowledge.
+
+2. If Dr. Chen collaborates but Dr. Rodriguez withholds resources (A1, B2), they both achieve moderate success with balanced benefits.
+
+3. If Dr. Chen pursues independent research while Dr. Rodriguez shares resources (A2, B1), Dr. Chen struggles with limited data, while Dr. Rodriguez gains some benefit from partial collaboration.
+
+4. If both choose to work independently and withhold resources (A2, B2), Dr. Chen maximizes her potential with exclusive resource use, but Dr. Rodriguez faces significant setbacks due to limited data.
+
+As they contemplate their decisions, both researchers must weigh the potential benefits of collaboration against the allure of individual success, knowing that their choices will not only affect their immediate research but also their long-term professional relationships and reputations in the field of psychology.
+[/Scenario]

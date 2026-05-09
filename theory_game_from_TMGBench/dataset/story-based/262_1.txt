@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Michael Thompson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer partnership program",
+  "A2": "Maintain current hospital-only services",
+  "B1": "Join hospital partnership",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Offer partnership, physician remains independent",
+    3: "Offer partnership, physician joins",
+    2: "Maintain current services, physician remains independent",
+    1: "Maintain current services, physician joins"
+  },
+  "B": {
+    4: "Hospital offers partnership, join partnership",
+    3: "Hospital offers partnership, remain independent",
+    2: "Hospital maintains current services, remain independent",
+    1: "Hospital maintains current services, join hospital"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 1 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the administrator of Greenwood General Hospital, faces a critical decision regarding the hospital's relationship with local private practice physicians. The hospital has been experiencing increased competition from neighboring healthcare facilities and is looking for ways to improve patient care while optimizing resources.
+
+Dr. Michael Thompson, a respected private practice physician in the community, represents the interests of local doctors who are considering their options in the changing healthcare landscape.
+
+Dr. Chen is contemplating whether to offer a partnership program (A1) that would allow private physicians to collaborate more closely with the hospital, sharing resources and patients. Alternatively, she could choose to maintain the current hospital-only services (A2), focusing on internal improvements.
+
+Dr. Thompson, on behalf of the local physicians, must decide whether to join the hospital partnership if offered (B1) or remain independent (B2).
+
+The preferences of both parties reflect their strategic goals:
+
+Dr. Chen's ideal outcome would be to offer the partnership program while physicians remain independent (A1, B2). This would allow the hospital to expand its network without taking on the full financial responsibility of employing the doctors. Her second preference is for physicians to join the partnership if offered (A1, B1), which would still be beneficial but more costly for the hospital. If the partnership is not offered, she would prefer physicians to remain independent (A2, B2) rather than seek employment with the hospital (A2, B1), which would strain resources.
+
+Dr. Thompson, representing the physicians, would most prefer to join a hospital partnership if offered (A1, B1), gaining access to hospital resources while maintaining some autonomy. His second choice would be for the hospital to offer a partnership, even if physicians choose to remain independent (A1, B2), as it would still provide opportunities for collaboration. If no partnership is offered, remaining independent (A2, B2) is preferable to joining the hospital as employees (A2, B1), which would result in a loss of autonomy and potentially lower compensation.
+
+The scenario highlights the complex dynamics between hospitals and private physicians in the healthcare system, where cooperation can lead to mutual benefits, but each party also has incentives to maintain their independence under certain conditions.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a talented young basketball player",
+  "B": "Coach Brown, the team's head coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play team-oriented basketball",
+  "A2": "Play individually to showcase personal skills",
+  "B1": "Focus on team strategy",
+  "B2": "Allow individual player freedom"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play individually with coach's approval",
+    3: "Play individually despite team focus",
+    2: "Play team-oriented with individual freedom",
+    1: "Play team-oriented with strict team focus"
+  },
+  "B": {
+    4: "Team-oriented play with team strategy focus",
+    3: "Individual play with team strategy focus",
+    2: "Individual play with player freedom",
+    1: "Team-oriented play with player freedom"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Team Strategy) | B2 (Player Freedom) |
+|-------|--------------------|--------------------|
+| A1 (Team-oriented) | 1 \ 1 | 2 \ 4 |
+| A2 (Individual) | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a rising star in the high school basketball team, finds himself at a crossroads in his athletic career. His exceptional skills have caught the attention of college scouts, but he's also an integral part of a team aiming for the state championship. Coach Brown, a seasoned veteran with a reputation for developing team-first players, is faced with the challenge of balancing Alex's individual growth with the team's success.
+
+As the season progresses, both Alex and Coach Brown must make crucial decisions that will impact not only the team's performance but also Alex's future prospects.
+
+Alex has two choices: he can either play team-oriented basketball (A1), focusing on passing, defense, and fitting into the team's system, or he can play more individually (A2) to showcase his personal skills and increase his chances of impressing scouts.
+
+Coach Brown, on the other hand, can either focus strictly on team strategy (B1), emphasizing set plays and defined roles, or allow more individual player freedom (B2) within the team's framework.
+
+Their preferences for different scenarios are clear:
+
+Alex would most prefer to play individually with the coach's approval (A2, B2), as this would allow him to shine while maintaining a good relationship with the team. His second preference would be to play individually even if the coach focuses on team strategy (A2, B1), as he could still showcase his skills. Playing team-oriented basketball with individual freedom (A1, B2) is his third choice, while playing strictly within a team-focused system (A1, B1) is his least preferred option.
+
+Coach Brown's top preference is for Alex to play team-oriented basketball while he focuses on team strategy (A1, B1), as this aligns perfectly with his coaching philosophy. His second choice would be for Alex to play individually while he maintains a team strategy focus (A2, B1), as this at least keeps the team structure intact. Allowing player freedom while Alex plays individually (A2, B2) is his third preference, while his least preferred scenario is when he allows player freedom but Alex still plays team-oriented (A1, B2), as this doesn't maximize either individual talent or team cohesion.
+
+As the state championship approaches, Alex and Coach Brown must navigate this complex dynamic. Their decisions will not only affect the team's performance but also shape Alex's future in basketball. The tension between individual success and team achievement creates a compelling game theory scenario in the world of sports.
+[/Scenario]

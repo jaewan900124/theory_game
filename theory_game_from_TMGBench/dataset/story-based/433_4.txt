@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Alex, a talented software engineer",
+  "B": "Taylor, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Stay at current job",
+  "A2": "Accept job offer from Taylor's startup",
+  "B1": "Maintain current salary offer",
+  "B2": "Increase salary offer"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Join startup with increased salary",
+    3: "Stay at current job with stability",
+    2: "Stay at current job, missing opportunity",
+    1: "Join startup without salary increase"
+  },
+  "B": {
+    4: "Hire Alex without increasing salary",
+    3: "Maintain current offer, Alex doesn't join",
+    2: "Alex stays at current job, startup stability",
+    1: "Increase salary offer, higher costs"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 2 \ 4 |
+| A2    | 1 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software engineer, finds himself at a career crossroads. He's content with his current job, which offers stability and a comfortable work environment. However, he's recently been approached by Taylor, the ambitious CEO of a promising tech startup, with an exciting job offer.
+
+Taylor is eager to bring Alex's expertise to her growing company, recognizing that his skills could significantly boost the startup's development. She initially offers Alex a salary comparable to his current one, hoping his enthusiasm for the project will be enough to sway him.
+
+Alex is intrigued by the startup's potential but is hesitant to leave his secure position without additional incentive. He's considering two options: staying at his current job or accepting Taylor's offer.
+
+Taylor, in turn, faces a dilemma. She can either maintain her initial salary offer, risking losing Alex to his current job, or increase the offer to make it more attractive, which would strain the startup's limited budget.
+
+Their preferences and potential outcomes are as follows:
+
+1. If Alex stays at his current job and Taylor maintains her initial offer (A1, B1), Alex retains his job security (3), while Taylor maintains financial stability but misses out on Alex's talent (2).
+
+2. If Alex stays put but Taylor increases her offer (A1, B2), Alex misses an opportunity for growth (2), while Taylor avoids higher costs but still lacks Alex's expertise (4).
+
+3. If Alex accepts the offer without a salary increase (A2, B1), he takes a risk for potential future gains (1), while Taylor successfully recruits him without additional cost (3).
+
+4. If Alex joins the startup with an increased salary (A2, B2), he gets an exciting opportunity with better compensation (4), but Taylor faces higher costs for the valuable addition to her team (1).
+
+As they consider their options, both Alex and Taylor must weigh the potential risks and rewards, knowing that their decisions will significantly impact their professional futures and the startup's prospects.
+[/Scenario]

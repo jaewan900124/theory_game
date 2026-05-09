@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Amelia Chen, a marine biologist",
+  "B": "Dr. Benjamin Taylor, a conservation ecologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on studying the rare coral species",
+  "A2": "Expand research to include invasive algae",
+  "B1": "Advocate for a marine protected area",
+  "B2": "Propose a limited fishing zone"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Expand research to include invasive algae while a limited fishing zone is proposed",
+    3: "Expand research to include invasive algae while a marine protected area is advocated",
+    2: "Focus on studying the rare coral species while a marine protected area is advocated",
+    1: "Focus on studying the rare coral species while a limited fishing zone is proposed"
+  },
+  "B": {
+    4: "Advocate for a marine protected area while rare coral species are studied",
+    3: "Propose a limited fishing zone while rare coral species are studied",
+    2: "Advocate for a marine protected area while research on invasive algae is expanded",
+    1: "Propose a limited fishing zone while research on invasive algae is expanded"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 3 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a pristine coastal area, Dr. Amelia Chen and Dr. Benjamin Taylor find themselves at a crossroads in their research and conservation efforts. The area is home to a rare species of coral that Dr. Chen has been studying, but it's also facing threats from invasive algae and overfishing.
+
+Dr. Chen (A) must decide whether to continue focusing on the rare coral species (A1) or expand her research to include the invasive algae (A2). Meanwhile, Dr. Taylor (B) is torn between advocating for a strict marine protected area (B1) or proposing a limited fishing zone (B2) to balance conservation with local economic needs.
+
+Dr. Chen's ideal scenario is to expand her research to include the invasive algae while a limited fishing zone is proposed. This would allow her to study the broader ecosystem dynamics while still maintaining some access to the area. Her least preferred outcome is to focus solely on the coral while a limited fishing zone is implemented, as this might not provide enough protection for the species she's studying.
+
+Dr. Taylor, on the other hand, would prefer to advocate for a marine protected area while the rare coral species are being studied. He believes this would offer the best protection for the ecosystem. His least favored outcome is proposing a limited fishing zone while the research expands to invasive algae, as he fears this might not adequately address the complex ecological issues at hand.
+
+If they both choose their most preferred options (A2 and B1), they'll end up in a scenario where Dr. Chen is moderately satisfied (preference level 3) but Dr. Taylor is less so (preference level 2). If they both opt for their less preferred choices (A1 and B2), Dr. Chen will be at her least preferred outcome (level 1) while Dr. Taylor will be moderately satisfied (level 3).
+
+The challenge for both scientists is to find a balance between their individual research interests and the overall conservation needs of the area. Their decisions will not only impact their own work but also the future of this delicate marine ecosystem.
+[/Scenario]

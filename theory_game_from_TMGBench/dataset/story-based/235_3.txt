@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a talented but struggling painter",
+  "B": "Marcus, a successful art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde piece",
+  "A2": "Produce a more conventional, crowd-pleasing artwork",
+  "B1": "Offer Emma an exclusive contract",
+  "B2": "Decline to offer Emma a contract"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create avant-garde piece and get a contract",
+    3: "Create conventional piece and get a contract",
+    2: "Create conventional piece without a contract",
+    1: "Create avant-garde piece without a contract"
+  },
+  "B": {
+    4: "Get exclusive rights to Emma's conventional artwork",
+    3: "Sign Emma for her conventional artwork",
+    2: "Decline Emma's conventional artwork",
+    1: "Decline Emma's avant-garde artwork"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 1 |
+| A2    | 3 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented but struggling painter, faces a crucial decision that could make or break her career. She has the opportunity to showcase her work at Marcus's prestigious art gallery, known for launching the careers of many successful artists.
+
+Emma must choose between creating a provocative, avant-garde piece that truly represents her artistic vision (A1) or producing a more conventional, crowd-pleasing artwork that might have broader appeal (A2). Meanwhile, Marcus, the gallery owner, must decide whether to offer Emma an exclusive contract (B1) or decline to represent her work (B2).
+
+Emma's preferences reflect her artistic ambitions and financial needs. Her ideal scenario is to create her avant-garde piece and still secure a contract (4), as this would validate her artistic vision. Her second choice would be to compromise with a conventional piece and get a contract (3), ensuring financial stability. Creating a conventional piece without a contract (2) is less desirable but still preferable to pouring her heart into an avant-garde piece that gets rejected (1).
+
+Marcus, on the other hand, is focused on the commercial viability of the art he represents. His top preference is to secure exclusive rights to Emma's conventional artwork (4), which he believes will sell well. His second choice is to sign Emma for her conventional work without exclusivity (3). Declining Emma's conventional work (2) is not ideal but better than taking a risk on her avant-garde piece (1), which he fears might not resonate with his clientele.
+
+The payoff matrix reveals the complex dynamics between artistic integrity and commercial success. If Emma creates an avant-garde piece (A1) and Marcus offers a contract (B1), Emma feels her artistic vision is compromised (1) while Marcus sees potential in shaping a new artist (4). If Marcus declines (B2), Emma maintains her integrity but loses the opportunity (4), and Marcus misses out on potential talent (1).
+
+If Emma creates a conventional piece (A2) and Marcus offers a contract (B1), both achieve a satisfactory outcome (3,3). However, if Marcus declines (B2), both are left in a suboptimal situation (2,2) ¨C Emma has compromised her vision without reward, and Marcus has potentially missed out on a commercially viable artist.
+
+This scenario highlights the tension between artistic expression and commercial viability in the art world, forcing both Emma and Marcus to weigh their personal values against potential success.
+[/Scenario]

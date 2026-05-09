@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a geneticist",
+  "B": "Dr. Alex Rodriguez, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on gene therapy research",
+  "A2": "Pursue CRISPR technology development",
+  "B1": "Collaborate on interdisciplinary research",
+  "B2": "Concentrate on individual bacterial studies"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop groundbreaking CRISPR applications independently",
+    3: "Advance gene therapy research with minimal competition",
+    2: "Collaborate on gene therapy research",
+    1: "Struggle with CRISPR development without support"
+  },
+  "B": {
+    4: "Collaborate on gene therapy research",
+    3: "Make solo breakthroughs in bacterial studies",
+    2: "Support CRISPR development as a secondary researcher",
+    1: "Face limited progress in individual bacterial studies"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 1 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Dr. Alex Rodriguez are prominent researchers at a leading biotechnology institute. They're faced with a critical decision that will shape their research directions for the next five years.
+
+Dr. Chen, a brilliant geneticist, is torn between continuing her groundbreaking work in gene therapy (A1) and shifting her focus to the cutting-edge CRISPR technology (A2). Gene therapy is her comfort zone, but CRISPR offers exciting new possibilities.
+
+Dr. Rodriguez, a renowned microbiologist, must choose between collaborating on interdisciplinary research (B1) or concentrating on his individual bacterial studies (B2). He sees value in collaboration but is also tempted by the potential breakthroughs in his specialized field.
+
+Their choices will significantly impact their careers and the institute's research output. If Dr. Chen focuses on gene therapy and Dr. Rodriguez collaborates (A1, B1), they'll make steady progress together, but neither will achieve their highest goals. Dr. Chen would prefer to advance her gene therapy research with less competition (A1, B2), while Dr. Rodriguez's ideal scenario is collaborating on gene therapy research (A1, B1).
+
+If Dr. Chen pursues CRISPR technology, the outcomes become more extreme. Without Dr. Rodriguez's support (A2, B2), she could make groundbreaking discoveries but faces a challenging journey. This scenario is her most preferred but is risky. Dr. Rodriguez, in this case, would make good progress in his bacterial studies.
+
+The least preferred scenario for Dr. Chen is struggling with CRISPR development without support (A2, B1), as she'd be dividing her attention between the new technology and supporting Dr. Rodriguez's work. For Dr. Rodriguez, the least favorable outcome is facing limited progress in his individual studies while Dr. Chen advances independently in gene therapy (A1, B2).
+
+As they stand at this crossroads, both researchers must carefully consider their choices, weighing personal ambitions against potential collaborations, and the risks and rewards of exploring new territories versus staying in their comfort zones.
+[/Scenario]

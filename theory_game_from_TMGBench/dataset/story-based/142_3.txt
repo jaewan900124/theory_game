@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emma, a talented but struggling painter",
+  "B": "Gabriel, an established art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a traditional, crowd-pleasing painting",
+  "A2": "Create an avant-garde, controversial piece",
+  "B1": "Feature Emma's work in a prominent exhibition",
+  "B2": "Offer Emma a small display in a less visible area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create an avant-garde piece and have it prominently featured",
+    3: "Create a traditional piece and have it prominently featured",
+    2: "Create an avant-garde piece and have it displayed in a less visible area",
+    1: "Create a traditional piece and have it displayed in a less visible area"
+  },
+  "B": {
+    4: "Feature a traditional piece in a prominent exhibition",
+    3: "Offer a small display for an avant-garde piece",
+    2: "Feature an avant-garde piece in a prominent exhibition",
+    1: "Offer a small display for a traditional piece"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Gabriel | Feature prominently | Small display |
+|-----------------|---------------------|---------------|
+| Traditional     | 3 \ 4               | 1 \ 3         |
+| Avant-garde     | 2 \ 1               | 4 \ 2         |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented but struggling painter, has been given an opportunity to showcase her work at Gabriel's prestigious art gallery. Gabriel, the gallery owner, is known for his keen eye and ability to spot emerging talent. However, they face a dilemma in deciding how to proceed with the exhibition.
+
+Emma must choose between creating a traditional, crowd-pleasing painting (A1) or an avant-garde, controversial piece (A2). She prefers to create avant-garde art but also wants recognition. Her ultimate goal is to have her avant-garde work prominently featured (preference 4), but she would be satisfied with having a traditional piece prominently displayed (preference 3). Creating an avant-garde piece for a small display is her third choice (preference 2), while making a traditional piece for a small display is her least preferred option (preference 1).
+
+Gabriel, on the other hand, must decide whether to feature Emma's work in a prominent exhibition (B1) or offer her a small display in a less visible area (B2). He prefers to feature traditional, crowd-pleasing art prominently (preference 4) to maximize gallery visitors and sales. His second choice is to offer a small display for an avant-garde piece (preference 3), as it might attract art critics without risking the gallery's reputation. Featuring an avant-garde piece prominently is his third choice (preference 2), while offering a small display for a traditional piece is his least preferred option (preference 1).
+
+If Emma creates a traditional piece and Gabriel features it prominently, both benefit moderately (Emma: 3, Gabriel: 4). If Emma makes a traditional piece but Gabriel offers only a small display, Emma is disappointed while Gabriel is somewhat satisfied (Emma: 1, Gabriel: 3). If Emma creates an avant-garde piece and Gabriel features it prominently, Emma is moderately happy but Gabriel is concerned about potential backlash (Emma: 2, Gabriel: 1). Finally, if Emma produces an avant-garde piece and Gabriel offers a small display, Emma is thrilled with the creative freedom while Gabriel feels it's a safe compromise (Emma: 4, Gabriel: 2).
+
+The outcome of their decisions will not only affect the upcoming exhibition but could also influence Emma's future career and Gabriel's gallery reputation. They must carefully consider their choices, weighing personal preferences against potential risks and rewards in the competitive world of art.
+[/Scenario]

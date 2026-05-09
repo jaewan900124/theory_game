@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a defense attorney",
+  "B": "Alex, the district attorney"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Negotiate a plea deal",
+  "A2": "Go to trial",
+  "B1": "Offer a lenient plea deal",
+  "B2": "Push for a harsh sentence"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Client gets a lenient sentence through negotiation",
+    3: "Win the case at trial",
+    2: "Client accepts a plea deal with moderate terms",
+    1: "Lose the case at trial"
+  },
+  "B": {
+    4: "Defense accepts a moderate plea deal",
+    3: "Win a harsh sentence at trial",
+    2: "Defense accepts a lenient plea deal",
+    1: "Lose the case at trial"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 1 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a seasoned defense attorney, finds herself in a challenging case representing a client accused of white-collar fraud. On the other side of the courtroom is Alex, the ambitious district attorney known for his tough stance on financial crimes.
+
+Sarah has two options: negotiate a plea deal (A1) or go to trial (A2). Alex, in turn, can either offer a lenient plea deal (B1) or push for a harsh sentence (B2).
+
+If Sarah chooses to negotiate (A1) and Alex offers a lenient deal (B1), Sarah's client would get a moderate sentence, which is not ideal but acceptable (2 for Sarah). Alex would consider this a significant win, as it ensures a conviction without the risks of a trial (4 for Alex).
+
+If Sarah negotiates (A1) but Alex pushes for a harsh sentence (B2), Sarah might surprisingly secure a better deal for her client due to her negotiation skills (4 for Sarah). Alex would still consider this a decent outcome, though not as favorable as a harsher sentence (3 for Alex).
+
+Should Sarah decide to go to trial (A2) and Alex offers a lenient deal (B1), Sarah would likely lose the case due to strong evidence against her client (1 for Sarah). Alex would see this as a missed opportunity for an easy win (2 for Alex).
+
+Finally, if Sarah goes to trial (A2) and Alex pushes for a harsh sentence (B2), Sarah has a chance to win the case by exploiting legal technicalities (3 for Sarah). However, if Alex loses, it would be a significant setback for his career ambitions (1 for Alex).
+
+As they prepare for their next move, both Sarah and Alex must carefully consider their options, weighing the potential outcomes against their professional goals and ethical obligations. The courtroom becomes a stage for this intense legal chess match, where each decision could dramatically alter the course of justice.
+[/Scenario]

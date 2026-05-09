@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Davis"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the environmental bill",
+  "A2": "Oppose the environmental bill",
+  "B1": "Endorse Senator Thompson for re-election",
+  "B2": "Remain neutral in the senatorial race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill and get re-elected",
+    3: "Support the bill and get re-elected",
+    2: "Oppose the bill but lose re-election",
+    1: "Support the bill and lose re-election"
+  },
+  "B": {
+    4: "Bill passes and maintains political alliance",
+    3: "Bill fails but maintains political alliance",
+    2: "Bill fails and loses political alliance",
+    1: "Bill passes but loses political alliance"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support)   | 3 \ 4        | 1 \ 3        |
+| A2 (Oppose)    | 2 \ 1        | 4 \ 2        |
+[/Payoff Matrix]
+
+[Scenario]
+In the state of Greenville, a crucial environmental bill is up for vote in the Senate. Senator Sarah Thompson, a moderate Democrat, is facing a tough re-election campaign. Governor Mark Davis, a popular figure in the state, has the power to influence the election with his endorsement.
+
+Senator Thompson is torn between supporting the environmental bill, which aligns with her party's values but might alienate some key donors, and opposing it to secure financial backing for her campaign. Her ideal scenario would be to oppose the bill and still secure re-election, but she knows that Governor Davis's endorsement could be crucial for her political survival.
+
+Governor Davis, on the other hand, is a strong advocate for environmental policies. He wants the bill to pass but also wishes to maintain a good relationship with Senator Thompson, as her support could be valuable for his future political aspirations. His ideal outcome would be for the bill to pass while keeping his alliance with Thompson intact.
+
+If Senator Thompson supports the bill (A1) and Governor Davis endorses her (B1), Thompson will likely be re-elected, and the bill will pass, resulting in a good outcome for both (3,4). If Thompson supports the bill but Davis remains neutral (B2), she might lose the election, resulting in her least preferred outcome (1,3).
+
+If Thompson opposes the bill (A2) and Davis still endorses her (B1), she'll likely win re-election, but the bill will fail, leading to Davis's least preferred outcome (2,1). If Thompson opposes the bill and Davis remains neutral (B2), Thompson might still win re-election due to donor support, achieving her best outcome, while Davis faces a suboptimal scenario (4,2).
+
+Both politicians must carefully consider their choices, weighing their personal political interests against their policy goals and the potential long-term consequences of their decisions.
+[/Scenario]

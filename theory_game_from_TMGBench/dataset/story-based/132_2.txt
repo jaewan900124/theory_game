@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Emma, a daily commuter",
+  "B": "Tom, a ride-sharing driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Take public transit",
+  "A2": "Request a ride-share",
+  "B1": "Accept ride requests",
+  "B2": "Decline ride requests"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a ride-share when Tom declines other requests",
+    3: "Take public transit when Tom accepts ride requests",
+    2: "Take public transit when Tom declines ride requests",
+    1: "Request a ride-share but Tom accepts other requests"
+  },
+  "B": {
+    4: "Emma takes public transit while Tom accepts other ride requests",
+    3: "Emma takes public transit while Tom declines ride requests",
+    2: "Emma requests a ride-share and Tom declines other requests",
+    1: "Emma requests a ride-share but Tom accepts other requests"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Tom | Accept (B1) | Decline (B2) |
+|------------|-------------|--------------|
+| Transit (A1)| 3 \ 4       | 2 \ 3        |
+| Ride-share (A2) | 1 \ 1   | 4 \ 2        |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Emma, a daily commuter, faces a transportation dilemma every morning. She can either take public transit or request a ride-share. Meanwhile, Tom, a ride-sharing driver, must decide whether to accept or decline ride requests during peak hours.
+
+Emma prefers the comfort and convenience of a ride-share, especially if she can get one easily (when Tom declines other requests). However, she also values the reliability of public transit, particularly when ride-sharing might be busy or unreliable.
+
+Tom, on the other hand, prefers to maximize his earnings by accepting multiple short rides during peak hours. He finds it most beneficial when commuters like Emma use public transit, allowing him to pick up other passengers. However, he also sees value in accepting a single, longer ride if other options are limited.
+
+Their choices create four possible scenarios:
+
+1. Emma takes public transit, and Tom accepts ride requests (3,4): This is Tom's most preferred outcome as he can maximize his earnings with multiple short rides. Emma is satisfied with the reliable public transit.
+
+2. Emma takes public transit, and Tom declines ride requests (2,3): Tom enjoys a break but misses out on some earnings. Emma's commute is unchanged, but she might have had an easier ride-share option.
+
+3. Emma requests a ride-share, and Tom declines other requests (4,2): Emma gets her preferred comfortable ride. Tom earns from a single longer ride but misses out on potentially more profitable multiple short rides.
+
+4. Emma requests a ride-share, but Tom accepts other requests (1,1): This is the least preferred outcome for both. Emma might face longer wait times or cancellations, while Tom might have to manage conflicting ride requests, potentially leading to dissatisfied customers and lower ratings.
+
+This scenario demonstrates the complex interplay between individual choices in urban transportation, highlighting how personal decisions can impact not only one's own commute but also the broader transportation ecosystem.
+[/Scenario]

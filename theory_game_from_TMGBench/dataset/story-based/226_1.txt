@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a corporate lawyer",
+  "B": "Mark, Sarah's client and CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential intellectual property issues",
+  "A2": "Advise minimal disclosure of potential intellectual property issues",
+  "B1": "Delay the product launch",
+  "B2": "Proceed with the product launch as scheduled"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Full disclosure, product launch proceeds",
+    3: "Minimal disclosure, product launch delayed",
+    2: "Minimal disclosure, product launch proceeds",
+    1: "Full disclosure, product launch delayed"
+  },
+  "B": {
+    4: "Full disclosure, product launch delayed",
+    3: "Minimal disclosure, product launch delayed",
+    2: "Full disclosure, product launch proceeds",
+    1: "Minimal disclosure, product launch proceeds"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 2 |
+| A2    | 2 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a seasoned corporate lawyer, finds herself in a delicate situation with her client Mark, the CEO of a promising tech startup. Mark's company is on the brink of launching a groundbreaking product, but Sarah has uncovered potential intellectual property issues that could lead to legal complications down the line.
+
+Sarah faces a dilemma: she can either advise full disclosure of the potential IP issues (A1) or suggest minimal disclosure (A2). Meanwhile, Mark must decide whether to delay the product launch (B1) or proceed as scheduled (B2).
+
+Sarah's primary concern is maintaining her professional integrity while also satisfying her client. Her ideal outcome would be full disclosure with the product launch proceeding (A1, B2), as it protects both her reputation and the client's interests. Her least preferred scenario is full disclosure leading to a delayed launch (A1, B1), as it might strain her relationship with the client.
+
+Mark, on the other hand, is caught between his eagerness to launch the product and the need to protect his company from potential legal issues. His most preferred outcome is full disclosure with a delayed launch (A1, B1), as it gives him time to address any issues while maintaining transparency. His least desired scenario is minimal disclosure with the launch proceeding (A2, B2), as it poses the highest risk of future legal complications.
+
+The tension between Sarah's professional obligations and Mark's business objectives creates a complex decision-making landscape. Sarah must balance her ethical duties with client satisfaction, while Mark grapples with the trade-off between immediate business goals and long-term legal security. Their choices will not only affect their professional relationship but also the future of Mark's company and potentially the broader tech industry.
+
+As they sit across from each other in Sarah's office, the weight of their decisions hangs in the air. The clock ticks closer to the scheduled product launch, and both Sarah and Mark know that their next moves will have far-reaching consequences.
+[/Scenario]

@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Olivia, a talented but struggling painter",
+  "B": "Marcus, an established art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional, marketable painting",
+  "A2": "Create an avant-garde, experimental piece",
+  "B1": "Exclusively feature Olivia's work",
+  "B2": "Include Olivia's work in a group exhibition"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a conventional piece and be featured in a group exhibition",
+    3: "Create an avant-garde piece and be featured in a group exhibition",
+    2: "Create an avant-garde piece and be exclusively featured",
+    1: "Create a conventional piece and be exclusively featured"
+  },
+  "B": {
+    4: "Include Olivia's conventional piece in a group exhibition",
+    3: "Include Olivia's avant-garde piece in a group exhibition",
+    2: "Exclusively feature Olivia's conventional piece",
+    1: "Exclusively feature Olivia's avant-garde piece"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Olivia \ Marcus | Exclusive (B1) | Group Exhibition (B2) |
+|-----------------|----------------|------------------------|
+| Conventional (A1) | 1 \ 2         | 4 \ 4                  |
+| Avant-garde (A2)  | 2 \ 1         | 3 \ 3                  |
+[/Payoff Matrix]
+
+[Scenario]
+Olivia, a talented but struggling painter, has caught the attention of Marcus, an established art gallery owner. Marcus is considering featuring Olivia's work in his upcoming exhibition, but they face a dilemma in deciding how to proceed.
+
+Olivia has two choices: she can either create a conventional, marketable painting (A1) that aligns with current trends, or she can pursue her passion for avant-garde, experimental art (A2). Her preference is to have her work recognized while maintaining her artistic integrity.
+
+Marcus, on the other hand, must decide whether to exclusively feature Olivia's work in a solo exhibition (B1) or include her piece in a group exhibition alongside other artists (B2). He wants to balance promoting new talent with maintaining his gallery's reputation and financial success.
+
+Their preferences and potential outcomes are represented in the payoff matrix:
+
+1. If Olivia creates a conventional piece (A1) and Marcus features it exclusively (B1), Olivia feels constrained artistically but gains some recognition (1), while Marcus sees moderate success but risks his reputation for innovation (2).
+
+2. If Olivia creates a conventional piece (A1) and Marcus includes it in a group exhibition (B2), both benefit greatly. Olivia's work gains exposure without the pressure of a solo show (4), and Marcus successfully promotes new talent while maintaining a diverse exhibition (4).
+
+3. If Olivia creates an avant-garde piece (A2) and Marcus features it exclusively (B1), Olivia enjoys artistic freedom but faces limited audience appreciation (2), while Marcus takes a significant risk with potentially low returns (1).
+
+4. If Olivia creates an avant-garde piece (A2) and Marcus includes it in a group exhibition (B2), both achieve a satisfactory outcome. Olivia's experimental work gains exposure alongside more conventional pieces (3), and Marcus balances innovation with marketability (3).
+
+The scenario highlights the tension between artistic integrity and commercial success, as well as the potential for mutual benefit when both parties are willing to compromise. The optimal outcome for both Olivia and Marcus appears to be collaborating on a group exhibition, but the type of artwork Olivia chooses to create adds an extra layer of complexity to their decision-making process.
+[/Scenario]

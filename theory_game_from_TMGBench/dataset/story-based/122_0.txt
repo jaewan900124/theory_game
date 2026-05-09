@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Jack, Emma's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on a similar project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while Jack works independently",
+    3: "Share findings openly while Jack works independently",
+    2: "Share findings openly while Jack collaborates",
+    1: "Keep findings private while Jack collaborates"
+  },
+  "B": {
+    4: "Emma shares findings openly while Jack collaborates",
+    3: "Emma shares findings openly while Jack works independently",
+    2: "Emma keeps findings private while Jack works independently",
+    1: "Emma keeps findings private while Jack collaborates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Jack | Collaborate | Work Independently |
+|-------------|-------------|---------------------|
+| Share       | 2 \ 4       | 3 \ 3               |
+| Keep Private| 1 \ 1       | 4 \ 2               |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a respected sociology professor, is on the verge of a breakthrough in her research on social media's impact on community dynamics. Her research assistant, Jack, has been instrumental in gathering data for the project. As they near the completion of their study, both Emma and Jack face crucial decisions that will affect their careers and the field of sociology.
+
+Emma must decide whether to share her findings openly with the academic community or keep them private for potential commercial applications. Jack, meanwhile, is torn between continuing to collaborate with Emma or striking out on his own with a similar project based on the knowledge he's gained.
+
+If Emma shares her findings openly and Jack continues to collaborate (A1, B1), Emma gains some recognition but loses exclusive rights to the research (2), while Jack benefits greatly from the shared credit and exposure (4). If Emma shares openly but Jack works independently (A1, B2), Emma's reputation grows moderately (3), and Jack also sees some benefits from the publicly available information (3).
+
+Should Emma keep her findings private and Jack collaborates (A2, B1), both face minimal gains as the research remains unexploited (1, 1). However, if Emma keeps the findings private and Jack works independently (A2, B2), Emma stands to gain the most from potential commercial applications (4), while Jack sees modest benefits from his independent work (2).
+
+Emma prefers to keep her options open for commercial applications but also values academic recognition. Jack prioritizes collaborative success but is also drawn to the idea of establishing his own research identity.
+
+As they sit in Emma's office, the tension is palpable. Emma fidgets with her pen, contemplating the potential impact of her decision on both their careers and the field of sociology. Jack leans forward, his eyes darting between Emma and the stack of research papers on her desk, weighing his options and the potential consequences of his choice. The future of their research ¨C and their professional relationship ¨C hangs in the balance as they prepare to make their decisions.
+[/Scenario]

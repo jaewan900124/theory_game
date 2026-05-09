@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Senator Alice",
+  "B": "Governor Bob"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the infrastructure bill",
+  "A2": "Oppose the infrastructure bill",
+  "B1": "Endorse Alice for re-election",
+  "B2": "Remain neutral in Alice's re-election"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Bill passes, gets re-election support",
+    3: "Bill fails, maintains political independence",
+    2: "Bill passes, no re-election support",
+    1: "Bill fails, loses potential ally"
+  },
+  "B": {
+    4: "Bill passes, maintains political independence",
+    3: "Bill fails, gains a political ally",
+    2: "Bill passes, supports potential rival",
+    1: "Bill fails, loses influence on senator"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 2 |
+| A2    | 3 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a crucial moment for state politics, Senator Alice and Governor Bob find themselves at a crossroads. A major infrastructure bill is up for vote in the Senate, and Alice's support could be pivotal. Meanwhile, Alice is facing a tough re-election campaign and Bob's endorsement could significantly boost her chances.
+
+Alice has two choices: support the infrastructure bill (A1) or oppose it (A2). Bob can either endorse Alice for re-election (B1) or remain neutral (B2).
+
+Alice's ideal scenario is to see the bill pass while securing Bob's endorsement (A1, B1), giving her a political win and re-election support. However, if Bob remains neutral, Alice would still prefer the bill to pass (A1, B2), as it aligns with her policy goals. If the bill fails, Alice would rather maintain her political independence (A2, B2) than lose a potential ally (A2, B1).
+
+Bob, on the other hand, wants the infrastructure bill to pass but prefers to maintain his political independence (A1, B2). His least preferred outcome is for the bill to fail and lose influence over Alice (A2, B1). If Alice opposes the bill, Bob would rather gain her as a political ally (A2, B2) than support a potential rival while achieving nothing (A1, B1).
+
+As they navigate this political minefield, both Alice and Bob must carefully consider their choices, weighing the potential benefits and drawbacks of each scenario. Their decisions will not only impact the fate of the infrastructure bill but also shape the political landscape of their state for years to come.
+[/Scenario]

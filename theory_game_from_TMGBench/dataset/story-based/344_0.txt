@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Blake, a visionary tech entrepreneur"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work independently on a personal project",
+  "A2": "Collaborate with Blake on a startup",
+  "B1": "Pursue a different developer for the startup",
+  "B2": "Partner with Alex for the startup"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently and have Blake interested in partnership",
+    3: "Collaborate with Blake on a startup",
+    2: "Work independently while Blake pursues others",
+    1: "Attempt collaboration, but Blake chooses another developer"
+  },
+  "B": {
+    4: "Partner with Alex for the startup",
+    3: "Successfully collaborate with Alex on the startup",
+    2: "Attempt to partner with Alex, but Alex works independently",
+    1: "Pursue a different developer, but fail to secure a partnership"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 4 \ 4 |
+| A2    | 3 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling tech hub of Silicon Valley, Alex, a brilliant software developer, finds himself at a crossroads in his career. He has been working on a groundbreaking AI algorithm that could revolutionize the industry. Meanwhile, Blake, a charismatic tech entrepreneur with a track record of successful startups, is on the lookout for a skilled developer to bring her latest vision to life.
+
+Blake approaches Alex with an enticing offer to collaborate on a new startup that would leverage Alex's AI expertise. Alex now faces a crucial decision: should he continue working independently on his personal project (A1) or join forces with Blake on the startup (A2)?
+
+Simultaneously, Blake must decide whether to pursue Alex as her primary choice for a development partner (B2) or seek out a different developer for her startup (B1).
+
+If Alex chooses to work independently (A1) and Blake decides to pursue a different developer (B1), Alex will make steady progress on his project but miss out on the potential of the startup (payoff 2). Blake, in this scenario, might struggle to find a developer of Alex's caliber (payoff 1).
+
+Should Alex work independently (A1) and Blake decide to partner with him (B2), it would be the ideal scenario for both. Alex would maintain his autonomy while gaining Blake's interest and resources (payoff 4), and Blake would secure a top-tier developer for her startup (payoff 4).
+
+If Alex agrees to collaborate (A2) and Blake pursues a different developer (B1), both would benefit from the collaboration, albeit not optimally. Alex would gain experience working on a startup (payoff 3), while Blake would successfully launch her project with a capable developer (payoff 3).
+
+Lastly, if Alex chooses to collaborate (A2) and Blake decides to partner with him (B2), the outcome would be suboptimal. Alex might feel constrained by the partnership (payoff 1), while Blake would face challenges working with a potentially reluctant partner (payoff 2).
+
+As they contemplate their decisions, both Alex and Blake must carefully consider the potential outcomes and how their choices might impact not only their individual success but also the future of technology innovation in Silicon Valley. The ideal outcome for both parties would be for Alex to work independently while Blake shows interest in partnering, but achieving this equilibrium requires careful consideration and communication from both sides.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a corporate lawyer",
+  "B": "Michael, Sarah's client and CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential patent infringement",
+  "A2": "Advise partial disclosure with ambiguous wording",
+  "B1": "Follow lawyer's advice completely",
+  "B2": "Partially follow lawyer's advice with some omissions"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain ethical standards and protect client's interests",
+    3: "Protect client's interests with minimal ethical compromise",
+    2: "Uphold ethical standards but potentially harm client's interests",
+    1: "Compromise ethics and potentially harm client's interests"
+  },
+  "B": {
+    4: "Maximize company's interests with minimal legal risk",
+    3: "Balance company's interests with moderate legal protection",
+    2: "Protect company legally but potentially harm business interests",
+    1: "Face high legal risk and potential business harm"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 2 |
+| A2    | 1 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a respected corporate lawyer, finds herself in a challenging situation with her client Michael, the CEO of a promising tech startup. Michael's company is on the verge of a major product launch, but Sarah has discovered a potential patent infringement that could jeopardize the entire operation.
+
+Sarah must decide whether to advise full disclosure of the potential infringement (A1) or suggest partial disclosure with ambiguous wording (A2). Michael, in turn, can choose to follow Sarah's advice completely (B1) or partially follow it with some omissions (B2).
+
+If Sarah advises full disclosure (A1) and Michael follows completely (B1), Sarah maintains her ethical standards but potentially harms her client's interests (2), while Michael maximizes legal protection but may face business challenges (4).
+
+If Sarah advises full disclosure (A1) and Michael partially follows (B2), Sarah protects her client's interests with minimal ethical compromise (3), but Michael faces potential legal risks and business harm (2).
+
+If Sarah suggests partial disclosure (A2) and Michael follows completely (B1), both Sarah and Michael compromise their ethics and face high legal risks (1,1).
+
+However, if Sarah suggests partial disclosure (A2) and Michael partially follows (B2), Sarah maintains ethical standards and protects her client's interests (4), while Michael balances the company's interests with moderate legal protection (3).
+
+Sarah and Michael must carefully consider their choices, weighing the potential legal, ethical, and business implications of their decisions. Their interaction showcases the complex interplay between legal ethics and business interests in corporate law.
+[/Scenario]

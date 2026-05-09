@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, CEO of TechInnovate",
+  "B": "Alex, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Propose a merger",
+  "A2": "Launch a competing product",
+  "B1": "Reject the merger",
+  "B2": "Accept the merger"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successful merger",
+    3: "Launch competing product while B rejects merger",
+    2: "Both companies maintain status quo",
+    1: "Launch competing product while B accepts merger"
+  },
+  "B": {
+    4: "Successful merger",
+    3: "Reject merger while A launches competing product",
+    2: "Reject merger while A maintains status quo",
+    1: "Maintain status quo while A proposes merger"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Reject) | B2 (Accept) |
+|-------|-------------|-------------|
+| A1 (Propose) | 2 \ 1 | 4 \ 4 |
+| A2 (Launch) | 3 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling tech hub of Silicon Valley, two rising stars in the software industry find themselves at a crossroads. Emma, the visionary CEO of TechInnovate, a cutting-edge AI company, and Alex, the analytical CEO of DataDrive, a leader in big data solutions, are contemplating their next moves in a rapidly evolving market.
+
+Emma has been eyeing a potential merger with DataDrive, believing that combining their strengths could create an unparalleled force in the tech world. She faces a crucial decision: propose a merger to Alex or launch a competing product that would directly challenge DataDrive's market share.
+
+Alex, on the other hand, is aware of the potential benefits of a merger but is also protective of DataDrive's independence and unique culture. He must decide whether to entertain Emma's potential merger proposal or reject it outright.
+
+Both CEOs know that their decisions will have far-reaching consequences for their companies and the industry at large. They each have clear preferences for the possible outcomes:
+
+Emma's ideal scenario is a successful merger, which would create a tech powerhouse. Her second preference would be to launch a competing product while Alex rejects the merger, allowing TechInnovate to potentially gain market share. Maintaining the status quo is her third choice, while her least preferred outcome would be launching a competing product only to have Alex accept the merger, potentially wasting resources and complicating the merger process.
+
+Alex shares Emma's top preference for a successful merger, recognizing the potential for exponential growth. His second choice would be to reject the merger while Emma launches a competing product, as this could drive innovation within DataDrive. Rejecting the merger while Emma maintains the status quo is his third preference, while his least favored outcome is maintaining the status quo if Emma proposes a merger, as this could be seen as a missed opportunity.
+
+As they prepare for a chance encounter at an upcoming tech conference, both Emma and Alex know that their next moves could reshape the future of their companies and the entire industry. The tension builds as they weigh their options, knowing that their decisions must be made without full knowledge of the other's intentions.
+[/Scenario]

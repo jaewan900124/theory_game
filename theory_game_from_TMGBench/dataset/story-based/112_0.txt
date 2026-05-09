@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Elara Chen, astrophysicist",
+  "B": "Captain Jake Hawkins, space mission commander"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on scientific research",
+  "A2": "Prioritize resource extraction",
+  "B1": "Maintain strict mission protocol",
+  "B2": "Allow flexibility in mission objectives"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Prioritize resource extraction with flexible mission objectives",
+    3: "Focus on scientific research with flexible mission objectives",
+    2: "Prioritize resource extraction under strict mission protocol",
+    1: "Focus on scientific research under strict mission protocol"
+  },
+  "B": {
+    4: "Focus on scientific research under strict mission protocol",
+    3: "Focus on scientific research with flexible mission objectives",
+    2: "Prioritize resource extraction with flexible mission objectives",
+    1: "Prioritize resource extraction under strict mission protocol"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 3 |
+| A2    | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+The year is 2075, and humanity has established its first permanent base on Mars. Dr. Elara Chen, a brilliant astrophysicist, and Captain Jake Hawkins, a decorated space mission commander, find themselves at the helm of a crucial decision that could shape the future of space exploration.
+
+Dr. Chen's primary interest lies in conducting groundbreaking scientific research on Mars, potentially uncovering secrets about the planet's past and its potential for sustaining life. However, she's also aware of the immense value of Martian resources and the pressure from Earth to extract them for economic gain.
+
+Captain Hawkins, on the other hand, is responsible for ensuring the mission's success and the safety of all personnel. He's inclined to stick to the strict mission protocol set by the Space Agency, which emphasizes caution and adherence to predetermined objectives.
+
+The two leaders must decide on the direction of their Mars mission. Dr. Chen can choose to focus on scientific research (A1) or prioritize resource extraction (A2). Captain Hawkins can maintain strict mission protocol (B1) or allow flexibility in mission objectives (B2).
+
+If Dr. Chen focuses on scientific research and Captain Hawkins maintains strict protocol (A1, B1), it results in the least preferred outcome for Dr. Chen (1) as her research is heavily constrained, but the most preferred outcome for Captain Hawkins (4) as he fulfills his duty perfectly.
+
+If Dr. Chen focuses on research but Captain Hawkins allows flexibility (A1, B2), both achieve a moderately satisfying outcome (3, 3) as research progresses with some freedom, and the mission adapts while maintaining overall structure.
+
+If Dr. Chen prioritizes resource extraction under strict protocol (A2, B1), she achieves a slightly better outcome (2) as some economic goals are met, but Captain Hawkins faces his least preferred scenario (1) due to the deviation from the original scientific mission.
+
+The most preferred outcome for Dr. Chen (4) occurs when she prioritizes resource extraction with Captain Hawkins allowing flexibility (A2, B2). This scenario, however, is only moderately satisfying for Captain Hawkins (2) as it strays from the original mission parameters but still allows for some control.
+
+As they stand in the control room of the Mars base, surrounded by screens displaying data from various experiments and mining operations, Dr. Chen and Captain Hawkins must make their choices. The future of Mars exploration hangs in the balance, with potential scientific discoveries and economic benefits weighing against mission integrity and safety protocols. Their decision will set a precedent for future space missions and potentially alter the course of human expansion into the cosmos.
+[/Scenario]

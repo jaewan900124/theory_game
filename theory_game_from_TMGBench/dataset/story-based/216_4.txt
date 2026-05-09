@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a senior mechanical engineer",
+  "B": "Blake, a senior electrical engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on improving the mechanical design",
+  "A2": "Assist with electrical integration",
+  "B1": "Focus on improving the electrical system",
+  "B2": "Assist with mechanical integration"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Improve mechanical design while Blake assists with integration",
+    3: "Assist with electrical integration while Blake improves electrical system",
+    2: "Both focus on their own specialties",
+    1: "Assist with electrical integration while Blake assists with mechanical integration"
+  },
+  "B": {
+    4: "Improve electrical system while Alex focuses on mechanical design",
+    3: "Assist with mechanical integration while Alex improves mechanical design",
+    2: "Assist with mechanical integration while Alex assists with electrical integration",
+    1: "Improve electrical system while Alex assists with electrical integration"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 2 |
+| A2    | 1 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are senior engineers working on a cutting-edge robotic arm project for their company. The project deadline is approaching, and they need to decide how to allocate their efforts to maximize the project's success.
+
+Alex, the mechanical engineer, can either focus on improving the mechanical design (A1) or assist with the electrical integration (A2). Blake, the electrical engineer, can either focus on improving the electrical system (B1) or assist with the mechanical integration (B2).
+
+Their choices will lead to different outcomes:
+
+1. If both focus on their specialties (A1, B1), the project progresses steadily but lacks integration. Alex finds this acceptable (2), while Blake is very satisfied (4).
+
+2. If Alex focuses on mechanics and Blake assists with mechanical integration (A1, B2), Alex achieves optimal results (4), but Blake feels their electrical expertise is underutilized (2).
+
+3. If Alex assists with electrical integration and Blake focuses on electrical systems (A2, B1), Alex feels their mechanical skills are underutilized (1), while Blake is quite satisfied (3).
+
+4. If both assist with the other's area (A2, B2), they achieve good integration but at the cost of core improvements. Alex finds this somewhat satisfactory (3), but Blake is frustrated (1).
+
+As they sit down to discuss their strategy, both engineers must consider not only their personal preferences but also the overall success of the project. They know that their decision will significantly impact the final quality of the robotic arm and potentially their future collaborations.
+
+Alex is inclined to focus on mechanical improvements, believing that the core structure is crucial. Blake, however, is torn between pushing the electrical systems further and helping with integration. The tension in the room is palpable as they weigh their options, knowing that their choice will shape the project's outcome and their professional relationship.
+[/Scenario]

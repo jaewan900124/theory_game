@@ -1,0 +1,64 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Mark, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new product independently",
+  "A2": "Propose a joint venture",
+  "B1": "Focus on current product line",
+  "B2": "Expand into new market segment"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Joint venture while B expands",
+    3: "Independent development while B expands",
+    2: "Independent development while B focuses on current products",
+    1: "Joint venture while B focuses on current products"
+  },
+  "B": {
+    4: "Expand while A develops independently",
+    3: "Focus on current products while A develops independently",
+    2: "Focus on current products while A proposes joint venture",
+    1: "Expand while A proposes joint venture"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 3 \ 4 |
+| A2    | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, the CEO of TechInnovate, and Mark, the CEO of DataDrive, are facing crucial decisions that will shape the future of their respective companies in the competitive tech industry.
+
+Sarah is contemplating whether to develop a new innovative product independently or propose a joint venture with DataDrive. She believes that a joint venture could potentially lead to groundbreaking results, but it also comes with risks and the need to share profits.
+
+Mark, on the other hand, is deciding between focusing on DataDrive's current successful product line or expanding into a new market segment. The expansion could open up new revenue streams but would require significant investment and pose risks.
+
+Their decisions will impact not only their own companies but also the competitive landscape between them. The outcome of their choices can be summarized as follows:
+
+1. If Sarah develops independently (A1) and Mark focuses on current products (B1), both companies maintain their current positions with moderate success (Sarah: 2, Mark: 3).
+
+2. If Sarah develops independently (A1) and Mark expands (B2), both companies grow but DataDrive gains a slight edge in the market (Sarah: 3, Mark: 4).
+
+3. If Sarah proposes a joint venture (A2) and Mark focuses on current products (B1), TechInnovate struggles with the partnership while DataDrive maintains stability (Sarah: 1, Mark: 2).
+
+4. If Sarah proposes a joint venture (A2) and Mark expands (B2), TechInnovate benefits greatly from the partnership, but DataDrive faces challenges in managing both the expansion and the joint venture (Sarah: 4, Mark: 1).
+
+Sarah's ideal scenario is a successful joint venture coupled with Mark's expansion, as it would provide TechInnovate with new resources and market access. However, she also sees value in independent development if DataDrive expands, as it could open up competition in new markets.
+
+Mark's preference is to expand while TechInnovate develops independently, allowing DataDrive to grow without the complications of a joint venture. His least preferred outcome is expanding while entering a joint venture, as he fears it might stretch the company's resources too thin.
+
+As both CEOs prepare to make their decisions, they must carefully consider the potential outcomes and how their choices might interact with those of their competitor. The future of both companies hangs in the balance, dependent on this critical moment of decision-making in the fast-paced tech industry.
+[/Scenario]

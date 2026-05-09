@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Emma"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer traditional lectures",
+  "A2": "Implement project-based learning",
+  "B1": "Actively participate in class",
+  "B2": "Study independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement project-based learning with independent student study",
+    3: "Implement project-based learning with active student participation",
+    2: "Offer traditional lectures with active student participation",
+    1: "Offer traditional lectures with independent student study"
+  },
+  "B": {
+    4: "Traditional lectures with active participation",
+    3: "Project-based learning with active participation",
+    2: "Traditional lectures with independent study",
+    1: "Project-based learning with independent study"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 2 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is preparing for the upcoming semester's Advanced Economics course. He's considering two teaching approaches: traditional lectures (A1) or implementing project-based learning (A2). Meanwhile, his student Emma is deciding how to approach her studies: actively participate in class (B1) or study independently (B2).
+
+Professor Smith prefers project-based learning, believing it fosters critical thinking and real-world application. His ideal scenario is implementing project-based learning while students study independently, allowing them to develop self-directed learning skills. His second preference is project-based learning with active student participation, followed by traditional lectures with active participation. His least preferred option is traditional lectures with independent study, fearing students might miss crucial insights.
+
+Emma, on the other hand, prefers traditional lectures with active participation. She finds this method most comfortable and believes it will help her grasp complex economic concepts more easily. Her second choice is project-based learning with active participation, appreciating the practical experience but worried about the workload. She considers independent study with traditional lectures as her third option, while project-based learning with independent study is her least preferred, fearing she might struggle without guidance.
+
+The payoff matrix reflects their preferences, with 4 representing the most preferred outcome and 1 the least preferred for each.
+
+If Professor Smith chooses traditional lectures (A1) and Emma actively participates (B1), Smith receives a payoff of 2 (his third preference) while Emma receives 4 (her top preference). If Smith implements project-based learning (A2) and Emma studies independently (B2), Smith gets his top preference (4) while Emma gets her least preferred outcome (1).
+
+The scenario creates a interesting dynamic where their ideal outcomes don't align, forcing them to navigate their choices carefully to find a balance between their preferences and the overall learning experience.
+[/Scenario]

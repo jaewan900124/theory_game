@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a sociology professor",
+  "B": "Dr. Michael Thompson, another sociology professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue individual research",
+  "B1": "Pursue individual research",
+  "B2": "Collaborate on a joint research project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on a groundbreaking joint project",
+    3: "Successfully complete individual research",
+    2: "Collaborate on a moderately successful project",
+    1: "Both pursue individual research with limited success"
+  },
+  "B": {
+    4: "Collaborate on a groundbreaking joint project",
+    3: "Successfully complete individual research",
+    2: "Collaborate on a moderately successful project",
+    1: "Both pursue individual research with limited success"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 4 \ 4 |
+| A2    | 3 \ 2 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, two sociology professors, Dr. Emily Chen and Dr. Michael Thompson, are faced with a decision that could shape their careers. They have the opportunity to either collaborate on a joint research project or pursue individual research in their respective areas of expertise.
+
+Dr. Chen, known for her innovative approaches to urban sociology, has been considering a groundbreaking study on the impact of emerging technologies on social structures in smart cities. Dr. Thompson, on the other hand, has been developing a unique methodology to analyze social media's influence on political polarization.
+
+Both professors are aware that collaboration could lead to a revolutionary project that combines their strengths, potentially resulting in a high-impact publication and significant recognition in the field (4,4). However, they also recognize the risks involved in collaboration, such as potential conflicts or the dilution of their individual ideas.
+
+If they both choose to pursue individual research (A1,B1), they might make some progress but would likely achieve limited success due to resource constraints and the lack of diverse perspectives (1,1). This scenario is least preferred by both professors.
+
+Dr. Chen believes that if she pursues her individual research while Dr. Thompson collaborates (A2,B2), she could make significant strides in her study, albeit missing out on the potential benefits of collaboration (2,3). Conversely, if Dr. Thompson pursues his individual research while Dr. Chen seeks collaboration (A1,B1), he would have a similar outcome (3,2).
+
+As they contemplate their decision, both professors must weigh the potential benefits of collaboration against the security and control offered by individual pursuits. Their choice will not only affect their immediate research outcomes but also shape their professional relationships and future opportunities in the field of sociology.
+
+The university administration eagerly awaits their decision, knowing that the outcome could significantly impact the institution's reputation in sociological research. As the deadline for project proposals approaches, Dr. Chen and Dr. Thompson must make their choices, each hoping to maximize their research impact while navigating the complex dynamics of academic collaboration.
+[/Scenario]

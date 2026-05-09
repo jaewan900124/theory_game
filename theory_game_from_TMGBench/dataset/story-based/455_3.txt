@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Winters, a clinical psychologist",
+  "B": "Alex Thompson, a patient struggling with anxiety"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional therapy methods",
+  "A2": "Implement an experimental treatment approach",
+  "B1": "Fully engage in the therapy process",
+  "B2": "Maintain emotional distance and skepticism"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement experimental treatment with patient's full engagement",
+    3: "Implement experimental treatment despite patient's skepticism",
+    2: "Use traditional methods with patient's full engagement",
+    1: "Use traditional methods with patient's skepticism"
+  },
+  "B": {
+    4: "Maintain skepticism while receiving traditional therapy",
+    3: "Fully engage in experimental treatment approach",
+    2: "Maintain skepticism during experimental treatment",
+    1: "Fully engage in traditional therapy methods"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 1 \ 4 |
+| A2    | 3 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Winters, a respected clinical psychologist, is faced with a challenging case. Her new patient, Alex Thompson, has been struggling with severe anxiety that has not responded well to previous treatments. Emma must decide whether to use traditional therapy methods or implement an experimental treatment approach she has been developing.
+
+Alex, on the other hand, is torn between fully engaging in the therapy process and maintaining emotional distance due to skepticism from past unsuccessful treatments.
+
+Emma's primary goal is to help Alex overcome his anxiety while also advancing her research. She prefers to implement her experimental treatment, especially if Alex fully engages (4). Even if Alex remains skeptical, she still sees value in trying the new approach (3). Using traditional methods is less appealing to her, though she'd prefer Alex's full engagement (2) over his skepticism (1).
+
+Alex's preferences are more complex. His past experiences have left him wary, so he feels most comfortable maintaining his skepticism while receiving traditional therapy (4). However, he's intrigued by the possibility of a breakthrough and would be willing to fully engage in an experimental approach (3). If he remains skeptical, he'd rather it be with the experimental treatment (2) than waste time fully engaging in traditional methods that haven't worked before (1).
+
+The scenario unfolds in Emma's office during their first session together. As they discuss treatment options, both Emma and Alex must make their choices, knowing that the outcome will depend on how their decisions align. The tension is palpable as they each weigh their options, aware that their choices will significantly impact the course of Alex's treatment and potentially the field of anxiety therapy as a whole.
+
+Their decisions will lead to one of four possible outcomes, each with its own set of consequences for both the doctor and the patient. The success of the therapy, the advancement of Emma's research, and Alex's journey towards mental health all hang in the balance of this crucial moment of choice.
+[/Scenario]

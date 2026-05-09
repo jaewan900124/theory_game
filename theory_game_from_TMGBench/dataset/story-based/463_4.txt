@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Maya, an aspiring street artist",
+  "B": "Leo, the owner of a trendy art gallery"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create conventional art for gallery display",
+  "A2": "Create provocative street art",
+  "B1": "Offer Maya a small exhibition space",
+  "B2": "Ignore Maya's work"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create provocative street art and gain recognition",
+    3: "Create provocative street art but remain unnoticed",
+    2: "Create conventional art and get a small exhibition",
+    1: "Create conventional art but get ignored"
+  },
+  "B": {
+    4: "Ignore Maya's conventional art to maintain gallery's exclusivity",
+    3: "Offer Maya a small exhibition for her provocative art",
+    2: "Offer Maya a small exhibition for her conventional art",
+    1: "Ignore Maya's provocative street art, risking gallery's reputation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Maya \ Leo | Offer Exhibition (B1) | Ignore (B2) |
+|-------------|----------------------|-------------|
+| Conventional (A1) | 1 \ 2               | 2 \ 4      |
+| Provocative (A2)  | 3 \ 3               | 4 \ 1      |
+[/Payoff Matrix]
+
+[Scenario]
+In the vibrant art scene of a bustling city, Maya, an aspiring street artist with a penchant for provocative and boundary-pushing work, finds herself at a crossroads. She's caught the attention of Leo, the owner of a trendy art gallery known for showcasing cutting-edge talent.
+
+Maya faces a dilemma: she can either create conventional art that might be more palatable for gallery display (A1) or stay true to her roots and create provocative street art (A2). Meanwhile, Leo must decide whether to offer Maya a small exhibition space in his gallery (B1) or ignore her work altogether (B2).
+
+Maya's ultimate desire is to create provocative street art and gain recognition (preference 4), as this aligns with her artistic vision and values. Her least preferred outcome would be to compromise her style by creating conventional art only to be ignored by the gallery (preference 1).
+
+Leo, on the other hand, is most interested in maintaining his gallery's exclusive reputation. His top preference is to ignore Maya's conventional art (preference 4), as it doesn't align with his gallery's edgy image. However, he's intrigued by the possibility of showcasing provocative street art in a gallery setting, making this his second preference (3).
+
+If Maya chooses to create conventional art (A1) and Leo offers her an exhibition (B1), Maya feels somewhat stifled creatively but gains some exposure (1), while Leo sees a modest increase in gallery visitors (2). If Leo ignores her conventional art (B2), Maya is disappointed but not surprised (2), and Leo maintains his gallery's exclusivity (4).
+
+Should Maya opt for provocative street art (A2) and Leo offers an exhibition (B1), Maya is excited about the opportunity to showcase her true style (3), and Leo benefits from the buzz surrounding the unconventional exhibition (3). However, if Leo ignores her provocative work (B2), Maya gains street cred and feels true to herself (4), but Leo risks his gallery's reputation by not acknowledging an emerging talent (1).
+
+This scenario illustrates the complex dynamics between artists and gallery owners, highlighting the tension between artistic integrity and commercial success in the art world.
+[/Scenario]

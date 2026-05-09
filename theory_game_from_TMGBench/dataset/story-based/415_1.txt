@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, an established abstract painter",
+  "B": "Blair, an up-and-coming digital artist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint exhibition",
+  "A2": "Create a solo exhibition",
+  "B1": "Collaborate on a joint exhibition",
+  "B2": "Promote own work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a solo exhibition while Blair promotes independently",
+    3: "Collaborate on a joint exhibition while Blair promotes independently",
+    2: "Create a solo exhibition while collaborating with Blair",
+    1: "Both collaborate on a joint exhibition"
+  },
+  "B": {
+    4: "Collaborate on a joint exhibition while Alex creates a solo exhibition",
+    3: "Both create independent works",
+    2: "Both collaborate on a joint exhibition",
+    1: "Promote independently while collaborating with Alex"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 3 \ 4 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the vibrant art scene of a bustling metropolis, two artists find themselves at a crossroads. Alex, an established abstract painter with a loyal following, and Blair, an up-and-coming digital artist gaining recognition for innovative techniques, are both preparing for the upcoming art season.
+
+The local art community is buzzing with excitement about potential collaborations and solo exhibitions. Alex and Blair, who have admired each other's work from afar, are now faced with a decision that could shape their careers.
+
+Alex, known for bold brushstrokes and emotive use of color, is contemplating whether to stick to a solo exhibition or venture into a collaborative project with Blair. A solo show would allow Alex to maintain creative control and showcase a cohesive body of work. However, a collaboration with Blair could bring fresh perspectives and potentially attract a wider audience.
+
+Blair, on the other hand, sees an opportunity to gain exposure by associating with an established artist like Alex. A joint exhibition could be a significant career boost. However, Blair is also considering the merits of promoting individual work independently, which could solidify a unique artistic identity.
+
+The artists' preferences reflect their career stages and personal goals. Alex prefers scenarios where individual work takes center stage, with the ideal being a solo exhibition while Blair promotes independently. This would allow Alex to maintain artistic autonomy while potentially benefiting from the buzz created by Blair's separate promotions.
+
+Blair's top preference is to collaborate with Alex while Alex also maintains a solo exhibition. This scenario would provide the benefits of association with an established artist while also allowing Blair to ride the wave of Alex's individual success.
+
+Both artists are least enthusiastic about a full collaboration, as it might dilute their individual artistic voices. However, they recognize that some level of cooperation could be beneficial.
+
+As the deadline for committing to the season's exhibitions approaches, Alex and Blair must make their decisions. Will they choose to collaborate and potentially create something greater than the sum of its parts? Or will they pursue their individual paths, competing for the attention of art enthusiasts and critics alike? Their choices will not only affect their immediate success but could also shape the trajectory of their artistic careers in the long run.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a microbiologist",
+  "B": "Dr. Alex Patel, a geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual research",
+  "A2": "Collaborate on joint project",
+  "B1": "Keep findings confidential",
+  "B2": "Share research data"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Individual research with shared data",
+    3: "Collaboration with confidential findings",
+    2: "Individual research with confidential findings",
+    1: "Collaboration with shared data"
+  },
+  "B": {
+    4: "Individual research with shared data",
+    3: "Collaboration with confidential findings",
+    2: "Collaboration with shared data",
+    1: "Individual research with confidential findings"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Keep confidential) | B2 (Share data) |
+|-------|------------------------|-----------------|
+| A1 (Individual) | 2 \ 1               | 4 \ 4           |
+| A2 (Collaborate) | 3 \ 3               | 1 \ 2           |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Dr. Alex Patel are two brilliant scientists working at the forefront of microbiology and genetics, respectively. They are both researching a rare bacterial strain that shows promising applications in medical treatments. Their work has the potential to revolutionize certain areas of medicine, but they face a dilemma in how to proceed with their research.
+
+Dr. Chen prefers to focus on her individual research, as she believes her expertise in microbiology gives her a unique perspective. She would ideally like to have access to Dr. Patel's genetic data to complement her work without the complications of a formal collaboration. Her least preferred scenario is a collaboration where all data is shared, as she fears losing credit for her individual contributions.
+
+Dr. Patel, on the other hand, sees great value in collaboration but is cautious about sharing his groundbreaking genetic findings prematurely. He would prefer a scenario where both scientists share their data openly, allowing for rapid advancement in their field. His least desired outcome is to keep his findings confidential while Dr. Chen pursues individual research, as he believes this would slow down scientific progress.
+
+Both scientists must decide whether to pursue individual research or collaborate, and whether to keep their findings confidential or share their data. Their choices will determine the outcome of their research and potentially impact the speed of medical advancements.
+
+If both choose to focus on individual research (A1) and keep findings confidential (B1), they will make steady but slow progress (2 for Dr. Chen, 1 for Dr. Patel). If they both decide to share data (B2) while working individually (A1), they'll achieve the best possible outcome for both (4 for both), accelerating their research without the complexities of formal collaboration.
+
+In a scenario where they collaborate (A2) but keep findings confidential (B1), they'll make good progress with shared resources but limited data exchange (3 for both). However, if they collaborate (A2) and share all data (B2), Dr. Chen feels her individual contributions might be overshadowed (1), while Dr. Patel sees it as a moderately positive outcome (2).
+
+Their decisions will not only affect their personal careers but also the potential benefits to medical science and, ultimately, patient care. The challenge lies in finding a balance between individual achievement and the greater good of scientific advancement.
+[/Scenario]

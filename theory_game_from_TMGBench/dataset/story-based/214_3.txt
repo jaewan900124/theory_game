@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a cybersecurity expert"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop an open-source AI system",
+  "A2": "Develop a proprietary AI system",
+  "B1": "Collaborate on security measures",
+  "B2": "Develop competing security software"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop open-source AI with no security competition",
+    3: "Develop proprietary AI with shared security measures",
+    2: "Develop open-source AI with collaborative security",
+    1: "Develop proprietary AI facing security competition"
+  },
+  "B": {
+    4: "Collaborate on open-source AI security",
+    3: "Develop competing security for proprietary AI",
+    2: "Develop competing security for open-source AI",
+    1: "Collaborate on proprietary AI security"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 1 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a rapidly evolving tech landscape, Alex, a brilliant software developer, and Blake, a renowned cybersecurity expert, find themselves at a crossroads. Alex is on the verge of creating a groundbreaking AI system, while Blake is developing cutting-edge security measures for AI technologies.
+
+Alex faces a crucial decision: should they develop an open-source AI system (A1) that could benefit the entire tech community, or create a proprietary AI system (A2) that could potentially be more profitable? Meanwhile, Blake must choose between collaborating with Alex on security measures (B1) or developing competing security software (B2).
+
+Alex's preference is to develop an open-source AI system without facing security competition, as this would allow for widespread adoption and improvement of the technology. Their second choice would be to develop a proprietary system with shared security measures, ensuring a secure but exclusive product. Collaborating on an open-source AI with Blake is their third preference, while developing a proprietary AI facing security competition is their least preferred outcome.
+
+Blake, on the other hand, would ideally like to collaborate on security for an open-source AI, seeing it as an opportunity to contribute to a widely accessible and secure technology. Their second choice would be to develop competing security for a proprietary AI, which could be lucrative. Developing competing security for an open-source AI is their third preference, while collaborating on security for a proprietary AI is their least preferred scenario.
+
+If Alex chooses to develop an open-source AI (A1) and Blake decides to collaborate (B1), Alex will achieve their third preference (2) while Blake achieves their top preference (4). This scenario promotes technological advancement and security but may not be the most profitable for Alex.
+
+If Alex develops an open-source AI (A1) and Blake develops competing security (B2), Alex achieves their top preference (4) as they face no direct security competition, while Blake gets their least preferred outcome (1).
+
+If Alex opts for a proprietary AI (A2) and Blake collaborates (B1), Alex faces their least preferred scenario (1), while Blake achieves their second-least preferred outcome (2).
+
+Finally, if Alex develops a proprietary AI (A2) and Blake creates competing security software (B2), both achieve their second-best preference (3), leading to a competitive but potentially innovative market scenario.
+
+The outcome of their decisions will significantly impact the future of AI technology and cybersecurity, highlighting the complex interplay between open collaboration and proprietary development in the tech industry.
+[/Scenario]

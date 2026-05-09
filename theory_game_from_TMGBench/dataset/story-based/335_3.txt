@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Blake, a creative graphic designer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work independently on the project",
+  "A2": "Collaborate with Blake on the project",
+  "B1": "Work independently on the project",
+  "B2": "Collaborate with Alex on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborating with Blake, resulting in a highly successful project",
+    3: "Working independently while Blake collaborates, gaining a moderate advantage",
+    2: "Both working independently, achieving average results",
+    1: "Collaborating while Blake works independently, facing challenges"
+  },
+  "B": {
+    4: "Collaborating with Alex, resulting in a highly successful project",
+    3: "Working independently while Alex collaborates, gaining a moderate advantage",
+    2: "Collaborating while Alex works independently, facing some challenges",
+    1: "Both working independently, achieving average results"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 4 \ 4 |
+| A2    | 3 \ 2 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are two talented professionals working for a cutting-edge tech startup. They've been assigned to develop a revolutionary mobile app that could make or break the company's future. The project requires both strong coding skills and exceptional design work.
+
+Alex, the software developer, is known for his ability to create efficient and robust code. Blake, the graphic designer, has a reputation for crafting stunning and user-friendly interfaces. They each have the option to work independently on their respective parts of the project or to collaborate closely throughout the development process.
+
+If both Alex and Blake choose to work independently (A1, B1), they'll achieve average results. The app will be functional and look decent, but it won't stand out in the competitive market. This scenario is their least preferred outcome, as it doesn't showcase their full potential.
+
+If Alex decides to collaborate while Blake works independently (A2, B1), Alex will gain some insights into design principles, moderately improving the app's functionality. However, Blake might struggle to align the design with the code structure, leading to some challenges. Alex prefers this situation to working completely independently, while Blake finds it somewhat frustrating.
+
+Conversely, if Blake chooses to collaborate while Alex works independently (A1, B2), Blake will learn more about the technical constraints and create a more compatible design. Alex, however, might find it difficult to implement some of Blake's innovative ideas without close communication. Blake prefers this scenario to working entirely alone, while Alex sees it as the most challenging situation.
+
+The ideal outcome for both Alex and Blake is to collaborate closely throughout the project (A2, B2). By combining their expertise, they can create a seamless integration of functionality and design, resulting in a highly successful and innovative app. This scenario allows them to learn from each other, enhancing their skills and producing a product that exceeds expectations.
+
+As they contemplate their choices, Alex and Blake must consider not only their personal preferences but also how their decisions will affect each other and the overall success of the project. The fate of the startup may well depend on whether they choose cooperation or competition.
+[/Scenario]

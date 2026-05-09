@@ -1,0 +1,59 @@
+[Characters]
+{
+  "A": "Sarah, a tech startup founder",
+  "B": "Michael, a venture capitalist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Seek external funding",
+  "A2": "Bootstrap the company",
+  "B1": "Offer funding with strict terms",
+  "B2": "Offer funding with flexible terms"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Bootstrap the company and receive flexible funding terms",
+    3: "Seek external funding and receive flexible funding terms",
+    2: "Bootstrap the company and receive strict funding terms",
+    1: "Seek external funding and receive strict funding terms"
+  },
+  "B": {
+    4: "Offer flexible funding terms to a company seeking external funding",
+    3: "Offer strict funding terms to a company seeking external funding",
+    2: "Offer flexible funding terms to a bootstrapped company",
+    1: "Offer strict funding terms to a bootstrapped company"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Strict terms) | B2 (Flexible terms) |
+|-------|-------------------|---------------------|
+| A1 (Seek funding) | 1 \ 3 | 3 \ 4 |
+| A2 (Bootstrap) | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a brilliant software engineer, has founded a promising tech startup. Her innovative AI-powered project management tool has gained traction in the market, but she's at a crossroads regarding the company's future growth strategy. She must decide whether to seek external funding or continue bootstrapping the company with her own resources.
+
+Michael, a seasoned venture capitalist known for his shrewd investments in the tech sector, has taken notice of Sarah's startup. He sees potential in the company but is weighing his options on how to approach a potential investment.
+
+Sarah has two choices: seek external funding (A1) or bootstrap the company (A2). She prefers to maintain control over her company but also recognizes the benefits of additional capital for rapid growth. Her ideal scenario would be to bootstrap the company while receiving flexible funding terms, allowing her to retain more equity and decision-making power.
+
+Michael, on the other hand, can offer funding with either strict terms (B1) or flexible terms (B2). He prefers to invest in companies actively seeking funding, as he believes they're more likely to be open to his guidance and involvement. His ideal scenario is to offer flexible terms to a company seeking external funding, as this would likely lead to a more collaborative and potentially lucrative partnership.
+
+The payoff matrix reflects their preferences:
+
+1. If Sarah seeks funding (A1) and Michael offers strict terms (B1), Sarah is in her least preferred position (1), while Michael is in a good position (3).
+2. If Sarah seeks funding (A1) and Michael offers flexible terms (B2), both are in a favorable position (Sarah: 3, Michael: 4).
+3. If Sarah bootstraps (A2) and Michael offers strict terms (B1), Sarah is in a slightly better position (2), but Michael is in his least preferred position (1).
+4. If Sarah bootstraps (A2) and Michael offers flexible terms (B2), Sarah achieves her most preferred outcome (4), while Michael is in a moderately good position (2).
+
+As they enter negotiations, both Sarah and Michael must carefully consider their strategies. Sarah must weigh the benefits of external funding against the autonomy of bootstrapping, while Michael must decide how flexible he's willing to be with his terms to secure a potentially lucrative investment. Their choices will not only affect their immediate outcomes but also shape the future of Sarah's startup and their potential long-term business relationship.
+[/Scenario]

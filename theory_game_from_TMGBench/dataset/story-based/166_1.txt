@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a seasoned psychologist",
+  "B": "Alex Thompson, her patient struggling with social anxiety"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Recommend traditional therapy methods",
+  "A2": "Propose an experimental cognitive restructuring technique",
+  "B1": "Fully commit to the treatment plan",
+  "B2": "Partially engage in the treatment plan"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Patient improves significantly with experimental technique",
+    3: "Patient shows moderate improvement with full commitment to traditional methods",
+    2: "Patient shows minimal improvement with partial engagement in traditional methods",
+    1: "Patient shows no improvement with experimental technique"
+  },
+  "B": {
+    4: "Achieve significant improvement with minimal effort",
+    3: "Experience moderate improvement with full commitment",
+    2: "See minimal improvement with partial effort",
+    1: "No improvement despite significant effort"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 2 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen, a respected psychologist with years of experience, is faced with a challenging case. Her patient, Alex Thompson, is struggling with severe social anxiety that has been impacting his personal and professional life. Dr. Chen must decide between recommending traditional therapy methods (A1) or proposing an experimental cognitive restructuring technique (A2) that she has been developing.
+
+Alex, on the other hand, has to choose between fully committing to the treatment plan (B1) or only partially engaging in it (B2). His decision will significantly influence the effectiveness of the therapy.
+
+Dr. Chen's preferences are based on the potential outcomes for her patient and the validation of her research. She would most prefer to see Alex improve significantly with her experimental technique (A2, B1), as this would not only help Alex but also support her research. Her second preference is for Alex to show moderate improvement with full commitment to traditional methods (A1, B1), as this would still be a positive outcome. Her third choice would be minimal improvement with partial engagement in traditional methods (A1, B2), while her least preferred outcome is no improvement with the experimental technique (A2, B2), as this could harm both Alex and her research.
+
+Alex's preferences are primarily focused on his improvement and the effort required. His most preferred outcome is to achieve significant improvement with minimal effort (A1, B1), as he hopes for a "quick fix". His second choice would be to experience moderate improvement with full commitment (A2, B1), recognizing that hard work might be necessary. His third preference is to see minimal improvement with partial effort (A1, B2), while his least preferred outcome is no improvement despite significant effort (A2, B2).
+
+The scenario creates a complex dynamic where Dr. Chen's and Alex's preferences don't always align. Dr. Chen must balance her professional ethics, desire for research validation, and Alex's best interests. Alex, in turn, must weigh his desire for improvement against his willingness to fully engage in the treatment process.
+
+Their choices and the resulting outcomes will not only affect Alex's mental health but also influence Dr. Chen's professional reputation and the potential advancement of anxiety treatment methods. The story explores the delicate balance between innovation and proven methods in psychology, as well as the crucial role of patient commitment in the therapeutic process.
+[/Scenario]

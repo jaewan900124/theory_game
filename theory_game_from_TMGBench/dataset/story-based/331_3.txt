@@ -1,0 +1,64 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Ben, Alex's long-time doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on singles career",
+  "A2": "Commit to doubles partnership",
+  "B1": "Focus on singles career",
+  "B2": "Commit to doubles partnership"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Focus on singles while Ben commits to doubles (more individual glory)",
+    3: "Both commit to doubles partnership (shared success)",
+    2: "Both focus on singles careers (fierce competition)",
+    1: "Commit to doubles while Ben focuses on singles (feeling held back)"
+  },
+  "B": {
+    4: "Both commit to doubles partnership (shared success)",
+    3: "Focus on singles while Alex commits to doubles (more individual glory)",
+    2: "Both focus on singles careers (fierce competition)",
+    1: "Commit to doubles while Alex focuses on singles (feeling held back)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Singles) | B2 (Doubles) |
+|-------|--------------|--------------|
+| A1 (Singles) | 1 \ 3        | 4 \ 4        |
+| A2 (Doubles) | 3 \ 1        | 2 \ 2        |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Ben, long-time doubles partners on the professional tennis circuit, find themselves at a crossroads in their careers. Both players have shown promise in singles play, but their partnership has also yielded significant success in doubles tournaments.
+
+As the new season approaches, they must decide whether to focus on their individual singles careers or continue their successful doubles partnership. This decision will significantly impact their future in professional tennis.
+
+Alex, ambitious and driven, is torn between the allure of individual glory in singles and the comfort of their established doubles partnership. Their preferences reflect this internal struggle:
+
+1. Alex's ideal scenario is to focus on singles while Ben commits to doubles, allowing Alex to pursue individual success without losing the option of playing doubles occasionally.
+2. If both commit to doubles, Alex sees it as a solid, but perhaps limiting choice.
+3. Both focusing on singles would mean fierce competition, which Alex views as challenging but potentially rewarding.
+4. Alex's least preferred option is committing to doubles while Ben pursues singles, feeling this would hold back their individual potential.
+
+Ben, on the other hand, values their partnership more highly and sees their combined strength as their best path to success:
+
+1. Ben's top preference is for both to commit to their doubles partnership, believing in their potential as a team.
+2. If Alex focuses on singles, Ben would prefer to do the same to avoid feeling left behind.
+3. Like Alex, Ben sees both pursuing singles as a challenging but potentially rewarding path.
+4. Ben's least desired outcome is committing to doubles while Alex pursues singles, feeling this would be unfair and limiting.
+
+Their choices will determine not only their individual careers but also the future of their partnership. The payoff matrix reflects the complex interplay of their personal ambitions and their successful history as a doubles team.
+
+As they sit down to discuss their future, both Alex and Ben must carefully consider their options, weighing personal goals against their partnership's potential. Their decision will shape the next chapter of their tennis careers, for better or for worse.
+[/Scenario]

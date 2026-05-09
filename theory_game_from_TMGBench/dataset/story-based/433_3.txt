@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a cognitive psychologist",
+  "B": "Dr. Michael Thompson, a behavioral psychologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue individual research",
+  "B1": "Share research resources",
+  "B2": "Keep resources private"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue individual research while having access to shared resources",
+    3: "Collaborate on a joint research project with shared resources",
+    2: "Collaborate on a joint research project without shared resources",
+    1: "Pursue individual research without access to shared resources"
+  },
+  "B": {
+    4: "Collaborate on a joint research project without sharing resources",
+    3: "Keep resources private while benefiting from collaboration",
+    2: "Collaborate on a joint research project with shared resources",
+    1: "Keep resources private without collaboration benefits"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 2 \ 4 |
+| A2    | 1 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Dr. Michael Thompson are renowned psychologists working at the same university. They have been presented with an opportunity to either collaborate on a groundbreaking research project or pursue their individual studies. This decision is complicated by the potential sharing of valuable research resources.
+
+Dr. Chen, known for her innovative approach to cognitive psychology, is torn between the benefits of collaboration and the freedom of individual research. Her ideal scenario would be to pursue her own research while still having access to Dr. Thompson's resources (A2, B1). However, she also sees value in collaboration, especially if resources are shared (A1, B1).
+
+Dr. Thompson, a meticulous behavioral psychologist, is intrigued by the prospect of collaboration but is protective of his research resources. His preferred outcome would be to collaborate without sharing his resources (A1, B2), allowing him to benefit from Dr. Chen's expertise while maintaining control over his assets.
+
+The university has given them a week to decide, creating a tense atmosphere as they weigh their options. If they choose to collaborate (A1) and share resources (B1), they could make significant strides in their field, but both would have to compromise some individual goals. If Dr. Chen pursues individual research (A2) while Dr. Thompson shares resources (B1), she would benefit greatly, but he might feel exploited. Conversely, if they both choose to work individually and keep resources private (A2, B2), they risk missing out on potential breakthroughs.
+
+As the deadline approaches, both psychologists find themselves analyzing not just their research, but also each other's potential moves, turning their decision into a real-life example of game theory in action. Their choices will not only affect their immediate research prospects but could also impact their long-term career trajectories and the future of psychological research at the university.
+[/Scenario]

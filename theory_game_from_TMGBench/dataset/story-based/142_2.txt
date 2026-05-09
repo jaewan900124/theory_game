@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Professor Smith, a tenured faculty member",
+  "B": "Dr. Johnson, a new assistant professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research resources and collaborate",
+  "A2": "Work independently and protect resources",
+  "B1": "Focus on teaching and department service",
+  "B2": "Prioritize research and publications"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently while Dr. Johnson focuses on teaching",
+    3: "Collaborate while Dr. Johnson focuses on teaching",
+    2: "Work independently while Dr. Johnson prioritizes research",
+    1: "Collaborate while Dr. Johnson prioritizes research"
+  },
+  "B": {
+    4: "Focus on teaching while Professor Smith collaborates",
+    3: "Prioritize research while Professor Smith collaborates",
+    2: "Prioritize research while Professor Smith works independently",
+    1: "Focus on teaching while Professor Smith works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 3 |
+| A2    | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Professor Smith and Dr. Johnson find themselves at a crossroads in their academic careers. Professor Smith, a well-established tenured faculty member, must decide whether to share research resources and collaborate with the newly hired Dr. Johnson or to work independently and protect his resources. Meanwhile, Dr. Johnson faces the choice of focusing on teaching and department service or prioritizing research and publications to secure her position in the competitive academic world.
+
+Professor Smith's ideal scenario is to work independently while Dr. Johnson focuses on teaching, allowing him to maintain control over his research resources and reducing competition for publications. His least preferred outcome is collaborating while Dr. Johnson prioritizes research, as this could potentially dilute his academic standing.
+
+Dr. Johnson, on the other hand, would prefer to focus on teaching while Professor Smith collaborates, as this would provide her with valuable mentorship and resources without the immediate pressure of publishing. Her least desired situation is focusing on teaching while Professor Smith works independently, as this would leave her with limited research opportunities and resources.
+
+The university administration observes their interactions, knowing that their choices will impact the department's overall productivity and the quality of education provided to students. If Professor Smith chooses to collaborate (A1) and Dr. Johnson focuses on teaching (B1), they both benefit moderately, with Smith gaining fresh perspectives and Johnson receiving mentorship. If Smith collaborates (A1) but Johnson prioritizes research (B2), Smith may feel his resources are being exploited while Johnson gains an advantage in publications.
+
+In the scenario where Smith works independently (A2) and Johnson focuses on teaching (B1), Smith maintains his research dominance, but Johnson struggles to establish herself academically. Finally, if Smith works independently (A2) and Johnson prioritizes research (B2), Smith achieves his preferred outcome, while Johnson faces a challenging but potentially rewarding path to academic recognition.
+
+As the semester begins, both professors must make their decisions, knowing that their choices will shape not only their individual careers but also the future of their department and the educational experience of their students.
+[/Scenario]

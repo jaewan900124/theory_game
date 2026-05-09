@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a psychology professor",
+  "B": "Alex Thompson, her graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research credit",
+  "A2": "Claim sole authorship",
+  "B1": "Contribute minimal effort",
+  "B2": "Work diligently on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Claim sole authorship while student works diligently",
+    3: "Share credit while student works minimally",
+    2: "Claim sole authorship while student contributes minimally",
+    1: "Share credit while student works diligently"
+  },
+  "B": {
+    4: "Receive shared credit while contributing minimal effort",
+    3: "Receive shared credit while working diligently",
+    2: "Contribute minimal effort under sole authorship",
+    1: "Work diligently under sole authorship"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Minimal effort) | B2 (Work diligently) |
+|-------|---------------------|----------------------|
+| A1 (Share credit) | 1 \ 1 | 3 \ 4 |
+| A2 (Claim sole authorship) | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen, a respected psychology professor, is working on a groundbreaking research project about cognitive biases in decision-making. She has enlisted the help of her graduate student, Alex Thompson, to assist with data collection and analysis. As they near the completion of the project, both Dr. Chen and Alex face a dilemma regarding credit attribution and effort allocation.
+
+Dr. Chen must decide whether to share research credit with Alex (A1) or claim sole authorship (A2). Meanwhile, Alex can choose to contribute minimal effort to the project (B1) or work diligently (B2). Their decisions will impact not only the quality of the research but also their professional relationships and future careers.
+
+Dr. Chen's ideal scenario is to claim sole authorship while Alex works diligently, maximizing her professional gain. Her least preferred outcome is sharing credit while Alex works diligently, as she feels this undervalues her leadership. Alex, on the other hand, would prefer to receive shared credit while contributing minimal effort, allowing him to gain recognition with less work. His least desired outcome is working diligently under sole authorship, feeling his efforts would go unrecognized.
+
+If both choose their most self-serving options (A2 and B1), the project quality suffers, resulting in a suboptimal outcome for both (2,2). If they both choose the more collaborative options (A1 and B2), Alex benefits the most (3,4), while Dr. Chen feels somewhat shortchanged. The other two scenarios result in one party benefiting significantly more than the other.
+
+This situation creates a complex psychological dynamic, where trust, ambition, and ethical considerations all play a role. The choices made by Dr. Chen and Alex will not only affect the immediate outcome of the research project but also set a precedent for their future collaborations and potentially impact the broader academic community's perception of their work ethics and collaborative abilities.
+
+As they approach the final stages of the project, both Dr. Chen and Alex must weigh their options carefully, considering both short-term gains and long-term consequences in this delicate balance of academic collaboration and individual achievement.
+[/Scenario]

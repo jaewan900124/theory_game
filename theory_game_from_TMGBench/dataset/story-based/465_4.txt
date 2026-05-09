@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a small coffee shop owner",
+  "B": "Mark, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Keep prices stable",
+  "A2": "Lower prices",
+  "B1": "Maintain current operations",
+  "B2": "Expand aggressively in Sarah's area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices while Mark maintains operations (highest profit)",
+    3: "Keep prices stable while Mark maintains operations (stable profit)",
+    2: "Lower prices while Mark expands (survive competition)",
+    1: "Keep prices stable while Mark expands (lowest profit, risk of closure)"
+  },
+  "B": {
+    4: "Expand while Sarah keeps prices stable (highest market share)",
+    3: "Expand while Sarah lowers prices (good market share, lower profit)",
+    2: "Maintain operations while Sarah lowers prices (stable market)",
+    1: "Maintain operations while Sarah keeps prices stable (status quo)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Maintain) | B2 (Expand) |
+|-------|---------------|-------------|
+| A1 (Stable) | 1 \ 1         | 2 \ 4       |
+| A2 (Lower)  | 3 \ 2         | 4 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city neighborhood, Sarah, a passionate small coffee shop owner, faces a challenging situation. Her quaint caf¨¦ has been a local favorite for years, known for its personalized service and cozy atmosphere. However, the recent arrival of Mark's large coffee chain in the area threatens to disrupt the local coffee scene.
+
+Sarah must decide whether to keep her prices stable (A1) or lower them (A2) to remain competitive. Meanwhile, Mark is contemplating whether to maintain his current operations (B1) or expand aggressively in Sarah's area (B2).
+
+Sarah's preference is to maximize her profit while keeping her business viable. Her best-case scenario (preference 4) is to lower her prices while Mark maintains his current operations, allowing her to attract more customers without facing intense competition. Her worst-case scenario (preference 1) is keeping her prices stable while Mark expands, potentially leading to a significant loss of customers and risking closure.
+
+Mark, on the other hand, aims to increase his market share. His ideal outcome (preference 4) is to expand while Sarah keeps her prices stable, enabling him to capture a larger portion of the market. His least preferred scenario (preference 1) is maintaining his current operations while Sarah keeps her prices stable, resulting in no significant change to the status quo.
+
+The payoff matrix reveals the complex dynamics between Sarah and Mark's decisions. If both maintain their current strategies (A1, B1), they both receive the lowest payoff (1,1), representing a stalemate. If Sarah lowers her prices and Mark expands (A2, B2), they both achieve their second-best outcomes (4,3), creating a competitive but potentially sustainable market.
+
+The scenario highlights the delicate balance between competition and cooperation in a local economy. Sarah's decision to lower prices could be seen as a defensive move against potential expansion, while Mark's choice to expand could be interpreted as an aggressive market capture strategy. Their decisions will not only affect their own businesses but also shape the neighborhood's coffee culture and economic landscape.
+[/Scenario]

@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Mark, a graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a research project",
+  "A2": "Work independently on separate projects",
+  "B1": "Focus on the collaborative project",
+  "B2": "Pursue an industry internship while working on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while Mark pursues an internship",
+    3: "Work independently while Mark focuses on the project",
+    2: "Work independently while Mark pursues an internship",
+    1: "Collaborate while Mark focuses solely on the project"
+  },
+  "B": {
+    4: "Collaborate while pursuing an internship",
+    3: "Collaborate while focusing solely on the project",
+    2: "Work independently while focusing on the project",
+    1: "Work independently while pursuing an internship"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 4 \ 4 |
+| A2    | 2 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a respected sociology professor, and Mark, her ambitious graduate student, find themselves at a crucial juncture in their academic careers. They have the opportunity to collaborate on a groundbreaking research project that could significantly impact their field. However, they must navigate their individual goals and the potential outcomes of their choices.
+
+Emma has two options: she can either collaborate with Mark on the research project (A1) or work independently on her own projects (A2). Mark, on the other hand, can choose to focus entirely on the collaborative project (B1) or pursue an industry internship while working on the project part-time (B2).
+
+Emma's ideal scenario is to collaborate with Mark while he pursues an internship (A1, B2). She believes this would lead to a well-rounded project enriched by Mark's industry experience. Her least preferred outcome is collaborating while Mark focuses solely on the project (A1, B1), as she fears this might limit the project's scope.
+
+Mark's preferences align with Emma's in the best-case scenario (A1, B2), as he values both the collaboration and the opportunity to gain industry experience. However, his least preferred outcome is working independently while pursuing an internship (A2, B2), fearing he might spread himself too thin.
+
+The payoff matrix reveals the complex dynamics of their choices:
+
+1. If they both choose to collaborate (A1, B1), Emma feels somewhat constrained (1), while Mark is satisfied but not fully utilizing his potential (3).
+
+2. If Emma collaborates and Mark pursues an internship (A1, B2), both achieve their ideal outcomes (4, 4), benefiting from the collaboration and Mark's expanded experience.
+
+3. If Emma works independently and Mark focuses on the project (A2, B1), Emma has more freedom in her research (2), but Mark feels he's missing out on valuable guidance (2).
+
+4. If Emma works independently and Mark pursues an internship (A2, B2), Emma can focus on her own work (3), but Mark struggles to balance his commitments (1).
+
+This scenario highlights the intricate balance between collaboration and individual pursuits in academia, as well as the potential benefits and drawbacks of integrating industry experience into academic research. Emma and Mark must carefully consider their choices, as their decisions will not only affect their immediate project but also potentially shape their future careers in sociology.
+[/Scenario]

@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Ben, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a cloud-based solution",
+  "A2": "Develop an edge computing solution",
+  "B1": "Design standard hardware",
+  "B2": "Design custom hardware"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Edge computing with custom hardware",
+    3: "Edge computing with standard hardware",
+    2: "Cloud-based solution with standard hardware",
+    1: "Cloud-based solution with custom hardware"
+  },
+  "B": {
+    4: "Cloud-based solution with custom hardware",
+    3: "Edge computing with standard hardware",
+    2: "Cloud-based solution with standard hardware",
+    1: "Edge computing with custom hardware"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Standard) | B2 (Custom) |
+|-------|---------------|-------------|
+| A1 (Cloud) | 2 \ 2         | 1 \ 4       |
+| A2 (Edge)  | 3 \ 3         | 4 \ 1       |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Ben work for a tech startup developing a new IoT platform. They must decide on the software and hardware architecture for the project, but their preferences differ based on their expertise and views on future tech trends.
+
+Alex, the software developer, believes edge computing is the future. He prefers developing an edge computing solution (A2) as it showcases his skills and aligns with his vision. His ideal scenario is pairing this with custom hardware (B2), which he believes will optimize performance. However, he's also content with using standard hardware (B1) for edge computing. Alex is less enthusiastic about cloud-based solutions (A1), especially if paired with custom hardware, as he feels it doesn't fully utilize the hardware's potential.
+
+Ben, the hardware engineer, is excited about designing custom hardware (B2). He sees the most potential in pairing his custom designs with a cloud-based solution (A1), believing this combination will be most impressive to potential investors. He's also comfortable working with standard hardware (B1) for either software approach. However, he's least interested in designing custom hardware for edge computing (A2+B2), fearing it might limit the hardware's versatility.
+
+If they choose conflicting approaches (A1+B2 or A2+B1), one will be more satisfied than the other. If they both choose their preferred options (A2+B2), it will lead to an suboptimal outcome for Ben. The most balanced outcome is if they both compromise (A1+B1), resulting in a solid but perhaps less innovative solution.
+
+Their challenge is to communicate effectively and possibly compromise to find the best solution for the company, balancing their individual preferences with the overall project success.
+[/Scenario]

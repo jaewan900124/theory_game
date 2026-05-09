@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current trade policies",
+  "A2": "Impose strict trade barriers",
+  "B1": "Maintain current trade policies",
+  "B2": "Increase technology exports"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "China increases technology exports while US maintains current policies",
+    3: "Both countries maintain current trade policies",
+    2: "US imposes strict trade barriers while China increases technology exports",
+    1: "US imposes strict trade barriers while China maintains current policies"
+  },
+  "B": {
+    4: "China increases technology exports while US maintains current policies",
+    3: "Both countries maintain current trade policies",
+    2: "US maintains current policies while China maintains current policies",
+    1: "US imposes strict trade barriers while China increases technology exports"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| US \ China | Maintain (B1) | Increase Tech Exports (B2) |
+|------------|---------------|----------------------------|
+| Maintain (A1) | 3 \ 3         | 4 \ 4                      |
+| Barriers (A2) | 1 \ 2         | 2 \ 1                      |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex world of international relations, the United States and China find themselves at a crossroads in their trade relationship. Both nations are considering their next moves in a high-stakes game of economic strategy.
+
+The United States, a global superpower with a strong economy, is weighing two options: maintaining its current trade policies or imposing strict trade barriers. China, an emerging economic giant, is deciding between keeping its current trade stance or significantly increasing its technology exports.
+
+For the US, the most preferred outcome would be for China to increase its technology exports while the US maintains its current policies. This would give the US access to advanced Chinese technology without having to make any concessions. The second-best scenario for the US would be if both countries maintain their current policies, preserving the status quo. The US least prefers imposing strict trade barriers while China maintains its current policies, as this could lead to economic isolation.
+
+China's preferences mirror those of the US in the top two scenarios. China would most prefer to increase its technology exports while the US maintains its current policies, as this would expand China's market share without facing new barriers. The second-best outcome for China would be maintaining the current policies on both sides. However, China's least preferred scenario is where it increases technology exports but faces strict trade barriers from the US, potentially losing access to a crucial market.
+
+The payoff matrix reveals an interesting dynamic. If both countries choose to maintain their current policies (A1, B1), they each receive a moderately positive outcome (3,3). However, if China decides to increase its technology exports and the US maintains its policies (A1, B2), both countries achieve their best possible outcome (4,4). This suggests a potential for mutual benefit through cooperation.
+
+Conversely, if the US imposes strict trade barriers, it risks pushing both countries into less favorable scenarios. If China maintains its policies while the US imposes barriers (A2, B1), the US faces its worst outcome while China fares slightly better (1,2). If the US imposes barriers and China increases exports (A2, B2), both countries end up in suboptimal positions (2,1).
+
+This scenario illustrates the delicate balance in international trade relations, where cooperation can lead to mutual benefits, but unilateral aggressive actions can result in lose-lose situations. The challenge for both nations lies in trust-building and finding ways to achieve the mutually beneficial outcome of increased technological exchange without resorting to protectionist measures.
+[/Scenario]

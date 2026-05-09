@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a daily commuter",
+  "B": "Tom, a ride-sharing app driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use the ride-sharing app",
+  "A2": "Take public transportation",
+  "B1": "Accept ride requests",
+  "B2": "Ignore ride requests"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Use ride-sharing and get a quick ride",
+    3: "Take public transportation with no waiting",
+    2: "Use ride-sharing but wait for a driver",
+    1: "Take crowded public transportation"
+  },
+  "B": {
+    4: "Accept rides during high demand",
+    3: "Ignore rides and have free time",
+    2: "Accept rides during low demand",
+    1: "Ignore rides and miss out on income"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 3 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a daily commuter, faces a decision every morning: whether to use a ride-sharing app or take public transportation to work. Tom, a ride-sharing app driver, must decide whether to accept ride requests or ignore them during his working hours.
+
+If Sarah chooses to use the ride-sharing app (A1) and Tom decides to accept ride requests (B1), Sarah will have to wait for a driver (preference 2), while Tom benefits from high demand (preference 4). This scenario represents a moderate outcome for Sarah but the best outcome for Tom.
+
+If Sarah opts for the ride-sharing app (A1) but Tom ignores ride requests (B2), Sarah gets a quick ride from another available driver (preference 4), while Tom misses out on potential income (preference 1). This is the best outcome for Sarah but the worst for Tom.
+
+When Sarah decides to take public transportation (A2) and Tom accepts ride requests (B1), Sarah enjoys a smooth commute with no waiting (preference 3), while Tom experiences low demand (preference 2). This scenario is favorable for Sarah but less so for Tom.
+
+Lastly, if Sarah chooses public transportation (A2) and Tom ignores ride requests (B2), Sarah ends up on crowded public transit (preference 1), while Tom has free time but no income (preference 3). This represents the worst outcome for Sarah but a moderately good one for Tom.
+
+The scenario highlights the interdependence of their choices and the conflicting interests between a commuter seeking efficient transportation and a driver balancing work and personal time. Their decisions impact not only their own satisfaction but also that of the other party, creating a classic game theory situation in the context of urban transportation.
+[/Scenario]

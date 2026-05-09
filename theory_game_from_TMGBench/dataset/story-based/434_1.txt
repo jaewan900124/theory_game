@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Assign group project",
+  "A2": "Assign individual project",
+  "B1": "Collaborate with classmates",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Individual project, student works independently",
+    3: "Group project, student collaborates",
+    2: "Group project, student works independently",
+    1: "Individual project, student collaborates"
+  },
+  "B": {
+    4: "Group project, work independently",
+    3: "Individual project, collaborate with classmates",
+    2: "Individual project, work independently",
+    1: "Group project, collaborate with classmates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 2 \ 4 |
+| A2    | 1 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At Riverdale University, Professor Smith is preparing the final assignment for his Advanced Economics course. He's considering whether to assign a group project or an individual project. Meanwhile, Student Johnson, known for his academic prowess but sometimes difficult personality, is contemplating how to approach the upcoming assignment.
+
+Professor Smith believes that group projects foster collaboration and real-world skills, but he's aware that some students might not contribute equally. He also recognizes the value of individual projects in assessing each student's capabilities. His ideal scenario is an individual project where students work independently, as it provides the clearest assessment of each student's abilities.
+
+Student Johnson, on the other hand, prefers the idea of a group project but wants to work independently. He believes this would allow him to leverage the group's resources while maintaining control over his work. His least preferred scenario is a group project where he has to collaborate closely with others, as he finds it challenging to work in teams.
+
+The choices they make will lead to different outcomes:
+
+1. If Professor Smith assigns a group project (A1) and Student Johnson collaborates (B1), Smith is moderately satisfied (3) as it promotes teamwork, but Johnson is least satisfied (1) as he has to work closely with others.
+
+2. If Smith assigns a group project (A1) and Johnson works independently (B2), Smith is somewhat disappointed (2) as it defeats the purpose of group work, but Johnson is most satisfied (4) as he gets the benefits of a group project without close collaboration.
+
+3. If Smith assigns an individual project (A2) and Johnson collaborates (B1), Smith is least satisfied (1) as it goes against the individual nature of the assignment, but Johnson is moderately satisfied (3) as he can still get help from peers.
+
+4. If Smith assigns an individual project (A2) and Johnson works independently (B2), Smith is most satisfied (4) as it aligns with his assessment goals, and Johnson is somewhat satisfied (2) as he can work alone but misses out on peer resources.
+
+This scenario illustrates the complex dynamics between educators and students, highlighting how their different preferences and choices can lead to various outcomes in the educational setting.
+[/Scenario]

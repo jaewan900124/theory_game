@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Elena, a talented but struggling painter",
+  "B": "Marcus, a successful art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde painting",
+  "A2": "Paint a crowd-pleasing, conventional piece",
+  "B1": "Offer Elena an exclusive contract",
+  "B2": "Decline to offer Elena a contract"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create avant-garde painting and get a contract",
+    3: "Create conventional painting and get a contract",
+    2: "Create conventional painting without a contract",
+    1: "Create avant-garde painting without a contract"
+  },
+  "B": {
+    4: "Get avant-garde painting with exclusive contract",
+    3: "Get avant-garde painting without contract",
+    2: "Get conventional painting without contract",
+    1: "Get conventional painting with exclusive contract"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Elena \ Marcus | Offer Contract (B1) | Decline Contract (B2) |
+|-----------------|---------------------|------------------------|
+| Avant-garde (A1)| 1 \ 4               | 4 \ 3                  |
+| Conventional (A2)| 3 \ 1               | 2 \ 2                  |
+[/Payoff Matrix]
+
+[Scenario]
+Elena, a talented but struggling painter, finds herself at a crossroads in her career. She's preparing for a crucial exhibition that could make or break her future in the art world. Marcus, a successful art gallery owner known for his keen eye for emerging talent, has shown interest in her work.
+
+Elena faces a dilemma: should she create a provocative, avant-garde painting that truly represents her artistic vision, or should she play it safe with a more conventional, crowd-pleasing piece? Her preference is to create the avant-garde piece, but only if it secures her a contract with Marcus's gallery.
+
+Marcus, on the other hand, is considering whether to offer Elena an exclusive contract. He's most interested in avant-garde works that could generate buzz and elevate his gallery's reputation. However, he's wary of committing to an unproven artist with a contract.
+
+If Elena creates the avant-garde piece and Marcus offers the contract, it's the best outcome for Marcus (4) but the worst for Elena (1), as she feels trapped by the contract despite creating her preferred art. If Elena goes avant-garde and Marcus declines the contract, it's the best for Elena (4) as she maintains her artistic integrity and freedom, while it's still good for Marcus (3) as he can still display her work without commitment.
+
+If Elena creates the conventional piece and gets the contract, it's good for her (3) as she gains financial stability, but the worst outcome for Marcus (1) as he's stuck with unremarkable art. If Elena goes conventional without a contract, it's a mediocre outcome for both (2 and 2), as Elena compromises her vision without security, and Marcus gets a safe but unexciting piece.
+
+As the exhibition approaches, both Elena and Marcus must make their decisions, knowing that their choices will significantly impact their futures in the competitive and unpredictable world of art.
+[/Scenario]

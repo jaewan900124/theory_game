@@ -1,0 +1,59 @@
+[Characters]
+{
+  "A": "Alex, a car owner",
+  "B": "Blake, a public transit user"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Drive personal car",
+  "A2": "Use carpooling app",
+  "B1": "Take public transit",
+  "B2": "Join carpooling"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Drive personal car while Blake joins carpooling",
+    3: "Use carpooling app while Blake takes public transit",
+    2: "Drive personal car while Blake takes public transit",
+    1: "Use carpooling app while Blake joins carpooling"
+  },
+  "B": {
+    4: "Take public transit while Alex drives personal car",
+    3: "Take public transit while Alex uses carpooling app",
+    2: "Join carpooling while Alex drives personal car",
+    1: "Join carpooling while Alex uses carpooling app"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Take public transit) | B2 (Join carpooling) |
+|-------|--------------------------|----------------------|
+| A1 (Drive personal car) | 2 \ 4 | 4 \ 2 |
+| A2 (Use carpooling app) | 3 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city grappling with traffic congestion, Alex and Blake, two colleagues, face daily transportation decisions that impact not only their commutes but also the overall traffic situation.
+
+Alex, a car owner, has two options: drive his personal car (A1) or use a carpooling app (A2). Blake, a public transit user, can either stick to public transportation (B1) or join a carpool (B2).
+
+Alex prefers driving his personal car, especially if Blake joins a carpool, as it reduces traffic on his route. His second choice is using the carpooling app while Blake takes public transit, as it's eco-friendly and moderately convenient. His least preferred scenario is when both use the carpooling app, as it means sharing his car with strangers.
+
+Blake, on the other hand, prefers taking public transit, particularly when Alex drives alone, as it means less crowded public transportation. Her second choice is taking public transit while Alex carpools, as it still keeps the trains less crowded. She least prefers joining a carpool when Alex is also carpooling, as it feels less efficient.
+
+Their choices create four possible scenarios:
+
+1. Alex drives (A1) and Blake takes public transit (B1): This is Blake's most preferred outcome (4) but only Alex's third choice (2).
+2. Alex drives (A1) and Blake joins carpooling (B2): This is Alex's most preferred outcome (4) but Blake's third choice (2).
+3. Alex uses the carpooling app (A2) and Blake takes public transit (B1): This is the second-best outcome for both (3,3).
+4. Alex uses the carpooling app (A2) and Blake joins carpooling (B2): This is the least preferred outcome for both (1,1).
+
+As they make their daily transportation choices, Alex and Blake must consider not only their personal preferences but also how their decisions might affect each other and the broader community. Their choices highlight the complex interplay between individual convenience, environmental concerns, and overall urban traffic management.
+[/Scenario]

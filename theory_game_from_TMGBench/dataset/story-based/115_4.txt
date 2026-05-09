@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a star basketball player",
+  "B": "Blake, the team coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play conservatively",
+  "A2": "Play aggressively",
+  "B1": "Focus on team play",
+  "B2": "Let Alex dominate"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play aggressively and dominate the game",
+    3: "Play conservatively while dominating",
+    2: "Play aggressively within team strategy",
+    1: "Play conservatively within team strategy"
+  },
+  "B": {
+    4: "Alex plays conservatively within team strategy",
+    3: "Alex plays aggressively within team strategy",
+    2: "Alex dominates while playing aggressively",
+    1: "Alex dominates while playing conservatively"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Focus on team play) | B2 (Let Alex dominate) |
+|-------|-------------------------|------------------------|
+| A1 (Play conservatively) | 1 \ 4                 | 3 \ 1                  |
+| A2 (Play aggressively)   | 2 \ 3                 | 4 \ 2                  |
+[/Payoff Matrix]
+
+[Scenario]
+The championship game is about to begin, and tension fills the air as Alex, the star basketball player, and Blake, the team coach, face a crucial decision that could determine the outcome of the match.
+
+Alex, known for his incredible skills and ability to change the course of a game single-handedly, is torn between playing conservatively within the team's strategy or unleashing his aggressive playstyle to dominate the court. He knows that playing aggressively could lead to personal glory and potentially secure a win, but it might also disrupt the team's dynamics.
+
+Blake, the experienced coach, must decide whether to focus on a team-oriented strategy or allow Alex to take control of the game. The coach understands the importance of team cohesion but also recognizes Alex's game-changing potential.
+
+If Alex chooses to play conservatively (A1) and Blake focuses on team play (B1), it results in the least preferred outcome for Alex (1) but the most preferred for Blake (4). This scenario represents a well-executed team strategy but doesn't showcase Alex's full potential.
+
+If Alex plays conservatively (A1) but Blake decides to let him dominate (B2), Alex finds it somewhat satisfying (3) as he can shine without going all-out, while Blake considers it the least desirable outcome (1) as it doesn't fully utilize the team's strengths.
+
+When Alex opts to play aggressively (A2) and Blake focuses on team play (B1), it leads to a moderately satisfying result for both Alex (2) and Blake (3). This scenario balances individual brilliance with team strategy.
+
+Finally, if Alex chooses to play aggressively (A2) and Blake allows him to dominate (B2), it results in the most preferred outcome for Alex (4) but is only moderately satisfying for Blake (2). This scenario showcases Alex's full potential but may come at the cost of team harmony.
+
+As the game is about to start, both Alex and Blake must make their decisions, knowing that their choices will significantly impact the team's performance and their chances of winning the championship.
+[/Scenario]

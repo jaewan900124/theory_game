@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a commuter",
+  "B": "Ben, a ride-sharing driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use public transportation",
+  "A2": "Request a ride-share",
+  "B1": "Accept ride requests",
+  "B2": "Decline ride requests"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a ride-share quickly",
+    3: "Use public transportation",
+    2: "Wait for a long time for a ride-share",
+    1: "Miss an important meeting due to lack of transportation"
+  },
+  "B": {
+    4: "Have many passengers using public transport, less traffic",
+    3: "Have a steady stream of ride requests",
+    2: "Have fewer ride requests due to competition",
+    1: "Lose potential income due to declining requests"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept)| B2 (Decline)|
+|-------|------------|-------------|
+| A1 (Public) | 1 \ 4      | 4 \ 2       |
+| A2 (Ride-share) | 3 \ 3      | 2 \ 1       |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Alex, a busy commuter, and Ben, a ride-sharing driver, find themselves in a daily transportation dilemma. Alex needs to get to work efficiently, while Ben aims to maximize his income and minimize traffic congestion.
+
+Alex has two options: use public transportation (A1) or request a ride-share (A2). Ben can either accept ride requests (B1) or decline them (B2), hoping to encourage more public transport use.
+
+If Alex chooses public transportation (A1) and Ben accepts ride requests (B1), Alex faces a crowded commute (preference 1), while Ben enjoys less traffic and more public transport users (preference 4).
+
+If Alex opts for public transport (A1) and Ben declines rides (B2), Alex has a smooth journey (preference 4), but Ben experiences moderate demand for his services (preference 2).
+
+When Alex requests a ride-share (A2) and Ben accepts (B1), both benefit moderately: Alex gets a ride (preference 3), and Ben has a steady income (preference 3).
+
+However, if Alex requests a ride-share (A2) but Ben declines (B2), Alex may be late (preference 2), and Ben loses potential income (preference 1).
+
+This scenario illustrates the complex interplay between individual choices and societal outcomes in urban transportation. The choices made by commuters like Alex and drivers like Ben collectively shape the efficiency and sustainability of the city's transport system.
+[/Scenario]

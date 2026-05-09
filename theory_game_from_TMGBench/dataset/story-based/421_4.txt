@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Attempt to score",
+  "B1": "Set a screen",
+  "B2": "Call for the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Score and gain individual glory",
+    3: "Pass successfully and contribute to team play",
+    2: "Pass but the play is unsuccessful",
+    1: "Attempt to score but fail"
+  },
+  "B": {
+    4: "Receive the ball and score",
+    3: "Successfully set a screen leading to a team score",
+    2: "Set a screen but the play is unsuccessful",
+    1: "Call for the ball but don't receive it"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set a screen) | B2 (Call for the ball) |
+|-------|-------------------|------------------------|
+| A1 (Pass the ball) | 2 \ 3 | 3 \ 4 |
+| A2 (Attempt to score) | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the final seconds of a crucial basketball game, teammates Alex and Blake find themselves in a pivotal moment. Alex has possession of the ball near the three-point line, with Blake positioned closer to the basket.
+
+Alex, known for his scoring ability, must decide whether to pass the ball or attempt to score himself. Blake, equally talented but often overshadowed by Alex, must choose between setting a screen for Alex or calling for the ball to potentially score.
+
+If Alex passes the ball (A1) and Blake sets a screen (B1), it results in a moderately successful team play. Alex gets credit for the assist (preference 2), while Blake's screen contribution is recognized (preference 3).
+
+If Alex passes (A1) and Blake calls for the ball (B2), Blake receives it and scores, achieving his highest preference (4). Alex gains a valuable assist, his second-best outcome (preference 3).
+
+If Alex attempts to score (A2) while Blake sets a screen (B1), Alex misses the shot, resulting in the worst outcome for both players (preference 1 for both).
+
+However, if Alex attempts to score (A2) and Blake calls for the ball (B2), Alex successfully scores, achieving his highest preference (4). Blake, although not directly involved in the play, still benefits from the team's success but to a lesser degree (preference 2).
+
+The tension mounts as both players must make their decisions simultaneously, each weighing their personal glory against team success and the potential outcomes of their choices.
+[/Scenario]

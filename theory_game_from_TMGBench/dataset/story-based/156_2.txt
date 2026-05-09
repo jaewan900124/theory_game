@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Elena Ramos, a brilliant robotics engineer",
+  "B": "Dr. Marcus Chen, an innovative AI researcher"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on developing a humanoid robot",
+  "A2": "Develop an AI-powered industrial automation system",
+  "B1": "Collaborate on a joint AI-robotics project",
+  "B2": "Work independently on a separate AI project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop an AI-powered industrial automation system independently",
+    3: "Collaborate on a joint AI-robotics project",
+    2: "Focus on developing a humanoid robot with collaboration",
+    1: "Focus on developing a humanoid robot independently"
+  },
+  "B": {
+    4: "Collaborate on a joint AI-robotics project for humanoid robot",
+    3: "Collaborate on a joint AI-robotics project for industrial automation",
+    2: "Work independently on a separate AI project while Elena develops humanoid robot",
+    1: "Work independently on a separate AI project while Elena develops industrial automation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 2 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At TechFusion Labs, two brilliant minds, Dr. Elena Ramos and Dr. Marcus Chen, find themselves at a crossroads. The company has secured funding for a groundbreaking project, but the direction is yet to be determined.
+
+Elena, a robotics engineer, is torn between two choices: focusing on developing a humanoid robot (A1) or creating an AI-powered industrial automation system (A2). The humanoid robot has been her dream project, but she recognizes the potential impact and profitability of the industrial automation system.
+
+Marcus, an AI researcher, must decide whether to collaborate on a joint AI-robotics project with Elena (B1) or work independently on a separate AI project (B2). He's excited about the potential synergies of collaboration but also values the freedom of independent research.
+
+Their preferences and potential outcomes create an interesting dynamic:
+
+1. If Elena chooses the humanoid robot (A1) and Marcus collaborates (B1), it's Marcus's ideal scenario (4) as he gets to work on cutting-edge AI for humanoid robotics. Elena finds this satisfactory (2) but not her optimal choice.
+
+2. If Elena chooses the humanoid robot (A1) and Marcus works independently (B2), it's Elena's least preferred outcome (1) as she struggles without AI expertise. Marcus finds this acceptable (2) but not ideal.
+
+3. If Elena opts for the industrial automation system (A2) and Marcus collaborates (B1), they both find it mutually beneficial (3/3), combining their expertise for a promising project.
+
+4. If Elena develops the industrial automation system (A2) and Marcus works independently (B2), it's Elena's most preferred outcome (4) as she can fully leverage her robotics skills. However, this is Marcus's least preferred scenario (1), feeling left out of the major project.
+
+As they sit across from each other in the lab, both Elena and Marcus must make their decisions, knowing that their choices will not only shape the future of their research but also their working relationship and the success of TechFusion Labs.
+[/Scenario]

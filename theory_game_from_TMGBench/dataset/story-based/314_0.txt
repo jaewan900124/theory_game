@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products using local resources",
+  "A2": "Import materials for product development",
+  "B1": "Restrict access to forest resources",
+  "B2": "Allow sustainable harvesting of forest resources"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop eco-friendly products using local resources with GreenForest's cooperation",
+    3: "Import materials for product development while GreenForest allows sustainable harvesting",
+    2: "Develop eco-friendly products using local resources despite restrictions",
+    1: "Import materials for product development due to forest access restrictions"
+  },
+  "B": {
+    4: "Allow sustainable harvesting while EcoTech uses local resources",
+    3: "Restrict access to forest resources while EcoTech imports materials",
+    2: "Allow sustainable harvesting while EcoTech imports materials",
+    1: "Restrict access to forest resources while EcoTech uses local resources"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoTech \ GreenForest | Restrict (B1) | Allow (B2) |
+|-----------------------|---------------|------------|
+| Local resources (A1)  | 2 \ 1         | 4 \ 4      |
+| Import materials (A2) | 1 \ 3         | 3 \ 2      |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush, biodiverse forest region, EcoTech, a sustainable technology company, is looking to expand its operations. They aim to develop new eco-friendly products that could potentially benefit the local ecosystem and economy. However, their plans intersect with the interests of GreenForest, a local conservation organization dedicated to protecting the forest's resources.
+
+EcoTech has two options: they can either develop their products using local resources from the forest (A1) or import materials from outside the region (A2). Their preference is to use local resources, as it aligns with their sustainability mission and could potentially be more cost-effective.
+
+GreenForest, on the other hand, must decide whether to restrict access to forest resources (B1) or allow sustainable harvesting (B2). They are torn between absolute conservation and the potential benefits of controlled, sustainable use of forest resources.
+
+If EcoTech chooses to use local resources (A1) and GreenForest allows sustainable harvesting (B2), both parties achieve their most preferred outcome (4,4). EcoTech can develop their eco-friendly products using sustainable local materials, while GreenForest ensures the forest is used responsibly and benefits the local economy.
+
+If EcoTech opts for local resources (A1) but GreenForest restricts access (B1), EcoTech faces challenges but might still find ways to develop their products (2), while GreenForest's strict policy may lead to missed opportunities for sustainable development (1).
+
+If EcoTech decides to import materials (A2) and GreenForest restricts access (B1), EcoTech's sustainability mission is compromised (1), but GreenForest achieves its conservation goals (3).
+
+Lastly, if EcoTech imports materials (A2) and GreenForest allows harvesting (B2), EcoTech can still develop their products but misses the opportunity to use local resources (3), while GreenForest's decision to allow harvesting without local benefit seems less impactful (2).
+
+The challenge for both parties is to communicate, understand each other's goals, and find a way to cooperate that can lead to the most beneficial outcome for both the local economy and the forest ecosystem.
+[/Scenario]

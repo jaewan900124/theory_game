@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Greenfield, a marine biologist",
+  "B": "Captain Jack Summers, a local fisherman"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a partial fishing restriction in the bay",
+  "A2": "Implement a complete fishing ban in the bay",
+  "B1": "Comply with the proposed restrictions",
+  "B2": "Ignore the restrictions and continue fishing as usual"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Complete fishing ban with compliance",
+    3: "Partial restriction with compliance",
+    2: "Partial restriction without compliance",
+    1: "Complete ban without compliance"
+  },
+  "B": {
+    4: "Partial restriction with compliance",
+    3: "Partial restriction without compliance",
+    2: "Complete ban without compliance",
+    1: "Complete ban with compliance"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 3 |
+| A2    | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a small coastal town, Dr. Emma Greenfield, a dedicated marine biologist, is concerned about the declining fish populations in the local bay. She's been studying the ecosystem for years and believes that immediate action is necessary to prevent further damage. On the other hand, Captain Jack Summers, a seasoned local fisherman, relies on fishing in the bay for his livelihood and that of his crew.
+
+Dr. Greenfield has two options: implement a partial fishing restriction or a complete fishing ban in the bay. Captain Summers can either comply with the proposed restrictions or ignore them and continue fishing as usual.
+
+Dr. Greenfield's ideal scenario is a complete fishing ban with full compliance, as this would best protect the marine ecosystem. Her second preference is a partial restriction with compliance, which would still help the fish population recover. She least prefers a situation where a complete ban is implemented but ignored, as this would harm both the ecosystem and her professional reputation.
+
+Captain Summers, however, prefers a partial restriction that he complies with, as this allows him to continue fishing while also maintaining a good relationship with the town and authorities. His least preferred scenario is a complete ban that he complies with, as this would severely impact his income.
+
+If Dr. Greenfield proposes a partial restriction (A1) and Captain Summers complies (B1), they both benefit moderately (3,4). If she proposes a partial restriction (A1) but he ignores it (B2), the ecosystem suffers slightly while he continues to fish (2,3). If she implements a complete ban (A2) and he complies (B1), it's best for the ecosystem but worst for his business (4,1). Finally, if she implements a complete ban (A2) and he ignores it (B2), the ecosystem benefits somewhat, but tensions rise in the community (1,2).
+
+The two must navigate this complex situation, balancing ecological preservation with economic needs, and decide on their course of action.
+[/Scenario]

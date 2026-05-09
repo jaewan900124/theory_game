@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Elena Cortez, a brilliant robotics engineer",
+  "B": "Dr. Marcus Chen, an innovative AI researcher"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint robotics-AI project",
+  "A2": "Work independently on her robotics project",
+  "B1": "Share his cutting-edge AI algorithm",
+  "B2": "Keep his AI algorithm proprietary"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain access to cutting-edge AI while working independently",
+    3: "Work independently without AI access",
+    2: "Collaborate on a joint project with shared AI",
+    1: "Collaborate without access to cutting-edge AI"
+  },
+  "B": {
+    4: "Collaborate and share AI in a joint project",
+    3: "Keep AI proprietary while gaining robotics insights",
+    2: "Share AI without collaboration benefits",
+    1: "Keep AI proprietary without any benefits"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 3 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious engineering conference, Dr. Elena Cortez and Dr. Marcus Chen find themselves at a crossroads. Elena, a robotics expert, has developed an advanced robotic platform but lacks the sophisticated AI needed to maximize its potential. Marcus, on the other hand, has created a groundbreaking AI algorithm that could revolutionize robotic control systems.
+
+Elena must decide whether to collaborate with Marcus on a joint project or continue working independently. Marcus faces the dilemma of sharing his AI algorithm or keeping it proprietary.
+
+If they choose to collaborate (A1) and Marcus shares his AI (B1), they would create a formidable joint project. This scenario is Marcus's most preferred outcome (4) as it allows him to apply his AI in a real-world robotics context. However, it's only Elena's third choice (2) as she'd prefer more autonomy.
+
+If Elena decides to work independently (A2) and Marcus shares his AI (B1), Elena would benefit greatly from the AI without compromising her independence, making it her second-best outcome (3). For Marcus, this is less desirable (2) as he's sharing his work without gaining much in return.
+
+The scenario where they collaborate (A1) but Marcus keeps his AI proprietary (B2) is Elena's top choice (4) as she hopes to gain insights into the AI during collaboration. It's Marcus's second-best outcome (3) as he maintains control of his AI while potentially gaining robotics knowledge.
+
+Lastly, if both decide to work independently and Marcus keeps his AI proprietary (A2, B2), it's the least preferred outcome for both (1,1) as they miss out on potential synergies and advancements.
+
+As they weigh their options, Elena and Marcus must consider not only their immediate gains but also the long-term implications for their careers and the field of robotics and AI. Their decision will shape the future of their research and potentially the entire industry.
+[/Scenario]

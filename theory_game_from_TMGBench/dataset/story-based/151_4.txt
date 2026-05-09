@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Alice Chen, a marine biologist",
+  "B": "Dr. Bob Smith, an ecologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on studying coral bleaching",
+  "A2": "Focus on studying marine pollution",
+  "B1": "Collaborate with Dr. Chen",
+  "B2": "Work independently on terrestrial ecosystems"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Study marine pollution with independent funding",
+    3: "Study marine pollution in collaboration",
+    2: "Study coral bleaching in collaboration",
+    1: "Study coral bleaching with limited resources"
+  },
+  "B": {
+    4: "Collaborate on coral bleaching study",
+    3: "Work independently on terrestrial ecosystems",
+    2: "Collaborate on marine pollution study",
+    1: "Independent work with limited impact"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 3 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Alice Chen and Dr. Bob Smith are two renowned biologists facing a critical decision in their research paths. Dr. Chen, a marine biologist, must choose between studying coral bleaching or marine pollution. Dr. Smith, an ecologist, needs to decide whether to collaborate with Dr. Chen or work independently on terrestrial ecosystems.
+
+Dr. Chen's preferred outcome is to study marine pollution with independent funding, as it aligns with her expertise and offers the most career advancement. Her second choice would be to study marine pollution in collaboration with Dr. Smith, which would provide additional resources but less individual recognition. Studying coral bleaching in collaboration is her third preference, while studying coral bleaching with limited resources is her least preferred option.
+
+Dr. Smith, on the other hand, most desires to collaborate on a coral bleaching study, as it would allow him to expand his research into marine ecosystems. His second choice is to work independently on terrestrial ecosystems, maintaining his current focus. Collaborating on a marine pollution study is his third preference, while working independently with limited impact is his least desired outcome.
+
+The scientists must make their decisions simultaneously, without knowing the other's choice. If Dr. Chen chooses to study coral bleaching (A1) and Dr. Smith decides to collaborate (B1), they will work together on coral bleaching, resulting in Dr. Chen's third preference (2) and Dr. Smith's top preference (4). If Dr. Chen selects coral bleaching (A1) but Dr. Smith opts to work independently (B2), Dr. Chen will struggle with limited resources (1), while Dr. Smith will pursue his second preference (3).
+
+Should Dr. Chen choose to study marine pollution (A2) and Dr. Smith decides to collaborate (B1), they will work together on marine pollution, leading to Dr. Chen's second preference (3) and Dr. Smith's third preference (2). Finally, if Dr. Chen focuses on marine pollution (A2) and Dr. Smith works independently (B2), Dr. Chen will achieve her top preference (4) with independent funding, while Dr. Smith will end up with his least preferred outcome (1) due to limited impact.
+
+This scenario illustrates the complex decision-making process in scientific collaborations, where individual preferences and potential outcomes must be carefully weighed against the benefits of cooperation and the risks of competition.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a talented software developer",
+  "B": "TechCorp, a growing technology company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept TechCorp's job offer",
+  "A2": "Negotiate for better terms",
+  "B1": "Maintain the original offer",
+  "B2": "Improve the job offer"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successfully negotiate for better terms",
+    3: "Accept the original offer",
+    2: "Improved offer after negotiation attempt",
+    1: "Original offer remains unchanged after negotiation"
+  },
+  "B": {
+    4: "Sarah accepts the original offer",
+    3: "Maintain original offer, Sarah accepts after failed negotiation",
+    2: "Improve offer, Sarah accepts",
+    1: "Improve offer, but Sarah still negotiates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Maintain) | B2 (Improve) |
+|-------|---------------|--------------|
+| A1 (Accept) | 1 \ 4 | 2 \ 1 |
+| A2 (Negotiate) | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a talented software developer, has received a job offer from TechCorp, a growing technology company. Both Sarah and TechCorp find themselves in a delicate employment negotiation situation.
+
+Sarah has two choices: she can either accept TechCorp's initial job offer (A1) or attempt to negotiate for better terms (A2). TechCorp, on the other hand, can choose to maintain their original offer (B1) or improve it (B2).
+
+Sarah's most preferred outcome (4) is successfully negotiating for better terms, as this would provide her with improved compensation and benefits. Her second preference (3) is accepting the original offer, which is still a good opportunity. Her third choice (2) would be receiving an improved offer after her negotiation attempt, as it shows some success in her strategy. Her least preferred outcome (1) is when the original offer remains unchanged after her negotiation attempt, potentially straining the relationship.
+
+TechCorp's most preferred outcome (4) is Sarah accepting their original offer, as it allows them to acquire talent at their initially planned cost. Their second preference (3) is maintaining the original offer and having Sarah accept it after a failed negotiation, as it still achieves their goal without additional costs. Their third choice (2) is improving the offer and having Sarah accept, as they secure the talent but at a higher cost. Their least preferred outcome (1) is improving the offer but having Sarah continue to negotiate, as it increases costs and delays the hiring process.
+
+If Sarah accepts the initial offer (A1) and TechCorp maintains it (B1), Sarah receives her least preferred outcome (1), while TechCorp achieves its most preferred outcome (4). If Sarah accepts (A1) but TechCorp improves the offer (B2), Sarah gets her third preference (2), while TechCorp receives its least preferred outcome (1).
+
+If Sarah negotiates (A2) and TechCorp maintains the original offer (B1), both parties receive their second-best outcomes (3 \ 3), as Sarah accepts after the negotiation attempt. If Sarah negotiates (A2) and TechCorp improves the offer (B2), Sarah achieves her most preferred outcome (4), while TechCorp gets its third preference (2).
+
+This scenario illustrates the complex dynamics of employment negotiations, where both parties must carefully consider their strategies to achieve the best possible outcome while managing the risks of potential disagreements or missed opportunities.
+[/Scenario]

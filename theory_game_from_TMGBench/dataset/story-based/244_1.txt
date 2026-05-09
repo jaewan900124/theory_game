@@ -1,0 +1,57 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Davis"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the environmental bill",
+  "A2": "Oppose the environmental bill",
+  "B1": "Endorse Senator Thompson",
+  "B2": "Remain neutral"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill and receive the Governor's endorsement",
+    3: "Support the bill without the Governor's endorsement",
+    2: "Support the bill and receive the Governor's endorsement",
+    1: "Oppose the bill without the Governor's endorsement"
+  },
+  "B": {
+    4: "Senator supports the bill and receives Governor's endorsement",
+    3: "Senator opposes the bill and Governor remains neutral",
+    2: "Senator opposes the bill and receives Governor's endorsement",
+    1: "Senator supports the bill and Governor remains neutral"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support)   | 2 \ 4        | 4 \ 1        |
+| A2 (Oppose)    | 3 \ 2        | 1 \ 3        |
+[/Payoff Matrix]
+
+[Scenario]
+In a pivotal moment for state politics, Senator Sarah Thompson and Governor Mark Davis find themselves at a crossroads over a controversial environmental bill. The bill aims to implement strict regulations on industrial emissions, potentially impacting the state's economy but significantly improving air quality.
+
+Senator Thompson, known for her pragmatic approach, is torn between supporting the bill to appeal to her environmentally conscious constituents and opposing it to maintain favor with powerful industry lobbyists. Her ideal scenario would be to oppose the bill while still receiving Governor Davis's endorsement for her upcoming re-election campaign.
+
+Governor Davis, on the other hand, is weighing the political implications of his stance. He sees the environmental bill as an opportunity to boost his green credentials but is wary of alienating business supporters. His preferred outcome would be for Senator Thompson to support the bill while he endorses her, allowing him to appear both pro-environment and supportive of a key political ally.
+
+The choices before them create a complex political game:
+
+1. If Thompson supports the bill and Davis endorses her (A1, B1), it's a moderate win for Thompson but the best outcome for Davis.
+2. If Thompson supports the bill and Davis remains neutral (A1, B2), it's the best outcome for Thompson but the worst for Davis.
+3. If Thompson opposes the bill and Davis endorses her (A2, B1), it's a good outcome for Thompson but not ideal for Davis.
+4. If Thompson opposes the bill and Davis remains neutral (A2, B2), it's the worst outcome for Thompson but a decent one for Davis.
+
+As they navigate this political minefield, both Senator Thompson and Governor Davis must carefully consider their choices, weighing personal ambitions against public expectations and the potential long-term impacts on their careers and the state's future.
+[/Scenario]

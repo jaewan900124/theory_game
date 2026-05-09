@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Commander Sarah Chen, leader of Earth's Space Exploration Agency",
+  "B": "Captain Zoran, representative of the Proxima Centauri alien civilization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share Earth's advanced propulsion technology",
+  "A2": "Withhold Earth's advanced propulsion technology",
+  "B1": "Share Proxima Centauri's terraforming technology",
+  "B2": "Withhold Proxima Centauri's terraforming technology"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain terraforming technology while keeping propulsion technology secret",
+    3: "Both civilizations share their technologies",
+    2: "Neither civilization shares their technologies",
+    1: "Share propulsion technology without gaining terraforming technology"
+  },
+  "B": {
+    4: "Both civilizations share their technologies",
+    3: "Gain propulsion technology while keeping terraforming technology secret",
+    2: "Neither civilization shares their technologies",
+    1: "Share terraforming technology without gaining propulsion technology"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 1 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2150, humanity's Space Exploration Agency, led by Commander Sarah Chen, has made contact with an alien civilization from Proxima Centauri. The aliens, represented by Captain Zoran, have arrived in Earth's solar system to initiate diplomatic relations and potentially exchange technologies.
+
+Earth has developed advanced propulsion technology that allows for efficient interstellar travel, while the Proxima Centauri civilization has mastered the art of terraforming, capable of transforming inhospitable planets into habitable worlds. Both civilizations see great value in each other's technological achievements.
+
+Commander Chen and Captain Zoran must decide whether to share their respective technologies. They each have two choices: to share or withhold their advanced technology. Their decisions will shape the future of space exploration and interstellar relations.
+
+Commander Chen's ideal outcome is to gain the terraforming technology while keeping Earth's propulsion technology secret, giving humanity an advantage in colonizing new worlds. Her second preference is for both civilizations to share their technologies, fostering cooperation and mutual growth. Her least desired outcome is sharing Earth's technology without receiving anything in return.
+
+Captain Zoran, on the other hand, values open exchange and cooperation above all. His ideal scenario is for both civilizations to share their technologies, promoting trust and collaborative space exploration. His second preference is to gain Earth's propulsion technology while keeping the terraforming technology secret, which would give his civilization an edge in space travel. Like Commander Chen, his least desired outcome is sharing their technology without receiving anything in return.
+
+If both leaders choose to share (A1, B1), it results in mutual benefit and cooperation, with Commander Chen achieving her second-best outcome (3) and Captain Zoran achieving his most desired outcome (4). If Commander Chen shares while Captain Zoran withholds (A1, B2), Earth gains the advantage in space exploration, resulting in Commander Chen's best outcome (4) but Captain Zoran's second-worst outcome (2). If Commander Chen withholds while Captain Zoran shares (A2, B1), it leads to the worst outcome for both parties (1, 1). Finally, if both withhold their technologies (A2, B2), it results in a cautious stalemate, with Commander Chen's second-worst outcome (2) and Captain Zoran's second-best outcome (3).
+
+The fate of interstellar cooperation and the future of space exploration now rests on the decisions made by these two leaders.
+[/Scenario]

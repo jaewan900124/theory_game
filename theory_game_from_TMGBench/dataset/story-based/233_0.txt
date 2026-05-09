@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Emma, a talented software developer",
+  "B": "Alex, Emma's project manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work overtime on the project",
+  "A2": "Maintain regular working hours",
+  "B1": "Provide additional resources and support",
+  "B2": "Maintain current project resources"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Complete the project quickly without working overtime",
+    3: "Maintain regular hours with current resources",
+    2: "Work overtime with additional resources",
+    1: "Work overtime without additional support"
+  },
+  "B": {
+    4: "Project completed quickly with Emma working overtime",
+    3: "Project progresses steadily with current resources",
+    2: "Project completed quickly with additional resources provided",
+    1: "Project progresses slowly with regular working hours"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 2 |
+| A2    | 3 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented software developer, is working on a critical project for her company. Her project manager, Alex, is responsible for ensuring the project's timely completion while managing resources effectively. As the deadline approaches, both Emma and Alex face important decisions that will affect the project's outcome and their personal well-being.
+
+Emma has two choices: she can either work overtime to accelerate the project's progress (A1) or maintain her regular working hours (A2). Alex, on the other hand, can choose to provide additional resources and support to the project (B1) or maintain the current level of resources (B2).
+
+Emma's most preferred outcome is to complete the project quickly without having to work overtime (4), which she believes is possible if Alex provides additional resources. Her next preference is to maintain her regular hours with the current resources (3), followed by working overtime with additional support (2). Her least preferred scenario is working overtime without any additional resources or support (1).
+
+Alex's top priority is to see the project completed quickly with Emma working overtime (4), as this would impress upper management without incurring additional costs. His second preference is for the project to progress steadily with current resources (3), followed by completing the project quickly but with the added expense of providing additional resources (2). His least preferred outcome is for the project to progress slowly with Emma working regular hours (1).
+
+The combination of their choices leads to four possible scenarios:
+
+1. If Emma works overtime (A1) and Alex provides additional resources (B1), Emma will be overworked but supported (1), while Alex achieves his most desired outcome (4).
+
+2. If Emma works overtime (A1) and Alex maintains current resources (B2), Emma completes the project quickly without extra support (4), while Alex gets a fast completion but at the cost of Emma's well-being (2).
+
+3. If Emma maintains regular hours (A2) and Alex provides additional resources (B1), Emma enjoys a balanced workload with support (3), but Alex faces a slower project progress despite the investment (1).
+
+4. If Emma maintains regular hours (A2) and Alex maintains current resources (B2), Emma has a steady but potentially stressful workload (2), while Alex sees steady progress without additional costs (3).
+
+As they consider their options, Emma and Alex must weigh their personal preferences against the potential outcomes for the project and their working relationship. Their decisions will not only impact the project's success but also their professional dynamics and individual satisfaction.
+[/Scenario]

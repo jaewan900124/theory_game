@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Alex, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pursue a collaborative AI project",
+  "A2": "Develop AI technology independently",
+  "B1": "Share proprietary data for the collaboration",
+  "B2": "Withhold data and focus on internal development"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop AI independently while gaining access to DataDrive's data",
+    3: "Collaborate on AI project with shared data",
+    2: "Pursue collaborative AI project without access to DataDrive's data",
+    1: "Both companies develop AI independently without data sharing"
+  },
+  "B": {
+    4: "Gain access to TechInnovate's AI technology without sharing data",
+    3: "Collaborate on AI project with shared data",
+    2: "Both companies develop AI independently without data sharing",
+    1: "Share proprietary data while TechInnovate develops AI independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 2 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the competitive world of tech startups, Sarah, the CEO of TechInnovate, and Alex, the CEO of DataDrive, find themselves at a crossroads. Both companies are on the cusp of breakthrough AI technology that could revolutionize the industry.
+
+Sarah's company, TechInnovate, excels in AI algorithm development but lacks extensive data for training. Alex's DataDrive, on the other hand, possesses a vast trove of user data but lags behind in AI capabilities. The two CEOs must decide whether to collaborate or compete in this high-stakes scenario.
+
+Sarah has two choices: pursue a collaborative AI project with DataDrive (A1) or develop AI technology independently (A2). Alex can either share DataDrive's proprietary data for the collaboration (B1) or withhold the data and focus on internal development (B2).
+
+If both choose to collaborate (A1, B1), they would create a powerful AI system, benefiting both companies. However, this scenario is Sarah's least preferred outcome (1) as she fears losing control of TechInnovate's AI expertise. For Alex, this is the most desirable outcome (4) as it gives DataDrive access to advanced AI technology.
+
+If Sarah proposes collaboration but Alex withholds data (A1, B2), both companies would make moderate progress independently. This is Sarah's second-least preferred outcome (2) and Alex's second-best (2), as it maintains the status quo.
+
+If Sarah decides to develop AI independently while Alex offers to share data (A2, B1), TechInnovate could make significant progress using DataDrive's data. This is Sarah's second-most preferred outcome (3) and also Alex's second-best (3), as both companies benefit from the data sharing without full collaboration.
+
+Finally, if both choose to work independently without sharing resources (A2, B2), TechInnovate would likely pull ahead due to its AI expertise. This is Sarah's most preferred outcome (4) but Alex's least preferred (1), as it could leave DataDrive at a significant competitive disadvantage.
+
+As the two CEOs prepare for their decisive meeting, they must carefully consider their choices, knowing that their decisions will shape the future of both companies and potentially the entire AI industry.
+[/Scenario]

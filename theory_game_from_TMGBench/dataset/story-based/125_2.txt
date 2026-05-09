@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a psychology researcher",
+  "B": "Dr. Michael Chen, another psychology researcher"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while B works independently",
+    3: "Share findings while B works independently",
+    2: "Share findings while B collaborates",
+    1: "Keep findings private while B collaborates"
+  },
+  "B": {
+    4: "A shares findings while B collaborates",
+    3: "A keeps findings private while B collaborates",
+    2: "A keeps findings private while B works independently",
+    1: "A shares findings while B works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Work independently) |
+|-------|------------------|-------------------------|
+| A1 (Share)    | 2 \ 4           | 3 \ 1                   |
+| A2 (Keep private)    | 1 \ 3           | 4 \ 2                   |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson and Dr. Michael Chen are both psychology researchers working on similar projects related to cognitive biases in decision-making. They find themselves at a crossroads where they must decide whether to cooperate or compete with each other.
+
+Dr. Thompson has recently made a breakthrough in her research, discovering a new cognitive bias that could significantly impact the field. She now faces the dilemma of whether to share her findings (A1) or keep them private (A2). Sharing would benefit the scientific community but might dilute her individual recognition. Keeping the findings private could lead to more personal accolades but might slow down progress in the field.
+
+Dr. Chen, aware of Dr. Thompson's recent progress, must decide whether to propose a collaboration (B1) or continue working independently (B2). Collaborating could lead to faster progress and shared recognition, while working independently might allow him to make his own discoveries and gain individual credit.
+
+Their preferences reflect their individual goals and ethical considerations. Dr. Thompson would ideally like to keep her findings private while Dr. Chen works independently, allowing her to maintain full credit for her work. Her least preferred scenario is keeping her findings private while Dr. Chen collaborates, as this might lead to duplicated efforts and potential conflicts.
+
+Dr. Chen, on the other hand, would prefer that Dr. Thompson shares her findings and they collaborate, as this would accelerate their research and lead to shared success. His least preferred outcome is Dr. Thompson sharing her findings while he works independently, as he might feel left behind in the research race.
+
+The payoff matrix represents these preferences numerically. For instance, if Dr. Thompson shares her findings (A1) and Dr. Chen collaborates (B1), Dr. Thompson receives a payoff of 2 (her third choice), while Dr. Chen receives a payoff of 4 (his top choice).
+
+As they prepare for an upcoming conference where they're both scheduled to present, they must make their decisions. The outcome will not only affect their individual careers but also the progress of psychological research in cognitive biases. Their choices will demonstrate the delicate balance between personal ambition and scientific collaboration in the field of psychology.
+[/Scenario]

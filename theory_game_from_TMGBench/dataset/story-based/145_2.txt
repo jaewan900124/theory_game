@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma",
+  "B": "Jack"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share project idea",
+  "A2": "Keep project idea secret",
+  "B1": "Collaborate",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep idea secret while Jack works independently",
+    3: "Share idea and Jack collaborates",
+    2: "Keep idea secret and Jack collaborates",
+    1: "Share idea but Jack works independently"
+  },
+  "B": {
+    4: "Emma shares idea and Jack collaborates",
+    3: "Emma keeps idea secret and Jack collaborates",
+    2: "Emma keeps idea secret while Jack works independently",
+    1: "Emma shares idea but Jack works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Jack | Collaborate | Work independently |
+|-------------|-------------|---------------------|
+| Share idea  | 3 \ 4       | 1 \ 1               |
+| Keep secret | 2 \ 3       | 4 \ 2               |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Jack are talented software developers working for the same tech company. They've been assigned to develop a new innovative app, but they have different approaches to the project.
+
+Emma has come up with a brilliant idea for the app but is unsure whether to share it with Jack or keep it to herself. She knows that sharing could lead to a better end product if Jack collaborates, but she risks Jack taking credit or working independently with her idea. On the other hand, keeping the idea secret might allow her to shine individually, but it could also hinder the project's overall success.
+
+Jack, known for his coding skills, is deciding whether to collaborate closely with Emma or work more independently on the project. He values teamwork but also sees an opportunity to showcase his individual talents.
+
+If Emma shares her idea and Jack collaborates (A1, B1), they could create an outstanding app together, which would be great for the company and good for both of their careers (Emma: 3, Jack: 4). However, if Emma shares but Jack decides to work independently (A1, B2), both might struggle and produce mediocre results (Emma: 1, Jack: 1).
+
+If Emma keeps her idea secret and Jack still chooses to collaborate (A2, B1), Jack might come up with decent ideas, leading to a good but not exceptional product (Emma: 2, Jack: 3). In the scenario where Emma keeps her idea secret and Jack works independently (A2, B2), Emma could potentially shine with her idea while Jack produces solid work on his own (Emma: 4, Jack: 2).
+
+As the project deadline approaches, Emma and Jack must make their decisions, each hoping to achieve the best possible outcome for themselves while also considering the project's success and their professional relationship.
+[/Scenario]

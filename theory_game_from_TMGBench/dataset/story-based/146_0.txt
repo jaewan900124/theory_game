@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Sarah, a small cafe owner",
+  "B": "Mark, a local coffee bean supplier"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Buy coffee beans exclusively from Mark",
+  "A2": "Source coffee beans from multiple suppliers",
+  "B1": "Offer Sarah a loyalty discount",
+  "B2": "Maintain standard pricing for all customers"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Source from multiple suppliers with standard pricing",
+    3: "Buy exclusively from Mark who offers loyalty discount",
+    2: "Source from multiple suppliers with loyalty discount",
+    1: "Buy exclusively from Mark with standard pricing"
+  },
+  "B": {
+    4: "Sarah buys exclusively with loyalty discount",
+    3: "Sarah sources from multiple suppliers with standard pricing",
+    2: "Sarah buys exclusively with standard pricing",
+    1: "Sarah sources from multiple suppliers with loyalty discount"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 2 |
+| A2    | 2 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling small town, Sarah, a passionate cafe owner, is facing a crucial decision about her coffee bean supply. Her primary supplier, Mark, a local coffee bean distributor, is also at a crossroads regarding his pricing strategy.
+
+Sarah has two options: she can either commit to buying coffee beans exclusively from Mark (A1) or diversify her sourcing by working with multiple suppliers (A2). Meanwhile, Mark is considering whether to offer Sarah a loyalty discount for being a long-term customer (B1) or maintain his standard pricing for all customers (B2).
+
+Sarah's ideal scenario would be to source from multiple suppliers while Mark maintains standard pricing. This would give her the flexibility to find the best beans at competitive prices without being tied to a single supplier. Her least preferred situation would be to commit exclusively to Mark without any price benefit.
+
+For Mark, the best outcome would be for Sarah to buy exclusively from him while he offers the loyalty discount, securing a steady, large-volume customer. His least desired scenario is offering Sarah a discount only to have her source from multiple suppliers, potentially reducing her purchases from him.
+
+The dynamics between Sarah and Mark create an interesting economic game:
+
+1. If Sarah commits to Mark (A1) and he offers a loyalty discount (B1), it's a win-win situation, though slightly more beneficial for Mark (3,4).
+
+2. If Sarah commits to Mark (A1) but he doesn't offer a discount (B2), it's the worst scenario for Sarah and only moderately good for Mark (1,2).
+
+3. If Sarah sources from multiple suppliers (A2) and Mark offers a loyalty discount (B1), it's moderately good for Sarah but not ideal for Mark (2,3).
+
+4. If Sarah sources from multiple suppliers (A2) and Mark maintains standard pricing (B2), it's the best outcome for Sarah but the worst for Mark (4,1).
+
+This situation highlights the complexities of supplier-buyer relationships in a competitive market, where both parties must balance their own interests with the potential benefits of cooperation. Sarah's preference for diversified sourcing and Mark's desire for exclusive commitment create a tension that reflects real-world economic decision-making processes.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a talented graphic designer",
+  "B": "Alex, a skilled web developer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Share resources and knowledge",
+  "B2": "Keep resources and knowledge to themselves"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently while Alex keeps resources (A2, B2)",
+    3: "Collaborate with Alex sharing resources (A1, B1)",
+    2: "Work independently while Alex shares resources (A2, B1)",
+    1: "Collaborate while Alex keeps resources (A1, B2)"
+  },
+  "B": {
+    4: "Emma collaborates while sharing resources (A1, B1)",
+    3: "Emma collaborates while keeping own resources (A1, B2)",
+    2: "Both work independently and keep resources (A2, B2)",
+    1: "Emma works independently while sharing resources (A2, B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 3 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Alex are freelancers who have been approached to work on a high-profile website redesign project. They have complementary skills: Emma is a talented graphic designer, while Alex is a skilled web developer. The client has given them the option to work together or independently on different aspects of the project.
+
+Emma and Alex must decide whether to collaborate or work independently, and whether to share their resources and knowledge or keep them to themselves. Their choices will affect the project's outcome and their individual benefits.
+
+If they both choose to collaborate and share resources (A1, B1), they can create a cohesive design and efficiently complete the project. Emma would be satisfied with this outcome (preference 3), while Alex would be thrilled (preference 4) as he gains access to Emma's design expertise.
+
+If Emma collaborates but Alex keeps his resources to himself (A1, B2), Emma would struggle to implement her designs effectively, resulting in her least preferred outcome (preference 1). Alex would still benefit from Emma's collaboration (preference 3) but not as much as if he had shared his knowledge.
+
+If Emma works independently while Alex shares resources (A2, B1), both Emma and Alex would find this scenario somewhat beneficial but not ideal (both preference 2). Emma could leverage Alex's technical knowledge to enhance her designs, while Alex would have some insight into Emma's design process.
+
+Lastly, if both decide to work independently and keep their resources to themselves (A2, B2), Emma would produce her best work without distractions or compromises (preference 4). However, Alex would face significant challenges in creating a visually appealing website without Emma's input, making this his least preferred scenario (preference 1).
+
+The outcome of their decisions will not only affect their personal gains but also the overall quality of the project and potentially their future collaborations and reputations in the industry. The dilemma they face highlights the complex nature of cooperation and competition in professional settings.
+[/Scenario]

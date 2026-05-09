@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products using sustainable materials",
+  "A2": "Maximize profit by using cheaper, less sustainable materials",
+  "B1": "Collaborate with EcoTech on conservation projects",
+  "B2": "Focus solely on independent conservation efforts"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maximize profit while maintaining a green image",
+    3: "Develop eco-friendly products with conservation support",
+    2: "Develop eco-friendly products independently",
+    1: "Lose market share due to negative public perception"
+  },
+  "B": {
+    4: "Collaborate on eco-friendly products and conservation",
+    3: "Focus on independent conservation efforts",
+    2: "Limited collaboration with a profit-focused company",
+    1: "Struggle with limited resources for conservation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 3 |
+| A2    | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a world increasingly concerned with environmental issues, EcoTech, a sustainable technology company, and GreenForest, a conservation organization, find themselves at a crossroads. Their decisions will not only impact their own futures but also the delicate balance of the local ecosystem.
+
+EcoTech faces a crucial decision: they can either develop eco-friendly products using sustainable materials (A1) or maximize their profit by using cheaper, less sustainable materials (A2). Meanwhile, GreenForest must choose between collaborating with EcoTech on conservation projects (B1) or focusing solely on their independent conservation efforts (B2).
+
+If EcoTech chooses to develop eco-friendly products (A1) and GreenForest decides to collaborate (B1), EcoTech will see moderate success (preference 2) while GreenForest will achieve their ideal outcome (preference 4). This scenario represents a win-win situation for the environment, though EcoTech's profits may not be maximized.
+
+Should EcoTech opt for eco-friendly products (A1) but GreenForest decides to work independently (B2), EcoTech will fare slightly better (preference 3) due to their positive public image, while GreenForest will maintain their standard operations (preference 3).
+
+If EcoTech chooses to maximize profits with less sustainable materials (A2) and GreenForest agrees to collaborate (B1), EcoTech will face significant backlash and potentially lose market share (preference 1), while GreenForest will struggle with the ethical dilemma of working with a less eco-friendly partner (preference 2).
+
+Finally, if EcoTech pursues profit maximization (A2) and GreenForest focuses on independent efforts (B2), EcoTech will achieve their highest profits (preference 4), but at the cost of their environmental reputation. GreenForest, on the other hand, will find themselves struggling with limited resources and impact (preference 1).
+
+As both organizations weigh their options, they must consider not only their immediate gains but also the long-term consequences for the environment and their reputations. The delicate balance between economic success and ecological responsibility hangs in the balance, with far-reaching implications for the future of sustainable development in their region.
+[/Scenario]

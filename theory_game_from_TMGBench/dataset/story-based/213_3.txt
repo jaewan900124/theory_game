@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Blake, Alex's doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play aggressively",
+  "A2": "Play defensively",
+  "B1": "Cover the net",
+  "B2": "Stay at the baseline"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play aggressively while Blake stays at the baseline",
+    3: "Play defensively while Blake stays at the baseline",
+    2: "Play aggressively while Blake covers the net",
+    1: "Play defensively while Blake covers the net"
+  },
+  "B": {
+    4: "Cover the net while Alex plays aggressively",
+    3: "Stay at the baseline while Alex plays defensively",
+    2: "Stay at the baseline while Alex plays aggressively",
+    1: "Cover the net while Alex plays defensively"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Cover the net) | B2 (Stay at the baseline) |
+|-------|---------------------|---------------------------|
+| A1 (Play aggressively) | 2 \ 4 | 4 \ 2 |
+| A2 (Play defensively) | 1 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are professional tennis players preparing for a crucial doubles match in a Grand Slam tournament. They need to decide on their strategy for the upcoming game. Their coach has given them two options each, and they must choose without communicating with each other.
+
+Alex can either play aggressively (A1) or defensively (A2), while Blake can either cover the net (B1) or stay at the baseline (B2). Their individual preferences and the overall effectiveness of their combined choices are represented in the payoff matrix.
+
+Alex prefers to play aggressively when Blake stays at the baseline, as this allows Alex to take control of the game while Blake provides solid support. Alex's least preferred scenario is playing defensively while Blake covers the net, as this leaves them vulnerable to powerful shots from their opponents.
+
+Blake, on the other hand, prefers to cover the net when Alex plays aggressively, as this creates a formidable offensive strategy. Blake's least preferred scenario is covering the net while Alex plays defensively, as this leaves too much court space unprotected.
+
+If they both choose their most preferred strategies (A1 and B1), they will achieve a moderately successful outcome (2 for Alex, 4 for Blake). If they both choose their second-best options (A2 and B2), they will achieve a balanced and relatively successful outcome (3 for both).
+
+The challenge lies in making the best individual choice without knowing what their partner will do, while also considering the overall team strategy. Their decision will greatly impact their performance in the upcoming match and potentially their entire tournament run.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a small coffee shop owner",
+  "B": "Jack, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Maintain current prices",
+  "B2": "Open a new branch nearby"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices while Jack opens a new branch (highest profit)",
+    3: "Both maintain current prices (stable profit)",
+    2: "Maintain prices while Jack opens a new branch (slight loss)",
+    1: "Lower prices while Jack maintains prices (significant loss)"
+  },
+  "B": {
+    4: "Open a new branch while Emma maintains prices (highest profit)",
+    3: "Maintain prices while Emma lowers prices (good profit)",
+    2: "Both maintain current prices (stable profit)",
+    1: "Open a new branch while Emma lowers prices (significant loss)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Jack | Maintain prices (B1) | Open new branch (B2) |
+|-------------|----------------------|----------------------|
+| Maintain prices (A1) | 3 \ 2              | 2 \ 4              |
+| Lower prices (A2)    | 1 \ 3              | 4 \ 1              |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling town, Emma runs a cozy, independent coffee shop that has been a local favorite for years. Recently, Jack, the owner of a large coffee chain, has shown interest in expanding his business to Emma's neighborhood.
+
+Emma faces a critical decision: she can either maintain her current prices (A1) or lower them (A2) to stay competitive. Jack, on the other hand, must decide whether to maintain his current prices at existing locations (B1) or open a new branch near Emma's shop (B2).
+
+If both Emma and Jack maintain their current prices (A1, B1), they'll both experience stable profits. Emma slightly prefers this scenario as it allows her to maintain her business without much change, while Jack sees it as an average outcome.
+
+Should Emma maintain her prices while Jack opens a new branch nearby (A1, B2), Emma would face a slight loss due to increased competition. However, this would be Jack's most preferred outcome, as he'd capture a larger market share.
+
+If Emma lowers her prices while Jack maintains his current strategy (A2, B1), Emma would suffer a significant loss due to reduced profit margins. Jack would benefit from this scenario, as he'd maintain his prices while potentially attracting some of Emma's price-sensitive customers.
+
+The most interesting scenario occurs if Emma lowers her prices and Jack opens a new branch (A2, B2). Surprisingly, this would be Emma's most preferred outcome. By lowering her prices preemptively, she'd be better positioned to compete with Jack's new branch, potentially attracting a larger customer base and increasing her overall profit. However, this would be Jack's least preferred outcome, as he'd face fierce competition from Emma's lower prices, potentially resulting in a significant loss for his new branch.
+
+As both Emma and Jack contemplate their strategies, they must consider not only their own actions but also anticipate the other's move. Their decisions will shape the future of the local coffee market and their respective businesses.
+[/Scenario]

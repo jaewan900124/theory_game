@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Amelia Chen, a molecular biologist",
+  "B": "Dr. Benjamin Taylor, a geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings confidential",
+  "B1": "Focus on individual research",
+  "B2": "Collaborate on joint research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate and gain recognition",
+    3: "Share findings and continue individual work",
+    2: "Keep findings secret and work alone",
+    1: "Keep findings secret while others collaborate"
+  },
+  "B": {
+    4: "Collaborate and make breakthrough",
+    3: "Focus on individual work with shared knowledge",
+    2: "Work individually with limited information",
+    1: "Work alone while others advance"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 2 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Amelia Chen and Dr. Benjamin Taylor are leading researchers in the field of genetic engineering, both working on groundbreaking projects to develop drought-resistant crops. They have independently made significant progress but are now faced with a crucial decision that could shape the future of their research and potentially impact global food security.
+
+Dr. Chen has discovered a novel gene sequence that could dramatically improve plant water retention. She must decide whether to share her findings openly with the scientific community (A1) or keep them confidential to maintain a competitive edge (A2).
+
+Dr. Taylor, on the other hand, has developed an innovative gene-editing technique that could expedite the implementation of drought-resistance traits. He is considering whether to focus on his individual research (B1) or propose a collaboration with Dr. Chen to combine their findings (B2).
+
+If Dr. Chen shares her findings (A1) and Dr. Taylor focuses on his individual work (B1), they both make steady progress. Dr. Chen gains recognition for her openness (preference 3), while Dr. Taylor advances his research with the benefit of shared knowledge (preference 2).
+
+If both decide to collaborate (A1 and B2), they stand to make a significant breakthrough, potentially revolutionizing crop genetics. This scenario is highly preferred by both scientists (preference 4 for both), as it could lead to global recognition and rapid advancements in their field.
+
+If Dr. Chen keeps her findings confidential (A2) and Dr. Taylor focuses on his individual work (B1), both scientists make slower progress. Dr. Chen maintains her competitive edge but misses out on potential collaborations (preference 2), while Dr. Taylor struggles with limited information (preference 1).
+
+In the scenario where Dr. Chen keeps her findings secret (A2) but Dr. Taylor proposes collaboration (B2), Dr. Chen finds herself at a disadvantage. She risks falling behind as others in the field advance (preference 1), while Dr. Taylor makes moderate progress by collaborating with other researchers (preference 3).
+
+The scientists must carefully consider their choices, weighing the potential for individual success against the possibilities of collaborative breakthroughs. Their decisions will not only affect their personal careers but could also have far-reaching implications for global food security and the future of genetic engineering in agriculture.
+[/Scenario]

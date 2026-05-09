@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a small bakery owner",
+  "B": "Lucas, owner of a large supermarket chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Keep prices stable",
+  "A2": "Raise prices",
+  "B1": "Stock Emma's products",
+  "B2": "Don't stock Emma's products"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Raise prices, products stocked by Lucas",
+    3: "Keep prices stable, products stocked by Lucas",
+    2: "Raise prices, products not stocked by Lucas",
+    1: "Keep prices stable, products not stocked by Lucas"
+  },
+  "B": {
+    4: "Emma keeps prices stable, stock her products",
+    3: "Emma raises prices, stock her products",
+    2: "Emma raises prices, don't stock her products",
+    1: "Emma keeps prices stable, don't stock her products"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Stock (B1) | Don't Stock (B2) |
+|--------------|------------|-------------------|
+| Stable (A1)  | 1 \ 4      | 2 \ 1             |
+| Raise (A2)   | 3 \ 3      | 4 \ 2             |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling town, Emma, a talented baker, runs a small but popular bakery known for its artisanal bread and pastries. Recently, she's been approached by Lucas, the owner of a large supermarket chain, who is interested in stocking her products in his stores.
+
+Emma is faced with a dilemma. She can either keep her prices stable (A1) or raise them (A2) to cover the costs of increased production. Lucas, on the other hand, must decide whether to stock Emma's products (B1) or not (B2).
+
+Emma's preferences are clear. Her most desired outcome (4) is to raise prices and have her products stocked by Lucas, as this would maximize her profits and expand her reach. Her least preferred scenario (1) is keeping prices stable and not being stocked by Lucas, which would mean missing out on the opportunity for growth.
+
+Lucas, however, has different priorities. His ideal situation (4) is for Emma to keep her prices stable and for him to stock her products, as this would attract customers without cutting into his margins. His least preferred outcome (1) is not stocking Emma's products while she keeps her prices stable, as he might lose customers to her bakery.
+
+If Emma keeps prices stable and Lucas stocks her products (A1, B1), Emma receives her least preferred outcome (1) due to potentially reduced profits, while Lucas gets his most preferred situation (4). If Emma raises prices and Lucas stocks her products (A2, B1), both achieve their second-best outcomes (3), creating a mutually beneficial scenario.
+
+If Emma keeps prices stable but Lucas doesn't stock her products (A1, B2), Emma slightly improves her position (2) by maintaining her customer base, while Lucas faces his least preferred outcome (1). Lastly, if Emma raises prices and Lucas doesn't stock her products (A2, B2), Emma achieves her most preferred outcome (4) by increasing profits, while Lucas settles for his third-best scenario (2).
+
+As they negotiate, both Emma and Lucas must carefully consider their choices, weighing the potential benefits and risks of cooperation versus competition in this complex economic dance.
+[/Scenario]

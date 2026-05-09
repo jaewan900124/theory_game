@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Olivia, a talented street artist",
+  "B": "Marcus, the owner of a trendy art gallery"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create conventional art pieces",
+  "A2": "Produce provocative, avant-garde artworks",
+  "B1": "Offer Olivia a small, shared exhibition",
+  "B2": "Offer Olivia a solo exhibition with full creative freedom"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Produce provocative art and get a solo exhibition",
+    3: "Produce provocative art but only get a shared exhibition",
+    2: "Create conventional art and get a shared exhibition",
+    1: "Create conventional art but get a solo exhibition"
+  },
+  "B": {
+    4: "Offer a solo exhibition for conventional art",
+    3: "Offer a shared exhibition for provocative art",
+    2: "Offer a solo exhibition for provocative art",
+    1: "Offer a shared exhibition for conventional art"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Shared) | B2 (Solo) |
+|-------|-------------|-----------|
+| A1 (Conventional) | 2 \ 1 | 1 \ 4 |
+| A2 (Provocative) | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Olivia, a talented street artist known for her bold and unconventional style, has caught the attention of Marcus, the owner of a trendy art gallery in the city. Marcus is interested in featuring Olivia's work but is unsure about how to best showcase her talent while also appealing to his clientele.
+
+Olivia has two choices: she can either create conventional art pieces that are more likely to sell (A1) or produce provocative, avant-garde artworks that truly represent her artistic vision (A2). Meanwhile, Marcus can offer Olivia a small, shared exhibition with other artists (B1) or take a risk and offer her a solo exhibition with full creative freedom (B2).
+
+Olivia's ultimate preference is to produce her provocative art and get a solo exhibition (A2B2), as this would allow her to fully express herself and gain maximum exposure. Her second choice would be to still create her avant-garde art but in a shared exhibition (A2B1), as it would at least allow her to stay true to her style. Creating conventional art for a shared exhibition (A1B1) is her third choice, as it would give her some exposure but compromise her artistic integrity. Her least preferred option is to create conventional art for a solo exhibition (A1B2), as she feels this would be a waste of a great opportunity and misrepresent her as an artist.
+
+Marcus, on the other hand, would ideally like to offer a solo exhibition for conventional art (A1B2), as he believes this would be the safest option financially. His second preference is to offer a shared exhibition for provocative art (A2B1), as it would create buzz without too much risk. Offering a solo exhibition for provocative art (A2B2) is his third choice, as it could either be a big hit or a significant risk. His least preferred option is to offer a shared exhibition for conventional art (A1B1), as he feels this wouldn't generate much interest or sales.
+
+The situation creates a complex dynamic where both Olivia and Marcus must consider not only their own preferences but also anticipate the other's choice to maximize their benefit. Their decisions will ultimately shape the exhibition and potentially impact both of their careers in the art world.
+[/Scenario]

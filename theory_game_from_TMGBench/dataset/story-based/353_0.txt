@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "General Alexander",
+  "B": "Admiral Beatrice"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops to the border",
+  "A2": "Keep troops in reserve",
+  "B1": "Maintain naval blockade",
+  "B2": "Launch amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Troops deployed, amphibious assault launched",
+    3: "Troops deployed, naval blockade maintained",
+    2: "Troops in reserve, naval blockade maintained",
+    1: "Troops in reserve, amphibious assault launched"
+  },
+  "B": {
+    4: "Troops deployed, amphibious assault launched",
+    3: "Troops in reserve, naval blockade maintained",
+    2: "Troops deployed, naval blockade maintained",
+    1: "Troops in reserve, amphibious assault launched"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 2 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense geopolitical standoff, General Alexander of the land forces and Admiral Beatrice of the naval fleet find themselves at a critical juncture. Their nation faces a formidable enemy across a narrow strait, and the next move could determine the outcome of the conflict.
+
+General Alexander must decide whether to deploy his troops to the border (A1) or keep them in reserve (A2). Meanwhile, Admiral Beatrice must choose between maintaining the current naval blockade (B1) or launching a risky amphibious assault (B2).
+
+Both leaders have different preferences for the possible outcomes:
+
+General Alexander's most preferred scenario is to have his troops deployed while Admiral Beatrice launches an amphibious assault, as this would provide a coordinated attack from both land and sea. His second choice would be to have his troops deployed while the naval blockade is maintained, as this would at least secure the border. His third preference is to keep his troops in reserve while the naval blockade continues, maintaining the status quo. His least preferred outcome is keeping his troops in reserve while an amphibious assault is launched, as this would leave the land forces unprepared to support the naval operation.
+
+Admiral Beatrice shares Alexander's top preference for a coordinated attack with deployed troops and an amphibious assault. However, her second choice differs: she would prefer to maintain the naval blockade if the troops are kept in reserve, as this would allow her to control the sea lanes without risking her forces in an unsupported assault. Her third choice is to maintain the blockade while troops are deployed to the border. Like Alexander, her least preferred outcome is an amphibious assault with troops kept in reserve, as this would be a high-risk operation without land support.
+
+The payoff matrix reflects these preferences, with the highest mutual benefit (4,4) occurring when they coordinate their aggressive strategies (A1,B2). However, if they fail to coordinate, they risk suboptimal outcomes. The challenge lies in their ability to trust each other and communicate effectively to achieve the best possible outcome for their nation's military strategy.
+[/Scenario]

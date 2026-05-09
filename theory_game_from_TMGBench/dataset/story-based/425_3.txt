@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current hospital policies",
+  "A2": "Implement new cost-cutting measures",
+  "B1": "Continue referring patients to the hospital",
+  "B2": "Reduce patient referrals to the hospital"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement cost-cutting measures while maintaining high patient referrals",
+    3: "Maintain current policies with high patient referrals",
+    2: "Maintain current policies with reduced patient referrals",
+    1: "Implement cost-cutting measures with reduced patient referrals"
+  },
+  "B": {
+    4: "Hospital maintains current policies while he reduces referrals",
+    3: "Hospital implements cost-cutting measures while he maintains referrals",
+    2: "Both maintain status quo",
+    1: "Hospital maintains current policies while he maintains referrals"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 3 \ 4 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the hospital administrator at Central City Hospital, faces a dilemma. The hospital's costs have been rising, and she's considering implementing new cost-cutting measures. However, she's concerned about how these changes might affect the hospital's relationship with local physicians, particularly Dr. Mark Johnson, a prominent private practice physician who refers many patients to the hospital.
+
+Dr. Chen has two choices: she can either maintain the current hospital policies (A1) or implement new cost-cutting measures (A2). These measures would include reducing staff, limiting certain expensive procedures, and implementing stricter guidelines for patient admissions.
+
+Dr. Johnson, on the other hand, is worried about the quality of care his patients receive at the hospital. He has two choices as well: continue referring patients to the hospital at the current rate (B1) or reduce his patient referrals (B2), potentially sending more patients to a competing hospital in a neighboring city.
+
+Dr. Chen's most preferred outcome would be to implement the cost-cutting measures while maintaining high patient referrals from Dr. Johnson. This would allow her to address the hospital's financial concerns without losing valuable patient volume. Her least preferred outcome would be implementing the cost-cutting measures only to see Dr. Johnson reduce his referrals, which could lead to financial difficulties for the hospital.
+
+Dr. Johnson, however, would prefer that the hospital maintains its current policies while he reduces his referrals. This would allow him to express his dissatisfaction with the hospital's direction without facing potential repercussions from cost-cutting measures. His least preferred outcome would be to maintain his current level of referrals while the hospital keeps its current policies, as he feels this doesn't address his concerns about patient care.
+
+If both maintain the status quo (A1, B1), it's a moderately satisfactory outcome for Dr. Chen but the least preferred for Dr. Johnson. If Dr. Chen implements cost-cutting measures and Dr. Johnson maintains referrals (A2, B1), it's moderately satisfactory for Dr. Johnson but least preferred for Dr. Chen due to the potential strain on hospital resources.
+
+The situation creates a complex dynamic where both parties must carefully consider their actions, knowing that their decisions will significantly impact not only their own interests but also the overall healthcare landscape in their community.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Impose trade tariffs",
+  "A2": "Maintain free trade",
+  "B1": "Retaliate with tariffs",
+  "B2": "Maintain free trade"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Impose tariffs while China maintains free trade",
+    3: "Both maintain free trade",
+    2: "Both impose tariffs",
+    1: "Maintain free trade while China imposes tariffs"
+  },
+  "B": {
+    4: "Impose tariffs while US maintains free trade",
+    3: "Both maintain free trade",
+    2: "Both impose tariffs",
+    1: "Maintain free trade while US imposes tariffs"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| US \ China | Retaliate (B1) | Free Trade (B2) |
+|------------|----------------|-----------------|
+| Tariffs (A1)| 1 \ 4         | 4 \ 1           |
+| Free Trade (A2)| 3 \ 2      | 2 \ 3           |
+[/Payoff Matrix]
+
+[Scenario]
+In the realm of international relations, the United States and China find themselves at a crossroads in their trade relationship. Both nations are weighing their options carefully, knowing that their decisions will have far-reaching consequences for their economies and global trade dynamics.
+
+The United States (A) is considering whether to impose trade tariffs (A1) or maintain free trade (A2) with China. Similarly, China (B) must decide between retaliating with tariffs (B1) or maintaining free trade (B2).
+
+For the United States, the most preferred outcome (4) would be to impose tariffs while China continues free trade, giving the US a competitive advantage. Their second preference (3) is for both nations to maintain free trade, fostering economic growth. The third choice (2) is for both to impose tariffs, creating a level playing field but potentially slowing economic growth. The least preferred option (1) is to maintain free trade while China imposes tariffs, putting the US at a disadvantage.
+
+China's preferences mirror those of the US. Their ideal scenario (4) is to impose tariffs while the US maintains free trade. The second preference (3) is mutual free trade, followed by mutual tariffs (2), and the least desirable outcome (1) is to maintain free trade while the US imposes tariffs.
+
+The payoff matrix reveals the complex nature of this decision. If both countries choose to impose tariffs (A1, B1), they both receive a payoff of 1 and 4 respectively, representing a lose-lose scenario in terms of global trade but a "victory" for domestic politics. If the US imposes tariffs and China maintains free trade (A1, B2), the US receives its highest payoff (4) while China receives its lowest (1). The reverse is true if China retaliates and the US maintains free trade (A2, B1).
+
+Interestingly, if both nations choose to maintain free trade (A2, B2), they both receive a payoff of 2 and 3 respectively, representing a stable and mutually beneficial outcome, though not the most preferred by either country's short-term interests.
+
+This scenario illustrates the delicate balance in international trade relations and the potential for both cooperation and competition. The choices made by these global powers will not only affect their own economies but will also have ripple effects throughout the global economic system.
+[/Scenario]

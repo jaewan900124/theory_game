@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Captain Aria Chen, commander of the Earth Space Agency's exploration vessel",
+  "B": "Dr. Zain Malik, lead scientist of the rival Galactic Research Institute"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share data and resources",
+  "A2": "Keep discoveries confidential",
+  "B1": "Withhold crucial information",
+  "B2": "Collaborate openly"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Full collaboration, shared glory",
+    3: "Exclusive discovery, personal acclaim",
+    2: "Partial cooperation, limited recognition",
+    1: "Missed opportunity, no significant findings"
+  },
+  "B": {
+    4: "Full collaboration, shared glory",
+    3: "Solo breakthrough, institutional prestige",
+    2: "Limited data access, minor contributions",
+    1: "Inconclusive research, wasted resources"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 4 \ 4 |
+| A2    | 3 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the vast expanse of space, two rival exploration teams find themselves in an unexpected encounter near a newly discovered exoplanet. Captain Aria Chen, commanding the Earth Space Agency's state-of-the-art vessel, faces a crucial decision as her ship's sensors detect the presence of Dr. Zain Malik's Galactic Research Institute probe in the same star system.
+
+The exoplanet shows promising signs of habitability, potentially the greatest discovery in human history. Both teams possess pieces of a larger puzzle that could unlock the secrets of this alien world. Captain Chen must decide whether to share her team's data and resources (A1) or keep their discoveries confidential (A2). Similarly, Dr. Malik can choose to withhold crucial information his team has gathered (B1) or collaborate openly with Captain Chen's crew (B2).
+
+If both parties decide to collaborate fully (A1, B2), they would achieve the highest mutual benefit (4, 4), potentially making a groundbreaking discovery that would bring shared glory and advance human knowledge significantly. This outcome is the most preferred for both parties.
+
+Should Captain Chen decide to share information while Dr. Malik withholds crucial data (A1, B1), the Earth Space Agency would gain limited insights (2) while the Galactic Research Institute would make little progress (1). This scenario represents partial cooperation with limited recognition for Captain Chen and inconclusive research for Dr. Malik.
+
+In the case where Captain Chen keeps her discoveries confidential but Dr. Malik chooses to collaborate (A2, B2), Chen's team might make an exclusive discovery leading to personal acclaim (3), while Malik's team would still make significant contributions (3) due to their openness.
+
+The least favorable outcome for both parties occurs if they both choose to withhold information (A2, B1). In this scenario, Captain Chen might miss a crucial opportunity (1), while Dr. Malik's research could end up inconclusive (2), resulting in wasted resources and minimal scientific progress.
+
+As their ships maintain a tense orbit around the exoplanet, both leaders must weigh the potential for groundbreaking collaborative discovery against the allure of individual glory and institutional prestige. The fate of this momentous exploration hangs in the balance, dependent on the choices of these two space pioneers.
+[/Scenario]

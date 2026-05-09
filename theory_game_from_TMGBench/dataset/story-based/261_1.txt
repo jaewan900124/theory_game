@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Professor Emma Thompson",
+  "B": "Graduate Student Mark Chen"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on research",
+  "A2": "Work independently",
+  "B1": "Assist with data collection",
+  "B2": "Focus on own thesis"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while Mark focuses on thesis",
+    3: "Collaborate with Mark's assistance",
+    2: "Work independently while Mark focuses on thesis",
+    1: "Work independently while Mark assists"
+  },
+  "B": {
+    4: "Collaborate while assisting Professor Thompson",
+    3: "Collaborate while focusing on own thesis",
+    2: "Assist while Professor Thompson works independently",
+    1: "Focus on thesis while Professor Thompson works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 1 \ 2 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Professor Emma Thompson, a renowned sociologist, is working on a groundbreaking research project on social media's impact on community dynamics. Her graduate student, Mark Chen, is in the final year of his Ph.D. program, focusing on a related but distinct topic.
+
+Professor Thompson has two choices: collaborate on the research with Mark or work independently. Mark also faces two options: assist with data collection for the professor's project or focus solely on his own thesis.
+
+Their preferences and potential outcomes are complex. Professor Thompson would ideally like to collaborate while Mark focuses on his thesis, as this would advance her research without distracting Mark from his work. Her second preference is collaborating with Mark's assistance, which would be highly productive but might slow Mark's progress. Working independently is less desirable for her, with the least preferred scenario being working alone while Mark offers assistance she doesn't need.
+
+Mark, on the other hand, most prefers collaborating while assisting the professor, as this would provide valuable experience and strengthen their working relationship. His second choice is collaborating while focusing on his thesis, which balances his commitments. Assisting while the professor works independently is less appealing, and his least preferred option is focusing on his thesis while the professor works alone, as he fears missing out on potential opportunities.
+
+The payoff matrix reflects these preferences, with each number representing the degree of preference for each scenario (4 being most preferred, 1 being least preferred).
+
+Both Professor Thompson and Mark must decide their course of action, knowing that their choices will impact not only their individual work but also their professional relationship and future collaborations. The outcome will depend on how well they can align their individual goals with the potential for mutual benefit.
+[/Scenario]

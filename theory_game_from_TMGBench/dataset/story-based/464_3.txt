@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Smith",
+  "B": "Admiral Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy land forces",
+  "A2": "Hold land forces in reserve",
+  "B1": "Launch naval assault",
+  "B2": "Maintain naval blockade"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Hold land forces in reserve while naval blockade is maintained",
+    3: "Hold land forces in reserve while naval assault is launched",
+    2: "Deploy land forces while naval blockade is maintained",
+    1: "Deploy land forces while naval assault is launched"
+  },
+  "B": {
+    4: "Deploy land forces while maintaining naval blockade",
+    3: "Launch naval assault while land forces are held in reserve",
+    2: "Hold land forces in reserve while maintaining naval blockade",
+    1: "Deploy land forces while launching naval assault"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Launch naval assault) | B2 (Maintain naval blockade) |
+|-------|---------------------------|------------------------------|
+| A1 (Deploy land forces) | 1 \ 1 | 2 \ 4 |
+| A2 (Hold land forces in reserve) | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Smith of the army and Admiral Johnson of the navy find themselves at a critical juncture. Their nation faces a formidable enemy entrenched on a strategic island, and they must decide on the best course of action to secure victory.
+
+General Smith has two options: deploy land forces for an immediate assault or hold them in reserve. Admiral Johnson can either launch a naval assault or maintain the current naval blockade. Their decisions will greatly impact the outcome of the conflict.
+
+General Smith prefers to hold his forces in reserve, believing it will minimize casualties and allow for a more strategic deployment later. His ideal scenario is to keep his troops back while the navy maintains its blockade, slowly weakening the enemy. His least preferred option is a joint assault, fearing heavy losses.
+
+Admiral Johnson, on the other hand, favors maintaining the naval blockade, which he believes is steadily weakening the enemy's resolve. He would most prefer if the army deployed its forces while he continued the blockade, creating a two-front pressure on the enemy. His least desired outcome is a simultaneous assault, which he fears could lead to chaos and friendly fire incidents.
+
+If both leaders choose their preferred strategies (Smith holding reserves, Johnson maintaining blockade), it results in a moderately satisfactory outcome for both (4 for Smith, 2 for Johnson). If they both opt for immediate assault, it's the worst-case scenario for both (1 for each). 
+
+A mixed strategy where one attacks while the other holds back leads to varying results. If Smith deploys while Johnson maintains the blockade, it's ideal for Johnson (4) but suboptimal for Smith (2). Conversely, if Johnson launches a naval assault while Smith holds his forces, both achieve a reasonably good outcome (3 each).
+
+As they sit in the war room, studying maps and reports, both leaders must weigh their options carefully. Their decision will not only affect the outcome of the battle but potentially the entire war. The tension is palpable as they prepare to announce their strategies, each hoping to outmaneuver not just the enemy, but perhaps each other as well.
+[/Scenario]

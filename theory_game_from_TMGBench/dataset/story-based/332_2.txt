@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a small coffee shop owner",
+  "B": "Ben, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current pricing",
+  "A2": "Lower prices",
+  "B1": "Maintain current pricing",
+  "B2": "Open a new branch nearby"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "B opens a new branch, A maintains prices (increased customer base)",
+    3: "Both maintain current pricing (status quo)",
+    2: "A lowers prices, B maintains pricing (lower profit margin)",
+    1: "A maintains prices, B maintains pricing (lost market share)"
+  },
+  "B": {
+    4: "B opens a new branch, A maintains prices (market expansion)",
+    3: "A maintains prices, B maintains pricing (steady profits)",
+    2: "A lowers prices, B maintains pricing (maintained market share)",
+    1: "A lowers prices, B opens new branch (price war)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 4 \ 4 |
+| A2    | 3 \ 2 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city district, Alex, a small coffee shop owner, faces a dilemma as Ben, the owner of a large coffee chain, considers expanding into the area. Alex's quaint caf¨¦ has been a neighborhood staple for years, known for its personalized service and quality brews. Ben's chain, on the other hand, offers competitive prices and brand recognition.
+
+Alex has two choices: maintain current pricing (A1) or lower prices (A2) to compete with Ben's potential new branch. Ben can either maintain his current pricing at existing locations (B1) or open a new branch nearby (B2).
+
+If both maintain their current pricing (A1, B1), Alex will likely lose some market share to Ben's established brand, while Ben enjoys steady profits. This is Alex's least preferred outcome (1) but Ben's third-best scenario (3).
+
+If Alex lowers prices while Ben maintains his (A2, B1), Alex can protect some market share at the cost of lower profit margins. This is Alex's third-best outcome (3) and Ben's second-best (2), as he maintains market share without direct competition.
+
+If Ben opens a new branch and Alex maintains prices (A1, B2), both could benefit from an increased customer base drawn to the area. This is the most preferred outcome for both Alex (4) and Ben (4), as it allows for market expansion without direct price competition.
+
+However, if Alex lowers prices and Ben still opens a new branch (A2, B2), it could lead to a price war. This is Alex's second-best outcome (2) as he might retain customers, but it's Ben's least preferred scenario (1) due to reduced profitability in the new location.
+
+The scenario highlights the complex dynamics of market competition and the potential for both cooperative and competitive strategies in local economics. The choices made by both Alex and Ben will significantly impact the local coffee market and their respective businesses.
+[/Scenario]

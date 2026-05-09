@@ -1,0 +1,50 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Lucas, a graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on research",
+  "A2": "Work independently",
+  "B1": "Share data and insights",
+  "B2": "Keep findings to himself"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently while Lucas shares data",
+    3: "Collaborate with Lucas who shares data",
+    2: "Work independently while Lucas keeps findings",
+    1: "Collaborate but Lucas keeps findings"
+  },
+  "B": {
+    4: "Collaborate and share data",
+    3: "Keep findings while Emma works independently",
+    2: "Share data while Emma works independently",
+    1: "Keep findings while collaborating"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Share data (B1) | Keep findings (B2) |
+|--------------|-----------------|---------------------|
+| Collaborate (A1) | 3 \ 4           | 1 \ 1               |
+| Independent (A2) | 2 \ 3           | 4 \ 2               |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Emma, a sociology professor, and Lucas, her graduate student, are both conducting research on the impact of social media on political polarization. They have the option to collaborate or work independently, and each must decide whether to share their data and insights or keep their findings to themselves.
+
+Emma prefers working independently while having access to Lucas's data, as it allows her to maintain control over her research while benefiting from additional insights. Her second choice is collaborating with Lucas if he's willing to share data, as it could lead to a stronger publication. Working independently without Lucas's input is her third preference, while collaborating without access to Lucas's findings is her least desired outcome.
+
+Lucas, on the other hand, most prefers collaborating and sharing data with Emma, as it provides him valuable mentorship and increases his chances of publication. His second choice is to keep his findings while Emma works independently, allowing him to publish solo. Sharing data while Emma works independently is his third preference, as he loses the opportunity for collaboration. His least preferred scenario is keeping his findings while collaborating, as it could damage his relationship with Emma without any benefits.
+
+The outcome of their choices will significantly impact their research quality, publication opportunities, and professional relationship. Their decision-making process reflects the complex dynamics of academic collaboration and competition in sociology research.
+[/Scenario]

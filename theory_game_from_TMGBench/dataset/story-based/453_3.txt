@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Alex Chen, a geneticist",
+  "B": "Dr. Sarah Lee, a bioengineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on traditional gene editing techniques",
+  "A2": "Pursue cutting-edge CRISPR research",
+  "B1": "Collaborate on joint research project",
+  "B2": "Work independently on separate projects"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lead groundbreaking CRISPR research independently",
+    3: "Collaborate on CRISPR research",
+    2: "Collaborate on traditional gene editing",
+    1: "Focus on traditional techniques while B makes CRISPR breakthrough"
+  },
+  "B": {
+    4: "Make independent breakthrough while A focuses on traditional techniques",
+    3: "Collaborate on CRISPR research",
+    2: "Collaborate on traditional gene editing",
+    1: "Work independently while A makes CRISPR breakthrough"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 1 \ 4 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a prestigious biotech research institute, Dr. Alex Chen and Dr. Sarah Lee find themselves at a crossroads in their careers. Both brilliant scientists, they are faced with a critical decision that could shape the future of genetic research.
+
+Dr. Chen, a seasoned geneticist, is considering whether to continue his work on traditional gene editing techniques (A1) or to venture into the cutting-edge field of CRISPR research (A2). His expertise in conventional methods is well-established, but he recognizes the potential revolution CRISPR could bring to the field.
+
+Dr. Lee, an innovative bioengineer, is weighing her options between collaborating on a joint research project (B1) or working independently on her own projects (B2). She sees value in collaboration but is also tempted by the possibility of making a breakthrough on her own.
+
+Their decisions will not only affect their individual careers but also the progress of genetic research as a whole. The institute has limited resources, and their choices will determine how these resources are allocated.
+
+If both scientists choose to collaborate (A1, B1) or (A2, B1), they would make steady progress in their respective fields, sharing knowledge and resources. This scenario is moderately beneficial for both (payoff 2,2 for traditional techniques or 3,3 for CRISPR).
+
+If Dr. Chen focuses on traditional techniques while Dr. Lee works independently (A1, B2), there's a chance that Lee could make a significant breakthrough in CRISPR technology on her own. This would be ideal for Lee but less favorable for Chen (payoff 1,4).
+
+Conversely, if Dr. Chen pursues CRISPR research independently while Dr. Lee collaborates (A2, B1), they could make joint progress in this cutting-edge field, benefiting both scientists (payoff 3,3).
+
+The most polarizing scenario occurs if both choose to work independently (A2, B2). In this case, if Dr. Chen makes a CRISPR breakthrough, it would be a major victory for him but a setback for Dr. Lee (payoff 4,1).
+
+As they contemplate their decisions, both scientists must consider not only their personal ambitions but also the potential impact on their colleague and the field of genetics as a whole. Their choices will determine whether cooperation or competition will drive the next big leap in genetic research.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Reynolds"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the infrastructure bill",
+  "A2": "Oppose the infrastructure bill",
+  "B1": "Endorse Senator Thompson for re-election",
+  "B2": "Remain neutral in the senatorial race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill and gain popularity",
+    3: "Support the bill and secure endorsement",
+    2: "Support the bill without endorsement",
+    1: "Oppose the bill and lose potential support"
+  },
+  "B": {
+    4: "Get the bill passed with endorsement",
+    3: "Maintain neutrality while bill is opposed",
+    2: "Get the bill passed without endorsement",
+    1: "Endorse but fail to get the bill passed"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support) | 2 \ 4        | 3 \ 1        |
+| A2 (Oppose)  | 1 \ 3        | 4 \ 2        |
+[/Payoff Matrix]
+
+[Scenario]
+In the state of Newland, a crucial infrastructure bill is up for debate. Senator Sarah Thompson, a rising star in her party, finds herself at a crossroads. The bill, championed by Governor Mark Reynolds, promises significant improvements to the state's roads and bridges but comes with a hefty price tag that might not sit well with her constituents.
+
+Senator Thompson has two choices: support the bill (A1) or oppose it (A2). Her decision will significantly impact her upcoming re-election campaign. Governor Reynolds, on the other hand, must decide whether to endorse Senator Thompson for re-election (B1) or remain neutral in the race (B2).
+
+Senator Thompson's preferences are clear. Her ideal scenario (preference 4) would be to oppose the bill and gain popularity among fiscally conservative voters. Her second-best option (preference 3) is to support the bill and secure the Governor's endorsement, which could sway moderates. Supporting the bill without the endorsement (preference 2) is less desirable but still better than opposing the bill and losing potential support (preference 1).
+
+Governor Reynolds has his own set of preferences. His best-case scenario (preference 4) is to get the bill passed with his endorsement carrying weight. If the bill is opposed, he'd prefer to maintain neutrality (preference 3) to avoid political backlash. Getting the bill passed without endorsing Thompson (preference 2) is still a win, but less optimal. His least preferred outcome (preference 1) is endorsing Thompson but failing to get the bill passed.
+
+The payoff matrix reveals the complex dynamics at play. If Thompson supports the bill and Reynolds endorses her, it's a big win for the Governor (4) but only moderately beneficial for Thompson (2). If Thompson opposes the bill and Reynolds stays neutral, it's Thompson's best outcome (4) and Reynolds' second-best (2).
+
+As news outlets speculate on the potential outcomes, both politicians must carefully weigh their options. Will they prioritize personal gain or the greater good of the state? The future of Newland's infrastructure and their political careers hang in the balance as they prepare to make their moves in this high-stakes political game.
+[/Scenario]

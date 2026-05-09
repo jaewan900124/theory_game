@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a small cafe owner",
+  "B": "Mark, owner of a larger restaurant chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Keep prices stable",
+  "A2": "Raise prices",
+  "B1": "Keep prices stable",
+  "B2": "Lower prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "B lowers prices while A keeps prices stable",
+    3: "Both A and B raise prices",
+    2: "A raises prices while B keeps prices stable",
+    1: "Both A and B keep prices stable"
+  },
+  "B": {
+    4: "B lowers prices while A keeps prices stable",
+    3: "B keeps prices stable while A raises prices",
+    2: "Both A and B keep prices stable",
+    1: "Both A and B raise prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 4 \ 4 |
+| A2    | 2 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling downtown area, Sarah, a small cafe owner, and Mark, the owner of a larger restaurant chain, find themselves in a competitive situation. The local economy has been fluctuating, and both business owners are considering how to adjust their prices to maximize their profits and market share.
+
+Sarah's cafe has been a neighborhood favorite for years, known for its cozy atmosphere and reasonable prices. Mark's restaurant chain, on the other hand, has a wider reach and more resources at its disposal. Both are aware that their pricing decisions will significantly impact their businesses and potentially affect the other's customer base.
+
+Sarah (A) has two choices: keep her prices stable (A1) or raise them (A2) to cover increasing costs. Mark (B) also has two options: keep his prices stable (B1) or lower them (B2) to attract more customers.
+
+Sarah's most preferred outcome would be if Mark lowered his prices while she kept hers stable. This would allow her to maintain her profit margins while potentially gaining customers who find Mark's restaurants too cheap to be high-quality. Her least preferred scenario is if they both keep prices stable, as this maintains the status quo without any advantage.
+
+Mark, conversely, would most prefer to lower his prices while Sarah keeps hers stable, allowing him to potentially draw customers away from her cafe. His least preferred outcome is if they both raise prices, as this could lead to a overall decrease in customers for both businesses.
+
+The payoff matrix reflects these preferences, with each number representing the degree of preference for each scenario (4 being most preferred, 1 being least preferred).
+
+As they contemplate their decisions, both Sarah and Mark must consider not only their own preferences but also anticipate the other's likely move. Their choices will determine the economic landscape of their local food service industry for the foreseeable future.
+[/Scenario]

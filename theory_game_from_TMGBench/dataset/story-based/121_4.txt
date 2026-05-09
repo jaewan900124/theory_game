@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emily, an emerging abstract painter",
+  "B": "Marcus, an established gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional art piece",
+  "A2": "Create an avant-garde, experimental piece",
+  "B1": "Showcase Emily's work in a prime spot",
+  "B2": "Display Emily's work in a less prominent area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create an avant-garde piece and have it prominently displayed",
+    3: "Create a conventional piece and have it prominently displayed",
+    2: "Create a conventional piece and have it displayed in a less prominent area",
+    1: "Create an avant-garde piece and have it displayed in a less prominent area"
+  },
+  "B": {
+    4: "Showcase a conventional piece in a prime spot",
+    3: "Display a conventional piece in a less prominent area",
+    2: "Showcase an avant-garde piece in a prime spot",
+    1: "Display an avant-garde piece in a less prominent area"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emily \ Marcus | Prime Spot (B1) | Less Prominent (B2) |
+|-----------------|-----------------|---------------------|
+| Conventional (A1) | 2 \ 4           | 3 \ 3               |
+| Avant-garde (A2)  | 1 \ 2           | 4 \ 1               |
+[/Payoff Matrix]
+
+[Scenario]
+Emily, an emerging abstract painter, has been given the opportunity to showcase her work at Marcus's prestigious art gallery. Marcus, the established gallery owner, is known for his keen eye and ability to spot rising talent. However, he tends to favor more conventional art pieces that appeal to his regular clientele.
+
+Emily must decide whether to create a conventional art piece (A1) that aligns with Marcus's usual taste or to follow her passion and create an avant-garde, experimental piece (A2). Meanwhile, Marcus has to choose between showcasing Emily's work in a prime spot (B1) or displaying it in a less prominent area of the gallery (B2).
+
+Emily's preferences reflect her artistic ambitions and desire for recognition. Her most preferred outcome (4) is to create an avant-garde piece and have it prominently displayed, as this would bring her the most satisfaction and potential recognition. Her least preferred outcome (1) is to create an avant-garde piece only to have it tucked away in a less prominent area, feeling that her work would be underappreciated.
+
+Marcus's preferences are influenced by his business acumen and understanding of his clientele. His most preferred outcome (4) is to showcase a conventional piece in a prime spot, as this would likely lead to a sale and satisfy his regular customers. His least preferred outcome (1) is to display an avant-garde piece in a less prominent area, fearing it might go unnoticed and fail to generate interest.
+
+The payoff matrix reveals the complex dynamics between artistic integrity and commercial viability. If Emily chooses to create a conventional piece (A1) and Marcus displays it in a prime spot (B1), Emily gets her second-least preferred outcome (2), while Marcus achieves his most preferred outcome (4). This scenario represents a "safe" choice for both parties but doesn't fully satisfy Emily's artistic vision.
+
+If Emily creates an avant-garde piece (A2) and Marcus showcases it in a prime spot (B1), Emily achieves her least preferred outcome (1) due to the mismatch between her bold creation and the conventional setting, while Marcus gets his second-least preferred outcome (2), taking a risk on an unconventional piece.
+
+The most interesting scenario occurs when Emily creates an avant-garde piece (A2) and Marcus displays it in a less prominent area (B2). This results in Emily's most preferred outcome (4) and Marcus's least preferred outcome (1). This scenario highlights the potential conflict between artistic innovation and commercial caution.
+
+As Emily and Marcus navigate this delicate situation, they must consider not only their immediate preferences but also the long-term implications of their choices on Emily's career and the gallery's reputation.
+[/Scenario]

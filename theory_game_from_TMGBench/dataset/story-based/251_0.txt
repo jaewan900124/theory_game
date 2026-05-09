@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a molecular biologist",
+  "B": "Dr. Alex Rodriguez, a geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while B collaborates",
+    3: "Share findings and B collaborates",
+    2: "Keep findings private and B works independently",
+    1: "Share findings while B works independently"
+  },
+  "B": {
+    4: "A shares findings and B collaborates",
+    3: "A keeps findings private but B collaborates",
+    2: "A keeps findings private and B works independently",
+    1: "A shares findings but B works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Work independently) |
+|-------|------------------|-------------------------|
+| A1 (Share)    | 3 \ 4           | 4 \ 3                   |
+| A2 (Keep private) | 2 \ 2           | 1 \ 1                   |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Dr. Alex Rodriguez are two brilliant scientists working on a groundbreaking project to develop a revolutionary gene therapy for a rare genetic disorder. They are at a critical juncture in their research, and each must decide how to proceed.
+
+Dr. Chen has made a significant breakthrough in her part of the research. She now faces a dilemma: should she share her findings with Dr. Rodriguez (A1) or keep them private (A2)? Sharing would accelerate the project but might diminish her individual recognition. Keeping the findings private could give her a competitive edge but might slow down the overall progress.
+
+Dr. Rodriguez, on the other hand, must decide whether to collaborate closely with Dr. Chen (B1) or work independently (B2). Collaboration could lead to faster results and shared success, while working independently might allow him to claim sole credit for any breakthroughs he makes.
+
+Their decisions will have significant impacts on the progress of their research and their individual careers. If Dr. Chen shares her findings and Dr. Rodriguez collaborates (A1, B1), they would make steady progress together, resulting in a good outcome for both (3, 4). If Dr. Chen shares but Dr. Rodriguez works independently (A1, B2), Dr. Chen might gain the most recognition (4) while Dr. Rodriguez still benefits from the shared information (3).
+
+If Dr. Chen keeps her findings private and Dr. Rodriguez attempts to collaborate (A2, B1), both would face challenges and make limited progress (2, 2). The worst-case scenario for both occurs if Dr. Chen keeps her findings private and Dr. Rodriguez works independently (A2, B2), resulting in slow progress and potential duplication of efforts (1, 1).
+
+As they sit in their respective labs, pondering their next moves, both scientists know that their decisions will not only affect their personal careers but also the potential timeline for developing a treatment that could save lives. The tension between personal ambition and the greater good of scientific progress hangs in the air as they prepare to make their choices.
+[/Scenario]

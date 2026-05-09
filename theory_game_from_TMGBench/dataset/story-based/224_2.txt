@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new telemedicine program",
+  "A2": "Maintain current in-person care model",
+  "B1": "Join the hospital's network",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement telemedicine while Dr. Johnson remains independent",
+    3: "Maintain current model while Dr. Johnson remains independent",
+    2: "Maintain current model while Dr. Johnson joins the network",
+    1: "Implement telemedicine while Dr. Johnson joins the network"
+  },
+  "B": {
+    4: "Join the network while the hospital implements telemedicine",
+    3: "Remain independent while the hospital maintains the current model",
+    2: "Join the network while the hospital maintains the current model",
+    1: "Remain independent while the hospital implements telemedicine"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Join)  | B2 (Independent) |
+|-------|------------|-------------------|
+| A1 (Telemedicine) | 1 \ 4     | 4 \ 1             |
+| A2 (Current Model)| 2 \ 2     | 3 \ 3             |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, the local hospital and private medical practices are grappling with the changing landscape of healthcare delivery. Dr. Sarah Chen, the hospital administrator, is considering implementing a new telemedicine program to expand the hospital's reach and efficiency. Meanwhile, Dr. Mark Johnson, a respected private practice physician, is deciding whether to join the hospital's network or remain independent.
+
+Dr. Chen believes that telemedicine is the future of healthcare and could significantly benefit the hospital. However, she's concerned about how it might affect relationships with local physicians. Her ideal scenario would be to implement telemedicine while maintaining good relationships with independent doctors like Dr. Johnson, as this would allow the hospital to innovate without disrupting the local healthcare ecosystem.
+
+Dr. Johnson, on the other hand, is torn between the security of joining the hospital network and the autonomy of remaining independent. He sees the potential benefits of telemedicine but worries about how it might impact his practice if he remains independent.
+
+If Dr. Chen implements telemedicine and Dr. Johnson joins the network (A1, B1), the hospital would face challenges integrating him into the new system, while Dr. Johnson would benefit from the new technology and network support. This is Dr. Johnson's most preferred outcome but Dr. Chen's least preferred.
+
+If Dr. Chen implements telemedicine and Dr. Johnson remains independent (A1, B2), the hospital would innovate freely, but Dr. Johnson might struggle to compete. This is Dr. Chen's most preferred outcome but Dr. Johnson's least preferred.
+
+If Dr. Chen maintains the current model and Dr. Johnson joins the network (A2, B1), both would experience moderate benefits and challenges, resulting in their second-least preferred outcomes.
+
+If Dr. Chen maintains the current model and Dr. Johnson remains independent (A2, B2), the status quo would be preserved, offering a balanced outcome that is the second-most preferred for both parties.
+
+As they contemplate their decisions, both Dr. Chen and Dr. Johnson must consider not only their own preferences but also how their choices might influence the other's decision, ultimately shaping the future of healthcare delivery in their community.
+[/Scenario]

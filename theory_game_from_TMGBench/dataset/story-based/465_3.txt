@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Shoot the ball",
+  "B1": "Set a screen",
+  "B2": "Call for the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Shoot and score",
+    3: "Pass to Blake who scores",
+    2: "Pass but Blake misses",
+    1: "Shoot but miss"
+  },
+  "B": {
+    4: "Receive the pass and score",
+    3: "Alex shoots and scores after Blake's screen",
+    2: "Set a screen, Alex passes but Blake misses",
+    1: "Set a screen, Alex shoots but misses"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set a screen) | B2 (Call for the ball) |
+|-------|-------------------|------------------------|
+| A1 (Pass) | 1 \ 1             | 2 \ 4                  |
+| A2 (Shoot) | 3 \ 2             | 4 \ 3                  |
+[/Payoff Matrix]
+
+[Scenario]
+In the final seconds of a crucial basketball game, Alex finds himself with the ball at the three-point line. The team needs a basket to win, and Alex must decide whether to take the shot or pass to his teammate Blake. Both players are aware of their skills and the potential outcomes of their choices.
+
+Alex, known for his shooting prowess, is confident in his ability to make the shot. However, he also recognizes Blake's talent and the possibility of creating a better scoring opportunity by passing. Alex's preferences range from scoring himself (most preferred) to missing a shot (least preferred).
+
+Blake, equally competitive, must choose between setting a screen for Alex or calling for the ball. Blake's preferences range from receiving a pass and scoring (most preferred) to setting a screen only for Alex to miss (least preferred).
+
+If Alex decides to pass (A1) and Blake sets a screen (B1), both players end up in their least preferred scenario (1\1), as the opportunity is wasted. If Alex passes (A1) and Blake calls for the ball (B2), it could result in Blake scoring (2\4), which is highly favorable for Blake but only moderately satisfying for Alex.
+
+On the other hand, if Alex chooses to shoot (A2) and Blake sets a screen (B1), there's a good chance Alex will score (3\2), which is favorable for Alex and somewhat satisfying for Blake. Lastly, if Alex shoots (A2) while Blake calls for the ball (B2), Alex might have a clearer shot and score (4\3), resulting in the best outcome for Alex and a satisfactory result for Blake.
+
+The tension mounts as both players must make their decisions simultaneously, knowing that their choices will determine the outcome of the game and potentially impact their individual statistics and team dynamics.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a senior mechanical engineer",
+  "B": "Blake, a software engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional mechanical design",
+  "A2": "Incorporate advanced AI-driven design",
+  "B1": "Develop custom software solution",
+  "B2": "Adapt existing software package"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Use traditional design with adapted software",
+    3: "Use traditional design with custom software",
+    2: "Use AI-driven design with custom software",
+    1: "Use AI-driven design with adapted software"
+  },
+  "B": {
+    4: "Use traditional design with adapted software",
+    3: "Use AI-driven design with adapted software",
+    2: "Use traditional design with custom software",
+    1: "Use AI-driven design with custom software"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 2 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a revolutionary robotic arm project for a major manufacturing company. Alex, a senior mechanical engineer with years of experience in traditional design methods, is responsible for the physical structure of the arm. Blake, a software engineer specializing in automation, is tasked with developing the control software for the arm.
+
+As they begin the project, they face a crucial decision that will shape the entire development process. Alex must choose between using a traditional mechanical design approach (A1) or incorporating an advanced AI-driven design method (A2). Meanwhile, Blake needs to decide whether to develop a custom software solution from scratch (B1) or adapt an existing software package to fit their needs (B2).
+
+Alex prefers the traditional design approach, as it aligns with his expertise and has proven reliable in the past. He's most comfortable with this method, especially if it can be paired with an adapted existing software package (A1B2, preference 4). His second choice would be using the traditional design with a custom software solution (A1B1, preference 3). Alex is less enthusiastic about the AI-driven design, ranking it lower in his preferences (A2B1, preference 2; A2B2, preference 1).
+
+Blake, on the other hand, sees the potential in adapting existing software packages, as it could save time and resources. His top preference is to work with Alex's traditional design and adapt an existing software package (A1B2, preference 4). He's also open to adapting software for the AI-driven design (A2B2, preference 3). Developing custom software is less appealing to Blake, especially if it needs to integrate with the AI-driven design (A1B1, preference 2; A2B1, preference 1).
+
+The engineers must now navigate this decision-making process, balancing their individual preferences with the project's overall success. Their choices will not only affect their own work satisfaction but also the efficiency, cost, and innovation level of the robotic arm project. The outcome of their decision will have significant implications for the manufacturing company and potentially the entire industry.
+
+As they discuss their options, Alex and Blake realize that their most preferred scenario aligns (A1B2), offering a potential path for cooperation. However, they must also consider the long-term implications of their choices and whether stepping out of their comfort zones might lead to more innovative results. The tension between tradition and innovation, efficiency and customization, creates a complex decision-making environment that will test their communication skills and ability to compromise.
+[/Scenario]

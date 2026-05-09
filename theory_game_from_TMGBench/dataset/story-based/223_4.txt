@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Alexandra",
+  "B": "Admiral Brennan"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Launch land invasion",
+  "A2": "Maintain defensive position",
+  "B1": "Deploy naval blockade",
+  "B2": "Conduct amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successfully repel naval assault while maintaining defensive position",
+    3: "Mutual cooperation in maintaining current positions",
+    2: "Successful land invasion against naval blockade",
+    1: "Failed land invasion against naval blockade"
+  },
+  "B": {
+    4: "Successful naval blockade against land invasion",
+    3: "Mutual cooperation in maintaining current positions",
+    2: "Successful amphibious assault against defensive position",
+    1: "Failed naval blockade against land invasion"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Deploy naval blockade) | B2 (Conduct amphibious assault) |
+|-------|----------------------------|----------------------------------|
+| A1 (Launch land invasion) | 1 \ 4 | 4 \ 2 |
+| A2 (Maintain defensive position) | 2 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense geopolitical standoff, General Alexandra of the land forces and Admiral Brennan of the naval fleet find themselves at a critical juncture. Their nations are on the brink of war, and both commanders must decide on their next move.
+
+General Alexandra has two options: launch a daring land invasion (A1) or maintain a defensive position (A2). Admiral Brennan, on the other hand, can choose to deploy a naval blockade (B1) or conduct an amphibious assault (B2).
+
+Alexandra's preferred outcome is to successfully repel a naval assault while maintaining her defensive position, as it would showcase her strategic prowess without risking a costly offensive. Her least desired scenario is a failed land invasion against a naval blockade, which would be disastrous for her forces and reputation.
+
+Brennan, conversely, would prefer to successfully implement a naval blockade against a land invasion, demonstrating the navy's ability to control the conflict. His worst-case scenario is a failed naval blockade against a land invasion, which would leave his fleet vulnerable and potentially turn the tide of war.
+
+Both commanders recognize that mutual cooperation in maintaining current positions (A2, B2) could lead to a stalemate but would minimize losses on both sides. This scenario is their third preference, as it doesn't provide a clear advantage but avoids the worst outcomes.
+
+As tensions mount, Alexandra and Brennan must carefully consider their choices, knowing that their decisions will not only affect the outcome of the impending conflict but also shape the future of their nations. The payoff matrix reveals the complex interplay of their strategies, where each commander's best move depends on anticipating the other's actions.
+
+With the fate of their forces and potentially their nations hanging in the balance, General Alexandra and Admiral Brennan prepare to make their fateful decisions, each hoping to outmaneuver the other in this high-stakes game of military strategy.
+[/Scenario]

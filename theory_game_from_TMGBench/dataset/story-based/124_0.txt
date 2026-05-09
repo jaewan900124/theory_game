@@ -1,0 +1,64 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a moderate-scale solar farm project",
+  "A2": "Implement a large-scale solar farm project",
+  "B1": "Support the solar farm project",
+  "B2": "Oppose the solar farm project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement large-scale project with support",
+    3: "Implement moderate-scale project with support",
+    2: "Implement moderate-scale project despite opposition",
+    1: "Implement large-scale project despite opposition"
+  },
+  "B": {
+    4: "Support moderate-scale project",
+    3: "Oppose large-scale project",
+    2: "Support large-scale project",
+    1: "Oppose moderate-scale project"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 1 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town surrounded by lush forests, EcoTech, a sustainable technology company, is planning to implement a solar farm project to provide clean energy to the local community. However, they must navigate the concerns of GreenForest, a local conservation group dedicated to protecting the area's ecosystem.
+
+EcoTech (A) has two choices: implement a moderate-scale solar farm project (A1) or a large-scale solar farm project (A2). The moderate-scale project would have less environmental impact but also generate less energy, while the large-scale project would produce more energy but potentially cause more disruption to the local ecosystem.
+
+GreenForest (B) can either support the solar farm project (B1) or oppose it (B2). Their decision will influence public opinion and potentially affect the project's implementation.
+
+EcoTech's most preferred outcome is to implement the large-scale project with GreenForest's support, as this would maximize both energy production and positive public relations. Their least preferred outcome is implementing the large-scale project despite opposition, as this could lead to significant backlash and potential legal challenges.
+
+GreenForest, on the other hand, most prefers supporting a moderate-scale project, as it balances clean energy production with minimal environmental impact. Their least preferred outcome is opposing the moderate-scale project, as they recognize the benefits of clean energy but worry about potential overreaction from their supporters.
+
+The scenario plays out as follows:
+
+1. If EcoTech chooses the moderate-scale project (A1) and GreenForest supports it (B1), both parties achieve a positive outcome (2,4).
+
+2. If EcoTech chooses the moderate-scale project (A1) but GreenForest opposes it (B2), EcoTech gains some advantage from reduced opposition (3), while GreenForest faces criticism for opposing a relatively eco-friendly project (1).
+
+3. If EcoTech opts for the large-scale project (A2) and GreenForest supports it (B1), EcoTech faces challenges in implementation due to the project's size (1), while GreenForest maintains a cooperative stance but faces some criticism from hardcore environmentalists (2).
+
+4. If EcoTech chooses the large-scale project (A2) and GreenForest opposes it (B2), EcoTech achieves its goal of maximizing energy production (4), while GreenForest gains support from environmental activists but risks alienating moderate supporters (3).
+
+This scenario illustrates the complex dynamics between economic development and environmental conservation, highlighting the importance of cooperation and compromise in achieving sustainable solutions.
+[/Scenario]

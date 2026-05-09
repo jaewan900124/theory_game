@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emily, a talented but struggling painter",
+  "B": "Marcus, a successful art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional, commercially appealing painting",
+  "A2": "Create an avant-garde, experimental piece",
+  "B1": "Offer Emily a solo exhibition",
+  "B2": "Decline to exhibit Emily's work"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create an avant-garde piece and get a solo exhibition",
+    3: "Create a conventional piece and get a solo exhibition",
+    2: "Create an avant-garde piece but get declined",
+    1: "Create a conventional piece and get declined"
+  },
+  "B": {
+    4: "Exhibit a conventional, commercially appealing painting",
+    3: "Decline to exhibit an avant-garde piece",
+    2: "Exhibit an avant-garde, experimental piece",
+    1: "Decline to exhibit a conventional piece"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emily \ Marcus | Offer Exhibition (B1) | Decline Exhibition (B2) |
+|-----------------|----------------------|-------------------------|
+| Conventional (A1) | 1 \ 4                | 3 \ 2                   |
+| Avant-garde (A2)  | 2 \ 3                | 4 \ 1                   |
+[/Payoff Matrix]
+
+[Scenario]
+Emily, a talented but struggling painter, is at a crossroads in her career. She has the opportunity to showcase her work to Marcus, a successful art gallery owner known for his keen eye and influence in the art world. Emily must decide whether to create a conventional, commercially appealing painting that might be more likely to sell, or to follow her artistic instincts and produce an avant-garde, experimental piece that truly represents her vision.
+
+Marcus, on the other hand, is weighing the potential risks and rewards of working with Emily. He can either offer her a solo exhibition, which could potentially introduce an exciting new artist to the art scene, or decline to exhibit her work if he feels it doesn't align with his gallery's style or commercial interests.
+
+Emily's greatest desire is to create an avant-garde piece and have it featured in a solo exhibition, as this would allow her to express her true artistic vision while gaining recognition. Her least preferred outcome would be to compromise her artistic integrity by creating a conventional piece, only to have it rejected anyway.
+
+Marcus, being more commercially minded, would most prefer to exhibit a conventional, commercially appealing painting that he believes will sell well. His least desired outcome would be to decline a conventional piece, potentially missing out on a profitable opportunity.
+
+The situation creates an interesting dynamic where Emily's artistic integrity and Marcus's commercial interests may not always align. If Emily chooses to create a conventional piece (A1) and Marcus offers an exhibition (B1), Emily would be somewhat dissatisfied with compromising her vision, but Marcus would be very pleased with the commercial potential. If Emily creates an avant-garde piece (A2) and Marcus offers an exhibition (B1), Emily would be happy but not ecstatic (as she had to face the risk of rejection), while Marcus would be cautiously optimistic about the experimental work.
+
+In the case where Marcus declines the exhibition (B2), Emily would prefer to have at least created the avant-garde piece true to her vision (A2), while Marcus would rather decline an avant-garde piece than a potentially profitable conventional one.
+
+This scenario illustrates the complex interplay between artistic integrity and commercial viability in the art world, highlighting how the choices of artists and gallery owners can significantly impact each other's outcomes and satisfaction.
+[/Scenario]

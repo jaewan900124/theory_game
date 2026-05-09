@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a sociologist",
+  "B": "Professor Mark Thompson, a fellow sociologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue independent research",
+  "B1": "Focus on his own research",
+  "B2": "Collaborate on the joint project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while B focuses on his research (A1, B1)",
+    3: "Both collaborate on the joint project (A1, B2)",
+    2: "Both pursue independent research (A2, B1)",
+    1: "Pursue independent research while B collaborates (A2, B2)",
+  },
+  "B": {
+    4: "Both collaborate on the joint project (A1, B2)",
+    3: "Focus on his research while A collaborates (A1, B1)",
+    2: "Both pursue independent research (A2, B1)",
+    1: "Collaborate while A pursues independent research (A2, B2)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 2 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Professor Mark Thompson are sociologists at a prestigious university. They have been presented with an opportunity to collaborate on a groundbreaking research project studying the impact of social media on political polarization. However, they must decide whether to pursue this joint project or focus on their individual research interests.
+
+Emily (A) is excited about the potential of the joint project but is also considering continuing her work on gender inequality in the workplace. She prefers collaborating while Mark focuses on his research (A1, B1) as it would allow her to benefit from the collaboration while still having some independence. Her second choice is for both to collaborate fully (A1, B2), followed by both pursuing independent research (A2, B1). Her least preferred outcome is to work independently while Mark collaborates on the joint project (A2, B2).
+
+Mark (B) is torn between the collaborative opportunity and his ongoing research on urban gentrification. His top preference is for both to fully commit to the joint project (A1, B2), as he believes it could lead to significant academic recognition. His second choice is to focus on his research while Emily collaborates (A1, B1), followed by both pursuing independent research (A2, B1). Like Emily, his least preferred scenario is to collaborate while Emily works independently (A2, B2).
+
+The payoff matrix reflects their preferences, with 4 representing the most preferred outcome and 1 the least preferred. They must make their decisions independently, without knowing what the other will choose.
+
+If they both choose to collaborate (A1, B2), they'll likely produce groundbreaking research and gain significant recognition in their field. If one collaborates while the other focuses on independent research (A1, B1 or A2, B2), the collaborating party may feel overburdened while the independent researcher might miss out on a major opportunity. If both choose to pursue independent research (A2, B1), they'll make steady progress on their individual projects but miss out on the potential benefits of collaboration.
+
+As they contemplate their decisions, both Emily and Mark must weigh the potential benefits of collaboration against the security of pursuing their established research interests, all while considering the possible choices of their colleague.
+[/Scenario]

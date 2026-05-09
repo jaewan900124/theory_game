@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a talented freelance graphic designer",
+  "B": "Jake, a small business owner looking to rebrand his company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate openly, sharing all ideas and resources",
+  "A2": "Work independently, limiting communication",
+  "B1": "Provide comprehensive project details and feedback",
+  "B2": "Withhold information and limit involvement"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive full project details and create exceptional work (A1,B1)",
+    3: "Create good work with limited information (A1,B2)",
+    2: "Produce basic work with minimal effort (A2,B2)",
+    1: "Struggle with the project due to lack of information (A2,B1)"
+  },
+  "B": {
+    4: "Obtain excellent results through full collaboration (A1,B1)",
+    3: "Receive good work while minimizing personal involvement (A2,B1)",
+    2: "Get decent results with limited input (A1,B2)",
+    1: "End up with subpar work due to poor communication (A2,B2)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 1 \ 3 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented freelance graphic designer, has been approached by Jake, a small business owner looking to rebrand his company. They find themselves in a situation where their level of cooperation will significantly impact the project's outcome.
+
+Emma has two choices: she can either collaborate openly, sharing all her ideas and resources (A1), or work independently, limiting communication (A2). Jake, on the other hand, can choose to provide comprehensive project details and feedback (B1) or withhold information and limit his involvement (B2).
+
+Emma's preferences are clear. She most desires to receive full project details and create exceptional work (A1,B1), which would showcase her skills and potentially lead to more high-profile clients. Her second choice would be to create good work with limited information (A1,B2), demonstrating her ability to deliver quality even with constraints. Her third preference is to produce basic work with minimal effort (A2,B2), which is not ideal but requires less time investment. Her least preferred scenario is to struggle with the project due to lack of information (A2,B1), which could damage her professional reputation.
+
+Jake's preferences align somewhat differently. His top choice is to obtain excellent results through full collaboration (A1,B1), which would give his business the best possible rebranding. His second preference is to receive good work while minimizing his personal involvement (A2,B1), allowing him to focus on other aspects of his business. His third choice would be to get decent results with limited input (A1,B2), which balances effort and outcome. His least preferred scenario is to end up with subpar work due to poor communication (A2,B2), which would be a waste of time and resources.
+
+The payoff matrix reveals an interesting dynamic. If both Emma and Jake choose to cooperate fully (A1,B1), they achieve a high level of satisfaction (3,4). However, if Emma collaborates openly while Jake withholds information (A1,B2), Emma actually achieves her highest satisfaction (4) while Jake's satisfaction decreases (2). If Emma limits her communication while Jake provides full details (A2,B1), Jake maintains a high level of satisfaction (3) while Emma's drops significantly (1). Finally, if both choose to limit their involvement (A2,B2), they both end up with low satisfaction levels (2,1).
+
+This scenario highlights the complexities of professional collaboration and the importance of clear communication. The optimal outcome for both parties requires mutual cooperation, but individual incentives might tempt them to deviate from this strategy. The success of the project and their professional relationship hinges on their ability to trust each other and commit to full collaboration.
+[/Scenario]

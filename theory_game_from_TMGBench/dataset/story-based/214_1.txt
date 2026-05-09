@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Blake, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work exclusively for Blake's startup",
+  "A2": "Work part-time for the startup while freelancing",
+  "B1": "Offer Alex a full-time position with benefits",
+  "B2": "Hire Alex as a part-time contractor"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work exclusively for Blake's startup with a high salary (A1, B2)",
+    3: "Work part-time for the startup while freelancing (A2, B2)",
+    2: "Work exclusively for Blake's startup with benefits (A1, B1)",
+    1: "Work part-time for the startup without benefits (A2, B1)"
+  },
+  "B": {
+    4: "Hire Alex full-time with benefits, securing his exclusive services (A1, B1)",
+    3: "Hire Alex as a part-time contractor, saving costs (A2, B2)",
+    2: "Hire Alex as a part-time contractor, but lose some of his time to freelancing (A2, B1)",
+    1: "Offer a full-time position but have Alex work part-time (A1, B2)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 1 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a highly skilled software developer, finds himself in a challenging situation when Blake, the CEO of a promising tech startup, approaches him with a job offer. Both Alex and Blake must make decisions that will significantly impact their professional relationship and future prospects.
+
+Alex has two choices: he can either commit to working exclusively for Blake's startup (A1) or opt for a part-time arrangement that allows him to continue freelancing on the side (A2). Meanwhile, Blake must decide whether to offer Alex a full-time position with benefits (B1) or hire him as a part-time contractor (B2).
+
+Alex's preferences are primarily driven by financial considerations and work-life balance. His most preferred outcome is to work exclusively for the startup but with a high salary as a contractor (A1, B2), giving him both stability and financial gain. His second choice would be to work part-time for the startup while maintaining his freelance work (A2, B2), offering him variety and potentially higher earnings. Third on his list is working full-time with benefits (A1, B1), which provides security but possibly lower pay. His least preferred option is working part-time without benefits (A2, B1), which offers neither security nor optimal compensation.
+
+Blake's preferences focus on securing Alex's talents while managing company resources. His top choice is to hire Alex full-time with benefits (A1, B1), ensuring Alex's undivided attention to the startup. Second best for Blake is hiring Alex as a part-time contractor (A2, B2), which saves costs but risks losing some of Alex's time. Third is the scenario where Alex works part-time but doesn't freelance (A2, B1), which is less than ideal but still beneficial. Blake's least preferred outcome is offering a full-time position but having Alex work part-time (A1, B2), which would be costly and inefficient for the company.
+
+The payoff matrix reveals the complex dynamics of their decision-making process. If they both choose their first preferences (A1, B2 for Alex; A1, B1 for Blake), they end up in different quadrants of the matrix. This misalignment creates a tension that they must navigate to find a mutually beneficial arrangement.
+
+As Alex and Blake contemplate their choices, they must consider not only their immediate preferences but also the long-term implications of their decisions on their professional relationship and the success of the startup. The outcome of this employment game will depend on how well they can communicate, negotiate, and potentially compromise to reach an agreement that satisfies both parties.
+[/Scenario]

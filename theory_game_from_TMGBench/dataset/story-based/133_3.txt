@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a geneticist",
+  "B": "Dr. Michael Torres, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on gene therapy research",
+  "A2": "Shift to antibiotic resistance research",
+  "B1": "Collaborate on interdisciplinary project",
+  "B2": "Pursue independent research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Shift to antibiotic resistance research while Dr. Torres pursues independent research",
+    3: "Focus on gene therapy research while collaborating with Dr. Torres",
+    2: "Focus on gene therapy research while Dr. Torres pursues independent research",
+    1: "Shift to antibiotic resistance research while collaborating with Dr. Torres"
+  },
+  "B": {
+    4: "Collaborate on interdisciplinary project while Dr. Chen focuses on gene therapy",
+    3: "Pursue independent research while Dr. Chen shifts to antibiotic resistance research",
+    2: "Pursue independent research while Dr. Chen focuses on gene therapy",
+    1: "Collaborate on interdisciplinary project while Dr. Chen shifts to antibiotic resistance"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 2 |
+| A2    | 1 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen, a brilliant geneticist, and Dr. Michael Torres, an accomplished microbiologist, find themselves at a crossroads in their research careers at a prestigious biotech institute. They are faced with critical decisions that will shape the future of their work and potentially impact the field of biology as a whole.
+
+Dr. Chen has been working on gene therapy for years but is considering a shift to antibiotic resistance research due to recent breakthroughs in the field. She must decide whether to continue her current path (A1) or make the switch (A2). Meanwhile, Dr. Torres is contemplating whether to collaborate on an interdisciplinary project (B1) or pursue his own independent research (B2).
+
+Their decisions will interact in complex ways:
+
+1. If Dr. Chen focuses on gene therapy (A1) and Dr. Torres collaborates (B1), they could make significant strides in combining genetics and microbiology. This scenario is highly favorable for Dr. Torres (4) and good for Dr. Chen (3).
+
+2. If Dr. Chen focuses on gene therapy (A1) and Dr. Torres pursues independent research (B2), both will make moderate progress in their respective fields. This scenario is moderately satisfying for both (2/2).
+
+3. If Dr. Chen shifts to antibiotic resistance (A2) and Dr. Torres collaborates (B1), their work may overlap too much, potentially leading to conflicts and reduced productivity. This is the least preferred scenario for both (1/1).
+
+4. If Dr. Chen shifts to antibiotic resistance (A2) and Dr. Torres pursues independent research (B2), Dr. Chen could make groundbreaking discoveries in her new field while Dr. Torres continues his established work. This scenario is ideal for Dr. Chen (4) and good for Dr. Torres (3).
+
+The scientists must carefully consider their options, weighing the potential for collaboration against the pursuit of individual interests. Their decisions will not only affect their personal careers but also the advancement of biological science in their institute and beyond. As they contemplate their choices, both Dr. Chen and Dr. Torres are acutely aware of the far-reaching implications of their decision in this high-stakes game of scientific research and cooperation.
+[/Scenario]

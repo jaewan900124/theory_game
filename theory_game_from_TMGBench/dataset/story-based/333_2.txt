@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Elara Swift, a brilliant astrophysicist",
+  "B": "Captain Zane Orion, an experienced astronaut"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings confidential",
+  "B1": "Focus on solo space missions",
+  "B2": "Collaborate on joint space missions"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Share research and collaborate on missions",
+    3: "Keep research confidential but collaborate on missions",
+    2: "Keep research confidential and focus on solo missions",
+    1: "Share research but focus on solo missions"
+  },
+  "B": {
+    4: "Share research and collaborate on missions",
+    3: "Keep research confidential but collaborate on missions",
+    2: "Share research but focus on solo missions",
+    1: "Keep research confidential and focus on solo missions"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Solo)   | B2 (Collaborate) |
+|-------|-------------|------------------|
+| A1 (Share)   | 1 \ 2       | 4 \ 4            |
+| A2 (Keep)    | 3 \ 3       | 2 \ 1            |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, humanity stands on the brink of a new era in space exploration. Dr. Elara Swift, a brilliant astrophysicist, has made groundbreaking discoveries that could revolutionize interstellar travel. Meanwhile, Captain Zane Orion, an experienced astronaut, is preparing for a series of crucial space missions that could establish humanity's first extraterrestrial colony.
+
+Dr. Swift must decide whether to share her research findings openly with the scientific community or keep them confidential for potential personal gain. Simultaneously, Captain Orion faces the choice of focusing on solo space missions or collaborating with international partners on joint ventures.
+
+If Dr. Swift shares her research (A1) and Captain Orion focuses on solo missions (B1), Swift's work becomes public without immediate practical application, while Orion gains some prestige but limited scientific support. This is Swift's least preferred outcome (1) and Orion's second-least preferred (2).
+
+If Swift shares her research (A1) and Orion collaborates on joint missions (B2), both benefit greatly. Swift's research is applied practically, and Orion's missions have strong scientific backing. This is the most preferred outcome for both (4,4).
+
+If Swift keeps her research confidential (A2) and Orion focuses on solo missions (B1), both achieve moderate success independently. Swift retains control of her discoveries, while Orion maintains autonomy in his missions. This is the second-most preferred outcome for both (3,3).
+
+Lastly, if Swift keeps her research confidential (A2) and Orion collaborates on joint missions (B2), Swift's withheld information hampers the collaborative efforts. Swift maintains control but loses opportunities (2), while Orion's collaborative efforts are severely hindered, resulting in his least preferred outcome (1).
+
+As they stand at this crossroads, their decisions will shape not only their own careers but potentially the future of human space exploration. Will they choose cooperation or competition? The fate of humanity's journey to the stars hangs in the balance.
+[/Scenario]

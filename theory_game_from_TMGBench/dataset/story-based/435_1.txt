@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Commander Sarah Chen, leader of the Earth Space Agency (ESA)",
+  "B": "Director Alex Martinez, head of the Mars Colonization Corporation (MCC)"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint Mars mission",
+  "A2": "Pursue an independent Moon base project",
+  "B1": "Share advanced propulsion technology",
+  "B2": "Withhold technology and focus on solo Mars mission"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Independent Moon base success with access to advanced propulsion",
+    3: "Successful joint Mars mission",
+    2: "Joint Mars mission with limited success",
+    1: "Failed independent Moon base project"
+  },
+  "B": {
+    4: "Solo Mars mission success using proprietary technology",
+    3: "Successful joint Mars mission",
+    2: "Technology shared but used for Moon base",
+    1: "Joint Mars mission with limited success"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 2 \ 4 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, space exploration has become a critical frontier for humanity. Commander Sarah Chen of the Earth Space Agency (ESA) and Director Alex Martinez of the Mars Colonization Corporation (MCC) find themselves at a crossroads that could shape the future of space exploration.
+
+Commander Chen must decide between collaborating on a joint Mars mission with MCC or pursuing an independent Moon base project. Her ultimate goal is to establish a sustainable human presence in space, preferably with access to the most advanced technology available.
+
+Director Martinez, on the other hand, possesses groundbreaking propulsion technology that could revolutionize space travel. He must choose whether to share this technology with ESA in a collaborative effort or withhold it to focus on a solo Mars mission, potentially securing MCC's dominance in space exploration.
+
+If both parties choose to collaborate (A1, B1), they would embark on a joint Mars mission. This scenario would be moderately successful, ranking as Chen's second-best outcome (3) but Martinez's least preferred option (1), as he would have shared his technology without achieving his primary goal.
+
+Should Chen opt for collaboration while Martinez withholds the technology (A1, B2), the joint Mars mission would have limited success. This is Chen's third choice (2) but Martinez's most preferred outcome (4), as he would maintain his technological advantage and progress towards a solo Mars mission.
+
+If Chen decides to pursue the Moon base while Martinez shares the technology (A2, B1), Chen would achieve her best outcome (4) by successfully establishing the base with advanced propulsion. However, this would be Martinez's third choice (2), as his technology would be used for a project that doesn't align with his primary goals.
+
+Finally, if Chen focuses on the Moon base while Martinez withholds the technology (A2, B2), Chen would likely fail in her independent project without the necessary advanced propulsion, resulting in her least preferred outcome (1). Martinez would consider this his second-best scenario (3), as he would maintain his technological edge and continue his solo Mars mission plans.
+
+As the deadline for their decisions approaches, both leaders must carefully weigh their options, considering not only their own preferences but also anticipating the other's choice to maximize their chances of success in the competitive yet potentially collaborative field of space exploration.
+[/Scenario]

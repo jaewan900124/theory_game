@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Russell"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan climate bill",
+  "A2": "Oppose bipartisan climate bill",
+  "B1": "Endorse Senator Thompson's re-election",
+  "B2": "Remain neutral in Senate race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill and gain governor's endorsement",
+    3: "Support bill without governor's endorsement",
+    2: "Support bill and gain governor's endorsement",
+    1: "Oppose bill without governor's endorsement"
+  },
+  "B": {
+    4: "Senator supports bill while remaining neutral",
+    3: "Senator opposes bill while endorsing her",
+    2: "Senator opposes bill while remaining neutral",
+    1: "Senator supports bill while endorsing her"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 2 \ 4 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a crucial moment of political maneuvering, Senator Sarah Thompson and Governor Mark Russell find themselves at a crossroads. A bipartisan climate bill is on the table, and their decisions could shape both the environmental policy and their political futures.
+
+Senator Thompson, facing a tough re-election campaign, must decide whether to support or oppose the climate bill. She knows that supporting the bill could appeal to environmentally conscious voters but might alienate some of her traditional base. Opposing the bill could secure her standing with certain donors but risk losing progressive supporters.
+
+Governor Russell, on the other hand, is weighing whether to endorse Senator Thompson's re-election bid or remain neutral. His endorsement could provide a significant boost to her campaign, but he's also considering the political implications for his own future aspirations.
+
+The payoff matrix reveals their complex motivations:
+
+1. If Thompson supports the bill (A1) and Russell endorses her (B1), Thompson gains moderate success (3) while Russell faces his least preferred outcome (1), as he'd rather not tie himself to the bill.
+
+2. If Thompson supports the bill (A1) and Russell remains neutral (B2), Thompson achieves some success (2) while Russell gets his most preferred outcome (4), influencing policy without political risk.
+
+3. If Thompson opposes the bill (A2) and Russell endorses her (B1), Thompson faces her least preferred scenario (1) as she loses progressive support, while Russell gains some advantage (2).
+
+4. If Thompson opposes the bill (A2) and Russell remains neutral (B2), Thompson achieves her most preferred outcome (4), maintaining her base without losing the governor's support, while Russell still benefits (3) from the policy outcome without direct involvement.
+
+As they contemplate their moves, both politicians must consider not only their immediate gains but also the long-term consequences for their careers and the state's environmental policy. The tension builds as they prepare to announce their decisions, each hoping to outmaneuver the other in this high-stakes political game.
+[/Scenario]

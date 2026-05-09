@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Maya, an up-and-coming painter",
+  "B": "Liam, a successful gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a traditional, crowd-pleasing painting",
+  "A2": "Create an experimental, avant-garde piece",
+  "B1": "Host a conventional art show",
+  "B2": "Organize an innovative, interactive exhibition"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a traditional painting for an innovative exhibition",
+    3: "Create a traditional painting for a conventional show",
+    2: "Create an experimental piece for an innovative exhibition",
+    1: "Create an experimental piece for a conventional show"
+  },
+  "B": {
+    4: "Host an innovative exhibition with a traditional painting",
+    3: "Host a conventional show with a traditional painting",
+    2: "Host an innovative exhibition with an experimental piece",
+    1: "Host a conventional show with an experimental piece"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 1 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Maya, an up-and-coming painter, and Liam, a successful gallery owner, are preparing for an upcoming art event in their city. They need to make decisions that will impact both of their careers and the success of the event.
+
+Maya has two choices: she can either create a traditional, crowd-pleasing painting (A1) or an experimental, avant-garde piece (A2). Meanwhile, Liam must decide between hosting a conventional art show (B1) or organizing an innovative, interactive exhibition (B2).
+
+Both Maya and Liam have their preferences for the possible outcomes:
+
+Maya's most preferred scenario is to create a traditional painting for an innovative exhibition, as it would showcase her skills while reaching a broader audience. Her second choice would be to create a traditional painting for a conventional show, which is safe but less exciting. Creating an experimental piece for an innovative exhibition is her third choice, as it's risky but could potentially boost her reputation. Her least preferred option is to create an experimental piece for a conventional show, fearing it might not be well-received.
+
+Liam's preferences align closely with Maya's. He most prefers hosting an innovative exhibition with a traditional painting, believing it would attract both art enthusiasts and casual visitors. His second choice is a conventional show with a traditional painting, which is reliable but less thrilling. An innovative exhibition with an experimental piece is his third preference, seeing it as a gamble that could pay off or backfire. His least preferred scenario is a conventional show with an experimental piece, worried it might alienate his regular patrons.
+
+The payoff matrix shows that if they both choose their first options (A1 and B1), they'll achieve their third most preferred outcomes. If they both go for their second options (A2 and B2), they'll end up with their second least preferred results. However, if Maya creates a traditional painting (A1) and Liam organizes an innovative exhibition (B2), they'll both achieve their most preferred outcomes.
+
+As they prepare for the event, Maya and Liam must carefully consider their choices, weighing the potential risks and rewards. Their decisions will not only affect their individual success but also the overall impact of the art event on the local community.
+[/Scenario]

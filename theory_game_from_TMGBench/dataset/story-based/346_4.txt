@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Michael Rodriguez, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a shared electronic health record (EHR) system",
+  "A2": "Maintain the current separate record-keeping systems",
+  "B1": "Decline to participate in the shared EHR system",
+  "B2": "Join the shared EHR system"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement shared EHR with Dr. Rodriguez's participation",
+    3: "Maintain separate systems while Dr. Rodriguez declines participation",
+    2: "Both maintain separate systems",
+    1: "Implement shared EHR without Dr. Rodriguez's participation"
+  },
+  "B": {
+    4: "Join the shared EHR system implemented by the hospital",
+    3: "Maintain separate systems while the hospital does the same",
+    2: "Both maintain separate systems",
+    1: "Decline to participate while the hospital implements shared EHR"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 4 \ 4 |
+| A2    | 3 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the administrator of the local hospital, is considering implementing a shared electronic health record (EHR) system to improve patient care and reduce costs. The success of this initiative largely depends on the participation of local private practice physicians, including Dr. Michael Rodriguez, a respected doctor with a large patient base.
+
+Dr. Chen has two choices: implement the shared EHR system (A1) or maintain the current separate record-keeping systems (A2). Dr. Rodriguez also faces two options: decline to participate in the shared EHR system (B1) or join the system (B2).
+
+Dr. Chen's most preferred outcome is implementing the shared EHR with Dr. Rodriguez's participation (A1, B2), as this would maximize the system's effectiveness and improve overall patient care. Her least preferred scenario is implementing the shared EHR without Dr. Rodriguez's participation (A1, B1), as this would result in incomplete patient records and reduced efficiency.
+
+Dr. Rodriguez's most preferred outcome is joining the shared EHR system implemented by the hospital (A1, B2), as it would give him access to comprehensive patient information and potentially increase his practice's efficiency. His least preferred scenario is declining to participate while the hospital implements the shared EHR (A1, B1), as this could put him at a competitive disadvantage and potentially harm his patients' care.
+
+If both decide to maintain their separate systems (A2, B1), it would be their second-least preferred outcome, as it represents a missed opportunity for improvement but maintains the status quo.
+
+The payoff matrix reflects these preferences, with the highest payoff (4) for both when they cooperate in implementing and joining the shared EHR system. The lowest payoff (1) occurs when one party attempts to implement or join the system while the other does not cooperate.
+
+Dr. Chen and Dr. Rodriguez must now decide their courses of action, considering not only their own preferences but also anticipating the other's decision. Their choices will significantly impact the future of healthcare delivery in their community.
+[/Scenario]

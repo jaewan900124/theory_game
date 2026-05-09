@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blair, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new AI algorithm",
+  "A2": "Optimize existing software",
+  "B1": "Design a custom chip",
+  "B2": "Use off-the-shelf components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop AI algorithm with off-the-shelf components",
+    3: "Develop AI algorithm with custom chip",
+    2: "Optimize existing software with custom chip",
+    1: "Optimize existing software with off-the-shelf components"
+  },
+  "B": {
+    4: "Develop AI algorithm with custom chip",
+    3: "Optimize existing software with custom chip",
+    2: "Optimize existing software with off-the-shelf components",
+    1: "Develop AI algorithm with off-the-shelf components"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Custom chip) | B2 (Off-the-shelf) |
+|-------|-------------------|---------------------|
+| A1 (AI algorithm) | 3 \ 4 | 4 \ 1 |
+| A2 (Optimize software) | 2 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blair are engineers working on a cutting-edge robotics project for their company. They need to make crucial decisions about the software and hardware components of the robot.
+
+Alex, the software engineer, is torn between developing a groundbreaking AI algorithm (A1) or optimizing the existing software for better performance (A2). Blair, the hardware engineer, must choose between designing a custom chip (B1) or using off-the-shelf components (B2) for the robot's processing unit.
+
+Alex's ideal scenario is to develop the new AI algorithm with off-the-shelf components, as it would showcase their software skills without hardware complications. Their second preference is to develop the AI algorithm with a custom chip, which could potentially yield better results but increase complexity. Alex's least preferred option is to merely optimize existing software with off-the-shelf components, feeling it wouldn't be as impactful for their career.
+
+Blair, on the other hand, is most excited about the prospect of designing a custom chip for the new AI algorithm, seeing it as a chance to innovate in hardware design. Their second choice would be to create a custom chip for optimized existing software, still allowing for hardware innovation. Using off-the-shelf components is less appealing to Blair, with the least preferred scenario being to use standard components for a new AI algorithm, feeling it wouldn't fully utilize their hardware expertise.
+
+The engineers must make their decisions independently, knowing that their choices will affect not only the project's outcome but also their professional satisfaction and career progression. The combination of their choices will determine the direction of the robotics project and the challenges they'll face in its development.
+
+As they contemplate their options, both Alex and Blair realize the potential for either great synergy or missed opportunities, depending on how well their individual decisions align. The tension between personal preferences and project success adds an extra layer of complexity to their decision-making process.
+[/Scenario]

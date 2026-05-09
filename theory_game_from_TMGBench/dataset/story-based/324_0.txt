@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a sociologist",
+  "B": "Dr. Michael Rodriguez, another sociologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pursue individual research",
+  "A2": "Propose collaboration on a joint research project",
+  "B1": "Pursue individual research",
+  "B2": "Accept collaboration on a joint research project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Propose collaboration and have it accepted",
+    3: "Successfully complete individual research while the other collaborates",
+    2: "Propose collaboration but have it rejected",
+    1: "Both pursue individual research with limited success"
+  },
+  "B": {
+    4: "Accept proposed collaboration",
+    3: "Successfully complete individual research while rejecting collaboration",
+    2: "Complete individual research while the other proposes collaboration",
+    1: "Both pursue individual research with limited success"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 4 \ 4 |
+| A2    | 2 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Dr. Michael Rodriguez are two sociologists at a prestigious university, both studying the effects of social media on political polarization. They have the opportunity to either pursue their research individually or consider collaboration on a joint project.
+
+If both choose to pursue individual research (A1, B1), they will have limited success due to the complexity of the topic and resource constraints, resulting in the least preferred outcome for both (1,1).
+
+If Dr. Chen proposes collaboration while Dr. Rodriguez chooses to pursue individual research (A2, B1), Dr. Chen faces challenges without cooperation, resulting in a slightly better outcome (2), while Dr. Rodriguez benefits from reduced competition and achieves a better individual outcome (3).
+
+In the scenario where Dr. Chen pursues individual research and Dr. Rodriguez is open to collaboration (A1, B2), they unexpectedly find a way to combine their efforts, leading to the most preferred outcome for both (4,4). This represents a situation where their individual pursuits align in a way that creates an organic and highly successful collaboration.
+
+If Dr. Chen proposes collaboration and Dr. Rodriguez accepts (A2, B2), Dr. Chen achieves her second-best outcome (3) as the initiator of a successful collaboration, while Dr. Rodriguez finds the collaboration somewhat challenging but still beneficial, resulting in his third-best outcome (2).
+
+Dr. Chen and Dr. Rodriguez must decide on their research approach, weighing the potential benefits of collaboration against the security of individual pursuits. Their choices will not only affect their personal research outcomes but also contribute to the broader understanding of social media's impact on society.
+
+As they consider their options, both researchers must navigate the complex dynamics of academic collaboration, balancing personal career goals with the potential for groundbreaking research that could emerge from working together.
+[/Scenario]

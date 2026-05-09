@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Mark, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new AI product independently",
+  "A2": "Propose a joint venture with DataDrive",
+  "B1": "Focus on expanding current product line",
+  "B2": "Accept TechInnovate's joint venture proposal"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Joint venture accepted, shared success",
+    3: "Independent development, no competition",
+    2: "Both companies develop independently",
+    1: "Joint venture rejected, fall behind"
+  },
+  "B": {
+    4: "Joint venture accepted, shared success",
+    3: "TechInnovate develops independently, no threat",
+    2: "Focus on current products, no collaboration",
+    1: "Reject joint venture, fall behind"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 3 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the competitive world of tech startups, Sarah, the ambitious CEO of TechInnovate, and Mark, the seasoned leader of DataDrive, find themselves at a crossroads. Both companies are on the verge of a breakthrough in AI technology, but neither has the complete set of resources to fully capitalize on the opportunity.
+
+Sarah is contemplating whether to develop a new AI product independently (A1) or propose a joint venture with DataDrive (A2). She knows that going solo could yield decent results, but a partnership could potentially revolutionize the industry. However, she's also aware that proposing a joint venture carries the risk of rejection and potentially falling behind if Mark decides to pursue his own path.
+
+Mark, on the other hand, is deciding between focusing on expanding DataDrive's current product line (B1) or accepting a potential joint venture proposal from TechInnovate (B2). He recognizes the potential of collaboration but is also confident in his company's ability to innovate independently.
+
+If both decide to work independently (A1, B1), they'll maintain their current market positions without significant gains or losses. This scenario is Sarah's second-least preferred outcome (2) but Mark's second-most preferred (3), as he believes his current product line is strong enough to compete.
+
+Should Sarah propose a joint venture and Mark reject it (A2, B1), TechInnovate would lose valuable time and resources, potentially falling behind (Sarah's least preferred outcome, 1), while DataDrive would gain a slight advantage (Mark's second-least preferred outcome, 2).
+
+If Sarah decides to develop independently and Mark is open to collaboration (A1, B2), TechInnovate would gain a significant advantage (Sarah's second-most preferred outcome, 3), while DataDrive would miss out on a valuable opportunity (Mark's least preferred outcome, 1).
+
+The ideal scenario for both CEOs is if Sarah proposes a joint venture and Mark accepts (A2, B2). This collaboration would lead to shared success and industry leadership, representing the most preferred outcome (4) for both Sarah and Mark.
+
+As they prepare for their respective board meetings, both CEOs must carefully consider their strategies, weighing the potential risks and rewards of cooperation versus competition in this high-stakes game of business innovation.
+[/Scenario]

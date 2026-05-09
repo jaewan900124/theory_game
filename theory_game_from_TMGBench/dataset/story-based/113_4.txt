@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current hospital-based care model",
+  "A2": "Implement new community-based care program",
+  "B1": "Continue independent practice",
+  "B2": "Partner with the hospital"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new program with physician partnership",
+    3: "Maintain current model with physician partnership",
+    2: "Implement new program without physician partnership",
+    1: "Maintain current model without physician partnership"
+  },
+  "B": {
+    4: "Continue independent practice with current hospital model",
+    3: "Partner with hospital in new community-based program",
+    2: "Partner with hospital in current model",
+    1: "Continue independent practice with new hospital program"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 2 |
+| A2    | 2 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the hospital administrator, is facing a critical decision about the future of healthcare delivery in her institution. She's considering implementing a new community-based care program that could potentially improve patient outcomes and reduce costs. However, the success of this program heavily depends on the cooperation of local physicians.
+
+Dr. Mark Johnson, a respected private practice physician in the community, is also at a crossroads. He values his independence but recognizes the changing landscape of healthcare and the potential benefits of partnering with the hospital.
+
+Dr. Chen has two choices: maintain the current hospital-based care model (A1) or implement the new community-based care program (A2). Dr. Johnson's choices are to continue his independent practice (B1) or partner with the hospital (B2).
+
+Dr. Chen's most preferred outcome is implementing the new program with physician partnership (A2, B2), as it would lead to the best patient outcomes and cost savings. Her least preferred scenario is maintaining the current model without physician partnership (A1, B1), as it would result in stagnation and potential loss of market share.
+
+Dr. Johnson, on the other hand, most prefers to continue his independent practice while the hospital maintains its current model (A1, B1), as this allows him to maintain autonomy while benefiting from the existing hospital infrastructure. His least preferred option is continuing independent practice if the hospital implements the new program (A2, B1), as this could lead to a loss of patients and relevance in the new healthcare landscape.
+
+The payoff matrix reflects these preferences, with each character's preferred outcomes represented by higher numbers. Dr. Chen and Dr. Johnson must navigate their choices carefully, balancing their individual preferences with the potential for mutual benefit and improved community health outcomes.
+
+As they prepare for a crucial meeting to discuss the future of healthcare in their community, both Dr. Chen and Dr. Johnson ponder their options, knowing that their decisions will have far-reaching consequences for themselves, their institutions, and the patients they serve.
+[/Scenario]

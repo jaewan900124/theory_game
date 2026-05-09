@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Thompson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer a partnership program to local private practices",
+  "A2": "Expand the hospital's outpatient services",
+  "B1": "Join the hospital's partnership program",
+  "B2": "Remain independent and expand own practice"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Hospital expands outpatient services, physician remains independent",
+    3: "Hospital offers partnership, physician joins",
+    2: "Hospital offers partnership, physician remains independent",
+    1: "Hospital expands outpatient services, physician joins"
+  },
+  "B": {
+    4: "Hospital offers partnership, physician remains independent",
+    3: "Hospital offers partnership, physician joins",
+    2: "Hospital expands outpatient services, physician remains independent",
+    1: "Hospital expands outpatient services, physician joins"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 3 \ 4 |
+| A2    | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the hospital administrator, and Dr. Mark Thompson, a respected private practice physician, face a crucial decision that will shape the future of healthcare in their community.
+
+Dr. Chen is considering two strategies for the hospital: offering a partnership program to local private practices or expanding the hospital's outpatient services. The partnership program could bring in valuable expertise and patient bases, but it might also mean sharing resources and decision-making power. Expanding outpatient services could increase the hospital's market share but might strain relationships with local physicians.
+
+Dr. Thompson, on the other hand, must decide whether to join the hospital's partnership program if offered or remain independent and expand his own practice. Joining the hospital could provide financial stability and access to advanced resources, but it might limit his autonomy. Staying independent could preserve his decision-making freedom but might make it harder to compete with the hospital's resources.
+
+Their preferences reflect their individual goals and concerns. Dr. Chen would most prefer to expand the hospital's services while Dr. Thompson remains independent, as this would increase the hospital's market share without compromising its autonomy. Her least preferred outcome is expanding services only to have Dr. Thompson join, as this could lead to redundancies and internal conflicts.
+
+Dr. Thompson, conversely, would most prefer the hospital to offer a partnership while he remains independent, as this could lead to beneficial collaborations without sacrificing his autonomy. His least preferred outcome is the hospital expanding its services while he joins, as this could potentially reduce his role and influence within the larger organization.
+
+The payoff matrix reflects these preferences, with each outcome assigned a value from 1 to 4 for each character, representing their least to most preferred scenarios. This creates a complex dynamic where the best outcome for one is not necessarily the best for the other, leading to a challenging decision-making process for both Dr. Chen and Dr. Thompson.
+
+As they navigate this situation, both must consider not only their own preferences but also anticipate the other's likely actions, all while keeping in mind the broader impact on healthcare in their community. Their choices will ultimately shape the landscape of medical services in the area for years to come.
+[/Scenario]

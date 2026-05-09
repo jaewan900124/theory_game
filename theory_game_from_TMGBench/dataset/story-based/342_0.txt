@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a clinical psychologist",
+  "B": "Alex Martinez, a psychology graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on a similar project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Sole credit for groundbreaking research",
+    3: "Shared credit for collaborative research",
+    2: "Limited progress on research",
+    1: "No progress and damaged reputation"
+  },
+  "B": {
+    4: "Co-authorship on a groundbreaking paper",
+    3: "Access to valuable research data",
+    2: "Independent research with limited impact",
+    1: "No progress and missed opportunity"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 3 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson, a renowned clinical psychologist, has been working on a groundbreaking study on the effects of virtual reality therapy for treating anxiety disorders. Alex Martinez, a talented psychology graduate student, has independently developed an innovative approach to data analysis that could significantly enhance Dr. Thompson's research.
+
+Dr. Thompson must decide whether to share her research findings with Alex (A1) or keep them private (A2). Meanwhile, Alex must choose between collaborating on Dr. Thompson's project (B1) or working independently on a similar project (B2).
+
+If Dr. Thompson shares her findings and Alex collaborates (A1, B1), they will make limited progress together, resulting in a moderately successful outcome for both (2,3). Dr. Thompson gains some insights but feels her contribution is undervalued, while Alex benefits from access to valuable research data.
+
+If Dr. Thompson shares her findings and Alex works independently (A1, B2), both achieve their most preferred outcome (4,4). Dr. Thompson's openness leads to a breakthrough in her research, earning her sole credit for the groundbreaking study. Alex uses the shared information to co-author a groundbreaking paper in a related area.
+
+If Dr. Thompson keeps her findings private and Alex collaborates (A2, B1), Dr. Thompson achieves her second-best outcome by maintaining control over her research (3), while Alex's contribution is limited without access to the full data (2).
+
+However, if Dr. Thompson keeps her findings private and Alex works independently (A2, B2), both suffer their least preferred outcome (1,1). Dr. Thompson's research stagnates without Alex's analytical approach, damaging her reputation. Alex misses a significant opportunity to contribute to a major study, hindering his academic progress.
+
+The scenario highlights the complex dynamics of academic collaboration and the potential benefits and risks of sharing information in a competitive research environment. The characters must weigh their personal ambitions against the potential for collective progress in the field of psychology.
+[/Scenario]

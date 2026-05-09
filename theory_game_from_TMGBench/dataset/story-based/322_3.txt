@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a corporate lawyer",
+  "B": "Mark, Sarah's client and CEO of a tech company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential legal issues",
+  "A2": "Advise partial disclosure of potential legal issues",
+  "B1": "Follow lawyer's advice",
+  "B2": "Ignore lawyer's advice"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Full disclosure advised, client follows (ethical win, professional integrity maintained)",
+    3: "Partial disclosure advised, client follows (compromise, but still ethically sound)",
+    2: "Partial disclosure advised, client ignores (mild ethical dilemma, potential future issues)",
+    1: "Full disclosure advised, client ignores (ethical dilemma, potential legal repercussions)"
+  },
+  "B": {
+    4: "Full disclosure advised, follow advice (legal protection, transparency)",
+    3: "Full disclosure advised, ignore advice (short-term gain, long-term risk)",
+    2: "Partial disclosure advised, follow advice (balance between protection and business interests)",
+    1: "Partial disclosure advised, ignore advice (highest risk, potential legal consequences)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 4 \ 4 |
+| A2    | 2 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a seasoned corporate lawyer, finds herself in a challenging situation with her client, Mark, the CEO of a rapidly growing tech company. The company is on the verge of a major initial public offering (IPO), but Sarah has uncovered potential legal issues that could affect the company's valuation and future.
+
+Sarah must decide whether to advise full disclosure of these issues (A1) or suggest a partial disclosure (A2). Meanwhile, Mark has to choose whether to follow Sarah's advice (B1) or ignore it (B2).
+
+If Sarah advises full disclosure and Mark follows (A1, B1), Sarah faces an ethical dilemma (1) as it might harm her client's interests, but Mark gains legal protection (3). If Sarah advises full disclosure and Mark ignores it (A1, B2), Sarah maintains her professional integrity (4) while Mark takes a risky but potentially profitable path (4).
+
+In the case of partial disclosure advice, if Mark follows (A2, B1), Sarah achieves a compromise (2) and Mark balances protection and business interests (2). However, if Mark ignores the partial disclosure advice (A2, B2), Sarah faces a mild ethical dilemma (3) while Mark exposes himself to the highest risk (1).
+
+Sarah values her professional ethics highly but also wants to maintain a good relationship with her client. Mark is torn between his desire for a successful IPO and the need for legal compliance. Their decisions will not only impact the company's future but also their professional relationship and personal integrity.
+
+As the IPO date approaches, tension builds between Sarah and Mark. They must navigate this complex legal and ethical landscape, weighing the potential consequences of their choices on the company, their careers, and their consciences.
+[/Scenario]

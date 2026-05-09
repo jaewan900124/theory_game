@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Blake, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept a full-time position at Blake's startup",
+  "A2": "Work as a freelance consultant for Blake's startup",
+  "B1": "Offer Alex a competitive salary and benefits package",
+  "B2": "Offer Alex a lower base salary with performance bonuses"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Freelance work with high compensation",
+    3: "Full-time position with competitive salary",
+    2: "Full-time position with lower salary",
+    1: "Freelance work with low compensation"
+  },
+  "B": {
+    4: "Full-time employee with lower fixed costs",
+    3: "Freelance consultant with flexible costs",
+    2: "Full-time employee with higher fixed costs",
+    1: "Freelance consultant with high costs"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 2 |
+| A2    | 1 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a highly skilled software developer, is considering joining Blake's promising tech startup. Both Alex and Blake are weighing their options carefully, knowing that their decisions will significantly impact their future success.
+
+Alex has two choices: accept a full-time position at the startup (A1) or work as a freelance consultant (A2). Meanwhile, Blake must decide whether to offer Alex a competitive salary and benefits package (B1) or a lower base salary with performance bonuses (B2).
+
+Alex prefers the flexibility and potential high earnings of freelance work but also values the stability of a full-time position. Their most desired outcome is freelance work with high compensation, followed by a full-time position with a competitive salary. The least preferred scenario for Alex is freelance work with low compensation.
+
+Blake, on the other hand, is trying to balance the startup's budget while securing top talent. Their ideal situation is having Alex as a full-time employee with lower fixed costs, followed by having Alex as a freelance consultant with flexible costs. Blake's least preferred outcome is having Alex as a freelance consultant with high costs.
+
+The payoff matrix reveals the complex dynamics of their decision-making process. If Alex accepts a full-time position (A1) and Blake offers a competitive package (B1), Alex receives their second-best outcome (2), while Blake achieves their most desired result (4). However, if Blake offers a lower base salary with bonuses (B2) in this scenario, Alex's satisfaction increases (3), but Blake's decreases (2).
+
+In the freelance scenarios, if Blake offers a competitive package (B1), Alex ends up with their least preferred outcome (1), while Blake achieves their second-best result (3). But if Blake offers a lower base salary with bonuses (B2) for freelance work, Alex reaches their most desired outcome (4), while Blake faces their least preferred situation (1).
+
+As they negotiate, both Alex and Blake must carefully consider their choices, understanding that their decisions will not only affect their individual outcomes but also the potential success of the startup and their professional relationship moving forward.
+[/Scenario]

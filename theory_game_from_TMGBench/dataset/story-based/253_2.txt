@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer partnership program",
+  "A2": "Maintain current hospital-only services",
+  "B1": "Join hospital partnership",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Offer partnership, physician remains independent",
+    3: "Offer partnership, physician joins",
+    2: "Maintain current services, physician joins",
+    1: "Maintain current services, physician remains independent",
+  },
+  "B": {
+    4: "Hospital offers partnership, physician joins",
+    3: "Hospital maintains current services, physician remains independent",
+    2: "Hospital offers partnership, physician remains independent",
+    1: "Hospital maintains current services, physician joins"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 2 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized town, Greenville General Hospital, led by Dr. Sarah Chen, is facing increasing pressure to improve patient care and reduce costs. Dr. Mark Johnson, a respected private practice physician in the community, has been considering his options for the future of his practice.
+
+Dr. Chen is contemplating whether to offer a partnership program to local physicians, including Dr. Johnson. This program would allow physicians to maintain some independence while benefiting from the hospital's resources. Alternatively, she could maintain the current hospital-only services without involving external physicians.
+
+Dr. Johnson, on the other hand, is weighing the pros and cons of joining such a partnership if offered or remaining fully independent.
+
+Dr. Chen's ideal scenario would be to offer the partnership program while Dr. Johnson remains independent, as this would expand the hospital's influence without the complications of integrating a new partner. Her second preference is for Dr. Johnson to join the partnership if offered, as it would still benefit the hospital. Her least preferred outcome is maintaining current services while Dr. Johnson remains independent, as it represents a missed opportunity for growth.
+
+Dr. Johnson's most preferred outcome is joining the hospital partnership if offered, as it would provide him with more resources and stability. His second choice would be to remain independent if the hospital doesn't offer a partnership, maintaining his autonomy. His least preferred scenario is joining the hospital if it maintains its current structure, as he would lose independence without gaining the benefits of a true partnership.
+
+The combination of their choices leads to four possible scenarios, each with different outcomes for both parties. They must now decide their actions, knowing that their decisions will significantly impact the future of healthcare in their community.
+[/Scenario]

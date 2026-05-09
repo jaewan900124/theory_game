@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "General Hawk",
+  "B": "Admiral Storm"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy ground troops",
+  "A2": "Launch air strikes",
+  "B1": "Conduct naval blockade",
+  "B2": "Perform amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch air strikes while enemy performs amphibious assault",
+    3: "Launch air strikes during naval blockade",
+    2: "Deploy ground troops during naval blockade",
+    1: "Deploy ground troops during amphibious assault",
+  },
+  "B": {
+    4: "Perform amphibious assault while enemy deploys ground troops",
+    3: "Conduct naval blockade while enemy deploys ground troops",
+    2: "Conduct naval blockade during air strikes",
+    1: "Perform amphibious assault during air strikes"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 1 \ 4 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Hawk of the Army and Admiral Storm of the Navy find themselves at odds over the best strategy to secure a strategic island in disputed waters. Their decisions will shape the outcome of this critical operation.
+
+General Hawk, known for his aggressive tactics, has two options: deploy ground troops (A1) or launch air strikes (A2). Admiral Storm, a seasoned naval commander, must choose between conducting a naval blockade (B1) or performing an amphibious assault (B2).
+
+General Hawk's ideal scenario is to launch air strikes while Admiral Storm attempts an amphibious assault (A2, B2). This would allow him to inflict maximum damage on the enemy forces while they're vulnerable during the landing. His second preference is to launch air strikes during a naval blockade (A2, B1), which would still be effective but less so than against landing forces. Deploying ground troops during a naval blockade (A1, B1) is his third choice, as it's a more conservative approach. His least preferred option is deploying ground troops during an amphibious assault (A1, B2), as his forces would be at a disadvantage against the incoming naval forces.
+
+Admiral Storm, on the other hand, prefers to perform an amphibious assault while General Hawk deploys ground troops (A1, B2). This would give him the upper hand in establishing a beachhead. His second choice is to conduct a naval blockade while ground troops are deployed (A1, B1), which would allow him to control the sea lanes. Conducting a naval blockade during air strikes (A2, B1) is his third preference, as it's less risky but also less impactful. His least favored scenario is performing an amphibious assault during air strikes (A2, B2), as this would leave his forces extremely vulnerable.
+
+The two commanders must make their decisions independently, without knowing the other's choice. Their individual preferences and the potential outcomes create a complex strategic scenario where the best individual choice might not lead to the best overall outcome for their combined forces. The fate of the operation hangs in the balance as General Hawk and Admiral Storm contemplate their moves in this high-stakes game of military strategy.
+[/Scenario]

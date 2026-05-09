@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Blake, a visionary tech entrepreneur"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a proprietary AI algorithm",
+  "A2": "Collaborate on an open-source AI project",
+  "B1": "Offer Alex a lucrative job contract",
+  "B2": "Partner with Alex for a joint venture"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop proprietary AI and receive a job offer",
+    3: "Collaborate on open-source AI and form a partnership",
+    2: "Collaborate on open-source AI and receive a job offer",
+    1: "Develop proprietary AI and form a partnership"
+  },
+  "B": {
+    4: "Offer a job contract and Alex develops proprietary AI",
+    3: "Form a partnership and collaborate on open-source AI",
+    2: "Offer a job contract and collaborate on open-source AI",
+    1: "Form a partnership and Alex develops proprietary AI"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Job Offer) | B2 (Partnership) |
+|-------|----------------|-------------------|
+| A1 (Proprietary AI) | 1 \ 4           | 4 \ 1             |
+| A2 (Open-source AI) | 2 \ 2           | 3 \ 3             |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling tech hub of Silicon Valley, Alex, a brilliant software developer known for his innovative AI algorithms, crosses paths with Blake, a charismatic tech entrepreneur with a track record of successful startups. Blake recognizes Alex's potential and sees an opportunity for collaboration that could revolutionize the AI industry.
+
+Alex faces a crucial decision: should he develop a proprietary AI algorithm that could be his ticket to fame and fortune, or should he contribute to an open-source AI project that could benefit the wider tech community? Meanwhile, Blake must decide how to best leverage Alex's talents: by offering him a lucrative job contract to work exclusively for Blake's company, or by proposing a partnership where they could jointly develop and market AI solutions.
+
+Alex's preferences are clear. His top choice would be to develop his proprietary AI and receive a job offer from Blake, securing both his intellectual property and financial stability. His second-best option is to collaborate on the open-source project and form a partnership with Blake, which would allow for more creative freedom and potential long-term benefits. Alex's third choice would be to work on the open-source project and accept a job offer, while his least preferred outcome is to develop his proprietary AI and enter into a partnership, fearing he might lose control over his creation.
+
+Blake, on the other hand, would ideally like to offer Alex a job contract and have him develop the proprietary AI, giving Blake's company a significant competitive edge. His second preference is to form a partnership and collaborate on the open-source project, which could enhance his company's reputation in the tech community. Blake's third choice is to offer a job contract and work on the open-source project, while his least desired outcome is to form a partnership only to have Alex develop proprietary AI, potentially limiting Blake's access to the technology.
+
+As they sit across from each other in a sleek conference room, both Alex and Blake contemplate their choices, knowing that their decisions will not only shape their own futures but potentially the future of AI technology itself. The tension is palpable as they weigh their options, each hoping to achieve their most preferred outcome while navigating the complex dynamics of cooperation and competition in the fast-paced world of tech innovation.
+[/Scenario]

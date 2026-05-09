@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a sociology professor",
+  "B": "Dr. Michael Rodriguez, another sociology professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue individual research",
+  "B1": "Collaborate on a joint research project",
+  "B2": "Pursue individual research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue individual research while B collaborates",
+    3: "Both collaborate on a joint research project",
+    2: "Both pursue individual research",
+    1: "Collaborate while B pursues individual research"
+  },
+  "B": {
+    4: "Both collaborate on a joint research project",
+    3: "Pursue individual research while A collaborates",
+    2: "Both pursue individual research",
+    1: "Collaborate while A pursues individual research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 1 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, two sociology professors, Dr. Sarah Chen and Dr. Michael Rodriguez, are facing a crucial decision regarding their upcoming research projects. The university has announced a significant grant for groundbreaking sociological research, and both professors are eager to secure funding for their work.
+
+Dr. Chen, known for her innovative methodologies, is torn between collaborating with Dr. Rodriguez on a joint project or pursuing her individual research on the impact of social media on community dynamics. Dr. Rodriguez, respected for his extensive fieldwork experience, is similarly conflicted between joining forces with Dr. Chen or continuing his solo work on urban gentrification patterns.
+
+Their choices will not only affect their professional relationships but also their chances of securing the grant and advancing their careers. The university administration has hinted that collaborative projects might be viewed favorably, but individual breakthroughs could also garner substantial recognition.
+
+Dr. Chen's ideal scenario would be to pursue her individual research while Dr. Rodriguez collaborates, as this would allow her to maintain full control over her project while potentially benefiting from Dr. Rodriguez's supportive role. Her least preferred outcome would be to collaborate while Dr. Rodriguez pursues individual research, as she fears this might lead to an unequal distribution of work and recognition.
+
+Dr. Rodriguez, on the other hand, strongly prefers a collaborative approach. His optimal outcome would be for both of them to work together, combining their expertise for a potentially groundbreaking study. His least desired situation would be to collaborate while Dr. Chen pursues individual research, as he worries about carrying the burden of the joint project alone.
+
+As the deadline for research proposals approaches, both professors must make their decisions. They are aware that their choices will have significant implications for their research output, professional relationships, and future career prospects in the competitive field of sociology.
+
+The payoff matrix reflects the complex dynamics of their decision-making process, where cooperation could lead to mutual benefits, but individual pursuits might also yield personal advantages. As they contemplate their options, the tension between collaboration and competition in academia becomes starkly apparent, mirroring broader sociological themes they often explore in their work.
+[/Scenario]

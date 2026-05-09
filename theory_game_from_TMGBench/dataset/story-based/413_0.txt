@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a taxi driver",
+  "B": "Blake, a ride-sharing app driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Operate in the city center",
+  "A2": "Operate in the suburbs",
+  "B1": "Operate in the city center",
+  "B2": "Operate in the suburbs"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Operate alone in the suburbs",
+    3: "Operate alone in the city center",
+    2: "Compete with Blake in the suburbs",
+    1: "Compete with Blake in the city center"
+  },
+  "B": {
+    4: "Operate alone in the city center",
+    3: "Compete with Alex in the suburbs",
+    2: "Compete with Alex in the city center",
+    1: "Operate alone in the suburbs"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (City)| B2 (Suburbs)|
+|-------|----------|-------------|
+| A1 (City) | 1 \ 2   | 3 \ 4      |
+| A2 (Suburbs)| 2 \ 3   | 4 \ 1      |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling metropolis, Alex, a seasoned taxi driver, and Blake, a tech-savvy ride-sharing app driver, find themselves in a daily struggle for passengers. Each morning, they must decide whether to operate in the city center or the suburbs, knowing that their choice will affect their earnings and competition.
+
+Alex, with years of experience, prefers the predictable flow of the suburbs but can navigate the city center if needed. His ideal scenario is to have the suburbs to himself, where he can leverage his knowledge of quieter streets and regular customers. His least preferred situation is competing with Blake in the crowded city center, where Blake's app gives him an edge.
+
+Blake, on the other hand, thrives on the constant demand in the city center, where his ride-sharing app frequently pings with ride requests. He's most satisfied when he has the city center to himself but can adapt to the suburbs if necessary. His worst-case scenario is being alone in the suburbs, where fewer people use ride-sharing apps.
+
+If both operate in the city center, they face intense competition, resulting in moderate earnings for Blake but poor earnings for Alex (A:1, B:2). If Alex chooses the city while Blake opts for the suburbs, Alex enjoys better earnings without direct competition, while Blake maximizes his profits by being the primary ride-sharing option in the suburbs (A:3, B:4).
+
+When Alex operates in the suburbs and Blake in the city, both drivers are in their preferred areas without direct competition, leading to good outcomes for both (A:2, B:3). However, if both end up in the suburbs, Alex reaps the benefits of his expertise, while Blake struggles with fewer ride requests (A:4, B:1).
+
+Each day, Alex and Blake must make their choices independently, weighing the potential outcomes and trying to anticipate each other's decisions in this ongoing transportation dilemma.
+[/Scenario]

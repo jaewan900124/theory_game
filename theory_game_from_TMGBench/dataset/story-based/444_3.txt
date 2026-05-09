@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a robotics engineer",
+  "B": "Blake, a software engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a traditional robotic arm",
+  "A2": "Develop an AI-enhanced robotic arm",
+  "B1": "Create a basic control software",
+  "B2": "Create an advanced AI-integrated software"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop AI-enhanced arm with advanced software",
+    3: "Develop traditional arm with basic software",
+    2: "Develop AI-enhanced arm with basic software",
+    1: "Develop traditional arm with advanced software"
+  },
+  "B": {
+    4: "Create advanced software for traditional arm",
+    3: "Create basic software for AI-enhanced arm",
+    2: "Create advanced software for AI-enhanced arm",
+    1: "Create basic software for traditional arm"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 1 \ 4 |
+| A2    | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a cutting-edge robotics project for a major tech company. They've been tasked with developing a new robotic arm for precision manufacturing, but they have different ideas about the best approach.
+
+Alex, the robotics engineer, is considering two options: developing a traditional robotic arm (A1) or an AI-enhanced robotic arm (A2). Blake, the software engineer, needs to decide between creating a basic control software (B1) or an advanced AI-integrated software (B2).
+
+Their preferences and the potential outcomes of their choices are complex:
+
+Alex's ideal scenario is to develop the AI-enhanced arm with Blake's advanced software (A2B2), as it would showcase her innovative skills and potentially revolutionize the industry. Her second choice would be to create a traditional arm with basic software (A1B1), as it's a safe and proven approach. She's less enthusiastic about developing an AI-enhanced arm with basic software (A2B1), as it wouldn't reach its full potential. Her least preferred option is a traditional arm with advanced software (A1B2), as she feels it's a waste of Blake's efforts.
+
+Blake, on the other hand, would prefer to create advanced software for a traditional arm (A1B2), as it would highlight his software skills without the complexities of AI integration. His second choice is to develop basic software for the AI-enhanced arm (A2B1), as it would be an interesting challenge. Creating advanced software for the AI-enhanced arm (A2B2) is his third choice, as he's concerned about the project's complexity. His least preferred option is basic software for a traditional arm (A1B1), which he finds unchallenging.
+
+The engineers must make their decisions independently, without knowing what the other will choose. Their choices will determine the project's direction and potentially impact their careers and the company's future in robotics manufacturing.
+
+As they sit in their separate offices, contemplating their decisions, both Alex and Blake are aware that their choices will have far-reaching consequences. They must weigh their personal preferences against what might be best for the project and the company. The tension is palpable as they prepare to submit their final decisions, knowing that the outcome will shape the future of their work and the industry at large.
+[/Scenario]

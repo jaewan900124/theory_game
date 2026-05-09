@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a sociology professor",
+  "B": "Dr. James Walker, another sociology professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue individual research",
+  "B1": "Collaborate on a joint research project",
+  "B2": "Pursue individual research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Solo research with colleague's support",
+    3: "Collaborative research project",
+    2: "Solo research without support",
+    1: "Wasted effort on failed collaboration"
+  },
+  "B": {
+    4: "Collaborative research project",
+    3: "Solo research with colleague's support",
+    2: "Solo research without support",
+    1: "Wasted effort on failed collaboration"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 2 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, two sociology professors, Dr. Emma Chen and Dr. James Walker, are faced with a decision that could shape their careers. The department has announced a significant research grant, and both professors are eligible to apply. They must choose whether to collaborate on a joint research project or pursue individual research.
+
+Dr. Chen, known for her innovative methodologies, prefers working independently but recognizes the potential benefits of collaboration. Her ideal scenario would be to conduct solo research while still benefiting from her colleague's support and insights. Dr. Walker, on the other hand, thrives in collaborative environments and sees the greatest value in joint projects.
+
+If both choose to collaborate (A1, B1), they would produce a strong joint research project. This outcome is Dr. Walker's most preferred scenario (4) and Dr. Chen's second-best option (3).
+
+If Dr. Chen decides to work alone while Dr. Walker offers to collaborate (A2, B1), Dr. Chen would benefit from some of Dr. Walker's insights without full commitment, her second-best outcome (2). However, this would be Dr. Walker's least preferred scenario (1), as his efforts towards collaboration would be wasted.
+
+Conversely, if Dr. Walker pursues individual research while Dr. Chen offers to collaborate (A1, B2), Dr. Chen would achieve her most preferred outcome (4), benefiting from some of Dr. Walker's input without full collaboration. Dr. Walker would find this his second-best scenario (3), able to work independently but with some collegial support.
+
+Finally, if both choose to pursue individual research (A2, B2), they would work entirely independently. This is the third-best outcome for Dr. Walker (2) and the least preferred scenario for Dr. Chen (1).
+
+As they contemplate their decisions, both professors must consider not only their personal preferences but also the potential reactions of their colleague. The outcome will depend on their ability to anticipate each other's choices and navigate the delicate balance between cooperation and competition in academia.
+[/Scenario]

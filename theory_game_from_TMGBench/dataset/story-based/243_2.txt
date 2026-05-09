@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a small coffee shop owner",
+  "B": "Lucas, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Maintain current prices",
+  "B2": "Lower prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "B maintains prices while A lowers prices",
+    3: "Both maintain current prices",
+    2: "Both lower prices",
+    1: "A maintains prices while B lowers prices"
+  },
+  "B": {
+    4: "Both maintain current prices",
+    3: "B lowers prices while A maintains prices",
+    2: "A lowers prices while B maintains prices",
+    1: "Both lower prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 2 |
+| A2    | 3 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Emma, a passionate small coffee shop owner, faces fierce competition from Lucas, the owner of a large coffee chain. Both are contemplating their pricing strategies for the upcoming quarter.
+
+Emma's quaint shop, "The Cozy Bean," has a loyal customer base but struggles to compete with the resources of Lucas's chain, "JavaGiant." Emma knows that lowering her prices could attract more customers but might strain her profit margins. On the other hand, maintaining her current prices could preserve her profits but might result in losing customers to JavaGiant if they decide to lower their prices.
+
+Lucas, with his extensive market reach, is also in a dilemma. Maintaining current prices would maximize profits if Emma does the same, but he risks losing market share if she lowers her prices. Lowering prices could help JavaGiant dominate the market, but it would significantly cut into their profits, especially if Emma matches the price reduction.
+
+For Emma, the best-case scenario (preference 4) is if she lowers her prices while Lucas maintains his, allowing her to attract more customers without Lucas undercutting her. Her next preference (3) is if both maintain current prices, preserving the status quo. She least prefers (1) maintaining her prices while Lucas lowers his, as this would likely result in a significant loss of customers.
+
+Lucas, however, most prefers (4) the scenario where both maintain current prices, maximizing JavaGiant's profits. His next best option (3) is lowering prices while Emma maintains hers, potentially increasing market share. He least prefers (1) a price war where both lower prices, significantly impacting JavaGiant's profit margins.
+
+As the new quarter approaches, Emma and Lucas must make their decisions independently, each unaware of the other's choice. Their decisions will shape the competitive landscape of the city's coffee market and determine the fate of The Cozy Bean and JavaGiant's local branches.
+[/Scenario]

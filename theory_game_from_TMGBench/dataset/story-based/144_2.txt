@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a collaborative care program",
+  "A2": "Maintain the current hospital-centric model",
+  "B1": "Join the collaborative care program",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain hospital-centric model while Dr. Johnson remains independent",
+    3: "Implement collaborative care program with Dr. Johnson's participation",
+    2: "Maintain hospital-centric model with Dr. Johnson joining",
+    1: "Implement collaborative care program without Dr. Johnson's participation"
+  },
+  "B": {
+    4: "Join collaborative care program",
+    3: "Remain independent while hospital maintains current model",
+    2: "Join hospital-centric model",
+    1: "Remain independent while hospital implements collaborative care"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Join) | B2 (Remain Independent) |
+|-------|-----------|-------------------------|
+| A1 (Collaborate) | 3 \ 4     | 1 \ 1                   |
+| A2 (Hospital-centric) | 2 \ 2     | 4 \ 3                   |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, the local hospital, led by Dr. Sarah Chen, is considering implementing a collaborative care program to improve patient outcomes and reduce healthcare costs. This program would involve closer cooperation between the hospital and local private practice physicians.
+
+Dr. Mark Johnson, a respected private practice physician in the community, is faced with the decision to either join this collaborative care program or remain independent. Both Dr. Chen and Dr. Johnson must make their choices without knowing the other's decision.
+
+Dr. Chen prefers maintaining the current hospital-centric model if Dr. Johnson remains independent, as it gives the hospital more control and potentially higher profits. Her second preference is implementing the collaborative care program with Dr. Johnson's participation, which could improve patient care but might reduce the hospital's autonomy. Her least preferred scenario is implementing the collaborative program without Dr. Johnson's participation, as it could lead to fragmented care and reduced efficiency.
+
+Dr. Johnson, on the other hand, most prefers joining the collaborative care program, as it could provide better resources and support for his practice. His second choice is remaining independent while the hospital maintains its current model, preserving his autonomy. He least prefers remaining independent if the hospital implements the collaborative care program, as he might lose patients and referrals.
+
+If both choose to collaborate (A1, B1), it results in improved patient care and moderate benefits for both parties (3,4). If Dr. Chen implements the collaborative program but Dr. Johnson remains independent (A1, B2), both suffer due to fragmented care (1,1). If Dr. Chen maintains the hospital-centric model and Dr. Johnson joins (A2, B1), both receive modest benefits but face challenges in integration (2,2). Finally, if Dr. Chen maintains the current model and Dr. Johnson remains independent (A2, B2), the hospital benefits most while Dr. Johnson maintains a satisfactory status quo (4,3).
+
+The outcome of their decisions will significantly impact the local healthcare landscape, patient care quality, and the professional lives of both doctors.
+[/Scenario]

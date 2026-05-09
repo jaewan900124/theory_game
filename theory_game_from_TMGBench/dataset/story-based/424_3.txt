@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products using local resources",
+  "A2": "Import materials for product development",
+  "B1": "Restrict access to forest resources",
+  "B2": "Allow controlled access to forest resources"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Import materials and have controlled access to forest resources",
+    3: "Develop eco-friendly products with controlled access to forest resources",
+    2: "Develop eco-friendly products with restricted access to forest resources",
+    1: "Import materials with restricted access to forest resources"
+  },
+  "B": {
+    4: "Allow controlled access and eco-friendly product development",
+    3: "Restrict access with material importation",
+    2: "Allow controlled access with material importation",
+    1: "Restrict access with eco-friendly product development"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoTech \ GreenForest | Restrict Access (B1) | Allow Controlled Access (B2) |
+|-----------------------|----------------------|------------------------------|
+| Eco-friendly (A1)     | 2 \ 1                | 3 \ 4                        |
+| Import Materials (A2) | 1 \ 3                | 4 \ 2                        |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush, biodiverse forest region, EcoTech, a sustainable technology company, and GreenForest, a local conservation organization, find themselves at a crossroads. EcoTech aims to expand its eco-friendly product line, while GreenForest is dedicated to preserving the local ecosystem.
+
+EcoTech has two options: develop eco-friendly products using local resources (A1) or import materials for product development (A2). GreenForest can either restrict access to forest resources (B1) or allow controlled access (B2).
+
+EcoTech's most preferred outcome is to import materials while having controlled access to forest resources, as this allows them to maintain their supply chain while potentially expanding into local materials in the future. Their least preferred scenario is importing materials with restricted forest access, as this limits their ability to research and develop new eco-friendly products.
+
+GreenForest's top priority is to allow controlled access while encouraging eco-friendly product development, as this balances conservation with sustainable economic growth. Their least preferred outcome is restricting access while eco-friendly products are developed, as this may strain relations with the local community and limit potential benefits from sustainable practices.
+
+If both parties choose their most preferred individual strategies (A2 and B2), it results in EcoTech's most preferred outcome but only GreenForest's third choice. This scenario might lead to over-exploitation of resources if not carefully managed.
+
+The optimal solution for both parties would be EcoTech developing eco-friendly products using local resources (A1) and GreenForest allowing controlled access (B2). This scenario represents EcoTech's third choice and GreenForest's top preference, striking a balance between conservation and sustainable development.
+
+The challenge lies in negotiating a mutually beneficial agreement that ensures the long-term sustainability of both the forest ecosystem and the local economy. The outcome of their decisions will shape the future of the region's ecological and economic landscape.
+[/Scenario]

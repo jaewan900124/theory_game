@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a sociology graduate student",
+  "B": "Dr. Chen, Emma's thesis advisor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pursue an ambitious, innovative thesis topic",
+  "A2": "Choose a safer, more conventional thesis topic",
+  "B1": "Provide extensive support and guidance",
+  "B2": "Offer minimal supervision"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue ambitious topic with extensive support",
+    3: "Pursue ambitious topic with minimal supervision",
+    2: "Choose conventional topic with minimal supervision",
+    1: "Choose conventional topic with extensive support",
+  },
+  "B": {
+    4: "Student pursues ambitious topic with extensive support",
+    3: "Student chooses conventional topic with minimal supervision",
+    2: "Student pursues ambitious topic with minimal supervision",
+    1: "Student chooses conventional topic with extensive support"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 1 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a passionate sociology graduate student, is about to embark on her thesis journey. She finds herself at a crossroads, torn between pursuing an ambitious, innovative topic that could potentially make a significant impact in the field, or opting for a safer, more conventional route that guarantees completion but offers less excitement.
+
+Dr. Chen, Emma's thesis advisor, is a respected professor known for nurturing groundbreaking research. However, he's currently juggling multiple projects and considering how much time he can dedicate to each student.
+
+Emma's choices (A1: ambitious topic, A2: conventional topic) and Dr. Chen's choices (B1: extensive support, B2: minimal supervision) create four possible scenarios:
+
+1. (A1, B1): Emma pursues the ambitious topic with Dr. Chen's full support. This is ideal for both, as it could lead to groundbreaking research (Emma: 3, Dr. Chen: 4).
+
+2. (A1, B2): Emma tackles the ambitious topic with minimal supervision. This is Emma's preferred outcome as she gets to work on her passion project independently (Emma: 4), but it's less ideal for Dr. Chen, who worries about the project's success without his guidance (Dr. Chen: 2).
+
+3. (A2, B1): Emma chooses the conventional topic with extensive support. This is the least preferred outcome for both, as it doesn't challenge Emma and wastes Dr. Chen's time on a routine project (Emma: 1, Dr. Chen: 1).
+
+4. (A2, B2): Emma opts for the conventional topic with minimal supervision. This is Emma's second-least preferred outcome (Emma: 2), but it's relatively good for Dr. Chen as it requires less of his time and still ensures Emma's graduation (Dr. Chen: 3).
+
+As they prepare for their meeting to discuss the thesis, both Emma and Dr. Chen must consider their choices carefully. Emma must weigh her ambition against the potential lack of support, while Dr. Chen must balance his desire to foster innovative research with his limited time and resources. Their decisions will not only shape Emma's academic future but also potentially influence the field of sociology itself.
+[/Scenario]

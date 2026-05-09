@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a psychology researcher",
+  "B": "Alex Chen, Emma's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share credit for the research findings",
+  "A2": "Claim sole credit for the research findings",
+  "B1": "Contribute additional data to the research",
+  "B2": "Withhold additional data from the research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Claim sole credit while receiving additional data",
+    3: "Claim sole credit without additional data",
+    2: "Share credit without additional data",
+    1: "Share credit while receiving additional data"
+  },
+  "B": {
+    4: "Receive credit while withholding additional data",
+    3: "Contribute additional data without receiving credit",
+    2: "Receive credit and contribute additional data",
+    1: "Neither receive credit nor contribute additional data"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 1 |
+| A2    | 2 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson, a renowned psychology researcher, is on the verge of publishing a groundbreaking study on cognitive biases in decision-making. Her research assistant, Alex Chen, has been instrumental in collecting and analyzing data throughout the project. As they approach the final stages of the study, both Emma and Alex face critical decisions that will impact their professional relationships and career trajectories.
+
+Emma must decide whether to share credit for the research findings with Alex (A1) or claim sole credit for herself (A2). Simultaneously, Alex has uncovered some additional data that could significantly enhance the study's impact. Alex must choose whether to contribute this additional data to the research (B1) or withhold it (B2).
+
+Emma's highest preference (4) is to claim sole credit while receiving the additional data from Alex, as this would maximize her professional recognition. Her second preference (3) is to claim sole credit without the additional data, still benefiting her career but to a lesser extent. Sharing credit without the additional data is her third preference (2), as it acknowledges Alex's contributions but doesn't strengthen the study. Her least preferred outcome (1) is sharing credit while receiving the additional data, as she feels this diminishes her standing despite the improved research quality.
+
+Alex, on the other hand, most prefers (4) to receive credit for the research while withholding the additional data, as this would boost their career without extra effort. Their second preference (3) is to contribute the additional data without receiving credit, as it would enhance the research quality and potentially lead to future opportunities. Receiving credit and contributing the additional data is Alex's third preference (2), balancing recognition with workload. The least preferred outcome for Alex (1) is neither receiving credit nor contributing the additional data, as this provides no benefits.
+
+As they prepare for the final research meeting, Emma and Alex must each make their decisions, knowing that their choices will not only affect the outcome of the study but also their professional relationship and individual career prospects. The tension between cooperation and competition, as well as the ethical implications of their choices, creates a complex psychological dilemma for both characters.
+[/Scenario]

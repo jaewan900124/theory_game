@@ -1,0 +1,70 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a proprietary software solution",
+  "A2": "Develop an open-source software solution",
+  "B1": "Design a custom hardware platform",
+  "B2": "Adapt an existing hardware platform"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Proprietary software on existing hardware (maximum profit)",
+    3: "Proprietary software on custom hardware (good profit, less market share)",
+    2: "Open-source software on existing hardware (wider adoption, less profit)",
+    1: "Open-source software on custom hardware (limited adoption and profit)"
+  },
+  "B": {
+    4: "Proprietary software on existing hardware (maximum profit sharing)",
+    3: "Custom hardware with open-source software (hardware sales, no software competition)",
+    2: "Existing hardware with open-source software (moderate sales)",
+    1: "Custom hardware with proprietary software (limited hardware sales)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 4 \ 4 |
+| A2    | 1 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are former colleagues who have decided to collaborate on a new tech startup. They aim to create an innovative smart home system, but they have different ideas about the best approach.
+
+Alex, the software developer, is considering whether to develop a proprietary software solution (A1) or an open-source software solution (A2). Blake, the hardware engineer, is debating between designing a custom hardware platform (B1) or adapting an existing hardware platform (B2).
+
+Their choices will lead to four possible scenarios:
+
+1. (A1, B1): Alex develops proprietary software, Blake designs custom hardware
+   - Alex gains good profit but faces limited market share (3)
+   - Blake has limited hardware sales due to software restrictions (1)
+
+2. (A1, B2): Alex develops proprietary software, Blake adapts existing hardware
+   - Alex maximizes profit with wide hardware compatibility (4)
+   - Blake benefits from profit sharing and high sales volume (4)
+
+3. (A2, B1): Alex develops open-source software, Blake designs custom hardware
+   - Alex faces limited adoption and profit (1)
+   - Blake benefits from hardware sales without software competition (3)
+
+4. (A2, B2): Alex develops open-source software, Blake adapts existing hardware
+   - Alex achieves wider adoption but less profit (2)
+   - Blake experiences moderate sales (2)
+
+Alex prefers scenarios that maximize profit, especially those involving proprietary software. Blake's preferences are more balanced, favoring scenarios that either maximize profit sharing or guarantee hardware sales without software competition.
+
+The optimal outcome for both (4,4) occurs when Alex develops proprietary software and Blake adapts an existing hardware platform. However, if they don't communicate effectively, they might end up in a suboptimal scenario.
+
+Their challenge is to navigate their individual preferences and potential for competition to achieve the best collective outcome for their startup.
+[/Scenario]

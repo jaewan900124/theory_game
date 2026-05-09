@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Captain Ava Chen, leader of the Earth Space Agency (ESA)",
+  "B": "Dr. Zack Miller, head scientist of the Martian Colony Project (MCP)"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share advanced propulsion technology",
+  "A2": "Keep advanced propulsion technology secret",
+  "B1": "Share Martian terraforming research",
+  "B2": "Keep Martian terraforming research secret"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain terraforming research while keeping propulsion technology",
+    3: "Both parties share their technologies",
+    2: "Share propulsion technology without gaining terraforming research",
+    1: "Neither party shares their technologies"
+  },
+  "B": {
+    4: "Gain propulsion technology while keeping terraforming research",
+    3: "Gain propulsion technology and share terraforming research",
+    2: "Neither party shares their technologies",
+    1: "Share terraforming research without gaining propulsion technology"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 2 |
+| A2    | 1 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+The year is 2075, and humanity's efforts to explore and colonize Mars are in full swing. Captain Ava Chen, the brilliant leader of the Earth Space Agency (ESA), has recently developed a groundbreaking propulsion technology that could revolutionize space travel. Meanwhile, Dr. Zack Miller, the head scientist of the Martian Colony Project (MCP), has made significant strides in terraforming research that could accelerate the process of making Mars habitable.
+
+Both leaders face a crucial decision: whether to share their respective technologies or keep them secret. The outcome of their choices will significantly impact the future of space exploration and human colonization of Mars.
+
+If both parties choose to share their technologies (A1, B1), it would lead to rapid advancements in both space travel and Mars colonization. This scenario is the second-best outcome for Ava (3) and the best possible result for Zack (4).
+
+If Ava shares the propulsion technology but Zack keeps the terraforming research secret (A1, B2), both parties would be in a suboptimal situation. Ava would lose her technological advantage without gaining valuable terraforming knowledge, ranking this as her third-best outcome (2). Zack would miss out on the propulsion technology, also considering this his third-best scenario (2).
+
+If Ava keeps the propulsion technology secret while Zack shares the terraforming research (A2, B1), it would be the worst-case scenario for Ava (1) as she gains nothing and potentially slows down Earth's space exploration efforts. However, this would be the second-best outcome for Zack (3), as he gains access to the propulsion technology while sharing his research.
+
+Lastly, if both parties decide to keep their technologies secret (A2, B2), it would result in the best possible outcome for Ava (4) as she maintains her technological edge while gaining valuable terraforming information. For Zack, it's the worst-case scenario, ranking as his least preferred outcome (1), as he neither gains the propulsion technology nor benefits from sharing his research.
+
+As both leaders contemplate their decisions, they must consider not only their own interests but also the broader implications for humanity's future in space. Will they choose cooperation and mutual benefit, or will they prioritize their own advantages at the cost of overall progress? The tension between individual gain and collective advancement in space exploration hangs in the balance, waiting for their crucial decisions.
+[/Scenario]

@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Anderson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the infrastructure bill",
+  "A2": "Oppose the infrastructure bill",
+  "B1": "Allocate funds to urban areas",
+  "B2": "Allocate funds to rural areas"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Support the bill and funds go to rural areas",
+    3: "Oppose the bill and funds go to urban areas",
+    2: "Oppose the bill and funds go to rural areas",
+    1: "Support the bill and funds go to urban areas"
+  },
+  "B": {
+    4: "Bill is supported and funds go to rural areas",
+    3: "Bill is opposed and funds go to rural areas",
+    2: "Bill is supported and funds go to urban areas",
+    1: "Bill is opposed and funds go to urban areas"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Urban) | B2 (Rural) |
+|-------|------------|------------|
+| A1 (Support) | 1 \ 2 | 4 \ 4 |
+| A2 (Oppose) | 3 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the state of Newland, a crucial infrastructure bill is up for debate. Senator Sarah Thompson and Governor Mark Anderson find themselves at the center of this political decision-making process.
+
+Senator Thompson, representing a largely rural constituency, must decide whether to support or oppose the infrastructure bill. Her primary concern is securing funding for rural development, but she also needs to consider her overall political standing.
+
+Governor Anderson, on the other hand, has the power to influence where the funds will be allocated if the bill passes. He can choose to direct the funds primarily to urban areas, which would please his urban base, or to rural areas, which could expand his political influence.
+
+Their choices and the resulting scenarios are as follows:
+
+1. If Thompson supports the bill and Anderson allocates to urban areas, Thompson's rural base might feel betrayed (1), while Anderson moderately satisfies his urban supporters (2).
+
+2. If Thompson supports the bill and Anderson allocates to rural areas, both politicians achieve their best outcomes (4,4). Thompson secures rural funding, and Anderson expands his influence.
+
+3. If Thompson opposes the bill and Anderson allocates to urban areas, Thompson maintains her principles and rural support (3), but Anderson faces backlash from rural areas and minimal urban appreciation (1).
+
+4. If Thompson opposes the bill and Anderson allocates to rural areas, Thompson partially satisfies her base but misses out on immediate funding (2), while Anderson gains some rural support despite the bill's failure (3).
+
+The politicians must navigate this complex situation, balancing their personal political interests with the needs of their constituents. Their decisions will not only impact the infrastructure development of Newland but also shape their political futures.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a small bakery owner",
+  "B": "Lucas, owner of a neighboring coffee shop"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Maintain current prices",
+  "B2": "Offer bundled deals with Emma's bakery"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain prices while Lucas offers bundled deals",
+    3: "Lower prices while Lucas maintains prices",
+    2: "Lower prices while Lucas offers bundled deals",
+    1: "Both maintain current prices"
+  },
+  "B": {
+    4: "Offer bundled deals while Emma maintains prices",
+    3: "Both maintain current prices",
+    2: "Both offer deals (bundled deals for Lucas, lower prices for Emma)",
+    1: "Offer bundled deals while Emma lowers prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Maintain prices (B1) | Offer bundled deals (B2) |
+|---------------|----------------------|--------------------------|
+| Maintain prices (A1) | 1 \ 3               | 4 \ 4                    |
+| Lower prices (A2)    | 2 \ 2               | 3 \ 1                    |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling downtown area, Emma's Bakery and Lucas's Coffee Shop sit side by side, catering to the local community's sweet tooth and caffeine cravings. As small business owners, Emma and Lucas are constantly strategizing to maintain their customer base and increase profits.
+
+Emma is considering whether to maintain her current prices or lower them to attract more customers. She knows that lowering prices might bring in more foot traffic but could also cut into her profits. On the other hand, Lucas is debating whether to keep his prices as they are or offer bundled deals in partnership with Emma's Bakery.
+
+Their decisions will impact not only their individual businesses but also their relationship as neighboring shop owners. The potential outcomes are as follows:
+
+1. If both Emma and Lucas maintain their current prices, it's business as usual. This is Emma's least preferred outcome (1) as she fears losing customers to competitors, while it's Lucas's second-best scenario (3) as he maintains his profit margins.
+
+2. If Emma lowers her prices while Lucas maintains his, Emma sees a moderate increase in customers (2), while Lucas experiences a slight dip in business (2).
+
+3. If Emma maintains her prices and Lucas offers bundled deals with her bakery, both benefit significantly. This is the most preferred outcome for both (4/4) as it drives more customers to both shops without sacrificing individual profit margins.
+
+4. If Emma lowers her prices and Lucas offers bundled deals, Emma sees some benefit (3) but not as much as she hoped, while Lucas finds this to be his least preferred outcome (1) as the combined lower prices significantly cut into his profits.
+
+As they both contemplate their choices, Emma and Lucas must consider not only their immediate gains but also the long-term implications for their businesses and their neighborly relationship. Will they choose cooperation or competition? The decision they make today could shape the future of their small business community.
+[/Scenario]

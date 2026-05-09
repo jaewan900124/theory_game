@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a taxi driver",
+  "B": "Ben, a ride-sharing app driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Operate in the city center",
+  "A2": "Operate in the suburbs",
+  "B1": "Operate in the city center",
+  "B2": "Operate in the suburbs"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Operate alone in the suburbs",
+    3: "Share the city center with B",
+    2: "Share the city center with B",
+    1: "Compete with B in the city center"
+  },
+  "B": {
+    4: "Operate alone in the city center",
+    3: "Share the city center with A",
+    2: "Operate alone in the suburbs",
+    1: "Compete with A in the city center"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (City Center) | B2 (Suburbs) |
+|-------|-------------------|--------------|
+| A1 (City Center) | 2 \ 4             | 3 \ 3        |
+| A2 (Suburbs)     | 1 \ 1             | 4 \ 2        |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling metropolitan area, Alex, a seasoned taxi driver, and Ben, a tech-savvy ride-sharing app driver, find themselves in a daily dilemma about where to operate their services. They each have two choices: to work in the busy city center or the quieter suburbs.
+
+Alex prefers the suburbs when he can operate there alone, as it offers steady fares with less competition. His second and third choices are sharing the city center with Ben, which still provides decent income. His least preferred scenario is competing directly with Ben in the city center, which leads to fierce competition and lower earnings.
+
+Ben, on the other hand, strongly prefers to have the city center to himself, as it offers the highest number of ride requests and better profits. His second choice is sharing the city center with Alex, which still provides good income. Operating alone in the suburbs is his third choice, while his least preferred option is competing with Alex in the city center, which reduces his earnings significantly.
+
+If both choose to operate in the city center (A1, B1), they face intense competition. This scenario is moderately good for Alex (2) but ideal for Ben (4), as Ben's app-based service tends to attract more customers in the urban area.
+
+If Alex stays in the city center while Ben moves to the suburbs (A1, B2), they both benefit from reduced competition, resulting in a fair outcome for both (3, 3).
+
+If Alex operates in the suburbs while Ben stays in the city center (A2, B1), it's the worst-case scenario for both (1, 1). Alex loses access to the lucrative city market, while Ben faces increased competition from other ride-sharing drivers in the absence of traditional taxis.
+
+Finally, if both choose to operate in the suburbs (A2, B2), it's ideal for Alex (4) as he performs better in this setting, but less favorable for Ben (2) who loses access to his preferred urban customer base.
+
+This situation creates a complex dynamic where cooperation could lead to a balanced outcome, but the temptation to maximize individual gains might lead to suboptimal results for both drivers.
+[/Scenario]

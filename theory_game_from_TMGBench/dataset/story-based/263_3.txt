@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Captain Zara, commander of the Earth Space Agency's (ESA) flagship vessel",
+  "B": "Dr. Xen, lead scientist of the Alien Research Institute (ARI)"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share the newly discovered alien artifact",
+  "A2": "Keep the artifact secret for ESA's exclusive study",
+  "B1": "Collaborate on research",
+  "B2": "Conduct independent research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep the artifact secret while ARI conducts independent research",
+    3: "Share the artifact and collaborate on research",
+    2: "Keep the artifact secret while collaborating with ARI",
+    1: "Share the artifact while ARI conducts independent research"
+  },
+  "B": {
+    4: "Collaborate on shared artifact research",
+    3: "Conduct independent research on the shared artifact",
+    2: "Collaborate on research with ESA keeping the artifact secret",
+    1: "Conduct independent research without access to the artifact"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 1 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2150, humanity's space exploration efforts have led to the discovery of an ancient alien artifact on a distant exoplanet. Captain Zara of the Earth Space Agency (ESA) has recovered this mysterious object, which could potentially revolutionize our understanding of extraterrestrial life and advanced technologies.
+
+As news of the discovery spreads, Dr. Xen from the Alien Research Institute (ARI) reaches out to Captain Zara, proposing a collaboration to study the artifact. Both parties now face a crucial decision that will shape the future of space exploration and scientific advancement.
+
+Captain Zara must decide whether to share the artifact with ARI or keep it secret for ESA's exclusive study. Meanwhile, Dr. Xen must choose between collaborating with ESA or conducting independent research, regardless of Zara's decision.
+
+Captain Zara's ideal scenario is to keep the artifact secret while ARI conducts independent research, allowing ESA to maintain control over the discovery while benefiting from ARI's separate findings. Her second preference is to share the artifact and collaborate, fostering goodwill and pooling resources. Her least desired outcome is sharing the artifact while ARI conducts independent research, potentially losing control over the discovery without the benefits of collaboration.
+
+Dr. Xen's most preferred outcome is collaborating on shared artifact research, maximizing the potential for groundbreaking discoveries. His second choice is to conduct independent research on the shared artifact, maintaining ARI's autonomy while still having access to the object. His least preferred scenario is conducting independent research without access to the artifact, severely limiting ARI's ability to contribute to this monumental discovery.
+
+The choices made by Captain Zara and Dr. Xen will not only affect their respective organizations but also the future of human knowledge about alien civilizations and potentially life-changing technologies. Their decision to cooperate or compete could set a precedent for future space exploration endeavors and shape humanity's approach to extraterrestrial discoveries.
+[/Scenario]

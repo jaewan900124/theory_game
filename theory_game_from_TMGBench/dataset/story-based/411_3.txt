@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Beth, a project manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use existing technology",
+  "A2": "Develop new custom solution",
+  "B1": "Allocate minimal resources",
+  "B2": "Allocate substantial resources"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop new custom solution with substantial resources",
+    3: "Use existing technology with substantial resources",
+    2: "Develop new custom solution with minimal resources",
+    1: "Use existing technology with minimal resources"
+  },
+  "B": {
+    4: "Use existing technology with substantial resources",
+    3: "Use existing technology with minimal resources",
+    2: "Develop new custom solution with substantial resources",
+    1: "Develop new custom solution with minimal resources"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Minimal)   | B2 (Substantial) |
+|-------|----------------|-------------------|
+| A1 (Existing) | 1 \ 3         | 3 \ 4            |
+| A2 (New)      | 2 \ 1         | 4 \ 2            |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Beth work for a tech startup developing a new project management software. They need to decide on the approach for implementing a crucial feature.
+
+Alex, an innovative software developer, is eager to showcase his skills by developing a custom solution (A2). He believes this will lead to a more efficient and unique product, potentially giving their startup a competitive edge. However, this approach requires more time and resources.
+
+Beth, the pragmatic project manager, is more inclined to use existing technology (B1) to ensure the project stays within budget and timeline constraints. She's concerned about the risks associated with developing a new solution from scratch.
+
+Their choices create four possible scenarios:
+
+1. If Alex uses existing technology (A1) and Beth allocates minimal resources (B1), the project will be completed quickly and cheaply, but without any standout features. This is Alex's least preferred outcome (1) but acceptable for Beth (3).
+
+2. If Alex uses existing technology (A1) and Beth allocates substantial resources (B2), they'll have a solid, well-supported product. This is Beth's most preferred outcome (4) and good for Alex (3).
+
+3. If Alex develops a new solution (A2) with minimal resources (B1), the project risks delays and bugs. This is Beth's least preferred outcome (1) but slightly better for Alex (2) than using existing tech with minimal resources.
+
+4. If Alex develops a new solution (A2) with substantial resources (B2), they could potentially create an innovative, market-leading product. This is Alex's most preferred outcome (4) but not ideal for Beth (2) due to the increased risk and resource allocation.
+
+The challenge lies in finding a balance between innovation and practicality, risk and stability. Their decision will significantly impact the project's success and potentially the startup's future.
+[/Scenario]

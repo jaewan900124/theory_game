@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Alexander",
+  "B": "Admiral Beatrice"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Launch a land-based attack",
+  "A2": "Fortify defensive positions",
+  "B1": "Conduct a naval blockade",
+  "B2": "Deploy amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successful land-based attack with naval support",
+    3: "Fortified defense against naval blockade",
+    2: "Fortified defense against amphibious assault",
+    1: "Failed land-based attack against naval blockade"
+  },
+  "B": {
+    4: "Successful amphibious assault with land forces engaged",
+    3: "Effective naval blockade against land-based attack",
+    2: "Amphibious assault against fortified positions",
+    1: "Failed naval blockade against fortified positions"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 4 \ 4 |
+| A2    | 3 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Alexander of the land forces and Admiral Beatrice of the naval fleet must decide on their strategies to gain control of a strategic coastal region.
+
+General Alexander has two options: launch a land-based attack (A1) or fortify defensive positions (A2). Admiral Beatrice can either conduct a naval blockade (B1) or deploy an amphibious assault (B2).
+
+If Alexander launches a land-based attack while Beatrice conducts a naval blockade (A1, B1), Alexander's forces will struggle against the blockade, resulting in his least preferred outcome (1). Beatrice, however, will achieve a moderately successful blockade (3).
+
+If Alexander fortifies his positions and Beatrice attempts a blockade (A2, B1), Alexander's defenses will prove effective (3), while Beatrice's blockade will fail, resulting in her least preferred outcome (1).
+
+Should Alexander attack and Beatrice deploy an amphibious assault (A1, B2), both commanders will achieve their most preferred outcomes (4, 4) as the coordinated land and sea operations lead to a decisive victory for both.
+
+Lastly, if Alexander fortifies and Beatrice launches an amphibious assault (A2, B2), both will face a challenging stalemate, resulting in their second-least preferred outcomes (2, 2).
+
+As they contemplate their choices, both commanders must consider not only their own preferences but also anticipate the other's strategy to maximize their chances of success in this high-stakes military engagement.
+[/Scenario]

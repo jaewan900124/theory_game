@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local environmental conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products using local resources",
+  "A2": "Outsource production to reduce costs",
+  "B1": "Oppose any resource extraction from the local forest",
+  "B2": "Collaborate with EcoTech for sustainable resource use"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop eco-friendly products with local support",
+    3: "Develop eco-friendly products despite opposition",
+    2: "Outsource production with no local controversy",
+    1: "Outsource production while facing local opposition"
+  },
+  "B": {
+    4: "Collaborate for sustainable resource use",
+    3: "Successfully prevent any resource extraction",
+    2: "Unsuccessfully oppose local resource use",
+    1: "Allow unrestricted resource extraction"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 1 \ 3 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town nestled beside a lush forest, EcoTech, a sustainable technology company, is planning to expand its operations. The company is known for its innovative, eco-friendly products and is considering using local forest resources in its manufacturing process. However, their plans have caught the attention of GreenForest, a local environmental conservation group dedicated to protecting the area's natural resources.
+
+EcoTech (A) has two choices: they can either develop eco-friendly products using local resources (A1) or outsource their production to reduce costs (A2). GreenForest (B) also faces two options: they can either oppose any resource extraction from the local forest (B1) or collaborate with EcoTech for sustainable resource use (B2).
+
+If EcoTech chooses to develop eco-friendly products locally (A1) and GreenForest opposes any extraction (B1), EcoTech will face some challenges but can still proceed with their plans, resulting in their third-best outcome (3). GreenForest, while unsuccessful in completely preventing resource use, will have some influence on the process, achieving their second-best outcome (2).
+
+If EcoTech develops locally (A1) and GreenForest decides to collaborate (B2), both parties achieve their best possible outcome (4,4). EcoTech can create eco-friendly products with local support, while GreenForest ensures sustainable resource use through collaboration.
+
+If EcoTech decides to outsource production (A2) and GreenForest opposes local resource use (B1), EcoTech faces its worst outcome (1) due to negative publicity and local opposition. However, GreenForest achieves its second-best outcome (3) by successfully preventing local resource extraction.
+
+Finally, if EcoTech outsources (A2) and GreenForest collaborates (B2), EcoTech avoids local controversy but misses out on potential benefits of local production, resulting in their second-worst outcome (2). GreenForest faces its worst outcome (1) as they fail to protect local resources or influence sustainable practices.
+
+This scenario illustrates the complex dynamics between economic development and environmental conservation, highlighting the potential benefits of collaboration between businesses and environmental groups in achieving sustainable outcomes.
+[/Scenario]

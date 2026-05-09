@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a taxi driver",
+  "B": "Ben, a ride-sharing app driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Operate in the city center",
+  "A2": "Operate in the suburbs",
+  "B1": "Operate in the city center",
+  "B2": "Operate in the suburbs"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Operate alone in the city center",
+    3: "Operate alone in the suburbs",
+    2: "Share the suburbs with B",
+    1: "Share the city center with B",
+  },
+  "B": {
+    4: "Share the city center with A",
+    3: "Operate alone in the city center",
+    2: "Operate alone in the suburbs",
+    1: "Share the suburbs with A"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 3 \ 2 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling metropolitan area, Alex, a seasoned taxi driver, and Ben, a tech-savvy ride-sharing app driver, find themselves in a daily competition for passengers. Each morning, they must decide whether to operate in the busy city center or the quieter suburbs.
+
+Alex, with his years of experience, prefers to work alone. He knows the city center like the back of his hand and can navigate through traffic efficiently. However, he's also aware that competition there can be fierce, especially with the increasing presence of ride-sharing drivers. The suburbs, while less busy, offer him a steady stream of longer trips with less competition.
+
+Ben, on the other hand, relies heavily on his app's algorithms to find passengers. He knows that the city center offers a higher volume of short trips, which can add up quickly. However, he's also aware that traditional taxi drivers like Alex have a loyal customer base in the center. The suburbs present an opportunity for longer, more profitable trips, but with the risk of longer waiting times between rides.
+
+Their daily choices lead to four possible scenarios:
+
+1. If both choose the city center (A1, B1), Alex struggles with the intense competition, earning less (1), while Ben thrives on the high volume of short trips (4).
+
+2. If Alex chooses the city center and Ben the suburbs (A1, B2), Alex has the center to himself and earns the most (4), while Ben does reasonably well with longer suburban trips (3).
+
+3. If Alex chooses the suburbs and Ben the city center (A2, B1), Alex enjoys steady work with less competition (3), while Ben capitalizes on the absence of taxis in the center (2).
+
+4. If both choose the suburbs (A2, B2), Alex still manages to secure a decent number of rides due to his experience (2), while Ben struggles with longer wait times between trips (1).
+
+Each day, Alex and Ben must make their decision without knowing what the other will do, balancing their preferences and the potential outcomes in this ongoing transportation dilemma.
+[/Scenario]

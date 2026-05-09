@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly solar panels in the forest",
+  "A2": "Build a conventional power plant outside the forest",
+  "B1": "Collaborate with EcoTech on the solar panel project",
+  "B2": "Oppose any development in the forest area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Build conventional power plant with no opposition",
+    3: "Develop solar panels with collaboration",
+    2: "Develop solar panels despite opposition",
+    1: "Unable to develop any power source"
+  },
+  "B": {
+    4: "Solar panels developed with collaboration",
+    3: "No development in the forest",
+    2: "Solar panels developed despite opposition",
+    1: "Conventional power plant built outside forest"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 2 |
+| A2    | 1 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town surrounded by lush forests, EcoTech, a sustainable technology company, is planning to expand its operations. The company is considering two options: developing eco-friendly solar panels within the forest or building a conventional power plant outside the forest area. Meanwhile, GreenForest, a local conservation group, is closely monitoring the situation and weighing its options to either collaborate with EcoTech or oppose any development in the forest.
+
+EcoTech's primary goal is to establish a new power source, with a preference for the conventional power plant due to its higher energy output and profitability. However, they are open to the solar panel option if it means avoiding conflict with local groups. Their least preferred outcome is being unable to develop any power source at all.
+
+GreenForest, on the other hand, is primarily concerned with preserving the forest ecosystem. Their ideal scenario is collaborating on the solar panel project, as it allows for sustainable energy production while minimizing environmental impact. They are willing to oppose any development if necessary but would prefer a collaborative approach. Their least desired outcome is the construction of a conventional power plant, even if it's outside the forest, due to potential long-term environmental effects.
+
+If EcoTech chooses to develop solar panels (A1) and GreenForest decides to collaborate (B1), both parties benefit moderately. EcoTech gets to implement their project with local support, while GreenForest ensures the forest's protection and promotes sustainable energy.
+
+If EcoTech opts for solar panels (A1) but GreenForest opposes the project (B2), EcoTech still proceeds with a slightly better outcome due to the eco-friendly nature of the project, while GreenForest faces a less-than-ideal situation of development in the forest.
+
+If EcoTech decides to build a conventional power plant (A2) and GreenForest collaborates (B1), EcoTech faces setbacks in their plans, while GreenForest maintains some control over the situation.
+
+Finally, if EcoTech builds the conventional plant (A2) and GreenForest opposes (B2), EcoTech achieves its most preferred outcome, while GreenForest faces its worst-case scenario.
+
+This complex situation highlights the delicate balance between economic development and environmental conservation, showcasing how different choices can lead to varying outcomes for both parties involved.
+[/Scenario]

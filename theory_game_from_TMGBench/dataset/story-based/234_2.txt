@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emma, a small coffee shop owner",
+  "B": "Lucas, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Maintain current prices",
+  "B2": "Lower prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "B maintains prices while A lowers prices",
+    3: "Both maintain current prices",
+    2: "Both lower prices",
+    1: "A maintains prices while B lowers prices"
+  },
+  "B": {
+    4: "B maintains prices while A maintains prices",
+    3: "Both lower prices",
+    2: "Both maintain current prices",
+    1: "B lowers prices while A maintains prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 1 |
+| A2    | 3 \ 2 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling downtown area, Emma, a passionate small coffee shop owner, faces fierce competition from Lucas, the owner of a large coffee chain that recently opened a branch nearby. Both are contemplating their pricing strategies for the upcoming quarter.
+
+Emma's quaint coffee shop, "Bean There," has a loyal customer base but is feeling the pressure from the new chain store. She's considering whether to maintain her current prices or lower them to attract more customers. Emma prefers to lower her prices while Lucas maintains his, as this would give her a competitive edge. Her least preferred scenario is maintaining her prices while Lucas lowers his, potentially losing customers to the chain.
+
+Lucas, representing the coffee chain "JavaGiants," is confident in his brand's strength but wary of the local favorite. He's debating whether to maintain the chain's standard pricing or introduce a temporary price cut to establish dominance in the new market. Lucas' ideal scenario is for both to maintain current prices, allowing him to benefit from the chain's economies of scale. His least preferred outcome is lowering prices while Emma maintains hers, potentially starting a price war that could hurt profits.
+
+If both maintain their current prices, Emma will struggle but manage (payoff 1), while Lucas will thrive (payoff 4). If Emma lowers her prices while Lucas maintains his, Emma will see a significant boost in business (payoff 3), but Lucas will face some customer loss (payoff 2). If Lucas lowers prices while Emma maintains hers, Emma's business will suffer greatly (payoff 1), but Lucas won't gain as much as hoped due to the price cut (payoff 3). If both lower their prices, Emma will see some benefit from increased volume but reduced margins (payoff 2), while Lucas will maintain market share but with lower profits (payoff 3).
+
+As they both consider their options, Emma and Lucas must weigh the potential outcomes and decide on their pricing strategies, knowing that their decisions will significantly impact both businesses in this coffee shop showdown.
+[/Scenario]

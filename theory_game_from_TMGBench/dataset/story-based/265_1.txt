@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emily, a corporate lawyer",
+  "B": "Michael, Emily's client and CEO of a tech company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential issues",
+  "A2": "Advise minimal disclosure",
+  "B1": "Follow lawyer's advice",
+  "B2": "Ignore lawyer's advice"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Full disclosure, client follows advice",
+    3: "Full disclosure, client ignores advice",
+    2: "Minimal disclosure, client ignores advice",
+    1: "Minimal disclosure, client follows advice"
+  },
+  "B": {
+    4: "Full disclosure, follow advice",
+    3: "Minimal disclosure, follow advice",
+    2: "Minimal disclosure, ignore advice",
+    1: "Full disclosure, ignore advice"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 1 |
+| A2    | 1 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emily, a seasoned corporate lawyer, finds herself in a delicate situation with her client Michael, the CEO of a burgeoning tech company. The company is on the brink of going public, but Emily has uncovered some potential legal issues that could affect the IPO.
+
+Emily has two choices: she can advise full disclosure of these potential issues (A1) or suggest minimal disclosure (A2). Michael, in turn, can either follow Emily's advice (B1) or ignore it (B2).
+
+Emily's primary concern is maintaining her professional integrity and protecting her client's interests. She strongly prefers full disclosure, believing it's the best way to mitigate future legal risks. Her most preferred outcome is when she advises full disclosure and Michael follows her advice (A1B1). Even if Michael ignores her advice for full disclosure (A1B2), she still feels she's done her duty, making this her second preference. Her least preferred scenario is advising minimal disclosure and having Michael follow that advice (A2B1), as it could lead to future legal complications.
+
+Michael, focused on the success of the IPO, has different priorities. His most preferred outcome aligns with Emily's: full disclosure followed by compliance with that advice (A1B1). He recognizes the long-term benefits of transparency. However, if Emily advises minimal disclosure, he would prefer to follow that advice (A2B1) rather than ignore it. His least preferred scenario is receiving advice for full disclosure but choosing to ignore it (A1B2), as this could lead to severe legal consequences if discovered.
+
+The payoff matrix reflects these preferences, with the highest mutual benefit (3,4) occurring when Emily advises full disclosure and Michael complies. The scenario creates tension as Emily must decide whether to prioritize complete transparency or potentially compromise her principles for her client's short-term interests. Meanwhile, Michael grapples with the immediate impact on the IPO versus long-term legal security.
+
+Their decisions will not only affect the company's future but also their professional relationship and individual reputations in their respective fields. The story explores the ethical dilemmas and strategic considerations in corporate law, highlighting the delicate balance between legal obligation and client interests.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Erica Chen, a brilliant astrophysicist",
+  "B": "Captain Marcus Rodriguez, a seasoned space explorer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on deep space research",
+  "A2": "Develop interplanetary colonization technology",
+  "B1": "Explore nearby celestial bodies",
+  "B2": "Conduct long-range space missions"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop colonization tech while Captain explores long-range",
+    3: "Focus on deep space research while Captain explores nearby",
+    2: "Develop colonization tech while Captain explores nearby",
+    1: "Focus on deep space research while Captain explores long-range"
+  },
+  "B": {
+    4: "Conduct long-range missions while Dr. Chen focuses on deep space",
+    3: "Explore nearby while Dr. Chen develops colonization tech",
+    2: "Explore nearby while Dr. Chen focuses on deep space",
+    1: "Conduct long-range missions while Dr. Chen develops colonization tech"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 1 \ 4 |
+| A2    | 2 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2075, humanity stands at the threshold of a new era in space exploration. The United Earth Space Agency (UESA) is preparing for its most ambitious project yet: the Cosmic Horizon Initiative. This project aims to push the boundaries of human knowledge and presence in the cosmos.
+
+At the heart of this initiative are two key figures: Dr. Erica Chen, a brilliant astrophysicist known for her groundbreaking theories on dark matter, and Captain Marcus Rodriguez, a seasoned space explorer with numerous successful missions under his belt.
+
+UESA's board has given them the authority to decide the direction of the Cosmic Horizon Initiative, but they must agree on a strategy. Dr. Chen has two possible focuses for her research: deep space research (A1) or developing interplanetary colonization technology (A2). Meanwhile, Captain Rodriguez must choose between exploring nearby celestial bodies (B1) or conducting long-range space missions (B2).
+
+Dr. Chen's ultimate goal is to establish sustainable human presence beyond Earth. She believes that developing colonization technology while the Captain conducts long-range missions would provide the most comprehensive data and technological advancements (her most preferred outcome, 4). Her second preference is to focus on deep space research while the Captain explores nearby, as this would provide a solid foundation for future exploration (3). She considers developing colonization tech while the Captain stays close to be less efficient but still valuable (2). Her least preferred scenario is focusing on deep space research while the Captain goes on long-range missions, as she fears this might spread resources too thin (1).
+
+Captain Rodriguez, on the other hand, is driven by the thrill of discovery and pushing human boundaries in space. His ideal scenario is to conduct long-range missions while Dr. Chen focuses on deep space research, believing this would lead to the most exciting discoveries (his most preferred outcome, 4). He sees exploring nearby while Dr. Chen develops colonization tech as a solid, practical approach (3). Exploring nearby while Dr. Chen focuses on deep space is less exciting for him but still valuable (2). His least preferred option is conducting long-range missions while Dr. Chen develops colonization tech, as he fears this might be too ambitious and risky without proper theoretical groundwork (1).
+
+As they sit in the UESA boardroom, surrounded by holographic star maps and project proposals, Dr. Chen and Captain Rodriguez must make their decisions. The future of human space exploration hangs in the balance, dependent on whether these two visionaries can align their goals or if their differing priorities will lead them down separate paths. The outcome of their choices will shape humanity's cosmic destiny for generations to come.
+[/Scenario]

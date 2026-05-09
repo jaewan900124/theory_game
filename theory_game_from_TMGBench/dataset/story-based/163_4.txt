@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Jake, a graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data",
+  "A2": "Keep research data private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep data private while Jake works independently",
+    3: "Keep data private while Jake collaborates",
+    2: "Share data while Jake works independently",
+    1: "Share data while Jake collaborates"
+  },
+  "B": {
+    4: "Emma shares data while Jake collaborates",
+    3: "Emma keeps data private while Jake works independently",
+    2: "Emma shares data while Jake works independently",
+    1: "Emma keeps data private while Jake collaborates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Jake | Collaborate | Work Independently |
+|-------------|-------------|---------------------|
+| Share Data  | 1 \ 4       | 2 \ 2               |
+| Keep Private| 3 \ 1       | 4 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a respected sociology professor, is working on a groundbreaking research project about social media's impact on community dynamics. Jake, her ambitious graduate student, is eager to contribute to the field and make a name for himself.
+
+Emma has collected extensive data over the past year and must decide whether to share it with Jake or keep it private. Jake, on the other hand, needs to choose between collaborating with Emma on her project or working independently on his own research.
+
+Emma's ideal scenario is to keep her data private while Jake works independently (4), as this would allow her to maintain control over her research and potentially publish it first. Her second preference is to keep the data private while Jake collaborates (3), as she could benefit from his input without fully disclosing her findings. Sharing the data while Jake works independently (2) is less desirable, as it could lead to competing publications. Her least preferred option is sharing the data while Jake collaborates (1), as this might diminish her individual contribution to the field.
+
+Jake's most preferred outcome is for Emma to share her data while he collaborates on the project (4), as this would give him access to valuable information and the opportunity to work closely with a respected professor. His second choice is for Emma to keep the data private while he works independently (3), allowing him to pursue his own research without competition. If Emma shares the data but he works independently (2), he would have access to the information but miss out on direct collaboration. His least preferred scenario is when Emma keeps the data private and he collaborates (1), as he would be contributing to her work without gaining access to the full dataset.
+
+The situation creates a complex dynamic where both Emma and Jake must carefully consider their choices, balancing their personal career goals with the potential benefits of collaboration and data sharing in the academic world of sociology.
+[/Scenario]

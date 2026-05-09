@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah Thompson, a corporate lawyer",
+  "B": "Michael Chen, Sarah's client and CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential patent infringement",
+  "A2": "Advise minimal disclosure of potential patent infringement",
+  "B1": "Delay product launch for further investigation",
+  "B2": "Proceed with product launch as scheduled"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Minimal disclosure, product launched (protect client's interests while minimizing personal risk)",
+    3: "Full disclosure, launch delayed (ethically sound but may strain client relationship)",
+    2: "Full disclosure, product launched (ethically sound but high risk for client)",
+    1: "Minimal disclosure, launch delayed (potential for future legal complications)"
+  },
+  "B": {
+    4: "Full disclosure, product launched (maintain integrity while achieving business goals)",
+    3: "Minimal disclosure, product launched (achieve business goals with potential future risks)",
+    2: "Minimal disclosure, launch delayed (avoid immediate risk but delay profits)",
+    1: "Full disclosure, launch delayed (significant financial setback)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 2 \ 4 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah Thompson, a seasoned corporate lawyer, finds herself in a challenging situation with her client, Michael Chen, the CEO of a promising tech startup. Michael's company is on the brink of launching a revolutionary new product, but Sarah has uncovered information suggesting there might be potential patent infringement issues.
+
+Sarah must decide whether to advise full disclosure of the potential patent infringement (A1) or suggest minimal disclosure (A2). Meanwhile, Michael needs to choose between delaying the product launch for further investigation (B1) or proceeding with the launch as scheduled (B2).
+
+Sarah's primary concern is balancing her ethical obligations as a lawyer with her duty to protect her client's interests. She prefers minimal disclosure with the product launch proceeding (A2, B2) as it protects her client's interests while minimizing her personal risk. Her second preference is full disclosure with a delayed launch (A1, B1), which is ethically sound but may strain her relationship with Michael. Her third choice is full disclosure with the product launched (A1, B2), which is ethically correct but high-risk for her client. Her least preferred outcome is minimal disclosure with a delayed launch (A2, B1), as it could lead to future legal complications.
+
+Michael, on the other hand, is torn between his business goals and ethical considerations. His top preference is to proceed with full disclosure and launch the product (A1, B2), maintaining integrity while achieving his business objectives. His second choice is minimal disclosure with the product launch (A2, B2), which achieves his business goals but carries potential future risks. His third preference is minimal disclosure with a delayed launch (A2, B1), avoiding immediate risk but delaying profits. His least desired outcome is full disclosure with a delayed launch (A1, B1), resulting in a significant financial setback.
+
+As they sit across from each other in Sarah's office, the tension is palpable. Sarah knows that her advice could make or break Michael's company, while Michael grapples with the potential consequences of his decision. Both must carefully consider their options, weighing the short-term benefits against long-term risks, and decide whether to prioritize cooperation or competition in this high-stakes legal dilemma.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "TechCorp, a large technology company",
+  "B": "InnoStart, a small innovative startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate with InnoStart",
+  "A2": "Develop competing technology independently",
+  "B1": "Share technology with TechCorp",
+  "B2": "Keep technology proprietary"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop competing technology while InnoStart keeps it proprietary",
+    3: "Collaborate with InnoStart while they keep technology proprietary",
+    2: "Develop competing technology while InnoStart shares their technology",
+    1: "Collaborate with InnoStart while they share their technology"
+  },
+  "B": {
+    4: "TechCorp collaborates while InnoStart shares technology",
+    3: "Both collaborate while InnoStart keeps technology proprietary",
+    2: "TechCorp develops competing technology while InnoStart keeps it proprietary",
+    1: "TechCorp develops competing technology while InnoStart shares their technology"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| TechCorp \ InnoStart | Share technology (B1) | Keep proprietary (B2) |
+|-----------------------|-----------------------|------------------------|
+| Collaborate (A1)      | 1 \ 4                 | 3 \ 3                  |
+| Compete (A2)          | 2 \ 1                 | 4 \ 2                  |
+[/Payoff Matrix]
+
+[Scenario]
+In the fast-paced world of technology, TechCorp, a large and established company, finds itself at a crossroads. They've caught wind of a groundbreaking AI algorithm developed by InnoStart, a small but innovative startup. This algorithm has the potential to revolutionize the industry, and both companies are now faced with crucial decisions.
+
+TechCorp must choose whether to collaborate with InnoStart or to develop competing technology independently. Meanwhile, InnoStart needs to decide if they should share their technology with TechCorp or keep it proprietary.
+
+TechCorp's ideal scenario would be to develop competing technology while InnoStart keeps theirs proprietary. This would allow TechCorp to potentially outmaneuver the smaller company and dominate the market. Their least preferred outcome is collaborating with InnoStart while the startup openly shares its technology, as this could dilute TechCorp's market advantage.
+
+On the other hand, InnoStart's best-case scenario is for TechCorp to collaborate while InnoStart shares its technology. This would give the startup access to TechCorp's vast resources and market reach while still maintaining some control over their innovation. Their worst fear is TechCorp developing competing technology while InnoStart shares theirs, potentially leading to the startup losing its unique edge.
+
+If both companies choose to collaborate with InnoStart keeping its technology proprietary, it results in a mutually beneficial partnership, though not the ideal scenario for either party. If TechCorp competes while InnoStart shares their technology, it puts InnoStart at a significant disadvantage but isn't the best outcome for TechCorp either.
+
+As the CEOs of both companies sit down to negotiate, the tension is palpable. Each decision could make or break their respective futures in the cutthroat tech industry. Will they choose cooperation or competition? And how will their choices impact the future of AI technology?
+[/Scenario]

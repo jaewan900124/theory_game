@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a hospital administrator",
+  "B": "Dr. Mark Thompson, a leading surgeon"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new cost-cutting policy",
+  "A2": "Maintain current hospital practices",
+  "B1": "Support the new policy",
+  "B2": "Oppose the new policy"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain current practices with surgeon's opposition",
+    3: "Implement cost-cutting policy despite surgeon's opposition",
+    2: "Maintain current practices with surgeon's support",
+    1: "Implement cost-cutting policy with surgeon's support"
+  },
+  "B": {
+    4: "Implement cost-cutting policy with administrator's support",
+    3: "Implement cost-cutting policy despite his opposition",
+    2: "Maintain current practices with his support",
+    1: "Maintain current practices despite administrator's opposition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Support) | B2 (Oppose) |
+|-------|--------------|-------------|
+| A1 (Implement) | 1 \ 4 | 3 \ 3 |
+| A2 (Maintain) | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood General Hospital, Dr. Emma Chen, the hospital administrator, faces a complex decision regarding the implementation of a new cost-cutting policy. This policy aims to streamline operations and reduce expenses, potentially affecting various aspects of patient care and staff resources.
+
+Dr. Mark Thompson, a renowned surgeon at the hospital, plays a crucial role in influencing the success of this policy. His support or opposition could significantly impact its implementation and effectiveness.
+
+Dr. Chen's preferences are not straightforward. While she recognizes the potential benefits of the cost-cutting policy, she's most comfortable maintaining current practices, especially if it means avoiding conflict with Dr. Thompson. However, she's prepared to implement the new policy if necessary, even in the face of opposition.
+
+Dr. Thompson, surprisingly, is more open to change than initially thought. He sees potential benefits in the new policy, particularly if he can influence its implementation. His ideal scenario is supporting the cost-cutting measures, believing he can guide them to improve efficiency without compromising patient care.
+
+The situation creates four possible scenarios:
+
+1. If Dr. Chen implements the policy and Dr. Thompson supports it, it's the best outcome for Thompson but the worst for Chen (1 for Chen, 4 for Thompson). Chen worries about losing control over the changes.
+
+2. If Dr. Chen implements the policy and Dr. Thompson opposes it, both find it a moderately acceptable compromise (3 for Chen, 3 for Thompson).
+
+3. If Dr. Chen maintains current practices and Dr. Thompson supports this decision, it's a somewhat neutral outcome for both (2 for Chen, 2 for Thompson).
+
+4. If Dr. Chen maintains current practices despite Dr. Thompson's opposition, it's the best scenario for Chen but the worst for Thompson (4 for Chen, 1 for Thompson). Chen feels she's maintaining control, while Thompson feels frustrated at the missed opportunity for improvement.
+
+As they prepare for a crucial meeting to discuss the future of the hospital, both Dr. Chen and Dr. Thompson must carefully consider their choices and the potential outcomes. They realize that their decisions will significantly impact the hospital's future and the quality of patient care, but their individual preferences and concerns create a complex decision-making environment.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Alicia Chen, a brilliant astrophysicist",
+  "B": "Captain Brendan Hawkins, an experienced astronaut"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on Mars exploration",
+  "A2": "Focus on deep space research",
+  "B1": "Prioritize solo missions",
+  "B2": "Prioritize collaborative missions"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Focus on Mars exploration while Brendan prioritizes collaborative missions",
+    3: "Focus on deep space research while Brendan prioritizes solo missions",
+    2: "Focus on deep space research while Brendan prioritizes collaborative missions",
+    1: "Focus on Mars exploration while Brendan prioritizes solo missions"
+  },
+  "B": {
+    4: "Alicia focuses on Mars exploration while prioritizing solo missions",
+    3: "Focus on collaborative missions while Alicia focuses on deep space research",
+    2: "Alicia focuses on Mars exploration while prioritizing collaborative missions",
+    1: "Focus on solo missions while Alicia focuses on deep space research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Solo)   | B2 (Collaborative) |
+|-------|-------------|---------------------|
+| A1 (Mars) | 1 \ 4       | 4 \ 2               |
+| A2 (Deep Space) | 3 \ 1   | 2 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, the Global Space Agency (GSA) is at a crucial juncture in its space exploration program. Dr. Alicia Chen, a brilliant astrophysicist, and Captain Brendan Hawkins, an experienced astronaut, are tasked with determining the future direction of the agency's efforts.
+
+Alicia has two main research proposals: focusing on Mars exploration (A1) or pursuing deep space research (A2). She believes that Mars exploration could yield quicker results and potentially lead to human colonization, but she's also intrigued by the mysteries of deep space and the potential for groundbreaking discoveries.
+
+Brendan, on the other hand, must decide whether to prioritize solo missions (B1) or collaborative missions (B2). Solo missions would allow for more focused objectives and personal glory, while collaborative missions could pool resources and expertise for potentially greater achievements.
+
+Their preferences and the potential outcomes of their decisions are complex:
+
+Alicia's most preferred scenario (4) is focusing on Mars exploration while Brendan prioritizes collaborative missions. This would allow her to make significant progress on Mars with the full support of the agency's resources. Her least preferred scenario (1) is focusing on Mars while Brendan prioritizes solo missions, as this would limit the scope and impact of her research.
+
+Brendan's top preference (4) is to focus on solo missions while Alicia concentrates on Mars exploration. This would give him the freedom to pursue his own objectives while still being part of a high-profile mission. His least preferred scenario (1) is focusing on solo missions while Alicia pursues deep space research, as he feels this would leave him isolated and less relevant to the agency's main objectives.
+
+The GSA has made it clear that both Alicia and Brendan's decisions will significantly impact the future of space exploration. They must carefully consider their choices, knowing that their decisions will not only affect their personal careers but also the direction of human space exploration for years to come.
+
+As they sit across from each other in the GSA's strategy room, surrounded by star charts and mission proposals, Alicia and Brendan must make their choices. Will they prioritize personal preferences or find a way to collaborate for the greater good of space exploration? The future of humanity's journey to the stars hangs in the balance.
+[/Scenario]

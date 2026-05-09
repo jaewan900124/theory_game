@@ -1,0 +1,57 @@
+[Characters]
+{
+  "A": "Dr. Elena Vasquez, an astrophysicist",
+  "B": "Colonel Jack Harper, a military space strategist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on scientific research",
+  "A2": "Prioritize resource extraction",
+  "B1": "Maintain peaceful exploration",
+  "B2": "Establish military presence"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Prioritize resource extraction with peaceful exploration",
+    3: "Focus on scientific research with military presence",
+    2: "Prioritize resource extraction with military presence",
+    1: "Focus on scientific research with peaceful exploration"
+  },
+  "B": {
+    4: "Focus on scientific research with military presence",
+    3: "Prioritize resource extraction with peaceful exploration",
+    2: "Prioritize resource extraction with military presence",
+    1: "Focus on scientific research with peaceful exploration"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Peaceful) | B2 (Military) |
+|-------|---------------|---------------|
+| A1 (Research) | 1 \ 1 | 3 \ 4 |
+| A2 (Resources) | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, humanity has established its first permanent base on Mars. Dr. Elena Vasquez, a brilliant astrophysicist, and Colonel Jack Harper, a seasoned military space strategist, find themselves at the forefront of shaping the future of Mars exploration.
+
+Dr. Vasquez has two options: focus on scientific research (A1) or prioritize resource extraction (A2). She believes that resource extraction with peaceful exploration would yield the best results for scientific advancement and sustainability. However, she's concerned that a military presence might hinder scientific progress.
+
+Colonel Harper faces the choice of maintaining peaceful exploration (B1) or establishing a military presence (B2). He favors a scenario where scientific research continues under military protection, believing it ensures both progress and security.
+
+Their decisions will determine the course of Mars exploration:
+
+1. If both choose peaceful approaches (A1, B1), progress will be slow, and both will be least satisfied (1,1).
+2. If Vasquez focuses on research while Harper establishes military presence (A1, B2), it will lead to protected scientific advancement, highly favoring Harper but less ideal for Vasquez (3,4).
+3. If Vasquez prioritizes resources and Harper maintains peace (A2, B1), it results in efficient resource utilization with minimal conflict, favoring Harper more than Vasquez (2,3).
+4. If Vasquez focuses on resources and Harper establishes military presence (A2, B2), it leads to rapid resource extraction under military control, which is Vasquez's preferred outcome but less favorable for Harper (4,2).
+
+As they sit in the control room of the Mars base, tensions rise. The decision they make will shape not only the future of Mars exploration but potentially the course of human expansion into space. Will they find a way to cooperate, or will their conflicting interests lead to competition? The fate of Mars hangs in the balance as Dr. Vasquez and Colonel Harper prepare to make their choices.
+[/Scenario]

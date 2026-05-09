@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a sociology professor",
+  "B": "Mark Thompson, the head of the university's research funding committee"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pursue an innovative but risky research project",
+  "A2": "Conduct a conventional, safe research study",
+  "B1": "Allocate minimal funding",
+  "B2": "Provide substantial funding"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive substantial funding for the innovative project",
+    3: "Pursue the innovative project with minimal funding",
+    2: "Conduct the conventional study with minimal funding",
+    1: "Receive substantial funding for the conventional study"
+  },
+  "B": {
+    4: "Provide substantial funding for the innovative project",
+    3: "Allocate minimal funding for the conventional study",
+    2: "Provide substantial funding for the conventional study",
+    1: "Allocate minimal funding for the innovative project"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Minimal Funding) | B2 (Substantial Funding) |
+|-------|----------------------|--------------------------|
+| A1 (Innovative Project) | 3 \ 1 | 4 \ 4 |
+| A2 (Conventional Study) | 2 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Sarah Chen, a brilliant sociology professor, finds herself at a crucial crossroads in her academic career. She has conceived an innovative research project that could potentially revolutionize the field of urban sociology. However, the project is risky and unconventional, making it a hard sell to traditional funding bodies.
+
+On the other side of the table sits Mark Thompson, the head of the university's research funding committee. Mark is known for his pragmatic approach to allocating resources, always weighing the potential risks and rewards of each proposal.
+
+Sarah has two choices: she can either pursue her innovative but risky project (A1) or opt for a more conventional, safe research study (A2). Mark, in turn, can decide to allocate minimal funding (B1) or provide substantial financial support (B2) to whichever project Sarah chooses.
+
+Sarah's preference is clear: she's most excited about receiving substantial funding for her innovative project (A1B2), which would allow her to fully explore her groundbreaking ideas. Her second choice would be to pursue the innovative project even with minimal funding (A1B1), as she believes in its potential. Conducting the conventional study with minimal funding (A2B1) is her third choice, while receiving substantial funding for the conventional study (A2B2) is her least preferred option, as she feels it would be a waste of resources on an unexciting project.
+
+Mark's preferences are slightly different. His top choice is to provide substantial funding for the innovative project (A1B2), as he recognizes its potential impact on the field. His second preference is to allocate minimal funding for the conventional study (A2B1), which he sees as a safe, low-risk option. Providing substantial funding for the conventional study (A2B2) is his third choice, while allocating minimal funding for the innovative project (A1B1) is his least preferred option, as he believes it wouldn't be enough to yield meaningful results.
+
+As Sarah prepares to present her proposal to the committee, she must carefully consider her approach. Should she boldly pitch her innovative idea and hope for substantial funding, or should she play it safe with a conventional study? Meanwhile, Mark must decide whether to take a risk on Sarah's groundbreaking project or stick to safer, more traditional research allocations. Their decisions will not only shape Sarah's academic future but could also influence the direction of sociological research at the university.
+[/Scenario]

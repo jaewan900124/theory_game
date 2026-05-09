@@ -1,0 +1,64 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Davis"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Thompson for re-election",
+  "B2": "Remain neutral in Senate race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill without endorsement",
+    3: "Support bill without endorsement",
+    2: "Oppose bill and receive endorsement",
+    1: "Support bill and receive endorsement",
+  },
+  "B": {
+    4: "Senator supports bill and receives endorsement",
+    3: "Senator opposes bill without endorsement",
+    2: "Senator supports bill without endorsement",
+    1: "Senator opposes bill and receives endorsement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 2 |
+| A2    | 2 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling political landscape of a swing state, Senator Sarah Thompson and Governor Mark Davis find themselves at a crossroads. A bipartisan infrastructure bill is on the table, and their decisions could shape both the state's future and their own political careers.
+
+Senator Thompson, up for re-election, faces a dilemma. Supporting the bill could bring much-needed improvements to her state, but it might alienate her base. Opposing it could solidify her position with her core supporters but might be seen as obstructionist by moderates.
+
+Governor Davis, on the other hand, holds significant influence in the state. His endorsement could be crucial for Senator Thompson's re-election bid. However, he must weigh the political implications of his support or neutrality.
+
+Senator Thompson's choices are:
+A1: Support the bipartisan infrastructure bill
+A2: Oppose the bipartisan infrastructure bill
+
+Governor Davis's choices are:
+B1: Endorse Senator Thompson for re-election
+B2: Remain neutral in the Senate race
+
+Their preferences reveal complex political calculations:
+
+Senator Thompson would most prefer to oppose the bill without the Governor's endorsement (A2B2), as this would please her base without appearing to engage in political horse-trading. Her second choice would be to support the bill without the endorsement (A1B2), hoping to win over moderates while maintaining independence. Her third preference is to oppose the bill and receive the endorsement (A2B1), which might boost her re-election chances but could be seen as a political deal. Her least preferred outcome is supporting the bill and receiving the endorsement (A1B1), which might be viewed as compromising her principles for political gain.
+
+Governor Davis, however, would most prefer that the Senator supports the bill and receives his endorsement (A1B1), as this aligns with his vision for the state and maintains political harmony. His second choice would be for the Senator to oppose the bill without his endorsement (A2B2), keeping both their political identities intact. His third preference is for the Senator to support the bill without his endorsement (A1B2), achieving his policy goals without political entanglement. His least desired outcome is endorsing the Senator while she opposes the bill (A2B1), which could damage his reputation and policy objectives.
+
+As they navigate this political minefield, both Senator Thompson and Governor Davis must carefully consider their choices, knowing that their decisions will have far-reaching consequences for their careers and the state they serve. The tension between policy preferences, political independence, and electoral considerations creates a complex game where each player's best move depends on anticipating the other's action.
+[/Scenario]

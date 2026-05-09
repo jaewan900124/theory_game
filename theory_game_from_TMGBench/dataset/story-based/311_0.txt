@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a psychologist specializing in cognitive behavioral therapy",
+  "B": "Alex Chen, a patient struggling with social anxiety"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional therapy methods",
+  "A2": "Experiment with a new, unconventional approach",
+  "B1": "Actively participate in therapy sessions",
+  "B2": "Remain passive and resistant to treatment"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Patient improves significantly with new approach",
+    3: "Patient improves with traditional methods",
+    2: "Patient shows minimal improvement with traditional methods",
+    1: "Patient shows no improvement with new approach"
+  },
+  "B": {
+    4: "Overcome anxiety with minimal effort",
+    3: "Improve social skills through active participation",
+    2: "Experience slight improvement with passive resistance",
+    1: "No improvement despite active participation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 1 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson, a respected psychologist specializing in cognitive behavioral therapy, takes on a new patient, Alex Chen, who struggles with severe social anxiety. Emma must decide whether to use her tried-and-true traditional therapy methods or experiment with a new, unconventional approach she's been developing. Meanwhile, Alex has to choose between actively participating in the therapy sessions or remaining passive and resistant to treatment.
+
+Emma's primary goal is to help Alex overcome his anxiety while also advancing her professional knowledge. She knows that traditional methods (A1) are generally effective, but the new approach (A2) could potentially yield better results if successful. However, it also carries a higher risk of failure.
+
+Alex, on the other hand, wants to overcome his anxiety but is skeptical of therapy. He's torn between actively engaging in the process (B1), which requires effort and vulnerability, or remaining passive (B2), which feels safer but may limit his progress.
+
+If Emma chooses traditional methods (A1) and Alex actively participates (B1), Alex will show some improvement, and Emma will feel moderately satisfied with the outcome (2,3). If Emma uses traditional methods (A1) and Alex remains passive (B2), Alex might actually experience significant improvement due to the proven effectiveness of the approach, even with minimal effort on his part, leading to high satisfaction for both (4,4).
+
+If Emma experiments with the new approach (A2) and Alex actively participates (B1), the unfamiliarity of the method combined with Alex's effort might lead to poor results, frustrating both of them (1,1). However, if Emma uses the new approach (A2) and Alex remains passive (B2), the innovative technique might unexpectedly resonate with Alex, leading to moderate improvement for him and a sense of accomplishment for Emma (3,2).
+
+As they begin their first session, both Emma and Alex must make their choices, knowing that their decisions will significantly impact the course of Alex's treatment and their professional relationship.
+[/Scenario]

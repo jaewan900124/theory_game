@@ -1,0 +1,66 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new integrated health information system",
+  "A2": "Maintain the current separate record-keeping systems",
+  "B1": "Join the hospital's network and share patient data",
+  "B2": "Remain independent and keep separate patient records"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new system with physician cooperation",
+    3: "Implement new system without physician cooperation",
+    2: "Maintain current system with physician cooperation",
+    1: "Maintain current system without physician cooperation"
+  },
+  "B": {
+    4: "Join network with current hospital system",
+    3: "Remain independent with new hospital system",
+    2: "Join network with new hospital system",
+    1: "Remain independent with current hospital system"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 1 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the administrator of the local hospital, is facing a critical decision regarding the hospital's health information system. The current system is outdated and fragmented, leading to inefficiencies in patient care and increased costs. Dr. Chen is considering implementing a new integrated health information system that would streamline operations and improve patient outcomes.
+
+Meanwhile, Dr. Mark Johnson, a respected private practice physician in the community, is weighing his options regarding his practice's relationship with the hospital. He's been operating independently for years but recognizes the potential benefits of joining the hospital's network.
+
+Dr. Chen (A) has two choices:
+A1: Implement the new integrated health information system
+A2: Maintain the current separate record-keeping systems
+
+Dr. Johnson (B) also faces two options:
+B1: Join the hospital's network and share patient data
+B2: Remain independent and keep separate patient records
+
+Their decisions will impact each other and the overall healthcare landscape in the city. The payoff matrix reflects their preferences for different scenarios:
+
+If Dr. Chen implements the new system and Dr. Johnson joins the network (A1, B1), the hospital benefits moderately (2) while Dr. Johnson gains the most (4), as he gets access to a modern system without bearing the implementation costs.
+
+If Dr. Chen implements the new system but Dr. Johnson remains independent (A1, B2), the hospital benefits the most (4) due to increased efficiency, while Dr. Johnson still gains (3) from the improved coordination with the hospital despite remaining independent.
+
+If Dr. Chen maintains the current system and Dr. Johnson joins the network (A2, B1), both parties see minimal benefits (1 for the hospital, 2 for Dr. Johnson) due to the limitations of the outdated system.
+
+If Dr. Chen maintains the current system and Dr. Johnson remains independent (A2, B2), the hospital sees some benefit (3) from reduced complexity, but Dr. Johnson is worst off (1) due to continued inefficiencies and lack of integration.
+
+Dr. Chen must consider the potential responses of physicians like Dr. Johnson when making her decision, while Dr. Johnson needs to weigh the benefits of integration against his desire for independence. Their choices will shape the future of healthcare delivery in their community.
+[/Scenario]

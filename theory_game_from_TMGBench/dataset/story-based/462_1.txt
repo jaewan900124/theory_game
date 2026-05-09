@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Taylor, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept a full-time position at the startup",
+  "A2": "Work as an independent contractor for the startup",
+  "B1": "Offer a full-time position with benefits",
+  "B2": "Propose a contract-based arrangement"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work as an independent contractor with high pay",
+    3: "Work as an independent contractor with moderate pay",
+    2: "Accept a full-time position with good benefits",
+    1: "Accept a full-time position with limited benefits"
+  },
+  "B": {
+    4: "Hire Alex full-time with limited benefits",
+    3: "Hire Alex full-time with good benefits",
+    2: "Engage Alex as a contractor with moderate pay",
+    1: "Engage Alex as a contractor with high pay"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 2 \ 4 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, has been approached by Taylor, the CEO of a promising tech startup, for a potential employment opportunity. Both Alex and Taylor are faced with important decisions that will shape their professional relationship and the future of the startup.
+
+Alex has two options: accept a full-time position at the startup (A1) or work as an independent contractor (A2). Meanwhile, Taylor can either offer a full-time position with benefits (B1) or propose a contract-based arrangement (B2).
+
+Alex prefers the flexibility and potentially higher pay of contract work, with working as an independent contractor with high pay being his top choice (4), followed by contract work with moderate pay (3). He is less enthusiastic about full-time positions, preferring one with good benefits (2) over one with limited benefits (1).
+
+Taylor, on the other hand, is keen on securing Alex's talent for the long term. Her top preference is to hire Alex full-time with limited benefits (4), as it would be most cost-effective for the startup. Her second choice is to hire Alex full-time with good benefits (3), followed by engaging him as a contractor with moderate pay (2). Her least preferred option is to engage Alex as a contractor with high pay (1), as it would be the most expensive for the company.
+
+The payoff matrix reflects these preferences, showing how each combination of choices results in different outcomes for both parties. For instance, if Alex accepts a full-time position (A1) and Taylor offers a full-time position with benefits (B1), Alex receives his least preferred outcome (1), while Taylor achieves her second-best outcome (3).
+
+As they enter negotiations, both Alex and Taylor must carefully consider their options, weighing their personal preferences against the potential for a mutually beneficial arrangement. The outcome of their decisions will not only affect their individual satisfaction but also the dynamics of their working relationship and the startup's future success.
+[/Scenario]

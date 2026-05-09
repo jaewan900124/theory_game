@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, head of the hospital's research department"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Allocate more budget to patient care",
+  "A2": "Allocate more budget to hospital expansion",
+  "B1": "Focus on short-term clinical trials",
+  "B2": "Invest in long-term research projects"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "More budget for patient care, long-term research projects",
+    3: "More budget for hospital expansion, short-term clinical trials",
+    2: "More budget for hospital expansion, long-term research projects",
+    1: "More budget for patient care, short-term clinical trials"
+  },
+  "B": {
+    4: "More budget for patient care, long-term research projects",
+    3: "More budget for hospital expansion, long-term research projects",
+    2: "More budget for patient care, short-term clinical trials",
+    1: "More budget for hospital expansion, short-term clinical trials"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 4 \ 4 |
+| A2    | 3 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At City General Hospital, Dr. Sarah Chen, the hospital administrator, and Dr. Mark Johnson, head of the research department, are facing a crucial decision regarding the allocation of the annual budget. Their choices will significantly impact the hospital's future direction and patient care quality.
+
+Dr. Chen has two options: allocate more budget to patient care (A1) or invest in hospital expansion (A2). Meanwhile, Dr. Johnson must decide between focusing on short-term clinical trials (B1) or investing in long-term research projects (B2).
+
+Dr. Chen's top priority is improving patient care while supporting meaningful research. She believes that allocating more budget to patient care combined with long-term research projects (A1, B2) would yield the best results for the hospital's reputation and patient outcomes. Her second preference is expanding the hospital while conducting short-term clinical trials (A2, B1), as it could bring quick results and increased capacity. Her third choice would be hospital expansion with long-term research (A2, B2), and her least preferred option is increased patient care budget with short-term clinical trials (A1, B1), as she feels it lacks long-term vision.
+
+Dr. Johnson, on the other hand, is passionate about advancing medical knowledge but also understands the importance of patient care. His top preference aligns with Dr. Chen's: more budget for patient care coupled with long-term research projects (A1, B2). His second choice would be hospital expansion with long-term research (A2, B2), as it would provide more space and resources for his department. He ranks increased patient care budget with short-term clinical trials (A1, B1) third, and considers hospital expansion with short-term clinical trials (A2, B1) as his least preferred option, feeling it would limit the potential for groundbreaking discoveries.
+
+The payoff matrix reflects their preferences, with the optimal outcome for both being the scenario where they cooperate on increasing the patient care budget and investing in long-term research (A1, B2). However, if they fail to communicate effectively, they might end up in a suboptimal situation, such as focusing on hospital expansion and short-term clinical trials (A2, B1), which would satisfy some of Dr. Chen's goals but leave Dr. Johnson dissatisfied.
+
+As budget discussions begin, both Dr. Chen and Dr. Johnson must carefully consider their choices and try to find common ground. Their decision will not only affect the hospital's immediate future but also its long-term ability to provide quality care and contribute to medical advancements. The challenge lies in balancing immediate needs with long-term goals, and finding a way to align their preferences for the greater good of the hospital and its patients.
+[/Scenario]

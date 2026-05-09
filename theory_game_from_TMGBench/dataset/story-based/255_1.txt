@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Michael Thompson, a senior physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new electronic health record (EHR) system",
+  "A2": "Maintain the current paper-based record system",
+  "B1": "Support and actively use the new EHR system",
+  "B2": "Resist the change and continue using paper records"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement EHR with physician support",
+    3: "Implement EHR despite physician resistance",
+    2: "Maintain paper records with physician approval",
+    1: "Maintain paper records against physician wishes"
+  },
+  "B": {
+    4: "Implement EHR with physician support",
+    3: "Maintain paper records with physician approval",
+    2: "Maintain paper records against physician wishes",
+    1: "Implement EHR despite physician resistance"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 1 |
+| A2    | 2 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood General Hospital, Dr. Sarah Chen, the hospital administrator, is faced with a critical decision regarding the institution's record-keeping system. The current paper-based system is outdated and prone to errors, leading to inefficiencies in patient care and increased costs. Dr. Chen is considering implementing a new electronic health record (EHR) system to modernize the hospital's operations.
+
+However, the success of this transition largely depends on the cooperation of the medical staff, particularly the influential senior physician, Dr. Michael Thompson. Dr. Thompson, known for his traditional approach to medicine, has been skeptical about the benefits of digital systems in healthcare.
+
+Dr. Chen has two choices: implement the new EHR system (A1) or maintain the current paper-based system (A2). Similarly, Dr. Thompson can either support and actively use the new EHR system (B1) or resist the change and continue using paper records (B2).
+
+Both Dr. Chen and Dr. Thompson have different preferences for the possible outcomes:
+
+Dr. Chen's most preferred outcome (4) is to implement the EHR system with Dr. Thompson's support, as this would ensure a smooth transition and maximize the benefits of the new system. Her second preference (3) is to implement the EHR system even if Dr. Thompson resists, believing in the long-term benefits despite potential short-term challenges. Her third choice (2) is to maintain the paper records if Dr. Thompson strongly opposes the change, to avoid conflict. Her least preferred outcome (1) is to maintain the paper records against Dr. Thompson's wishes, as this would be both inefficient and create unnecessary tension.
+
+Dr. Thompson's most preferred outcome (4) is also to implement the EHR system with his support, recognizing the potential benefits if he can adapt to the new system. His second preference (3) is to maintain the paper records with his approval, as he's most comfortable with this system. His third choice (2) is to maintain paper records even if the administration pushes for change, as he believes he can still provide quality care this way. His least preferred outcome (1) is the implementation of the EHR system despite his resistance, as he fears this would negatively impact his work and patient care.
+
+The scenario presents a classic game theory situation where cooperation between the administrator and the physician would lead to the best outcome for both parties and the hospital as a whole. However, the fear of change and potential short-term disruptions could lead to suboptimal decisions if not carefully managed.
+[/Scenario]

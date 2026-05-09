@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Dr. Anika Sharma, a brilliant astrophysicist",
+  "B": "Captain Ethan Cruz, an experienced astronaut"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data openly",
+  "A2": "Keep research data confidential",
+  "B1": "Collaborate on mission planning",
+  "B2": "Plan mission independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep data confidential while Cruz plans independently",
+    3: "Share data openly while Cruz collaborates",
+    2: "Keep data confidential while Cruz collaborates",
+    1: "Share data openly while Cruz plans independently"
+  },
+  "B": {
+    4: "Sharma shares data openly while planning independently",
+    3: "Sharma shares data openly while collaborating",
+    2: "Sharma keeps data confidential while collaborating",
+    1: "Sharma keeps data confidential while planning independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 1 \ 4 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, humanity stands on the brink of a groundbreaking space exploration mission to Europa, Jupiter's icy moon. Dr. Anika Sharma, a brilliant astrophysicist, has made a revolutionary discovery about potential life-sustaining conditions beneath Europa's surface. Captain Ethan Cruz, an experienced astronaut, has been selected to lead the first manned mission to the distant moon.
+
+As the mission's launch date approaches, both Dr. Sharma and Captain Cruz face crucial decisions that will significantly impact the success of the expedition and their individual careers.
+
+Dr. Sharma must decide whether to share her research data openly with the entire scientific community or keep it confidential, sharing it only with a select few. Sharing openly could accelerate mission preparations and potentially save lives, but it might also allow other scientists to claim credit for her work. Keeping the data confidential would protect her intellectual property but could hinder the mission's progress.
+
+Captain Cruz needs to determine whether to collaborate closely with Dr. Sharma on mission planning or to plan the mission independently based on his vast experience. Collaboration could lead to a more comprehensive approach, but it might also limit his decision-making autonomy during the mission.
+
+Their choices create four possible scenarios:
+
+1. If Sharma shares data openly and Cruz collaborates (A1, B1), both benefit from a well-prepared mission, though neither gains a significant advantage over the other (3, 3).
+
+2. If Sharma shares data but Cruz plans independently (A1, B2), Cruz gains a significant advantage by having access to crucial information while maintaining full control over the mission (1, 4).
+
+3. If Sharma keeps data confidential and Cruz collaborates (A2, B1), both face challenges due to limited information sharing, potentially compromising the mission's success (2, 2).
+
+4. If Sharma keeps data confidential and Cruz plans independently (A2, B2), Sharma maintains control over her research while Cruz struggles with limited information, potentially endangering the mission (4, 1).
+
+As the clock ticks down to launch, Dr. Sharma and Captain Cruz must weigh their personal interests against the greater good of the mission and humanity's quest for knowledge. Their decisions will not only shape the outcome of this historic expedition but also set a precedent for future space exploration endeavors.
+[/Scenario]

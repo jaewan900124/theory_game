@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Sarah, a defense attorney",
+  "B": "Mark, the district attorney"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Proceed to trial",
+  "A2": "Negotiate a plea bargain",
+  "B1": "Offer a lenient plea deal",
+  "B2": "Push for a harsh sentence"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successfully negotiate a favorable plea bargain",
+    3: "Win the case at trial",
+    2: "Lose the case at trial but with a reasonable sentence",
+    1: "Lose the case at trial with a harsh sentence"
+  },
+  "B": {
+    4: "Win the case at trial with a harsh sentence",
+    3: "Secure a plea bargain with a reasonable sentence",
+    2: "Offer a lenient plea deal that's accepted",
+    1: "Lose the case at trial"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 1 \ 4 |
+| A2    | 3 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a seasoned defense attorney, finds herself representing a high-profile client accused of white-collar fraud. On the other side of the courtroom, Mark, the ambitious district attorney, is determined to make an example of this case to boost his political career.
+
+Sarah has two options: she can either proceed to trial (A1) or negotiate a plea bargain (A2). Mark, in turn, can offer a lenient plea deal (B1) or push for a harsh sentence (B2).
+
+Sarah's primary goal is to secure the best possible outcome for her client. Her most preferred scenario is successfully negotiating a favorable plea bargain (4), followed by winning the case at trial (3). Her least desired outcomes are losing the case at trial, either with a reasonable sentence (2) or, worst of all, with a harsh sentence (1).
+
+Mark, driven by his career ambitions, would ideally like to win the case at trial with a harsh sentence (4). His second preference is securing a plea bargain with a reasonable sentence (3), followed by offering a lenient plea deal that's accepted (2). His least preferred outcome is losing the case at trial (1).
+
+If Sarah decides to proceed to trial (A1) and Mark offers a lenient plea deal (B1), Sarah would achieve her third-best outcome (2) as she might lose the case but with a reasonable sentence, while Mark would face his least preferred scenario (1) of losing the case.
+
+If Sarah goes to trial (A1) and Mark pushes for a harsh sentence (B2), Sarah would face her worst-case scenario (1) of losing with a harsh sentence, while Mark would achieve his most desired outcome (4) of winning with a harsh sentence.
+
+If Sarah negotiates a plea bargain (A2) and Mark offers a lenient deal (B1), Sarah would achieve her best outcome (3) of a favorable plea bargain, while Mark would get his third-best result (2) of a lenient plea deal being accepted.
+
+Finally, if Sarah negotiates a plea bargain (A2) and Mark pushes for a harsh sentence (B2), they would both achieve their second-best outcomes (4 for Sarah, 3 for Mark) by agreeing on a plea bargain with a reasonable sentence.
+
+As the trial date approaches, Sarah and Mark must carefully consider their strategies, weighing the potential risks and rewards of each choice in this high-stakes legal battle.
+[/Scenario]

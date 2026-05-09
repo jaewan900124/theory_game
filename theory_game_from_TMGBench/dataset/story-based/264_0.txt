@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, an up-and-coming abstract painter",
+  "B": "Lucas, the owner of a prestigious art gallery"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde piece",
+  "A2": "Produce a safe, commercially appealing work",
+  "B1": "Feature Emma's work in a solo exhibition",
+  "B2": "Include Emma's work in a group show"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a provocative piece and have it featured in a solo exhibition",
+    3: "Create a provocative piece and have it included in a group show",
+    2: "Produce a safe work and have it included in a group show",
+    1: "Produce a safe work and have it featured in a solo exhibition"
+  },
+  "B": {
+    4: "Feature a provocative piece in a solo exhibition",
+    3: "Include a safe work in a group show",
+    2: "Include a provocative piece in a group show",
+    1: "Feature a safe work in a solo exhibition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Solo Exhibition (B1) | Group Show (B2) |
+|---------------|----------------------|-----------------|
+| Provocative (A1) | 3 \ 4               | 4 \ 1           |
+| Safe (A2)        | 1 \ 2               | 2 \ 3           |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, an up-and-coming abstract painter, finds herself at a crossroads in her career. She has caught the attention of Lucas, the owner of a prestigious art gallery known for launching the careers of cutting-edge artists. Lucas is considering featuring Emma's work in his gallery but is unsure whether to give her a solo exhibition or include her in a group show.
+
+Emma must decide between creating a provocative, avant-garde piece that truly represents her artistic vision or producing a safer, more commercially appealing work that might have broader appeal. Her preference is to create something bold and have it featured prominently, but she's also aware of the need to establish herself in the art world.
+
+Lucas, on the other hand, is torn between his passion for groundbreaking art and the commercial realities of running a successful gallery. He would love to feature a provocative piece in a solo exhibition, as it could generate buzz and cement his gallery's reputation for discovering new talent. However, he's also mindful of the financial risks involved.
+
+If Emma creates a provocative piece and Lucas features it in a solo exhibition, it could be a major breakthrough for both of them (Emma: 3, Lucas: 4). This scenario aligns perfectly with Lucas's top preference but is Emma's second-best outcome.
+
+If Emma goes for the provocative piece and Lucas includes it in a group show, Emma would be thrilled to have her vision on display, even if it's not as prominent (Emma: 4). However, Lucas would be disappointed to not give such a striking work the spotlight it deserves (Lucas: 1).
+
+If Emma produces a safe work and Lucas includes it in a group show, it would be a moderate success for both (Emma: 2, Lucas: 3). This scenario is Lucas's second-best outcome but Emma's third choice.
+
+Finally, if Emma creates a safe piece and Lucas features it in a solo exhibition, it would be the least preferred outcome for both (Emma: 1, Lucas: 2). Emma would feel she compromised her vision without gaining the exposure she hoped for, while Lucas would feel he missed an opportunity to showcase truly innovative art.
+
+As they contemplate their decisions, both Emma and Lucas must weigh their artistic integrity against practical considerations, knowing that their choices will have significant implications for their respective careers in the competitive world of contemporary art.
+[/Scenario]

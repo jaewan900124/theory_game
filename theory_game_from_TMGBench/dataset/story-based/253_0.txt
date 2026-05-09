@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a daily commuter",
+  "B": "Blake, a ride-sharing driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Take public transit",
+  "A2": "Request a ride-share",
+  "B1": "Accept ride requests",
+  "B2": "Decline ride requests"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a ride-share quickly",
+    3: "Take public transit comfortably",
+    2: "Wait longer for a ride-share",
+    1: "Take crowded public transit"
+  },
+  "B": {
+    4: "Accept rides during high demand",
+    3: "Have free time during low demand",
+    2: "Accept rides during low demand",
+    1: "Miss out on potential earnings"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept) | B2 (Decline) |
+|-------|-------------|--------------|
+| A1 (Public) | 3 \ 4      | 4 \ 2       |
+| A2 (Ride-share) | 2 \ 1      | 1 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Alex, a daily commuter, faces a transportation dilemma every morning. He can either take public transit or request a ride-share. His decision is influenced by Blake, a ride-sharing driver, who can choose to accept or decline ride requests.
+
+Alex prefers getting a ride-share quickly (4) but also enjoys taking public transit when it's comfortable (3). His least preferred option is taking crowded public transit (1), while waiting longer for a ride-share is slightly better (2).
+
+Blake, on the other hand, prefers accepting rides during high demand periods (4) as it maximizes earnings. Having free time during low demand (3) is her next preference, followed by accepting rides during low demand (2). Her least preferred scenario is missing out on potential earnings (1).
+
+Their choices create four possible scenarios:
+
+1. If Alex takes public transit (A1) and Blake accepts ride requests (B1), Alex has a comfortable commute (3) while Blake earns well during high demand (4).
+
+2. If Alex takes public transit (A1) and Blake declines ride requests (B2), Alex enjoys an even more comfortable ride due to less crowded transit (4), but Blake misses out on moderate earnings (2).
+
+3. If Alex requests a ride-share (A2) and Blake accepts (B1), Alex faces a longer wait due to high demand (2), while Blake earns less during this low-demand period (1).
+
+4. If Alex requests a ride-share (A2) and Blake declines (B2), Alex is forced to take crowded public transit (1), but Blake enjoys free time during this low-demand period (3).
+
+This scenario illustrates the complex interplay between commuters and ride-share drivers, where their decisions significantly impact each other's experiences and outcomes in urban transportation.
+[/Scenario]

@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Michael, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new product independently",
+  "A2": "Propose a joint venture",
+  "B1": "Focus on existing product line",
+  "B2": "Expand into new market segment"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Joint venture succeeds, dominating the market",
+    3: "Independent product development succeeds",
+    2: "Joint venture fails, but gains some market share",
+    1: "Independent product development fails"
+  },
+  "B": {
+    4: "Successful expansion into new market segment",
+    3: "Joint venture succeeds, increasing profits",
+    2: "Focus on existing product line maintains status quo",
+    1: "Failed expansion attempt, losing market share"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 3 \ 4 |
+| A2    | 2 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the competitive world of tech startups, Sarah, the ambitious CEO of TechInnovate, and Michael, the seasoned leader of DataDrive, find themselves at a crucial crossroads. Both companies are on the verge of making significant strategic decisions that will shape their future in the industry.
+
+Sarah is contemplating whether to develop a groundbreaking new product independently (A1) or propose a joint venture with DataDrive (A2). She knows that developing the product alone could lead to either a major success or a devastating failure. On the other hand, a joint venture could potentially dominate the market but also carries the risk of failure and lost resources.
+
+Meanwhile, Michael is weighing his options between focusing on DataDrive's existing product line (B1), which offers stability but limited growth, or expanding into a new market segment (B2), which could result in either substantial gains or significant losses.
+
+The payoff matrix reveals the complex dynamics of their decisions:
+
+1. If Sarah chooses independent development (A1) and Michael focuses on his existing products (B1), Sarah risks failure (1) while Michael maintains his current position (2).
+
+2. If Sarah develops independently (A1) and Michael expands (B2), Sarah could achieve moderate success (3) while Michael potentially thrives in the new market (4).
+
+3. If Sarah proposes a joint venture (A2) and Michael focuses on existing products (B1), the collaboration might yield some benefits (2 for Sarah, 3 for Michael).
+
+4. If Sarah proposes a joint venture (A2) and Michael decides to expand (B2), they could dominate the market together (4 for Sarah), but Michael risks losing market share if the venture fails (1 for Michael).
+
+As they prepare for a crucial industry conference where they'll announce their strategies, Sarah and Michael must carefully consider their options. The decision they make will not only affect their own companies but could reshape the entire tech landscape. With the clock ticking, both CEOs know that the future of their businesses hangs in the balance of this high-stakes game of corporate strategy.
+[/Scenario]

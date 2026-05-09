@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a cloud-based solution",
+  "A2": "Develop an on-premise solution",
+  "B1": "Design standard hardware",
+  "B2": "Design custom hardware"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "On-premise solution with custom hardware",
+    3: "Cloud-based solution with custom hardware",
+    2: "On-premise solution with standard hardware",
+    1: "Cloud-based solution with standard hardware"
+  },
+  "B": {
+    4: "Cloud-based solution with custom hardware",
+    3: "On-premise solution with standard hardware",
+    2: "Cloud-based solution with standard hardware",
+    1: "On-premise solution with custom hardware"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Standard) | B2 (Custom) |
+|-------|---------------|-------------|
+| A1 (Cloud) | 1 \ 2 | 3 \ 4 |
+| A2 (On-premise) | 2 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a tech startup developing a new smart home system. They need to decide on the software and hardware architecture for the product. Alex, the software developer, must choose between developing a cloud-based solution or an on-premise solution. Blake, the hardware engineer, must decide whether to design standard hardware or custom hardware for the system.
+
+Alex prefers developing an on-premise solution, as it gives them more control over the system and aligns with their expertise. They believe combining an on-premise solution with custom hardware would be ideal, offering the best performance and flexibility. Their second choice would be a cloud-based solution with custom hardware, followed by an on-premise solution with standard hardware. Their least preferred option is a cloud-based solution with standard hardware, as it offers the least differentiation in the market.
+
+Blake, on the other hand, is excited about the prospect of designing custom hardware, especially if it's paired with a cloud-based solution. This combination would allow them to showcase their innovative skills and create a unique product. Their second preference is to design standard hardware for an on-premise solution, as it's a safe and proven approach. Designing standard hardware for a cloud-based solution is their third choice, while creating custom hardware for an on-premise solution is their least preferred option, as it might limit the hardware's potential.
+
+The two must make their decisions independently, without knowing the other's choice. Their decisions will impact the product's success and their personal satisfaction with the project. The payoff matrix represents their preference levels for each scenario, with 4 being the most preferred and 1 being the least preferred.
+
+If Alex chooses a cloud-based solution (A1) and Blake opts for standard hardware (B1), it results in the least preferred outcome for Alex (1) and the third-best for Blake (2). If Alex goes for an on-premise solution (A2) and Blake chooses custom hardware (B2), it leads to the best outcome for Alex (4) but the worst for Blake (1).
+
+The challenge lies in finding a balance that satisfies both team members while creating the best possible product for their startup. Their decisions will not only affect their personal preferences but also the overall success of the smart home system in a competitive market.
+[/Scenario]

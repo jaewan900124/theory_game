@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "EcoCorp, a large industrial company",
+  "B": "GreenTown, a small coastal community"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement eco-friendly practices",
+  "A2": "Continue current practices",
+  "B1": "Support EcoCorp's presence",
+  "B2": "Oppose EcoCorp's presence"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Continue current practices with community support",
+    3: "Continue current practices despite community opposition",
+    2: "Implement eco-friendly practices with community support",
+    1: "Implement eco-friendly practices despite community opposition"
+  },
+  "B": {
+    4: "EcoCorp implements eco-friendly practices with community support",
+    3: "EcoCorp continues current practices with community support",
+    2: "EcoCorp continues current practices despite community opposition",
+    1: "EcoCorp implements eco-friendly practices despite community opposition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 1 |
+| A2    | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a picturesque coastal town named GreenTown, the community finds itself at a crossroads with the presence of EcoCorp, a large industrial company that has been operating in the area for years. The relationship between the two entities has reached a critical point, where both must make decisions that will shape the future of their coexistence and the local ecosystem.
+
+EcoCorp faces a crucial choice: they can either implement eco-friendly practices (A1) or continue their current practices (A2). Implementing eco-friendly measures would require significant investment and potentially reduce short-term profits, but it could improve their public image and long-term sustainability. Continuing current practices would maintain their profit margins but risk further environmental damage and community backlash.
+
+GreenTown, on the other hand, must decide whether to support EcoCorp's presence (B1) or oppose it (B2). Supporting the company could bring economic benefits and potential job opportunities, while opposition might protect the environment but could lead to economic challenges for the town.
+
+EcoCorp's most preferred outcome (4) is to continue their current practices with community support, as this would maintain their profits and operations without additional costs or opposition. Their least preferred outcome (1) is implementing eco-friendly practices despite community opposition, as this would incur high costs without improving their relationship with the town.
+
+GreenTown's most preferred outcome (4) is for EcoCorp to implement eco-friendly practices with community support, as this would protect the environment while maintaining economic benefits. Their least preferred outcome (1) is EcoCorp implementing eco-friendly practices despite community opposition, as this scenario might lead to a strained relationship and potential loss of economic opportunities.
+
+If EcoCorp chooses to implement eco-friendly practices (A1) and GreenTown supports their presence (B1), both parties benefit moderately (2,4). EcoCorp gains community support but faces increased costs, while GreenTown achieves its most desired outcome.
+
+If EcoCorp continues current practices (A2) and GreenTown supports their presence (B1), both parties receive a relatively good outcome (3,3). EcoCorp maintains its operations with community backing, and GreenTown receives economic benefits despite environmental concerns.
+
+However, if GreenTown opposes EcoCorp's presence (B2), the outcomes vary. If EcoCorp implements eco-friendly practices (A1), both parties face their least preferred scenario (1,1), with high costs for EcoCorp and a strained relationship for GreenTown. If EcoCorp continues current practices (A2), they achieve their most preferred outcome (4) due to maintained profits, while GreenTown faces a suboptimal situation (2) with environmental concerns but some economic leverage.
+
+This scenario illustrates the complex interplay between industrial development and environmental conservation, highlighting the challenges in balancing economic interests with ecological responsibility.
+[/Scenario]

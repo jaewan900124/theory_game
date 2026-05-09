@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Captain Elena Rodriguez",
+  "B": "Dr. Xiang Chen"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share resources and collaborate on the mission",
+  "A2": "Hoard resources and pursue individual goals",
+  "B1": "Focus on scientific research",
+  "B2": "Prioritize resource extraction"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Hoarding resources while Dr. Chen focuses on research",
+    3: "Sharing resources while Dr. Chen extracts resources",
+    2: "Sharing resources while Dr. Chen focuses on research",
+    1: "Hoarding resources while Dr. Chen extracts resources",
+  },
+  "B": {
+    4: "Focusing on research while Captain Rodriguez shares resources",
+    3: "Extracting resources while Captain Rodriguez shares resources",
+    2: "Extracting resources while Captain Rodriguez hoards resources",
+    1: "Focusing on research while Captain Rodriguez hoards resources",
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 3 |
+| A2    | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2150, humanity has established its first permanent base on Mars. Captain Elena Rodriguez, a seasoned space explorer, and Dr. Xiang Chen, a brilliant exobiologist, are leading a critical mission to explore a newly discovered cave system that might hold clues to ancient Martian life.
+
+The mission presents both opportunities and challenges. Captain Rodriguez is responsible for the overall success and safety of the expedition, while Dr. Chen is eager to make groundbreaking scientific discoveries. They must decide how to allocate their limited resources and time.
+
+Captain Rodriguez can choose to either share resources and collaborate on the mission (A1) or hoard resources and pursue individual goals (A2). Dr. Chen can decide to focus on scientific research (B1) or prioritize resource extraction (B2) to support future missions.
+
+Their preferences for different scenarios are based on their individual goals and the potential outcomes of their choices. Captain Rodriguez's top preference is to hoard resources while Dr. Chen focuses on research, as this would give her more control over the mission while still potentially yielding scientific breakthroughs. Dr. Chen's ideal scenario is to focus on research while Captain Rodriguez shares resources, as this would provide him with the support he needs for his scientific pursuits.
+
+The payoff matrix reflects the complex interplay between their choices:
+
+1. If they both cooperate (A1, B1), with Rodriguez sharing resources and Chen focusing on research, it results in a moderately satisfactory outcome for Rodriguez (2) and the best outcome for Chen (4).
+
+2. If Rodriguez shares resources but Chen prioritizes extraction (A1, B2), both achieve their third-best outcomes (3, 3), balancing scientific progress with resource acquisition.
+
+3. If Rodriguez hoards resources while Chen focuses on research (A2, B1), it leads to the worst outcome for both (1, 1), as the lack of cooperation hinders both the mission's success and scientific discoveries.
+
+4. If Rodriguez hoards resources and Chen prioritizes extraction (A2, B2), it results in the best outcome for Rodriguez (4) but a suboptimal result for Chen (2).
+
+As they stand at the entrance of the Martian cave system, Captain Rodriguez and Dr. Chen must make their choices, knowing that their decisions will not only impact the success of their current mission but also shape the future of Mars exploration and potentially our understanding of extraterrestrial life.
+[/Scenario]

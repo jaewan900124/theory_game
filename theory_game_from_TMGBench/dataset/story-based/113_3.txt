@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blair, a tech startup founder"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a proprietary algorithm",
+  "A2": "Contribute to an open-source project",
+  "B1": "Offer Alex a job at the startup",
+  "B2": "Seek partnership with Alex's current company"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Contribute to open-source and receive job offer",
+    3: "Develop proprietary algorithm and receive partnership offer",
+    2: "Contribute to open-source and receive partnership offer",
+    1: "Develop proprietary algorithm and receive job offer"
+  },
+  "B": {
+    4: "Alex develops proprietary algorithm and accepts job offer",
+    3: "Alex contributes to open-source and accepts partnership",
+    2: "Alex develops proprietary algorithm and accepts partnership",
+    1: "Alex contributes to open-source and accepts job offer"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Job Offer) | B2 (Partnership) |
+|-------|----------------|-------------------|
+| A1 (Proprietary) | 1 \ 4           | 3 \ 2             |
+| A2 (Open-source) | 2 \ 1           | 4 \ 3             |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, finds himself at a crossroads in his career. He's considering whether to develop a proprietary algorithm for his current company or contribute to an open-source project that could benefit the wider tech community. At the same time, Blair, the founder of a promising tech startup, has been following Alex's work and is interested in either bringing Alex on board or forming a partnership with his current company.
+
+Alex's preferences are shaped by his desire for personal growth and impact on the tech community. He values the opportunity to contribute to open-source projects, believing it will enhance his skills and reputation. However, he's also pragmatic about career advancement.
+
+Blair, on the other hand, is focused on growing her startup. She sees Alex's talent as a potential asset but is weighing the benefits of hiring him directly versus forming a strategic partnership with his current company.
+
+If Alex chooses to develop the proprietary algorithm (A1) and Blair offers him a job (B1), Alex would be least satisfied (1) as he'd miss the opportunity for open-source contribution and feel constrained. However, this would be Blair's most preferred outcome (4) as she'd gain both Alex and his proprietary work.
+
+If Alex contributes to open-source (A2) and Blair offers a partnership (B2), this would be Alex's most preferred scenario (4) as he gets to work on open-source and potentially have a broader impact through the partnership. Blair would also be fairly satisfied (3) with this arrangement.
+
+The scenario where Alex develops the proprietary algorithm (A1) and Blair seeks a partnership (B2) is moderately preferred by Alex (3) as he gets to work on challenging problems with potential for growth. Blair is less enthusiastic about this option (2) as she doesn't gain direct control over Alex's talents.
+
+Finally, if Alex contributes to open-source (A2) and Blair offers him a job (B1), Alex would be moderately satisfied (2) with the job offer but may feel conflicted about leaving his open-source work. This is Blair's least preferred outcome (1) as she gains an employee but loses out on proprietary technology.
+
+As they consider their options, both Alex and Blair must weigh their individual preferences against the potential outcomes of their choices, creating a complex decision-making scenario in the fast-paced world of technology.
+[/Scenario]

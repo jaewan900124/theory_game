@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Blair, a creative graphic designer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently while Blair collaborates",
+    3: "Both collaborate on the project",
+    2: "Both work independently",
+    1: "Collaborate while Blair works independently"
+  },
+  "B": {
+    4: "Work independently while Alex collaborates",
+    3: "Both collaborate on the project",
+    2: "Both work independently",
+    1: "Collaborate while Alex works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 1 \ 4 |
+| A2    | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blair are freelancers who have been approached by a startup to develop a new mobile app. The project requires both software development and graphic design skills. They need to decide whether to collaborate or work independently on their respective parts of the project.
+
+If they both choose to collaborate (A1, B1), they can create a cohesive product and share the workload, resulting in a good outcome for both (3,3). This scenario allows them to leverage each other's strengths and potentially produce a better result.
+
+If Alex collaborates but Blair works independently (A1, B2), Alex will have to adapt their work to Blair's designs without direct input, leading to potential inconsistencies and extra work for Alex (1,4). Blair, on the other hand, gets to work freely without compromise, which is their most preferred outcome.
+
+If Alex works independently but Blair collaborates (A2, B1), Alex can focus solely on coding without considering design integration, which is their most preferred outcome (4,2). However, Blair would struggle to align their designs with Alex's code without direct collaboration, resulting in their least preferred scenario.
+
+If both choose to work independently (A2, B2), they can each focus on their specialties without compromise, but the final product may lack cohesion (2,2). This scenario allows them to work at their own pace but might result in integration challenges later.
+
+Both Alex and Blair are aware that their decisions will impact not only their own work satisfaction but also the quality of the final product. They must carefully consider their choices, balancing their personal preferences with the potential outcomes of their collaboration or independence.
+[/Scenario]

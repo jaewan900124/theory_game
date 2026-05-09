@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Richards"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the Clean Energy Bill",
+  "A2": "Oppose the Clean Energy Bill",
+  "B1": "Endorse Senator Thompson for re-election",
+  "B2": "Remain neutral in the senatorial race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill and gain re-election support",
+    3: "Oppose the bill without explicit support",
+    2: "Support the bill and gain re-election support",
+    1: "Support the bill without gaining support"
+  },
+  "B": {
+    4: "Senator supports the bill and gains endorsement",
+    3: "Senator opposes the bill and remains neutral",
+    2: "Senator opposes the bill and gains endorsement",
+    1: "Senator supports the bill and remains neutral"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 1 |
+| A2    | 3 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling political landscape of a swing state, Senator Sarah Thompson and Governor Mark Richards find themselves at a crucial crossroads. The Clean Energy Bill, a contentious piece of legislation, has become the focal point of their political maneuvering.
+
+Senator Thompson, up for re-election, faces a dilemma. Supporting the bill aligns with her party's platform but risks alienating key industrial donors. Opposing it might secure financial backing but could disappoint her base. Her ideal scenario would be to oppose the bill while securing the Governor's endorsement, strengthening her re-election bid.
+
+Governor Richards, on the other hand, sees the bill as an opportunity to boost his environmental credentials for a potential presidential run. He'd prefer Senator Thompson to support the bill, allowing him to endorse her and present a united front. However, he's wary of backing her if she opposes the bill, as it could tarnish his image with environmentally conscious voters.
+
+The political dance begins. If Senator Thompson supports the bill (A1) and Governor Richards endorses her (B1), Thompson gains some political capital but at a cost to her donors (2), while Richards gets his ideal outcome (4). If Thompson supports the bill but Richards remains neutral (B2), both politicians face their least preferred outcomes (1,1) as they lose potential advantages.
+
+Should Thompson oppose the bill (A2) and Richards endorse her anyway (B1), Thompson achieves her second-best outcome (3), while Richards faces a suboptimal scenario (2). If Thompson opposes the bill and Richards remains neutral (B2), Thompson reaches her ideal scenario (4), maintaining donor support and avoiding backlash, while Richards salvages some political capital (3) by not associating with the bill's opposition.
+
+As news cameras roll and journalists speculate, Senator Thompson and Governor Richards must decide their moves, each acutely aware that their choices will shape not only their political futures but also the state's energy policy for years to come.
+[/Scenario]

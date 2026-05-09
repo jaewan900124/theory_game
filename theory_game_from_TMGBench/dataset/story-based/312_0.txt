@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Alex"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer extra office hours",
+  "A2": "Maintain standard office hours",
+  "B1": "Attend only regular classes",
+  "B2": "Attend extra office hours"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Student attends extra office hours",
+    3: "Maintain standard hours, student attends regular classes",
+    2: "Offer extra hours, student attends regular classes",
+    1: "Maintain standard hours, student attends extra hours"
+  },
+  "B": {
+    4: "Professor offers extra office hours and student attends",
+    3: "Professor offers extra office hours, student attends regular classes",
+    2: "Professor maintains standard hours, student attends regular classes",
+    1: "Professor maintains standard hours, student attends extra hours"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 1 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is teaching a challenging Advanced Mathematics course. One of his students, Alex, is struggling with the material but is determined to improve. As the midterm exam approaches, both Professor Smith and Alex face decisions that will impact their time and potentially Alex's performance.
+
+Professor Smith is considering whether to offer extra office hours (A1) or maintain his standard office hours (A2). He wants to help his students succeed but is also mindful of his own research commitments and work-life balance.
+
+Alex, on the other hand, is deciding whether to attend only regular classes (B1) or take advantage of any extra office hours (B2) if they're offered. Alex is juggling multiple courses and part-time work, so time management is crucial.
+
+Professor Smith's most preferred outcome is for Alex to attend extra office hours if offered (4), as it shows dedication and allows for personalized instruction. His least preferred scenario is maintaining standard hours while Alex tries to attend non-existent extra hours (1), as it could lead to confusion and wasted time for both.
+
+Alex's top preference is for Professor Smith to offer extra office hours and to attend them (4), believing this would significantly boost understanding of the material. The least desirable outcome for Alex is if Professor Smith maintains standard hours but Alex attempts to attend non-existent extra hours (1), resulting in wasted time and potential frustration.
+
+If Professor Smith offers extra hours but Alex only attends regular classes (2 \ 3), the professor feels his extra effort is underutilized, while Alex benefits from the professor's increased availability for email queries. If Professor Smith maintains standard hours and Alex attends only regular classes (3 \ 2), it's a comfortable scenario for the professor, while Alex feels adequately supported but not exceptionally so.
+
+This situation presents a classic game theory scenario in an educational context, where cooperation (both choosing to invest extra time) leads to the best outcome for both parties, but there are individual incentives and constraints that might lead to suboptimal choices.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Engage in diplomatic negotiations",
+  "A2": "Impose economic sanctions",
+  "B1": "Participate in negotiations",
+  "B2": "Increase military presence in disputed areas"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successful negotiations with China backing down",
+    3: "Mutual diplomatic engagement",
+    2: "Mutual escalation of tensions",
+    1: "Economic sanctions with China increasing military presence"
+  },
+  "B": {
+    4: "Mutual diplomatic engagement",
+    3: "Increasing military presence while US imposes sanctions",
+    2: "Mutual escalation of tensions",
+    1: "Backing down in negotiations"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 1 |
+| A2    | 1 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex world of international relations, the United States and China find themselves at a crossroads over disputed territories in the South China Sea. Both nations must decide on their next move, which will significantly impact regional stability and their bilateral relationship.
+
+The United States (A) has two options: engage in diplomatic negotiations (A1) or impose economic sanctions (A2). China (B) can choose to participate in negotiations (B1) or increase its military presence in the disputed areas (B2).
+
+If both countries choose to engage in diplomatic negotiations (A1, B1), it results in a relatively positive outcome for both. The US sees this as its third-best scenario (3), while China considers it the most favorable outcome (4), as it allows for dialogue without immediate concessions.
+
+Should the US opt for diplomacy while China increases its military presence (A1, B2), the US would achieve its most preferred outcome (4) as it would gain international support and portray China as the aggressor. However, this would be China's least preferred scenario (1), as it would face global criticism and potential isolation.
+
+If the US imposes economic sanctions while China agrees to negotiate (A2, B1), it would be the least favorable outcome for the US (1), appearing overly aggressive. China would see this as its third-best scenario (3), able to claim the moral high ground while weathering the economic impact.
+
+Finally, if both nations escalate - with the US imposing sanctions and China increasing its military presence (A2, B2) - both would find themselves in their second-least preferred scenario (2), facing economic and security challenges while risking a broader conflict.
+
+This complex interplay of choices and consequences illustrates the delicate balance in international relations, where nations must carefully consider their actions and the potential reactions of their counterparts to achieve the best possible outcomes.
+[/Scenario]

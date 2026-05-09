@@ -1,0 +1,67 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Michael, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Propose a merger",
+  "A2": "Maintain independence",
+  "B1": "Reject merger proposal",
+  "B2": "Accept merger proposal"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successful merger",
+    3: "Maintain independence while competitor also stays independent",
+    2: "Both companies maintain independence",
+    1: "Failed merger attempt"
+  },
+  "B": {
+    4: "Successful merger",
+    3: "Maintain independence while competitor also stays independent",
+    2: "Both companies maintain independence",
+    1: "Rejected merger proposal"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Reject) | B2 (Accept) |
+|-------|-------------|-------------|
+| A1 (Propose) | 2 \ 2 | 4 \ 4 |
+| A2 (Independent) | 3 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the competitive world of tech startups, Sarah, the CEO of TechInnovate, and Michael, the CEO of DataDrive, find themselves at a crossroads. Both companies have been making waves in the industry with their innovative products, but they're also aware of the benefits that could come from joining forces.
+
+Sarah is considering proposing a merger between TechInnovate and DataDrive. She believes that combining their resources and expertise could lead to groundbreaking advancements and increased market share. However, she's also proud of her company's independence and is hesitant to give that up.
+
+Michael, on the other hand, is content with DataDrive's current trajectory but recognizes the potential benefits of a merger. He values his company's autonomy but is open to the idea of collaboration if the terms are right.
+
+Both CEOs face a crucial decision:
+
+Sarah can either propose a merger (A1) or maintain TechInnovate's independence (A2).
+Michael can either accept the merger proposal if offered (B2) or reject it (B1).
+
+Their preferences for the different outcomes are as follows:
+
+1. Both Sarah and Michael most prefer a successful merger (4), as it would create a powerhouse in the tech industry, potentially leading to increased innovation and market dominance.
+
+2. Their second preference is to maintain independence while the other company does the same (3). This scenario allows them to continue their current growth trajectories without major disruptions.
+
+3. The third preference for both is a situation where both companies maintain independence (2), even if one had considered a merger. This outcome maintains the status quo but might represent a missed opportunity.
+
+4. The least preferred outcome for Sarah is a failed merger attempt (1), which could damage TechInnovate's reputation and morale. For Michael, the least preferred outcome is rejecting a merger proposal (1), as it might lead to missed opportunities and potential regrets.
+
+The payoff matrix reflects these preferences, with the most favorable outcome (4,4) occurring when Sarah proposes a merger and Michael accepts. The least favorable outcome (1,1) happens when Sarah maintains independence but Michael would have been open to a merger.
+
+As the tech industry buzzes with rumors of potential mergers and acquisitions, Sarah and Michael must carefully consider their options. Will they take the leap towards a potentially game-changing merger, or will they choose to maintain their hard-won independence? The future of both TechInnovate and DataDrive hangs in the balance as these two visionary CEOs contemplate their next move.
+[/Scenario]

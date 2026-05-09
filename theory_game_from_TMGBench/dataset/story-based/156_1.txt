@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a cloud-based solution",
+  "A2": "Develop an edge computing solution",
+  "B1": "Design a high-performance chip",
+  "B2": "Design an energy-efficient chip"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Edge computing solution with energy-efficient chip",
+    3: "Edge computing solution with high-performance chip",
+    2: "Cloud-based solution with high-performance chip",
+    1: "Cloud-based solution with energy-efficient chip"
+  },
+  "B": {
+    4: "Cloud-based solution with high-performance chip",
+    3: "Edge computing solution with high-performance chip",
+    2: "Cloud-based solution with energy-efficient chip",
+    1: "Edge computing solution with energy-efficient chip"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (High-performance) | B2 (Energy-efficient) |
+|-------|-------|-------|
+| A1 (Cloud) | 2 \ 4 | 1 \ 2 |
+| A2 (Edge) | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a leading tech company that's developing a new smart city infrastructure system. Alex, a software developer, is responsible for creating the data processing solution, while Blake, a hardware engineer, is tasked with designing the chip that will power the system.
+
+Alex has two choices: develop a cloud-based solution (A1) or an edge computing solution (A2). The cloud-based solution would centralize data processing, while the edge computing solution would distribute processing across the network.
+
+Blake's choices are to design a high-performance chip (B1) or an energy-efficient chip (B2). The high-performance chip would offer superior processing capabilities but consume more power, while the energy-efficient chip would use less power but have lower performance.
+
+Their choices will impact the overall system design and efficiency. The company wants them to collaborate, but each has their own preferences based on their expertise and vision for the project.
+
+Alex prefers the edge computing solution, especially if paired with an energy-efficient chip, as it aligns with his vision of distributed, efficient processing. His least preferred outcome is a cloud-based solution with an energy-efficient chip, as he believes it would underutilize the chip's capabilities.
+
+Blake, on the other hand, favors the high-performance chip, particularly if used in a cloud-based solution, as it showcases the chip's full potential. His least preferred scenario is an edge computing solution with an energy-efficient chip, as he feels it doesn't fully utilize his engineering skills.
+
+The payoff matrix represents their preferences for each scenario:
+- If both choose their preferred options (A1 and B1), Alex gets his second-best outcome (2) while Blake gets his most preferred outcome (4).
+- If Alex chooses cloud (A1) and Blake chooses energy-efficient (B2), both get their second-least preferred outcomes (1 for Alex, 2 for Blake).
+- If Alex chooses edge (A2) and Blake chooses high-performance (B1), both get their second-most preferred outcomes (3 for both).
+- If both choose their less preferred options (A2 and B2), Alex gets his most preferred outcome (4) while Blake gets his least preferred outcome (1).
+
+As they work on the project, Alex and Blake must decide whether to prioritize their individual preferences or find a compromise that balances both of their interests for the overall success of the smart city infrastructure system.
+[/Scenario]

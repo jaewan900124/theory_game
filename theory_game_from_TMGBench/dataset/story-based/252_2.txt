@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Maya, an aspiring painter",
+  "B": "Alex, a gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a unique, experimental artwork",
+  "A2": "Produce a conventional, crowd-pleasing piece",
+  "B1": "Offer exclusive representation to Maya",
+  "B2": "Showcase Maya's work alongside other artists"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create unique art with exclusive representation",
+    3: "Create unique art with shared showcase",
+    2: "Produce conventional art with exclusive representation",
+    1: "Produce conventional art with shared showcase",
+  },
+  "B": {
+    4: "Exclusively represent unique art",
+    3: "Showcase unique art alongside others",
+    2: "Showcase conventional art alongside others",
+    1: "Exclusively represent conventional art"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Maya \ Alex | Offer exclusive (B1) | Showcase alongside others (B2) |
+|-------------|----------------------|--------------------------------|
+| Unique (A1) | 3 \ 4                | 4 \ 3                          |
+| Conventional (A2) | 2 \ 1          | 1 \ 2                          |
+[/Payoff Matrix]
+
+[Scenario]
+Maya, an aspiring painter with a flair for the extraordinary, finds herself at a crossroads in her artistic career. She has caught the attention of Alex, a respected gallery owner known for launching promising artists into the spotlight. As they prepare for Maya's potential debut exhibition, both face crucial decisions that will shape their professional relationship and artistic direction.
+
+Maya must choose between creating a unique, experimental artwork (A1) that pushes boundaries and challenges viewers, or producing a conventional, crowd-pleasing piece (A2) that aligns with current market trends. Her preference leans towards creating unique art, as it allows her to express her true artistic vision.
+
+Alex, on the other hand, must decide whether to offer Maya exclusive representation (B1), dedicating significant resources and attention to promoting her work, or to showcase her art alongside other artists (B2) in a group exhibition. Alex is intrigued by Maya's potential but must balance the risk of featuring an unconventional artist against the gallery's commercial success.
+
+The payoff matrix reveals the complex dynamics of their decisions:
+
+If Maya creates unique art (A1) and Alex offers exclusive representation (B1), both benefit significantly (3,4). Maya gets to express her creativity with strong backing, while Alex secures a potentially groundbreaking artist exclusively.
+
+If Maya opts for unique art (A1) and Alex chooses to showcase it alongside others (B2), Maya achieves her highest preference (4) by maintaining artistic integrity with broader exposure. Alex still benefits (3) from featuring innovative work, albeit with shared attention.
+
+Should Maya produce conventional art (A2) and receive exclusive representation (B1), she compromises her artistic vision but gains dedicated support (2). However, this is Alex's least preferred outcome (1), as it doesn't align with the gallery's innovative image.
+
+Lastly, if Maya creates conventional art (A2) and Alex showcases it alongside others (B2), both face their least preferred scenario (1,2). Maya feels creatively stifled and overlooked, while Alex's gallery fails to stand out in the competitive art market.
+
+As they contemplate their choices, Maya and Alex must navigate the delicate balance between artistic integrity and commercial viability, each hoping their decision will lead to a mutually beneficial outcome in the unpredictable world of contemporary art.
+[/Scenario]

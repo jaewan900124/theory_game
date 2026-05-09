@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a geneticist",
+  "B": "Dr. Mark Davis, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on gene editing research",
+  "A2": "Collaborate on antibiotic resistance study",
+  "B1": "Concentrate on bacterial mutation analysis",
+  "B2": "Join forces on antibiotic resistance study"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Sole focus on gene editing with no competition",
+    3: "Collaborative antibiotic resistance study",
+    2: "Separate research paths",
+    1: "Competing gene editing research"
+  },
+  "B": {
+    4: "Exclusive bacterial mutation analysis",
+    3: "Separate research paths",
+    2: "Collaborative antibiotic resistance study",
+    1: "Competing bacterial mutation analysis"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 1 |
+| A2    | 2 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious research institute, Dr. Sarah Chen and Dr. Mark Davis find themselves at a crossroads in their biological research. Dr. Chen, a brilliant geneticist, is passionate about gene editing and its potential to revolutionize medicine. Dr. Davis, an accomplished microbiologist, is fascinated by bacterial mutations and their implications for human health.
+
+The institute has announced a major grant for groundbreaking research in biology, but the catch is that only one project can be fully funded. This sets the stage for a complex decision-making process between the two scientists.
+
+Dr. Chen has two options: she can either focus solely on her gene editing research (A1) or propose a collaborative study on antibiotic resistance (A2). Similarly, Dr. Davis can choose to concentrate on his bacterial mutation analysis (B1) or join forces with Dr. Chen on the antibiotic resistance study (B2).
+
+Their preferences for different outcomes vary significantly. Dr. Chen would ideally like to pursue her gene editing research without competition (her most preferred outcome, rated 4). Her second-best scenario would be collaborating on the antibiotic resistance study (rated 3). She views working on separate research paths as acceptable (rated 2) but considers competing directly with Dr. Davis on gene editing as the least desirable outcome (rated 1).
+
+Dr. Davis, on the other hand, would prefer to have exclusive focus on his bacterial mutation analysis (his top preference, rated 4). He sees working on separate research paths as a good alternative (rated 3). Collaborating on the antibiotic resistance study is less appealing to him (rated 2), and he least wants to compete directly with Dr. Chen on bacterial mutation analysis (rated 1).
+
+The payoff matrix reflects these preferences and the potential outcomes of their choices. If both scientists choose to focus on their individual research areas (A1, B1), Dr. Chen will be in direct competition with Dr. Davis, resulting in her least preferred outcome (1) while giving Dr. Davis his most preferred scenario (4). Conversely, if they both opt for collaboration (A2, B2), it results in a moderately satisfying outcome for both (3 for Dr. Chen, 2 for Dr. Davis).
+
+The scientists must now carefully consider their options, weighing the potential for groundbreaking individual research against the benefits of collaboration, all while anticipating each other's moves in this high-stakes biological research game.
+[/Scenario]

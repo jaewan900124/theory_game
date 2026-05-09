@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Lucas, Emma's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on a similar project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while Lucas works independently",
+    3: "Share findings openly while Lucas collaborates",
+    2: "Keep findings private while Lucas collaborates",
+    1: "Share findings openly while Lucas works independently"
+  },
+  "B": {
+    4: "Emma shares findings openly while Lucas collaborates",
+    3: "Emma keeps findings private while Lucas collaborates",
+    2: "Emma shares findings openly while Lucas works independently",
+    1: "Emma keeps findings private while Lucas works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Work independently) |
+|-------|-------------------|--------------------------|
+| A1 (Share)   | 3 \ 4            | 1 \ 2                   |
+| A2 (Keep private) | 2 \ 3            | 4 \ 1                   |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a respected sociology professor, is working on a groundbreaking study about social media's impact on community engagement. Her research assistant, Lucas, has been instrumental in data collection and analysis. As they near the completion of the project, both Emma and Lucas face a critical decision that will affect their careers and the field of sociology.
+
+Emma must decide whether to share her research findings openly with the academic community or keep them private for potential commercial applications. Meanwhile, Lucas is torn between continuing to collaborate on the project or using his experience to work independently on a similar study.
+
+Emma's ideal scenario would be to keep the findings private while Lucas works independently, allowing her to maximize the commercial potential of the research without competition. However, she also values academic collaboration and would be satisfied with sharing the findings openly if Lucas continues to work with her.
+
+Lucas, on the other hand, would prefer that Emma shares the findings openly while he collaborates on the project, as this would benefit his academic career the most. His second choice would be to continue collaborating even if Emma keeps the findings private, as he values the experience and mentorship.
+
+The situation creates a complex dynamic where their choices significantly impact each other's outcomes. If Emma shares openly and Lucas collaborates (A1/B1), they both benefit from academic recognition, with Lucas gaining slightly more. If Emma keeps the findings private and Lucas works independently (A2/B2), Emma stands to gain the most, but it's the least favorable outcome for Lucas.
+
+The other two scenarios (A1/B2 and A2/B1) represent compromises where one party benefits more than the other. Emma and Lucas must navigate this delicate situation, balancing personal ambition with academic integrity and collaborative spirit, illustrating the complex social dynamics often studied in sociology itself.
+[/Scenario]

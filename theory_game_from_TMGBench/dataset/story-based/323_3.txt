@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Senator Smith",
+  "B": "Governor Jones"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the infrastructure bill",
+  "A2": "Oppose the infrastructure bill",
+  "B1": "Focus on healthcare reform",
+  "B2": "Support the infrastructure bill"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Infrastructure bill passes with full support",
+    3: "Infrastructure bill fails, maintains political stance",
+    2: "Infrastructure bill passes despite opposition",
+    1: "Supports bill, but healthcare takes priority"
+  },
+  "B": {
+    4: "Infrastructure bill passes with full support",
+    3: "Focuses on healthcare reform successfully",
+    2: "Infrastructure bill fails, focuses on healthcare",
+    1: "Infrastructure bill passes, healthcare reform neglected"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 4 \ 4 |
+| A2    | 2 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a crucial moment for state politics, Senator Smith and Governor Jones find themselves at a crossroads. The state desperately needs both infrastructure improvements and healthcare reform, but resources are limited, and political capital is at stake.
+
+Senator Smith, known for her focus on infrastructure, must decide whether to support or oppose a major infrastructure bill. Governor Jones, on the other hand, is torn between supporting the infrastructure bill or focusing on his pet project of healthcare reform.
+
+If Senator Smith supports the bill (A1) and Governor Jones focuses on healthcare (B1), Smith's efforts are overshadowed, and she gains little political benefit (1). Jones makes some progress on healthcare but misses the opportunity for a big infrastructure win (2).
+
+If both support the infrastructure bill (A1, B2), it passes with flying colors, benefiting both politicians greatly (4, 4). This is the best-case scenario for both, as they can claim credit for a significant achievement.
+
+If Smith opposes the bill (A2) while Jones focuses on healthcare (B1), Smith maintains her political stance without much fallout (2), while Jones successfully advances his healthcare agenda (3).
+
+However, if Smith opposes the bill (A2) but Jones supports it (B2), the bill might still pass due to Jones' influence. This would be a moderate win for Smith, who can claim she fought against it (3), but a significant loss for Jones, who would be seen as neglecting healthcare for a project his opponent opposed (1).
+
+The politicians must navigate this complex political landscape, balancing their personal agendas with the needs of their constituents and the potential for political gain or loss. Their choices will not only affect their own careers but also the future of the state's infrastructure and healthcare system.
+[/Scenario]

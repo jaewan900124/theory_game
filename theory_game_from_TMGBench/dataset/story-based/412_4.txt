@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Anderson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Thompson's re-election",
+  "B2": "Remain neutral in Senator Thompson's re-election"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill and gain Governor's neutrality",
+    3: "Support bill and gain Governor's neutrality",
+    2: "Oppose bill and gain Governor's endorsement",
+    1: "Support bill and gain Governor's endorsement"
+  },
+  "B": {
+    4: "Senator supports bill and Governor remains neutral",
+    3: "Senator supports bill and Governor endorses",
+    2: "Senator opposes bill and Governor endorses",
+    1: "Senator opposes bill and Governor remains neutral"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support) | 1 \ 3 | 3 \ 4 |
+| A2 (Oppose) | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling political landscape of a swing state, Senator Sarah Thompson and Governor Mark Anderson find themselves in a delicate dance of political maneuvering. A crucial bipartisan infrastructure bill is on the table, and their decisions could shape not only the state's future but also their own political careers.
+
+Senator Thompson, up for re-election, faces a tough choice. Supporting the bill could bring much-needed funding to her state, potentially boosting her popularity. However, opposing it might appeal to her base, who are skeptical of big government spending. Her ideal scenario would be to oppose the bill while maintaining a neutral stance from the influential Governor Anderson, allowing her to play both sides.
+
+Governor Anderson, on the other hand, sees the infrastructure bill as a golden opportunity for the state's development. His preference is for Senator Thompson to support the bill, while he remains neutral in her re-election campaign. This would allow him to claim credit for the bill's benefits without explicitly tying himself to Thompson's political future.
+
+The Senator's support for the bill coupled with the Governor's endorsement would be their least preferred outcomes individually. For Thompson, this would mean potentially alienating her base while appearing too closely aligned with the Governor. For Anderson, endorsing Thompson while she opposes the bill would be politically risky and potentially damaging to the state's interests.
+
+As they weigh their options, both politicians must consider not only their immediate gains but also the long-term implications of their choices. Will they prioritize personal political advantage or the greater good of their constituents? The outcome of this political chess game could have far-reaching consequences for both their careers and the state they serve.
+[/Scenario]

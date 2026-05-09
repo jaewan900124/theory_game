@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Jack, Emma's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data",
+  "A2": "Keep research data private",
+  "B1": "Work overtime",
+  "B2": "Maintain regular hours"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Share data, Jack maintains regular hours",
+    3: "Share data, Jack works overtime",
+    2: "Keep data private, Jack maintains regular hours",
+    1: "Keep data private, Jack works overtime"
+  },
+  "B": {
+    4: "Emma shares data, maintain regular hours",
+    3: "Emma keeps data private, maintain regular hours",
+    2: "Emma keeps data private, work overtime",
+    1: "Emma shares data, work overtime"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Jack | Work overtime | Maintain regular hours |
+|-------------|----------------|------------------------|
+| Share data  | 3 \ 1          | 4 \ 4                  |
+| Keep private| 1 \ 2          | 2 \ 3                  |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a sociology professor, and Jack, her research assistant, are working on a groundbreaking study on social media influence. They face a crucial decision that will impact their research and professional relationship.
+
+Emma must decide whether to share her valuable research data with Jack or keep it private. Sharing would potentially accelerate their progress but also risk losing exclusive credit. Jack, on the other hand, must choose between working overtime to process the data quickly or maintaining regular hours to balance work and personal life.
+
+Emma's ideal scenario is sharing the data while Jack maintains regular hours, as this would lead to efficient progress without overworking her assistant. Her least preferred outcome is keeping the data private while Jack works overtime, as this would slow down the research and strain their working relationship.
+
+Jack's preference is for Emma to share the data while he maintains regular hours, allowing him to contribute meaningfully without sacrificing his work-life balance. His least desired situation is when Emma shares the data and he has to work overtime, feeling pressured to process the information quickly.
+
+If Emma shares the data and Jack works overtime (3,1), the research progresses rapidly, but Jack feels overwhelmed. If Emma shares and Jack maintains regular hours (4,4), both are satisfied with the collaborative and balanced approach. If Emma keeps the data private and Jack works overtime (1,2), the research stagnates and both feel frustrated. Lastly, if Emma keeps the data private and Jack maintains regular hours (2,3), the project moves slowly, but Jack appreciates the work-life balance.
+
+Their decisions will not only affect the outcome of their research but also shape the dynamics of their professional relationship and the overall work culture in their department. The choices they make reflect broader sociological themes of cooperation, trust, and work ethics in academic settings.
+[/Scenario]

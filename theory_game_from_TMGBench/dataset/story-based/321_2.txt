@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Sarah, a tech startup founder",
+  "B": "Mark, a venture capitalist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Seek external funding",
+  "A2": "Bootstrap the company",
+  "B1": "Invest in Sarah's startup",
+  "B2": "Pass on the investment opportunity"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive funding without giving up control",
+    3: "Bootstrap successfully but with slower growth",
+    2: "Bootstrap with difficulties",
+    1: "Seek funding but get rejected"
+  },
+  "B": {
+    4: "Invest in a promising startup",
+    3: "Avoid a risky investment",
+    2: "Miss out on a good opportunity",
+    1: "Make a poor investment"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 4 \ 4 |
+| A2    | 2 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a brilliant software engineer, has founded a promising tech startup. Her innovative AI-powered productivity tool has gained traction in beta testing, but she needs to decide whether to seek external funding to accelerate growth or bootstrap the company using her own resources.
+
+Mark, a seasoned venture capitalist, has heard about Sarah's startup and is considering whether to invest. He's impressed by the product but unsure about the market potential and Sarah's ability to scale the business.
+
+Sarah has two choices: seek external funding (A1) or bootstrap the company (A2). Mark can either invest in Sarah's startup (B1) or pass on the opportunity (B2).
+
+If Sarah seeks funding (A1) and Mark invests (B1), Sarah will receive the capital she needs but will have to give up some control and equity. This is her least preferred outcome (1) as she values her autonomy. For Mark, this is a moderately good outcome (3) as he secures a potentially profitable investment.
+
+If Sarah seeks funding (A1) but Mark passes (B2), Sarah will be free to find other investors who might offer better terms. This is her most preferred outcome (4) as she can potentially secure funding without compromising too much. For Mark, this is also his best outcome (4) as he avoids a risky investment while keeping the door open for future opportunities.
+
+If Sarah decides to bootstrap (A2) and Mark wants to invest (B1), Sarah will decline the offer. This is a suboptimal outcome for Sarah (2) as she misses out on potential growth opportunities. For Mark, this is the worst outcome (1) as he misses out on a potentially good investment.
+
+Finally, if Sarah bootstraps (A2) and Mark passes on the investment (B2), Sarah will have to grow her company slowly but maintain full control. This is her second-best outcome (3). For Mark, this is a suboptimal outcome (2) as he might be missing out on a good opportunity.
+
+The scenario highlights the complex dynamics between entrepreneurs and investors, where both parties must carefully consider their choices and the potential outcomes. Sarah must weigh the benefits of rapid growth against maintaining control, while Mark must balance the potential returns with the risks of investing in an early-stage startup.
+[/Scenario]

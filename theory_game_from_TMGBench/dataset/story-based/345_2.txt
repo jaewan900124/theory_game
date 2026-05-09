@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Adams",
+  "B": "Colonel Baker"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Launch a frontal assault",
+  "A2": "Execute a flanking maneuver",
+  "B1": "Maintain a defensive position",
+  "B2": "Conduct a tactical retreat"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Frontal assault against retreating enemy",
+    3: "Flanking maneuver against defensive position",
+    2: "Frontal assault against defensive position",
+    1: "Flanking maneuver against retreating enemy"
+  },
+  "B": {
+    4: "Tactical retreat against frontal assault",
+    3: "Tactical retreat against flanking maneuver",
+    2: "Defensive position against flanking maneuver",
+    1: "Defensive position against frontal assault"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 4 \ 4 |
+| A2    | 3 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the heat of a critical battle, General Adams and Colonel Baker find themselves at a strategic crossroads. Their decisions will determine the outcome of the conflict and potentially the entire war.
+
+General Adams, known for his aggressive tactics, is considering two options: launching a frontal assault (A1) or executing a flanking maneuver (A2). The frontal assault is risky but could lead to a decisive victory if the enemy is caught off guard. The flanking maneuver is more subtle but could be highly effective against a stationary target.
+
+Colonel Baker, tasked with defending a crucial position, must choose between maintaining a defensive position (B1) or conducting a tactical retreat (B2). Holding the position could be costly but might buy time for reinforcements. A tactical retreat could preserve his forces but would cede important territory.
+
+Their preferences reflect their strategic mindsets and the potential outcomes:
+
+General Adams most prefers a frontal assault against a retreating enemy, as it would lead to a crushing victory. His second preference is a flanking maneuver against a defensive position, which could minimize casualties while still achieving the objective. A frontal assault against a defensive position is his third choice, as it could be costly but still effective. His least preferred option is a flanking maneuver against a retreating enemy, as it would likely result in minimal engagement and a missed opportunity.
+
+Colonel Baker's top preference is a tactical retreat in the face of a frontal assault, as it would preserve his forces while exhausting the enemy. His second choice is a tactical retreat against a flanking maneuver, which would allow him to regroup and counter-attack. Maintaining a defensive position against a flanking maneuver is his third preference, as it could potentially repel the attack but at a higher cost. His least preferred scenario is holding a defensive position against a frontal assault, which could lead to devastating losses.
+
+The payoff matrix reflects these preferences, with each officer weighing the potential outcomes of their combined decisions. As they stand on the precipice of battle, both General Adams and Colonel Baker must carefully consider their options, knowing that their choices will shape the course of the conflict and their military legacies.
+[/Scenario]

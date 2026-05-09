@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Emma, a talented but struggling painter",
+  "B": "Marcus, a successful art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional, crowd-pleasing painting",
+  "A2": "Create an experimental, avant-garde piece",
+  "B1": "Offer a fair commission and promotion",
+  "B2": "Offer a low commission with minimal promotion"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create an experimental piece and receive fair commission and promotion",
+    3: "Create a conventional piece and receive fair commission and promotion",
+    2: "Create a conventional piece and receive low commission with minimal promotion",
+    1: "Create an experimental piece and receive low commission with minimal promotion"
+  },
+  "B": {
+    4: "Acquire a conventional piece with low commission and minimal promotion",
+    3: "Acquire a conventional piece with fair commission and promotion",
+    2: "Acquire an experimental piece with low commission and minimal promotion",
+    1: "Acquire an experimental piece with fair commission and promotion"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Marcus | Fair offer (B1) | Low offer (B2) |
+|----------------|-----------------|-----------------|
+| Conventional (A1) | 3 \ 3           | 2 \ 4           |
+| Experimental (A2) | 1 \ 2           | 4 \ 1           |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented but struggling painter, has been given an opportunity to showcase her work at Marcus's prestigious art gallery. Marcus, the gallery owner, is known for his keen eye for marketable art and his business acumen. Both Emma and Marcus face a dilemma as they consider their options.
+
+Emma must decide whether to create a conventional, crowd-pleasing painting (A1) or an experimental, avant-garde piece (A2). She is passionate about pushing artistic boundaries but also recognizes the need for financial stability.
+
+Marcus, on the other hand, must choose between offering Emma a fair commission and promotion (B1) or a low commission with minimal promotion (B2). He wants to maximize his gallery's profits but also maintain a reputation for supporting emerging artists.
+
+Their preferences and potential outcomes are as follows:
+
+1. If Emma creates a conventional piece (A1) and Marcus offers a fair deal (B1), both benefit moderately. Emma gets financial support and exposure, while Marcus acquires a saleable piece (3,3).
+
+2. If Emma creates a conventional piece (A1) but Marcus offers a low deal (B2), Emma is somewhat disappointed but still gains some exposure, while Marcus maximizes his profit (2,4).
+
+3. If Emma creates an experimental piece (A2) and Marcus offers a fair deal (B1), Emma is creatively fulfilled but risks low sales, while Marcus takes a chance on promoting unique art (1,2).
+
+4. If Emma creates an experimental piece (A2) and Marcus offers a low deal (B2), Emma achieves her artistic vision and potentially gains critical acclaim, while Marcus minimizes his risk but may miss out on a groundbreaking piece (4,1).
+
+The scenario highlights the tension between artistic integrity and commercial success, as well as the complex dynamics between artists and gallery owners in the art world. Emma and Marcus must navigate their choices carefully, considering both their individual goals and the potential for mutual benefit or conflict.
+[/Scenario]

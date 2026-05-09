@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a product manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use existing technology",
+  "A2": "Develop new technology",
+  "B1": "Focus on current product",
+  "B2": "Expand to new market"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop new technology and expand to new market",
+    3: "Develop new technology and focus on current product",
+    2: "Use existing technology and focus on current product",
+    1: "Use existing technology and expand to new market"
+  },
+  "B": {
+    4: "Use existing technology and expand to new market",
+    3: "Develop new technology and focus on current product",
+    2: "Use existing technology and focus on current product",
+    1: "Develop new technology and expand to new market"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Focus on current product) | B2 (Expand to new market) |
+|-------|-------------------------------|---------------------------|
+| A1 (Use existing technology) | 2 \ 2 | 1 \ 4 |
+| A2 (Develop new technology) | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a mid-sized tech company that specializes in productivity software. The company is at a crossroads, facing decisions about its technological direction and market strategy.
+
+Alex, a brilliant software engineer, is passionate about pushing the boundaries of technology. He believes that developing new, cutting-edge solutions will set their company apart from competitors and potentially revolutionize the industry. However, this approach would require significant time and resources, and success is not guaranteed.
+
+Blake, an experienced product manager, is more cautious. She recognizes the potential of new technology but is also acutely aware of the risks involved. She's been analyzing market trends and sees an opportunity to expand their current product line into new markets, potentially increasing their customer base and revenue.
+
+Both Alex and Blake need to make decisions that will shape the company's future. Alex must choose between using existing technology (A1) or developing new technology (A2). Blake needs to decide whether to focus on their current product (B1) or expand to a new market (B2).
+
+Their preferences and potential outcomes are reflected in the payoff matrix. Alex's ideal scenario is to develop new technology and expand to a new market (A2, B2), as he believes this will lead to the most innovative and impactful results. Blake's preferred outcome is to use existing technology and expand to a new market (A1, B2), as she sees this as the safest way to grow the business.
+
+If they both choose to play it safe (A1, B1), focusing on the current product with existing technology, they'll achieve moderate success. If Alex develops new technology while Blake focuses on the current product (A2, B1), they'll see good results, but not optimal for either of them.
+
+The challenge lies in the fact that their ideal scenarios are in conflict. If Alex gets his way with new technology development, but Blake pushes for market expansion (A2, B2), Alex will be thrilled but Blake will struggle to sell an untested product in a new market. Conversely, if they use existing technology to expand to a new market (A1, B2), Blake will be satisfied, but Alex will feel his skills are being underutilized.
+
+As they prepare for the crucial strategy meeting, both Alex and Blake must consider not only their own preferences but also how their decisions will interact with each other's choices to determine the company's future direction.
+[/Scenario]

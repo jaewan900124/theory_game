@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products using forest resources",
+  "A2": "Focus on urban sustainability projects",
+  "B1": "Restrict access to forest resources",
+  "B2": "Collaborate with EcoTech for sustainable forest use"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop eco-friendly products with full forest access",
+    3: "Focus on urban projects with some forest access",
+    2: "Develop eco-friendly products with restricted forest access",
+    1: "Focus on urban projects with restricted forest access"
+  },
+  "B": {
+    4: "Collaborate for sustainable forest use",
+    3: "Restrict forest access while EcoTech develops eco-products",
+    2: "Restrict forest access while EcoTech focuses on urban projects",
+    1: "Allow unrestricted forest use for urban projects"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 1 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush, biodiverse forest region, EcoTech, a sustainable technology company, and GreenForest, a conservation organization, find themselves at a crossroads. EcoTech sees the potential for developing innovative, eco-friendly products using the forest's resources, while GreenForest aims to protect the forest's delicate ecosystem.
+
+EcoTech (A) has two choices: develop eco-friendly products using forest resources (A1) or focus on urban sustainability projects (A2). GreenForest (B) can either restrict access to forest resources (B1) or collaborate with EcoTech for sustainable forest use (B2).
+
+EcoTech's most preferred outcome is to develop eco-friendly products with full forest access, as this aligns with their mission and offers the greatest potential for innovation. Their least preferred scenario is to focus on urban projects with restricted forest access, as it limits their ability to create truly groundbreaking sustainable technologies.
+
+GreenForest's top priority is to collaborate for sustainable forest use, as it ensures protection while allowing for responsible development. Their least preferred outcome is to allow unrestricted forest use for urban projects, as this could lead to overexploitation of resources.
+
+If EcoTech chooses to develop eco-friendly products (A1) and GreenForest restricts access (B1), EcoTech faces challenges but can still innovate (payoff 2), while GreenForest achieves significant protection (payoff 3). If they collaborate (A1, B2), both achieve their most preferred outcomes (payoff 4,4), creating a win-win situation.
+
+If EcoTech focuses on urban projects (A2) and GreenForest restricts access (B1), EcoTech's impact is limited (payoff 1), but GreenForest still protects the forest (payoff 2). If EcoTech pursues urban projects and GreenForest allows access (A2, B2), EcoTech gains some benefits (payoff 3), but GreenForest considers this their least preferred outcome (payoff 1).
+
+The scenario highlights the complex interplay between technological innovation and environmental conservation, emphasizing the potential for collaboration to achieve mutually beneficial outcomes in ecological preservation and sustainable development.
+[/Scenario]

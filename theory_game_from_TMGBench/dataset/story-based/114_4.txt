@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a talented but inexperienced tennis player",
+  "B": "Blake, a seasoned tennis coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Train independently",
+  "A2": "Join Blake's training program",
+  "B1": "Offer personalized coaching",
+  "B2": "Focus on other clients"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Join Blake's program and receive focused coaching",
+    3: "Train independently while Blake focuses on others",
+    2: "Train independently while Blake offers coaching",
+    1: "Join Blake's program but receive little attention"
+  },
+  "B": {
+    4: "Alex trains independently while Blake offers coaching",
+    3: "Alex joins the program and Blake focuses on other clients",
+    2: "Both focus on their own interests",
+    1: "Blake offers personalized coaching but Alex trains independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Offer coaching) | B2 (Focus on others) |
+|-------|---------------------|----------------------|
+| A1 (Train independently) | 1 \ 4 | 3 \ 1 |
+| A2 (Join program) | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a promising young tennis player with raw talent but limited experience, is considering how to advance his career. He has two options: continue training independently or join the renowned training program of Blake, a seasoned tennis coach.
+
+Blake, known for developing champions, is at a crossroads in his career. He can either offer personalized coaching to Alex, seeing potential in the young player, or focus on his existing high-profile clients.
+
+Alex's preferences are clear: his ideal scenario is to join Blake's program and receive focused attention (preference 4). However, if he can't get that, he'd rather train independently while Blake focuses on others (preference 3), believing he can still improve on his own. His least preferred outcome is joining the program but receiving little attention (preference 1).
+
+Blake, on the other hand, sees the most benefit in offering personalized coaching to Alex while Alex trains independently (preference 4), as this would allow him to potentially sign Alex as a long-term client without initial commitment. His second-best outcome is if Alex joins the program while Blake maintains focus on his other clients (preference 3), as this brings in revenue without requiring extra effort.
+
+The situation creates an interesting dynamic:
+1. If Alex trains independently (A1) and Blake offers coaching (B1), Alex feels undervalued (1) while Blake sees it as an ideal opportunity (4).
+2. If Alex trains independently (A1) and Blake focuses on others (B2), Alex is content to develop on his own (3), but Blake misses out on a potential star pupil (1).
+3. If Alex joins the program (A2) and Blake offers personalized coaching (B1), both achieve a moderate outcome (2,2) as Alex gets attention but feels pressured, while Blake invests time without guaranteed returns.
+4. If Alex joins the program (A2) and Blake focuses on others (B2), Alex gets his ideal scenario (4) of being in a top program, even without personal attention, while Blake benefits from a new client without extra effort (3).
+
+This scenario illustrates the complex decision-making process in sports coaching and athlete development, where personal goals, potential, and resource allocation all play crucial roles.
+[/Scenario]

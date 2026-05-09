@@ -1,0 +1,66 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new integrated healthcare system",
+  "A2": "Maintain the current independent healthcare system",
+  "B1": "Join the integrated healthcare system",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new system with Dr. Johnson joining",
+    3: "Implement new system without Dr. Johnson",
+    2: "Maintain current system with Dr. Johnson joining",
+    1: "Maintain current system with Dr. Johnson independent"
+  },
+  "B": {
+    4: "Hospital implements new system while remaining independent",
+    3: "Hospital maintains current system while remaining independent",
+    2: "Join hospital's new integrated system",
+    1: "Join hospital's current system"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 2 \ 4 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the administrator of the local hospital, is facing a crucial decision about the future of healthcare delivery in her community. She's considering implementing a new integrated healthcare system that would streamline patient care, reduce costs, and improve overall health outcomes. However, the success of this system largely depends on the participation of local physicians.
+
+Dr. Mark Johnson, a respected private practice physician in the community, finds himself at a crossroads. He values his independence but recognizes the potential benefits of an integrated system for his patients.
+
+Dr. Chen (A) has two choices:
+A1: Implement the new integrated healthcare system
+A2: Maintain the current independent healthcare system
+
+Dr. Johnson (B) also has two choices:
+B1: Join the integrated healthcare system
+B2: Remain independent
+
+Their preferences and potential outcomes create a complex decision-making scenario:
+
+1. If Dr. Chen implements the new system and Dr. Johnson joins (A1, B1), the hospital benefits significantly (3), but Dr. Johnson loses some autonomy (1).
+
+2. If Dr. Chen implements the new system and Dr. Johnson remains independent (A1, B2), the hospital sees some improvement (2), while Dr. Johnson maintains his autonomy and benefits from the improved system without full integration (4).
+
+3. If Dr. Chen maintains the current system and Dr. Johnson tries to join (A2, B1), it creates confusion and inefficiency, resulting in the worst outcome for the hospital (1) and a suboptimal situation for Dr. Johnson (2).
+
+4. If Dr. Chen maintains the current system and Dr. Johnson remains independent (A2, B2), the hospital misses an opportunity for improvement but avoids disruption (4), while Dr. Johnson maintains his preferred independence in a familiar system (3).
+
+Dr. Chen must weigh the potential benefits of the new system against the risk of key physicians like Dr. Johnson not participating. Meanwhile, Dr. Johnson must decide whether the benefits of joining an integrated system outweigh his desire for independence. Their decisions will significantly impact the future of healthcare in their community.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a star basketball player",
+  "B": "Ben, the team's coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play team-oriented basketball",
+  "A2": "Play for personal statistics",
+  "B1": "Focus on team defense",
+  "B2": "Focus on offensive strategy"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play for personal statistics while the coach focuses on offensive strategy",
+    3: "Play team-oriented basketball while the coach focuses on team defense",
+    2: "Play team-oriented basketball while the coach focuses on offensive strategy",
+    1: "Play for personal statistics while the coach focuses on team defense"
+  },
+  "B": {
+    4: "Alex plays team-oriented basketball while focusing on offensive strategy",
+    3: "Alex plays for personal statistics while focusing on team defense",
+    2: "Alex plays team-oriented basketball while focusing on team defense",
+    1: "Alex plays for personal statistics while focusing on offensive strategy"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Team Defense) | B2 (Offensive Strategy) |
+|-------|-------------------|-------------------------|
+| A1 (Team-oriented) | 3 \ 2             | 2 \ 4                   |
+| A2 (Personal stats) | 1 \ 3             | 4 \ 1                   |
+[/Payoff Matrix]
+
+[Scenario]
+The city's professional basketball team is preparing for a crucial playoff game. Alex, the team's star player, and Ben, the head coach, are discussing strategy for the upcoming match. They both want to win, but their approaches differ.
+
+Alex has two choices: play team-oriented basketball (A1) or focus on improving his personal statistics (A2). Meanwhile, Ben can either emphasize team defense (B1) or concentrate on offensive strategy (B2).
+
+Alex's preference is to play for his personal statistics while Ben focuses on offensive strategy, as this would allow him to shine individually and potentially secure a lucrative contract next season. His least preferred scenario is playing for personal stats while Ben emphasizes defense, as this would limit his scoring opportunities.
+
+Ben, on the other hand, prefers Alex to play team-oriented basketball while he focuses on offensive strategy, believing this combination would lead to the best team performance. His least preferred outcome is Alex playing for personal stats while he emphasizes offense, as this could lead to an unbalanced and potentially losing strategy.
+
+If they both choose their top preferences (A2 and B2), Alex would be satisfied (4), but Ben would be frustrated (1). If they both opt for their second choices (A1 and B1), it would result in a balanced approach with Alex moderately satisfied (3) and Ben somewhat content (2).
+
+The combination of team-oriented play and offensive strategy (A1 and B2) would please Ben greatly (4) but leave Alex less satisfied (2). Conversely, if Alex plays for stats while Ben focuses on defense (A2 and B1), Ben would be relatively pleased (3), but Alex would be frustrated (1).
+
+As they discuss their options in the locker room, both Alex and Ben must consider not only their personal preferences but also the potential outcomes for the team. Their decision will impact not just the upcoming game, but potentially the entire playoff run and the future of the team.
+[/Scenario]

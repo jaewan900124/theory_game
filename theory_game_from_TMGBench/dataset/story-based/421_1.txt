@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a talented software developer",
+  "B": "Liam, a creative graphic designer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Share ideas openly",
+  "B2": "Keep ideas to himself"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently while Liam keeps ideas to himself",
+    3: "Collaborate while Liam keeps ideas to himself",
+    2: "Collaborate while Liam shares ideas openly",
+    1: "Work independently while Liam shares ideas openly"
+  },
+  "B": {
+    4: "Emma collaborates while he keeps ideas to himself",
+    3: "Both collaborate and share ideas openly",
+    2: "Emma works independently while he keeps ideas to himself",
+    1: "Both work independently and he shares ideas openly"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Share ideas) | B2 (Keep ideas) |
+|-------|-------------------|------------------|
+| A1 (Collaborate) | 2 \ 3 | 3 \ 4 |
+| A2 (Work independently) | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Liam, two talented professionals, are assigned to work on a high-profile project for their company. Emma, a skilled software developer, values efficiency and control over her work. Liam, a creative graphic designer, thrives on collaboration but also wants recognition for his ideas.
+
+They face a crucial decision: whether to collaborate closely or work more independently, and how open to be with their ideas. Their choices will significantly impact the project's outcome and their professional relationship.
+
+Emma prefers working independently, especially if Liam keeps his ideas to himself, as she believes this will allow her to showcase her skills best. Her second choice would be collaborating while Liam keeps his ideas private, giving her more control over the project's direction. She's less enthusiastic about full collaboration with open idea sharing, and least prefers working independently while Liam freely shares his ideas, fearing he might overshadow her contributions.
+
+Liam, on the other hand, most prefers a scenario where Emma collaborates while he keeps his ideas private, allowing him to guide the project subtly. His second choice is full collaboration with open idea sharing, as he enjoys teamwork. He's less keen on both working independently while keeping his ideas private, and least prefers the scenario where they work separately and he shares his ideas openly, fearing his contributions might be undervalued.
+
+The payoff matrix reflects these preferences, with each number representing the level of satisfaction (4 being highest, 1 lowest) for each scenario. Emma and Liam must now decide their approaches, knowing that their choices will not only affect the project's success but also their professional growth and relationship dynamics within the company.
+
+As they sit down for their first project meeting, the tension is palpable. Will they choose collaboration or competition? Will they share their ideas openly or play their cards close to the chest? Their decisions in this moment will set the tone for the entire project and potentially shape their future careers.
+[/Scenario]

@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Maya, a contemporary painter",
+  "B": "Leo, a gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde piece",
+  "A2": "Paint a safe, commercially appealing work",
+  "B1": "Feature Maya's work in a prime exhibition spot",
+  "B2": "Showcase Maya's work in a less prominent area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create provocative art and get prime exhibition spot",
+    3: "Create safe art and get less prominent showcase",
+    2: "Create provocative art and get less prominent showcase",
+    1: "Create safe art and get prime exhibition spot"
+  },
+  "B": {
+    4: "Feature provocative art in prime spot",
+    3: "Showcase safe art in less prominent area",
+    2: "Showcase provocative art in less prominent area",
+    1: "Feature safe art in prime spot"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Maya \ Leo | Feature in prime spot (B1) | Showcase in less prominent area (B2) |
+|-------------|----------------------------|--------------------------------------|
+| Provocative (A1) | 2 \ 4                     | 4 \ 2                               |
+| Safe (A2)        | 3 \ 1                     | 1 \ 3                               |
+[/Payoff Matrix]
+
+[Scenario]
+Maya, a talented contemporary painter, is preparing for her first major exhibition at Leo's prestigious art gallery. Leo, the gallery owner, is known for his keen eye for emerging talent and his ability to launch artists' careers. Both Maya and Leo face crucial decisions that will impact the success of the exhibition and their respective reputations in the art world.
+
+Maya must decide whether to create a provocative, avant-garde piece (A1) that pushes artistic boundaries or paint a safe, commercially appealing work (A2). Her preference is to create provocative art and have it featured prominently, as this aligns with her artistic vision and could establish her as a daring new voice in the art scene.
+
+Leo, on the other hand, must choose whether to feature Maya's work in a prime exhibition spot (B1) or showcase it in a less prominent area of the gallery (B2). He prefers to feature provocative art in the prime spot, as it could generate buzz and attract media attention to his gallery.
+
+The payoff matrix reveals the complex dynamics between Maya and Leo's choices:
+
+1. If Maya creates provocative art (A1) and Leo features it prominently (B1), Maya is moderately satisfied (2) as her work gets attention, while Leo is thrilled (4) with the potential impact on his gallery's reputation.
+
+2. If Maya creates provocative art (A1) and Leo showcases it in a less prominent area (B2), Maya is very pleased (4) that her artistic vision is maintained and sees potential for discovery, while Leo is somewhat satisfied (2) with the balance of risk and exposure.
+
+3. If Maya creates safe art (A2) and Leo features it prominently (B1), Maya feels conflicted (3) about compromising her vision for exposure, while Leo is disappointed (1) with the lack of excitement generated.
+
+4. If Maya creates safe art (A2) and Leo showcases it in a less prominent area (B2), Maya is frustrated (1) with the lack of recognition, while Leo is content (3) with the low-risk approach.
+
+As the exhibition date approaches, Maya and Leo must make their decisions, each weighing their artistic integrity, commercial interests, and the potential impact on their careers in the competitive world of contemporary art.
+[/Scenario]

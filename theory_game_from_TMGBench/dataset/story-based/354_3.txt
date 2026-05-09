@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "EcoTech, a renewable energy company",
+  "B": "ForestGuard, a conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a solar farm in a partially forested area",
+  "A2": "Abandon the solar farm project",
+  "B1": "Oppose the solar farm development",
+  "B2": "Collaborate with EcoTech on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop solar farm with ForestGuard's collaboration",
+    3: "Develop solar farm despite ForestGuard's opposition",
+    2: "Abandon project due to ForestGuard's opposition",
+    1: "Abandon project despite ForestGuard's willingness to collaborate"
+  },
+  "B": {
+    4: "Collaborate on solar farm development with minimal forest impact",
+    3: "Successfully prevent solar farm development",
+    2: "Solar farm developed despite opposition",
+    1: "Solar farm abandoned despite willingness to collaborate"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 4 \ 4 |
+| A2    | 2 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush, green valley, EcoTech, a pioneering renewable energy company, has identified an ideal location for a new solar farm. The site, however, is partially forested, raising concerns about the project's environmental impact. ForestGuard, a local conservation organization dedicated to protecting the region's ecosystems, becomes aware of EcoTech's plans.
+
+EcoTech (A) faces a crucial decision: they can either proceed with developing the solar farm (A1) or abandon the project entirely (A2). Meanwhile, ForestGuard (B) must choose between staunchly opposing the development (B1) or collaborating with EcoTech to find a mutually beneficial solution (B2).
+
+EcoTech's primary goal is to expand clean energy production, but they're also mindful of their public image and environmental responsibilities. Their most preferred outcome is to develop the solar farm with ForestGuard's collaboration (A1, B2), as this would provide both clean energy and positive PR. Their second choice would be to develop the farm despite opposition (A1, B1), as they'd still achieve their energy goals. Abandoning the project due to opposition (A2, B1) is their third preference, as it at least avoids a PR disaster. Their least preferred outcome is abandoning the project despite ForestGuard's willingness to collaborate (A2, B2), as this would be a missed opportunity on all fronts.
+
+ForestGuard's mission is to protect the local ecosystem, but they also recognize the importance of renewable energy in combating climate change. Their ideal scenario is collaborating with EcoTech (A1, B2), as this allows them to minimize forest impact while supporting clean energy. Their second preference is successfully preventing the solar farm development (A2, B1), protecting the forest entirely. If the solar farm is developed despite their opposition (A1, B1), this would be their third choice, as some environmental damage occurs. Their least preferred outcome is when the project is abandoned despite their willingness to collaborate (A2, B2), as this represents a lost opportunity for both forest preservation and clean energy production.
+
+The payoff matrix reflects these preferences, with each character's choices leading to different outcomes. The scenario highlights the complex interplay between renewable energy development and environmental conservation, emphasizing the potential for collaboration to achieve mutually beneficial results in ecological challenges.
+[/Scenario]

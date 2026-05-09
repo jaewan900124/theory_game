@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Attempt to score",
+  "B1": "Support Alex",
+  "B2": "Try to steal the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Score and gain personal glory",
+    3: "Pass the ball and team scores",
+    2: "Pass the ball but team doesn't score",
+    1: "Attempt to score but fail due to Blake's interference"
+  },
+  "B": {
+    4: "Steal the ball and score",
+    3: "Support Alex and team scores",
+    2: "Try to steal but Alex scores anyway",
+    1: "Support Alex but he keeps the ball"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Support) | B2 (Steal) |
+|-------|--------------|------------|
+| A1 (Pass) | 2 \ 3      | 1 \ 4      |
+| A2 (Score) | 3 \ 1      | 4 \ 2      |
+[/Payoff Matrix]
+
+[Scenario]
+In the final seconds of a crucial basketball game, Alex finds himself with the ball, just outside the three-point line. The team needs two points to win, and Alex has a clear shot. However, his teammate Blake is also nearby, in a potentially better position to score.
+
+Alex must decide whether to pass the ball to Blake (A1) or attempt to score himself (A2). Simultaneously, Blake must choose whether to support Alex by getting into a good position for a potential pass (B1) or try to steal the ball from Alex to score himself (B2).
+
+If Alex passes (A1) and Blake supports (B1), there's a good chance the team will score, but neither player gets individual glory (2 for Alex, 3 for Blake). If Alex passes (A1) but Blake tries to steal (B2), it likely results in a turnover, benefiting Blake but not Alex (1 for Alex, 4 for Blake).
+
+If Alex attempts to score (A2) and Blake supports (B1), Alex has a high chance of scoring and gaining personal glory (3 for Alex, 1 for Blake). If Alex attempts to score (A2) and Blake tries to steal (B2), there's still a chance Alex might score, but it's riskier (4 for Alex if successful, 2 for Blake).
+
+The tension is palpable as both players make their split-second decisions, knowing that their choices will determine not only the outcome of the game but also their personal standings within the team and potentially their future careers.
+[/Scenario]

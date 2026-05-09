@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a cloud-based solution",
+  "A2": "Develop an on-premise solution",
+  "B1": "Design compatible hardware",
+  "B2": "Design proprietary hardware"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "On-premise solution with proprietary hardware",
+    3: "On-premise solution with compatible hardware",
+    2: "Cloud-based solution with compatible hardware",
+    1: "Cloud-based solution with proprietary hardware"
+  },
+  "B": {
+    4: "Cloud-based solution with proprietary hardware",
+    3: "Cloud-based solution with compatible hardware",
+    2: "On-premise solution with compatible hardware",
+    1: "On-premise solution with proprietary hardware"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Compatible) | B2 (Proprietary) |
+|-------|-----------------|-------------------|
+| A1 (Cloud) | 2 \ 3 | 1 \ 4 |
+| A2 (On-premise) | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a tech startup developing a new smart home system. Alex, the software developer, must choose between creating a cloud-based or on-premise solution. Blake, the hardware engineer, needs to decide whether to design compatible hardware that works with various systems or proprietary hardware specific to their product.
+
+Alex prefers an on-premise solution, believing it offers better security and control. Their most desired outcome is an on-premise solution with proprietary hardware, as it would create a unique, integrated product. Their least preferred scenario is a cloud-based solution with proprietary hardware, as it limits flexibility without the full benefits of cloud technology.
+
+Blake favors designing proprietary hardware to differentiate their product in the market. Their ideal scenario is a cloud-based solution with proprietary hardware, allowing for unique features and ongoing service revenues. Their least desired outcome is an on-premise solution with proprietary hardware, fearing it might limit market adoption.
+
+If Alex chooses a cloud-based solution (A1) and Blake designs compatible hardware (B1), they create a flexible product that works well with other systems. This is Alex's third choice but Blake's second-best scenario.
+
+If Alex develops a cloud solution (A1) and Blake creates proprietary hardware (B2), it results in Alex's least preferred outcome but Blake's most desired scenario.
+
+If Alex opts for an on-premise solution (A2) and Blake designs compatible hardware (B1), it's Alex's second-best choice and Blake's third preference.
+
+Finally, if Alex creates an on-premise solution (A2) and Blake develops proprietary hardware (B2), it leads to Alex's most preferred outcome but Blake's least desired scenario.
+
+The two must decide their strategies independently, knowing that their choices will significantly impact the product's success and their satisfaction with the project.
+[/Scenario]

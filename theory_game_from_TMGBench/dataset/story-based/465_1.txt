@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a cognitive psychologist",
+  "B": "Dr. Mark Thompson, a behavioral psychologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while working independently",
+    3: "Keep findings private while collaborating",
+    2: "Share findings openly while working independently",
+    1: "Share findings openly while collaborating"
+  },
+  "B": {
+    4: "Access shared findings while working independently",
+    3: "Keep project independent while accessing private findings",
+    2: "Collaborate while accessing private findings",
+    1: "Collaborate with shared findings"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Work independently) |
+|-------|-------------------|--------------------------|
+| A1 (Share)    | 1 \ 1           | 2 \ 4                    |
+| A2 (Keep private) | 3 \ 2           | 4 \ 3                    |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Dr. Mark Thompson are both renowned psychologists working on a groundbreaking project studying the effects of social media on adolescent brain development. They have been assigned to the same research grant but have the option to work together or independently.
+
+Dr. Chen, known for her innovative methodologies, has recently made a significant breakthrough in her research. She now faces a dilemma: should she share her findings openly with Dr. Thompson or keep them private to maintain her competitive edge?
+
+Dr. Thompson, on the other hand, is considering whether to propose a collaboration with Dr. Chen or to continue working independently, potentially developing his own unique approach to the research question.
+
+Both psychologists are aware that their decisions will impact not only their individual success but also the overall progress of the field. They each have different preferences for the possible outcomes:
+
+Dr. Chen would ideally like to keep her findings private while working independently, as this would allow her to publish first and gain the most recognition. Her least preferred scenario is sharing her findings openly while collaborating, as she fears this might dilute her contribution.
+
+Dr. Thompson would prefer to work independently while having access to Dr. Chen's shared findings, as this would give him the most freedom and information. His least preferred outcome is collaborating while having access to only shared findings, as he feels this limits his potential for unique contributions.
+
+The psychologists must make their decisions simultaneously, without knowing what the other will choose. Their choices will determine the course of their research, their professional relationships, and potentially the speed at which crucial information about adolescent brain development becomes available to the scientific community.
+
+As they contemplate their options, both Dr. Chen and Dr. Thompson are acutely aware of the ethical implications of their choices, the potential for scientific advancement, and the personal career benefits at stake. The tension between cooperation and competition in academic research is palpable as they prepare to make their decisions.
+[/Scenario]

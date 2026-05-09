@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a criminal defense attorney",
+  "B": "Mark, the district attorney"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Negotiate a plea bargain",
+  "A2": "Go to trial",
+  "B1": "Offer a lenient plea deal",
+  "B2": "Push for a harsh sentence"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Negotiate a plea bargain while Mark pushes for a harsh sentence",
+    3: "Both negotiate a plea bargain",
+    2: "Go to trial while Mark pushes for a harsh sentence",
+    1: "Go to trial while Mark offers a lenient plea deal"
+  },
+  "B": {
+    4: "Push for a harsh sentence while Sarah negotiates a plea bargain",
+    3: "Both negotiate a plea bargain",
+    2: "Offer a lenient plea deal while Sarah goes to trial",
+    1: "Push for a harsh sentence while Sarah goes to trial"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Lenient)| B2 (Harsh) |
+|-------|-------------|------------|
+| A1 (Plea) | 3 \ 3    | 4 \ 4      |
+| A2 (Trial)| 1 \ 2    | 2 \ 1      |
+[/Payoff Matrix]
+
+[Scenario]
+In a high-profile criminal case, Sarah, a skilled criminal defense attorney, faces off against Mark, the ambitious district attorney. Sarah's client, a wealthy businessman, is accused of white-collar crimes that have garnered significant media attention.
+
+Sarah has two options: negotiate a plea bargain or go to trial. She prefers to negotiate a plea bargain, especially if Mark pushes for a harsh sentence, as it would allow her to spin it as a victory for her client. Her least preferred outcome is going to trial while Mark offers a lenient plea deal, as it might make her look overzealous.
+
+Mark, on the other hand, can either offer a lenient plea deal or push for a harsh sentence. His most preferred outcome is pushing for a harsh sentence while Sarah negotiates a plea bargain, as it would make him appear tough on crime. His least preferred scenario is pushing for a harsh sentence while Sarah goes to trial, as it risks an acquittal and public embarrassment.
+
+If both choose to negotiate (A1/B1), they each receive a moderate benefit (3/3), as the case is resolved quickly and quietly. If Sarah negotiates while Mark pushes for a harsh sentence (A1/B2), both actually benefit the most (4/4) ¨C Sarah can claim she protected her client from worse outcomes, while Mark appears tough on crime.
+
+If Sarah goes to trial while Mark offers a lenient deal (A2/B1), Sarah gets her least preferred outcome (1) as she might appear overzealous, while Mark gets a slightly better result (2) by appearing reasonable. If Sarah goes to trial while Mark pushes for a harsh sentence (A2/B2), Sarah gets a slightly better outcome (2) by appearing to fight hard for her client, while Mark gets his least preferred result (1) due to the risk and resource expenditure of a trial.
+
+The optimal strategy for both seems to be negotiating a plea bargain (A1) for Sarah and pushing for a harsh sentence (B2) for Mark, as this provides the best outcome for both parties given their individual goals and the public nature of the case.
+[/Scenario]

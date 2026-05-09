@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Emma, an up-and-coming painter",
+  "B": "Gallery owner, Marcus"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional, commercially appealing artwork",
+  "A2": "Create an avant-garde, experimental piece",
+  "B1": "Offer exclusive representation to Emma",
+  "B2": "Represent Emma non-exclusively"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create avant-garde art with non-exclusive representation",
+    3: "Create avant-garde art with exclusive representation",
+    2: "Create conventional art with non-exclusive representation",
+    1: "Create conventional art with exclusive representation"
+  },
+  "B": {
+    4: "Exclusively represent Emma's conventional art",
+    3: "Non-exclusively represent Emma's avant-garde art",
+    2: "Non-exclusively represent Emma's conventional art",
+    1: "Exclusively represent Emma's avant-garde art"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Marcus | Exclusive (B1) | Non-exclusive (B2) |
+|----------------|----------------|---------------------|
+| Conventional (A1) | 1 \ 4         | 2 \ 2               |
+| Avant-garde (A2)  | 3 \ 1         | 4 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented young painter, finds herself at a crossroads in her artistic career. She has caught the attention of Marcus, a prominent gallery owner known for his keen eye for emerging talent. Marcus is considering offering Emma representation, but both of them face crucial decisions that will shape their future collaboration.
+
+Emma must choose between creating a conventional, commercially appealing artwork (A1) or pursuing her passion for avant-garde, experimental pieces (A2). She prefers to push artistic boundaries but also recognizes the potential benefits of commercial success.
+
+Marcus, on the other hand, must decide whether to offer Emma exclusive representation (B1) or represent her non-exclusively (B2). He sees great potential in Emma but is unsure which approach will yield the best results for his gallery.
+
+Their preferences and potential outcomes create an interesting dynamic:
+
+1. If Emma creates conventional art (A1) and Marcus offers exclusive representation (B1), Emma feels creatively stifled (1) while Marcus is highly satisfied with the commercial potential (4).
+
+2. If Emma creates conventional art (A1) and Marcus offers non-exclusive representation (B2), both parties feel moderately satisfied (2/2) as they have some flexibility but aren't fully capitalizing on their potential.
+
+3. If Emma creates avant-garde art (A2) and Marcus offers exclusive representation (B1), Emma is relatively happy with her creative freedom (3), but Marcus is concerned about the market appeal (1).
+
+4. If Emma creates avant-garde art (A2) and Marcus offers non-exclusive representation (B2), this scenario is most preferred by Emma (4) as she can express herself freely and explore other opportunities. Marcus also finds this agreeable (3) as he can showcase innovative art while spreading his risk.
+
+As they sit down to discuss their potential collaboration, both Emma and Marcus must carefully consider their choices, weighing their artistic and business aspirations against the potential outcomes of their decisions.
+[/Scenario]

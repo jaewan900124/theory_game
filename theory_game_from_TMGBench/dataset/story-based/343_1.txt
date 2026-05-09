@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Maya, an aspiring painter",
+  "B": "Leo, a struggling sculptor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a joint exhibition",
+  "A2": "Work on solo projects",
+  "B1": "Focus on individual work",
+  "B2": "Collaborate on a mixed-media project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on a mixed-media project",
+    3: "Work on solo projects while Leo focuses on individual work",
+    2: "Create a joint exhibition",
+    1: "Work on solo projects while Leo wants to collaborate"
+  },
+  "B": {
+    4: "Collaborate on a mixed-media project",
+    3: "Focus on individual work while Maya works on solo projects",
+    2: "Participate in a joint exhibition",
+    1: "Focus on individual work while Maya wants to collaborate"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Focus on individual work) | B2 (Collaborate on mixed-media) |
+|-------|-------------------------------|----------------------------------|
+| A1 (Joint exhibition) | 2 \ 2                         | 4 \ 4                            |
+| A2 (Solo projects)    | 3 \ 3                         | 1 \ 1                            |
+[/Payoff Matrix]
+
+[Scenario]
+Maya and Leo are two emerging artists sharing a studio space in a bustling art district. They've been working independently for months, but an opportunity arises for a prestigious gallery showcase. This situation forces them to decide whether to collaborate or continue their individual pursuits.
+
+Maya, the painter, is torn between creating a joint exhibition (A1) that could potentially draw more attention or focusing on her solo projects (A2) to maintain her artistic vision. Leo, the sculptor, faces a similar dilemma: he can either focus on his individual work (B1) or propose a collaborative mixed-media project (B2) that combines their skills.
+
+If they both choose to work independently (A2, B1), they'll maintain their artistic autonomy and make steady progress on their personal projects. This scenario is their third preference, as it's safe but might not maximize their potential.
+
+Should they decide on a joint exhibition (A1, B1), they'll share the spotlight but potentially compromise some of their individual artistic expressions. This is their least preferred option, as it feels like a half-hearted collaboration.
+
+If Maya suggests a joint exhibition while Leo proposes a mixed-media collaboration (A1, B2), they'll find themselves in their most preferred scenario. This outcome allows them to combine their talents in an exciting new way, potentially creating something greater than the sum of its parts.
+
+However, if one artist pushes for collaboration while the other insists on working solo (A2, B2 or A1, B1), it results in their least preferred outcome, causing tension and missed opportunities.
+
+As the deadline for the gallery showcase approaches, Maya and Leo must carefully consider their choices, weighing the benefits of collaboration against the desire for individual expression. Their decision will not only impact their immediate artistic output but could also shape the trajectory of their future careers in the competitive art world.
+[/Scenario]

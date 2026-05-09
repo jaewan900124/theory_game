@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Council President Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current curriculum",
+  "A2": "Implement new experimental curriculum",
+  "B1": "Support current curriculum",
+  "B2": "Advocate for curriculum change"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new curriculum with student support",
+    3: "Maintain current curriculum with student support",
+    2: "Maintain current curriculum despite student opposition",
+    1: "Implement new curriculum without student support"
+  },
+  "B": {
+    4: "Maintain current curriculum with faculty agreement",
+    3: "Implement new curriculum with faculty agreement",
+    2: "Advocate for change, but current curriculum maintained",
+    1: "Support current curriculum, but new curriculum implemented"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 2 |
+| A2    | 1 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At Westfield University, Professor Smith, the head of the Education Department, is considering implementing a new experimental curriculum. This decision coincides with the annual curriculum review, where the Student Council, led by President Jane, has a significant voice.
+
+Professor Smith (A) has two choices: maintain the current curriculum (A1) or implement the new experimental curriculum (A2). Jane (B) can either support the current curriculum (B1) or advocate for curriculum change (B2).
+
+Professor Smith prefers implementing the new curriculum with student support the most, as it would boost his reputation and potentially lead to groundbreaking educational outcomes. His second preference is maintaining the current curriculum with student support, as it's a safe option that keeps everyone satisfied. His third choice is maintaining the current curriculum despite student opposition, as it avoids the risks of an untested approach. His least preferred outcome is implementing the new curriculum without student support, as it could lead to protests and a difficult academic year.
+
+Jane, representing the student body, most prefers maintaining the current curriculum with faculty agreement, as it's a tried-and-tested approach that students are comfortable with. Her second preference is implementing the new curriculum with faculty agreement, as it shows progressiveness but comes with uncertainties. Her third choice is advocating for change but having the current curriculum maintained, as it demonstrates the council's proactivity. Her least preferred outcome is supporting the current curriculum but having a new curriculum implemented anyway, as it would make the council appear ineffective.
+
+If both stick to the current curriculum (A1, B1), it's a safe choice for Professor Smith (2) but the ideal scenario for Jane (4). If Professor Smith maintains the current curriculum but Jane advocates for change (A1, B2), it's better for Professor Smith (3) as he appears open to student input, but less ideal for Jane (2). If Professor Smith implements the new curriculum without Jane's support (A2, B1), it's the worst-case scenario for both (1,1). However, if Professor Smith implements the new curriculum with Jane's advocacy (A2, B2), it's the best outcome for Professor Smith (4) and a good compromise for Jane (3).
+
+The situation creates a complex dynamic where both parties must carefully consider their strategies, weighing the potential benefits and risks of cooperation versus competition in shaping the university's educational future.
+[/Scenario]

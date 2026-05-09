@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, an aspiring painter",
+  "B": "Lucas, a gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional, commercially appealing painting",
+  "A2": "Create an avant-garde, experimental artwork",
+  "B1": "Exhibit the artwork in a group show",
+  "B2": "Offer a solo exhibition to the artist"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a conventional painting and get a solo exhibition",
+    3: "Create an avant-garde artwork and get a solo exhibition",
+    2: "Create an avant-garde artwork and be in a group show",
+    1: "Create a conventional painting and be in a group show"
+  },
+  "B": {
+    4: "Exhibit a conventional painting in a solo exhibition",
+    3: "Exhibit a conventional painting in a group show",
+    2: "Exhibit an avant-garde artwork in a group show",
+    1: "Exhibit an avant-garde artwork in a solo exhibition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Group Show (B1) | Solo Exhibition (B2) |
+|--------------|-----------------|----------------------|
+| Conventional (A1) | 1 \ 3           | 4 \ 4               |
+| Avant-garde (A2)  | 2 \ 2           | 3 \ 1               |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, an aspiring painter, is preparing for her next exhibition at Lucas's renowned art gallery. She faces a crucial decision: should she create a conventional, commercially appealing painting (A1) or push her boundaries with an avant-garde, experimental artwork (A2)?
+
+Lucas, the gallery owner, must decide whether to include Emma's work in a group show alongside other artists (B1) or offer her a prestigious solo exhibition (B2).
+
+Emma's preferences reflect her artistic ambitions and desire for recognition. Her top choice (4) is to create a conventional painting and secure a solo exhibition, as it would provide both financial stability and exposure. Her second preference (3) is to showcase her avant-garde work in a solo exhibition, allowing her to express her creativity while still gaining significant attention. Her third choice (2) is to display her experimental art in a group show, which offers some exposure but less prominence. Her least preferred outcome (1) is to create a conventional painting for a group show, feeling this would neither satisfy her artistic vision nor provide substantial recognition.
+
+Lucas's preferences are driven by commercial interests and gallery reputation. His top choice (4) is to exhibit a conventional painting in a solo exhibition, as it's likely to attract buyers and positive reviews. His second preference (3) is to include a conventional painting in a group show, which is still commercially viable but spreads the risk. His third choice (2) is to feature an avant-garde artwork in a group show, potentially attracting critical acclaim while minimizing financial risk. His least preferred outcome (1) is to offer a solo exhibition for an avant-garde artwork, fearing it might alienate his usual clientele and impact sales.
+
+The payoff matrix reveals the complex dynamics between artistic integrity and commercial success. If Emma chooses to create a conventional painting (A1) and Lucas offers a solo exhibition (B2), both achieve their most preferred outcome (4,4). However, if Emma creates an avant-garde piece (A2) and Lucas opts for a group show (B1), they settle for a compromise (2,2). The scenario where Emma produces a conventional work (A1) for a group show (B1) is least favorable for her (1,3), while Lucas risks the most by offering a solo show (B2) for an avant-garde piece (A2), resulting in (3,1).
+
+As Emma stands before her blank canvas and Lucas reviews his exhibition schedule, they must each make their decision, knowing that their choices will significantly impact both of their futures in the art world.
+[/Scenario]

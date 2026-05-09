@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "General Alexei Volkov",
+  "B": "Admiral Hiroshi Tanaka"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Launch a land-based offensive",
+  "A2": "Maintain defensive positions",
+  "B1": "Conduct naval bombardment",
+  "B2": "Deploy amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch land offensive while enemy conducts amphibious assault",
+    3: "Launch land offensive while enemy conducts naval bombardment",
+    2: "Maintain defensive positions while enemy conducts amphibious assault",
+    1: "Maintain defensive positions while enemy conducts naval bombardment"
+  },
+  "B": {
+    4: "Conduct naval bombardment while enemy launches land offensive",
+    3: "Deploy amphibious assault while enemy launches land offensive",
+    2: "Conduct naval bombardment while enemy maintains defensive positions",
+    1: "Deploy amphibious assault while enemy maintains defensive positions"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 1 \ 2 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the midst of a fierce conflict between two rival nations, General Alexei Volkov of the land forces and Admiral Hiroshi Tanaka of the naval forces find themselves locked in a strategic standoff on the shores of a disputed territory.
+
+General Volkov, commanding a formidable army, must decide whether to launch a daring land-based offensive or maintain his current defensive positions. His preference is to strike aggressively, especially if he can catch the enemy off-guard during an amphibious assault.
+
+Admiral Tanaka, leading a powerful fleet, faces the choice of conducting a naval bombardment or initiating an amphibious assault. He favors the bombardment option, particularly if it can disrupt an enemy land offensive.
+
+Both commanders are acutely aware that their decisions will have far-reaching consequences for the outcome of the conflict. They must anticipate each other's moves and act accordingly.
+
+If Volkov launches his offensive while Tanaka opts for naval bombardment, it would result in a scenario favorable to both, but slightly more so for Tanaka (3 for Volkov, 4 for Tanaka). This represents a balance of aggression from both sides.
+
+Should Volkov attack while Tanaka attempts an amphibious assault, it would be ideal for Volkov but still beneficial for Tanaka (4 for Volkov, 3 for Tanaka). This scenario showcases a clash of offensive strategies.
+
+If Volkov maintains his defensive stance while Tanaka bombards from the sea, it would be the least favorable outcome for Volkov and moderately good for Tanaka (1 for Volkov, 2 for Tanaka). This represents a cautious approach from Volkov being exploited by Tanaka.
+
+Finally, if Volkov stays defensive and Tanaka launches an amphibious assault, it would be slightly better for Volkov but the worst outcome for Tanaka (2 for Volkov, 1 for Tanaka). This scenario depicts a failed offensive against a prepared defense.
+
+As tensions mount and the moment of decision approaches, both commanders must weigh their options carefully, knowing that their choices will shape the future of the conflict and potentially the fate of their nations.
+[/Scenario]

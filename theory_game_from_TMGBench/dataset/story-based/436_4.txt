@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a custom software solution",
+  "A2": "Use an off-the-shelf software package",
+  "B1": "Design a specialized hardware component",
+  "B2": "Use standard hardware components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Use off-the-shelf software with standard hardware (A2B2)",
+    3: "Develop custom software with specialized hardware (A1B1)",
+    2: "Develop custom software with standard hardware (A1B2)",
+    1: "Use off-the-shelf software with specialized hardware (A2B1)"
+  },
+  "B": {
+    4: "Custom software with standard hardware (A1B2)",
+    3: "Off-the-shelf software with standard hardware (A2B2)",
+    2: "Custom software with specialized hardware (A1B1)",
+    1: "Off-the-shelf software with specialized hardware (A2B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 2 \ 4 |
+| A2    | 1 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a new smart home automation system for their company. They need to decide on the software and hardware components for the project.
+
+Alex, the software engineer, has two choices: develop a custom software solution (A1) or use an off-the-shelf software package (A2). Blake, the hardware engineer, also has two options: design a specialized hardware component (B1) or use standard hardware components (B2).
+
+Their preferences and payoffs vary based on their choices:
+
+1. If Alex develops custom software and Blake designs specialized hardware (A1B1), it results in a highly tailored solution. Alex is satisfied with this outcome (3), while Blake finds it moderately beneficial (2).
+
+2. If Alex develops custom software but Blake uses standard hardware (A1B2), the project becomes easier for Blake but more challenging for Alex. This is Blake's most preferred outcome (4), but Alex's second-least preferred (2).
+
+3. If Alex uses off-the-shelf software and Blake designs specialized hardware (A2B1), both engineers face challenges integrating the components. This is the least preferred outcome for both (1).
+
+4. If Alex uses off-the-shelf software and Blake uses standard hardware (A2B2), the project becomes straightforward but less innovative. This is Alex's most preferred outcome (4) and Blake's second-best option (3).
+
+Alex prefers using off-the-shelf solutions to save time and effort, while Blake favors standard hardware components for their reliability and ease of implementation. However, they both recognize the potential benefits of a more customized approach.
+
+As they discuss their options, they must consider not only their individual preferences but also the overall success of the project and the company's goals. Their decision will impact the project's timeline, cost, and final product quality.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, an aspiring painter",
+  "B": "Lucas, a gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a traditional artwork",
+  "A2": "Create an experimental artwork",
+  "B1": "Display the artwork prominently",
+  "B2": "Display the artwork in a less visible area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Traditional artwork in less visible area",
+    3: "Experimental artwork in less visible area",
+    2: "Traditional artwork prominently displayed",
+    1: "Experimental artwork prominently displayed"
+  },
+  "B": {
+    4: "Traditional artwork prominently displayed",
+    3: "Traditional artwork in less visible area",
+    2: "Experimental artwork in less visible area",
+    1: "Experimental artwork prominently displayed"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Display Prominently | Display Less Visibly |
+|---------------|---------------------|----------------------|
+| Traditional   | 2 \ 4               | 4 \ 3                |
+| Experimental  | 1 \ 1               | 3 \ 2                |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, an aspiring painter, has been given the opportunity to showcase her work at Lucas's prestigious art gallery. This is a crucial moment in her career, and she must decide whether to create a traditional artwork that aligns with the gallery's usual style or to take a risk with an experimental piece that truly reflects her artistic vision.
+
+Lucas, the gallery owner, has his own decision to make. He can choose to display Emma's work prominently, giving it maximum exposure, or place it in a less visible area of the gallery.
+
+Emma's preferences, surprisingly, lean towards having her work displayed in less visible areas. Her top choice is to have her traditional work in a less visible area (4), followed by her experimental work in a less visible area (3). She prefers this because she believes it allows viewers to discover her art more intimately. Her third choice is to have her traditional work prominently displayed (2), and her least preferred outcome is having her experimental work prominently displayed (1), as she fears it might be too exposed to criticism.
+
+Lucas, on the other hand, prefers to prominently display traditional artwork (4) as it tends to sell better. His second choice would be to place traditional work in a less visible area (3), followed by placing experimental work in a less visible area (2). His least preferred option is to prominently display experimental work (1), as he worries it might alienate his regular clientele.
+
+The payoff matrix reflects these preferences and the potential outcomes of their choices. If Emma creates a traditional artwork and Lucas displays it prominently, Emma receives a payoff of 2 (her third choice) while Lucas receives a payoff of 4 (his top choice). If Emma creates an experimental piece and Lucas displays it prominently, both receive a payoff of 1 (their least preferred outcomes).
+
+Emma and Lucas must make their decisions independently, without knowing what the other will choose. Their choices will determine the outcome of this artistic collaboration and potentially impact both of their careers in the art world. The tension between artistic integrity, market demands, and personal preferences creates a complex decision-making scenario for both parties.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "General Smith",
+  "B": "General Chen"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Fortify defensive positions",
+  "A2": "Launch a preemptive strike",
+  "B1": "Maintain current positions",
+  "B2": "Advance troops to the border"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch a preemptive strike while B maintains current positions",
+    3: "Launch a preemptive strike while B advances troops",
+    2: "Fortify defenses while B advances troops",
+    1: "Both sides maintain current positions"
+  },
+  "B": {
+    4: "Advance troops while A fortifies defenses",
+    3: "Both maintain current positions",
+    2: "Both sides escalate (A strikes, B advances)",
+    1: "A launches preemptive strike while B maintains position"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 2 \ 4 |
+| A2    | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense border region, two rival nations face off, their armies poised for potential conflict. General Smith of the Western Alliance and General Chen of the Eastern Federation find themselves in a delicate strategic standoff.
+
+General Smith, known for his aggressive tactics, is considering two options: fortifying his defensive positions (A1) or launching a preemptive strike (A2). Meanwhile, General Chen, praised for his cautious approach, must decide between maintaining his current positions (B1) or advancing his troops to the border (B2).
+
+For General Smith, the ideal outcome would be to launch a surprise attack while General Chen remains passive, giving him a significant advantage. His second preference would be to strike even as Chen advances, hoping to catch the enemy off-guard during their movement. Smith's least desired scenario is a stalemate where both sides merely hold their ground.
+
+General Chen, on the other hand, would prefer to advance his troops while Smith focuses on defense, allowing him to gain strategic ground without direct confrontation. His second choice would be for both sides to maintain their positions, avoiding unnecessary bloodshed. Chen's worst-case scenario is falling victim to Smith's preemptive strike while his own forces remain stationary.
+
+As tensions mount, both generals must weigh their options carefully. If they both choose to escalate (Smith attacks, Chen advances), it could lead to a full-scale war with heavy casualties on both sides. However, if they both remain passive, it might prolong the conflict without resolution.
+
+The decisions of these two military leaders will not only affect the immediate tactical situation but could also have far-reaching consequences for the political landscape of the region. As they contemplate their moves, the fate of thousands of soldiers and civilians hangs in the balance.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a sociology professor",
+  "B": "Mark Johnson, the department head"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Focus on individual research",
+  "B1": "Provide additional funding and resources",
+  "B2": "Maintain current funding levels"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Focus on individual research with additional funding",
+    3: "Collaborate on a joint project with additional funding",
+    2: "Collaborate on a joint project with current funding",
+    1: "Focus on individual research with current funding"
+  },
+  "B": {
+    4: "Collaborate on a joint project with additional funding",
+    3: "Collaborate on a joint project with current funding",
+    2: "Focus on individual research with current funding",
+    1: "Focus on individual research with additional funding"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 3 |
+| A2    | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen, a brilliant sociology professor, finds herself at a crossroads in her academic career. She has been approached by Mark Johnson, the department head, with a proposition that could significantly impact her research trajectory and the department's standing.
+
+Mark suggests a collaboration on a joint research project that could potentially bring prestige to the department. He believes that combining their expertise could lead to groundbreaking findings in social network analysis. However, he's aware that this might divert Emily from her individual research interests.
+
+Emily, on the other hand, has been making significant progress on her individual research focusing on the sociological impacts of emerging technologies. She's passionate about this work and believes it could lead to important discoveries.
+
+Both Emily and Mark have two choices to make. Emily must decide whether to collaborate on the joint project (A1) or focus on her individual research (A2). Mark needs to choose between providing additional funding and resources (B1) or maintaining current funding levels (B2).
+
+Their preferences for the outcomes differ. Emily would ideally like to focus on her individual research with additional funding (A2, B1), as this would allow her to accelerate her work without compromising her interests. Her second preference would be collaborating with additional funding (A1, B1), followed by collaboration with current funding (A1, B2). Her least preferred outcome is focusing on individual research with current funding (A2, B2).
+
+Mark, however, strongly prefers the collaborative project with additional funding (A1, B1), as it aligns with his vision for the department. His second choice would be collaboration even with current funding (A1, B2). He would rather see individual research with current funding (A2, B2) than provide additional resources for non-collaborative work (A2, B1).
+
+The outcome of their decisions will shape not only their individual careers but also the direction of sociological research in their department. Will they find a way to align their interests, or will their differing priorities lead to a suboptimal outcome for one or both of them?
+
+As they prepare for their meeting to discuss these options, both Emily and Mark are acutely aware of the potential impact of their choices. The tension between individual pursuits and collaborative efforts, as well as the allocation of limited resources, mirrors broader challenges in academia and society at large.
+[/Scenario]

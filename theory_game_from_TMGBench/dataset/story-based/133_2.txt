@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Sam, Alex's longtime doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on doubles",
+  "A2": "Focus on singles",
+  "B1": "Focus on doubles",
+  "B2": "Focus on singles"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Focus on singles while Sam focuses on doubles",
+    3: "Both focus on doubles",
+    2: "Both focus on singles",
+    1: "Focus on doubles while Sam focuses on singles"
+  },
+  "B": {
+    4: "Both focus on doubles",
+    3: "Focus on singles while Alex focuses on doubles",
+    2: "Both focus on singles",
+    1: "Focus on doubles while Alex focuses on singles"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Doubles) | B2 (Singles) |
+|-------|--------------|--------------|
+| A1 (Doubles) | 3 \ 4        | 2 \ 2        |
+| A2 (Singles) | 1 \ 1        | 4 \ 3        |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Sam, longtime doubles partners on the professional tennis circuit, are facing a crucial decision in their careers. With the upcoming season presenting opportunities in both singles and doubles tournaments, they must decide whether to focus their training and competition efforts on doubles or singles play.
+
+Alex, known for their powerful serves and aggressive net play, has been considering a shift towards singles to pursue individual glory. However, they also value the strong partnership and success they've had with Sam in doubles. Alex's ideal scenario would be to focus on singles while Sam continues to specialize in doubles, allowing Alex to pursue individual achievements while still having a strong doubles partner when needed.
+
+Sam, on the other hand, prefers the teamwork and strategy involved in doubles play. They excel in communication and coordinated movements on the court. Sam's optimal outcome would be for both players to focus on doubles, maintaining their successful partnership and potentially dominating the doubles circuit.
+
+If both players choose to focus on singles, they would still perform decently but might not reach their full potential in either discipline. This scenario is their third preference for both players.
+
+The least desirable outcome for both Alex and Sam would be to focus on doubles while their partner focuses on singles, as this would lead to a misaligned partnership and potentially poor performance in both disciplines.
+
+As they sit down to discuss their plans for the upcoming season, Alex and Sam must carefully consider their choices, knowing that their decision will significantly impact their individual careers and their partnership. The payoff matrix reflects the complex dynamics of their decision, where their individual preferences don't always align, creating a challenging game theory scenario in the world of professional tennis.
+[/Scenario]

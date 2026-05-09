@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Tom, a talented tennis player",
+  "B": "Sarah, Tom's doubles partner and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play defensively",
+  "A2": "Play aggressively",
+  "B1": "Play at the net",
+  "B2": "Play from the baseline"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Win the match with aggressive play",
+    3: "Win the match with defensive play",
+    2: "Lose the match, but showcase individual skills",
+    1: "Lose the match without showcasing skills"
+  },
+  "B": {
+    4: "Win the match while dominating at the net",
+    3: "Win the match with balanced play",
+    2: "Lose the match, but impress scouts with baseline play",
+    1: "Lose the match without impressing anyone"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Net)   | B2 (Baseline) |
+|-------|------------|---------------|
+| A1 (Defensive) | 1 \ 4       | 3 \ 3         |
+| A2 (Aggressive) | 2 \ 1       | 4 \ 2         |
+[/Payoff Matrix]
+
+[Scenario]
+Tom and Sarah, longtime doubles partners and individual rivals, are competing in the finals of a prestigious tennis tournament. Their unique styles and competitive nature have brought them this far, but now they face a crucial decision that will determine the outcome of the match and potentially impact their careers.
+
+Tom, known for his versatility, must choose between playing defensively or aggressively. Sarah, recognized for her net skills, needs to decide whether to dominate at the net or play from the baseline. Their choices will not only affect the match's outcome but also their individual prospects, as scouts from professional teams are watching.
+
+If Tom plays defensively (A1) and Sarah plays at the net (B1), they'll likely lose the match, with Tom unable to showcase his skills (1) while Sarah impresses the scouts with her net play (4). If Tom plays defensively (A1) and Sarah plays from the baseline (B2), they have a good chance of winning with a balanced approach, satisfying both players (3,3).
+
+Should Tom choose to play aggressively (A2) while Sarah plays at the net (B1), they risk losing the match due to lack of coordination, but Tom might catch the scouts' attention (2) while Sarah's performance suffers (1). However, if Tom plays aggressively (A2) and Sarah plays from the baseline (B2), they have the best chance of winning the match, with Tom shining (4) and Sarah still impressing, albeit less so (2).
+
+As they step onto the court, both Tom and Sarah must weigh their personal ambitions against their partnership's success, knowing that their choices will shape not only the outcome of this match but potentially their future careers in tennis.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play as a team player",
+  "A2": "Play selfishly for personal glory",
+  "B1": "Play as a team player",
+  "B2": "Play selfishly for personal glory"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Personal glory while Blake plays as a team player",
+    3: "Personal glory while Blake also plays selfishly",
+    2: "Team success while Blake plays selfishly",
+    1: "Team success while Blake also plays as a team player"
+  },
+  "B": {
+    4: "Team success while Alex plays as a team player",
+    3: "Personal glory while Alex also plays selfishly",
+    2: "Personal glory while Alex plays as a team player",
+    1: "Team success while Alex plays selfishly"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Team) | B2 (Selfish) |
+|-------|-----------|--------------|
+| A1 (Team) | 1 \ 4     | 4 \ 2       |
+| A2 (Selfish) | 3 \ 1     | 2 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are star players on their high school basketball team, both vying for a scholarship to a prestigious college. As the championship game approaches, they face a crucial decision that will impact not only the team's success but also their individual prospects.
+
+Alex, known for his scoring ability, must decide whether to play as a team player (A1) or focus on personal statistics (A2). Similarly, Blake, an excellent playmaker, faces the same dilemma: to play for the team (B1) or chase personal glory (B2).
+
+If both Alex and Blake choose to play as team players (A1, B1), the team has the best chance of winning, but their individual statistics might not stand out. In this scenario, Blake benefits more (4) as a playmaker, while Alex's scoring opportunities are limited (1).
+
+If Alex plays selfishly while Blake remains a team player (A2, B1), Alex can showcase his scoring prowess (3), but Blake's team-oriented play goes unnoticed (1).
+
+When Blake plays selfishly and Alex plays for the team (A1, B2), Alex's team play allows Blake to shine (2), while Alex unexpectedly gets more scoring opportunities due to Blake's self-centered play (4).
+
+If both players choose to play selfishly (A2, B2), they may put up impressive individual numbers (Alex: 2, Blake: 3), but at the cost of team chemistry and potentially the game itself.
+
+As the championship game begins, Alex and Blake must make their choices, knowing that their decisions will not only affect the outcome of the game but also their future athletic careers. The tension is palpable as they step onto the court, each weighing their personal ambitions against the greater good of the team.
+[/Scenario]

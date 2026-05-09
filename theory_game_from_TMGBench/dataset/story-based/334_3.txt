@@ -1,0 +1,64 @@
+[Characters]
+{
+  "A": "Dr. Elena Vasquez, an astrophysicist",
+  "B": "Commander Jack Zhang, a space mission specialist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on deep space research",
+  "A2": "Prioritize near-Earth asteroid mining",
+  "B1": "Invest in advanced propulsion technology",
+  "B2": "Develop orbital habitats and space stations"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Deep space research with orbital habitats (A1, B2)",
+    3: "Asteroid mining with advanced propulsion (A2, B1)",
+    2: "Asteroid mining with orbital habitats (A2, B2)",
+    1: "Deep space research with advanced propulsion (A1, B1)"
+  },
+  "B": {
+    4: "Deep space research with orbital habitats (A1, B2)",
+    3: "Asteroid mining with advanced propulsion (A2, B1)",
+    2: "Asteroid mining with orbital habitats (A2, B2)",
+    1: "Deep space research with advanced propulsion (A1, B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 4 \ 4 |
+| A2    | 3 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, humanity stands at the brink of a new era in space exploration. Dr. Elena Vasquez, a brilliant astrophysicist, and Commander Jack Zhang, a seasoned space mission specialist, find themselves at the helm of a crucial decision that will shape the future of space exploration.
+
+The International Space Coalition (ISC) has granted them the authority to determine the focus of the next decade's space initiatives. However, they must reach a consensus on two key aspects: the primary research direction and the supporting technology to be developed.
+
+Dr. Vasquez is torn between her passion for deep space research (A1) and the practical benefits of near-Earth asteroid mining (A2). Meanwhile, Commander Zhang must decide between investing in advanced propulsion technology (B1) or developing orbital habitats and space stations (B2).
+
+Their preferences align in an interesting way. Both consider the combination of deep space research with orbital habitat development (A1, B2) as the most promising scenario, offering groundbreaking scientific discoveries and a sustainable human presence in space. They rank this option as their top preference (4).
+
+Their second-best option (preference 3) is the combination of asteroid mining with advanced propulsion (A2, B1). This scenario promises immediate economic benefits and faster space travel, potentially funding future exploration.
+
+The third preference (2) for both is asteroid mining coupled with orbital habitat development (A2, B2). This option balances economic gains with space colonization efforts but lacks the excitement of deep space exploration.
+
+Lastly, they both least prefer (1) the combination of deep space research with advanced propulsion (A1, B1). While scientifically intriguing, this option lacks the immediate practical benefits and long-term sustainability offered by the other combinations.
+
+As they sit across from each other in the ISC's strategy room, the tension is palpable. They know that their decision will not only affect their careers but also the trajectory of human space exploration for years to come. The success of their choice depends on mutual agreement, as a divided approach would result in suboptimal outcomes for both their individual goals and humanity's progress in space.
+
+Dr. Vasquez leans forward, her eyes gleaming with the possibilities. "Jack, we have a unique opportunity here. What do you think should be our primary focus?"
+
+Commander Zhang strokes his chin thoughtfully, aware of the weight of their decision. "Elena, you're right. This is bigger than us. We need to consider both immediate returns and long-term vision. Shall we discuss each scenario in detail?"
+
+As they begin their discussion, the future of space exploration hangs in the balance, dependent on their ability to cooperate and find the optimal solution for humanity's cosmic endeavors.
+[/Scenario]

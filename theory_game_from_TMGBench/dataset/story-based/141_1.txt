@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Emma"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer extra office hours",
+  "A2": "Maintain regular office hours",
+  "B1": "Attend office hours regularly",
+  "B2": "Study independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain regular hours, Emma studies independently",
+    3: "Offer extra hours, Emma attends regularly",
+    2: "Maintain regular hours, Emma attends regularly",
+    1: "Offer extra hours, Emma studies independently",
+  },
+  "B": {
+    4: "Professor offers extra hours, Emma attends regularly",
+    3: "Professor offers extra hours, Emma studies independently",
+    2: "Professor maintains regular hours, Emma attends regularly",
+    1: "Professor maintains regular hours, Emma studies independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 3 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is teaching an advanced physics course. One of his students, Emma, is struggling with the complex material. As the semester progresses, both Professor Smith and Emma face decisions that will impact their time management and academic success.
+
+Professor Smith must decide whether to offer extra office hours (A1) or maintain his regular office hours (A2). Extra hours would mean sacrificing personal time but potentially helping struggling students more. Regular hours would preserve his work-life balance but might not provide enough support for some students.
+
+Emma needs to choose between attending office hours regularly (B1) or studying independently (B2). Regular attendance would require more time commitment but offer direct guidance, while independent study would allow for a flexible schedule but might lead to misunderstandings of the material.
+
+Professor Smith prefers maintaining his regular hours while students study independently, as this allows him to focus on research. His least preferred scenario is offering extra hours that go unused. Emma, on the other hand, most prefers having access to extra office hours and attending them regularly, as this would provide her with the most support. Her least preferred option is having only regular office hours available and studying independently.
+
+If Professor Smith offers extra hours and Emma attends regularly, both benefit significantly (3,4). If he offers extra hours but Emma studies independently, it's less ideal for both (1,3). If he maintains regular hours and Emma attends regularly, it's a moderate outcome for both (2,2). Finally, if he maintains regular hours and Emma studies independently, it's best for Professor Smith but worst for Emma (4,1).
+
+As the semester unfolds, Professor Smith and Emma must navigate their choices, balancing personal preferences with academic needs, in this educational game of cooperation and potential conflict.
+[/Scenario]

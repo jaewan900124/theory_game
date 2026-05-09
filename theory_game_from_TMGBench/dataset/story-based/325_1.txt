@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma",
+  "B": "Liam"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share project idea",
+  "A2": "Keep idea secret",
+  "B1": "Withhold feedback",
+  "B2": "Provide honest feedback"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Share idea and receive honest feedback",
+    3: "Keep idea secret and receive honest feedback",
+    2: "Keep idea secret and receive no feedback",
+    1: "Share idea and receive no feedback"
+  },
+  "B": {
+    4: "Hear shared idea and provide honest feedback",
+    3: "Not hear idea and provide honest feedback",
+    2: "Not hear idea and withhold feedback",
+    1: "Hear shared idea and withhold feedback"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Liam | Withhold feedback | Provide honest feedback |
+|--------------|-------------------|-------------------------|
+| Share idea   | 1 \ 1             | 4 \ 4                   |
+| Keep secret  | 2 \ 2             | 3 \ 3                   |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Liam are colleagues at a tech startup. They often collaborate on projects but also compete for recognition and promotions. Emma has recently come up with an innovative idea for a new product that could potentially revolutionize their industry. She's excited about it but unsure whether to share it with Liam or keep it to herself.
+
+Emma has two choices: she can either share her project idea with Liam (A1) or keep it secret (A2). Liam, on the other hand, can choose to withhold his feedback (B1) or provide honest feedback (B2) if Emma decides to share her idea.
+
+Emma's most preferred outcome is to share her idea and receive honest feedback from Liam, as this would help her refine and improve her concept. Her least preferred scenario is sharing the idea and receiving no feedback, as this would leave her vulnerable without any constructive input.
+
+Liam's preferences align with Emma's in this situation. He most prefers hearing Emma's idea and providing honest feedback, as this allows him to contribute and potentially collaborate. His least preferred outcome is hearing the idea but withholding feedback, as this would create tension and mistrust between them.
+
+If Emma keeps her idea secret and Liam provides no feedback (as he has nothing to provide feedback on), both would be in their second-least preferred state. They would maintain the status quo but miss out on potential collaboration and growth.
+
+The scenario where Emma keeps her idea secret but Liam still offers honest feedback (on their general work) is the third most preferred for both. This maintains a positive working relationship without the risk of idea sharing.
+
+The payoff matrix reflects these preferences, with the highest mutual benefit (4,4) occurring when Emma shares her idea and Liam provides honest feedback. The lowest mutual benefit (1,1) happens when Emma shares but Liam withholds feedback. The intermediate outcomes (2,2) and (3,3) represent the secret-keeping scenarios.
+
+Emma and Liam's decisions in this situation will not only affect the potential success of the project idea but also impact their working relationship and future collaborations. The outcome depends on their ability to trust each other and their willingness to cooperate in a competitive environment.
+[/Scenario]

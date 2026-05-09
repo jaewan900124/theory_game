@@ -1,0 +1,57 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer traditional lecture-based course",
+  "A2": "Implement project-based learning",
+  "B1": "Attend classes passively",
+  "B2": "Engage actively in learning"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement project-based learning with active student engagement",
+    3: "Offer traditional lecture-based course with active student engagement",
+    2: "Implement project-based learning with passive student attendance",
+    1: "Offer traditional lecture-based course with passive student attendance"
+  },
+  "B": {
+    4: "Attend traditional lecture-based course passively",
+    3: "Engage actively in traditional lecture-based course",
+    2: "Attend project-based learning course passively",
+    1: "Engage actively in project-based learning course"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 3 \ 4 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is preparing for the upcoming semester's Advanced Economics course. He's torn between sticking to his traditional lecture-based approach (A1) and implementing a new project-based learning method (A2). Meanwhile, Student Jane, known for her varied engagement levels in different classes, is enrolled in this course and must decide whether to attend classes passively (B1) or engage actively in the learning process (B2).
+
+Professor Smith prefers the project-based learning approach, especially if students engage actively, as he believes it leads to better learning outcomes. However, he's concerned about the extra effort required and potential resistance from students. His least preferred scenario is giving traditional lectures to passive students, feeling it's a waste of everyone's time.
+
+On the other hand, Student Jane, despite being capable, prefers the path of least resistance. She would ideally like to pass the course with minimal effort, hence her preference for passively attending traditional lectures. The prospect of active engagement in a project-based course is her least favored option, viewing it as too demanding and time-consuming.
+
+The payoff matrix reflects these preferences:
+
+1. If Professor Smith chooses traditional lectures (A1) and Jane attends passively (B1), it's the worst outcome for Smith (1) but comfortable for Jane (3).
+2. If Smith lectures (A1) and Jane engages actively (B2), it's better for Smith (3) and ideal for Jane (4).
+3. If Smith implements project-based learning (A2) and Jane remains passive (B1), it's somewhat satisfactory for Smith (2) but less preferred by Jane (2).
+4. If Smith chooses project-based learning (A2) and Jane engages actively (B2), it's the best outcome for Smith (4) but the worst for Jane (1).
+
+This scenario highlights the potential conflict between an educator's desire to implement innovative teaching methods and a student's preference for familiar, less demanding learning approaches. The outcome depends on both parties' choices, illustrating the complex dynamics in educational settings where cooperation and competition coexist.
+[/Scenario]

@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Council President Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement traditional lecture-based teaching",
+  "A2": "Adopt innovative project-based learning",
+  "B1": "Support the professor's decision",
+  "B2": "Advocate for student-preferred methods"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement traditional lectures with student support",
+    3: "Adopt project-based learning with student advocacy",
+    2: "Implement traditional lectures despite student advocacy",
+    1: "Adopt project-based learning with student support"
+  },
+  "B": {
+    4: "Professor implements traditional lectures with student support",
+    3: "Professor adopts project-based learning with student advocacy",
+    2: "Professor adopts project-based learning with student support",
+    1: "Professor implements traditional lectures despite student advocacy"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 1 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At Oakwood University, a debate has arisen over the teaching methods for the upcoming semester. Professor Smith, a seasoned academic with traditional views, is considering whether to stick with his tried-and-true lecture-based approach or adopt a new project-based learning method that the administration is encouraging.
+
+On the other side, Jane, the Student Council President, must decide whether to support the professor's decision or advocate for the teaching method that the student body prefers. Both Professor Smith and Jane have their own preferences and concerns.
+
+Professor Smith prefers the traditional lecture-based method, as he believes it allows for more comprehensive coverage of the curriculum. However, he's aware that student engagement is crucial for effective learning. His ideal scenario would be to implement traditional lectures with student support, ensuring minimal resistance and maximum attention from the class.
+
+Jane, representing the student body, has heard mixed opinions from her peers. Some students appreciate the structure of lectures, while others are excited about the prospect of hands-on, project-based learning. Her primary goal is to ensure that students' voices are heard and that their learning experience is optimized.
+
+The scenario plays out as follows:
+
+1. If Professor Smith chooses traditional lectures (A1) and Jane supports his decision (B1), it results in a moderately satisfactory outcome for the professor (2) but the best outcome for Jane (4), as it maintains harmony and respects the professor's expertise.
+
+2. If Professor Smith chooses traditional lectures (A1) and Jane advocates for student-preferred methods (B2), it leads to the best outcome for the professor (4) as he can justify his preferred method, but the worst outcome for Jane (1) as it creates tension between students and faculty.
+
+3. If Professor Smith adopts project-based learning (A2) and Jane supports this decision (B1), it results in the worst outcome for the professor (1) as he must teach outside his comfort zone, and a moderately satisfactory outcome for Jane (2) as it brings change but without student input.
+
+4. If Professor Smith adopts project-based learning (A2) and Jane advocates for student-preferred methods (B2), it leads to a good outcome for both (3 and 3), as it represents a compromise and shows willingness to innovate from both sides.
+
+The challenge for both Professor Smith and Jane is to navigate this situation, considering not only their personal preferences but also the broader impacts on the quality of education and the university community as a whole.
+[/Scenario]

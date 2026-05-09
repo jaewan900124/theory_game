@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Shoot the ball",
+  "B1": "Stay in position",
+  "B2": "Move to receive the pass"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pass to Blake who scores (A1, B2)",
+    3: "Score by shooting (A2, B1)",
+    2: "Pass to Blake who misses (A1, B1)",
+    1: "Miss the shot (A2, B2)"
+  },
+  "B": {
+    4: "Receive pass and score (A1, B2)",
+    3: "Alex misses, get rebound chance (A2, B2)",
+    2: "Alex passes, stay in position (A1, B1)",
+    1: "Alex scores, no involvement (A2, B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Stay)| B2 (Move)|
+|-------|----------|----------|
+| A1 (Pass) | 1 \ 2   | 4 \ 4    |
+| A2 (Shoot)| 3 \ 1   | 2 \ 3    |
+[/Payoff Matrix]
+
+[Scenario]
+In the final seconds of a crucial basketball game, Alex finds himself with the ball, just outside the three-point line. The team needs a basket to win, and Alex must make a split-second decision. His teammate and rival, Blake, is positioned near the hoop.
+
+Alex has two choices: pass the ball to Blake (A1) or take the shot himself (A2). Meanwhile, Blake must decide whether to stay in his current position (B1) or move to receive a potential pass (B2).
+
+Alex's preferences are clear. His top choice would be to pass to Blake who then scores (A1, B2), as this would showcase his teamwork and result in a win. His second preference is to score by shooting himself (A2, B1), which would make him the hero but might be riskier. Passing to Blake who then misses (A1, B1) is his third choice, as it shifts the responsibility but might not result in a score. His least preferred outcome is missing the shot himself (A2, B2), which would be a personal failure and likely cost the game.
+
+Blake, on the other hand, most prefers to receive the pass and score (A1, B2), as this would make him the game-winner. His second choice is for Alex to miss the shot while he's in a good position for a rebound (A2, B2). Third, he'd rather stay in position even if Alex passes elsewhere (A1, B1), as he might still get involved in the play. His least preferred outcome is for Alex to score without his involvement (A2, B1), as this would boost Alex's status on the team at his expense.
+
+The payoff matrix reflects these preferences, with the highest payoff (4) for both players if Alex passes and Blake moves to receive. However, if they don't coordinate their actions, they risk suboptimal outcomes for one or both of them.
+
+As the clock ticks down, both players must make their choices simultaneously, without knowing what the other will do. Their decision will not only determine the outcome of the game but also impact their personal standings and the team dynamics moving forward.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Professor Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on research",
+  "A2": "Focus on teaching",
+  "B1": "Focus on research",
+  "B2": "Focus on teaching"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both focus on teaching",
+    3: "A teaches, B researches",
+    2: "Both focus on research",
+    1: "A researches, B teaches"
+  },
+  "B": {
+    4: "Both focus on teaching",
+    3: "B teaches, A researches",
+    2: "Both focus on research",
+    1: "B researches, A teaches"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Research) | B2 (Teaching) |
+|-------|---------------|---------------|
+| A1 (Research) | 1 \ 1         | 4 \ 4         |
+| A2 (Teaching) | 3 \ 3         | 2 \ 2         |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith and Professor Johnson are facing a crucial decision that will shape the direction of their department for the upcoming academic year. The university has announced a new initiative to improve both research output and teaching quality, but limited resources mean that each professor must choose to focus primarily on either research or teaching.
+
+Professor Smith, known for her groundbreaking research in cognitive science, is torn between continuing her work and improving her teaching methods. Similarly, Professor Johnson, beloved by students for his engaging lectures, is considering shifting his focus to research to secure more funding for the department.
+
+Both professors realize that their choices will have significant implications not only for their own careers but also for the department's reputation and student outcomes. They each have distinct preferences:
+
+1. If both focus on teaching (A2/B2), they believe they can revolutionize the department's teaching methods, leading to improved student satisfaction and learning outcomes. This is their most preferred outcome (4/4).
+
+2. If one focuses on teaching while the other on research (A2/B1 or A1/B2), they can maintain a balance in the department. This is their second-best preference (3/3).
+
+3. If both focus on research (A1/B1), they might secure more funding and publications, but at the cost of teaching quality. This is their third preference (2/2).
+
+4. The least preferred outcome for each is if they focus on research while their colleague focuses on teaching (A1/B2 or A2/B1), as they fear falling behind in their less-focused area (1/1).
+
+As the deadline for their decision approaches, both professors must carefully consider their options, knowing that their choice will impact not only their own work but also their colleague's effectiveness and the overall success of the department. The tension builds as they weigh the potential outcomes, each hoping to make the decision that will best serve their students, their research, and the university as a whole.
+[/Scenario]

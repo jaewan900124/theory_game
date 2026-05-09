@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Mark, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current product line",
+  "A2": "Develop new AI-powered software",
+  "B1": "Focus on existing market",
+  "B2": "Expand into new markets"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop new AI-powered software while DataDrive focuses on existing market",
+    3: "Maintain current product line while DataDrive expands into new markets",
+    2: "Both companies maintain status quo",
+    1: "Develop new AI-powered software while DataDrive expands into new markets"
+  },
+  "B": {
+    4: "Expand into new markets while TechInnovate maintains current product line",
+    3: "Expand into new markets while TechInnovate develops new AI-powered software",
+    2: "Both companies maintain status quo",
+    1: "Focus on existing market while TechInnovate develops new AI-powered software"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| TechInnovate \ DataDrive | Focus on existing market | Expand into new markets |
+|---------------------------|--------------------------|--------------------------|
+| Maintain current line     | 2 \ 2                    | 3 \ 4                    |
+| Develop new AI software   | 1 \ 1                    | 4 \ 3                    |
+[/Payoff Matrix]
+
+[Scenario]
+In the competitive world of tech startups, Sarah, the CEO of TechInnovate, and Mark, the CEO of DataDrive, find themselves at a crucial decision point. Both companies have been successful in their respective niches, but now face choices that could significantly impact their future growth and market positions.
+
+Sarah's company, TechInnovate, specializes in productivity software. She's contemplating whether to maintain their current product line or invest heavily in developing new AI-powered software. The AI route is risky but could potentially revolutionize their offerings.
+
+Mark's company, DataDrive, focuses on data analytics solutions. He's deciding between doubling down on their existing market or expanding into new, untapped markets. Expansion could lead to significant growth but also comes with uncertainties.
+
+Their decisions will inevitably affect each other's businesses due to overlapping customer bases and potential market share.
+
+If both maintain their current strategies (A1, B1), they'll see modest but stable growth, resulting in a moderately satisfactory outcome for both (2,2).
+
+If TechInnovate maintains its current line while DataDrive expands (A1, B2), DataDrive stands to gain the most (4), while TechInnovate will still benefit from reduced competition in its core market (3).
+
+If TechInnovate develops new AI software while DataDrive focuses on its existing market (A2, B1), TechInnovate could dominate with its innovative product (4), while DataDrive might struggle to compete (1).
+
+Finally, if both companies pursue aggressive growth strategies (A2, B2), they'll both see significant gains, but also face increased competition. TechInnovate's AI innovation gives it a slight edge (4,3).
+
+Sarah and Mark must now decide their strategies, knowing that their choices will significantly impact not only their own companies but also their competitor's future. The tension between cooperation and competition hangs in the air as they prepare to make their moves.
+[/Scenario]

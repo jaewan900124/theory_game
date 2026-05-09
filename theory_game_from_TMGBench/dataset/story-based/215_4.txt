@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Maya, an aspiring abstract painter",
+  "B": "Leo, a successful gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde painting",
+  "A2": "Paint a more conventional, crowd-pleasing piece",
+  "B1": "Feature Maya's work prominently in the gallery",
+  "B2": "Display Maya's work in a less prominent location"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create provocative art and get prominent display",
+    3: "Create conventional art and get less prominent display",
+    2: "Create provocative art and get less prominent display",
+    1: "Create conventional art and get prominent display"
+  },
+  "B": {
+    4: "Feature provocative art prominently",
+    3: "Feature conventional art prominently",
+    2: "Display conventional art less prominently",
+    1: "Display provocative art less prominently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 1 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Maya, an aspiring abstract painter, has been given the opportunity to showcase her work at Leo's prestigious art gallery. This could be her big break, but she's faced with a dilemma: should she create a provocative, avant-garde painting that truly represents her artistic vision, or should she play it safe with a more conventional, crowd-pleasing piece?
+
+Leo, the gallery owner, is also weighing his options. He's impressed by Maya's talent but unsure how her work will be received by his clientele. He must decide whether to feature Maya's painting prominently in the gallery or display it in a less noticeable location.
+
+Maya's preferences are clear: she would love to create provocative art and have it featured prominently (4). Her second choice would be to create conventional art and have it displayed less prominently (3), as at least she'd stay true to herself. Creating provocative art that gets less prominence (2) is her third choice, while creating conventional art that gets prominent display (1) is her least preferred option, as it feels like selling out.
+
+Leo's preferences are slightly different. He'd love to feature provocative art prominently (4), as it could generate buzz and attract new clients. His second choice would be to feature conventional art prominently (3), which is a safe bet. Displaying conventional art less prominently (2) is his third choice, while displaying provocative art less prominently (1) is his least preferred option, as it might upset his conservative clients without generating much attention.
+
+If Maya chooses to create provocative art (A1) and Leo decides to feature it prominently (B1), Maya will be satisfied but not ecstatic (2), while Leo will be thrilled (4). If Maya creates provocative art (A1) but Leo displays it less prominently (B2), Maya will be very happy (4), but Leo will be disappointed (1).
+
+On the other hand, if Maya creates conventional art (A2) and Leo features it prominently (B1), Maya will feel like she's compromised her integrity (1), while Leo will be content (3). If Maya creates conventional art (A2) and Leo displays it less prominently (B2), Maya will be somewhat satisfied (3), and Leo will be moderately pleased (2).
+
+As they make their decisions, both Maya and Leo must consider not only their own preferences but also how the other person's choice might affect the outcome. Their choices will determine not only the fate of Maya's artwork but also the potential success of the exhibition and their future collaborations.
+[/Scenario]

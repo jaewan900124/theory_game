@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a sociology professor",
+  "B": "Dr. Mark Thompson, a sociology professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the research project",
+  "A2": "Work independently on the research project",
+  "B1": "Collaborate on the research project",
+  "B2": "Work independently on the research project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both collaborate, leading to a groundbreaking study",
+    3: "Collaborate while B works independently, gaining more personal recognition",
+    2: "Both work independently, maintaining individual achievements",
+    1: "Work independently while B collaborates, potentially falling behind"
+  },
+  "B": {
+    4: "Both collaborate, leading to a groundbreaking study",
+    3: "Collaborate while A works independently, gaining more personal recognition",
+    2: "Both work independently, maintaining individual achievements",
+    1: "Work independently while A collaborates, potentially falling behind"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 1 \ 2 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Dr. Mark Thompson are both sociology professors at a prestigious university. They have been given the opportunity to work on a groundbreaking research project that could significantly impact their field. However, they must decide whether to collaborate or work independently.
+
+If both professors choose to collaborate (A1, B1), they will combine their expertise and resources, likely producing a high-quality study that benefits both of their careers equally. This scenario is their third preference, as it provides a good balance of recognition and shared success.
+
+If one professor chooses to collaborate while the other works independently (A1, B2 or A2, B1), the collaborating professor may gain more personal recognition for their willingness to work together, while the independent professor might feel left behind. This is the most preferred outcome for the collaborating professor (4) but the least preferred for the independent one (1).
+
+If both professors decide to work independently (A2, B2), they will maintain their individual achievements without the potential conflicts of collaboration. This scenario is their second least preferred option, as it lacks the potential benefits of teamwork but avoids the risk of being left behind.
+
+Dr. Chen and Dr. Thompson must carefully consider their choices, weighing the potential benefits of collaboration against the desire for individual recognition. Their decision will not only affect the outcome of the research project but also their professional relationships and future opportunities within the sociology department.
+
+As they contemplate their options, both professors realize that the most mutually beneficial outcome would be to collaborate, leading to a groundbreaking study that advances their field and enhances both of their reputations. However, the temptation of individual recognition and the fear of being overshadowed by the other's contributions create a tension that makes their decision far from straightforward.
+[/Scenario]

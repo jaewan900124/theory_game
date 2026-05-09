@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a psychologist specializing in cognitive behavioral therapy",
+  "B": "Alex Chen, a patient struggling with social anxiety"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional therapy methods",
+  "A2": "Implement an experimental virtual reality exposure therapy",
+  "B1": "Actively participate in therapy sessions",
+  "B2": "Resist engagement in therapy"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement experimental therapy with patient resistance",
+    3: "Implement experimental therapy with patient cooperation",
+    2: "Use traditional methods with patient resistance",
+    1: "Use traditional methods with patient cooperation"
+  },
+  "B": {
+    4: "Participate in traditional therapy",
+    3: "Actively engage in experimental therapy",
+    2: "Resist experimental therapy",
+    1: "Resist traditional therapy"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 1 |
+| A2    | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson, a renowned psychologist specializing in cognitive behavioral therapy, faces a challenging case with her new patient, Alex Chen, who struggles with severe social anxiety. Dr. Thompson must decide between using her tried-and-true traditional therapy methods or implementing an experimental virtual reality exposure therapy she's been developing.
+
+Alex, on the other hand, is torn between actively participating in the therapy sessions or resisting engagement due to fear and skepticism about the effectiveness of therapy.
+
+Dr. Thompson's primary goal is to advance her research and potentially revolutionize anxiety treatment. She prefers implementing the experimental therapy, even if Alex resists, as it would provide valuable data (preference 4). Her second choice would be to use the experimental therapy with Alex's cooperation (preference 3). If forced to use traditional methods, she'd rather have a resistant patient to challenge her skills (preference 2) than a cooperative one, which she finds less stimulating (preference 1).
+
+Alex's main objective is to overcome his social anxiety with minimal discomfort. He prefers participating in traditional therapy (preference 4) as it feels safer. His second choice would be to actively engage in the experimental therapy (preference 3), hoping for quick results. If he chooses to resist, he'd rather it be against the experimental therapy (preference 2) than the traditional approach (preference 1).
+
+The scenario unfolds as follows:
+
+1. If Dr. Thompson uses traditional methods (A1) and Alex actively participates (B1), it's Alex's ideal scenario (4) but Dr. Thompson's least preferred outcome (1).
+
+2. If Dr. Thompson uses traditional methods (A1) and Alex resists (B2), it's slightly better for Dr. Thompson (2) but Alex's least preferred situation (1).
+
+3. If Dr. Thompson implements the experimental therapy (A2) and Alex actively participates (B1), it's a good compromise for both (3 for each).
+
+4. If Dr. Thompson implements the experimental therapy (A2) and Alex resists (B2), it's Dr. Thompson's ideal scenario (4) but not favorable for Alex (2).
+
+As they begin their first session, both Dr. Thompson and Alex must make their choices, knowing that their decisions will significantly impact the course of Alex's treatment and Dr. Thompson's research.
+[/Scenario]

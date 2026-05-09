@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Parker, a sociology professor",
+  "B": "Dr. Michael Chen, another sociology professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue individual research",
+  "B1": "Focus on teaching and administrative duties",
+  "B2": "Collaborate on a joint research project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while B focuses on teaching (A1, B1)",
+    3: "Both collaborate on joint research (A1, B2)",
+    2: "Pursue individual research while B focuses on teaching (A2, B1)",
+    1: "Pursue individual research while B collaborates (A2, B2)",
+  },
+  "B": {
+    4: "Both collaborate on joint research (A1, B2)",
+    3: "Focus on teaching while A pursues individual research (A2, B1)",
+    2: "Focus on teaching while A collaborates (A1, B1)",
+    1: "Collaborate while A pursues individual research (A2, B2)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 1 \ 3 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University's Sociology Department, Dr. Emma Parker and Dr. Michael Chen face a crucial decision that will shape their academic year. Both professors have the opportunity to collaborate on a groundbreaking research project exploring the impact of social media on community engagement. However, they also have individual responsibilities and personal research interests to consider.
+
+Dr. Parker, known for her innovative research methods, is eager to collaborate but also values her independence. She can choose to either collaborate with Dr. Chen (A1) or pursue her individual research on urban gentrification (A2). Her ideal scenario would be to collaborate while Dr. Chen handles more of the teaching and administrative duties, allowing her to focus on the research.
+
+Dr. Chen, on the other hand, is torn between his passion for research and his commitment to teaching. He can choose to focus on teaching and administrative duties (B1) or collaborate on the joint research project (B2). While he would love to collaborate with Dr. Parker, he's also content with focusing on his teaching responsibilities if it means supporting the department.
+
+Their preferences reflect their professional goals and personal work styles. Dr. Parker's top preference is to collaborate while Dr. Chen focuses on teaching, as this would allow her to benefit from the collaboration while maintaining some independence. Dr. Chen's ideal scenario is full collaboration, as he values the potential impact of their joint research.
+
+The payoff matrix reflects the complex dynamics of their decision-making process. If they both choose to collaborate (A1, B2), they achieve their highest joint payoff (4, 4), representing the potential for groundbreaking research and professional growth. However, if Dr. Parker collaborates while Dr. Chen focuses on teaching (A1, B1), she still benefits significantly (3) while Dr. Chen's payoff is lower (2).
+
+If Dr. Parker pursues individual research while Dr. Chen focuses on teaching (A2, B1), it results in a moderate outcome for both (1, 3), reflecting their ability to pursue their individual strengths. The least preferred scenario for both is when Dr. Parker pursues individual research while Dr. Chen attempts to collaborate (A2, B2), resulting in low payoffs (2, 1) due to misaligned efforts.
+
+As the new academic year approaches, Dr. Parker and Dr. Chen must carefully consider their options, weighing the potential benefits of collaboration against their individual goals and departmental responsibilities. Their decision will not only impact their personal career trajectories but also the research output and teaching quality of the Sociology Department at Greenwood University.
+[/Scenario]

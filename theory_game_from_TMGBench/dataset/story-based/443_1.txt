@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Reynolds"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the education bill",
+  "A2": "Oppose the education bill",
+  "B1": "Endorse Senator Thompson's re-election",
+  "B2": "Remain neutral in the senatorial race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill and receive endorsement",
+    3: "Support the bill and not receive endorsement",
+    2: "Oppose the bill and not receive endorsement",
+    1: "Support the bill and receive endorsement"
+  },
+  "B": {
+    4: "Support the bill and remain neutral",
+    3: "Oppose the bill and endorse",
+    2: "Support the bill and endorse",
+    1: "Oppose the bill and remain neutral"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Remain Neutral) |
+|-------|--------------|---------------------|
+| A1 (Support)   | 3 \ 2        | 1 \ 4               |
+| A2 (Oppose)    | 2 \ 3        | 4 \ 1               |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling political landscape of a swing state, Senator Sarah Thompson and Governor Mark Reynolds find themselves at a critical juncture. A controversial education bill is up for vote in the Senate, and both politicians are weighing their options carefully.
+
+Senator Thompson, facing a tough re-election campaign, must decide whether to support or oppose the education bill. Her decision will not only impact her constituents but also her political future. Thompson knows that opposing the bill aligns more with her personal beliefs and could boost her popularity with certain voter demographics. However, supporting the bill might garner favor with influential education lobbies.
+
+Governor Reynolds, on the other hand, is contemplating whether to endorse Senator Thompson in her re-election bid or remain neutral. His decision could significantly influence the senatorial race and his own political capital within the party.
+
+The education bill is a hot-button issue, with passionate advocates on both sides. Governor Reynolds privately supports the bill, believing it will benefit the state's education system. However, he's aware that publicly endorsing it might alienate some of his supporters.
+
+Senator Thompson's ideal scenario would be to oppose the bill (aligning with her beliefs) while still receiving Governor Reynolds' endorsement, strengthening her re-election chances. Conversely, her least preferred outcome would be supporting the bill and receiving the endorsement, as it might be seen as a political compromise that satisfies neither her base nor her opponents.
+
+Governor Reynolds would prefer Senator Thompson to support the bill while he remains neutral, allowing him to maintain his stance on education without directly involving himself in the senatorial race. His least desired outcome would be for Thompson to oppose the bill while he remains neutral, potentially damaging both the bill's chances of passing and his education agenda.
+
+As they navigate this complex political landscape, both Senator Thompson and Governor Reynolds must carefully consider their choices, weighing personal beliefs against political pragmatism, and short-term gains against long-term consequences. Their decisions will not only shape their individual political futures but also have lasting impacts on the state's education system and political dynamics.
+[/Scenario]

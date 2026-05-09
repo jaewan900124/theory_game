@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products using local resources",
+  "A2": "Expand operations without using local resources",
+  "B1": "Collaborate with EcoTech",
+  "B2": "Oppose EcoTech's presence in the forest"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Expand operations without using local resources, while GreenForest opposes",
+    3: "Expand operations without using local resources, while GreenForest collaborates",
+    2: "Develop eco-friendly products using local resources, while GreenForest opposes",
+    1: "Develop eco-friendly products using local resources, while GreenForest collaborates"
+  },
+  "B": {
+    4: "EcoTech develops eco-friendly products using local resources, while GreenForest collaborates",
+    3: "EcoTech expands operations without using local resources, while GreenForest collaborates",
+    2: "EcoTech develops eco-friendly products using local resources, while GreenForest opposes",
+    1: "EcoTech expands operations without using local resources, while GreenForest opposes"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 2 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush, biodiverse forest, EcoTech, a sustainable technology company, is considering expanding its operations. The company faces a crucial decision: develop eco-friendly products using local resources (A1) or expand operations without using local resources (A2). Meanwhile, GreenForest, a local conservation organization, must decide whether to collaborate with EcoTech (B1) or oppose their presence in the forest (B2).
+
+EcoTech's ultimate goal is to maximize profits while maintaining a green image. They prefer to expand operations without using local resources (A2) as it's more cost-effective. However, they recognize the potential benefits of collaborating with GreenForest for their public image.
+
+GreenForest's primary objective is to protect the forest ecosystem. They prefer EcoTech to develop eco-friendly products using local resources (A1) while collaborating with them (B1), as this would ensure sustainable use of forest resources and allow them to have a say in the company's operations.
+
+The payoff matrix reveals the complex dynamics between the two entities:
+
+1. If EcoTech develops eco-friendly products (A1) and GreenForest collaborates (B1), EcoTech receives its least preferred outcome (1) due to higher costs, while GreenForest achieves its most preferred outcome (4).
+
+2. If EcoTech develops eco-friendly products (A1) but GreenForest opposes (B2), EcoTech slightly improves its position (2) due to reduced pressure from GreenForest, while GreenForest's preference decreases (2) as they lose direct influence over EcoTech's operations.
+
+3. If EcoTech expands without using local resources (A2) and GreenForest collaborates (B1), both parties achieve their second-best outcomes (3,3), representing a compromise.
+
+4. If EcoTech expands without using local resources (A2) and GreenForest opposes (B2), EcoTech achieves its most preferred outcome (4) due to maximum profitability, while GreenForest faces its worst-case scenario (1) with no influence and potential forest degradation.
+
+This scenario illustrates the delicate balance between economic development and environmental conservation, highlighting the importance of cooperation and compromise in ecological decision-making.
+[/Scenario]

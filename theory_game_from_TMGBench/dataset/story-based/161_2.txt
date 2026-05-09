@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, a corporate lawyer",
+  "B": "Mark, Sarah's client and CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential patent infringement",
+  "A2": "Advise minimal disclosure of potential patent infringement",
+  "B1": "Agree to full disclosure",
+  "B2": "Insist on minimal disclosure"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Minimal disclosure advised and accepted (protect client relationship, minimize legal risk)",
+    3: "Full disclosure advised but minimal disclosure insisted (maintain ethical stance, keep client)",
+    2: "Minimal disclosure advised but full disclosure agreed (unexpected client compliance, potential future complications)",
+    1: "Full disclosure advised and agreed (highest ethical standard, but potential loss of client)"
+  },
+  "B": {
+    4: "Full disclosure advised but minimal disclosure insisted (appear cooperative, minimize business risk)",
+    3: "Minimal disclosure advised and accepted (minimize business risk, but potential future legal issues)",
+    2: "Minimal disclosure advised but full disclosure agreed (unexpected lawyer suggestion, potential business risk)",
+    1: "Full disclosure advised and agreed (highest legal compliance, but highest business risk)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 3 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a seasoned corporate lawyer, finds herself in a delicate situation with her client, Mark, the CEO of a promising tech startup. Mark's company is on the verge of a major product launch, but Sarah has discovered a potential patent infringement that could jeopardize the entire operation.
+
+Sarah must decide whether to advise full disclosure of the potential infringement (A1) or suggest minimal disclosure (A2). Meanwhile, Mark can choose to agree to full disclosure (B1) or insist on minimal disclosure (B2).
+
+Sarah's primary concern is balancing her ethical obligations with maintaining a strong client relationship. She prefers minimal disclosure if Mark agrees (A2B2), as it protects their relationship while minimizing legal risk. Her second choice is advising full disclosure but having Mark insist on minimal disclosure (A1B2), which allows her to maintain her ethical stance while keeping the client. Her third preference is advising minimal disclosure but having Mark unexpectedly agree to full disclosure (A2B1), which could lead to potential future complications. Her least preferred outcome is advising and achieving full disclosure (A1B1), which upholds the highest ethical standard but risks losing the client.
+
+Mark, on the other hand, is focused on protecting his company's interests. His top preference is having Sarah advise full disclosure but insisting on minimal disclosure (A1B2), as it makes him appear cooperative while minimizing business risk. His second choice is if Sarah advises and he accepts minimal disclosure (A2B2), which minimizes immediate business risk but could lead to future legal issues. His third preference is if Sarah advises minimal disclosure but he unexpectedly agrees to full disclosure (A2B1), which might protect him legally but poses a higher business risk. His least preferred outcome is full disclosure being advised and agreed upon (A1B1), which ensures the highest legal compliance but presents the highest business risk.
+
+As they sit across from each other in Sarah's office, the tension is palpable. Sarah must carefully consider her advice, weighing her professional ethics against the potential loss of an important client. Mark, feeling the pressure of the impending product launch, must decide how much he's willing to risk for his company's success. Their decisions will not only impact their professional relationship but could also have far-reaching consequences for Mark's startup and Sarah's reputation in the legal community.
+[/Scenario]

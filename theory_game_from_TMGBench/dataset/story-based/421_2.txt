@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a geneticist",
+  "B": "Dr. Michael Lee, a molecular biologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data",
+  "A2": "Withhold research data",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Withhold data and work independently",
+    3: "Share data and work independently",
+    2: "Share data and collaborate",
+    1: "Withhold data and collaborate"
+  },
+  "B": {
+    4: "Receive shared data and work independently",
+    3: "Collaborate with shared data",
+    2: "Work independently without shared data",
+    1: "Collaborate without shared data"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Work independently) |
+|-------|-------------------|--------------------------|
+| A1 (Share data) | 2 \ 3 | 3 \ 4 |
+| A2 (Withhold data) | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Dr. Michael Lee are two renowned scientists working on a groundbreaking project to develop a new gene therapy for a rare genetic disorder. They are at a critical juncture in their research, and each must decide whether to share their data and collaborate or to work independently.
+
+Dr. Chen has recently made a significant breakthrough in her genetic research. She now faces a dilemma: should she share her data with Dr. Lee or keep it to herself? Dr. Chen's ultimate goal is to be the sole discoverer of the therapy, which would be best achieved by withholding her data and working independently (her most preferred outcome with a preference degree of 4).
+
+Dr. Lee, on the other hand, is eager to collaborate but also values the potential recognition that comes with independent work. His ideal scenario would be to receive Dr. Chen's data while working independently, allowing him to make rapid progress without sharing credit (his most preferred outcome with a preference degree of 4).
+
+If Dr. Chen shares her data and Dr. Lee collaborates (A1, B1), they would make steady progress together. This scenario is moderately beneficial for both (preference degree 2 for Dr. Chen and 3 for Dr. Lee). If Dr. Chen shares data but Dr. Lee works independently (A1, B2), Dr. Lee gains a significant advantage (preference degree 4), while Dr. Chen still benefits somewhat (preference degree 3).
+
+In the scenario where Dr. Chen withholds her data and Dr. Lee attempts to collaborate (A2, B1), both scientists would struggle to make progress, resulting in the least preferred outcome for both (preference degree 1). Finally, if Dr. Chen withholds her data and Dr. Lee works independently (A2, B2), Dr. Chen achieves her most desired outcome (preference degree 4), while Dr. Lee faces challenges but can still make some progress (preference degree 2).
+
+As they prepare for their next research meeting, both scientists must carefully consider their choices, weighing the potential benefits of collaboration against the allure of individual success. Their decisions will not only impact their personal careers but also the progress of potentially life-saving research.
+[/Scenario]

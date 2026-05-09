@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current trade policies",
+  "A2": "Impose new tariffs",
+  "B1": "Maintain current trade policies",
+  "B2": "Retaliate with counter-tariffs"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Impose tariffs while China maintains current policies",
+    3: "Both maintain current trade policies",
+    2: "Both impose tariffs",
+    1: "China retaliates while US maintains current policies"
+  },
+  "B": {
+    4: "US maintains current policies while China retaliates",
+    3: "Both maintain current trade policies",
+    2: "Both impose tariffs",
+    1: "US imposes tariffs while China maintains current policies"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| US \ China | Maintain (B1) | Retaliate (B2) |
+|------------|---------------|-----------------|
+| Maintain (A1) | 2 \ 4         | 4 \ 3          |
+| Impose (A2)   | 1 \ 1         | 3 \ 2          |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex world of international relations, the United States and China find themselves at a critical juncture in their trade relationship. Both nations are weighing their options carefully, aware that their decisions will have far-reaching consequences not only for their own economies but for the global market as well.
+
+The United States, represented by its trade negotiators, is considering whether to maintain its current trade policies or impose new tariffs on Chinese goods. They believe that imposing tariffs could pressure China into making concessions, potentially leading to more favorable trade terms. However, they're also aware of the risks involved, including potential retaliation and economic disruption.
+
+China, on the other hand, is deliberating whether to maintain its current stance or to retaliate with counter-tariffs if the US makes the first move. They prefer the status quo but are prepared to respond forcefully to any aggressive actions from the US.
+
+The preferences of both nations reflect their strategic goals:
+
+The US would most prefer to impose tariffs while China doesn't retaliate, giving them an economic advantage. Their second preference is maintaining the current policies, which provides stability. Mutual imposition of tariffs is their third choice, as it at least puts pressure on China. Their least preferred outcome is maintaining current policies while China retaliates, which would put them at a disadvantage.
+
+China's top preference is to retaliate while the US maintains current policies, allowing them to gain an upper hand. They secondly prefer the status quo of both maintaining current policies. If both sides impose tariffs, that's their third choice, as it at least allows them to counter US actions. Their least desired outcome is the US imposing tariffs while they maintain current policies, which would be economically damaging for them.
+
+The payoff matrix represents these preferences numerically, with 4 being the most preferred outcome and 1 being the least.
+
+As both nations contemplate their moves, they must consider not only their own preferences but also anticipate the other's response. The decision they make will shape the future of international trade and potentially the balance of global economic power.
+[/Scenario]

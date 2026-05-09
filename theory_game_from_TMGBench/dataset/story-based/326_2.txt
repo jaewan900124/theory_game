@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a commuter",
+  "B": "Blair, a rideshare driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use public transportation",
+  "A2": "Request a rideshare",
+  "B1": "Stay in the busy downtown area",
+  "B2": "Drive to the quieter suburban area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Quick and comfortable rideshare in a less congested area",
+    3: "Efficient public transportation",
+    2: "Potentially longer wait for a rideshare in a busy area",
+    1: "Crowded and delayed public transportation"
+  },
+  "B": {
+    4: "High-paying ride in a less congested area",
+    3: "Steady stream of short rides in the busy downtown",
+    2: "Lower-paying rides in a congested downtown area",
+    1: "Long wait times between rides in the suburbs"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Stay downtown) | B2 (Drive to suburbs) |
+|-------|--------------------|-----------------------|
+| A1 (Public transport) | 1 \ 2               | 4 \ 4                |
+| A2 (Request rideshare) | 2 \ 1               | 3 \ 3                |
+[/Payoff Matrix]
+
+[Scenario]
+It's rush hour in a bustling city. Alex, a daily commuter, is deciding how to get home from work. Meanwhile, Blair, a rideshare driver, is contemplating where to position their car for the evening.
+
+Alex has two options: take public transportation (A1) or request a rideshare (A2). Public transport is usually crowded during rush hour but can be efficient if running smoothly. A rideshare could be more comfortable but might involve a longer wait time depending on driver availability.
+
+Blair, the rideshare driver, is choosing between staying in the busy downtown area (B1) or driving to the quieter suburban area (B2). Downtown usually offers a steady stream of short rides, while the suburbs might provide fewer but potentially longer, higher-paying trips.
+
+If Alex chooses public transport (A1) and Blair stays downtown (B1), Alex faces crowded conditions (preference 1), while Blair gets steady but lower-paying rides due to traffic congestion (preference 2).
+
+If Alex opts for public transport (A1) and Blair moves to the suburbs (B2), Alex enjoys an efficient journey as the public transport is less crowded in that direction (preference 4). Blair also benefits from a high-paying suburban ride (preference 4).
+
+If Alex requests a rideshare (A2) and Blair remains downtown (B1), Alex may face a longer wait due to high demand (preference 2), and Blair experiences long wait times between rides due to traffic (preference 1).
+
+Lastly, if Alex requests a rideshare (A2) and Blair moves to the suburbs (B2), Alex gets a quick and comfortable ride (preference 3), while Blair secures a decent-paying trip with less traffic (preference 3).
+
+Both Alex and Blair must make their decisions independently, without knowing the other's choice, adding an element of uncertainty to their decision-making process.
+[/Scenario]

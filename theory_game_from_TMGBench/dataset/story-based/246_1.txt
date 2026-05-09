@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a sociology professor",
+  "B": "Dr. Mark Thompson, another sociology professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Conduct independent research",
+  "B1": "Collaborate on a joint research project",
+  "B2": "Conduct independent research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while B works independently (A1, B2)",
+    3: "Both conduct independent research (A2, B1)",
+    2: "Both collaborate (A1, B1)",
+    1: "Work independently while B collaborates (A2, B2)",
+  },
+  "B": {
+    4: "Both collaborate (A1, B1)",
+    3: "Both conduct independent research (A2, B1)",
+    2: "Collaborate while A works independently (A2, B2)",
+    1: "Work independently while A collaborates (A1, B2)",
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 2 |
+| A2    | 3 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Sarah Chen and Dr. Mark Thompson are sociology professors at a prestigious university. They have been offered a unique opportunity to apply for a significant research grant. The university has encouraged collaboration but also values individual contributions to the field.
+
+Both professors must decide whether to collaborate on a joint research project or conduct independent research. Their choices will affect not only the likelihood of securing the grant but also their professional reputations and future career prospects.
+
+Dr. Chen prefers to have the upper hand in any collaboration. Her ideal scenario is to collaborate while Dr. Thompson works independently, allowing her to benefit from shared resources while maintaining control over the project. Her least preferred outcome is working independently while Dr. Thompson collaborates with others, potentially leaving her research overshadowed.
+
+Dr. Thompson, on the other hand, values collaboration highly. His most preferred scenario is a joint project with Dr. Chen, believing that their combined expertise would yield the best results. His least preferred outcome is for both of them to work independently, as he feels this would limit the potential impact of their research.
+
+If both choose to collaborate (A1, B1), Dr. Chen would find it acceptable but not ideal (preference 2), while Dr. Thompson would be most satisfied (preference 4). If both decide to work independently (A2, B1), they would both find it a reasonably good outcome (preference 3 for both).
+
+The scenario where Dr. Chen collaborates and Dr. Thompson works independently (A1, B2) would be ideal for Dr. Chen (preference 4) but disappointing for Dr. Thompson (preference 2). Conversely, if Dr. Chen works independently while Dr. Thompson collaborates (A2, B2), both would be least satisfied (preference 1 for both).
+
+As they contemplate their decisions, both professors must consider not only their personal preferences but also the potential outcomes and how their choices might affect their colleague and the overall success of their research endeavors.
+[/Scenario]

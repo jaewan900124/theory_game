@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a cognitive psychologist",
+  "B": "Professor Mark Thompson, a behavioral psychologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue individual research",
+  "B1": "Collaborate on a joint research project",
+  "B2": "Pursue individual research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while B pursues individual research",
+    3: "Both collaborate on joint research",
+    2: "Both pursue individual research",
+    1: "Pursue individual research while B collaborates"
+  },
+  "B": {
+    4: "Both collaborate on joint research",
+    3: "Collaborate while A pursues individual research",
+    2: "Pursue individual research while A collaborates",
+    1: "Both pursue individual research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 1 \ 2 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Professor Mark Thompson are renowned psychologists at a prestigious university. They have been invited to participate in a groundbreaking research opportunity that could significantly advance their field. However, they must decide whether to collaborate or pursue individual research paths.
+
+Dr. Chen, known for her innovative approaches, sees this as a chance to make a name for herself. She prefers to collaborate if Professor Thompson works independently, as it would allow her to benefit from his expertise while maintaining control over the project. Her second preference is joint collaboration, followed by both pursuing individual research. Her least preferred outcome is working alone while Thompson collaborates, fearing she might miss out on crucial insights.
+
+Professor Thompson, on the other hand, values teamwork and believes that collaboration leads to the best outcomes. His top preference is joint collaboration, followed by collaborating while Dr. Chen works independently. He least prefers the scenario where both pursue individual research, as he believes it would lead to duplicated efforts and missed opportunities.
+
+The university has offered additional funding and resources for collaborative projects, but also promises individual recognition for breakthrough solo research. This creates a complex decision-making environment where both psychologists must consider their personal goals, the potential for groundbreaking discoveries, and the impact on their professional relationships.
+
+As they sit across from each other in the department conference room, tension builds. They must make their decisions simultaneously, without knowing the other's choice. The outcome of this decision will not only affect their immediate research prospects but could also shape the future of their careers and the field of psychology itself.
+
+Dr. Chen taps her pen nervously, weighing the potential outcomes. Professor Thompson leans back in his chair, his brow furrowed in concentration. The clock ticks loudly, reminding them that a decision must be made. Will they choose collaboration and potentially achieve greatness together, or will the allure of individual success lead them down separate paths?
+[/Scenario]

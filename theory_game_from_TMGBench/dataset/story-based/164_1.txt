@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Michael Ross, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current hospital policies",
+  "A2": "Implement new collaborative care model",
+  "B1": "Join hospital network",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new model with independent physician support",
+    3: "Implement new model with physician joining network",
+    2: "Maintain current policies with physician joining network",
+    1: "Maintain current policies with independent physician"
+  },
+  "B": {
+    4: "Join hospital network under current policies",
+    3: "Remain independent under new collaborative model",
+    2: "Join hospital network under new collaborative model",
+    1: "Remain independent under current policies"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Join network) | B2 (Remain independent) |
+|-------|-------------------|-------------------------|
+| A1 (Maintain policies) | 1 \ 4 | 2 \ 1 |
+| A2 (New model) | 3 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the hospital administrator, and Dr. Michael Ross, a respected private practice physician, find themselves at a crossroads in the evolving healthcare landscape.
+
+Dr. Chen is considering implementing a new collaborative care model that would streamline patient care and potentially reduce costs. However, this model requires buy-in from local physicians. She could also choose to maintain the current hospital policies, which are familiar but less efficient.
+
+Dr. Ross, on the other hand, is weighing the decision to join the hospital network or remain independent. Joining would provide more resources and a steady patient flow, but it would mean less autonomy. Staying independent would preserve his freedom but potentially limit his access to advanced hospital resources.
+
+Their decisions will significantly impact each other and the local healthcare ecosystem. If Dr. Chen maintains current policies and Dr. Ross joins the network, it's the ideal scenario for Dr. Ross (preference 4) but the least preferred for Dr. Chen (preference 1). This scenario would bring minimal change but would strengthen the hospital's physician network.
+
+If Dr. Chen implements the new model and Dr. Ross remains independent, it's the best outcome for Dr. Chen (preference 4) and a good compromise for Dr. Ross (preference 3). This would modernize healthcare delivery while allowing Dr. Ross to maintain his independence.
+
+If Dr. Chen implements the new model and Dr. Ross joins the network, it's a positive outcome for Dr. Chen (preference 3) but less ideal for Dr. Ross (preference 2). This scenario would create a more integrated healthcare system but at the cost of Dr. Ross's autonomy.
+
+Finally, if Dr. Chen maintains current policies and Dr. Ross remains independent, it's a suboptimal outcome for both (preference 2 for Dr. Chen, 1 for Dr. Ross). This scenario represents a missed opportunity for innovation and collaboration.
+
+As they prepare for a crucial meeting, both Dr. Chen and Dr. Ross must carefully consider their choices, knowing that their decisions will shape the future of healthcare in their community.
+[/Scenario]

@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Alex, a commuter",
+  "B": "Ben, a ride-sharing driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Take public transportation",
+  "A2": "Request a ride-share",
+  "B1": "Accept ride-share request",
+  "B2": "Decline ride-share request"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a ride-share when requested",
+    3: "Take public transportation",
+    2: "Take public transportation when ride-share is unavailable",
+    1: "Request a ride-share but get declined"
+  },
+  "B": {
+    4: "Accept a ride-share request",
+    3: "Decline a ride-share request when public transportation is available",
+    2: "Decline a ride-share request when it's the only option",
+    1: "Accept a ride-share request when it's not profitable"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept) | B2 (Decline) |
+|-------|-------------|--------------|
+| A1 (Public) | 3 \ 4       | 2 \ 3        |
+| A2 (Ride-share) | 1 \ 1       | 4 \ 2        |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Alex, a daily commuter, faces a transportation dilemma for his morning commute. He has two options: take public transportation (A1) or request a ride-share (A2). Meanwhile, Ben, a ride-sharing driver, must decide whether to accept (B1) or decline (B2) incoming ride requests.
+
+Alex prefers the convenience of a ride-share but is also content with public transportation. His least preferred scenario is requesting a ride-share and being declined. Ben, on the other hand, prefers accepting ride requests when it's profitable but would rather decline when public transportation is a viable alternative for the passenger.
+
+If Alex chooses public transportation (A1) and Ben accepts ride requests (B1), Alex has a decent commute (3) while Ben has a great day with many passengers (4). If Alex takes public transportation and Ben declines requests, Alex still has an okay trip (2), and Ben has a good day without the stress of constant driving (3).
+
+However, if Alex requests a ride-share (A2) and Ben accepts (B1), it results in a lose-lose situation. Alex might face surge pricing or a long wait (1), while Ben might end up with an unprofitable ride due to traffic or distance (1). Lastly, if Alex requests a ride-share and Ben declines, Alex gets his preferred mode of transport (4), but Ben misses out on potential earnings (2).
+
+This scenario illustrates the complex dynamics between commuters and ride-share drivers, where individual choices can lead to various outcomes affecting both parties' satisfaction and efficiency in urban transportation.
+[/Scenario]

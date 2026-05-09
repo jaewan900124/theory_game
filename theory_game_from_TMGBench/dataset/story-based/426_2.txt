@@ -1,0 +1,57 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a project manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work overtime",
+  "A2": "Leave on time",
+  "B1": "Provide regular feedback",
+  "B2": "Withhold feedback"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Leave on time and receive withheld feedback",
+    3: "Work overtime and receive withheld feedback",
+    2: "Work overtime and receive regular feedback",
+    1: "Leave on time and receive regular feedback"
+  },
+  "B": {
+    4: "Alex works overtime and Blake withholds feedback",
+    3: "Alex leaves on time and Blake withholds feedback",
+    2: "Alex works overtime and Blake provides regular feedback",
+    1: "Alex leaves on time and Blake provides regular feedback"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Alex \ Blake | Provide regular feedback | Withhold feedback |
+|--------------|--------------------------|-------------------|
+| Work overtime| 2 \ 2                    | 3 \ 4             |
+| Leave on time| 1 \ 1                    | 4 \ 3             |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, and Blake, an experienced project manager, are working together on a critical project for their company. As the deadline approaches, they find themselves in a situation where their individual choices could significantly impact the project's outcome and their professional relationship.
+
+Alex has two options: work overtime to complete additional features or leave on time to maintain a work-life balance. Blake, on the other hand, can choose to provide regular feedback on Alex's work or withhold feedback until the project's completion.
+
+Alex prefers leaving on time but values receiving feedback, even if it means working overtime. His least preferred scenario is leaving on time without receiving feedback, as it might affect his performance evaluation. Blake's priority is to have Alex work overtime, preferring to withhold feedback to maintain pressure. However, Blake least prefers the scenario where Alex leaves on time and receives regular feedback, as it might slow down the project's progress.
+
+Their choices create four possible scenarios:
+
+1. If Alex works overtime and Blake provides regular feedback, both receive a moderate benefit (2,2).
+2. If Alex works overtime and Blake withholds feedback, Blake benefits greatly while Alex gains some advantage (3,4).
+3. If Alex leaves on time and Blake provides regular feedback, both receive the least benefit (1,1).
+4. If Alex leaves on time and Blake withholds feedback, Alex benefits greatly while Blake gains some advantage (4,3).
+
+As they navigate this complex situation, both Alex and Blake must consider the potential outcomes of their choices and how they align with their personal preferences and the project's success.
+[/Scenario]

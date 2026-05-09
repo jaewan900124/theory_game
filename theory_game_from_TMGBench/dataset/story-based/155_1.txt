@@ -1,0 +1,59 @@
+[Characters]
+{
+  "A": "Alex, a rising star basketball player",
+  "B": "Coach Brown, the team's head coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Follow the team's strategy",
+  "A2": "Play independently",
+  "B1": "Give Alex more playtime",
+  "B2": "Limit Alex's playtime"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play independently and get more playtime",
+    3: "Play independently with limited playtime",
+    2: "Follow team strategy and get more playtime",
+    1: "Follow team strategy with limited playtime"
+  },
+  "B": {
+    4: "Alex follows team strategy and gets more playtime",
+    3: "Alex plays independently but with limited playtime",
+    2: "Alex plays independently and gets more playtime",
+    1: "Alex follows team strategy but with limited playtime"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Alex \ Coach | Give more playtime | Limit playtime |
+|--------------|---------------------|-----------------|
+| Follow strategy | 2 \ 4              | 1 \ 1           |
+| Play independently | 3 \ 3           | 4 \ 2           |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented young basketball player, has recently joined a professional team coached by the experienced Coach Brown. As the team prepares for an important upcoming game, both Alex and Coach Brown face crucial decisions that will impact their individual success and the team's performance.
+
+Alex, known for his flashy style and individual brilliance, must choose between following the team's carefully crafted strategy (A1) or playing more independently to showcase his skills (A2). Meanwhile, Coach Brown needs to decide whether to give Alex more playtime to utilize his talents (B1) or limit his time on the court to maintain the team's established dynamic (B2).
+
+Alex's preference is to play independently and get more playtime, as this would allow him to shine and potentially attract attention from bigger teams. His least preferred scenario is to follow the team strategy with limited playtime, feeling this would stifle his growth and recognition.
+
+Coach Brown, on the other hand, would ideally like Alex to follow the team strategy while getting more playtime, believing this would best serve the team's interests. His least preferred outcome is Alex following the strategy but with limited playtime, as this wouldn't maximize the team's potential.
+
+The payoff matrix reveals the complexity of their situation:
+
+1. If Alex follows the strategy and gets more playtime (A1, B1), it's ideal for Coach Brown (4) but only moderately satisfying for Alex (2).
+2. If Alex plays independently and gets more playtime (A2, B1), both achieve a good outcome (3,3), balancing individual and team interests.
+3. If Alex follows the strategy but gets limited playtime (A1, B2), both are at their least preferred state (1,1), potentially hurting team morale and performance.
+4. If Alex plays independently with limited playtime (A2, B2), it's Alex's most preferred outcome (4) but less ideal for Coach Brown (2).
+
+As the crucial game approaches, Alex and Coach Brown must navigate this complex decision-making process, each weighing their personal preferences against the team's needs and the potential consequences of their choices.
+[/Scenario]

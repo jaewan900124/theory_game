@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a geneticist",
+  "B": "Dr. David Patel, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on gene editing research",
+  "A2": "Focus on protein synthesis research",
+  "B1": "Study antibiotic resistance",
+  "B2": "Study microbial ecosystems"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Focus on protein synthesis while Dr. Patel studies microbial ecosystems",
+    3: "Focus on gene editing while Dr. Patel studies microbial ecosystems",
+    2: "Focus on gene editing while Dr. Patel studies antibiotic resistance",
+    1: "Focus on protein synthesis while Dr. Patel studies antibiotic resistance"
+  },
+  "B": {
+    4: "Study microbial ecosystems while Dr. Chen focuses on gene editing",
+    3: "Study antibiotic resistance while Dr. Chen focuses on protein synthesis",
+    2: "Study microbial ecosystems while Dr. Chen focuses on protein synthesis",
+    1: "Study antibiotic resistance while Dr. Chen focuses on gene editing"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 3 \ 4 |
+| A2    | 1 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Dr. David Patel are two brilliant biologists working at the same research institute. They have been given the opportunity to lead a groundbreaking project, but they must decide on their research focus. Their choices will determine the direction of the project and potentially impact their careers.
+
+Dr. Chen, a geneticist, is torn between focusing on gene editing research (A1) or protein synthesis research (A2). Meanwhile, Dr. Patel, a microbiologist, is considering whether to study antibiotic resistance (B1) or microbial ecosystems (B2).
+
+Their preferences for different research combinations vary:
+
+Dr. Chen's ideal scenario is to focus on protein synthesis while Dr. Patel studies microbial ecosystems (A2-B2). She believes this combination would yield the most comprehensive results. Her second preference is to focus on gene editing while Dr. Patel studies microbial ecosystems (A1-B2), as it could lead to fascinating discoveries about gene-environment interactions. Her third choice would be to focus on gene editing while Dr. Patel studies antibiotic resistance (A1-B1), as it could have immediate medical applications. Her least preferred option is to focus on protein synthesis while Dr. Patel studies antibiotic resistance (A2-B1), as she feels this combination might not yield groundbreaking results.
+
+Dr. Patel, on the other hand, most prefers to study microbial ecosystems while Dr. Chen focuses on gene editing (A1-B2), as he believes this could lead to revolutionary insights into microbial genetics. His second choice is to study antibiotic resistance while Dr. Chen focuses on protein synthesis (A2-B1), as this could have significant implications for drug development. His third preference is to study microbial ecosystems while Dr. Chen focuses on protein synthesis (A2-B2), which he thinks could still yield interesting results. His least preferred scenario is to study antibiotic resistance while Dr. Chen focuses on gene editing (A1-B1), as he feels this combination might be too narrow in scope.
+
+As they sit down to discuss their research plans, both scientists are aware that their decision will not only shape the project but also influence their professional relationship and future collaborations. They must carefully consider their choices, weighing their personal preferences against the potential outcomes and the impact on their shared research goals.
+[/Scenario]

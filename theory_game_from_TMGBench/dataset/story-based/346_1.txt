@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a standard software solution",
+  "A2": "Create a custom software solution",
+  "B1": "Use off-the-shelf hardware components",
+  "B2": "Design custom hardware components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Custom software with custom hardware",
+    3: "Custom software with off-the-shelf hardware",
+    2: "Standard software with off-the-shelf hardware",
+    1: "Standard software with custom hardware"
+  },
+  "B": {
+    4: "Custom software with custom hardware",
+    3: "Standard software with custom hardware",
+    2: "Standard software with off-the-shelf hardware",
+    1: "Custom software with off-the-shelf hardware"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Off-the-shelf) | B2 (Custom) |
+|-------|---------------------|-------------|
+| A1 (Standard) | 2 \ 2             | 4 \ 4       |
+| A2 (Custom)   | 3 \ 1             | 1 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a cutting-edge robotics project for their company. Alex specializes in software development, while Blake focuses on hardware design. They've been tasked with creating a new robotic arm that requires both innovative software and hardware solutions.
+
+The two engineers must decide on their approaches independently, without knowing the other's choice. Alex can either develop a standard software solution (A1) or create a custom software solution (A2). Blake, on the other hand, can choose to use off-the-shelf hardware components (B1) or design custom hardware components (B2).
+
+Both engineers have different preferences for the potential outcomes:
+
+Alex's ideal scenario is to create custom software that works with custom hardware (A2B2), as it would showcase their skills and potentially lead to groundbreaking results. However, if Blake chooses off-the-shelf components, Alex would prefer to create custom software (A2B1) to compensate for the hardware limitations. Alex's least preferred option is to develop standard software for custom hardware (A1B2), as it might not fully utilize the hardware's capabilities.
+
+Blake's top preference aligns with Alex's: custom software with custom hardware (A2B2), as it would allow for maximum innovation. If Alex opts for standard software, Blake would prefer to design custom hardware (A1B2) to differentiate their contribution. Blake's least favorite scenario is custom software with off-the-shelf hardware (A2B1), as it might overshadow the hardware's role in the project.
+
+The payoff matrix reflects these preferences, with both engineers receiving the highest payoff (4) if they both choose custom solutions (A2B2). However, if one chooses a custom approach while the other goes for a standard/off-the-shelf option, the engineer with the custom solution receives a lower payoff (1) while the other receives a moderate payoff (3). If both choose standard/off-the-shelf options (A1B1), they each receive a modest payoff (2).
+
+The challenge for Alex and Blake is to make their decisions without knowing what the other will choose, balancing their desire for innovation with the potential risks and rewards of their choices.
+[/Scenario]

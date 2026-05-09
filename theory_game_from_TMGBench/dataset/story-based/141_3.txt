@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "General Alexei Volkov",
+  "B": "Admiral Zhang Wei"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops to the border",
+  "A2": "Conduct a surprise naval attack",
+  "B1": "Strengthen coastal defenses",
+  "B2": "Launch a preemptive air strike"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successful surprise naval attack",
+    3: "Mutual defensive positions",
+    2: "Failed naval attack",
+    1: "Troops vulnerable to air strike"
+  },
+  "B": {
+    4: "Successful coastal defense",
+    3: "Preemptive air strike against vulnerable troops",
+    2: "Mutual defensive positions",
+    1: "Failed air strike against naval forces"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 3 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense geopolitical standoff, General Alexei Volkov of the Northland Army and Admiral Zhang Wei of the Southland Navy find themselves at a critical juncture. Both military leaders are tasked with protecting their respective nations' interests in a disputed region.
+
+General Volkov has two options: he can either deploy troops to the border (A1) or conduct a surprise naval attack (A2). Admiral Zhang, on the other hand, can choose to strengthen coastal defenses (B1) or launch a preemptive air strike (B2).
+
+Volkov's ideal outcome is a successful surprise naval attack, which would give Northland a significant advantage. His second-best option is a mutual defensive position, followed by a failed naval attack. His least preferred scenario is having his troops vulnerable to an air strike.
+
+Zhang's preferences are different. His top choice is a successful coastal defense, followed by a preemptive air strike against vulnerable enemy troops. A mutual defensive position is his third choice, while a failed air strike against naval forces is his least desired outcome.
+
+The payoff matrix reflects these preferences:
+
+If Volkov deploys troops (A1) and Zhang strengthens coastal defenses (B1), both sides maintain a defensive posture, resulting in a relatively stable situation (3,4).
+
+If Volkov deploys troops (A1) but Zhang launches an air strike (B2), Volkov's forces are vulnerable, while Zhang gains an advantage (1,3).
+
+If Volkov attempts a naval attack (A2) and Zhang focuses on coastal defense (B1), the attack fails, leaving both sides in a somewhat unfavorable position (2,2).
+
+Finally, if Volkov launches a naval attack (A2) and Zhang opts for an air strike (B2), Volkov's surprise attack succeeds while Zhang's air strike fails against the mobile naval forces (4,1).
+
+As tensions mount, both leaders must carefully consider their options, weighing the potential outcomes and their opponent's likely moves. The fate of their nations hangs in the balance as they prepare to make their decisions.
+[/Scenario]

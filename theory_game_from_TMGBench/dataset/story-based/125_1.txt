@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "General Smith",
+  "B": "Admiral Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops to the coastal region",
+  "A2": "Fortify the inland stronghold",
+  "B1": "Launch a naval blockade",
+  "B2": "Conduct amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Fortify inland while enemy conducts amphibious assault",
+    3: "Deploy to coast while enemy conducts amphibious assault",
+    2: "Deploy to coast while enemy launches naval blockade",
+    1: "Fortify inland while enemy launches naval blockade"
+  },
+  "B": {
+    4: "Launch naval blockade while enemy deploys to coast",
+    3: "Launch naval blockade while enemy fortifies inland",
+    2: "Conduct amphibious assault while enemy fortifies inland",
+    1: "Conduct amphibious assault while enemy deploys to coast"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 1 |
+| A2    | 1 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Smith of the land forces and Admiral Johnson of the naval fleet find themselves at a critical juncture. Their nations are on the brink of war, and both commanders must make strategic decisions that will significantly impact the outcome of the impending conflict.
+
+General Smith, leading the land forces, has two options: deploy troops to the coastal region (A1) or fortify the inland stronghold (A2). Each choice comes with its own set of risks and potential rewards.
+
+Admiral Johnson, commanding the naval fleet, also faces two choices: launch a naval blockade (B1) or conduct an amphibious assault (B2). His decision will directly interact with General Smith's strategy, creating a complex web of potential outcomes.
+
+The preferences of both commanders reflect their strategic priorities and assessment of the situation:
+
+General Smith's most preferred outcome is to fortify the inland stronghold while the enemy conducts an amphibious assault, believing this would give him a defensive advantage. His least preferred scenario is fortifying inland while the enemy launches a naval blockade, as this would cut off vital supply lines.
+
+Admiral Johnson, on the other hand, most prefers to launch a naval blockade while the enemy deploys to the coast, seeing this as an opportunity to trap and isolate the enemy forces. His least favored outcome is conducting an amphibious assault while the enemy deploys to the coast, as this would likely result in heavy casualties.
+
+The payoff matrix reveals the intricate balance of their decisions. If General Smith deploys to the coast (A1) and Admiral Johnson launches a naval blockade (B1), Smith gains a moderate advantage (2) while Johnson achieves his best outcome (4). However, if Smith fortifies inland (A2) and Johnson conducts an amphibious assault (B2), Smith secures his best position (4) while Johnson faces a suboptimal situation (2).
+
+As tensions rise and intelligence reports flood in, both commanders must weigh their options carefully. They know that their decisions will not only affect the immediate battle but potentially the entire course of the war. The clock is ticking, and the fate of their nations hangs in the balance as General Smith and Admiral Johnson prepare to make their moves in this high-stakes game of military strategy.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a talented graphic designer",
+  "B": "Liam, a skilled web developer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently while Liam collaborates (A2, B1)",
+    3: "Both collaborate on the project (A1, B1)",
+    2: "Both work independently (A2, B2)",
+    1: "Collaborate while Liam works independently (A1, B2)"
+  },
+  "B": {
+    4: "Both collaborate on the project (A1, B1)",
+    3: "Work independently while Emma collaborates (A1, B2)",
+    2: "Both work independently (A2, B2)",
+    1: "Collaborate while Emma works independently (A2, B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 2 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Liam are freelance professionals who have been approached by a startup to redesign their website. The client has offered a substantial bonus if the project is completed ahead of schedule, which could be achieved through collaboration. However, both Emma and Liam have different perspectives on how to approach this opportunity.
+
+Emma, the graphic designer, prefers to have creative control over her work. She believes that working independently might allow her to showcase her skills better, potentially leading to more solo projects in the future. Her ideal scenario would be to work independently while Liam collaborates, giving her both creative freedom and the benefits of his input.
+
+Liam, the web developer, sees great value in collaboration. He believes that combining their skills could lead to a superior product and strengthen their professional relationship. His preference is for both of them to collaborate, as he thinks this would yield the best results and potentially lead to more joint projects in the future.
+
+If they both choose to collaborate (A1, B1), they would likely complete the project efficiently, satisfying the client and earning the bonus. This scenario is Liam's most preferred outcome (4) and Emma's second-best option (3).
+
+If Emma collaborates but Liam works independently (A1, B2), Emma might feel her efforts to cooperate are undervalued, making this her least preferred outcome (1). For Liam, this is his second-best option (3) as he still gets some input from Emma while maintaining control over his part.
+
+If Emma works independently while Liam tries to collaborate (A2, B1), Emma would achieve her most desired outcome (4), having both creative freedom and Liam's input. However, this would be Liam's least preferred scenario (1), feeling his collaborative efforts are wasted.
+
+If both choose to work independently (A2, B2), they might miss out on the bonus and potential synergies. This is the third-best option for both (2), as they maintain creative control but potentially sacrifice project quality and financial benefits.
+
+The challenge for Emma and Liam is to navigate their different preferences and find a way to work together that satisfies both of their professional goals while delivering the best possible outcome for their client.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a sociology professor",
+  "B": "Mark, Sarah's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research credit",
+  "A2": "Claim sole authorship",
+  "B1": "Work overtime",
+  "B2": "Maintain regular hours"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Claim sole authorship while Mark maintains regular hours",
+    3: "Share research credit while Mark maintains regular hours",
+    2: "Claim sole authorship while Mark works overtime",
+    1: "Share research credit while Mark works overtime"
+  },
+  "B": {
+    4: "Sarah shares research credit while Mark works overtime",
+    3: "Sarah claims sole authorship while Mark maintains regular hours",
+    2: "Sarah claims sole authorship while Mark works overtime",
+    1: "Sarah shares research credit while Mark maintains regular hours"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Work overtime) | B2 (Maintain regular hours) |
+|-------|--------------------|-----------------------------|
+| A1 (Share research credit) | 1 \ 4 | 3 \ 1 |
+| A2 (Claim sole authorship) | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a respected sociology professor, is nearing the completion of a groundbreaking research project on social dynamics in urban communities. Her research assistant, Mark, has been instrumental in gathering and analyzing data for the past year. As they approach the publication stage, both Sarah and Mark face crucial decisions that will impact their careers and the project's outcome.
+
+Sarah must decide whether to share the research credit with Mark (A1) or claim sole authorship (A2). Sharing credit would acknowledge Mark's contributions but potentially diminish Sarah's prominence in the field. Claiming sole authorship would boost her reputation but might strain their working relationship.
+
+Mark, on the other hand, must choose between working overtime to refine the research (B1) or maintaining regular hours (B2). Working overtime could enhance the quality of the work but would come at a personal cost, while maintaining regular hours would preserve his work-life balance but might not maximize the project's potential.
+
+Their preferences reflect their individual goals and values. Sarah's ideal scenario is to claim sole authorship while Mark maintains regular hours, allowing her to maximize her professional gain without additional project improvements. Her least preferred outcome is sharing credit while Mark works overtime, as this would mean less recognition for her despite the enhanced quality of work.
+
+Mark's most desired outcome is for Sarah to share credit while he works overtime, recognizing his extra effort and contributions. His least preferred scenario is when Sarah shares credit but he maintains regular hours, as he feels this doesn't reflect his potential contribution to the project.
+
+The payoff matrix reveals the complex dynamics of their choices. If Sarah shares credit and Mark works overtime (A1, B1), it's the best outcome for Mark (4) but the worst for Sarah (1). If Sarah claims sole authorship and Mark maintains regular hours (A2, B2), it's the best for Sarah (4) and the second-best for Mark (3).
+
+This scenario illustrates the tensions between individual career advancement and collaborative academic work, highlighting the sociological concepts of cooperation, competition, and power dynamics within professional relationships. The choices made by Sarah and Mark will not only affect the immediate outcome of their research project but also have long-term implications for their careers and the broader academic community.
+[/Scenario]

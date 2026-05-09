@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a sociologist",
+  "B": "Professor Mark Thompson, a fellow sociologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on a similar project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Sole credit for groundbreaking research",
+    3: "Shared credit for collaborative research",
+    2: "Limited recognition for private research",
+    1: "No recognition due to being scooped"
+  },
+  "B": {
+    4: "Shared credit for collaborative research",
+    3: "Independent success with similar project",
+    2: "Limited involvement in groundbreaking research",
+    1: "No involvement or recognition in the field"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 1 |
+| A2    | 1 \ 2 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Professor Mark Thompson are sociologists working at the same university. Dr. Chen has recently made a potentially groundbreaking discovery in the field of social network analysis. She now faces a dilemma: whether to share her findings with Professor Thompson or keep them private.
+
+If Dr. Chen shares her research (A1) and Professor Thompson chooses to collaborate (B1), they would work together and publish a joint paper. This scenario would result in shared credit for collaborative research, which is Dr. Chen's third preference (3) but Professor Thompson's top preference (4).
+
+If Dr. Chen shares her research (A1) but Professor Thompson decides to work independently on a similar project (B2), Dr. Chen would likely publish first and receive sole credit for the groundbreaking research. This is Dr. Chen's top preference (4), but it would leave Professor Thompson with no involvement or recognition, his least preferred outcome (1).
+
+If Dr. Chen keeps her research private (A2) and Professor Thompson offers to collaborate (B1), Dr. Chen would decline, resulting in no recognition due to being scooped if Professor Thompson publishes first. This is Dr. Chen's least preferred outcome (1), while Professor Thompson would have limited involvement in groundbreaking research, his second-least preferred outcome (2).
+
+Lastly, if Dr. Chen keeps her research private (A2) and Professor Thompson works independently (B2), Dr. Chen would have limited recognition for her private research, her second-least preferred outcome (2). Meanwhile, Professor Thompson might achieve independent success with a similar project, his second-most preferred outcome (3).
+
+The scenario highlights the tension between cooperation and competition in academia, where sharing information can lead to collaborative success but also risks losing individual recognition. Dr. Chen and Professor Thompson must each decide whether to prioritize potential collaboration or individual achievement, knowing that their choices will significantly impact both their careers and the advancement of sociological knowledge.
+[/Scenario]

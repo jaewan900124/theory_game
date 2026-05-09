@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a healthcare administrator",
+  "B": "Dr. Michael Johnson, a senior physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new electronic health record (EHR) system",
+  "A2": "Maintain the current paper-based record system",
+  "B1": "Resist the new EHR system",
+  "B2": "Embrace and support the new EHR system"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement EHR with physician support",
+    3: "Maintain current system with physician resistance",
+    2: "Implement EHR with physician resistance",
+    1: "Maintain current system with physician support"
+  },
+  "B": {
+    4: "New EHR system implemented with physician support",
+    3: "Current system maintained with physician resistance",
+    2: "Current system maintained with physician support",
+    1: "New EHR system implemented with physician resistance"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Resist) | B2 (Embrace) |
+|-------|-------------|--------------|
+| A1 (Implement EHR) | 2 \ 2 | 4 \ 4 |
+| A2 (Maintain current) | 1 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood General Hospital, Dr. Sarah Chen, the healthcare administrator, is facing a crucial decision regarding the hospital's record-keeping system. She's considering implementing a new electronic health record (EHR) system to improve efficiency and patient care. However, the success of this initiative largely depends on the cooperation of the medical staff, particularly the influential Dr. Michael Johnson, a senior physician.
+
+Dr. Chen has two choices: implement the new EHR system (A1) or maintain the current paper-based system (A2). Dr. Johnson, representing the medical staff, can either resist the new system (B1) or embrace and support it (B2).
+
+Dr. Chen's most preferred outcome is implementing the EHR system with Dr. Johnson's support (A1, B2), as this would lead to a smooth transition and maximize the benefits of the new system. Her least preferred scenario is maintaining the current system with Dr. Johnson's support (A2, B2), as this would be a missed opportunity for improvement.
+
+Dr. Johnson, on the other hand, also prefers the scenario where the new EHR system is implemented with his support (A1, B2). He recognizes the potential benefits of the system but is concerned about the initial disruption and learning curve. His least preferred outcome is the implementation of the EHR system against his resistance (A1, B1), as this would likely lead to inefficiencies and frustration among the staff.
+
+If Dr. Chen decides to implement the EHR system and Dr. Johnson resists (A1, B1), both parties receive a payoff of 2, representing a suboptimal outcome with potential for conflict and inefficiency. If Dr. Chen maintains the current system and Dr. Johnson resists (A2, B1), Dr. Chen receives a payoff of 1 (her least preferred outcome), while Dr. Johnson receives a payoff of 3, as he avoids the change he's wary of.
+
+The scenario highlights the importance of cooperation in healthcare decision-making. The optimal outcome for both parties (4, 4) can only be achieved if Dr. Chen decides to implement the EHR system and Dr. Johnson chooses to support it. This situation demonstrates the potential for mutual benefit when healthcare administrators and medical staff align their goals and work together towards improving patient care and operational efficiency.
+[/Scenario]

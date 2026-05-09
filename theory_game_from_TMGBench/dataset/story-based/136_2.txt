@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Richards"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the infrastructure bill",
+  "A2": "Oppose the infrastructure bill",
+  "B1": "Allocate funds to urban development",
+  "B2": "Allocate funds to rural development"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill while funds go to urban development",
+    3: "Support the bill while funds go to urban development",
+    2: "Support the bill while funds go to rural development",
+    1: "Oppose the bill while funds go to rural development"
+  },
+  "B": {
+    4: "Senator supports the bill while funds go to urban development",
+    3: "Senator opposes the bill while funds go to urban development",
+    2: "Senator supports the bill while funds go to rural development",
+    1: "Senator opposes the bill while funds go to rural development"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Urban) | B2 (Rural) |
+|-------|------------|------------|
+| A1 (Support) | 3 \ 4      | 2 \ 2      |
+| A2 (Oppose)  | 1 \ 3      | 4 \ 1      |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense political climate, Senator Sarah Thompson and Governor Mark Richards find themselves at a crossroads over a crucial infrastructure bill. The bill's passage and subsequent fund allocation will significantly impact their respective political futures and the state's development.
+
+Senator Thompson, representing a diverse constituency, must decide whether to support or oppose the infrastructure bill. Her decision will influence her standing among various voter groups and her party leadership.
+
+Governor Richards, on the other hand, has the power to allocate funds either to urban or rural development projects if the bill passes. His decision will shape the state's economic landscape and affect his re-election prospects.
+
+Both politicians are acutely aware of the potential outcomes:
+
+1. If Thompson supports the bill and Richards allocates funds to urban development, it's a win-win situation. Thompson moderately benefits from bipartisan cooperation (3), while Richards gains significant urban support (4).
+
+2. If Thompson supports the bill but Richards focuses on rural development, both face mixed results. Thompson maintains some credibility (2), but Richards loses urban backing while not fully satisfying rural voters (2).
+
+3. If Thompson opposes the bill and Richards chooses urban development, Thompson risks appearing obstructionist (1), while Richards still maintains urban support (3).
+
+4. If Thompson opposes the bill and Richards opts for rural development, Thompson can claim fiscal responsibility (4), but Richards faces backlash from urban constituents and minimal rural appreciation (1).
+
+As they prepare for their respective press conferences, both politicians must carefully weigh their options, considering not only their personal political ambitions but also the long-term impact on their state and constituents. The outcome of their decisions will shape the political landscape for years to come.
+[/Scenario]

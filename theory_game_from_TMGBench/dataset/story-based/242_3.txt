@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "TechCorp, a leading AI research company",
+  "B": "DataHub, a major data management firm"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop an open-source AI model",
+  "A2": "Keep AI research proprietary",
+  "B1": "Share comprehensive dataset",
+  "B2": "Limit data access"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain access to comprehensive data while keeping AI research proprietary",
+    3: "Keep AI research proprietary with limited data access",
+    2: "Develop open-source AI with comprehensive data",
+    1: "Develop open-source AI with limited data access"
+  },
+  "B": {
+    4: "Gain access to open-source AI while sharing comprehensive data",
+    3: "Share comprehensive data but AI remains proprietary",
+    2: "Limit data access while gaining proprietary AI insights",
+    1: "Limit data access with no AI benefits"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 3 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the rapidly evolving world of artificial intelligence and big data, two tech giants find themselves at a crossroads. TechCorp, a leading AI research company, and DataHub, a major data management firm, are considering a potential collaboration that could reshape the industry landscape.
+
+TechCorp has been working on cutting-edge AI models that promise to revolutionize various sectors. They face a crucial decision: should they develop an open-source AI model (A1) that could accelerate industry-wide innovation, or keep their research proprietary (A2) to maintain a competitive edge?
+
+DataHub, on the other hand, sits on a goldmine of data crucial for training advanced AI models. They must decide whether to share their comprehensive dataset (B1), potentially advancing the entire field, or limit data access (B2) to protect their market position.
+
+The companies' choices will lead to four possible scenarios, each with different outcomes:
+
+1. If TechCorp develops an open-source AI (A1) and DataHub shares their comprehensive dataset (B1), both companies contribute to rapid industry advancement. TechCorp gains valuable data but loses exclusive control over their AI (2), while DataHub benefits from the open AI model and maintains its data-sharing reputation (4).
+
+2. If TechCorp develops an open-source AI (A1) but DataHub limits data access (B2), TechCorp's AI development is hindered by lack of data, but they maintain good public relations (4). DataHub retains data control but misses out on fully benefiting from the open AI (3).
+
+3. If TechCorp keeps their AI research proprietary (A2) and DataHub shares their comprehensive dataset (B1), TechCorp gains a significant advantage with exclusive AI and rich data (3). However, DataHub loses out, having shared valuable data without gaining access to the AI advancements (1).
+
+4. If TechCorp keeps their AI research proprietary (A2) and DataHub limits data access (B2), both companies maintain their assets but innovation stagnates. TechCorp's AI development is limited by lack of data (1), while DataHub retains data control but gains no AI insights (2).
+
+The CEOs of both companies are acutely aware that their decisions will not only impact their own organizations but also the future of AI development. As they weigh their options, they must consider the potential for collaboration, the value of open innovation, and the importance of maintaining competitive advantages in a rapidly changing technological landscape.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a sociology professor",
+  "B": "Dr. Michael Chen, another sociology professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue an individual research project",
+  "B1": "Collaborate on a joint research project",
+  "B2": "Pursue an individual research project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both collaborate, leading to a groundbreaking study",
+    3: "Pursue individual research while B collaborates",
+    2: "Both pursue individual research",
+    1: "Collaborate while B pursues individual research"
+  },
+  "B": {
+    4: "Both collaborate, leading to a groundbreaking study",
+    3: "Both pursue individual research",
+    2: "Collaborate while A pursues individual research",
+    1: "Pursue individual research while A collaborates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 3 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, two sociology professors, Dr. Emma Thompson and Dr. Michael Chen, are faced with a crucial decision that could shape their academic careers. The university has announced a significant grant for sociological research, but the catch is that the funding can be allocated either to a collaborative project or to individual studies.
+
+Dr. Thompson, known for her work on urban sociology, has been developing a theory on the impact of gentrification on community cohesion. Dr. Chen, on the other hand, specializes in digital sociology and has been exploring the effects of social media on political polarization. Both professors realize that combining their expertise could lead to a groundbreaking study on how digital platforms influence urban community dynamics during gentrification processes.
+
+However, they also recognize the potential risks and rewards of collaboration versus individual pursuit. If they both choose to collaborate (A1 and B1), they could produce a revolutionary study that significantly advances both their fields, resulting in moderate satisfaction for both (2 for Emma, 3 for Michael). This outcome reflects the challenges of compromise and shared credit in academia.
+
+If one chooses to collaborate while the other pursues individual research (A1, B2 or A2, B1), the outcomes vary. If Emma collaborates while Michael pursues his individual project (A1, B2), Emma's willingness to cooperate leads to a successful integration of their ideas, benefiting both significantly (4 for both). However, if Michael collaborates while Emma pursues her individual project (A2, B1), Emma gains an advantage by leveraging Michael's input without fully committing to the collaboration (3 for Emma, 1 for Michael).
+
+Lastly, if both decide to pursue individual projects (A2, B2), they miss the opportunity for a groundbreaking collaborative study. Emma's project, while solid, doesn't reach its full potential without Michael's digital sociology insight (1 for Emma). Michael's individual project fares slightly better but still lacks the depth it could have achieved through collaboration (2 for Michael).
+
+As the deadline for the grant application approaches, both Dr. Thompson and Dr. Chen must weigh their options carefully. They must consider not only their personal academic ambitions but also the potential impact of their decision on the field of sociology as a whole. Their choice will demonstrate the delicate balance between cooperation and competition in academia, highlighting the complex social dynamics that they themselves study.
+[/Scenario]

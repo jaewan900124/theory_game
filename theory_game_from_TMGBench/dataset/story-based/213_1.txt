@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Marina, an up-and-coming abstract painter",
+  "B": "Leo, a well-established gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde painting",
+  "A2": "Produce a more conventional, crowd-pleasing artwork",
+  "B1": "Feature Marina's work in a prime spot during a major art fair",
+  "B2": "Display Marina's work in a less prominent location in the gallery"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a provocative painting and get prime spot at the art fair",
+    3: "Create a conventional painting and get a less prominent display",
+    2: "Create a provocative painting but get a less prominent display",
+    1: "Create a conventional painting and get rejected by the gallery"
+  },
+  "B": {
+    4: "Feature a provocative painting in a prime spot at the art fair",
+    3: "Display a conventional painting in a less prominent location",
+    2: "Display a conventional painting in a prime spot at the art fair",
+    1: "Reject Marina's work entirely"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 2 |
+| A2    | 1 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Marina, an up-and-coming abstract painter, is preparing for her first major exhibition at Leo's prestigious art gallery. Leo, a well-established gallery owner known for his keen eye and business acumen, is deciding how to showcase Marina's work during an upcoming high-profile art fair.
+
+Marina faces a crucial decision: should she create a provocative, avant-garde painting (A1) that pushes boundaries and reflects her true artistic vision, or produce a more conventional, crowd-pleasing artwork (A2) that might have broader appeal?
+
+Leo, on the other hand, must choose between featuring Marina's work in a prime spot during the major art fair (B1), which could potentially launch her career, or display her work in a less prominent location in the gallery (B2), reducing the risk if her art doesn't resonate with collectors.
+
+Marina's preferences are clear: her dream scenario is to create a provocative painting and secure a prime spot at the art fair (A1B1). However, she'd rather have her provocative work displayed less prominently (A1B2) than compromise her artistic integrity with a conventional piece, even if it gets better placement (A2B1). Her least preferred outcome is to create a conventional painting and still be rejected by the gallery (A2B2).
+
+Leo's preferences differ slightly. He's most excited about the prospect of featuring a provocative, boundary-pushing painting in a prime spot (A1B1), believing it could create buzz and attract serious collectors. His second choice would be to play it safe with a conventional painting in a less prominent location (A2B2). Displaying a conventional painting in a prime spot (A2B1) is his third choice, as it might not generate as much interest. His least preferred outcome is to reject Marina's work entirely (A2B2), as he believes in her potential.
+
+The payoff matrix reflects these preferences, with each number representing the degree of satisfaction for Marina and Leo respectively in each scenario. The outcome of their choices will not only impact the success of the exhibition but potentially shape Marina's artistic career and Leo's reputation as a gallerist.
+
+As the art fair approaches, tension builds between Marina's artistic integrity and Leo's commercial considerations. Will they find a way to align their interests, or will one have to compromise for the other's benefit? The decisions they make now could have far-reaching consequences in the competitive and often unpredictable world of contemporary art.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emily Foster, a clinical psychologist",
+  "B": "Alex Thompson, her patient struggling with anxiety"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional therapy methods",
+  "A2": "Implement an experimental treatment",
+  "B1": "Fully engage in the therapy",
+  "B2": "Partially participate in the therapy"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successfully treat the patient with a groundbreaking method",
+    3: "Successfully treat the patient using traditional methods",
+    2: "Achieve moderate success with traditional methods",
+    1: "Fail to make progress with an experimental treatment"
+  },
+  "B": {
+    4: "Overcome anxiety through engaging in traditional therapy",
+    3: "Overcome anxiety through an experimental treatment",
+    2: "Experience slight improvement with partial participation",
+    1: "Make no progress due to lack of engagement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 2 |
+| A2    | 1 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Foster, a respected clinical psychologist, is faced with a challenging case. Her new patient, Alex Thompson, has been struggling with severe anxiety that has significantly impacted his daily life. As they begin their therapeutic journey, both Dr. Foster and Alex must make crucial decisions that will affect the course of treatment and its outcome.
+
+Dr. Foster has two options: she can either stick to traditional therapy methods (A1) or implement an experimental treatment she has been developing (A2). Meanwhile, Alex can choose to fully engage in the therapy (B1) or only partially participate (B2).
+
+If Dr. Foster chooses traditional methods (A1) and Alex fully engages (B1), they achieve the second-best outcome for Dr. Foster (3) and the best outcome for Alex (4). This scenario represents a successful treatment using proven techniques, with Alex overcoming his anxiety through dedicated participation.
+
+If Dr. Foster opts for traditional methods (A1) but Alex only partially participates (B2), both achieve a moderate success (2/2). This represents some improvement in Alex's condition, but not optimal results due to his limited engagement.
+
+Should Dr. Foster decide to implement her experimental treatment (A2) and Alex fully engages (B1), they face the worst-case scenario for both (1/1). This could represent a situation where the new method proves ineffective despite Alex's efforts, potentially damaging Dr. Foster's professional reputation and Alex's trust in therapy.
+
+However, if Dr. Foster uses her experimental treatment (A2) and Alex only partially participates (B2), they achieve the best outcome for Dr. Foster (4) and the second-best for Alex (3). This interesting scenario might represent a breakthrough where the new method works exceptionally well even with limited patient engagement, leading to significant improvement in Alex's condition and a major professional achievement for Dr. Foster.
+
+As they embark on this therapeutic journey, both Dr. Foster and Alex must carefully consider their choices, weighing the potential risks and rewards. Their decisions will not only impact Alex's mental health but also Dr. Foster's professional standing and the potential advancement of anxiety treatment methods.
+[/Scenario]

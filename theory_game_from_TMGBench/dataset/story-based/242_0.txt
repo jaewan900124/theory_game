@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Blake, Alex's long-time doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Continue playing doubles with Blake",
+  "A2": "Focus solely on singles career",
+  "B1": "Continue playing doubles with Alex",
+  "B2": "Seek a new doubles partner"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Focus on singles while Blake finds a new partner",
+    3: "Continue successful doubles partnership with Blake",
+    2: "Both focus on singles careers",
+    1: "Focus on singles while Blake wants to continue doubles"
+  },
+  "B": {
+    4: "Continue successful doubles partnership with Alex",
+    3: "Find a new doubles partner while Alex focuses on singles",
+    2: "Both focus on singles careers",
+    1: "Continue doubles while Alex focuses on singles"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 3 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake have been successful doubles partners on the professional tennis circuit for several years. However, Alex has been considering focusing solely on their singles career to improve their individual ranking and potentially win more prestigious tournaments.
+
+Alex (A) has two choices: continue playing doubles with Blake (A1) or focus solely on their singles career (A2). Blake (B) also has two choices: continue playing doubles with Alex (B1) or seek a new doubles partner (B2).
+
+Alex's preference is to focus on their singles career while Blake finds a new partner, as this would allow Alex to pursue individual goals without feeling guilty about leaving Blake partnerless. Their second preference is to continue the successful doubles partnership with Blake, recognizing the value of their teamwork. Alex's third choice would be for both to focus on singles, while the least preferred option is to focus on singles while Blake insists on continuing their doubles partnership.
+
+Blake, on the other hand, prefers to continue the successful doubles partnership with Alex, valuing their teamwork and shared success. Their second preference is to find a new doubles partner if Alex decides to focus on singles, allowing Blake to continue in doubles. Blake's third choice would be for both to focus on singles, while the least preferred option is to continue doubles while Alex focuses on singles, which would likely lead to poor performance and frustration.
+
+The payoff matrix reflects these preferences, with each number representing the degree of preference for each scenario (4 being most preferred, 1 being least preferred). 
+
+If both choose to continue their doubles partnership (A1, B1), it results in a moderately satisfactory outcome for Alex (2) and the best outcome for Blake (4). If Alex continues doubles but Blake seeks a new partner (A1, B2), it's the best outcome for Alex (4) and a good outcome for Blake (3). If Alex focuses on singles and Blake wants to continue doubles (A2, B1), it's a good outcome for Alex (3) but the worst for Blake (1). Finally, if both decide to part ways (A2, B2), it's the worst outcome for Alex (1) and a moderately satisfactory outcome for Blake (2).
+
+This scenario illustrates the complex dynamics in sports partnerships, where individual goals and team success must be carefully balanced.
+[/Scenario]

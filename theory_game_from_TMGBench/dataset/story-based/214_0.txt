@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a small bakery owner",
+  "B": "Michael, owner of a large supermarket chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain high-quality, artisanal production",
+  "A2": "Switch to mass production techniques",
+  "B1": "Stock Sarah's bakery products",
+  "B2": "Develop in-house bakery department"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain quality and be stocked in supermarket",
+    3: "Switch to mass production and be in supermarket",
+    2: "Maintain quality without supermarket deal",
+    1: "Switch to mass production without supermarket deal"
+  },
+  "B": {
+    4: "Stock high-quality artisanal products",
+    3: "Develop successful in-house bakery",
+    2: "Stock mass-produced bakery products",
+    1: "Fail to develop in-house bakery"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 1 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Sarah, a passionate baker, runs a small artisanal bakery known for its high-quality, handcrafted goods. Her business has been steady, but she's looking for ways to expand. Meanwhile, Michael, the owner of a large supermarket chain, is considering how to improve his bakery offerings.
+
+Sarah faces a crucial decision: she can either maintain her current high-quality, artisanal production (A1) or switch to mass production techniques (A2) to increase output and potentially reduce costs. Michael, on the other hand, is deciding whether to stock Sarah's bakery products in his supermarkets (B1) or develop his own in-house bakery department (B2).
+
+Sarah's ideal scenario would be to maintain her high-quality production while having her products stocked in Michael's supermarkets, as this would allow her to reach a wider audience without compromising her craft. Her least preferred outcome would be switching to mass production without securing the supermarket deal, as this would mean losing her unique selling point without gaining additional distribution.
+
+For Michael, the most attractive option is to stock Sarah's high-quality, artisanal products, as this would elevate his supermarket's offerings with minimal investment. His least desired outcome would be failing to develop a successful in-house bakery after choosing not to stock Sarah's products.
+
+If Sarah maintains her artisanal approach and Michael stocks her products (A1, B1), Sarah gets her third-best outcome (2) while Michael achieves his best scenario (4). If Sarah keeps her current production but Michael develops his own bakery (A1, B2), Sarah unexpectedly benefits the most (4) as local customers flock to her authentic goods, while Michael struggles with his new venture (1).
+
+Should Sarah switch to mass production and Michael stock her goods (A2, B1), Sarah faces her worst scenario (1) as she loses her unique appeal, while Michael settles for his third-best outcome (2). Finally, if Sarah adopts mass production and Michael develops his own bakery (A2, B2), both achieve their second-best outcomes (3) as they find a stable but unremarkable equilibrium.
+
+This scenario illustrates the complex interplay between small businesses and large retailers in the food industry, highlighting the challenges of maintaining quality while seeking growth and the strategic decisions faced by both artisanal producers and major retail chains.
+[/Scenario]

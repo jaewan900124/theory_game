@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Elena Cortez, a brilliant astrophysicist",
+  "B": "Captain Zack Hawkins, an experienced space pilot"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on deep space exploration",
+  "A2": "Concentrate on nearby planetary research",
+  "B1": "Invest in advanced propulsion technology",
+  "B2": "Develop a fleet of smaller, versatile spacecraft"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Nearby planetary research with versatile spacecraft",
+    3: "Deep space exploration with versatile spacecraft",
+    2: "Nearby planetary research with advanced propulsion",
+    1: "Deep space exploration with advanced propulsion"
+  },
+  "B": {
+    4: "Deep space exploration with versatile spacecraft",
+    3: "Deep space exploration with advanced propulsion",
+    2: "Nearby planetary research with versatile spacecraft",
+    1: "Nearby planetary research with advanced propulsion"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 3 \ 4 |
+| A2    | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2150, humanity stands at the precipice of a new era in space exploration. The United Earth Space Agency (UESA) is preparing to launch its most ambitious project yet: the Cosmic Odyssey Initiative. This groundbreaking mission aims to push the boundaries of human knowledge and exploration in the solar system and beyond.
+
+Dr. Elena Cortez, a brilliant astrophysicist, and Captain Zack Hawkins, an experienced space pilot, have been tasked with determining the strategic direction of the Cosmic Odyssey Initiative. Their decisions will shape the future of space exploration for decades to come.
+
+Dr. Cortez (A) must choose between focusing on deep space exploration (A1) or concentrating on nearby planetary research (A2). Meanwhile, Captain Hawkins (B) needs to decide whether to invest in advanced propulsion technology (B1) or develop a fleet of smaller, versatile spacecraft (B2).
+
+Dr. Cortez's preference is to conduct nearby planetary research with versatile spacecraft, as she believes this approach will yield the most immediate and practical scientific results. Her second choice would be deep space exploration with versatile spacecraft, followed by nearby planetary research with advanced propulsion. Her least preferred option is deep space exploration with advanced propulsion, as she feels it's too risky and resource-intensive.
+
+Captain Hawkins, on the other hand, favors deep space exploration with versatile spacecraft, as it combines his passion for pushing boundaries with practical considerations. His second choice is deep space exploration with advanced propulsion, followed by nearby planetary research with versatile spacecraft. His least preferred option is nearby planetary research with advanced propulsion, as he feels it doesn't fully utilize his piloting skills or the potential of new technology.
+
+The UESA board has made it clear that both Dr. Cortez and Captain Hawkins must reach a consensus on their strategy. They are aware that their individual preferences may not align perfectly, and they must consider the overall benefits to the mission and humanity's scientific progress.
+
+As they sit across from each other in the UESA conference room, surrounded by holographic projections of star systems and spacecraft designs, Dr. Cortez and Captain Hawkins must navigate their differing viewpoints and find a solution that best serves the Cosmic Odyssey Initiative. The future of space exploration hangs in the balance as they prepare to make their decision.
+[/Scenario]

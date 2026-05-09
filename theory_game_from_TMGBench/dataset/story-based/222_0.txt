@@ -1,0 +1,63 @@
+[Characters]
+{
+  "A": "General Alexander",
+  "B": "Admiral Beatrice"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops to the coastal region",
+  "A2": "Fortify inland positions",
+  "B1": "Launch a naval blockade",
+  "B2": "Conduct amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successfully defend against amphibious assault",
+    3: "Maintain strong inland defenses",
+    2: "Minimize losses during naval blockade",
+    1: "Suffer heavy losses in coastal battle"
+  },
+  "B": {
+    4: "Defeat enemy troops in coastal region",
+    3: "Successfully conduct amphibious assault",
+    2: "Maintain effective naval blockade",
+    1: "Face strong resistance in amphibious assault"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 2 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Alexander of the land forces and Admiral Beatrice of the naval fleet find themselves locked in a strategic dilemma. Their decisions will determine the outcome of a critical coastal conflict.
+
+General Alexander faces a crucial choice: he can either deploy his troops to the coastal region (A1) or fortify inland positions (A2). Deploying to the coast could potentially repel an amphibious assault but leaves his forces vulnerable to a naval blockade. Fortifying inland offers better protection but risks losing control of the coastline.
+
+Admiral Beatrice, commanding the naval forces, must decide between launching a naval blockade (B1) or conducting an amphibious assault (B2). The blockade could starve out the enemy but might be less effective if they're well-fortified inland. An amphibious assault could quickly secure the coast but carries higher risks, especially if enemy troops are already there.
+
+Their preferences reflect their strategic goals and risk assessments:
+
+General Alexander's top priority (4) is successfully defending against an amphibious assault, followed by maintaining strong inland defenses (3). His least preferred outcome (1) is suffering heavy losses in a coastal battle, slightly better than minimizing losses during a naval blockade (2).
+
+Admiral Beatrice's best-case scenario (4) is defeating enemy troops in the coastal region. Her second preference (3) is successfully conducting an amphibious assault. Maintaining an effective naval blockade (2) is her third choice, while facing strong resistance in an amphibious assault (1) is her least desired outcome.
+
+The payoff matrix reveals the complex interplay of their decisions:
+
+1. If Alexander deploys to the coast (A1) and Beatrice launches a blockade (B1), Alexander suffers heavy losses (1) while Beatrice achieves her best outcome (4).
+2. If Alexander deploys to the coast (A1) and Beatrice conducts an amphibious assault (B2), Alexander successfully defends (4) while Beatrice still achieves a good outcome (3).
+3. If Alexander fortifies inland (A2) and Beatrice launches a blockade (B1), Alexander minimizes losses (2) but Beatrice faces her worst scenario (1).
+4. If Alexander fortifies inland (A2) and Beatrice conducts an amphibious assault (B2), Alexander maintains strong defenses (3) while Beatrice faces some resistance (2).
+
+As both leaders contemplate their moves, they must consider not only their own preferences but also anticipate the other's strategy, knowing that the outcome depends on their combined decisions.
+[/Scenario]

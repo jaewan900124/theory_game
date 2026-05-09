@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emily, a freelance graphic designer",
+  "B": "Jake, a small business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Charge standard rate",
+  "A2": "Offer discounted rate",
+  "B1": "Hire for one-time project",
+  "B2": "Offer long-term contract"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Discounted rate, long-term contract",
+    3: "Standard rate, one-time project",
+    2: "Standard rate, long-term contract",
+    1: "Discounted rate, one-time project"
+  },
+  "B": {
+    4: "Standard rate, long-term contract",
+    3: "Discounted rate, one-time project",
+    2: "Standard rate, one-time project",
+    1: "Discounted rate, long-term contract"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emily \ Jake | Hire for one-time project | Offer long-term contract |
+|--------------|---------------------------|--------------------------|
+| Standard rate| 1 \ 2                     | 2 \ 4                    |
+| Discounted rate| 3 \ 3                   | 4 \ 1                    |
+[/Payoff Matrix]
+
+[Scenario]
+Emily, a talented freelance graphic designer, has been approached by Jake, the owner of a small but growing business, for a potential collaboration. Both are eager to work together, but they face a dilemma in deciding the terms of their partnership.
+
+Emily has two choices: she can either charge her standard rate or offer a discounted rate to potentially secure a long-term client. Jake, on the other hand, is considering whether to hire Emily for a one-time project or offer her a long-term contract.
+
+Emily's most preferred outcome would be to offer a discounted rate and secure a long-term contract, as it would provide her with stable income and the opportunity to grow with Jake's business. Her least preferred scenario would be offering a discounted rate for just a one-time project, as it would mean less income without the benefit of a lasting relationship.
+
+Jake's ideal situation would be to get Emily on a long-term contract at her standard rate, ensuring high-quality work for his growing business. His least preferred outcome would be a long-term contract at a discounted rate, as it might strain his budget over time.
+
+As they negotiate, Emily and Jake must consider their choices carefully. If Emily charges her standard rate and Jake only hires her for a one-time project, both will be somewhat dissatisfied (payoff: 1 for Emily, 2 for Jake). If Emily offers a discount and Jake agrees to a one-time project, they'll both be moderately satisfied (payoff: 3 for both).
+
+In the case where Emily charges her standard rate and Jake offers a long-term contract, Jake will be very pleased while Emily will be moderately satisfied (payoff: 2 for Emily, 4 for Jake). However, if Emily offers a discount and Jake agrees to a long-term contract, Emily will be thrilled while Jake will be less satisfied due to the long-term financial implications (payoff: 4 for Emily, 1 for Jake).
+
+As they sit across from each other in a coffee shop, both Emily and Jake ponder their options, knowing that their decisions will significantly impact their professional relationship and future prospects.
+[/Scenario]

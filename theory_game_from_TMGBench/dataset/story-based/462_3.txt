@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Emma, an aspiring painter",
+  "B": "Marcus, a gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create traditional landscape paintings",
+  "A2": "Experiment with abstract art",
+  "B1": "Feature Emma's work exclusively",
+  "B2": "Showcase multiple artists"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Experiment with abstract art and have exclusive gallery feature",
+    3: "Create traditional landscapes and have exclusive gallery feature",
+    2: "Experiment with abstract art in a multi-artist showcase",
+    1: "Create traditional landscapes in a multi-artist showcase"
+  },
+  "B": {
+    4: "Showcase multiple artists with Emma's traditional landscapes",
+    3: "Feature Emma's traditional landscapes exclusively",
+    2: "Feature Emma's abstract art exclusively",
+    1: "Showcase multiple artists with Emma's abstract art"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 2 \ 4 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, an aspiring painter, is at a crossroads in her artistic career. She has been creating traditional landscape paintings for years but feels a strong urge to experiment with abstract art. Her work has caught the attention of Marcus, a prominent gallery owner in the city.
+
+Marcus is impressed by Emma's talent and is considering featuring her work in his gallery. However, he faces a dilemma: should he showcase Emma's work exclusively or include her pieces in a multi-artist exhibition?
+
+Emma's preferences:
+1. Her ultimate goal is to experiment with abstract art and have her work featured exclusively in Marcus's gallery. This would allow her to fully express her creativity and gain maximum exposure.
+2. If she can't have an exclusive feature for her abstract work, she'd prefer to stick with traditional landscapes and have an exclusive showcase.
+3. Her third choice would be to experiment with abstract art but be part of a multi-artist showcase.
+4. Her least preferred option is to continue with traditional landscapes in a multi-artist exhibition.
+
+Marcus's preferences:
+1. His ideal scenario is to showcase multiple artists, including Emma's traditional landscapes. This would attract a diverse audience and minimize risk.
+2. If he were to feature Emma exclusively, he'd prefer her traditional landscapes, which have a proven market appeal.
+3. His third choice would be to feature Emma's abstract art exclusively, seeing potential but also risk.
+4. His least preferred option is to showcase multiple artists with Emma's abstract art, fearing it might not resonate with his usual clientele.
+
+The situation creates a complex dynamic where Emma's artistic aspirations clash with Marcus's business considerations. If Emma chooses traditional landscapes (A1) and Marcus features her exclusively (B1), Emma will be disappointed (1) while Marcus will be satisfied (3). If Emma goes abstract (A2) and Marcus showcases multiple artists (B2), Emma will be thrilled (4) but Marcus will be concerned (1).
+
+Their decisions will not only impact their individual success but also shape the local art scene. Will Emma pursue her passion for abstract art at the risk of losing an exclusive feature? Will Marcus take a chance on Emma's new direction or play it safe with a multi-artist showcase? Their choices will determine the future of both Emma's artistic career and Marcus's gallery.
+[/Scenario]

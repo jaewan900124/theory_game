@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a small bakery owner",
+  "B": "Lucas, a local coffee shop owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Introduce a new premium product line",
+  "B1": "Collaborate with Emma's bakery",
+  "B2": "Expand coffee shop menu to include baked goods"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Introduce premium products while Lucas collaborates",
+    3: "Maintain current prices while Lucas collaborates",
+    2: "Introduce premium products while Lucas expands menu",
+    1: "Maintain current prices while Lucas expands menu"
+  },
+  "B": {
+    4: "Collaborate with Emma while she maintains current prices",
+    3: "Collaborate with Emma while she introduces premium products",
+    2: "Expand menu while Emma maintains current prices",
+    1: "Expand menu while Emma introduces premium products"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Collaborate (B1) | Expand Menu (B2) |
+|---------------|------------------|-------------------|
+| Maintain (A1) | 3 \ 4            | 1 \ 2             |
+| Premium (A2)  | 2 \ 3            | 4 \ 1             |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling small town, Emma, a talented baker, owns a charming bakery that has been a local favorite for years. Just down the street, Lucas runs a trendy coffee shop that has quickly gained popularity since its opening last year. Both entrepreneurs are looking for ways to grow their businesses and increase profits.
+
+Emma is considering two options: maintaining her current prices and product lineup (A1) or introducing a new premium product line with artisanal pastries and cakes (A2). Meanwhile, Lucas is weighing the decision to either collaborate with Emma's bakery by selling her products in his coffee shop (B1) or expanding his own menu to include a variety of baked goods (B2).
+
+The two business owners' choices will significantly impact each other's success. If Emma maintains her current prices and Lucas chooses to collaborate (A1, B1), it would be mutually beneficial. Emma would see a moderate increase in sales (preference 3), while Lucas would enjoy the highest benefit by offering high-quality baked goods without the cost of production (preference 4).
+
+If Emma introduces her premium line and Lucas still collaborates (A2, B1), Emma's profits would increase slightly (preference 2) due to higher production costs, while Lucas would still benefit significantly (preference 3) from the partnership, albeit slightly less than before due to the higher wholesale prices.
+
+Should Emma maintain her current prices while Lucas expands his menu (A1, B2), Emma would face her least preferred outcome (preference 1) as she loses customers to Lucas. Lucas would see some improvement (preference 2) but not as much as he would through collaboration.
+
+Finally, if Emma introduces her premium line while Lucas expands his menu (A2, B2), Emma would achieve her most preferred outcome (preference 4) by differentiating her products and attracting high-end customers. However, this would be Lucas's least preferred scenario (preference 1) as he struggles to compete with Emma's established reputation in baked goods.
+
+As both Emma and Lucas contemplate their choices, they must consider not only their own potential gains but also how their decisions might influence the other's strategy. The outcome of their choices will shape the future of their businesses and the local culinary scene.
+[/Scenario]

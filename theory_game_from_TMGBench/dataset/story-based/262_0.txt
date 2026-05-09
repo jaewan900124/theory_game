@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Alex Chen, a molecular biologist",
+  "B": "Dr. Samantha Lee, a geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data openly",
+  "A2": "Keep research data private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Sole credit for breakthrough discovery",
+    3: "Joint publication with shared credit",
+    2: "Slow progress with limited resources",
+    1: "No significant progress, potential career setback"
+  },
+  "B": {
+    4: "Exclusive access to groundbreaking data",
+    3: "Rapid progress through collaboration",
+    2: "Moderate progress working alone",
+    1: "Stalled research, possible funding loss"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 1 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Alex Chen and Dr. Samantha Lee are both brilliant scientists working on cutting-edge research in gene editing techniques for cancer treatment. They work at different institutions but are aware of each other's work in the field.
+
+Dr. Chen has recently made a significant breakthrough in CRISPR technology that could revolutionize cancer therapy. He now faces a dilemma: should he share his research data openly (A1) or keep it private (A2)? Sharing could lead to faster overall progress in the field, but it might also mean losing the chance for sole credit on a groundbreaking discovery.
+
+Dr. Lee, on the other hand, has developed a unique approach to targeting specific cancer genes. She must decide whether to collaborate with Dr. Chen (B1) or continue working independently (B2). Collaboration could accelerate her research, but it might also mean sharing the spotlight for any major discoveries.
+
+If Dr. Chen shares his data and Dr. Lee collaborates (A1, B1), they would likely make rapid progress through collaboration (A: 3, B: 4). Dr. Lee would gain exclusive access to groundbreaking data, while Dr. Chen would benefit from a joint publication with shared credit.
+
+If Dr. Chen shares his data but Dr. Lee works independently (A1, B2), Dr. Chen might make a sole breakthrough discovery (A: 4), while Dr. Lee would make rapid progress using the shared information (B: 3).
+
+If Dr. Chen keeps his research private and Dr. Lee attempts to collaborate (A2, B1), both scientists would likely face setbacks. Dr. Chen would make no significant progress and potentially face a career setback (A: 1), while Dr. Lee's research would stall, possibly resulting in a loss of funding (B: 1).
+
+Finally, if both scientists choose to work independently and keep their research private (A2, B2), they would both make slow to moderate progress with limited resources (A: 2, B: 2).
+
+The outcome of their decisions will not only affect their personal careers but could also impact the speed of advancements in cancer treatment research. Their choices reflect the constant tension in scientific research between collaboration and competition, as well as the balance between personal achievement and the greater good of scientific progress.
+[/Scenario]

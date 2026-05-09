@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current hospital-based healthcare model",
+  "A2": "Implement community-based healthcare model",
+  "B1": "Join hospital network",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement community-based model with independent physicians",
+    3: "Maintain current model with independent physicians",
+    2: "Implement community-based model with physicians joining network",
+    1: "Maintain current model with physicians joining network"
+  },
+  "B": {
+    4: "Join hospital network under current model",
+    3: "Remain independent under community-based model",
+    2: "Remain independent under current model",
+    1: "Join hospital network under community-based model"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 1 |
+| A2    | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, the local healthcare landscape is at a crossroads. Dr. Emily Chen, the hospital administrator, is considering a shift from the traditional hospital-based healthcare model to a more community-oriented approach. Meanwhile, Dr. Mark Johnson, a respected private practice physician, is weighing the decision to either join the hospital network or maintain his independence.
+
+Dr. Chen believes that a community-based model could improve patient outcomes and reduce costs, but it requires cooperation from local physicians. Her ideal scenario is implementing this new model while allowing physicians to remain independent, as she thinks this will foster innovation and personalized care. Her least preferred outcome is maintaining the current model with physicians joining the network, as she fears this could lead to a monopolistic system.
+
+Dr. Johnson, on the other hand, is primarily concerned with the financial stability and autonomy of his practice. He most prefers joining the hospital network under the current model, as this would provide financial security without drastically changing his way of practice. His least desired outcome is joining the network under a community-based model, which he fears would limit his decision-making power and income potential.
+
+If Dr. Chen maintains the current model and Dr. Johnson joins the network, it results in the lowest payoff for Dr. Chen (1) but the highest for Dr. Johnson (4). If Dr. Chen implements the community-based model and Dr. Johnson remains independent, it yields the highest payoff for Dr. Chen (4) but a lower payoff for Dr. Johnson (2).
+
+The scenario highlights the complex dynamics in healthcare decision-making, where administrators and physicians must balance personal interests with systemic changes. The outcome will significantly impact the future of healthcare delivery in their community, affecting not only their own positions but also patient care and overall health outcomes.
+[/Scenario]

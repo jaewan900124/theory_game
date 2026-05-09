@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Alex, a freelance graphic designer",
+  "B": "Taylor, a small business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deliver a standard design",
+  "A2": "Create an elaborate, time-consuming design",
+  "B1": "Pay the agreed price",
+  "B2": "Offer a bonus for exceptional work"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create an elaborate design and receive a bonus",
+    3: "Deliver a standard design and receive the agreed price",
+    2: "Create an elaborate design but receive only the agreed price",
+    1: "Deliver a standard design and miss out on a potential bonus"
+  },
+  "B": {
+    4: "Receive a standard design and pay only the agreed price",
+    3: "Receive an elaborate design and pay a bonus",
+    2: "Receive an elaborate design and pay only the agreed price",
+    1: "Pay the agreed price for a standard design"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 1 \ 4 |
+| A2    | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a freelance graphic designer, has been hired by Taylor, a small business owner, to create a new logo for Taylor's company. They've agreed on a standard price for the job, but the dynamics of their interaction create an interesting decision-making scenario for both parties.
+
+Alex has two choices: deliver a standard design (A1) that meets the basic requirements, or create an elaborate, time-consuming design (A2) that goes above and beyond expectations. Taylor, on the other hand, can either pay the agreed price (B1) or offer a bonus for exceptional work (B2).
+
+Alex's preferences are clear: they would most like to create an elaborate design and receive a bonus (4), followed by delivering a standard design for the agreed price (3). Their least preferred outcome is delivering a standard design and missing out on a potential bonus (1).
+
+Taylor's preferences are slightly different: they would most prefer to receive a standard design and pay only the agreed price (4), followed by receiving an elaborate design and paying a bonus (3). Their least preferred outcome is paying the agreed price for a standard design (1).
+
+The interaction between Alex and Taylor creates four possible scenarios:
+
+1. If Alex delivers a standard design (A1) and Taylor pays the agreed price (B1), Alex is satisfied (3) but Taylor feels they've overpaid for a basic design (1).
+
+2. If Alex delivers a standard design (A1) and Taylor offers a bonus (B2), Alex misses out on the bonus they could have earned with more effort (1), while Taylor is very pleased with the value received (4).
+
+3. If Alex creates an elaborate design (A2) and Taylor pays only the agreed price (B1), Alex feels their extra effort was unappreciated (2), while Taylor is happy to receive high-quality work at the standard price (3).
+
+4. If Alex creates an elaborate design (A2) and Taylor offers a bonus (B2), Alex is thrilled with the recognition of their effort (4), and Taylor is satisfied with the quality-to-price ratio (2).
+
+This scenario illustrates the complex dynamics of freelance work and client relationships, where both parties must make decisions without knowing the other's choice, leading to potentially cooperative or competitive outcomes.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a custom software solution",
+  "A2": "Use an existing off-the-shelf software",
+  "B1": "Design a specialized hardware component",
+  "B2": "Use standard hardware components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Custom software with standard hardware",
+    3: "Off-the-shelf software with specialized hardware",
+    2: "Off-the-shelf software with standard hardware",
+    1: "Custom software with specialized hardware"
+  },
+  "B": {
+    4: "Custom software with specialized hardware",
+    3: "Off-the-shelf software with specialized hardware",
+    2: "Off-the-shelf software with standard hardware",
+    1: "Custom software with standard hardware"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Specialized) | B2 (Standard) |
+|-------|------------------|---------------|
+| A1 (Custom) | 1 \ 4 | 4 \ 1 |
+| A2 (Off-the-shelf) | 3 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a cutting-edge robotics project for their company. They need to decide on the software and hardware components for the robot's control system. Their decisions will significantly impact the project's success and their individual recognition within the company.
+
+Alex, the software engineer, has two options: develop a custom software solution (A1) or use an existing off-the-shelf software (A2). Blake, the hardware engineer, also has two choices: design a specialized hardware component (B1) or use standard hardware components (B2).
+
+Alex prefers developing custom software with standard hardware components, as it showcases their software skills while keeping hardware costs low. Their least preferred scenario is custom software with specialized hardware, as it might overshadow their work.
+
+Blake, on the other hand, prefers the combination of custom software with their specialized hardware design, as it highlights their hardware innovation. Their least preferred outcome is custom software with standard hardware, which doesn't showcase their expertise.
+
+If they both choose their preferred options (A1 and B2), Alex will be highly satisfied (4), but Blake will be disappointed (1). If they both opt for their less preferred choices (A2 and B1), they'll both be reasonably satisfied (3). If they both choose standard options (A2 and B2), neither will stand out, resulting in moderate satisfaction for both (2).
+
+The engineers must decide whether to prioritize their individual preferences or find a compromise that benefits both. Their choices will not only affect the project's outcome but also their professional reputations and future opportunities within the company.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented young basketball player",
+  "B": "Coach Thompson, the team's head coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play team-oriented basketball",
+  "A2": "Play selfishly to boost individual stats",
+  "B1": "Give Alex more playing time",
+  "B2": "Limit Alex's playing time"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play selfishly and get more playing time",
+    3: "Play team-oriented and get more playing time",
+    2: "Play selfishly but with limited playing time",
+    1: "Play team-oriented with limited playing time"
+  },
+  "B": {
+    4: "Alex plays team-oriented with limited playing time",
+    3: "Alex plays selfishly but with limited playing time",
+    2: "Alex plays team-oriented and gets more playing time",
+    1: "Alex plays selfishly and gets more playing time"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Alex \ Coach | More playing time (B1) | Limited playing time (B2) |
+|--------------|------------------------|---------------------------|
+| Team-oriented (A1) | 3 \ 2                  | 1 \ 4                     |
+| Selfish (A2)       | 2 \ 3                  | 4 \ 1                     |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented young basketball player, has recently joined a professional team coached by the experienced Coach Thompson. As the season progresses, both Alex and Coach Thompson face decisions that will impact their individual success and the team's performance.
+
+Alex has two choices: he can either play team-oriented basketball (A1), focusing on passing, defense, and overall team strategy, or he can play selfishly (A2) to boost his individual statistics and gain more attention from scouts and fans.
+
+Coach Thompson also has two options: he can either give Alex more playing time (B1), allowing him to develop and showcase his skills, or limit Alex's playing time (B2) to maintain team balance and discipline.
+
+Their preferences for different scenarios are as follows:
+
+Alex's most preferred outcome (4) is to play selfishly and get more playing time, as this would maximize his individual success and potential for future contracts. His second preference (3) is to play team-oriented basketball with more playing time, which would still allow him to shine while contributing to the team's success. His third choice (2) would be to play selfishly with limited playing time, hoping to make the most of his opportunities. His least preferred outcome (1) is to play team-oriented basketball with limited playing time, feeling that his talents are being wasted.
+
+Coach Thompson's top preference (4) is for Alex to play team-oriented basketball with limited playing time, maintaining team discipline and balance. His second choice (3) is for Alex to play selfishly but with limited playing time, minimizing the impact on team dynamics. The coach's third preference (2) is for Alex to play team-oriented basketball with more playing time, recognizing the player's talent but worried about upsetting team hierarchy. His least preferred outcome (1) is for Alex to play selfishly with more playing time, potentially disrupting team chemistry and strategy.
+
+The payoff matrix represents these preferences numerically, showing the complex dynamics between individual success and team cohesion in professional sports. Alex and Coach Thompson must navigate this situation, balancing personal goals with team objectives, as they work towards a successful season.
+[/Scenario]

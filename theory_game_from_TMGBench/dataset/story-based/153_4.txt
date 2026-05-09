@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Emma"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Teach traditional lecture-style classes",
+  "A2": "Implement interactive project-based learning",
+  "B1": "Actively participate in class",
+  "B2": "Passively attend class"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Interactive teaching with passive students",
+    3: "Traditional teaching with active students",
+    2: "Traditional teaching with passive students",
+    1: "Interactive teaching with active students"
+  },
+  "B": {
+    4: "Traditional teaching with active participation",
+    3: "Interactive teaching with passive attendance",
+    2: "Traditional teaching with passive attendance",
+    1: "Interactive teaching with active participation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Active) | B2 (Passive) |
+|-------|-------------|--------------|
+| A1 (Traditional) | 2 \ 4 | 1 \ 2 |
+| A2 (Interactive) | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is preparing for the upcoming semester's Advanced Economics course. He's torn between sticking to his traditional lecture-style teaching method and implementing a new interactive, project-based learning approach. Meanwhile, Emma, a bright but sometimes unmotivated student, is enrolled in the course and must decide how much effort to put into her studies.
+
+Professor Smith prefers the interactive approach if students are passive, as it forces engagement. However, he finds it challenging and time-consuming if students are already active, preferring traditional lectures in that case. His least favorite scenario is trying to implement interactive methods with highly participative students, as he feels it becomes chaotic.
+
+Emma, on the other hand, enjoys being an active participant in traditional lectures, where she can showcase her knowledge. She's less enthusiastic about interactive projects, preferring to take a passive role if that's the chosen teaching method. Her least preferred situation is actively participating in interactive projects, which she finds stressful and time-consuming.
+
+If Professor Smith chooses traditional lectures and Emma actively participates, it's a good outcome for both (2 for Smith, 4 for Emma). If Smith goes traditional and Emma is passive, it's less satisfying for both (1 for Smith, 2 for Emma). If Smith implements interactive learning and Emma is active, it's challenging for both (3 for Smith, 1 for Emma). Finally, if Smith chooses interactive methods and Emma is passive, it works well for Smith but is not ideal for Emma (4 for Smith, 3 for Emma).
+
+As the semester begins, both Professor Smith and Emma must make their choices, knowing that their decisions will impact not only their own experience but also that of the other person. The outcome of the course and their satisfaction with it hangs in the balance of this educational game theory scenario.
+[/Scenario]

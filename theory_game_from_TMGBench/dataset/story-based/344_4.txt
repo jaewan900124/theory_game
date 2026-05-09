@@ -1,0 +1,50 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Dean Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement traditional lecture-based teaching",
+  "A2": "Adopt innovative project-based learning",
+  "B1": "Maintain current budget allocation",
+  "B2": "Increase funding for educational technology"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement traditional teaching with increased funding",
+    3: "Adopt innovative teaching with current budget",
+    2: "Implement traditional teaching with current budget",
+    1: "Adopt innovative teaching with increased funding"
+  },
+  "B": {
+    4: "Implement traditional teaching with increased funding",
+    3: "Adopt innovative teaching with current budget",
+    2: "Adopt innovative teaching with increased funding",
+    1: "Implement traditional teaching with current budget"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 4 \ 4 |
+| A2    | 3 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At Evergreen University, Professor Smith and Dean Johnson are facing a crucial decision about the future of education in their institution. Professor Smith, a seasoned academic, must choose between continuing with traditional lecture-based teaching methods (A1) or adopting an innovative project-based learning approach (A2). Meanwhile, Dean Johnson is responsible for budget allocation and must decide whether to maintain the current budget (B1) or increase funding for educational technology (B2).
+
+Professor Smith prefers traditional teaching methods and would be most satisfied with implementing them if given increased funding (A1B2). His second choice would be to adopt innovative teaching methods within the current budget constraints (A2B1), as he sees potential in new approaches but is concerned about resource limitations. His third preference is to continue with traditional methods under the current budget (A1B1), and his least preferred option is to adopt innovative methods with increased funding (A2B2), as he worries about the challenges of implementing new technologies.
+
+Dean Johnson's top priority is to modernize the university's approach to education while also securing more funding. Thus, her most preferred outcome is to see traditional teaching methods implemented with increased funding (A1B2), as this would allow for gradual modernization without disrupting established practices. Her second choice is to support innovative teaching methods within the current budget (A2B1), as this aligns with her vision for educational progress. Her third preference is to increase funding for educational technology even if traditional methods are maintained (A2B2), and her least preferred option is to keep both the teaching methods and budget unchanged (A1B1).
+
+The scenario presents a complex interplay of educational philosophy and resource allocation. If both choose their first options (A1B1), they will find themselves in a suboptimal situation where neither is particularly satisfied. However, if they can agree on implementing traditional teaching methods with increased funding (A1B2), both would achieve their most preferred outcome. The challenge lies in navigating their different perspectives on educational innovation and financial priorities to find a mutually beneficial solution.
+[/Scenario]

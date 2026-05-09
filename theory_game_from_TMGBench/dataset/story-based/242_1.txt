@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a freelance graphic designer",
+  "B": "Blake, a small business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deliver a high-quality design",
+  "A2": "Deliver a rushed, lower-quality design",
+  "B1": "Pay the full agreed price",
+  "B2": "Negotiate for a lower price"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Deliver a high-quality design and receive full payment",
+    3: "Deliver a rushed design and receive full payment",
+    2: "Deliver a high-quality design but receive a lower payment",
+    1: "Deliver a rushed design and receive a lower payment"
+  },
+  "B": {
+    4: "Receive a high-quality design and pay a lower price",
+    3: "Receive a high-quality design and pay the full price",
+    2: "Receive a rushed design and pay a lower price",
+    1: "Receive a rushed design and pay the full price"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 3 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a freelance graphic designer, has been hired by Blake, a small business owner, to create a new logo and branding materials for Blake's company. They have agreed on a price, but the final payment and quality of work are yet to be determined.
+
+Alex has two choices: deliver a high-quality design (A1) that requires more time and effort, or produce a rushed, lower-quality design (A2) that takes less time but may not meet Blake's expectations. Blake, on the other hand, can choose to pay the full agreed price (B1) or attempt to negotiate for a lower price (B2) once the work is delivered.
+
+Alex's most preferred outcome is to deliver a high-quality design and receive full payment (A1, B1), as this would showcase their skills and maintain a good reputation. Their least preferred scenario is to deliver a rushed design and receive a lower payment (A2, B2), as this would be unsatisfying both professionally and financially.
+
+Blake's top preference is to receive a high-quality design while paying a lower price (A1, B2), as this would be the best value for their business. Their least desired outcome is to pay the full price for a rushed, lower-quality design (A2, B1), as this would be a poor investment.
+
+The situation creates a dilemma for both parties. Alex must decide whether to invest more time and effort into the project without knowing if Blake will pay the full amount. Blake must choose whether to honor the original agreement or attempt to negotiate a lower price, potentially risking the quality of the work or their relationship with Alex.
+
+If Alex chooses to deliver a high-quality design (A1) and Blake pays the full price (B1), both parties will be relatively satisfied (2, 4). If Alex delivers a high-quality design (A1) but Blake negotiates a lower price (B2), Alex will be most satisfied while Blake is still content (4, 3). If Alex rushes the design (A2) and Blake pays the full price (B1), Alex will be pleased but Blake will be very dissatisfied (3, 1). Finally, if Alex rushes the design (A2) and Blake negotiates a lower price (B2), both parties will be somewhat dissatisfied (1, 2).
+
+This scenario illustrates the complexities of freelance work and client relationships, where trust, quality, and fair compensation must be balanced to achieve a mutually beneficial outcome.
+[/Scenario]

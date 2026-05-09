@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "EcoTech, a green technology company",
+  "B": "ForestCorp, a logging company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop sustainable logging technology",
+  "A2": "Focus on reforestation projects",
+  "B1": "Adopt sustainable practices",
+  "B2": "Continue traditional logging methods"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Focus on reforestation while ForestCorp continues traditional logging",
+    3: "Develop sustainable logging technology while ForestCorp adopts sustainable practices",
+    2: "Develop sustainable logging technology while ForestCorp continues traditional logging",
+    1: "Focus on reforestation while ForestCorp adopts sustainable practices"
+  },
+  "B": {
+    4: "Continue traditional logging while EcoTech develops sustainable logging technology",
+    3: "Continue traditional logging while EcoTech focuses on reforestation",
+    2: "Adopt sustainable practices while EcoTech develops sustainable logging technology",
+    1: "Adopt sustainable practices while EcoTech focuses on reforestation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoTech \ ForestCorp | Adopt sustainable practices | Continue traditional logging |
+|-----------------------|-----------------------------|------------------------------|
+| Develop sustainable   | 3 \ 2                       | 2 \ 4                        |
+| Focus on reforestation| 1 \ 1                       | 4 \ 3                        |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush forest region, two companies find themselves at a crossroads of ecological responsibility and economic interests. EcoTech, a green technology company, and ForestCorp, a long-established logging company, must make decisions that will shape the future of the forest and their businesses.
+
+EcoTech has two options: develop sustainable logging technology or focus on reforestation projects. ForestCorp can either adopt sustainable practices or continue their traditional logging methods.
+
+EcoTech's ideal scenario is to focus on reforestation while ForestCorp continues traditional logging. This allows EcoTech to showcase its environmental commitment while potentially benefiting from ForestCorp's continued deforestation, which would increase demand for reforestation services.
+
+ForestCorp, on the other hand, prefers to continue its traditional logging methods while EcoTech develops sustainable logging technology. This scenario allows ForestCorp to maintain its profitable operations while appearing progressive by partnering with a green tech company.
+
+If both companies choose their most cooperative options - EcoTech developing sustainable logging technology and ForestCorp adopting sustainable practices - it results in a moderately positive outcome for both. This scenario represents a balanced approach to forest management.
+
+The worst-case scenario for both companies is when EcoTech focuses on reforestation and ForestCorp adopts sustainable practices. This situation limits ForestCorp's productivity while also reducing the demand for EcoTech's reforestation services.
+
+As the two companies negotiate and strategize, they must consider not only their immediate profits but also long-term sustainability, public image, and the ecological impact of their decisions. The future of the forest hangs in the balance as EcoTech and ForestCorp make their choices, each hoping to secure the best outcome for themselves while navigating the complex interplay of ecology and economy.
+[/Scenario]

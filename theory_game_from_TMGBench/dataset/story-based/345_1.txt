@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Alex, a ride-sharing app driver",
+  "B": "Blake, a commuter"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use the highway",
+  "A2": "Use local roads",
+  "B1": "Request a regular ride",
+  "B2": "Request a carpool ride"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Highway + Carpool (maximum profit)",
+    3: "Local roads + Regular ride (decent profit, less stress)",
+    2: "Highway + Regular ride (moderate profit, more stress)",
+    1: "Local roads + Carpool (minimum profit)"
+  },
+  "B": {
+    4: "Highway + Carpool (fastest, cheapest)",
+    3: "Local roads + Carpool (cheaper, scenic route)",
+    2: "Local roads + Regular ride (comfortable, scenic route)",
+    1: "Highway + Regular ride (fast but expensive)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Regular) | B2 (Carpool) |
+|-------|--------------|--------------|
+| A1 (Highway) | 2 \ 1        | 4 \ 4        |
+| A2 (Local)   | 3 \ 2        | 1 \ 3        |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Alex, a ride-sharing app driver, and Blake, a daily commuter, find themselves in a transportation dilemma. Alex needs to decide whether to take the highway or local roads for the upcoming ride, while Blake must choose between requesting a regular ride or opting for a carpool.
+
+Alex prefers using the highway for carpool rides as it maximizes profit due to multiple passengers and quicker trips. The second-best option for Alex is using local roads for a regular ride, which offers decent profit with less stress from highway traffic. Taking the highway for a regular ride is Alex's third choice, providing moderate profit but more stress. The least preferred option is using local roads for a carpool, which results in minimum profit due to longer travel times and multiple stops.
+
+Blake, on the other hand, prioritizes both speed and cost. The most preferred option is a carpool ride on the highway, which is the fastest and cheapest. The second choice is a carpool on local roads, which is still cost-effective and offers a scenic route. A regular ride on local roads is the third preference, providing comfort and scenery but at a higher cost. The least favored option for Blake is a regular ride on the highway, which is fast but the most expensive.
+
+As they make their decisions, both Alex and Blake must consider their own preferences while anticipating the other's choice. If they both choose their most preferred options (highway for Alex and carpool for Blake), they'll achieve the best outcome for both. However, if their choices don't align, they may end up in less favorable scenarios.
+
+The payoff matrix reveals the complex interplay between their decisions. Will Alex and Blake manage to cooperate and achieve the mutually beneficial outcome, or will their individual preferences lead to a suboptimal result? Their choices will determine not only their immediate satisfaction but also the efficiency of the city's transportation system as a whole.
+[/Scenario]

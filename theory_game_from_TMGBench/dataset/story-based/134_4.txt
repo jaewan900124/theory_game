@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a sociology professor",
+  "B": "Dr. James Thompson, a sociology professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue an individual research project",
+  "B1": "Collaborate on a joint research project",
+  "B2": "Pursue an individual research project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue individual research while B collaborates",
+    3: "Both collaborate on joint research",
+    2: "Both pursue individual research",
+    1: "Collaborate while B pursues individual research"
+  },
+  "B": {
+    4: "Both collaborate on joint research",
+    3: "Pursue individual research while A collaborates",
+    2: "Both pursue individual research",
+    1: "Collaborate while A pursues individual research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 1 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, two sociology professors, Dr. Emily Chen and Dr. James Thompson, are faced with a critical decision that could shape their academic careers. The university has announced a significant research grant, and both professors are eligible to apply.
+
+Dr. Chen, known for her innovative research methods, is torn between collaborating with Dr. Thompson on a joint project or pursuing her own groundbreaking study on urban gentrification. Dr. Thompson, respected for his extensive fieldwork experience, is similarly conflicted between joining forces with Dr. Chen or continuing his long-term research on rural community dynamics.
+
+If they choose to collaborate (A1 and B1), they would combine their expertise to create a comprehensive study on socio-economic disparities across urban and rural landscapes. This scenario is Dr. Thompson's most preferred outcome (4) as he believes their combined skills would yield groundbreaking results. Dr. Chen also sees value in this collaboration, ranking it as her second-best option (3).
+
+Should Dr. Chen decide to collaborate while Dr. Thompson pursues his individual project (A1 and B2), Dr. Chen would find herself in her least preferred situation (1), feeling that her contributions might be overshadowed. Dr. Thompson would also be at his least preferred outcome (1), missing out on the potential of their combined expertise.
+
+In the scenario where Dr. Chen pursues her individual project while Dr. Thompson attempts to collaborate (A2 and B1), Dr. Chen would achieve her most preferred outcome (4), having full control over her research while potentially benefiting from Dr. Thompson's input. However, Dr. Thompson would find this his second-least preferred situation (2), feeling that his offer of collaboration was rejected.
+
+Lastly, if both professors choose to pursue individual projects (A2 and B2), they would each have the freedom to focus on their specialized areas. This scenario is Dr. Chen's third preference (2) and Dr. Thompson's second preference (3), as they both value the opportunity for independent research but also recognize the potential missed opportunity for collaboration.
+
+As the deadline for the grant application approaches, both Dr. Chen and Dr. Thompson must weigh their options carefully, considering not only their personal research goals but also the potential impact of their decision on their colleague and the field of sociology as a whole.
+[/Scenario]

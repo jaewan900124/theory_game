@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, a small business owner",
+  "B": "Michael, a competing business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Maintain current prices",
+  "B2": "Lower prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices while competitor maintains prices",
+    3: "Both maintain current prices",
+    2: "Both lower prices",
+    1: "Maintain prices while competitor lowers prices"
+  },
+  "B": {
+    4: "Maintain prices while competitor maintains prices",
+    3: "Lower prices while competitor maintains prices",
+    2: "Both maintain current prices",
+    1: "Both lower prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 3 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling commercial district, Sarah and Michael own competing electronic stores located across the street from each other. Both have been struggling with declining sales due to increased online competition. They each face a crucial decision: whether to maintain their current prices or lower them to attract more customers.
+
+Sarah, known for her aggressive business tactics, is contemplating a price reduction to boost her sales volume. She knows that if she lowers her prices while Michael maintains his, she'll gain a significant advantage (her most preferred outcome, 4). However, if they both lower prices, she'll still see some benefit but not as much (her third preference, 2). If they both maintain prices, the status quo remains (her second preference, 3). Her worst-case scenario is if she maintains prices while Michael lowers his (her least preferred outcome, 1).
+
+Michael, more conservative in his approach, prefers stability. His ideal scenario is for both to maintain current prices, preserving their profit margins (his most preferred outcome, 4). He's willing to lower prices if Sarah maintains hers, seeing it as an opportunity to gain market share (his third preference, 3). If they both maintain prices, he's content with the current situation (his second preference, 2). His nightmare scenario is a price war where both lower prices, potentially leading to unsustainable competition (his least preferred outcome, 1).
+
+Neither Sarah nor Michael can communicate directly about their pricing strategies due to anti-trust regulations. They must make their decisions independently, considering the potential actions of their competitor and the resulting outcomes.
+
+As the holiday shopping season approaches, both Sarah and Michael must decide on their pricing strategy. Their choices will not only impact their individual businesses but also shape the competitive landscape of the local electronics market. The tension builds as they each weigh their options, knowing that their decision could make or break their business in the coming months.
+[/Scenario]

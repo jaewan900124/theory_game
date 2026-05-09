@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Green, a marine biologist",
+  "B": "Captain Jack Harper, a commercial fishing boat owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Propose strict fishing quotas",
+  "A2": "Allow flexible fishing regulations",
+  "B1": "Adopt sustainable fishing practices",
+  "B2": "Continue current intensive fishing methods"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Flexible regulations with intensive fishing",
+    3: "Flexible regulations with sustainable practices",
+    2: "Strict quotas with intensive fishing",
+    1: "Strict quotas with sustainable practices"
+  },
+  "B": {
+    4: "Strict quotas with intensive fishing",
+    3: "Flexible regulations with sustainable practices",
+    2: "Strict quotas with sustainable practices",
+    1: "Flexible regulations with intensive fishing"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 2 \ 4 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a coastal town facing declining fish populations, Dr. Emma Green, a marine biologist, and Captain Jack Harper, a commercial fishing boat owner, find themselves in a complex situation balancing ecological concerns with economic interests.
+
+Dr. Green has two options: propose strict fishing quotas (A1) or allow flexible fishing regulations (A2). Captain Harper can either adopt sustainable fishing practices (B1) or continue his current intensive fishing methods (B2).
+
+Surprisingly, Dr. Green's preferences are not what one might expect from a marine biologist. Her most preferred outcome is to have flexible regulations combined with intensive fishing (A2, B2). This could be due to pressure from local authorities to prioritize short-term economic benefits. Her least preferred scenario is strict quotas with sustainable practices (A1, B1), possibly because she believes it might be too restrictive for the local economy.
+
+Captain Harper's preferences are also complex. His ideal scenario is to have strict quotas while continuing his current intensive fishing methods (A1, B2). This might be because strict quotas could limit competition from other fishing operations, allowing him to maintain his current practices. His least preferred outcome is flexible regulations with intensive fishing (A2, B2), perhaps because he fears it would lead to overfishing and long-term damage to his business.
+
+The payoff matrix reflects these preferences. If both parties choose a middle ground by implementing flexible regulations and adopting sustainable practices (A2, B1), they achieve a mutually beneficial outcome (3, 3). However, if they fail to cooperate, they risk suboptimal results for one or both parties.
+
+As negotiations begin, Dr. Green and Captain Harper must navigate their conflicting interests and consider the short-term and long-term implications of their choices on both the marine ecosystem and the local economy. The outcome of their decision will shape the future of the coastal town's relationship with its vital marine resources, balancing ecological sustainability with economic viability in unexpected ways.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a renowned psychologist",
+  "B": "Alex Martinez, a talented psychology graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on a similar project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while Alex works independently",
+    3: "Share findings openly while Alex works independently",
+    2: "Share findings openly and collaborate with Alex",
+    1: "Keep findings private while collaborating with Alex"
+  },
+  "B": {
+    4: "Dr. Thompson shares findings while Alex works independently",
+    3: "Dr. Thompson keeps findings private while Alex works independently",
+    2: "Both collaborate and Dr. Thompson shares findings openly",
+    1: "Both collaborate but Dr. Thompson keeps findings private"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 3 \ 4 |
+| A2    | 1 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson, a renowned psychologist, is on the brink of a groundbreaking discovery in cognitive behavioral therapy. Her talented graduate student, Alex Martinez, has been assisting her and shows great promise in the field. As they near the completion of their research, both face a critical decision that will impact their careers and the advancement of psychological science.
+
+Dr. Thompson must decide whether to share her research findings openly (A1) or keep them private (A2). Sharing would contribute to the scientific community but might risk her competitive edge. Keeping the findings private could lead to personal accolades and potential commercial benefits.
+
+Alex, aware of the research's potential, must choose between continuing to collaborate on the project (B1) or working independently on a similar project (B2). Collaboration ensures a stable position but might limit personal recognition, while independent work could lead to individual success but carries more risk.
+
+Their preferences reflect their personal and professional goals. Dr. Thompson's top preference is to keep her findings private while Alex works independently, allowing her to maintain control over the research while Alex pursues their own path. Her least preferred outcome is keeping findings private while collaborating, as this limits the project's potential without any benefits of openness.
+
+Alex, on the other hand, most prefers that Dr. Thompson shares her findings while Alex works independently, allowing access to valuable information for individual work. Their least preferred scenario is collaborating while Dr. Thompson keeps findings private, feeling this limits growth and recognition.
+
+The payoff matrix reveals the complex dynamics of their choices. If both choose to collaborate and share openly (A1, B1), they achieve a moderate outcome (2,2), benefiting from teamwork but not maximizing individual potential. If Dr. Thompson shares openly but Alex works independently (A1, B2), Alex gains the most benefit (4) while Dr. Thompson still fares well (3). If Dr. Thompson keeps findings private and Alex collaborates (A2, B1), both receive the lowest payoff (1,1), stifling progress and satisfaction. Finally, if Dr. Thompson keeps findings private while Alex works independently (A2, B2), Dr. Thompson achieves her best outcome (4) while Alex still manages a good result (3).
+
+This scenario highlights the tension between collaboration and competition in academia, the value of open science versus personal gain, and the complex mentor-student relationship in research settings. Their decisions will not only affect their individual careers but also the broader field of psychology and potentially the lives of many who could benefit from their research.
+[/Scenario]

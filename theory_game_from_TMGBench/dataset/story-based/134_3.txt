@@ -1,0 +1,57 @@
+[Characters]
+{
+  "A": "Emma, a professional tennis player",
+  "B": "Alex, Emma's doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Train together",
+  "A2": "Train individually",
+  "B1": "Train together",
+  "B2": "Train individually"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Train individually while Alex trains together",
+    3: "Both train together",
+    2: "Both train individually",
+    1: "Train together while Alex trains individually"
+  },
+  "B": {
+    4: "Both train together",
+    3: "Both train individually",
+    2: "Train individually while Emma trains together",
+    1: "Train together while Emma trains individually"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Alex | Train together (B1) | Train individually (B2) |
+|-------------|---------------------|-------------------------|
+| Train together (A1) | 3 \ 4             | 2 \ 1                   |
+| Train individually (A2) | 1 \ 2             | 4 \ 3                   |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Alex are professional tennis players who have been doubles partners for several years. They are preparing for an upcoming Grand Slam tournament and need to decide on their training strategy for the next week.
+
+Emma, known for her powerful serve and aggressive playstyle, believes that individual training allows her to focus on her strengths. She prefers to train individually, especially if Alex is willing to train together, as this would give her a competitive edge (preference 4). Her second choice would be training together with Alex (preference 3), followed by both training individually (preference 2). Her least preferred option is training together while Alex trains individually, as she feels this puts her at a disadvantage (preference 1).
+
+Alex, on the other hand, values teamwork and believes that training together is crucial for their success as a doubles team. His top preference is for both of them to train together (preference 4). If that's not possible, he'd rather they both train individually (preference 3). His third choice would be to train individually while Emma trains together (preference 2), and his least preferred option is training together while Emma trains individually (preference 1).
+
+Their choices create four possible scenarios:
+
+1. Both train together (A1, B1): This scenario is Alex's most preferred outcome (4) and Emma's second-best option (3).
+2. Emma trains together, Alex trains individually (A1, B2): This is the least preferred scenario for both players (Emma: 2, Alex: 1).
+3. Emma trains individually, Alex trains together (A2, B1): This is Emma's most preferred outcome (4) but Alex's second-least preferred (2).
+4. Both train individually (A2, B2): This scenario is Emma's second-least preferred (2) and Alex's second-best option (3).
+
+The players must make their decisions independently, without knowing what the other will choose. Their decision will impact not only their individual performance but also their effectiveness as a doubles team in the upcoming tournament. The outcome of their choices will determine the balance between individual skill improvement and team coordination, potentially affecting their chances of success in the Grand Slam.
+[/Scenario]

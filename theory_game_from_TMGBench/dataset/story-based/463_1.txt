@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a freelance graphic designer",
+  "B": "Leo, a small business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deliver a standard design",
+  "A2": "Create an innovative, time-consuming design",
+  "B1": "Pay the agreed price",
+  "B2": "Offer a bonus for exceptional work"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create an innovative design and receive a bonus",
+    3: "Create an innovative design and receive the agreed price",
+    2: "Deliver a standard design and receive a bonus",
+    1: "Deliver a standard design and receive the agreed price"
+  },
+  "B": {
+    4: "Receive a standard design and pay a bonus",
+    3: "Receive an innovative design and pay the agreed price",
+    2: "Receive a standard design and pay the agreed price",
+    1: "Receive an innovative design and pay a bonus"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 2 \ 4 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented freelance graphic designer, has been hired by Leo, a small business owner, to create a new logo for his company. They've agreed on a price, but both have options that could change the outcome of their collaboration.
+
+Emma has two choices: she can either deliver a standard design (A1) that meets the basic requirements or create an innovative, time-consuming design (A2) that goes above and beyond expectations. Leo, on the other hand, can either pay the agreed price (B1) or offer a bonus for exceptional work (B2).
+
+Emma's preferences are clear: she would love to showcase her creativity and be rewarded for it. Her most preferred outcome is to create an innovative design and receive a bonus (4), followed by creating an innovative design for the agreed price (3). She'd rather deliver a standard design and receive a bonus (2) than deliver a standard design for just the agreed price (1).
+
+Leo's preferences are slightly different. He'd be thrilled to receive a standard design and pay a bonus (4), as this would mean getting what he needs without overpaying. His second choice would be to receive an innovative design for the agreed price (3). Paying the agreed price for a standard design (2) is acceptable, but his least preferred outcome is paying a bonus for an innovative design (1) that he might not need.
+
+As they begin their collaboration, both Emma and Leo face a dilemma. Emma doesn't know if Leo will offer a bonus, and Leo isn't sure about the quality of design Emma will deliver. Their choices will determine the outcome of their project and potentially affect their future working relationship.
+
+If Emma chooses to deliver a standard design (A1) and Leo pays the agreed price (B1), both will be somewhat dissatisfied (1,2). If Emma delivers a standard design (A1) and Leo offers a bonus (B2), Leo will be very happy, but Emma will feel she could have done more (2,4).
+
+If Emma creates an innovative design (A2) and Leo pays the agreed price (B1), both will feel relatively satisfied (3,3). However, if Emma puts in the extra effort for an innovative design (A2) and Leo offers a bonus (B2), Emma will be thrilled, but Leo might feel he's overpaid (4,1).
+
+As they progress with the project, both Emma and Leo must decide their strategies without knowing the other's choice, leading to an interesting game of trust, risk, and potential reward in their professional interaction.
+[/Scenario]

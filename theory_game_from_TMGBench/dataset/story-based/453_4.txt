@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Alex Chen, a geneticist",
+  "B": "Dr. Sarah Thompson, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual research",
+  "A2": "Collaborate on joint research",
+  "B1": "Focus on individual research",
+  "B2": "Pursue a lucrative private sector opportunity"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while Sarah focuses on individual research",
+    3: "Both collaborate on joint research",
+    2: "Both focus on individual research",
+    1: "Focus on individual research while Sarah pursues private sector"
+  },
+  "B": {
+    4: "Pursue private sector while Alex focuses on individual research",
+    3: "Both collaborate on joint research",
+    2: "Both focus on individual research",
+    1: "Focus on individual research while Alex collaborates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 1 \ 4 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Alex Chen and Dr. Sarah Thompson are brilliant biologists working at a prestigious research institute. They're both on the verge of groundbreaking discoveries in their respective fields of genetics and microbiology. However, they face a critical decision that could shape their careers and the future of their research.
+
+Alex is contemplating whether to focus on his individual genetic research or propose a collaboration with Sarah, combining their expertise for potentially revolutionary results. He believes that collaboration could lead to faster and more impactful discoveries, but it would mean sharing credit and possibly slowing down his personal projects.
+
+Sarah, on the other hand, is torn between continuing her academic research or accepting a lucrative offer from a pharmaceutical company to lead their microbiology department. The private sector opportunity promises financial stability and resources but would require her to shift focus away from her current research interests.
+
+Their choices create four possible scenarios:
+
+1. If both focus on individual research (A1, B1), they maintain their current pace and standing in the academic community. This is their second-least preferred outcome, as it's safe but not optimal for either of them.
+
+2. If Alex proposes collaboration and Sarah agrees (A2, B1), they could make significant strides in their joint research. This is the third-best outcome for both, as it offers potential for great discoveries but requires compromise.
+
+3. If Alex focuses on individual research and Sarah takes the private sector job (A1, B2), Sarah gains financial security while Alex continues his work uninterrupted. This is Sarah's most preferred outcome but Alex's least preferred, as he loses a valuable colleague.
+
+4. If Alex proposes collaboration but Sarah chooses the private sector (A2, B2), Alex gains the opportunity to lead a major collaborative project, while Sarah feels she's missing out on a significant academic opportunity. This is Alex's most preferred outcome but Sarah's least preferred.
+
+The tension builds as they approach the deadline for their decisions. Both scientists must weigh their personal ambitions against the potential for collaborative success and the allure of private sector benefits. Their choices will not only affect their individual careers but also the future of biological research in their fields.
+[/Scenario]

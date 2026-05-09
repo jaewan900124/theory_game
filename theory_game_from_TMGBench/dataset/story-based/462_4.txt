@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a marine biologist",
+  "B": "Dr. Mark Thompson, an ecologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual species research",
+  "A2": "Collaborate on ecosystem-wide study",
+  "B1": "Conduct independent ecosystem analysis",
+  "B2": "Partner with Dr. Chen on species-specific research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on ecosystem-wide study while Dr. Thompson conducts independent analysis",
+    3: "Focus on individual species research while Dr. Thompson conducts independent analysis",
+    2: "Focus on individual species research while partnering with Dr. Thompson",
+    1: "Collaborate on ecosystem-wide study while partnering with Dr. Thompson on species-specific research"
+  },
+  "B": {
+    4: "Partner with Dr. Chen on species-specific research while she focuses on individual species",
+    3: "Conduct independent ecosystem analysis while Dr. Chen focuses on individual species",
+    2: "Conduct independent ecosystem analysis while Dr. Chen collaborates on ecosystem-wide study",
+    1: "Partner with Dr. Chen on species-specific research while she collaborates on ecosystem-wide study"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 2 \ 4 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Sarah Chen and Dr. Mark Thompson are renowned marine biologists working on a groundbreaking research project in the Great Barrier Reef. Their goal is to understand the complex interactions between various marine species and the overall ecosystem health in light of climate change.
+
+Dr. Chen, known for her expertise in individual species behavior, is torn between focusing on her specialty (A1) or broadening her scope to collaborate on an ecosystem-wide study (A2). She believes that her individual species research could lead to significant breakthroughs, but she also recognizes the potential impact of a more comprehensive approach.
+
+Dr. Thompson, an accomplished ecologist, is deciding whether to conduct an independent ecosystem analysis (B1) or partner with Dr. Chen on species-specific research (B2). He values the autonomy of independent work but also sees the benefits of combining their expertise.
+
+Their choices will determine the direction of their research and potentially impact future funding and career opportunities. The payoff matrix reflects their preferences for different scenarios:
+
+1. If both focus on their individual strengths (A1, B1), they maintain their autonomy but miss out on potential collaborative benefits. This is Dr. Chen's least preferred outcome but Dr. Thompson's third choice.
+
+2. If Dr. Chen focuses on individual species while Dr. Thompson partners with her (A1, B2), it allows for some collaboration while maintaining Dr. Chen's specialty focus. This is Dr. Chen's second choice and Dr. Thompson's most preferred outcome.
+
+3. If Dr. Chen collaborates on the ecosystem-wide study while Dr. Thompson works independently (A2, B1), it broadens Dr. Chen's research scope while allowing Dr. Thompson to pursue his own analysis. This is Dr. Chen's most preferred outcome but Dr. Thompson's second choice.
+
+4. If both collaborate on each other's specialties (A2, B2), it forces them out of their comfort zones. While this could lead to innovative research, it's Dr. Chen's second-least preferred outcome and Dr. Thompson's least preferred scenario.
+
+As they prepare to make their decisions, both scientists must weigh their personal research interests against the potential benefits of collaboration, considering how their choices will affect not only their own work but also the overall impact of their research on marine biology and ecosystem conservation.
+[/Scenario]

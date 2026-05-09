@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Jack, a graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data",
+  "A2": "Keep research data private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Share data and work independently",
+    3: "Keep data private and collaborate",
+    2: "Keep data private and work independently",
+    1: "Share data and collaborate"
+  },
+  "B": {
+    4: "Share data and work independently",
+    3: "Share data and collaborate",
+    2: "Keep data private and collaborate",
+    1: "Keep data private and work independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Independent) |
+|-------|-------------------|-------------------|
+| A1 (Share)    | 1 \ 3           | 4 \ 4             |
+| A2 (Keep)     | 3 \ 2           | 2 \ 1             |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a sociology professor, and Jack, her graduate student, are working on a groundbreaking research project about social media's impact on community engagement. Emma has collected extensive data over the years, which could significantly contribute to their study.
+
+Emma faces a dilemma: she can either share her research data with Jack (A1) or keep it private (A2). Sharing would accelerate the project but might diminish her own academic recognition. Keeping the data private would protect her work but could hinder the project's progress.
+
+Jack, on the other hand, must decide whether to collaborate closely with Emma on the project (B1) or work more independently (B2). Collaboration could provide valuable guidance but might overshadow his individual contributions. Working independently could showcase his abilities but might lead to less comprehensive results.
+
+Emma's ideal scenario is to share the data while Jack works independently (A1, B2), allowing her to contribute without compromising her academic standing. Her least preferred outcome is sharing data and collaborating closely (A1, B1), as she fears this might diminish her individual recognition.
+
+Jack's preferences align with Emma's in the best-case scenario (A1, B2), as he gains access to valuable data while demonstrating his independent capabilities. His worst-case scenario is when Emma keeps the data private and he works independently (A2, B2), leaving him with limited resources and guidance.
+
+The scenario where Emma keeps her data private and Jack collaborates (A2, B1) is Emma's second-best option, as she maintains control over her research while benefiting from Jack's input. For Jack, this is his third choice, as he gains experience but lacks access to crucial data.
+
+If Emma shares her data and Jack collaborates closely (A1, B1), it's Jack's second-best outcome, providing him with both data and guidance. However, this is Emma's least preferred scenario, as she risks losing individual recognition.
+
+As they navigate this complex decision-making process, both Emma and Jack must weigh their personal academic interests against the potential for groundbreaking research in the field of sociology. Their choices will not only impact their individual careers but also the broader academic community's understanding of social media's influence on community engagement.
+[/Scenario]

@@ -1,0 +1,59 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Alex"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer extra credit assignment",
+  "A2": "No extra credit assignment",
+  "B1": "Participate in study group",
+  "B2": "Study independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Student studies independently and completes extra credit",
+    3: "Student participates in study group without extra credit",
+    2: "Student studies independently without extra credit",
+    1: "Student participates in study group and completes extra credit"
+  },
+  "B": {
+    4: "Participate in study group and complete extra credit",
+    3: "Study independently and complete extra credit",
+    2: "Participate in study group without extra credit",
+    1: "Study independently without extra credit"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Participate in study group) | B2 (Study independently) |
+|-------|----------------------------------|--------------------------|
+| A1 (Offer extra credit) | 1 \ 4                            | 4 \ 3                    |
+| A2 (No extra credit)    | 2 \ 2                            | 3 \ 1                    |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is teaching a challenging Advanced Economics course. As the final exam approaches, he notices that many students are struggling with the material. He considers offering an extra credit assignment to boost grades but is concerned about its impact on genuine learning.
+
+Meanwhile, Alex, a dedicated student, is torn between joining a study group or studying independently. Alex believes that collaborative learning could be beneficial but also values self-directed study.
+
+Professor Smith has two choices: offer an extra credit assignment (A1) or not (A2). His preference is for students to study independently and complete extra credit work, as he believes this demonstrates both initiative and understanding. His least preferred scenario is students relying on group study while also doing extra credit, as he fears this might lead to shared work without individual comprehension.
+
+Alex also faces two choices: participate in a study group (B1) or study independently (B2). Alex's top preference is to join the study group and have the opportunity for extra credit, believing this combination will yield the best results. The least preferred option is studying alone without any extra credit opportunity.
+
+The payoff matrix reflects these preferences:
+
+- If Professor Smith offers extra credit (A1) and Alex joins the study group (B1), Smith gets his least preferred outcome (1) while Alex gets their most preferred (4).
+- If Smith offers extra credit (A1) and Alex studies independently (B2), Smith achieves his most preferred outcome (4) and Alex gets their second-best preference (3).
+- If Smith doesn't offer extra credit (A2) and Alex joins the study group (B1), both get their third preference (2).
+- If Smith doesn't offer extra credit (A2) and Alex studies independently (B2), Smith gets his second preference (3) but Alex ends up with their least preferred outcome (1).
+
+This scenario illustrates the complex interplay between a professor's teaching strategies and a student's study methods, highlighting how their choices can lead to varying outcomes in the educational process.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Lisa, a defense attorney",
+  "B": "Mark, a district attorney"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Plead guilty",
+  "A2": "Go to trial",
+  "B1": "Offer plea bargain",
+  "B2": "Proceed to trial"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Go to trial and win",
+    3: "Secure a favorable plea bargain",
+    2: "Plead guilty with a standard sentence",
+    1: "Go to trial and lose"
+  },
+  "B": {
+    4: "Secure a guilty plea",
+    3: "Win at trial",
+    2: "Lose at trial",
+    1: "Offer plea bargain and have it rejected"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Offer plea bargain) | B2 (Proceed to trial) |
+|-------|-------------------------|------------------------|
+| A1 (Plead guilty) | 1 \ 4 | 2 \ 3 |
+| A2 (Go to trial) | 3 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a high-profile criminal case, defense attorney Lisa represents a client accused of embezzlement, while district attorney Mark leads the prosecution. Both lawyers must decide on their legal strategies, weighing the potential outcomes and risks involved.
+
+Lisa (A) has two choices: plead guilty (A1) or go to trial (A2). Mark (B) can either offer a plea bargain (B1) or proceed to trial (B2). Their decisions will determine the case's outcome and affect their professional reputations.
+
+Lisa's ideal scenario is to go to trial and win (preference 4), as it would boost her reputation and potentially lead to more high-profile cases. Her second preference is to secure a favorable plea bargain (3), which would resolve the case quickly and ensure a lighter sentence for her client. Pleading guilty with a standard sentence (2) is her third choice, while going to trial and losing (1) is her least preferred outcome.
+
+Mark, on the other hand, most prefers securing a guilty plea (4), as it guarantees a conviction without the uncertainty and resource expenditure of a trial. Winning at trial (3) is his second choice, followed by losing at trial (2). His least preferred outcome is offering a plea bargain and having it rejected (1), as it could be seen as a sign of weakness in his case.
+
+If Lisa pleads guilty and Mark offers a plea bargain, Lisa receives her least preferred outcome (1), while Mark achieves his most desired result (4). If Lisa pleads guilty but Mark proceeds to trial, Lisa slightly improves her position (2), while Mark still achieves a favorable outcome (3).
+
+Should Lisa decide to go to trial and Mark offers a plea bargain, Lisa secures her second-best outcome (3), while Mark faces his least preferred scenario (1). If both choose to go to trial, Lisa has the potential for her best outcome (4), while Mark faces his second-worst scenario (2).
+
+As they prepare their strategies, both lawyers must carefully consider their options, anticipate their opponent's moves, and decide whether to cooperate through a plea bargain or compete in court. Their choices will not only affect the case's outcome but also have lasting implications for their careers and the justice system as a whole.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new software platform",
+  "A2": "Adapt existing software for new hardware",
+  "B1": "Create a new hardware device",
+  "B2": "Optimize existing hardware"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Adapt existing software for optimized hardware",
+    3: "Develop new software for new hardware",
+    2: "Develop new software for existing hardware",
+    1: "Adapt existing software for new hardware"
+  },
+  "B": {
+    4: "Create new hardware for new software",
+    3: "Create new hardware for existing software",
+    2: "Optimize hardware for existing software",
+    1: "Optimize hardware for adapted software"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (New Hardware) | B2 (Optimize Hardware) |
+|-------|-------------------|------------------------|
+| A1 (New Software) | 3 \ 3 | 2 \ 4 |
+| A2 (Adapt Software) | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a tech startup that's planning to launch a revolutionary product. Alex, a software developer, and Blake, a hardware engineer, are tasked with creating the core technology for this product. They need to decide on their approach independently, but their choices will significantly impact each other's work and the overall success of the project.
+
+Alex has two choices: develop a new software platform from scratch (A1) or adapt existing software for new hardware (A2). Blake also has two options: create a new hardware device (B1) or optimize existing hardware (B2).
+
+Their preferences for different scenarios vary based on the potential outcomes:
+
+Alex prefers adapting existing software for optimized hardware the most (4), as it's the least risky and most efficient option. His second preference is developing new software for new hardware (3), which is challenging but potentially groundbreaking. Developing new software for existing hardware (2) is his third choice, while adapting existing software for new hardware (1) is his least preferred option due to potential compatibility issues.
+
+Blake's top preference is creating new hardware for new software (4), as it allows for the most innovation. His second choice is creating new hardware for existing software (3), which still offers room for creativity. Optimizing hardware for existing software (2) is his third preference, while optimizing hardware for adapted software (1) is his least favorite option, as it limits his ability to innovate.
+
+The payoff matrix shows that if both choose to create new technology (A1, B1), they both receive a moderately good outcome (3, 3). If Alex develops new software while Blake optimizes hardware (A1, B2), Alex gets a lower payoff (2) while Blake gets their best outcome (4). If Alex adapts software and Blake creates new hardware (A2, B1), Alex gets their worst outcome (1) and Blake gets a moderate result (2). Finally, if Alex adapts software and Blake optimizes hardware (A2, B2), Alex gets their best outcome (4) while Blake gets their worst (1).
+
+This scenario presents a classic game theory dilemma, where the best individual choices don't necessarily lead to the best overall outcome for the company. Alex and Blake must consider not only their own preferences but also how their decisions will impact each other and the project as a whole.
+[/Scenario]

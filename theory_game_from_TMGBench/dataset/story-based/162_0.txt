@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Mark, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new AI product independently",
+  "A2": "Propose a partnership with DataDrive",
+  "B1": "Focus on expanding current product line",
+  "B2": "Accept partnership proposal if offered"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Form a partnership and dominate the market",
+    3: "Develop independently and gain a competitive edge",
+    2: "Develop independently but face strong competition",
+    1: "Propose partnership but get rejected"
+  },
+  "B": {
+    4: "Reject partnership and see competitor struggle",
+    3: "Accept partnership and share market dominance",
+    2: "Focus on current products but lose market share",
+    1: "Miss partnership opportunity and fall behind"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 3 |
+| A2    | 3 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the competitive world of tech startups, Sarah, the ambitious CEO of TechInnovate, and Mark, the seasoned leader of DataDrive, find themselves at a crossroads. Both companies are on the verge of breaking into the lucrative AI market, but each faces a critical decision that could shape the future of their respective firms.
+
+Sarah, known for her innovative spirit, is contemplating whether to develop a groundbreaking AI product independently or to propose a partnership with DataDrive. She knows that going solo could potentially give TechInnovate a significant edge, but it's a risky move that could backfire if they can't outpace the competition. On the other hand, a partnership with DataDrive could guarantee market dominance, but it would mean sharing the glory and profits.
+
+Mark, with his wealth of experience, is weighing his options carefully. He could choose to focus on expanding DataDrive's current product line, a safe bet that could yield steady growth. Alternatively, he could be open to a partnership proposal, should one come his way, potentially catapulting DataDrive to the forefront of AI technology.
+
+The stakes are high, and the outcomes varied:
+
+1. If Sarah develops independently (A1) and Mark focuses on his current products (B1), TechInnovate might struggle against the established DataDrive (Sarah's least preferred outcome, 1), while Mark would enjoy watching his competitor flounder (his most preferred outcome, 4).
+
+2. If Sarah proposes a partnership (A2) but Mark declines, focusing on his own products (B1), Sarah would find herself in a strong position to innovate freely (her third preference, 3), while Mark would realize too late that he missed a golden opportunity (his least preferred outcome, 1).
+
+3. If Sarah develops independently (A1) and Mark is open to partnerships (B2), TechInnovate would face strong competition but hold its ground (Sarah's second preference, 2), while DataDrive would benefit from the potential of future collaborations (Mark's third preference, 3).
+
+4. The most intriguing scenario unfolds if Sarah proposes a partnership (A2) and Mark accepts (B2). This would lead to market dominance for both companies (Sarah's most preferred outcome, 4), although Mark might feel he could have achieved more on his own (his second preference, 2).
+
+As the tech world watches with bated breath, Sarah and Mark must make their moves. Will they choose competition or cooperation? The future of AI technology hangs in the balance, shaped by the decisions of these two industry titans.
+[/Scenario]

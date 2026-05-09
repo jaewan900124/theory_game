@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a skilled software developer",
+  "B": "ByteTech, a growing tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept ByteTech's job offer",
+  "A2": "Decline ByteTech's job offer",
+  "B1": "Offer standard employment package",
+  "B2": "Offer premium employment package"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Accept job with premium package",
+    3: "Decline job and maintain current position",
+    2: "Accept job with standard package",
+    1: "Decline job and lose current position"
+  },
+  "B": {
+    4: "Alex accepts job with standard package",
+    3: "Alex accepts job with premium package",
+    2: "Alex declines job, ByteTech maintains status quo",
+    1: "Alex declines job, ByteTech loses market opportunity"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Standard) | B2 (Premium) |
+|-------|---------------|--------------|
+| A1 (Accept) | 2 \ 4         | 4 \ 3        |
+| A2 (Decline) | 3 \ 2         | 1 \ 1        |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, finds himself at a career crossroads when ByteTech, an ambitious tech startup, approaches him with a job offer. The situation presents a classic game theory scenario in the context of employment negotiations.
+
+ByteTech, eager to bolster its development team, has two options: offer Alex a standard employment package (B1) or a premium package (B2) with additional benefits and a higher salary. Alex, in turn, must decide whether to accept (A1) or decline (A2) the offer.
+
+The preferences and payoffs for both parties are complex. Alex's top preference (4) is to accept a job with a premium package, as it would significantly advance his career and financial situation. His second preference (3) is to decline the offer if it's not attractive enough, maintaining his current position. Accepting a standard package (2) is less desirable but still an improvement, while his least preferred outcome (1) is declining the offer and somehow losing his current position.
+
+ByteTech, on the other hand, most prefers (4) that Alex accepts a standard package, as it would strengthen their team without straining their budget. Their second preference (3) is Alex accepting a premium package, as they'd secure his talent albeit at a higher cost. If Alex declines, they'd prefer (2) to maintain their status quo rather than (1) lose a market opportunity due to being understaffed.
+
+The payoff matrix reflects these preferences. If ByteTech offers a standard package (B1) and Alex accepts (A1), ByteTech gets its most preferred outcome (4) while Alex settles for his third preference (2). If ByteTech offers a premium package (B2) and Alex accepts (A1), Alex achieves his top preference (4) while ByteTech gets its second-best outcome (3).
+
+However, if Alex declines (A2), the outcomes depend on ByteTech's offer. A standard offer (B1) results in Alex's second-best outcome (3) and ByteTech's third preference (2). A premium offer (B2) being declined leads to the worst outcome for both (1), as Alex might be viewed negatively by his current employer for entertaining other offers, and ByteTech might miss out on a crucial hire and subsequent market opportunities.
+
+This scenario illustrates the complex dynamics of job negotiations, where both parties must carefully consider their strategies to achieve the best possible outcome while managing the risks of their decisions.
+[/Scenario]

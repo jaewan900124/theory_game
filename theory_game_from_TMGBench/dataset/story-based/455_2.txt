@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Ben, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a custom software solution",
+  "A2": "Use an off-the-shelf software solution",
+  "B1": "Design a specialized hardware component",
+  "B2": "Use standard hardware components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Use off-the-shelf software with standard hardware",
+    3: "Use off-the-shelf software with specialized hardware",
+    2: "Develop custom software with specialized hardware",
+    1: "Develop custom software with standard hardware"
+  },
+  "B": {
+    4: "Custom software with standard hardware",
+    3: "Off-the-shelf software with standard hardware",
+    2: "Off-the-shelf software with specialized hardware",
+    1: "Custom software with specialized hardware"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Specialized)  | B2 (Standard)     |
+|-------|-------------------|-------------------|
+| A1 (Custom)    | 2 \ 1           | 1 \ 4             |
+| A2 (Off-shelf) | 3 \ 2           | 4 \ 3             |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Ben are engineers working on a new smart home automation system for their company. They need to decide on the software and hardware components for the project.
+
+Alex, the software engineer, has two choices: develop a custom software solution (A1) or use an off-the-shelf software solution (A2). Ben, the hardware engineer, can either design a specialized hardware component (B1) or use standard hardware components (B2).
+
+Alex prefers using off-the-shelf software as it's quicker to implement and requires less maintenance. His ideal scenario is using off-the-shelf software with standard hardware (A2B2), as it's the most cost-effective and time-efficient solution. His least preferred option is developing custom software with standard hardware (A1B2), as it requires more work without the benefits of specialized hardware.
+
+Ben, on the other hand, prefers using standard hardware components as they are more readily available and easier to replace. His ideal scenario is when Alex develops custom software for standard hardware (A1B2), as it allows for the most flexibility in future upgrades. His least preferred option is custom software with specialized hardware (A1B1), as it's the most expensive and difficult to maintain.
+
+If they both choose their preferred options (A2 and B2), they'll end up with a solution using off-the-shelf software and standard hardware components. This is Alex's most preferred outcome (4) and Ben's second-best option (3).
+
+If Alex chooses custom software (A1) and Ben chooses specialized hardware (B1), they'll create a highly tailored solution, but it's not ideal for either of them (Alex: 2, Ben: 1).
+
+The scenario creates a interesting dynamic where their individual preferences don't always align, forcing them to consider the trade-offs between customization, cost, and long-term maintainability as they make their decisions.
+[/Scenario]

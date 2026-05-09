@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Lucas, a graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data",
+  "A2": "Keep research data private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep data private while Lucas collaborates",
+    3: "Share data and Lucas collaborates",
+    2: "Both keep their work private",
+    1: "Share data but Lucas works independently"
+  },
+  "B": {
+    4: "Emma shares data and Lucas collaborates",
+    3: "Emma keeps data private but Lucas collaborates",
+    2: "Both keep their work private",
+    1: "Emma shares data but Lucas works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Independent) |
+|-------|-------------------|-------------------|
+| A1 (Share)    | 3 \ 4           | 4 \ 3             |
+| A2 (Private)  | 2 \ 2           | 1 \ 1             |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Emma, a sociology professor, is working on a groundbreaking research project about social media's impact on community engagement. Lucas, her talented graduate student, is also conducting research in a similar area. They both realize that collaboration could lead to more comprehensive results, but they also have individual career considerations.
+
+Emma has collected extensive data over the past year, which could significantly benefit Lucas's work. She must decide whether to share this data (A1) or keep it private (A2). Lucas, on the other hand, needs to choose between collaborating on the project with Emma (B1) or working independently (B2).
+
+Emma's ideal scenario would be to keep her data private while Lucas collaborates, as this would give her a competitive edge while still benefiting from Lucas's input. Her least preferred outcome is sharing her data only to have Lucas work independently, potentially using her research without reciprocation.
+
+Lucas would most prefer Emma to share her data while he collaborates, as this would provide him with valuable resources and mentorship. His least desired outcome is working independently while Emma keeps her data private, as this would leave him at a significant disadvantage.
+
+If they both choose to cooperate (A1, B1), Emma shares her data, and Lucas collaborates, resulting in a mutually beneficial outcome (3,4). If Emma shares but Lucas works independently (A1, B2), Emma loses her competitive edge while Lucas gains an advantage (4,3). If Emma keeps her data private and Lucas still collaborates (A2, B1), both receive some benefit but not optimal (2,2). Finally, if both choose to work independently (A2, B2), they both miss out on potential synergies and face challenges in their research (1,1).
+
+This scenario illustrates the complex dynamics in academic collaboration, where sharing information and working together can lead to better outcomes, but individual interests and the competitive nature of academia can create barriers to cooperation.
+[/Scenario]

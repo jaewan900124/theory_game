@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current trade policies",
+  "A2": "Implement new trade restrictions",
+  "B1": "Maintain current trade policies",
+  "B2": "Increase exports to other markets"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement trade restrictions while China maintains current policies",
+    3: "Both maintain current trade policies",
+    2: "Both change their trade strategies",
+    1: "Maintain current policies while China increases exports to other markets"
+  },
+  "B": {
+    4: "Increase exports while US maintains current policies",
+    3: "Both change their trade strategies",
+    2: "Both maintain current trade policies",
+    1: "US implements trade restrictions while China maintains current policies"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 3 \ 4 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex world of international relations, the United States and China find themselves at a critical juncture in their trade relationship. Both nations are considering potential changes to their trade strategies, each with its own set of consequences and potential benefits.
+
+The United States (A) is contemplating whether to maintain its current trade policies (A1) or implement new trade restrictions (A2). Meanwhile, China (B) is deciding between maintaining its current trade policies (B1) or increasing its exports to other markets (B2).
+
+For the United States, the most preferred outcome would be to implement new trade restrictions while China maintains its current policies. This would potentially give the US an economic advantage. The least desirable scenario for the US would be to maintain its current policies while China expands its exports to other markets, potentially reducing US global market share.
+
+China, on the other hand, would most prefer to increase its exports to other markets while the US maintains its current policies, allowing for expanded economic influence. Their least preferred outcome would be facing new US trade restrictions while maintaining their current policies, which could harm their export-driven economy.
+
+If both nations maintain their current policies, it represents a stable but not ideal situation for either country. If both change their strategies, it creates a new dynamic that is somewhat beneficial but not optimal for either side.
+
+The payoff matrix reflects these preferences, with each nation's most preferred outcome receiving a score of 4, and their least preferred a score of 1. The challenge for both countries is to navigate this complex situation, balancing their own interests with the potential reactions of the other party.
+
+As tensions rise and economic advisors debate, both nations must carefully consider their moves. Will they opt for cooperation, maintaining current policies for short-term stability? Or will they pursue more aggressive strategies, risking retaliation but potentially gaining a greater economic advantage? The future of international trade hangs in the balance as these two global powers make their decisions.
+[/Scenario]

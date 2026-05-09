@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Alex, a ride-sharing app driver",
+  "B": "Blake, a commuter"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer a shared ride",
+  "A2": "Offer a private ride",
+  "B1": "Accept shared ride",
+  "B2": "Request private ride"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Offer a private ride, passenger requests private (highest fare)",
+    3: "Offer a private ride, passenger accepts shared (medium-high fare)",
+    2: "Offer a shared ride, passenger requests private (medium-low fare)",
+    1: "Offer a shared ride, passenger accepts shared (lowest fare)"
+  },
+  "B": {
+    4: "Driver offers shared ride, passenger accepts shared (lowest cost)",
+    3: "Driver offers private ride, passenger requests private (medium-high cost, but exclusive service)",
+    2: "Driver offers shared ride, passenger requests private (medium-low cost, compromise)",
+    1: "Driver offers private ride, passenger accepts shared (highest cost for shared service)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept shared) | B2 (Request private) |
+|-------|--------------------|-----------------------|
+| A1 (Offer shared) | 1 \ 4               | 2 \ 2                |
+| A2 (Offer private) | 3 \ 1               | 4 \ 3                |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Alex, a ride-sharing app driver, and Blake, a daily commuter, find themselves in a game of transportation choices. Alex has just received a ride request from Blake and must decide whether to offer a shared ride or a private ride. Simultaneously, Blake must choose whether to accept a shared ride or request a private one.
+
+Alex prefers to maximize earnings, with offering a private ride being the most lucrative option, especially if the passenger requests it. On the other hand, Blake aims to minimize costs while balancing convenience, with accepting a shared ride being the most economical choice.
+
+If Alex offers a shared ride (A1) and Blake accepts it (B1), Alex receives the lowest fare (1), while Blake enjoys the lowest cost (4). If Alex offers a shared ride (A1) but Blake requests a private one (B2), both settle for a compromise (2,2).
+
+Should Alex offer a private ride (A2) and Blake accept a shared option (B1), Alex benefits from a medium-high fare (3), but Blake pays the highest cost for a shared service (1). In the scenario where Alex offers a private ride (A2) and Blake requests it (B2), Alex receives the highest fare (4), while Blake pays a premium for exclusive service (3).
+
+The choices made by Alex and Blake will determine the nature of the ride and the satisfaction level of both parties. Their decisions showcase the delicate balance between cooperation and competition in the modern ride-sharing economy.
+[/Scenario]

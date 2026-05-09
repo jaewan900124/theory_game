@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "EcoTech Inc., a green technology company",
+  "B": "ForestGuard, a local environmental protection group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new eco-friendly manufacturing process",
+  "A2": "Continue with the current manufacturing process",
+  "B1": "Collaborate with EcoTech Inc. on environmental initiatives",
+  "B2": "Protest against EcoTech Inc.'s presence in the area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new process without collaboration (high profit, good PR)",
+    3: "Continue current process with collaboration (moderate profit, moderate PR)",
+    2: "Implement new process with collaboration (moderate profit, excellent PR)",
+    1: "Continue current process without collaboration (low profit, bad PR)"
+  },
+  "B": {
+    4: "Collaborate with EcoTech implementing new process (best environmental outcome)",
+    3: "Collaborate with EcoTech using current process (good environmental outcome)",
+    2: "Protest against EcoTech using current process (moderate environmental impact)",
+    1: "Protest against EcoTech implementing new process (least effective outcome)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 3 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town nestled between lush forests and crystal-clear lakes, EcoTech Inc., a green technology company, has established a manufacturing plant. The company's presence has brought jobs and economic growth to the area, but it has also raised concerns about potential environmental impacts.
+
+ForestGuard, a local environmental protection group, has been closely monitoring EcoTech's activities. The two organizations find themselves at a crossroads, each facing a crucial decision that will shape the future of both the local economy and the environment.
+
+EcoTech Inc. (A) is considering whether to implement a new, more eco-friendly manufacturing process (A1) or continue with their current manufacturing process (A2). The new process would significantly reduce their environmental footprint but requires a substantial initial investment.
+
+ForestGuard (B) must decide whether to collaborate with EcoTech Inc. on environmental initiatives (B1) or protest against the company's presence in the area (B2). Collaboration could lead to better environmental outcomes, but some members worry about compromising their values.
+
+If EcoTech implements the new process and ForestGuard collaborates (A1, B1), it results in the best environmental outcome for ForestGuard (4) but only a moderate benefit for EcoTech (2) due to the high costs of implementation.
+
+If EcoTech continues their current process and ForestGuard collaborates (A2, B1), both parties achieve a moderate outcome (3, 3) with some environmental improvements and steady profits.
+
+If EcoTech implements the new process without ForestGuard's collaboration (A1, B2), EcoTech gains the highest benefit (4) due to good PR and eventual cost savings, while ForestGuard feels their protests are least effective (1).
+
+Finally, if EcoTech continues their current process and ForestGuard protests (A2, B2), EcoTech suffers from bad PR and lower profits (1), while ForestGuard sees some success in raising awareness (2).
+
+The leaders of both organizations must carefully consider their options, weighing the potential for cooperation against the benefits of acting independently. Their decisions will not only affect their own interests but also the delicate balance between economic development and environmental preservation in the region.
+[/Scenario]

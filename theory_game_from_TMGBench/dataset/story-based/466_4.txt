@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, marine biologist",
+  "B": "Captain Jack Harris, local fishing boat operator"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Propose strict fishing regulations",
+  "A2": "Suggest flexible fishing guidelines",
+  "B1": "Comply with proposed measures",
+  "B2": "Continue current fishing practices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Flexible guidelines implemented with compliance",
+    3: "Strict regulations implemented with compliance",
+    2: "Flexible guidelines proposed but ignored",
+    1: "Strict regulations proposed but ignored"
+  },
+  "B": {
+    4: "Continue current practices despite strict regulations",
+    3: "Comply with flexible guidelines",
+    2: "Comply with strict regulations",
+    1: "Continue current practices despite flexible guidelines"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 2 \ 4 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the coastal town of Coral Bay, Dr. Emma Chen, a dedicated marine biologist, is deeply concerned about the declining fish populations due to overfishing. She's been studying the local marine ecosystem for years and believes immediate action is necessary to prevent irreversible damage.
+
+On the other side, we have Captain Jack Harris, a seasoned fishing boat operator whose family has been in the fishing business for generations. While he understands the importance of conservation, he's worried about the economic impact of fishing restrictions on his livelihood and the local community.
+
+Dr. Chen has two options: propose strict fishing regulations (A1) or suggest more flexible fishing guidelines (A2). Captain Harris can either comply with the proposed measures (B1) or continue his current fishing practices (B2).
+
+Dr. Chen's most preferred outcome is to have flexible guidelines implemented with compliance (A2, B1), as this would balance ecological needs with economic concerns. Her least preferred scenario is proposing strict regulations that are ignored (A1, B2), as this would neither protect the ecosystem nor maintain a good relationship with the fishing community.
+
+Captain Harris, on the other hand, would most prefer to continue his current practices even if strict regulations are proposed (A1, B2), as this would maintain his income in the short term. His least preferred option is to continue current practices in the face of flexible guidelines (A2, B2), as this might lead to harsher regulations in the future and damage his reputation in the community.
+
+The situation creates a complex dynamic where both parties must consider the long-term ecological impact, short-term economic needs, and the importance of community cooperation. Their choices will not only affect the local marine ecosystem but also the future of Coral Bay's fishing industry and the livelihoods of its residents.
+
+As Dr. Chen prepares her proposal and Captain Harris contemplates his response, the future of Coral Bay's marine ecosystem hangs in the balance. Will they find a way to cooperate and ensure both the preservation of marine life and the sustainability of the local fishing industry, or will their conflicting interests lead to a suboptimal outcome for both the ecosystem and the community?
+[/Scenario]

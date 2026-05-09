@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a UX designer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use existing technology stack",
+  "A2": "Develop a new custom framework",
+  "B1": "Design with current UI components",
+  "B2": "Create a new design system"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Use existing technology with new design system",
+    3: "Use existing technology with current UI components",
+    2: "Develop new framework with new design system",
+    1: "Develop new framework with current UI components"
+  },
+  "B": {
+    4: "Use existing technology with new design system",
+    3: "Use existing technology with current UI components",
+    2: "Develop new framework with current UI components",
+    1: "Develop new framework with new design system"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 1 \ 2 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a tech startup that's developing a new mobile app. They're at a crucial point where they need to decide on the technology stack and design approach for the project.
+
+Alex, the software developer, is considering whether to use the existing technology stack (A1) or develop a new custom framework (A2). Using the existing stack would be faster and more familiar, but a custom framework could potentially offer better performance and scalability.
+
+Blake, the UX designer, is deciding between using the current UI components (B1) or creating a new design system (B2). The current components are well-tested but somewhat dated, while a new design system could provide a fresh, modern look but would require more time and resources to implement.
+
+Both Alex and Blake have their preferences for different scenarios:
+
+Alex's most preferred outcome (4) is to use the existing technology stack with a new design system, as it allows for rapid development while still providing a fresh user interface. His second preference (3) is using the existing stack with current UI components, as it's the quickest option. Developing a new framework with a new design system is his third choice (2), as it's innovative but time-consuming. His least preferred option (1) is developing a new framework with current UI components, as it doesn't capitalize on either the new technology or design improvements.
+
+Blake shares Alex's top preference (4) for using the existing technology with a new design system, as it allows for creative freedom in design without technical complications. Blake's second choice (3) is also using the existing technology with current UI components, as it's a safe and quick option. However, Blake's third preference (2) is developing a new framework with current UI components, as it at least provides technical innovation. Blake's least preferred option (1) is developing a new framework with a new design system, as it presents the highest risk and workload.
+
+Their choices will determine the direction of the project, affecting development speed, design quality, and overall user experience. The challenge lies in finding a solution that satisfies both their preferences while also benefiting the company and the end-users.
+[/Scenario]

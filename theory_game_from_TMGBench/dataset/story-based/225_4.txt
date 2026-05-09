@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a corporate lawyer",
+  "B": "Michael, a rival corporate lawyer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Propose an out-of-court settlement",
+  "A2": "Proceed with the lawsuit",
+  "B1": "Accept the settlement offer",
+  "B2": "Reject the settlement offer and go to trial"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Settlement offer accepted, case resolved quickly",
+    3: "Lawsuit proceeds, potentially higher payout but longer process",
+    2: "Settlement rejected, forced to go to trial",
+    1: "Settlement proposed but rejected, reputation damaged"
+  },
+  "B": {
+    4: "Settlement offer proposed and rejected, gains negotiating leverage",
+    3: "Settlement accepted, case resolved without trial",
+    2: "No settlement, proceeds to trial with uncertain outcome",
+    1: "Forced to accept unfavorable settlement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 1 |
+| A2    | 2 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah and Michael are rival corporate lawyers representing opposing sides in a high-stakes business dispute. Sarah's client, a large tech company, is being sued by Michael's client, a smaller startup, for alleged patent infringement.
+
+As the case unfolds, both lawyers must decide on their strategy. Sarah can choose to propose an out-of-court settlement (A1) or proceed with the lawsuit (A2). Michael, in turn, can either accept the settlement offer if proposed (B1) or reject it and go to trial (B2).
+
+Sarah's primary goal is to resolve the case quickly and efficiently, minimizing damage to her client's reputation. Her most preferred outcome (4) is for Michael to accept a settlement offer, as this would swiftly end the dispute. Her second preference (3) is to proceed with the lawsuit, which could potentially result in a higher payout for her client but would be a longer and more uncertain process. Her third choice (2) would be for the settlement to be rejected, forcing them to go to trial. Her least preferred outcome (1) is proposing a settlement that gets rejected, as this could damage her reputation and negotiating position.
+
+Michael, on the other hand, aims to maximize the potential payout for his client and gain a competitive edge. His most preferred outcome (4) is for Sarah to propose a settlement that he can reject, giving him negotiating leverage. His second preference (3) is to accept a favorable settlement, resolving the case without the risks of a trial. His third choice (2) is to proceed to trial if no settlement is offered, accepting the uncertainties that come with it. His least preferred outcome (1) is being forced to accept an unfavorable settlement due to lack of options.
+
+The payoff matrix reflects these preferences, showcasing the complex dynamics of legal negotiations. If Sarah proposes a settlement (A1) and Michael accepts (B1), Sarah gets her least preferred outcome (1) while Michael achieves his second-best outcome (4). If Sarah proposes a settlement (A1) and Michael rejects it (B2), Sarah achieves her best outcome (4) while Michael ends up with his least preferred result (1).
+
+If Sarah decides to proceed with the lawsuit (A2) and Michael would have accepted a settlement (B1), Sarah gets her second-least preferred outcome (2) while Michael achieves his second-best result (3). Finally, if Sarah proceeds with the lawsuit (A2) and Michael also chooses to go to trial (B2), Sarah gets her second-best outcome (3) while Michael ends up with his second-least preferred result (2).
+
+This scenario illustrates the strategic thinking required in legal negotiations, where each party must consider not only their own preferences but also anticipate the actions of their opponent.
+[/Scenario]

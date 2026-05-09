@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Amelia Chen, a marine biologist",
+  "B": "Dr. Blake Thompson, an ecological researcher"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual species research",
+  "A2": "Conduct ecosystem-wide study",
+  "B1": "Share data and collaborate",
+  "B2": "Keep research private for personal publication"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Conduct ecosystem-wide study while keeping research private",
+    3: "Conduct ecosystem-wide study with shared data",
+    2: "Focus on individual species research while keeping data private",
+    1: "Focus on individual species research with shared data"
+  },
+  "B": {
+    4: "Access shared data for individual species research",
+    3: "Collaborate on individual species research",
+    2: "Access shared data for ecosystem-wide study",
+    1: "Keep research private during ecosystem-wide study"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 2 \ 4 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Amelia Chen and Dr. Blake Thompson are marine biologists studying the Great Barrier Reef. They're both passionate about their work but have different approaches and priorities.
+
+Dr. Chen is considering two research strategies: focusing on individual coral species (A1) or conducting a broader ecosystem-wide study (A2). She prefers the ecosystem approach as it aligns with her holistic view of marine biology.
+
+Dr. Thompson, on the other hand, is deciding whether to share his data and collaborate (B1) or keep his research private for personal publication (B2). He's inclined towards keeping his work private to boost his career.
+
+Their choices create four possible scenarios:
+
+1. If Chen focuses on individual species (A1) and Thompson shares data (B1), Chen feels limited (1) while Thompson benefits from the collaboration (3).
+
+2. If Chen focuses on individual species (A1) and Thompson keeps data private (B2), Chen's work is slightly improved (2) and Thompson maximizes his personal gain (4).
+
+3. If Chen conducts an ecosystem study (A2) and Thompson shares data (B1), Chen's research thrives (3) and Thompson still benefits from the shared information (2).
+
+4. If Chen conducts an ecosystem study (A2) and Thompson keeps data private (B2), Chen's research reaches its full potential (4) but Thompson's private work becomes less relevant in comparison (1).
+
+The researchers must decide their strategies, knowing that their choices will significantly impact both their individual work and the overall understanding of the Great Barrier Reef ecosystem. Their decisions will shape not only their careers but also the future of marine biology research in this crucial area.
+[/Scenario]

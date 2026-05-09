@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a structural engineer",
+  "B": "Blair, an electrical engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on traditional materials",
+  "A2": "Experiment with innovative materials",
+  "B1": "Use conventional wiring systems",
+  "B2": "Implement smart home technology"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Innovative materials with smart home tech",
+    3: "Traditional materials with smart home tech",
+    2: "Traditional materials with conventional wiring",
+    1: "Innovative materials with conventional wiring"
+  },
+  "B": {
+    4: "Traditional materials with smart home tech",
+    3: "Innovative materials with smart home tech",
+    2: "Innovative materials with conventional wiring",
+    1: "Traditional materials with conventional wiring"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 3 \ 4 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blair are engineers collaborating on a cutting-edge residential project. As the structural engineer, Alex must decide whether to focus on traditional building materials or experiment with innovative, sustainable options. Blair, the electrical engineer, faces the choice between using conventional wiring systems or implementing smart home technology.
+
+Alex prefers working with innovative materials, especially if paired with smart home technology, as it aligns with their vision for future-proof housing. However, they're concerned about potential compatibility issues with conventional wiring systems.
+
+Blair is excited about smart home technology and believes it's the future of residential engineering. They prefer working with traditional materials when implementing smart systems, as it reduces variables and potential complications.
+
+If Alex chooses traditional materials (A1) and Blair opts for conventional wiring (B1), the project proceeds smoothly but without any cutting-edge features. This scenario is Alex's second-best outcome but Blair's least preferred.
+
+If Alex selects traditional materials (A1) and Blair implements smart home technology (B2), the project incorporates modern electrical systems while maintaining structural familiarity. This is Blair's most preferred outcome and Alex's third choice.
+
+Should Alex experiment with innovative materials (A2) while Blair uses conventional wiring (B1), the project may face integration challenges. This is Alex's least preferred scenario but Blair's second choice.
+
+The optimal outcome for Alex occurs when they use innovative materials (A2) and Blair implements smart home technology (B2). This combination creates a truly forward-thinking home, although it's Blair's third preference due to the increased complexity.
+
+As they prepare for their project meeting, both engineers must consider not only their own preferences but also how their choices will interact with their colleague's decision, ultimately impacting the success of the residential project.
+[/Scenario]

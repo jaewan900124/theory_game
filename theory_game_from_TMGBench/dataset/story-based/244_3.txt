@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Amelia Chen, a geneticist",
+  "B": "Dr. Benjamin Park, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on gene therapy research",
+  "A2": "Focus on genetic modification of crops",
+  "B1": "Collaborate on microbiome study",
+  "B2": "Pursue independent bacterial resistance research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gene therapy research with microbiome collaboration",
+    3: "Genetic modification of crops without collaboration",
+    2: "Gene therapy research without collaboration",
+    1: "Genetic modification of crops with microbiome collaboration"
+  },
+  "B": {
+    4: "Microbiome collaboration with gene therapy research",
+    3: "Independent bacterial resistance research",
+    2: "Microbiome collaboration with crop genetic modification",
+    1: "Gene therapy research without collaboration"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 3 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Amelia Chen and Dr. Benjamin Park are two brilliant scientists working at the same research institute. They are faced with a crucial decision that will shape their research directions for the next five years.
+
+Dr. Chen, a geneticist, must choose between focusing on gene therapy research (A1) or genetic modification of crops (A2). Gene therapy has always been her passion, but she recognizes the potential impact of improving crop yields through genetic modification.
+
+Dr. Park, a microbiologist, needs to decide whether to collaborate on a microbiome study (B1) or pursue independent research on bacterial resistance (B2). The microbiome study could revolutionize personalized medicine, while his bacterial resistance research could combat the growing threat of superbugs.
+
+Their choices will determine not only their individual career paths but also the potential for groundbreaking discoveries in their fields. The institute has limited resources, so their decisions will affect funding allocation and lab space.
+
+If Dr. Chen focuses on gene therapy and Dr. Park collaborates on the microbiome study (A1, B1), they could make significant strides in personalized medicine. This scenario is Dr. Park's most preferred outcome (4) but only Dr. Chen's third choice (2), as she would prefer to have more independence in her research.
+
+If Dr. Chen chooses gene therapy and Dr. Park pursues bacterial resistance (A1, B2), Dr. Chen would have full control over her preferred research area, making this her top choice (4). However, this would be Dr. Park's least preferred outcome (1), as he would miss out on the potential of the microbiome study.
+
+If Dr. Chen opts for crop genetic modification and Dr. Park collaborates on the microbiome study (A2, B1), it would be Dr. Chen's least preferred scenario (1), as she would be working outside her primary area of interest. It would also be less than ideal for Dr. Park (2), as the collaboration wouldn't align well with crop research.
+
+Finally, if Dr. Chen focuses on crop genetic modification and Dr. Park pursues bacterial resistance (A2, B2), it would be Dr. Chen's second choice (3), allowing her to make a significant impact in agriculture. This would be Dr. Park's second-best outcome (3), giving him the freedom to pursue his independent research.
+
+As they prepare to make their decisions, both scientists must weigh their personal preferences against the potential for collaboration and the impact of their research on the scientific community and society at large.
+[/Scenario]

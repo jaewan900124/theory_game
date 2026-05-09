@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer extra credit assignment",
+  "A2": "No extra credit assignment",
+  "B1": "Study independently",
+  "B2": "Participate in study group"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Extra credit offered, students participate in study group",
+    3: "Extra credit offered, students study independently",
+    2: "No extra credit, students study independently",
+    1: "No extra credit, students participate in study group"
+  },
+  "B": {
+    4: "Extra credit offered, participate in study group",
+    3: "No extra credit, study independently",
+    2: "No extra credit, participate in study group",
+    1: "Extra credit offered, study independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 4 \ 4 |
+| A2    | 2 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is teaching a challenging advanced mathematics course. As the final exam approaches, he's considering whether to offer an extra credit assignment to help students boost their grades. Meanwhile, Student Jane, who has been struggling with the course material, is deciding how to prepare for the exam.
+
+Professor Smith has two choices: offer an extra credit assignment (A1) or not (A2). He believes that offering extra credit might motivate students to form study groups, which he thinks is the best way for them to learn the material. However, he's also concerned that some students might rely too heavily on the extra credit and not study as thoroughly.
+
+Student Jane also has two choices: study independently (B1) or participate in a study group (B2). She's torn between the two options, as she usually prefers studying alone but recognizes that a study group might be beneficial for this difficult course.
+
+The payoff matrix represents their preferences for different scenarios:
+
+1. If Professor Smith offers extra credit (A1) and Jane studies independently (B1), Smith is moderately satisfied (3) as students have an opportunity to improve their grades, but Jane is least satisfied (1) as she feels overwhelmed trying to complete both the extra credit and regular studying alone.
+
+2. If Smith offers extra credit (A1) and Jane participates in a study group (B2), both are most satisfied (4/4). Smith is happy that students are collaborating, and Jane benefits from both the extra credit and peer support.
+
+3. If Smith doesn't offer extra credit (A2) and Jane studies independently (B1), Smith is somewhat disappointed (2) that students aren't collaborating, but Jane is fairly satisfied (3) as she can focus on her preferred study method without the pressure of extra work.
+
+4. If Smith doesn't offer extra credit (A2) and Jane participates in a study group (B2), Smith is least satisfied (1) as students are collaborating but without the extra motivation he hoped to provide. Jane is moderately satisfied (2), benefiting from peer support but missing out on the potential grade boost.
+
+As the final exam week approaches, both Professor Smith and Student Jane must make their decisions, each hoping to achieve their best possible outcome while considering the potential actions of the other.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Impose trade restrictions",
+  "A2": "Maintain open trade",
+  "B1": "Retaliate with trade barriers",
+  "B2": "Engage in trade negotiations"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Impose trade restrictions while China engages in negotiations",
+    3: "Maintain open trade while China retaliates",
+    2: "Both impose trade restrictions",
+    1: "Maintain open trade while China engages in negotiations"
+  },
+  "B": {
+    4: "US imposes restrictions while China engages in negotiations",
+    3: "Both impose trade restrictions",
+    2: "US maintains open trade while China engages in negotiations",
+    1: "US maintains open trade while China retaliates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| US \ China | Retaliate (B1) | Negotiate (B2) |
+|------------|----------------|----------------|
+| Restrict (A1) | 2 \ 3         | 4 \ 4          |
+| Open (A2)     | 3 \ 1         | 1 \ 2          |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex arena of international relations, the United States and China find themselves at a critical juncture in their economic relationship. Both nations are weighing their options carefully, knowing that their decisions will have far-reaching consequences for global trade and their respective economies.
+
+The United States (A) is considering two possible courses of action: imposing trade restrictions (A1) or maintaining open trade policies (A2). Meanwhile, China (B) is deliberating between retaliating with trade barriers (B1) or engaging in trade negotiations (B2).
+
+The US prefers a scenario where it can impose trade restrictions while China seeks negotiations, as this would give the US a stronger bargaining position. Their second preference is to maintain open trade while China retaliates, believing this would paint China as the aggressor. The least desirable outcome for the US is to keep trade open while China appears cooperative through negotiations.
+
+China, on the other hand, sees the greatest benefit in a scenario where the US imposes restrictions while China appears willing to negotiate, as this could garner international sympathy. Their second preference is mutual trade restrictions, which they believe could hurt the US more than China. China least prefers a situation where they retaliate while the US maintains open trade, as this could isolate China internationally.
+
+The payoff matrix reveals the complex interplay of these preferences. If both nations choose confrontation (A1, B1), they reach a suboptimal equilibrium (2, 3). The best collective outcome (4, 4) occurs when the US restricts trade and China negotiates (A1, B2), but this is unstable as the US might be tempted to exploit China's cooperative stance.
+
+As tensions rise and economic advisors scramble, both nations must decide their moves carefully. Will they prioritize short-term gains or long-term cooperation? The future of global trade hangs in the balance as these two economic giants engage in this high-stakes game of international relations.
+[/Scenario]

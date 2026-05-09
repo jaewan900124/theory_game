@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a project manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work independently",
+  "A2": "Collaborate with the team",
+  "B1": "Maintain strict deadlines",
+  "B2": "Allow flexible scheduling"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently with flexible scheduling",
+    3: "Collaborate with the team with flexible scheduling",
+    2: "Collaborate with the team under strict deadlines",
+    1: "Work independently under strict deadlines"
+  },
+  "B": {
+    4: "Allow flexible scheduling with independent work",
+    3: "Maintain strict deadlines with team collaboration",
+    2: "Allow flexible scheduling with team collaboration",
+    1: "Maintain strict deadlines with independent work"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Strict deadlines) | B2 (Flexible scheduling) |
+|-------|---------------|-----------------|
+| A1 (Independent) | 1 \ 1 | 4 \ 4 |
+| A2 (Collaborate) | 2 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At a rapidly growing tech startup, software engineer Alex and project manager Blake find themselves at a crossroads regarding their work approach for an upcoming project. Their choices will significantly impact the project's outcome and their job satisfaction.
+
+Alex, known for his brilliant but sometimes unpredictable coding skills, must decide between working independently (A1) or collaborating with the team (A2). He strongly prefers working alone with a flexible schedule, allowing him to dive deep into complex problems without interruptions. However, he's also aware that collaboration could lead to more robust solutions and better integration with other team members' work.
+
+Blake, responsible for delivering the project on time, must choose between maintaining strict deadlines (B1) or allowing flexible scheduling (B2). While she values timely delivery, she also recognizes that flexibility can sometimes lead to more innovative solutions and happier team members.
+
+Their preferences create an interesting dynamic:
+
+1. If Alex works independently (A1) and Blake maintains strict deadlines (B1), both are least satisfied (1,1). Alex feels constrained, and Blake worries about the lack of team cohesion.
+
+2. If Alex collaborates (A2) and Blake maintains strict deadlines (B1), it's somewhat better. Alex is more integrated but still feels time pressure (2), while Blake is more confident about meeting deadlines with a collaborative team (3).
+
+3. If Alex collaborates (A2) and Blake allows flexible scheduling (B2), Alex enjoys the balance of teamwork and some flexibility (3), but Blake is slightly concerned about potential delays (2).
+
+4. The ideal scenario for both is when Alex works independently (A1) and Blake allows flexible scheduling (B2). Alex can work in his preferred style (4), and Blake trusts that the flexibility will lead to the best possible outcome (4).
+
+As they sit down to discuss their approach, both Alex and Blake must consider not only their own preferences but also how their choices will affect each other and the overall project success. Their decision will set the tone for their working relationship and potentially influence the company's future project management strategies.
+[/Scenario]

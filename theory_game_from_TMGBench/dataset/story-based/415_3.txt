@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Teach traditional lecture-style classes",
+  "A2": "Implement innovative project-based learning",
+  "B1": "Attend classes passively",
+  "B2": "Actively participate in class activities"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement innovative project-based learning with active student participation",
+    3: "Teach traditional lecture-style classes with active student participation",
+    2: "Implement innovative project-based learning with passive student attendance",
+    1: "Teach traditional lecture-style classes with passive student attendance"
+  },
+  "B": {
+    4: "Attend traditional lecture-style classes actively",
+    3: "Participate in innovative project-based learning actively",
+    2: "Attend innovative project-based learning passively",
+    1: "Attend traditional lecture-style classes passively"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 3 \ 4 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenville University, Professor Smith is faced with a decision on how to teach his advanced economics course. He's considering either sticking to his traditional lecture-style classes (A1) or implementing an innovative project-based learning approach (A2). Meanwhile, Student Johnson, enrolled in the course, must decide whether to attend classes passively (B1) or actively participate in class activities (B2).
+
+Professor Smith prefers the innovative approach with active student participation the most, as it aligns with his teaching philosophy and provides the best learning outcomes. However, he also values active participation in his traditional lectures, considering it better than a passive project-based class. His least preferred scenario is teaching traditional lectures to passive students.
+
+Student Johnson, on the other hand, prefers actively participating in traditional lectures the most, as it allows him to learn in a familiar environment while still engaging with the material. He values active participation in project-based learning as his second choice, seeing its potential benefits. Passive attendance in either teaching style is less preferred, with passive attendance in traditional lectures being his least favorite scenario.
+
+If both Professor Smith and Student Johnson choose their least preferred options (A1 and B1), they both receive the lowest payoff (1,1). This represents a scenario where the class is unengaging and ineffective for both parties.
+
+If Professor Smith chooses traditional lectures (A1) and Student Johnson actively participates (B2), they receive payoffs of (3,4) respectively. This scenario is most preferred by Student Johnson but is only the second-best option for Professor Smith.
+
+If Professor Smith implements project-based learning (A2) and Student Johnson attends passively (B1), they receive payoffs of (2,2). This scenario is somewhat beneficial for both but not ideal.
+
+The best overall scenario occurs when Professor Smith implements project-based learning (A2) and Student Johnson actively participates (B2), resulting in payoffs of (4,3). This outcome represents the most effective learning environment, although it's slightly less preferred by Student Johnson compared to active participation in traditional lectures.
+
+The challenge lies in finding a balance between the teaching method and student engagement that maximizes the benefits for both the professor and the student.
+[/Scenario]

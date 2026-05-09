@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Sophia, a talented but struggling painter",
+  "B": "Marcus, an established art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional, commercially appealing painting",
+  "A2": "Create an avant-garde, experimental piece",
+  "B1": "Reject Sophia's work for his gallery",
+  "B2": "Accept Sophia's work for his gallery"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a conventional piece and have it accepted by the gallery",
+    3: "Create an avant-garde piece and have it accepted by the gallery",
+    2: "Create an avant-garde piece but have it rejected by the gallery",
+    1: "Create a conventional piece and have it rejected by the gallery"
+  },
+  "B": {
+    4: "Accept a conventional, commercially appealing painting",
+    3: "Reject an avant-garde, experimental piece",
+    2: "Accept an avant-garde, experimental piece",
+    1: "Reject a conventional, commercially appealing painting"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Reject) | B2 (Accept) |
+|-------|-------------|-------------|
+| A1 (Conventional) | 1 \ 1 | 4 \ 4 |
+| A2 (Avant-garde) | 2 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Sophia, a talented but struggling painter, is preparing for a crucial meeting with Marcus, an established art gallery owner. This opportunity could make or break her career, and she's torn between two artistic approaches.
+
+Sophia has two choices: she can create a conventional, commercially appealing painting (A1) that aligns with current market trends, or she can follow her artistic instincts and produce an avant-garde, experimental piece (A2) that pushes boundaries but might be less marketable.
+
+Marcus, on the other hand, must decide whether to reject (B1) or accept (B2) Sophia's work for his gallery. His primary concern is the commercial viability of the art he displays, but he also wants to maintain a reputation for showcasing innovative work.
+
+Their preferences and potential outcomes are as follows:
+
+1. If Sophia creates a conventional piece (A1) and Marcus accepts it (B2), both achieve their most preferred outcome (4,4). Sophia gains recognition and financial success, while Marcus acquires a marketable piece for his gallery.
+
+2. If Sophia creates an avant-garde piece (A2) and Marcus accepts it (B2), Sophia is satisfied with showcasing her true artistic vision (3), but Marcus is less certain about its commercial success (2).
+
+3. If Sophia creates an avant-garde piece (A2) and Marcus rejects it (B1), Sophia maintains her artistic integrity but loses the opportunity (2), while Marcus avoids a risky investment (3).
+
+4. If Sophia creates a conventional piece (A1) and Marcus rejects it (B1), both face their least preferred outcome (1,1). Sophia feels she compromised her vision for nothing, and Marcus misses out on a potentially profitable piece.
+
+As Sophia stands before her easel, brush in hand, she must decide which path to take. Will she play it safe with a conventional piece, hoping for Marcus's approval and commercial success? Or will she risk rejection by creating a boundary-pushing avant-garde work that truly represents her artistic vision? The outcome of this decision will shape not only Sophia's career but also the future direction of Marcus's gallery.
+[/Scenario]

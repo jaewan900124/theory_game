@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Dr. Alyssa Chen, an exobiologist",
+  "B": "Commander Blake Torres, a seasoned astronaut"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on detailed analysis of a single potentially habitable planet",
+  "A2": "Conduct brief surveys of multiple planets in the system",
+  "B1": "Prioritize safety protocols and maintain a conservative exploration approach",
+  "B2": "Take calculated risks to maximize data collection and exploration"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Detailed analysis of a single planet with calculated risks (A1, B2)",
+    3: "Brief surveys of multiple planets with a conservative approach (A2, B1)",
+    2: "Detailed analysis of a single planet with a conservative approach (A1, B1)",
+    1: "Brief surveys of multiple planets with calculated risks (A2, B2)"
+  },
+  "B": {
+    4: "Detailed analysis of a single planet with calculated risks (A1, B2)",
+    3: "Detailed analysis of a single planet with a conservative approach (A1, B1)",
+    2: "Brief surveys of multiple planets with calculated risks (A2, B2)",
+    1: "Brief surveys of multiple planets with a conservative approach (A2, B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 3 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2145, humanity has developed the technology for interstellar travel and is on the brink of exploring potentially habitable exoplanets. The United Earth Space Agency (UESA) has dispatched its most advanced starship, the Horizon, to a nearby star system with several promising planets.
+
+Dr. Alyssa Chen, a brilliant exobiologist, and Commander Blake Torres, a seasoned astronaut, lead the mission. As they approach the system, they must decide on their exploration strategy, balancing the potential for groundbreaking discoveries with the risks involved in deep space exploration.
+
+Dr. Chen (A) has two options: focus on a detailed analysis of the most promising planet (A1) or conduct brief surveys of multiple planets in the system (A2). She prefers the detailed analysis approach, especially if combined with calculated risks, as it could lead to significant breakthroughs in her field of study.
+
+Commander Torres (B) must choose between prioritizing safety protocols with a conservative exploration approach (B1) or taking calculated risks to maximize data collection and exploration (B2). While he values the safety of the crew, he also recognizes the potential benefits of pushing the boundaries of exploration.
+
+Their decisions will determine the outcome of the mission:
+
+1. If they choose A1 and B1 (2,3), they will conduct a thorough but cautious exploration of the prime target planet. This approach is relatively safe but may miss out on some exciting discoveries.
+
+2. If they opt for A1 and B2 (4,4), they will perform an in-depth analysis of the target planet while taking calculated risks. This could lead to groundbreaking discoveries and is the most preferred outcome for both.
+
+3. Choosing A2 and B1 (3,1) would result in a conservative survey of multiple planets. This approach is Dr. Chen's second choice as it provides a broader perspective, but it's Commander Torres' least preferred option due to the limited depth of exploration.
+
+4. Finally, if they decide on A2 and B2 (1,2), they would conduct brief surveys of multiple planets while taking risks. This is Dr. Chen's least preferred option as it lacks the depth she desires, and it's Commander Torres' third choice due to the increased risk without the benefit of thorough exploration.
+
+As they orbit the first planet in the system, Dr. Chen and Commander Torres must make their decisions, knowing that their choices will shape the future of space exploration and potentially change humanity's understanding of the universe.
+[/Scenario]

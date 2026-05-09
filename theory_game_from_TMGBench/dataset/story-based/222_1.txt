@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a small coffee shop owner",
+  "B": "Lucas, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Open a new branch nearby",
+  "B2": "Maintain current operations"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain prices, no new competition",
+    3: "Lower prices, new competition",
+    2: "Lower prices, no new competition",
+    1: "Maintain prices, new competition"
+  },
+  "B": {
+    4: "Open new branch, no price change",
+    3: "Maintain operations, price change",
+    2: "Maintain operations, no price change",
+    1: "Open new branch, price change"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 2 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling downtown area, Emma runs a charming, independent coffee shop known for its unique blends and cozy atmosphere. Her business has been steady for years, but recently, she's heard rumors that Lucas, the owner of a popular coffee chain, is considering opening a new branch in the neighborhood.
+
+Emma faces a crucial decision: should she maintain her current prices (A1) or lower them (A2) to prepare for potential competition? Meanwhile, Lucas must decide whether to open a new branch nearby (B1) or maintain his current operations (B2).
+
+Emma's preferences are clear. She'd love to maintain her prices without new competition (4), but if Lucas opens a new branch, she'd rather lower her prices to stay competitive (3). Lowering prices without new competition (2) is less desirable but still preferable to maintaining prices with new competition (1).
+
+Lucas, on the other hand, would ideally open a new branch without Emma changing her prices (4). If Emma lowers her prices, he'd prefer to maintain his current operations (3). Maintaining operations with no price change from Emma (2) is still better than opening a new branch if Emma lowers her prices (1).
+
+The payoff matrix reflects these preferences, showing how each combination of choices affects both Emma and Lucas. For instance, if Emma maintains her prices (A1) and Lucas opens a new branch (B1), Emma receives her least preferred outcome (1) while Lucas achieves his most preferred outcome (4).
+
+As both Emma and Lucas contemplate their choices, they must consider not only their own preferences but also anticipate the other's decision. Their choices will shape the local coffee market and potentially change the face of the neighborhood's beloved coffee scene.
+[/Scenario]

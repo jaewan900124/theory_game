@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sam, a car owner",
+  "B": "Alex, a public transit user"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Drive personal car",
+  "A2": "Use carpool app",
+  "B1": "Take public transit",
+  "B2": "Use carpool app"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Drive personal car while roads are clear",
+    3: "Use carpool app and save money",
+    2: "Use carpool app but face traffic",
+    1: "Drive personal car in heavy traffic"
+  },
+  "B": {
+    4: "Use carpool app for faster commute",
+    3: "Take public transit with less crowding",
+    2: "Take crowded public transit",
+    1: "Take public transit with severe delays"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 4 \ 4 |
+| A2    | 3 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city grappling with traffic congestion, Sam and Alex face a daily commute dilemma. Sam, a car owner, and Alex, a public transit user, both live in the suburbs and work downtown.
+
+Sam has two choices: drive his personal car (A1) or use a carpool app (A2). Alex can either take public transit (B1) or use the same carpool app (B2). Their decisions impact not only their own commutes but also the overall traffic situation.
+
+If Sam drives his car (A1) and Alex takes public transit (B1), the roads become congested. Sam faces heavy traffic (preference 1), while Alex experiences a somewhat crowded but manageable commute (preference 2).
+
+When Sam uses the carpool app (A2) and Alex sticks to public transit (B1), Sam enjoys cost savings and a smoother ride (preference 3), but Alex faces severe delays due to reduced public transit frequency (preference 1).
+
+If both Sam and Alex opt for the carpool app (A2 and B2), they contribute to moderate traffic. Sam faces some congestion (preference 2), while Alex enjoys a faster commute compared to public transit (preference 3).
+
+The ideal scenario for both occurs when Sam drives his car (A1) and Alex uses the carpool app (B2). This combination results in balanced road usage, allowing Sam to drive on clear roads (preference 4) and Alex to have a quick, comfortable commute (preference 4).
+
+As they make their daily transportation choices, Sam and Alex must consider not only their personal preferences but also how their decisions might affect each other and the broader transportation ecosystem of the city.
+[/Scenario]

@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Eliza Bloom, a renowned botanist",
+  "B": "Dr. Marcus Chen, a pioneering geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on traditional cross-breeding techniques",
+  "A2": "Explore gene editing technologies",
+  "B1": "Share research findings openly",
+  "B2": "Keep research findings confidential"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Explore gene editing technologies while keeping findings confidential",
+    3: "Focus on traditional cross-breeding with open sharing",
+    2: "Focus on traditional cross-breeding with confidential findings",
+    1: "Explore gene editing technologies with open sharing"
+  },
+  "B": {
+    4: "Focus on traditional cross-breeding with confidential findings",
+    3: "Explore gene editing technologies while keeping findings confidential",
+    2: "Share research findings openly while exploring gene editing",
+    1: "Share research findings openly while focusing on traditional cross-breeding"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Share) | B2 (Keep Confidential) |
+|-------|------------|------------------------|
+| A1 (Traditional) | 3 \ 1     | 2 \ 4                 |
+| A2 (Gene Editing) | 1 \ 2     | 4 \ 3                 |
+[/Payoff Matrix]
+
+[Scenario]
+In a cutting-edge botanical research facility, Dr. Eliza Bloom and Dr. Marcus Chen find themselves at a crossroads in their collaborative project on developing drought-resistant crops. Their research has the potential to revolutionize agriculture in arid regions, but they must decide on their approach and how to handle their findings.
+
+Dr. Bloom, with her extensive experience in traditional plant breeding, is torn between sticking to conventional methods and venturing into the promising yet controversial field of gene editing. She believes that gene editing could yield faster results but is concerned about potential ethical implications and public perception.
+
+Dr. Chen, on the other hand, is primarily focused on the impact of their research dissemination. He's weighing the benefits of open science against the potential advantages of keeping their breakthroughs confidential for commercial purposes.
+
+Their choices will not only affect the direction of their research but also its potential impact on the scientific community and global agriculture.
+
+If both decide to focus on traditional methods and share openly (A1, B1), they'll make steady progress with good public reception, which Dr. Bloom prefers (3), but Dr. Chen finds least beneficial (1).
+
+If Dr. Bloom sticks to traditional methods while Dr. Chen keeps findings confidential (A1, B2), their progress will be moderate. This scenario is Dr. Chen's most preferred outcome (4), but Dr. Bloom's second-least preferred (2).
+
+If Dr. Bloom explores gene editing while Dr. Chen shares openly (A2, B1), they might face controversy and slower progress. This is the least preferred scenario for Dr. Bloom (1) and the second-least for Dr. Chen (2).
+
+Finally, if both decide to explore gene editing and keep findings confidential (A2, B2), they could make significant breakthroughs but risk ethical scrutiny. This is Dr. Bloom's most preferred outcome (4) and Dr. Chen's second-most preferred (3).
+
+As they prepare for their decisive meeting, both scientists must carefully consider their choices, weighing personal preferences against potential outcomes and the greater good of their research.
+[/Scenario]

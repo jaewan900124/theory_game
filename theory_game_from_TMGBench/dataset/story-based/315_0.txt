@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a talented but struggling painter",
+  "B": "Lucas, a successful art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a unique, avant-garde painting",
+  "A2": "Paint a conventional, commercially appealing piece",
+  "B1": "Showcase only established artists",
+  "B2": "Take a risk on Emma's work"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create unique art and get recognition",
+    3: "Create conventional art and get recognition",
+    2: "Create unique art but remain unrecognized",
+    1: "Create conventional art and remain unrecognized"
+  },
+  "B": {
+    4: "Discover new talent and increase gallery prestige",
+    3: "Maintain gallery status quo with conventional art",
+    2: "Showcase established artists and maintain reputation",
+    1: "Risk gallery reputation with unconventional art"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 4 \ 4 |
+| A2    | 1 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented but struggling painter, stands at a crossroads in her artistic career. She must decide whether to create a unique, avant-garde painting that truly represents her vision or to paint a conventional, commercially appealing piece that might be easier to sell. Meanwhile, Lucas, a successful art gallery owner, faces his own dilemma: should he stick to showcasing only established artists or take a risk on new, unknown talent like Emma?
+
+If Emma chooses to create her avant-garde piece (A1) and Lucas decides to showcase only established artists (B1), Emma's work remains unrecognized but she maintains her artistic integrity (2), while Lucas's gallery maintains its reputation but misses an opportunity for innovation (1).
+
+If Emma creates her unique painting (A1) and Lucas takes a chance on her work (B2), both benefit greatly. Emma gains recognition for her true artistic vision (4), and Lucas discovers exciting new talent that increases his gallery's prestige (4).
+
+Should Emma opt for a conventional painting (A2) while Lucas sticks to established artists (B1), Emma's work remains unrecognized and she feels unfulfilled (1), but Lucas maintains his gallery's status quo (2).
+
+Lastly, if Emma paints a conventional piece (A2) and Lucas decides to showcase it (B2), both achieve moderate success. Emma gains some recognition but feels she has compromised her vision (3), while Lucas's gallery maintains its reputation with commercially appealing art (3).
+
+Emma and Lucas must now decide their courses of action, each hoping to achieve their most preferred outcome while considering the possible choices of the other. Their decisions will not only impact their individual careers but also potentially shape the local art scene.
+[/Scenario]

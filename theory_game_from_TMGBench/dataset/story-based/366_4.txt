@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Alice",
+  "B": "Admiral Bob"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy land forces",
+  "A2": "Hold land forces in reserve",
+  "B1": "Maintain naval blockade",
+  "B2": "Launch amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch amphibious assault while land forces are deployed",
+    3: "Deploy land forces while maintaining naval blockade",
+    2: "Launch amphibious assault while land forces are in reserve",
+    1: "Hold land forces in reserve while maintaining naval blockade"
+  },
+  "B": {
+    4: "Launch amphibious assault while land forces are deployed",
+    3: "Launch amphibious assault while land forces are in reserve",
+    2: "Maintain naval blockade while land forces are deployed",
+    1: "Maintain naval blockade while land forces are in reserve"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 1 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Alice of the land forces and Admiral Bob of the naval forces must coordinate their strategies to secure a strategic island. 
+
+General Alice has two options: she can either deploy her land forces (A1) or hold them in reserve (A2). Meanwhile, Admiral Bob faces the choice of maintaining the naval blockade (B1) or launching an amphibious assault (B2).
+
+Both commanders have different preferences for the outcomes:
+
+General Alice's most preferred scenario is when she deploys her land forces and Admiral Bob launches an amphibious assault (A1, B2). This combined attack would likely lead to a swift victory. Her second preference is deploying land forces while Bob maintains the blockade (A1, B1), as it still puts pressure on the enemy. Her third choice is holding forces in reserve while Bob launches an assault (A2, B2), and her least preferred option is when both hold back (A2, B1).
+
+Admiral Bob's preferences align with Alice's for the top choice of a combined assault (A1, B2). However, his second preference is launching an amphibious assault while Alice's forces are in reserve (A2, B2), as he believes in the navy's capabilities. His third choice is maintaining the blockade while Alice deploys land forces (A1, B1), and he least prefers both forces holding back (A2, B1).
+
+The payoff matrix reflects these preferences, with the combined assault (A1, B2) offering the highest payoff for both (4, 4). The scenario where Alice deploys and Bob maintains the blockade (A1, B1) offers moderate benefits (3, 2). When Alice holds back and Bob assaults (A2, B2), it's somewhat favorable for Bob but less so for Alice (2, 3). The least beneficial scenario for both is when they both hold back (A2, B1), resulting in the lowest payoffs (1, 1).
+
+As they plan their strategy, both commanders must consider not only their own preferences but also anticipate each other's actions to achieve the best possible outcome in this critical military operation.
+[/Scenario]

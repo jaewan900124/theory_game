@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Elena Vasiliev, Russian astrophysicist",
+  "B": "Dr. James Chen, American aerospace engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Withhold research findings",
+  "B1": "Withhold technological advancements",
+  "B2": "Share technological advancements"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain access to advanced technology while keeping own research secret",
+    3: "Mutual cooperation and information sharing",
+    2: "Both withhold information",
+    1: "Share own research without gaining access to technology"
+  },
+  "B": {
+    4: "Gain access to groundbreaking research while keeping own technology secret",
+    3: "Mutual cooperation and information sharing",
+    2: "Receive research findings without sharing technology",
+    1: "Both withhold information"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 4 \ 4 |
+| A2    | 3 \ 3 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, space exploration has reached a critical juncture. Two brilliant scientists, Dr. Elena Vasiliev and Dr. James Chen, are at the forefront of their respective fields, each holding a key piece of the puzzle that could revolutionize humanity's ability to colonize Mars.
+
+Dr. Vasiliev has made groundbreaking discoveries in terraforming techniques that could potentially accelerate the process of making Mars habitable. Meanwhile, Dr. Chen has developed cutting-edge propulsion technology that could significantly reduce travel time to Mars.
+
+The International Space Cooperation Summit is approaching, where both scientists will have the opportunity to present their findings. However, they face a dilemma: should they share their research openly or keep it to themselves?
+
+If both scientists choose to withhold their information (A2, B1), they maintain their competitive edge but hinder overall progress in space exploration. This scenario is Dr. Vasiliev's second-best outcome but Dr. Chen's least preferred.
+
+If Dr. Vasiliev shares her research while Dr. Chen withholds his technology (A1, B1), she risks losing her advantage without gaining access to the advanced propulsion system. This is her least preferred outcome but Dr. Chen's second-best.
+
+If both scientists choose to cooperate and share their findings (A1, B2), it would lead to rapid advancements in Mars colonization efforts, benefiting humanity as a whole. This scenario is the most preferred outcome for both scientists.
+
+However, if Dr. Vasiliev withholds her research while Dr. Chen shares his technology (A2, B2), she would gain access to the advanced propulsion system while maintaining the secrecy of her terraforming techniques. This is her most preferred outcome but Dr. Chen's second-worst.
+
+As the summit approaches, both scientists must decide whether to prioritize personal gain or global scientific progress, knowing that their choices will significantly impact the future of space exploration.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a talented software developer",
+  "B": "Liam, a skilled graphic designer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Collaborate on the project",
+  "B2": "Propose a partnership"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Partnership with Liam",
+    3: "Collaborative work on the project",
+    2: "Independent work",
+    1: "Rejected partnership proposal"
+  },
+  "B": {
+    4: "Partnership with Emma",
+    3: "Collaborative work on the project",
+    2: "Accepted partnership proposal",
+    1: "Rejected collaboration attempt"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 2 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented software developer, and Liam, a skilled graphic designer, have been assigned to work on a high-profile mobile app project for their company. They have the option to either collaborate or work independently, and their choices will significantly impact the project's outcome and their professional relationship.
+
+Emma's choices are to either collaborate on the project (A1) or work independently (A2). Liam can choose to collaborate on the project (B1) or propose a long-term partnership (B2).
+
+If both Emma and Liam choose to collaborate (A1, B1), they will work well together and achieve good results, resulting in a satisfactory outcome for both (3, 3). This is their third-best preference.
+
+If Emma agrees to collaborate and Liam proposes a partnership (A1, B2), they will form a highly successful team, leading to the best possible outcome for both (4, 4). This is their most preferred scenario, as it allows them to combine their skills and potentially start a thriving business together.
+
+If Emma decides to work independently and Liam attempts to collaborate (A2, B1), Emma will make some progress on her own, but Liam will feel rejected and struggle with his part of the project. This results in a suboptimal outcome (2, 1), which is Emma's second-least preferred scenario and Liam's least preferred.
+
+Lastly, if Emma chooses to work independently and Liam proposes a partnership (A2, B2), Emma will likely reject the offer, leading to a strained relationship. This scenario results in the worst outcome for Emma (1) but is slightly better for Liam (2) than having his collaboration attempt rejected.
+
+The challenge for Emma and Liam is to navigate this situation, considering their own preferences and the potential outcomes of their choices. Their decision will not only affect the success of the current project but also shape their future professional relationship and opportunities.
+[/Scenario]

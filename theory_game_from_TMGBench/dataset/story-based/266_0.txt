@@ -1,0 +1,63 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Alex"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer extra tutoring sessions",
+  "A2": "Maintain regular office hours only",
+  "B1": "Attend all classes and participate actively",
+  "B2": "Skip some classes and study independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Extra tutoring with full student attendance",
+    3: "Regular office hours with full student attendance",
+    2: "Extra tutoring with partial student attendance",
+    1: "Regular office hours with partial student attendance"
+  },
+  "B": {
+    4: "Regular office hours with full attendance",
+    3: "Extra tutoring with partial attendance",
+    2: "Extra tutoring with full attendance",
+    1: "Regular office hours with partial attendance"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 1 \ 3 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Professor Smith is teaching a challenging advanced course. One of her students, Alex, is struggling to keep up with the material. As the semester progresses, both Professor Smith and Alex face decisions that will impact their academic success and work-life balance.
+
+Professor Smith is considering whether to offer extra tutoring sessions (A1) or maintain only her regular office hours (A2). She believes that extra tutoring would benefit struggling students but would require more of her time and energy.
+
+Alex, on the other hand, is deciding whether to attend all classes and participate actively (B1) or skip some classes to study independently (B2). Alex thinks that independent study might be more efficient but worries about missing important in-class discussions.
+
+Their preferences for different scenarios are as follows:
+
+Professor Smith most prefers offering extra tutoring with full student attendance (4), as it would lead to the best learning outcomes. Her second preference is maintaining regular office hours with full student attendance (3), as it requires less effort while still ensuring student engagement. Her third choice is offering extra tutoring with partial student attendance (2), as it still benefits some students but feels less rewarding. Her least preferred option is maintaining regular office hours with partial student attendance (1), as it suggests a lack of student engagement and potentially poor learning outcomes.
+
+Alex, however, most prefers having regular office hours while attending all classes (4), as it allows for a balanced approach to learning without feeling overwhelmed. His second preference is having extra tutoring available while attending some classes (3), as it provides additional support when needed. His third choice is having extra tutoring while attending all classes (2), as it offers maximum support but feels time-consuming. His least preferred option is having only regular office hours while attending some classes (1), as it provides the least academic support.
+
+The combination of their choices leads to different outcomes:
+
+1. If Professor Smith offers extra tutoring (A1) and Alex attends all classes (B1), both benefit significantly but not optimally (3,4).
+2. If Professor Smith offers extra tutoring (A1) and Alex skips some classes (B2), the Professor achieves her best outcome, but Alex's experience is suboptimal (4,2).
+3. If Professor Smith maintains regular office hours (A2) and Alex attends all classes (B1), Alex achieves his best outcome, but the Professor feels less satisfied (1,3).
+4. If Professor Smith maintains regular office hours (A2) and Alex skips some classes (B2), both experience their least preferred outcomes (2,1).
+
+As the semester unfolds, Professor Smith and Alex must navigate these choices, balancing their individual preferences with the potential for mutual benefit in their educational journey.
+[/Scenario]

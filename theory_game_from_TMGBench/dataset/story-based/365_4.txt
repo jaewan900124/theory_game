@@ -1,0 +1,61 @@
+[Characters]
+{
+  "A": "Dr. Amanda Chen, a marine biologist",
+  "B": "Dr. Brian Taylor, a coral reef ecologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual species research",
+  "A2": "Conduct ecosystem-wide study",
+  "B1": "Pursue independent research",
+  "B2": "Collaborate on a joint project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on a joint project while focusing on individual species",
+    3: "Focus on individual species research independently",
+    2: "Conduct ecosystem-wide study collaboratively",
+    1: "Conduct ecosystem-wide study independently"
+  },
+  "B": {
+    4: "Collaborate on a joint project while focusing on individual species",
+    3: "Conduct ecosystem-wide study collaboratively",
+    2: "Pursue independent research",
+    1: "Focus on individual species research independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 4 \ 4 |
+| A2    | 1 \ 2 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Amanda Chen and Dr. Brian Taylor are marine biologists studying the Great Barrier Reef. They have been awarded a significant grant to conduct research on the reef's ecosystem, but they must decide how to approach their study.
+
+Dr. Chen specializes in individual species research, particularly focusing on the crown-of-thorns starfish and its impact on coral populations. She believes that understanding specific species interactions is crucial for reef conservation. Dr. Taylor, on the other hand, is more interested in studying the reef ecosystem as a whole, examining how various factors like climate change and ocean acidification affect the entire reef community.
+
+They each have two options for their research approach:
+
+1. Dr. Chen can either focus on her individual species research (A1) or conduct a broader ecosystem-wide study (A2).
+2. Dr. Taylor can choose to pursue his independent research on ecosystem-wide effects (B1) or collaborate with Dr. Chen on a joint project (B2).
+
+Their preferences for different outcomes vary:
+
+Dr. Chen would most prefer to collaborate on a joint project while still focusing on her individual species research (A1, B2). Her second choice would be to conduct her individual species research independently (A1, B1). She is less enthusiastic about conducting an ecosystem-wide study, whether collaboratively (A2, B2) or independently (A2, B1).
+
+Dr. Taylor's top preference aligns with Dr. Chen's: collaborating on a joint project that incorporates both individual species and ecosystem-wide research (A1, B2). His second choice would be to conduct a collaborative ecosystem-wide study (A2, B2). He would prefer to pursue independent research (B1) over focusing solely on individual species research (A1, B1).
+
+The payoff matrix reflects these preferences, with the highest mutual benefit (4, 4) occurring when they collaborate on a project that combines both of their research interests (A1, B2). The least preferred outcomes for each researcher occur when they work independently on their non-preferred research focus (A2, B1 for Dr. Chen and A1, B1 for Dr. Taylor).
+
+As they prepare to begin their research, Dr. Chen and Dr. Taylor must decide whether to cooperate or compete, knowing that their choices will significantly impact the outcome of their study and potentially the future of Great Barrier Reef conservation efforts.
+[/Scenario]

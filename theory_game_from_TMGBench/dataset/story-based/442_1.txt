@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a ride-sharing driver",
+  "B": "Blake, a commuter"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Operate in the city center",
+  "A2": "Operate in the suburbs",
+  "B1": "Use ride-sharing",
+  "B2": "Use public transportation"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "High earnings in the suburbs with less competition",
+    3: "Moderate earnings in the city center with steady demand",
+    2: "Low earnings in the suburbs due to fewer ride requests",
+    1: "Very low earnings in the city center due to oversaturation"
+  },
+  "B": {
+    4: "Convenient ride-sharing in the city center",
+    3: "Efficient public transportation in the city center",
+    2: "Adequate public transportation in the suburbs",
+    1: "Limited ride-sharing options in the suburbs"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Alex \ Blake | Use ride-sharing | Use public transportation |
+|--------------|-------------------|---------------------------|
+| City center  | 3 \ 3             | 1 \ 4                     |
+| Suburbs      | 2 \ 2             | 4 \ 1                     |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling metropolitan area, Alex, a ride-sharing driver, and Blake, a daily commuter, find themselves in a transportation dilemma. Alex must decide whether to operate in the city center or the suburbs, while Blake chooses between using ride-sharing services or public transportation for their daily commute.
+
+Alex prefers operating in the suburbs when there's high demand for ride-sharing (4), as it means less competition and higher earnings. However, a steady flow of ride requests in the city center (3) is also appealing. Alex's least preferred scenario is working in an oversaturated city center (1), where earnings are very low due to fierce competition.
+
+Blake, on the other hand, strongly prefers the convenience of ride-sharing in the city center (4), which offers door-to-door service. Using efficient public transportation in the city center (3) is their second choice. Blake finds public transportation in the suburbs adequate (2) but not ideal, while having limited ride-sharing options in the suburbs (1) is their least preferred scenario.
+
+If Alex chooses to operate in the city center and Blake opts for ride-sharing, both benefit moderately (3,3). This scenario represents a balanced outcome where Alex has steady demand and Blake enjoys convenient transportation.
+
+If Alex stays in the city center but Blake chooses public transportation, Alex's earnings suffer due to low demand (1), while Blake enjoys efficient and possibly cheaper transportation (4).
+
+When Alex operates in the suburbs and Blake uses ride-sharing, both experience suboptimal outcomes (2,2). Alex faces fewer ride requests, and Blake finds limited ride-sharing options available.
+
+In the scenario where Alex works in the suburbs and Blake uses public transportation, Alex benefits from higher earnings due to less competition (4), but Blake faces limited transportation options (1).
+
+This situation demonstrates the complex interplay between driver locations and commuter choices in urban transportation, highlighting how individual decisions can impact both parties' satisfaction and efficiency in the transportation ecosystem.
+[/Scenario]

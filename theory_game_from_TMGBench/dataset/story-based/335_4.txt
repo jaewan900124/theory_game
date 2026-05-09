@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a car owner",
+  "B": "Mike, a bicycle enthusiast"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Drive car",
+  "A2": "Use public transportation",
+  "B1": "Ride bicycle",
+  "B2": "Use public transportation"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Drive car while Mike uses public transportation",
+    3: "Use public transportation while Mike rides bicycle",
+    2: "Use public transportation while Mike uses public transportation",
+    1: "Drive car while Mike rides bicycle"
+  },
+  "B": {
+    4: "Use public transportation while Sarah drives car",
+    3: "Use public transportation while Sarah uses public transportation",
+    2: "Ride bicycle while Sarah uses public transportation",
+    1: "Ride bicycle while Sarah drives car"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Ride bicycle) | B2 (Use public transportation) |
+|-------|-------------------|--------------------------------|
+| A1 (Drive car) | 1 \ 1 | 4 \ 4 |
+| A2 (Use public transportation) | 3 \ 2 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city grappling with traffic congestion and air pollution, Sarah and Mike, two neighbors, face a daily transportation dilemma. Sarah, a car owner, values the convenience and comfort of her vehicle but is concerned about contributing to traffic and pollution. Mike, a bicycle enthusiast, promotes eco-friendly transportation but worries about safety on busy roads.
+
+Each day, they must choose their mode of transportation to work. Sarah can either drive her car (A1) or use public transportation (A2). Mike can either ride his bicycle (B1) or use public transportation (B2).
+
+Their choices not only affect their personal comfort and commute time but also impact the overall traffic and environmental situation in the city. The city government has implemented policies to encourage public transportation use, which influences their preferences.
+
+Sarah's most preferred scenario is driving her car while Mike uses public transportation (4), as it gives her the comfort of her car without adding a cyclist to the road. Her least preferred scenario is driving while Mike cycles (1), as she worries about accidentally hitting him in traffic.
+
+Mike's most preferred scenario is using public transportation while Sarah drives (4), as it reduces overall road congestion. His least preferred scenario is cycling while Sarah drives (1), due to safety concerns.
+
+If both choose public transportation (2,3), it's moderately beneficial for both, with Mike slightly preferring this scenario more than Sarah. If Sarah uses public transportation while Mike cycles (3,2), Sarah finds it more favorable than Mike, as she contributes to reducing traffic while Mike faces some road risks.
+
+As they make their daily choices, Sarah and Mike must consider not only their personal preferences but also the impact of their decisions on each other and the broader community. Their transportation choices become a daily exercise in game theory, balancing individual needs with collective benefits.
+[/Scenario]

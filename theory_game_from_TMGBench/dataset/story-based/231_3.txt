@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a custom software solution",
+  "A2": "Use an off-the-shelf software package",
+  "B1": "Design a specialized hardware component",
+  "B2": "Use standard hardware components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Custom software with standard hardware",
+    3: "Off-the-shelf software with specialized hardware",
+    2: "Off-the-shelf software with standard hardware",
+    1: "Custom software with specialized hardware"
+  },
+  "B": {
+    4: "Custom software with specialized hardware",
+    3: "Custom software with standard hardware",
+    2: "Off-the-shelf software with specialized hardware",
+    1: "Off-the-shelf software with standard hardware"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 3 \ 2 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a cutting-edge robotics project for their company. They need to decide on the best approach for the robot's control system, which requires both software and hardware components.
+
+Alex, the software engineer, has two options: develop a custom software solution (A1) or use an off-the-shelf software package (A2). Blake, the hardware engineer, can either design a specialized hardware component (B1) or use standard hardware components (B2).
+
+Alex prefers developing custom software that works with standard hardware, as it showcases their programming skills while being cost-effective. Their least preferred option is creating custom software for specialized hardware, as it would require extensive collaboration and potential compromises.
+
+Blake, on the other hand, is most excited about the prospect of designing specialized hardware that works with custom software, as it would demonstrate their innovative capabilities. Their least preferred scenario is using standard hardware with off-the-shelf software, which they find unchallenging.
+
+The project manager has given them autonomy to make their decisions independently, creating a situation where their choices will determine the outcome of the project. They must each decide without knowing the other's choice, leading to four possible scenarios:
+
+1. If Alex develops custom software (A1) and Blake designs specialized hardware (B1), it results in a technologically advanced solution but is time-consuming and expensive. Alex finds this challenging (1), while Blake is thrilled (4).
+
+2. If Alex develops custom software (A1) and Blake uses standard hardware (B2), it creates a balanced, cost-effective solution. This is Alex's preferred outcome (4) and Blake's second-best scenario (3).
+
+3. If Alex uses off-the-shelf software (A2) and Blake designs specialized hardware (B1), it produces a unique hardware solution with reliable software. This is Alex's second-best option (3) and Blake's third choice (2).
+
+4. If Alex uses off-the-shelf software (A2) and Blake uses standard hardware (B2), it results in a quick and economical solution but lacks innovation. This is Alex's third choice (2) and Blake's least preferred outcome (1).
+
+As they prepare to submit their decisions, both engineers weigh their options, considering their personal preferences and the potential impact on the project's success. The outcome of their choices will shape the direction of the robotics project and potentially influence their professional reputations within the company.
+[/Scenario]

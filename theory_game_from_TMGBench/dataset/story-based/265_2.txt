@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Attempt to score",
+  "B1": "Set a screen",
+  "B2": "Call for the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Score a basket with personal glory",
+    3: "Team scores through cooperation",
+    2: "No score, but maintain team harmony",
+    1: "No score and potential conflict with teammate"
+  },
+  "B": {
+    4: "Team scores through cooperation",
+    3: "Assist in a score, gaining recognition",
+    2: "No score, but maintain team harmony",
+    1: "Teammate scores without involvement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set a screen) | B2 (Call for the ball) |
+|-------|-------------------|------------------------|
+| A1 (Pass the ball) | 3 \ 4 | 4 \ 1 |
+| A2 (Attempt to score) | 1 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the final seconds of a crucial basketball game, Alex finds himself with the ball, just outside the three-point line. The team needs two points to win, and the clock is ticking down. Alex's teammate and rival, Blake, is also on the court.
+
+Alex has two choices: he can either pass the ball (A1) or attempt to score himself (A2). Blake, meanwhile, can choose to set a screen (B1) or call for the ball (B2).
+
+If Alex passes the ball (A1) and Blake sets a screen (B1), they achieve perfect teamwork. Blake's screen allows Alex to get open for a return pass, resulting in a high-percentage shot. This scenario is Blake's most preferred outcome (4) as it showcases true team play, while it's Alex's second-best option (3) as the team scores but he doesn't get all the glory.
+
+If Alex passes (A1) but Blake calls for the ball (B2), Alex might get an open shot and score, achieving his preferred outcome (4). However, this is Blake's least preferred scenario (1) as he feels left out of the play.
+
+If Alex attempts to score (A2) and Blake sets a screen (B1), Alex might force a difficult shot, likely missing. This is Alex's least preferred outcome (1) as he fails to score and may be seen as selfish. It's Blake's third choice (3) as he at least contributed with a screen.
+
+Lastly, if Alex attempts to score (A2) and Blake calls for the ball (B2), it could lead to confusion and a missed opportunity. This scenario is the second-least preferred for both players (2), as they fail to score but avoid direct conflict.
+
+The tension builds as Alex weighs his options, knowing that his choice, combined with Blake's action, will determine not only the outcome of the game but also the dynamics of their relationship on the team.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Alex, Emma's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings private",
+  "B1": "Contribute extensively to the research",
+  "B2": "Contribute minimally to the research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Sole credit for groundbreaking research",
+    3: "Shared credit for significant research",
+    2: "Partial credit for moderate research progress",
+    1: "No significant research progress"
+  },
+  "B": {
+    4: "Major contribution recognized in groundbreaking research",
+    3: "Shared credit for significant research",
+    2: "Minor contribution to successful research",
+    1: "No recognition or research progress"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Alex | Contribute extensively (B1) | Contribute minimally (B2) |
+|--------------|----------------------------|---------------------------|
+| Share openly (A1) | 2 \ 4                     | 4 \ 2                    |
+| Keep private (A2) | 1 \ 1                     | 3 \ 3                    |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a renowned sociology professor, is working on a groundbreaking study about social media's impact on community bonds. Her research assistant, Alex, is eager to make a name for himself in the field. They face a dilemma regarding how to approach their collaborative research project.
+
+Emma has two choices: she can either share her research findings openly with Alex (A1) or keep them private (A2). Alex, in turn, can choose to contribute extensively to the research (B1) or contribute minimally (B2).
+
+If Emma shares openly and Alex contributes extensively (A1, B1), Emma gains partial credit for moderate research progress (preference 2), while Alex receives major recognition for his contribution to groundbreaking research (preference 4). This scenario represents their collaborative effort leading to significant findings, with Alex gaining more recognition due to his extensive contribution.
+
+If Emma shares openly but Alex contributes minimally (A1, B2), Emma receives sole credit for groundbreaking research (preference 4), while Alex gets minor contribution credit (preference 2). This outcome reflects Emma's openness leading to significant findings, with Alex benefiting less due to his minimal input.
+
+If Emma keeps her findings private and Alex contributes extensively (A2, B1), both end up with no significant research progress or recognition (preference 1 for both). This scenario represents a lack of trust and collaboration, hindering the research despite Alex's efforts.
+
+Lastly, if Emma keeps her findings private and Alex contributes minimally (A2, B2), they both achieve shared credit for significant research (preference 3 for both). This outcome reflects a cautious approach where both parties make moderate contributions, leading to noteworthy but not groundbreaking results.
+
+The scenario highlights the complex dynamics of academic collaboration, where trust, information sharing, and individual contributions can significantly impact research outcomes and personal recognition in the field of sociology.
+[/Scenario]

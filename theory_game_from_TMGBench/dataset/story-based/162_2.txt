@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "EcoTech, a renewable energy company",
+  "B": "ForestGuard, a conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop solar farm in forest clearing",
+  "A2": "Invest in offshore wind farm",
+  "B1": "Oppose any development in the forest",
+  "B2": "Collaborate on sustainable forest management"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Invest in offshore wind farm while ForestGuard opposes forest development",
+    3: "Develop solar farm in forest clearing while ForestGuard collaborates",
+    2: "Invest in offshore wind farm while ForestGuard collaborates",
+    1: "Develop solar farm in forest clearing while ForestGuard opposes"
+  },
+  "B": {
+    4: "EcoTech develops solar farm while ForestGuard opposes forest development",
+    3: "EcoTech develops solar farm while ForestGuard collaborates on forest management",
+    2: "EcoTech invests in offshore wind farm while ForestGuard collaborates",
+    1: "EcoTech invests in offshore wind farm while ForestGuard opposes forest development"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoTech \ ForestGuard | Oppose (B1) | Collaborate (B2) |
+|------------------------|-------------|------------------|
+| Solar Farm (A1)        | 1 \ 4       | 2 \ 3            |
+| Offshore Wind (A2)     | 3 \ 1       | 4 \ 2            |
+[/Payoff Matrix]
+
+[Scenario]
+In a coastal region with dense forests and strong offshore winds, EcoTech, a renewable energy company, is planning its next big project. They have two options: develop a solar farm in a forest clearing or invest in an offshore wind farm. Meanwhile, ForestGuard, a local conservation organization, is concerned about the potential impact on the ecosystem.
+
+EcoTech's preference is to invest in the offshore wind farm, as it has higher energy potential and fewer land-use conflicts. However, they're also considering the solar farm option due to lower initial costs and faster implementation.
+
+ForestGuard's primary goal is to protect the forest ecosystem. They prefer to oppose any development in the forest area, but they're also open to collaboration if it means having a say in sustainable forest management.
+
+If EcoTech chooses the solar farm (A1) and ForestGuard opposes (B1), EcoTech faces significant delays and PR issues (preference 1), while ForestGuard gains public support and maintains forest integrity (preference 4).
+
+If EcoTech opts for the solar farm (A1) and ForestGuard collaborates (B2), EcoTech can proceed with some modifications (preference 2), and ForestGuard ensures some environmental safeguards (preference 3).
+
+If EcoTech invests in offshore wind (A2) and ForestGuard opposes forest development (B1), EcoTech avoids land conflicts and gains positive PR (preference 3), but ForestGuard loses relevance in the project (preference 1).
+
+Finally, if EcoTech chooses offshore wind (A2) and ForestGuard collaborates on sustainable forest management (B2), EcoTech maximizes its green credentials (preference 4), while ForestGuard maintains some influence over local environmental policies (preference 2).
+
+The outcome depends on how both organizations choose to act, balancing their economic and environmental priorities in this complex ecological scenario.
+[/Scenario]

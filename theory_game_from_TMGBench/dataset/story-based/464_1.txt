@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Bailey, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on developing software for existing hardware",
+  "A2": "Develop software for next-generation hardware",
+  "B1": "Maintain current hardware specifications",
+  "B2": "Design new, advanced hardware"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop cutting-edge software for new hardware",
+    3: "Create innovative software without hardware constraints",
+    2: "Adapt software for new hardware specifications",
+    1: "Maintain existing software for current hardware"
+  },
+  "B": {
+    4: "Design new hardware with existing software compatibility",
+    3: "Collaborate on integrated hardware-software development",
+    2: "Create advanced hardware requiring new software",
+    1: "Continue with current hardware specifications"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 2 \ 4 |
+| A2    | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At a cutting-edge tech company, software engineer Alex and hardware engineer Bailey are tasked with advancing the company's product line. They must decide whether to focus on improving existing technology or developing entirely new solutions.
+
+Alex can choose to either focus on developing software for existing hardware (A1) or develop software for next-generation hardware (A2). Bailey, on the other hand, can decide to maintain current hardware specifications (B1) or design new, advanced hardware (B2).
+
+Their choices will lead to four possible scenarios:
+
+1. If both stick to current technology (A1, B1), they'll maintain the status quo, resulting in the least preferred outcome for both (1,1).
+
+2. If Alex focuses on existing software while Bailey designs new hardware (A1, B2), Bailey benefits most by creating innovative hardware that's compatible with existing software (4), while Alex gains slightly by adapting the software (2).
+
+3. If Alex develops new software while Bailey maintains current hardware (A2, B1), they achieve a balanced collaboration (3,3), working together to push the boundaries of what's possible with existing hardware.
+
+4. If both push for next-generation technology (A2, B2), Alex achieves their most preferred outcome by developing cutting-edge software for new hardware (4), while Bailey faces challenges in creating advanced hardware that requires entirely new software (2).
+
+Alex prefers scenarios where they can innovate, with the ideal being developing software for new hardware. Bailey's preference is to design new hardware that remains compatible with existing software, followed by collaborative development.
+
+Their decisions will shape the company's future product line, balancing innovation with practicality and cooperation with individual ambitions.
+[/Scenario]

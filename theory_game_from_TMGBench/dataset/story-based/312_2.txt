@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Olivia, an aspiring painter",
+  "B": "Marcus, a well-established gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a traditional, crowd-pleasing painting",
+  "A2": "Create an avant-garde, experimental piece",
+  "B1": "Offer a solo exhibition",
+  "B2": "Offer a shared exhibition with another artist"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a traditional painting and get a shared exhibition",
+    3: "Create an avant-garde piece and get a shared exhibition",
+    2: "Create a traditional painting and get a solo exhibition",
+    1: "Create an avant-garde piece and get a solo exhibition"
+  },
+  "B": {
+    4: "Offer a shared exhibition for a traditional painting",
+    3: "Offer a solo exhibition for a traditional painting",
+    2: "Offer a solo exhibition for an avant-garde piece",
+    1: "Offer a shared exhibition for an avant-garde piece"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Solo)| B2 (Shared)|
+|-------|----------|------------|
+| A1 (Traditional) | 2 \ 3     | 4 \ 4      |
+| A2 (Avant-garde) | 1 \ 2     | 3 \ 1      |
+[/Payoff Matrix]
+
+[Scenario]
+Olivia, an aspiring painter, has been given the opportunity to showcase her work at Marcus's prestigious art gallery. Marcus, the gallery owner, is known for his keen eye for talent and his ability to launch artists' careers. However, both Olivia and Marcus face a dilemma in how to approach this opportunity.
+
+Olivia must decide whether to create a traditional, crowd-pleasing painting (A1) or an avant-garde, experimental piece (A2). She knows that a traditional piece might be more marketable, but she's also passionate about pushing boundaries in her art.
+
+Marcus, on the other hand, needs to decide whether to offer Olivia a solo exhibition (B1) or a shared exhibition with another artist (B2). A solo exhibition would give Olivia more exposure, but a shared exhibition could attract a wider audience and distribute the risk.
+
+Their preferences and potential outcomes are reflected in the payoff matrix. Olivia's ideal scenario (preference 4) is to create a traditional painting and participate in a shared exhibition, as this would allow her to showcase her skills while benefiting from the draw of another artist. Her least preferred outcome (preference 1) is to create an avant-garde piece for a solo exhibition, fearing it might be too risky for her debut.
+
+Marcus prefers (preference 4) to offer a shared exhibition for a traditional painting, as it's likely to attract more visitors and sales. His least preferred outcome (preference 1) is to offer a shared exhibition for an avant-garde piece, worrying it might confuse or alienate his regular clientele.
+
+The scenario creates an interesting dynamic where both Olivia and Marcus must consider not only their own preferences but also anticipate the other's decision. Their choices will ultimately determine the success of the exhibition and potentially the trajectory of Olivia's career in the art world.
+[/Scenario]

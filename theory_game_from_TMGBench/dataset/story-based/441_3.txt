@@ -1,0 +1,78 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new eco-friendly manufacturing process",
+  "A2": "Continue with current manufacturing process",
+  "B1": "Support EcoTech's initiative",
+  "B2": "Protest against EcoTech's presence in the area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Continue current process with no protests (A2, B1)",
+    3: "Implement new eco-friendly process with support (A1, B1)",
+    2: "Continue current process despite protests (A2, B2)",
+    1: "Implement new eco-friendly process but face protests (A1, B2)",
+  },
+  "B": {
+    4: "EcoTech implements eco-friendly process, GreenForest supports (A1, B1)",
+    3: "EcoTech implements eco-friendly process, GreenForest protests (A1, B2)",
+    2: "EcoTech continues current process, GreenForest protests (A2, B2)",
+    1: "EcoTech continues current process, GreenForest supports (A2, B1)",
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 1 \ 4 |
+| A2    | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town nestled at the edge of a lush forest, EcoTech, a sustainable technology company, has been operating for several years. Recently, they've been considering implementing a new eco-friendly manufacturing process that could potentially reduce their environmental impact. However, this new process would require significant investment and might temporarily disrupt their operations.
+
+GreenForest, a local conservation group, has been keeping a close eye on EcoTech's activities. They are passionate about preserving the surrounding ecosystem and have the power to influence public opinion in the town.
+
+EcoTech (A) has two choices:
+A1: Implement the new eco-friendly manufacturing process
+A2: Continue with their current manufacturing process
+
+GreenForest (B) also has two choices:
+B1: Support EcoTech's initiative
+B2: Protest against EcoTech's presence in the area
+
+The preferences and payoffs for each scenario are as follows:
+
+1. If EcoTech implements the new process and GreenForest supports it (A1, B1):
+   - EcoTech gains positive PR and long-term sustainability benefits (3)
+   - GreenForest sees progress in environmental protection (3)
+
+2. If EcoTech implements the new process but GreenForest protests (A1, B2):
+   - EcoTech faces public backlash and financial strain (1)
+   - GreenForest gains attention but misses an opportunity for collaboration (4)
+
+3. If EcoTech continues the current process and GreenForest supports (A2, B1):
+   - EcoTech maintains status quo without investment costs (2)
+   - GreenForest loses credibility and support (1)
+
+4. If EcoTech continues the current process and GreenForest protests (A2, B2):
+   - EcoTech faces ongoing conflict but avoids immediate costs (4)
+   - GreenForest maintains its principles but achieves limited impact (2)
+
+EcoTech prefers to continue its current process without protests, as it's the most cost-effective short-term solution. However, they recognize the potential long-term benefits of the eco-friendly process if supported by GreenForest.
+
+GreenForest's ideal scenario is EcoTech implementing the eco-friendly process while they maintain their role as environmental watchdogs. However, they're willing to support EcoTech if the new process is implemented, seeing it as a significant step forward for local conservation efforts.
+
+The outcome of this situation depends on how each party assesses the other's likely actions and the potential long-term consequences of their choices. Will they find a way to cooperate for mutual benefit, or will their conflicting short-term interests lead to a suboptimal outcome for both?
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Mark, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current product line",
+  "A2": "Develop new competing product",
+  "B1": "Continue independent operations",
+  "B2": "Propose merger with TechInnovate"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Merge with DataDrive while maintaining current product line",
+    3: "Both companies maintain status quo",
+    2: "Develop new competing product while DataDrive operates independently",
+    1: "Merge with DataDrive after developing competing product"
+  },
+  "B": {
+    4: "Merge with TechInnovate before they develop competing product",
+    3: "Both companies maintain status quo",
+    2: "Continue independent operations while TechInnovate develops competing product",
+    1: "Merge with TechInnovate after they develop competing product"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 2 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the competitive world of tech startups, Sarah, the CEO of TechInnovate, and Mark, the CEO of DataDrive, find themselves at a crucial crossroads. Both companies have been successful in their respective niches, with TechInnovate specializing in innovative hardware solutions and DataDrive excelling in data analytics software.
+
+Sarah is contemplating whether to maintain TechInnovate's current product line or to develop a new product that would directly compete with DataDrive's offerings. Meanwhile, Mark is considering whether to continue DataDrive's independent operations or to propose a merger with TechInnovate.
+
+Their decisions will significantly impact both companies' futures. If both maintain their current strategies (A1 and B1), they'll continue to coexist peacefully in the market, resulting in steady growth for both (3,3). However, if Mark proposes a merger and Sarah agrees to it while maintaining her current product line (A1 and B2), both companies would benefit greatly from combined resources and complementary expertise (4,4).
+
+If Sarah decides to develop a competing product while Mark continues independent operations (A2 and B1), both companies would face increased competition and potentially lower profits (2,2). The worst-case scenario for both would be if Sarah develops the competing product and then agrees to Mark's merger proposal (A2 and B2), as this would lead to redundancies and internal conflicts in the merged company (1,1).
+
+Sarah's ideal outcome is to merge with DataDrive while maintaining TechInnovate's current product line, avoiding unnecessary competition and capitalizing on synergies. Mark's preference aligns with Sarah's in this case, as he'd rather merge before TechInnovate develops a competing product.
+
+As they prepare for a pivotal meeting, both CEOs must carefully consider their options, weighing the potential risks and rewards of cooperation versus competition in this high-stakes game of corporate strategy.
+[/Scenario]

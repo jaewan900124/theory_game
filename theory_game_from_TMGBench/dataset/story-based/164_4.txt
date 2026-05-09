@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products using local resources",
+  "A2": "Implement advanced technology without using local resources",
+  "B1": "Collaborate with EcoTech and share forest resources",
+  "B2": "Restrict access to forest resources and operate independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement advanced technology without using local resources, while GreenForest restricts access",
+    3: "Implement advanced technology without using local resources, while GreenForest collaborates",
+    2: "Develop eco-friendly products using local resources, while GreenForest restricts access",
+    1: "Develop eco-friendly products using local resources, while GreenForest collaborates"
+  },
+  "B": {
+    4: "Collaborate with EcoTech and share forest resources, while EcoTech develops eco-friendly products",
+    3: "Restrict access to forest resources, while EcoTech implements advanced technology",
+    2: "Collaborate with EcoTech, while EcoTech implements advanced technology",
+    1: "Restrict access to forest resources, while EcoTech develops eco-friendly products"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 1 |
+| A2    | 3 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush, biodiverse forest region, EcoTech, a sustainable technology company, and GreenForest, a local conservation organization, find themselves at a crossroads. Their decisions will significantly impact the local ecosystem and economy.
+
+EcoTech has two options: they can either develop eco-friendly products using local resources (A1) or implement advanced technology without using local resources (A2). GreenForest, on the other hand, can choose to collaborate with EcoTech and share forest resources (B1) or restrict access to forest resources and operate independently (B2).
+
+EcoTech's preference is to implement advanced technology without local resources, as it allows them to showcase their innovation while minimizing their environmental impact. They least prefer developing eco-friendly products using local resources while collaborating with GreenForest, as it limits their technological advancement and profit margins.
+
+GreenForest's top priority is to collaborate with EcoTech while the company develops eco-friendly products, as this aligns with their conservation goals and provides economic benefits to the local community. Their least preferred scenario is restricting access while EcoTech develops eco-friendly products, as it misses an opportunity for sustainable collaboration.
+
+The payoff matrix reveals the complex dynamics between the two organizations. If both choose to collaborate (A1, B1), GreenForest benefits the most while EcoTech gains the least. If EcoTech implements advanced technology and GreenForest restricts access (A2, B2), both entities achieve a relatively high payoff. However, if one chooses to collaborate while the other doesn't (A1, B2 or A2, B1), the collaborating party suffers while the other gains an advantage.
+
+This scenario highlights the delicate balance between technological advancement, resource conservation, and community engagement in ecological management. The choices made by EcoTech and GreenForest will not only affect their own interests but also shape the future of the forest ecosystem and the local community's relationship with nature.
+[/Scenario]

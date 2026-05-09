@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, a small coffee shop owner",
+  "B": "Michael, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Maintain current prices",
+  "B2": "Lower prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices while Michael maintains prices",
+    3: "Both maintain current prices",
+    2: "Both lower prices",
+    1: "Maintain prices while Michael lowers prices"
+  },
+  "B": {
+    4: "Lower prices while Sarah maintains prices",
+    3: "Both maintain current prices",
+    2: "Both lower prices",
+    1: "Maintain prices while Sarah lowers prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 1 \ 4 |
+| A2    | 3 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Sarah, a passionate small coffee shop owner, finds herself in a challenging situation. Her quaint caf¨¦, known for its artisanal brews and cozy atmosphere, is facing increased competition from Michael's large coffee chain that recently opened a branch nearby.
+
+Both Sarah and Michael are contemplating their pricing strategies for the upcoming quarter. They each have two choices: maintain their current prices or lower them to attract more customers.
+
+Sarah's ideal scenario would be to lower her prices while Michael maintains his, allowing her to potentially draw more customers without sacrificing too much profit (preference degree 4). Her next best option would be if both maintained their current prices, preserving the status quo (preference degree 3). If both lowered their prices, she'd face tougher competition but could still manage (preference degree 2). Her worst-case scenario would be maintaining her prices while Michael lowers his, potentially losing a significant portion of her customer base (preference degree 1).
+
+Michael, on the other hand, would prefer to lower his prices while Sarah maintains hers, maximizing his market share (preference degree 4). His second choice would be if both kept their current prices, maintaining his profit margins (preference degree 3). If both lowered their prices, he'd face reduced profits but could leverage his chain's resources to weather the storm (preference degree 2). His least preferred option would be maintaining his prices while Sarah lowers hers, potentially losing customers to her shop (preference degree 1).
+
+As they both consider their options, they realize that their decisions will significantly impact not only their own businesses but also the local coffee market dynamics. The tension builds as they prepare to announce their pricing strategies, each hoping to make the best decision for their business while navigating the complexities of market competition.
+[/Scenario]

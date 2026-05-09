@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Elena Vega, a brilliant astrophysicist",
+  "B": "Captain Zack Hawkins, an experienced astronaut"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on deep space exploration",
+  "A2": "Concentrate on colonizing Mars",
+  "B1": "Collaborate on a joint mission",
+  "B2": "Pursue independent projects"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Colonize Mars with independent projects",
+    3: "Deep space exploration with collaboration",
+    2: "Colonize Mars with collaboration",
+    1: "Deep space exploration with independent projects"
+  },
+  "B": {
+    4: "Deep space exploration with collaboration",
+    3: "Colonize Mars with collaboration",
+    2: "Deep space exploration with independent projects",
+    1: "Colonize Mars with independent projects"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Independent) |
+|-------|------------------|-------------------|
+| A1 (Deep Space) | 3 \ 4           | 1 \ 2            |
+| A2 (Mars)       | 2 \ 3           | 4 \ 1            |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2050, humanity stands at the precipice of a new era in space exploration. Dr. Elena Vega, a brilliant astrophysicist, and Captain Zack Hawkins, an experienced astronaut, find themselves at the forefront of this exciting frontier. They are tasked with making crucial decisions that will shape the future of space exploration.
+
+Dr. Vega is passionate about pushing the boundaries of human knowledge through deep space exploration. She believes that venturing into the unknown holds the key to unlocking the mysteries of the universe. However, she's also intrigued by the possibility of colonizing Mars, seeing it as a stepping stone for humanity's expansion beyond Earth.
+
+Captain Hawkins, on the other hand, is more pragmatic. He values the collaborative nature of space missions and believes that pooling resources and expertise is the best way to achieve significant progress. While he's open to both deep space exploration and Mars colonization, he leans towards the former due to its potential for groundbreaking discoveries.
+
+The two space pioneers must decide on their approach to the next phase of space exploration. They can choose to focus on deep space exploration or concentrate on colonizing Mars. Additionally, they must decide whether to collaborate on a joint mission or pursue independent projects.
+
+Their preferences for different scenarios are as follows:
+
+Dr. Vega's top preference is to colonize Mars through independent projects, as she believes this would allow her to implement her innovative ideas without compromise. Her second choice would be deep space exploration in collaboration with Captain Hawkins, leveraging their combined expertise. Her third preference is colonizing Mars collaboratively, while her least preferred option is deep space exploration with independent projects, as she feels this would be less efficient and potentially dangerous.
+
+Captain Hawkins, conversely, most prefers deep space exploration in collaboration with Dr. Vega, as he values teamwork and is excited by the prospect of new discoveries. His second choice is collaborating on Mars colonization. If collaboration isn't possible, he would prefer independent deep space exploration over independent Mars colonization, which he considers too risky and resource-intensive to pursue alone.
+
+The payoff matrix reflects these preferences, with each scenario offering different rewards and challenges for both Dr. Vega and Captain Hawkins. Their decisions will not only affect their personal careers but also the future of human space exploration. As they weigh their options, the fate of humanity's next great leap into the cosmos hangs in the balance.
+[/Scenario]

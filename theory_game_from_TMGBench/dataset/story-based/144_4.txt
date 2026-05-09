@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blair, a product manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use existing technology",
+  "A2": "Develop new technology",
+  "B1": "Focus on current product",
+  "B2": "Explore new product features"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop new technology while exploring new product features",
+    3: "Use existing technology while focusing on current product",
+    2: "Develop new technology while focusing on current product",
+    1: "Use existing technology while exploring new product features"
+  },
+  "B": {
+    4: "Use existing technology while focusing on current product",
+    3: "Develop new technology while exploring new product features",
+    2: "Develop new technology while focusing on current product",
+    1: "Use existing technology while exploring new product features"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 1 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software engineer, and Blair, an ambitious product manager, are working together on a critical project for their tech startup. They face a crucial decision that will determine the future direction of their product and potentially the company's success.
+
+Alex has two choices: stick with the existing technology (A1) or develop new, cutting-edge technology (A2). Blair, on the other hand, must decide whether to focus on refining the current product (B1) or explore new product features (B2).
+
+Alex is excited about the prospect of developing new technology, seeing it as an opportunity for innovation and personal growth. However, he also recognizes the stability and efficiency of using existing technology. Blair is more inclined towards focusing on the current product, believing that perfecting what they already have is the safest bet for success. Nevertheless, she's also intrigued by the potential of new features to attract more customers.
+
+If Alex chooses to use existing technology (A1) and Blair focuses on the current product (B1), they both benefit from a stable and efficient workflow. This scenario is Blair's most preferred outcome (4) and Alex's second-best option (3).
+
+If Alex develops new technology (A2) while Blair explores new product features (B2), they embark on an exciting but risky venture. This is Alex's most preferred outcome (4) and Blair's second-best option (3).
+
+If Alex develops new technology (A2) but Blair focuses on the current product (B1), they face some challenges in aligning their efforts. This is a moderately satisfactory outcome for both (2).
+
+The least preferred scenario for both Alex and Blair (1) is when Alex uses existing technology (A1) while Blair explores new product features (B2). This misalignment could lead to inefficiencies and missed opportunities.
+
+As they sit down to discuss their strategy, both Alex and Blair must carefully consider their choices, knowing that their decision will significantly impact not only their personal satisfaction but also the company's future. They must weigh the benefits of innovation against the security of the familiar, all while trying to align their individual preferences with the best interests of the team and the company.
+[/Scenario]

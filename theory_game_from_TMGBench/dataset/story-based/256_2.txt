@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a small coffee shop owner",
+  "B": "Lucas, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Maintain current prices",
+  "B2": "Lower prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "B maintains prices while A maintains prices",
+    3: "Both A and B maintain prices",
+    2: "B lowers prices while A maintains prices",
+    1: "Both A and B lower prices"
+  },
+  "B": {
+    4: "Both A and B maintain prices",
+    3: "B maintains prices while A lowers prices",
+    2: "B lowers prices while A maintains prices",
+    1: "Both A and B lower prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 2 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Emma, a passionate small coffee shop owner, faces a challenging situation as Lucas, the owner of a large coffee chain, opens a new branch nearby. Both are now caught in a pricing dilemma that will significantly impact their businesses.
+
+Emma's cozy shop has been a local favorite for years, known for its quality brews and personal touch. Lucas's chain, on the other hand, benefits from economies of scale and brand recognition. They each have two choices: maintain current prices or lower them to attract more customers.
+
+Emma prefers to maintain her prices, hoping that her loyal customer base and quality will sustain her business. Her best-case scenario (preference 4) is if Lucas maintains his prices while she does the same, allowing her to preserve her profit margins without losing customers. Her worst-case scenario (preference 1) is if both lower their prices, potentially starting a price war that her small business can't sustain.
+
+Lucas, with his larger operation, can better absorb short-term losses. His ideal situation (preference 4) is if both maintain current prices, as this allows him to leverage his brand without engaging in costly competition. His least preferred outcome (preference 1) is also when both lower prices, as this would unnecessarily cut into his profits across all branches.
+
+The payoff matrix reflects these preferences, with each number representing the degree of preference for Emma and Lucas in different scenarios. For instance, the scenario where both maintain prices (A1, B1) results in a moderately good outcome for Emma (3) and the best outcome for Lucas (4).
+
+As they contemplate their strategies, both Emma and Lucas must consider not only their own preferences but also anticipate the other's actions. Their decisions will shape the local coffee market and determine the future of Emma's beloved shop in the face of corporate competition.
+[/Scenario]

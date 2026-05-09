@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Emily, a talented but struggling painter",
+  "B": "Marcus, a successful art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde painting",
+  "A2": "Paint a more traditional, crowd-pleasing piece",
+  "B1": "Host a solo exhibition for Emily",
+  "B2": "Include Emily's work in a group show"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create avant-garde painting and be included in a group show",
+    3: "Create traditional painting and be included in a group show",
+    2: "Create avant-garde painting and have a solo exhibition",
+    1: "Create traditional painting and have a solo exhibition"
+  },
+  "B": {
+    4: "Include avant-garde painting in a group show",
+    3: "Include traditional painting in a group show",
+    2: "Host solo exhibition for traditional painting",
+    1: "Host solo exhibition for avant-garde painting"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Solo Exhibition) | B2 (Group Show) |
+|-------|----------------------|-----------------|
+| A1 (Avant-garde) | 2 \ 1             | 4 \ 4           |
+| A2 (Traditional) | 1 \ 2             | 3 \ 3           |
+[/Payoff Matrix]
+
+[Scenario]
+Emily, a talented but struggling painter, finds herself at a crossroads in her career. She has caught the attention of Marcus, a successful art gallery owner known for his keen eye and ability to launch artists' careers. Marcus is considering featuring Emily's work in his gallery but is unsure whether to offer her a solo exhibition or include her in a group show.
+
+Emily faces a dilemma: she can either create a provocative, avant-garde painting that truly represents her artistic vision or paint a more traditional, crowd-pleasing piece that might be more commercially viable. She knows that her choice will influence Marcus's decision and potentially shape her future in the art world.
+
+For Emily, her most preferred outcome (4) would be to create her avant-garde piece and have it included in a group show. This would allow her to stay true to her artistic vision while benefiting from the exposure of being alongside other artists. Her least preferred outcome (1) would be to compromise her style with a traditional painting and have it showcased in a solo exhibition, feeling that it misrepresents her as an artist.
+
+Marcus, on the other hand, is most interested (4) in including an avant-garde piece in a group show, as it would add diversity to the exhibition without the risk of a solo show. His least preferred outcome (1) would be hosting a solo exhibition for an avant-garde piece, fearing it might be too niche for his regular clientele.
+
+If Emily chooses to create an avant-garde piece (A1) and Marcus opts for a solo exhibition (B1), Emily would be somewhat satisfied (2) with the exposure but concerned about the pressure, while Marcus would be least satisfied (1) due to the risk.
+
+If Emily paints a traditional piece (A2) and Marcus chooses a solo exhibition (B1), Emily would be least satisfied (1) feeling she's compromised her art, while Marcus would be moderately satisfied (2) with a safer choice for a solo show.
+
+The scenario where both choose their second options - Emily creating a traditional piece (A2) and Marcus including it in a group show (B2) - would result in both being reasonably satisfied (3), as it balances artistic integrity with commercial viability.
+
+The optimal outcome for both (4,4) occurs when Emily creates her avant-garde piece (A1) and Marcus includes it in a group show (B2), allowing Emily to express her true artistic vision while providing Marcus with an exciting addition to a diverse exhibition.
+
+This situation illustrates the delicate balance between artistic integrity and commercial success in the art world, showing how the choices of artists and gallery owners can significantly impact each other's outcomes.
+[/Scenario]

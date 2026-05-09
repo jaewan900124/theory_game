@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Michael Ross, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a shared electronic health record (EHR) system",
+  "A2": "Maintain separate record systems",
+  "B1": "Join the hospital network",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain separate systems while Dr. Ross joins the network",
+    3: "Implement shared EHR with Dr. Ross joining the network",
+    2: "Maintain separate systems with Dr. Ross remaining independent",
+    1: "Implement shared EHR while Dr. Ross remains independent"
+  },
+  "B": {
+    4: "Join the network while separate systems are maintained",
+    3: "Remain independent while separate systems are maintained",
+    2: "Remain independent with shared EHR implemented",
+    1: "Join the network with shared EHR implemented"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Join network) | B2 (Remain independent) |
+|-------|-------------------|-------------------------|
+| A1 (Implement EHR) | 3 \ 1             | 1 \ 4                   |
+| A2 (Separate systems) | 2 \ 3             | 4 \ 2                   |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized town, the local hospital, led by administrator Dr. Sarah Chen, is considering implementing a shared electronic health record (EHR) system to improve patient care coordination. Meanwhile, Dr. Michael Ross, a respected private practice physician, is contemplating whether to join the hospital network or remain independent.
+
+Dr. Chen believes that a shared EHR system could greatly benefit patient care, but it would require significant investment and cooperation from local physicians. She prefers that Dr. Ross join the network, as his participation would encourage other independent physicians to follow suit. However, she's concerned about the costs and complexities of implementing the new system if not enough physicians participate.
+
+Dr. Ross values his independence but recognizes the potential benefits of joining the hospital network, such as increased patient referrals and shared resources. He's hesitant about adopting a new EHR system, worried about the learning curve and potential loss of autonomy in managing patient data.
+
+Their choices create four possible scenarios:
+
+1. If Dr. Chen implements the shared EHR and Dr. Ross joins the network (A1, B1), the hospital benefits from improved care coordination (3), but Dr. Ross faces challenges adapting to the new system (1).
+
+2. If Dr. Chen implements the shared EHR but Dr. Ross remains independent (A1, B2), the hospital struggles with limited participation (1), while Dr. Ross maintains his autonomy but misses out on network benefits (4).
+
+3. If Dr. Chen maintains separate systems and Dr. Ross joins the network (A2, B1), the hospital loses an opportunity for better care coordination (2), but Dr. Ross gains network benefits without the burden of a new EHR system (3).
+
+4. If Dr. Chen maintains separate systems and Dr. Ross remains independent (A2, B2), the hospital avoids the costs of implementing a new system (4), while Dr. Ross keeps his independence but misses out on potential benefits (2).
+
+Both Dr. Chen and Dr. Ross must carefully consider their options, weighing the potential benefits and drawbacks of their choices on patient care, operational efficiency, and professional autonomy.
+[/Scenario]

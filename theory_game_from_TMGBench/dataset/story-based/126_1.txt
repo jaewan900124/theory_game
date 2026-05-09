@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a small coffee shop owner",
+  "B": "Beth, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Open a new branch nearby",
+  "B2": "Maintain current operations"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices while Beth maintains operations",
+    3: "Maintain prices while Beth maintains operations",
+    2: "Maintain prices while Beth opens a new branch",
+    1: "Lower prices while Beth opens a new branch"
+  },
+  "B": {
+    4: "Open a new branch while Alex maintains prices",
+    3: "Maintain operations while Alex lowers prices",
+    2: "Maintain operations while Alex maintains prices",
+    1: "Open a new branch while Alex lowers prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Open new branch) | B2 (Maintain operations) |
+|-------|----------------------|--------------------------|
+| A1 (Maintain prices) | 2 \ 4               | 3 \ 2                   |
+| A2 (Lower prices)    | 1 \ 3               | 4 \ 1                   |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling downtown area, Alex runs a cozy, independent coffee shop that has been a local favorite for years. Recently, Beth, the owner of a large coffee chain, has been eyeing the neighborhood for expansion.
+
+Alex faces a dilemma: should he maintain his current prices to preserve profit margins, or lower them to attract more customers? Meanwhile, Beth is deciding whether to open a new branch near Alex's shop or maintain her current operations in other parts of the city.
+
+If Alex maintains his prices and Beth opens a new branch (A1, B1), Alex's business will suffer somewhat but remain viable (2), while Beth's new branch will thrive (4). If Alex lowers his prices in this scenario (A2, B1), his profits will plummet (1), but Beth's new branch will still do well, though not as spectacularly (3).
+
+Should Beth decide not to open a new branch, Alex's decision becomes more impactful. If Alex maintains his prices (A1, B2), both businesses will coexist comfortably (3 for Alex, 2 for Beth). However, if Alex lowers his prices (A2, B2), he'll attract many of Beth's potential customers, leading to a boom in his business (4) while Beth's profits in the area decline (1).
+
+Alex prefers to lower his prices only if Beth doesn't open a new branch nearby, as this would maximize his profits. His least preferred outcome is lowering prices while Beth opens a new branch, as this would severely impact his bottom line.
+
+Beth, on the other hand, would ideally open a new branch while Alex maintains his prices, allowing her to capture a significant market share. Her least desired outcome is maintaining her current operations while Alex lowers his prices, as this would lead to a loss of customers in the area.
+
+As both Alex and Beth contemplate their strategies, they must consider not only their own choices but also anticipate the other's decision, knowing that their combined actions will shape the local coffee market landscape.
+[/Scenario]

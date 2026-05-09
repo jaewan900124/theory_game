@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "TechCo, a technology startup",
+  "B": "InvestGroup, a venture capital firm"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pursue rapid expansion",
+  "A2": "Focus on profitability",
+  "B1": "Provide substantial funding",
+  "B2": "Offer limited funding"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Rapid expansion with substantial funding",
+    3: "Rapid expansion with limited funding",
+    2: "Focus on profitability with limited funding",
+    1: "Focus on profitability with substantial funding"
+  },
+  "B": {
+    4: "TechCo pursues rapid expansion with substantial funding",
+    3: "TechCo focuses on profitability with substantial funding",
+    2: "TechCo pursues rapid expansion with limited funding",
+    1: "TechCo focuses on profitability with limited funding"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| TechCo \ InvestGroup | Substantial Funding | Limited Funding |
+|-----------------------|---------------------|-----------------|
+| Rapid Expansion       | 3 \ 4               | 4 \ 2           |
+| Focus on Profitability| 1 \ 3               | 2 \ 1           |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling world of Silicon Valley, TechCo, a promising technology startup, finds itself at a crucial crossroads. The company has developed an innovative AI-powered productivity tool and is now seeking investment to take their business to the next level. Enter InvestGroup, a prominent venture capital firm known for backing some of the most successful tech companies in recent years.
+
+TechCo's founders are debating between two strategies: pursuing rapid expansion to capture market share quickly or focusing on profitability to build a sustainable business model. Meanwhile, InvestGroup is considering whether to provide substantial funding to fuel aggressive growth or offer limited funding to encourage a more conservative approach.
+
+TechCo's preference is clear: they dream of rapid expansion, believing their product has the potential to revolutionize the market. Their ideal scenario is to secure substantial funding for their expansion plans, but they're willing to pursue rapid growth even with limited resources if necessary. Focusing on profitability is their least preferred option, especially if it comes with substantial funding that they feel would be underutilized.
+
+InvestGroup, on the other hand, is most excited by the prospect of TechCo pursuing rapid expansion with their substantial funding. They believe this combination could lead to explosive growth and significant returns. Their second choice would be for TechCo to focus on profitability with their substantial funding, seeing it as a safer, albeit less exciting, investment. Providing limited funding is less appealing to InvestGroup, but if they must, they'd prefer TechCo to pursue rapid expansion rather than focus on profitability.
+
+The two parties meet to negotiate, each aware of their own preferences but uncertain about the other's intentions. TechCo's founders make their pitch for aggressive expansion, highlighting the market potential and their readiness to scale. InvestGroup's partners listen intently, weighing the risks and potential rewards.
+
+As they discuss the various scenarios, both sides realize the delicate balance between their choices. TechCo knows that securing substantial funding would be ideal, but they're prepared to push forward with their expansion plans even with limited resources. InvestGroup recognizes the potential in TechCo's vision but must decide whether to fully back their ambitious plans or take a more cautious approach.
+
+The outcome of this meeting will shape the future of both TechCo and InvestGroup's investment portfolio. Will they find a mutually beneficial arrangement, or will conflicting strategies lead to a suboptimal outcome for both parties? The stakes are high in this economic game of strategy and negotiation.
+[/Scenario]

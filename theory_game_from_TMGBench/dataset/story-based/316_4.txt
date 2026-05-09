@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Olivia, a talented but struggling painter",
+  "B": "Marcus, an established gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde piece",
+  "A2": "Paint a safe, commercially appealing work",
+  "B1": "Host a traditional group exhibition",
+  "B2": "Organize an exclusive, cutting-edge solo show"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a provocative piece for an exclusive solo show",
+    3: "Paint a safe work for an exclusive solo show",
+    2: "Create a provocative piece for a traditional group exhibition",
+    1: "Paint a safe work for a traditional group exhibition"
+  },
+  "B": {
+    4: "Host an exclusive solo show with a provocative piece",
+    3: "Host an exclusive solo show with a safe, commercial work",
+    2: "Host a traditional group exhibition with a provocative piece",
+    1: "Host a traditional group exhibition with a safe, commercial work"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 4 \ 4 |
+| A2    | 1 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Olivia, a talented but struggling painter, finds herself at a crossroads in her career. She's been given an opportunity to showcase her work at Marcus's prestigious gallery, known for launching artists into stardom. However, the nature of the exhibition is still undecided, and both Olivia and Marcus must make choices that will affect their success and reputations.
+
+Olivia has two options: she can create a provocative, avant-garde piece (A1) that truly represents her artistic vision but might be controversial, or she can play it safe and paint a commercially appealing work (A2) that's more likely to sell but doesn't challenge her artistically.
+
+Marcus, the gallery owner, also faces a decision. He can either host a traditional group exhibition (B1) featuring multiple artists, which is a safer bet financially but less exciting, or he can take a risk and organize an exclusive, cutting-edge solo show (B2) that could generate significant buzz in the art world.
+
+Their preferences align in an interesting way. Both Olivia and Marcus would most prefer to create/host a provocative piece in an exclusive solo show (4,4). This scenario would allow Olivia to express her true artistic vision while giving Marcus the opportunity to showcase a potentially groundbreaking new talent.
+
+Their second preference is to have a safe, commercial work in an exclusive solo show (3,3). While not as exciting, this option still provides focused attention on Olivia's work and a potentially lucrative outcome for both parties.
+
+The third preference for both is to include a provocative piece in a traditional group exhibition (2,2). This scenario allows for some artistic expression but dilutes the impact by sharing the spotlight with other artists.
+
+Lastly, both consider having a safe, commercial work in a group exhibition (1,1) as their least preferred option, as it neither pushes artistic boundaries nor provides the focused attention of a solo show.
+
+The payoff matrix reflects these preferences, showing that the best outcome for both parties comes from choosing the riskier, more innovative options (A1 and B2). However, if either party chooses the safer option, it influences the other to do the same, potentially leading to a suboptimal outcome for both.
+
+This scenario illustrates the delicate balance between artistic integrity and commercial success in the art world, as well as the importance of mutual trust and risk-taking in achieving the best outcomes for both artists and gallery owners.
+[/Scenario]

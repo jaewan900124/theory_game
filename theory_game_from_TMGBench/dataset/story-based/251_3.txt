@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a project manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use existing technology",
+  "A2": "Develop new custom technology",
+  "B1": "Allocate more time for the project",
+  "B2": "Maintain original deadline"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Use existing technology with extended deadline",
+    3: "Use existing technology with original deadline",
+    2: "Develop new technology with extended deadline",
+    1: "Develop new technology with original deadline"
+  },
+  "B": {
+    4: "Use existing technology with extended deadline",
+    3: "Use existing technology with original deadline",
+    2: "Develop new technology with extended deadline",
+    1: "Develop new technology with original deadline"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Extended) | B2 (Original) |
+|-------|---------------|---------------|
+| A1 (Existing) | 3 \ 4         | 4 \ 3         |
+| A2 (New)      | 2 \ 2         | 1 \ 1         |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a skilled software developer, and Blake, an experienced project manager, are working together on a critical software project for their company. They face a crucial decision regarding the technology to be used and the project timeline.
+
+Alex has two choices: use existing technology (A1) or develop new custom technology (A2). Using existing technology would be faster and more reliable, but might not fully meet all project requirements. Developing new technology could potentially offer better results but would be riskier and more time-consuming.
+
+Blake, on the other hand, can either allocate more time for the project (B1) or maintain the original deadline (B2). Extending the deadline would allow for more thorough work but could delay other projects and increase costs. Keeping the original deadline would please upper management but might compromise the quality of the final product.
+
+Their preferences for the outcomes are as follows:
+
+Alex's most preferred scenario (4) is using existing technology with the original deadline, as it allows him to complete the project quickly without the stress of developing new technology. His second preference (3) is using existing technology with an extended deadline, giving him more time to refine the implementation. His third choice (2) is developing new technology with an extended deadline, which is challenging but at least provides enough time. His least preferred option (1) is developing new technology within the original deadline, which he sees as nearly impossible and highly stressful.
+
+Blake's top preference (4) is using existing technology with an extended deadline, as it balances project quality with manageable risk. His second choice (3) is using existing technology with the original deadline, which looks good for his management skills. His third preference (2) is developing new technology with an extended deadline, which could yield impressive results but with higher risk. His least preferred scenario (1) is developing new technology within the original deadline, which he sees as too risky and likely to fail.
+
+The payoff matrix reflects these preferences, with each cell showing the preference ranking for Alex and Blake respectively. They must now decide their strategies, knowing that their choices will interact to produce one of the four possible outcomes, each with different implications for the project's success and their professional reputations.
+[/Scenario]

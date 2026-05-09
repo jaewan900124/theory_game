@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Dr. Alice Chen, a molecular biologist",
+  "B": "Dr. Bob Smith, a geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while B works independently",
+    3: "Share findings openly while B collaborates",
+    2: "Keep findings private while B collaborates",
+    1: "Share findings openly while B works independently"
+  },
+  "B": {
+    4: "Work independently while A shares findings openly",
+    3: "Collaborate while A shares findings openly",
+    2: "Work independently while A keeps findings private",
+    1: "Collaborate while A keeps findings private"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 1 \ 4 |
+| A2    | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Alice Chen and Dr. Bob Smith are leading researchers in the field of gene editing for cancer treatment. They are both working on similar projects at different universities, studying the potential of CRISPR technology to target and eliminate cancer cells.
+
+Dr. Chen has recently made a breakthrough in her research, discovering a novel approach to increase the efficiency of gene editing in cancer cells. She now faces a dilemma: should she share her findings openly with the scientific community, potentially accelerating the progress in the field, or keep her research private to maintain a competitive edge?
+
+Dr. Smith, aware of Dr. Chen's reputation and recent progress, is considering whether to propose a collaboration or continue working independently on his own approach.
+
+Their decisions will impact not only their personal career advancements but also the progress of cancer treatment research as a whole. If both choose to cooperate (A1 and B1), they would make steady progress together, benefiting equally from the collaboration (3,3). If Dr. Chen shares her findings while Dr. Smith works independently (A1 and B2), Dr. Smith would gain a significant advantage (1,4). If Dr. Chen keeps her findings private while Dr. Smith attempts to collaborate (A2 and B1), Dr. Chen would have a slight edge, but progress would be limited (2,1). Finally, if both choose to work independently with Dr. Chen keeping her findings private (A2 and B2), Dr. Chen would maintain her competitive advantage while Dr. Smith would make some progress on his own (4,2).
+
+The scientific community eagerly awaits their decisions, knowing that the outcome could significantly impact the future of cancer treatment research.
+[/Scenario]

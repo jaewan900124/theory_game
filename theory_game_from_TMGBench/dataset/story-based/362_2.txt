@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a marine biologist",
+  "B": "Dr. Alex Rivera, a marine biologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Keep research findings private",
+  "B1": "Share research findings",
+  "B2": "Keep research findings private"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both share findings, leading to a breakthrough and joint publication",
+    3: "Share findings while B keeps private, gaining respect but missing collaboration",
+    2: "Keep findings private while B shares, potentially falling behind",
+    1: "Both keep findings private, slowing overall progress"
+  },
+  "B": {
+    4: "Both share findings, leading to a breakthrough and joint publication",
+    3: "Share findings while A keeps private, gaining respect but missing collaboration",
+    2: "Keep findings private while A shares, potentially falling behind",
+    1: "Both keep findings private, slowing overall progress"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 1 \ 2 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Dr. Alex Rivera are marine biologists working on separate research projects studying the impact of climate change on coral reef ecosystems. Both scientists have made significant discoveries that could potentially lead to a breakthrough in understanding coral resilience.
+
+They are attending an international marine biology conference where they have the opportunity to share their findings with each other. However, they face a dilemma: should they share their research and risk losing individual recognition, or keep it private and potentially miss out on a collaborative breakthrough?
+
+If both scientists choose to share their findings (A1, B1), they would combine their knowledge, leading to a major breakthrough in coral reef conservation. This scenario would result in a joint publication and equal recognition, represented by a payoff of (3, 3) for both scientists.
+
+If one scientist shares while the other keeps their findings private (A1, B2 or A2, B1), the sharing scientist would gain respect from the scientific community for their openness but miss out on the potential for a collaborative breakthrough. The scientist keeping their research private might gain a temporary advantage but risk falling behind in the long run. These scenarios are represented by payoffs of (4, 4) and (1, 2) or (2, 1), respectively.
+
+If both scientists decide to keep their findings private (A2, B2), overall progress in the field would be slowed, and both would miss out on the potential for a significant breakthrough. This scenario is the least preferred for both, represented by a payoff of (2, 1) or (1, 2).
+
+The scientists must now decide whether to cooperate by sharing their findings or compete by keeping them private, knowing that their decision will impact not only their careers but also the progress of coral reef conservation efforts.
+[/Scenario]

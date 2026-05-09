@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Shoot the ball",
+  "B1": "Set a screen",
+  "B2": "Call for the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Shoot and score",
+    3: "Pass and teammate scores",
+    2: "Pass and play continues",
+    1: "Shoot and miss"
+  },
+  "B": {
+    4: "Receive pass and score",
+    3: "Teammate shoots and scores",
+    2: "Set screen and play continues",
+    1: "Call for ball but don't receive it"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set screen) | B2 (Call for ball) |
+|-------|-----------------|---------------------|
+| A1 (Pass) | 2 \ 4           | 3 \ 1               |
+| A2 (Shoot) | 1 \ 2           | 4 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+It's the final seconds of a crucial basketball game, and Alex's team is down by one point. Alex has just received the ball near the three-point line, with Blake nearby. The crowd is on their feet, and the tension is palpable.
+
+Alex (A) has two choices: pass the ball (A1) or shoot it (A2). Blake (B) can either set a screen (B1) or call for the ball (B2). Their decisions will determine the outcome of the game and their individual glory.
+
+If Alex passes (A1) and Blake sets a screen (B1), the play continues smoothly (A: 2), but Blake gets an assist opportunity (B: 4). If Alex passes (A1) and Blake calls for the ball (B2), Alex makes a good pass (A: 3), but Blake might not be in the best position to score (B: 1).
+
+If Alex decides to shoot (A2) and Blake sets a screen (B1), Alex might take a contested shot and potentially miss (A: 1), while Blake contributes to the play but doesn't get direct credit (B: 2). However, if Alex shoots (A2) and Blake calls for the ball (B2), Alex has a better chance of scoring (A: 4), and Blake could potentially get the rebound or be part of a scoring play (B: 3).
+
+Alex prefers to be the hero and score the winning basket, but also values team play. Blake wants to contribute significantly to the final play, either by scoring or assisting. Both players must make their decisions simultaneously, without knowing what the other will do.
+
+As the clock ticks down, Alex and Blake must make their choices. Will they prioritize personal glory or team success? The outcome of the game hangs in the balance, dependent on this crucial moment of decision-making between two teammates and rivals.
+[/Scenario]

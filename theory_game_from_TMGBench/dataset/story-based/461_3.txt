@@ -1,0 +1,63 @@
+[Characters]
+{
+  "A": "Captain Elena Rodriguez",
+  "B": "Dr. Xander Chen"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on Mars exploration",
+  "A2": "Prioritize deep space missions",
+  "B1": "Develop advanced propulsion technology",
+  "B2": "Invest in terraforming research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lead deep space missions with advanced propulsion",
+    3: "Conduct deep space missions with current technology",
+    2: "Explore Mars with advanced propulsion",
+    1: "Continue Mars exploration with current technology"
+  },
+  "B": {
+    4: "Apply terraforming research to Mars exploration",
+    3: "Use current technology for Mars exploration",
+    2: "Adapt terraforming research for deep space missions",
+    1: "Develop propulsion for deep space without immediate application"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Propulsion) | B2 (Terraforming) |
+|-------|-----------------|-------------------|
+| A1 (Mars) | 1 \ 3 | 2 \ 4 |
+| A2 (Deep Space) | 3 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+The year is 2045, and humanity stands at the precipice of a new era in space exploration. Captain Elena Rodriguez, the ambitious leader of the Global Space Initiative (GSI), and Dr. Xander Chen, a brilliant scientist heading the Advanced Space Technologies Division, find themselves at a crucial decision point that will shape the future of human space exploration.
+
+Captain Rodriguez must choose between focusing on Mars exploration (A1) or prioritizing deep space missions (A2). Meanwhile, Dr. Chen faces the decision to either develop advanced propulsion technology (B1) or invest in terraforming research (B2).
+
+Their choices will lead to four possible scenarios:
+
+1. If both focus on Mars (A1) and propulsion (B1), it results in continued Mars exploration with improved travel capabilities. This is Rodriguez's least preferred outcome (1) but Chen's third choice (3).
+
+2. If Rodriguez chooses Mars (A1) and Chen opts for terraforming (B2), it leads to enhanced Mars exploration with terraforming potential. This is Rodriguez's second choice (2) and Chen's most desired outcome (4).
+
+3. If Rodriguez prioritizes deep space (A2) and Chen focuses on propulsion (B1), it enables ambitious deep space missions with advanced propulsion. This is Rodriguez's third preference (3) but Chen's least favorite (1).
+
+4. If Rodriguez chooses deep space (A2) and Chen invests in terraforming (B2), it results in deep space exploration with potential for finding and terraforming exoplanets. This is Rodriguez's most preferred outcome (4) and Chen's second choice (2).
+
+Captain Rodriguez dreams of pushing the boundaries of human exploration into the far reaches of space, believing it will inspire humanity and lead to groundbreaking discoveries. However, she recognizes the importance of Mars as a stepping stone and the public's fascination with the Red Planet.
+
+Dr. Chen, on the other hand, is passionate about transforming other worlds for human habitation. He sees Mars as the perfect testing ground for terraforming technologies but also understands the potential applications for deep space exploration.
+
+As they sit across from each other in the GSI's strategic planning room, surrounded by holographic projections of solar systems and spacecraft designs, they must make their decisions. The future of space exploration hangs in the balance, dependent on whether they choose to cooperate or pursue their individual visions.
+
+[/Scenario]

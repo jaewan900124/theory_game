@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a cognitive psychologist",
+  "B": "Dr. Michael Thompson, a behavioral psychologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Withhold research findings",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Withhold findings while B works independently",
+    3: "Share findings while B collaborates",
+    2: "Share findings while B works independently",
+    1: "Withhold findings while B collaborates"
+  },
+  "B": {
+    4: "A shares findings while B works independently",
+    3: "A shares findings while B collaborates",
+    2: "A withholds findings while B works independently",
+    1: "A withholds findings while B collaborates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Work independently) |
+|-------|-------------------|--------------------------|
+| A1 (Share)    | 3 \ 3            | 2 \ 4                   |
+| A2 (Withhold) | 1 \ 1            | 4 \ 2                   |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Dr. Michael Thompson are two renowned psychologists working on a groundbreaking project studying the effects of social media on adolescent mental health. They have been assigned to the same research grant but have the option to either collaborate or work independently.
+
+Dr. Chen has recently made a significant breakthrough in her cognitive psychology research, which could greatly benefit the project. She must decide whether to share her findings with Dr. Thompson or keep them to herself. Meanwhile, Dr. Thompson needs to choose between collaborating with Dr. Chen or pursuing the project independently using his expertise in behavioral psychology.
+
+If both decide to cooperate (A1B1), sharing information and collaborating, they would achieve good results and equal recognition (3,3). This scenario is the third preference for both researchers.
+
+If Dr. Chen shares her findings but Dr. Thompson decides to work independently (A1B2), Dr. Thompson would benefit greatly from the shared information while working alone, giving him the highest payoff (4). Dr. Chen would receive less credit for her contribution, resulting in a lower payoff (2). This is Dr. Thompson's most preferred outcome but Dr. Chen's third choice.
+
+If Dr. Chen withholds her findings and Dr. Thompson chooses to collaborate (A2B1), both would struggle due to the lack of crucial information, resulting in the least preferred outcome for both (1,1).
+
+Finally, if Dr. Chen withholds her findings and Dr. Thompson works independently (A2B2), Dr. Chen would benefit the most by keeping her breakthrough to herself (4), while Dr. Thompson would achieve moderate success working alone (2). This scenario is Dr. Chen's most preferred outcome but Dr. Thompson's third choice.
+
+The researchers must now decide their course of action, knowing that their choices will significantly impact the project's success and their individual recognition in the field of psychology.
+[/Scenario]

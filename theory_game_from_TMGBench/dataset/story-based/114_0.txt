@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Michael Thompson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current hospital policies",
+  "A2": "Implement new collaborative care model",
+  "B1": "Refer patients exclusively to the hospital",
+  "B2": "Diversify patient referrals to multiple facilities"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new model with diverse referrals",
+    3: "Maintain current policies with exclusive referrals",
+    2: "Implement new model with exclusive referrals",
+    1: "Maintain current policies with diverse referrals"
+  },
+  "B": {
+    4: "Current policies with exclusive referrals",
+    3: "New model with diverse referrals",
+    2: "Current policies with diverse referrals",
+    1: "New model with exclusive referrals"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 1 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the hospital administrator, and Dr. Michael Thompson, a respected private practice physician, find themselves at a crossroads in the local healthcare landscape. The hospital is considering implementing a new collaborative care model, while Dr. Thompson is reassessing his patient referral strategy.
+
+Dr. Chen has two options: maintain the current hospital policies (A1) or implement the new collaborative care model (A2). The new model would involve closer integration with local physicians but would require significant changes and investment.
+
+Dr. Thompson, on the other hand, is deciding whether to refer his patients exclusively to Dr. Chen's hospital (B1) or diversify his referrals to multiple facilities in the area (B2).
+
+Their decisions will impact each other significantly. If Dr. Chen maintains current policies and Dr. Thompson refers exclusively to the hospital (A1, B1), it's the best outcome for Dr. Thompson (4) as he benefits from the familiar system, but it's the least preferred for Dr. Chen (1) as it doesn't allow for growth or improvement.
+
+If Dr. Chen implements the new model and Dr. Thompson diversifies his referrals (A2, B2), it's the best outcome for Dr. Chen (4) as it allows for system improvement and broader community engagement. It's also good for Dr. Thompson (3) as he gains flexibility in patient care.
+
+If Dr. Chen maintains current policies and Dr. Thompson diversifies referrals (A1, B2), it's better for Dr. Chen (3) than losing all referrals, but it's the least preferred for Dr. Thompson (1) as he loses the benefits of a close hospital relationship.
+
+Finally, if Dr. Chen implements the new model and Dr. Thompson refers exclusively to the hospital (A2, B1), it's a compromise for both. Dr. Chen sees some improvement (2), while Dr. Thompson maintains a strong hospital relationship but faces changes (2).
+
+As they prepare for a meeting to discuss the future of healthcare in their community, both Dr. Chen and Dr. Thompson must carefully consider their choices, knowing that their decisions will not only affect their own situations but also significantly impact the other's practice and the overall healthcare ecosystem in their city.
+[/Scenario]

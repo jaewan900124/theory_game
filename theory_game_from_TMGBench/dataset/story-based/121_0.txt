@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Council President Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain traditional lecture-based teaching",
+  "A2": "Implement new interactive teaching methods",
+  "B1": "Support the current teaching system",
+  "B2": "Advocate for educational reform"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new methods with student support",
+    3: "Maintain traditional methods with student reform advocacy",
+    2: "Maintain traditional methods with student support",
+    1: "Implement new methods without student support"
+  },
+  "B": {
+    4: "Professor maintains traditional methods while students advocate for reform",
+    3: "Both professor and students agree on educational reform",
+    2: "Both maintain the current system",
+    1: "Professor implements new methods without student support"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 3 |
+| A2    | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenville University, a debate has erupted over the future of education. Professor Smith, a seasoned academic, is torn between maintaining his traditional lecture-based teaching methods and implementing new interactive approaches. Meanwhile, Jane, the Student Council President, is deciding whether to support the current system or advocate for educational reform.
+
+Professor Smith prefers to implement new methods if he has student support, as it would make the transition smoother and more effective. His second choice would be to maintain traditional methods while students push for reform, as it might gradually lead to change without immediate disruption. His third preference is to keep the status quo with student support, ensuring stability. His least preferred option is to implement new methods without student backing, fearing resistance and poor outcomes.
+
+Jane, representing the student body, would ideally like to see the professor maintain traditional methods while students advocate for reform, believing this would lead to a balanced, student-driven change. Her second preference is for both parties to agree on educational reform, fostering a collaborative environment. She would rather both maintain the current system than have the professor implement new methods without student input, which she considers the worst-case scenario.
+
+The choices they make will significantly impact the learning environment at Greenville University. If Professor Smith maintains traditional methods (A1) and Jane supports the current system (B1), it results in a stable but potentially stagnant educational environment (2,4). If Smith maintains traditional methods (A1) while Jane advocates for reform (B2), it creates a dynamic tension that could lead to gradual, positive change (3,3).
+
+If Smith implements new methods (A2) with Jane's support for the current system (B1), it might lead to confusion and resistance among students (1,2). However, if Smith implements new methods (A2) while Jane advocates for reform (B2), it could result in a rapid and successful educational transformation (4,1).
+
+As both Professor Smith and Jane contemplate their decisions, they must consider not only their own preferences but also how their choices will interact to shape the future of education at Greenville University.
+[/Scenario]

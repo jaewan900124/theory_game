@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Amelia Anderson, a marine biologist",
+  "B": "Dr. Benjamin Baker, an ecologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual species research",
+  "A2": "Pursue ecosystem-wide study",
+  "B1": "Concentrate on habitat preservation",
+  "B2": "Investigate species interactions"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on species interactions (A1, B2)",
+    3: "Both focus on individual aspects (A1, B1)",
+    2: "Pursue ecosystem study while B focuses on habitat (A2, B1)",
+    1: "Ecosystem study with species interaction focus (A2, B2)"
+  },
+  "B": {
+    4: "Collaborate on species interactions (A1, B2)",
+    3: "Both focus on individual aspects (A1, B1)",
+    2: "Investigate interactions while A studies ecosystem (A2, B2)",
+    1: "Focus on habitat while A studies individuals (A2, B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 2 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Amelia Anderson and Dr. Benjamin Baker are two renowned biologists working on a critical research project in the Coral Triangle, a marine area known for its exceptional biodiversity. Their research could significantly impact conservation efforts in the region, but they must decide how to approach their study.
+
+Dr. Anderson, a marine biologist, is torn between focusing on individual species research (A1) or pursuing an ecosystem-wide study (A2). Her expertise lies in studying specific marine species, but she recognizes the potential benefits of a broader approach.
+
+Dr. Baker, an ecologist, is deciding whether to concentrate on habitat preservation (B1) or investigate species interactions (B2). His background is in ecosystem dynamics, but he's also interested in how individual species affect one another.
+
+Both scientists prefer collaborating on species interactions (A1, B2) as it combines their strengths and could yield the most comprehensive results. Their second preference is to focus on their individual specialties (A1, B1), which would still produce valuable data but might miss some important connections.
+
+Dr. Anderson's least preferred option is conducting an ecosystem study while Dr. Baker focuses on species interactions (A2, B2), as she feels this would be redundant. Similarly, Dr. Baker's least preferred scenario is focusing on habitat preservation while Dr. Anderson studies individual species (A2, B1), as he believes this approach might be too narrow.
+
+The scientists must carefully consider their choices, as their decision will not only affect their research outcomes but also the potential impact on conservation efforts in the Coral Triangle. They need to balance their individual expertise with the need for collaboration to achieve the best possible results for marine biodiversity preservation.
+[/Scenario]

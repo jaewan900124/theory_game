@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a talented software engineer",
+  "B": "Blake, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Stay at current job",
+  "A2": "Join Blake's startup",
+  "B1": "Offer Alex a competitive salary",
+  "B2": "Offer Alex a lower salary with equity"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Join startup with high salary",
+    3: "Stay at current job with stability",
+    2: "Stay at current job, missing opportunity",
+    1: "Join startup with low salary"
+  },
+  "B": {
+    4: "Hire Alex with low salary and equity",
+    3: "Hire Alex with competitive salary",
+    2: "Alex stays at current job, startup struggles",
+    1: "Alex rejects offer, startup struggles more"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Competitive Salary) | B2 (Lower Salary + Equity) |
+|-------|-------------------------|----------------------------|
+| A1 (Stay)     | 2 \ 2                   | 1 \ 1                      |
+| A2 (Join)     | 3 \ 4                   | 4 \ 3                      |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software engineer, finds himself at a career crossroads. His current job offers stability and a decent salary, but he feels unchallenged. Meanwhile, Blake, the ambitious CEO of a promising tech startup, has been trying to recruit Alex to join his team.
+
+Blake knows that Alex's expertise could be a game-changer for his startup. He has two options: offer Alex a competitive salary (B1) that matches or slightly exceeds his current pay, or propose a lower salary with equity in the company (B2). Blake prefers to conserve cash but is willing to pay more if necessary.
+
+Alex, on the other hand, must decide whether to stay at his current job (A1) or take the leap and join Blake's startup (A2). He's excited about the startup's potential but also values the security of his current position.
+
+The payoff matrix represents their preferences:
+
+If Alex stays and Blake offers a competitive salary (A1, B1), Alex feels he's missed an opportunity but remains stable (2), while Blake's startup struggles without key talent (2).
+
+If Alex stays despite a lower salary offer (A1, B2), both parties are at their least preferred outcome (1, 1) - Alex feels undervalued, and Blake's startup struggles even more.
+
+If Alex joins with a competitive salary (A2, B1), Alex is satisfied with the new challenge and pay (3), while Blake is thrilled to have secured top talent, even at a higher cost (4).
+
+If Alex accepts the lower salary with equity (A2, B2), it's Alex's most preferred outcome (4) due to the potential long-term gain, and Blake is content with the balance of talent acquisition and cash conservation (3).
+
+The scenario highlights the complex dynamics of employment negotiations, where both parties must weigh immediate benefits against long-term potential, and personal growth against financial security.
+[/Scenario]

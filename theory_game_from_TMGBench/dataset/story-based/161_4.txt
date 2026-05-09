@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "EcoCorp, a large industrial company",
+  "B": "GreenWatch, an environmental protection organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement eco-friendly practices",
+  "A2": "Continue current practices",
+  "B1": "Collaborate with EcoCorp",
+  "B2": "Publicly criticize EcoCorp"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Continue current practices while GreenWatch collaborates",
+    3: "Implement eco-friendly practices while GreenWatch criticizes",
+    2: "Continue current practices while GreenWatch criticizes",
+    1: "Implement eco-friendly practices while GreenWatch collaborates"
+  },
+  "B": {
+    4: "EcoCorp implements eco-friendly practices while GreenWatch collaborates",
+    3: "EcoCorp implements eco-friendly practices while GreenWatch criticizes",
+    2: "EcoCorp continues current practices while GreenWatch collaborates",
+    1: "EcoCorp continues current practices while GreenWatch criticizes"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoCorp \ GreenWatch | Collaborate | Criticize |
+|-----------------------|-------------|-----------|
+| Eco-friendly          | 1 \ 4       | 2 \ 3     |
+| Current practices     | 3 \ 2       | 4 \ 1     |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling industrial city, EcoCorp, a large manufacturing company, faces a crucial decision regarding its environmental impact. Meanwhile, GreenWatch, a prominent environmental protection organization, is considering how to approach EcoCorp's practices.
+
+EcoCorp has two choices: implement eco-friendly practices or continue its current practices. Implementing eco-friendly measures would require significant investment and potentially reduce short-term profits, but it could improve the company's public image and long-term sustainability. Continuing current practices would maintain profit margins but risk public backlash and potential regulatory issues.
+
+GreenWatch can either collaborate with EcoCorp, offering expertise and support for environmental improvements, or publicly criticize the company's practices to pressure them into change.
+
+EcoCorp's ideal scenario is to continue its current practices while benefiting from GreenWatch's collaboration, which would improve its image without the costs of implementing eco-friendly measures. Their least preferred outcome is implementing eco-friendly practices while GreenWatch collaborates, as this would incur costs without the benefit of improved public perception.
+
+GreenWatch's most preferred outcome is for EcoCorp to implement eco-friendly practices while they collaborate, as this would achieve their environmental goals and demonstrate the effectiveness of cooperation. Their least desired scenario is EcoCorp continuing current practices while GreenWatch criticizes, as this would show their ineffectiveness in influencing corporate behavior.
+
+The choices made by both parties will determine the future of the city's environment and the relationship between industry and environmental activism. Will they find a way to cooperate for mutual benefit, or will their conflicting interests lead to confrontation?
+[/Scenario]

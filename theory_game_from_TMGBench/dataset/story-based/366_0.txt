@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInno",
+  "B": "Michael, CEO of DataPro"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new AI product",
+  "A2": "Focus on existing product line",
+  "B1": "Maintain current market strategy",
+  "B2": "Collaborate with TechInno on AI development"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop AI product with DataPro's collaboration",
+    3: "Develop AI product independently",
+    2: "Focus on existing products while DataPro collaborates",
+    1: "Focus on existing products while DataPro maintains its strategy"
+  },
+  "B": {
+    4: "Collaborate on AI development with TechInno",
+    3: "Maintain strategy while TechInno focuses on existing products",
+    2: "Maintain strategy while TechInno develops AI",
+    1: "Maintain strategy while TechInno focuses on existing products"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 1 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the fast-paced world of tech startups, Sarah, the CEO of TechInno, and Michael, the CEO of DataPro, find themselves at a crossroads. Both companies are successful in their respective niches, but the allure of artificial intelligence threatens to disrupt the market.
+
+Sarah is considering whether to develop a groundbreaking AI product or to play it safe by focusing on TechInno's existing product line. She knows that venturing into AI could be risky but potentially very rewarding. Her ideal scenario would be to develop the AI product with DataPro's collaboration, combining their strengths for maximum impact.
+
+Michael, on the other hand, is weighing the options of maintaining DataPro's current market strategy or joining forces with TechInno to develop AI technology. He recognizes the potential of AI but is wary of the risks involved in changing their established business model.
+
+If Sarah decides to develop the AI product (A1) and Michael maintains his current strategy (B1), TechInno would gain a moderate advantage (3), while DataPro would see some benefits from the market expansion (2). However, if Michael chooses to collaborate (B2) while Sarah develops the AI (A1), both companies would reap significant rewards (4,4), creating a win-win situation.
+
+Should Sarah decide to focus on existing products (A2) while Michael maintains his strategy (B1), both companies would stagnate, resulting in the least preferred outcome for both (1,1). If Sarah sticks to existing products (A2) but Michael opts for collaboration (B2), DataPro would gain a slight edge (3), while TechInno would see minimal growth (2).
+
+As the tech landscape evolves, Sarah and Michael must carefully consider their choices, knowing that their decisions will not only impact their own companies but potentially reshape the entire industry. The question remains: will they choose competition or cooperation in their pursuit of innovation and market dominance?
+[/Scenario]

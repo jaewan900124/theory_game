@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Amelia Chen, a geneticist",
+  "B": "Dr. Benjamin Park, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual research",
+  "A2": "Collaborate on joint project",
+  "B1": "Focus on individual research",
+  "B2": "Collaborate on joint project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while B focuses on individual research",
+    3: "Both collaborate on joint project",
+    2: "Both focus on individual research",
+    1: "Focus on individual research while B collaborates"
+  },
+  "B": {
+    4: "Collaborate while A focuses on individual research",
+    3: "Both collaborate on joint project",
+    2: "Focus on individual research while A collaborates",
+    1: "Both focus on individual research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 4 \ 4 |
+| A2    | 3 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Amelia Chen, a brilliant geneticist, and Dr. Benjamin Park, a renowned microbiologist, find themselves at a crossroads in their research careers. Both scientists are working on groundbreaking projects at the same prestigious research institute, studying the genetic mechanisms of antibiotic resistance in bacteria.
+
+They each have two choices: to focus on their individual research or to collaborate on a joint project that combines their expertise. Their decisions will significantly impact their career trajectories and the potential breakthroughs in their field.
+
+Dr. Chen's preference is to maintain her independence while benefiting from Dr. Park's contributions. She would ideally like to focus on her individual research while Dr. Park collaborates, as this would allow her to maintain control over her work while still gaining insights from his expertise.
+
+Dr. Park, on the other hand, sees the greatest benefit in a scenario where Dr. Chen focuses on her individual research while he collaborates. This would allow him to learn from her genetic approach while still pursuing his own microbiological interests.
+
+Both scientists recognize the potential benefits of full collaboration, ranking it as their second preference. They understand that combining their knowledge could lead to significant advancements in understanding antibiotic resistance.
+
+The least preferred outcome for Dr. Chen is focusing on individual research while Dr. Park collaborates, as she fears missing out on potential breakthroughs. For Dr. Park, the least desirable scenario is when both scientists focus solely on their individual research, as he values the exchange of ideas.
+
+The payoff matrix reflects these preferences, with the highest payoff (4) for each scientist occurring when they focus on individual research while the other collaborates. Full collaboration offers a moderate benefit for both (3), while mutual focus on individual research provides a slightly better outcome for Dr. Chen (2) compared to Dr. Park (1).
+
+As they prepare for an important meeting to decide the direction of their research, both Dr. Chen and Dr. Park must carefully consider their choices, weighing the potential benefits and drawbacks of collaboration versus individual pursuit in the competitive world of biological research.
+[/Scenario]

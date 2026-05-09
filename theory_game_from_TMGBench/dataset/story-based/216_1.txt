@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, the project manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work overtime",
+  "A2": "Maintain regular hours",
+  "B1": "Offer a bonus",
+  "B2": "No bonus"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work overtime with a bonus",
+    3: "Maintain regular hours without a bonus",
+    2: "Work overtime without a bonus",
+    1: "Maintain regular hours with a bonus"
+  },
+  "B": {
+    4: "Alex works overtime without a bonus",
+    3: "Alex maintains regular hours with a bonus",
+    2: "Alex works overtime with a bonus",
+    1: "Alex maintains regular hours without a bonus"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Alex \ Blake | Offer bonus (B1) | No bonus (B2) |
+|--------------|------------------|---------------|
+| Overtime (A1)| 2 \ 4            | 4 \ 2         |
+| Regular (A2) | 1 \ 3            | 3 \ 1         |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, is working on a crucial project for his company. The deadline is approaching, and Blake, the project manager, is considering ways to ensure the project's timely completion.
+
+Blake has two options: offer a bonus for extra work (B1) or maintain the current compensation structure (B2). Alex, in turn, can choose to work overtime (A1) or maintain regular working hours (A2).
+
+Alex's most preferred outcome is to work overtime and receive a bonus (A1B1, preference 4), as it would allow him to earn more while advancing the project. His least preferred scenario is maintaining regular hours while a bonus is offered (A2B1, preference 1), as he would miss out on the extra compensation.
+
+Blake, on the other hand, most prefers Alex working overtime without offering a bonus (A1B2, preference 4), as it would ensure project completion without additional costs. Blake's least preferred outcome is Alex maintaining regular hours without a bonus (A2B2, preference 1), as it might jeopardize the project's timeline.
+
+The situation creates an interesting dynamic:
+1. If Blake offers a bonus and Alex works overtime (A1B1), Alex is moderately satisfied (2) while Blake is very pleased (4).
+2. If Blake offers no bonus and Alex works overtime (A1B2), Alex is very satisfied (4) but Blake is only moderately pleased (2).
+3. If Blake offers a bonus and Alex maintains regular hours (A2B1), Alex is dissatisfied (1) while Blake is somewhat satisfied (3).
+4. If Blake offers no bonus and Alex maintains regular hours (A2B2), Alex is somewhat satisfied (3) but Blake is dissatisfied (1).
+
+This scenario illustrates the complex interplay between employee motivation, management strategies, and project outcomes in a typical workplace setting.
+[/Scenario]

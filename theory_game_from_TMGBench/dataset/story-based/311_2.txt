@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a tech startup founder",
+  "B": "Jack, a venture capitalist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Seek external funding",
+  "A2": "Bootstrap the company",
+  "B1": "Offer standard terms",
+  "B2": "Offer favorable terms"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive favorable funding terms",
+    3: "Successfully bootstrap the company",
+    2: "Receive standard funding terms",
+    1: "Struggle with bootstrapping"
+  },
+  "B": {
+    4: "Invest with favorable terms",
+    3: "Invest with standard terms",
+    2: "Miss out on a good investment",
+    1: "Miss out on a potentially great investment"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Standard Terms) | B2 (Favorable Terms) |
+|-------|---------------------|----------------------|
+| A1 (Seek Funding) | 2 \ 3 | 4 \ 4 |
+| A2 (Bootstrap) | 1 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a brilliant software engineer, has founded a promising tech startup developing an innovative AI-powered project management tool. As her company gains traction, she faces a crucial decision: seek external funding to accelerate growth or bootstrap the company using its current resources.
+
+Jack, a seasoned venture capitalist, has heard about Emma's startup and is interested in potentially investing. He must decide whether to offer standard investment terms or more favorable terms to entice Emma and secure the deal.
+
+Emma prefers receiving favorable funding terms the most, as it would provide the necessary capital without sacrificing too much equity. Her second choice would be successfully bootstrapping the company, maintaining full control but potentially slowing growth. Receiving standard funding terms is her third preference, while struggling with bootstrapping is her least desired outcome.
+
+Jack's top preference is to invest with favorable terms, as he believes Emma's startup has immense potential and wants to ensure he doesn't miss out. His second choice is to invest with standard terms, still securing a piece of the promising venture. Missing out on a good investment by offering standard terms when Emma chooses to bootstrap is his third preference, while completely missing out on a potentially great investment is his least desired outcome.
+
+If Emma seeks funding (A1) and Jack offers standard terms (B1), Emma receives adequate funding but not ideal terms (2), while Jack secures a solid investment (3). If Emma seeks funding (A1) and Jack offers favorable terms (B2), both parties achieve their most desired outcome (4,4) with Emma receiving the capital she needs and Jack securing a promising investment.
+
+If Emma decides to bootstrap (A2) and Jack offers standard terms (B1), Emma struggles with limited resources (1), and Jack misses out on the investment opportunity (1). However, if Emma bootstraps (A2) and Jack offers favorable terms (B2), Emma successfully grows her company independently (3), while Jack misses out on a good investment but maintains a positive relationship for potential future opportunities (2).
+
+As they contemplate their choices, both Emma and Jack must consider the potential outcomes and how their decisions might affect not only their immediate goals but also their long-term success in the competitive world of tech startups and venture capital.
+[/Scenario]

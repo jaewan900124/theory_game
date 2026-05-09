@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Impose trade tariffs",
+  "A2": "Engage in free trade",
+  "B1": "Retaliate with own tariffs",
+  "B2": "Maintain open markets"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Impose tariffs while China maintains open markets",
+    3: "Both engage in free trade",
+    2: "Both impose tariffs",
+    1: "China retaliates while US maintains open markets"
+  },
+  "B": {
+    4: "US maintains open markets while China imposes tariffs",
+    3: "Both engage in free trade",
+    2: "Both impose tariffs",
+    1: "US imposes tariffs while China maintains open markets"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| US \ China | Retaliate (B1) | Maintain Open (B2) |
+|------------|----------------|---------------------|
+| Tariffs (A1)| 1 \ 4         | 4 \ 1               |
+| Free Trade (A2)| 2 \ 2      | 3 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex world of international relations, the United States and China find themselves at a crossroads in their economic relationship. Both nations are considering their trade policies, weighing the benefits of protectionism against the advantages of free trade.
+
+The United States (Player A) is contemplating whether to impose trade tariffs on Chinese goods or to maintain its commitment to free trade. Similarly, China (Player B) is deciding whether to retaliate with its own tariffs or keep its markets open.
+
+For the United States, the most preferred outcome (4) would be to impose tariffs while China maintains open markets, allowing them to protect domestic industries while still benefiting from access to Chinese markets. Their least preferred scenario (1) would be the opposite: maintaining open markets while China imposes tariffs, potentially disadvantaging US companies.
+
+China's preferences mirror those of the US. Their ideal situation (4) would be to impose tariffs on US goods while the US keeps its markets open, protecting Chinese industries while maintaining export opportunities. Their least desired outcome (1) would be facing US tariffs while keeping their own markets open.
+
+Both nations would prefer a scenario where they both engage in free trade (3) over a situation where both impose tariffs (2), recognizing the mutual benefits of open economic exchange.
+
+As tensions rise, both countries must decide their course of action. If the US chooses to impose tariffs (A1) and China retaliates (B1), both will end up in a suboptimal situation (1,4) where trade is restricted on both sides. If the US imposes tariffs (A1) but China maintains open markets (B2), the US achieves its best outcome while China faces its worst (4,1).
+
+Conversely, if the US engages in free trade (A2) and China retaliates (B1), China gains the upper hand while the US suffers (2,2). The most mutually beneficial outcome occurs when both nations choose free trade (A2, B2), resulting in a (3,3) payoff.
+
+This scenario illustrates the classic Prisoner's Dilemma in international trade relations. While cooperation through free trade would yield the best overall outcome, the temptation to defect for short-term gain creates a precarious situation where both nations might end up worse off.
+
+As diplomats and economic advisors scramble to analyze the situation, the world watches anxiously, knowing that the decisions made by these two economic superpowers will have far-reaching consequences for global trade and international relations.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a primary care physician",
+  "B": "Michael Thompson, a hospital administrator"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current patient load and work hours",
+  "A2": "Increase patient load and extend work hours",
+  "B1": "Maintain current hospital resources and staff",
+  "B2": "Reduce hospital resources and staff"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Increase patient load with maintained hospital resources",
+    3: "Maintain current patient load with maintained hospital resources",
+    2: "Maintain current patient load with reduced hospital resources",
+    1: "Increase patient load with reduced hospital resources"
+  },
+  "B": {
+    4: "Maintain current patient load but reduce hospital resources",
+    3: "Maintain current patient load and hospital resources",
+    2: "Increase patient load with reduced hospital resources",
+    1: "Increase patient load but maintain hospital resources"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 2 \ 4 |
+| A2    | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling urban hospital, Dr. Sarah Chen, a dedicated primary care physician, finds herself at odds with Michael Thompson, the hospital administrator. The hospital is facing increasing pressure to cut costs while maintaining quality care, creating a complex dilemma for both parties.
+
+Dr. Chen is committed to providing the best possible care for her patients, but she's already working long hours and managing a full patient load. She has two choices: maintain her current patient load and work hours (A1) or increase her patient load and extend her work hours (A2).
+
+Michael Thompson, on the other hand, is tasked with balancing the hospital's budget and operational efficiency. He can either maintain current hospital resources and staff levels (B1) or reduce them to cut costs (B2).
+
+If both Dr. Chen and Mr. Thompson choose to maintain the status quo (A1 and B1), they achieve a balance that is satisfactory for both, though not ideal. This scenario represents their third-best outcome (3,3).
+
+If Dr. Chen maintains her current load while Thompson reduces resources (A1 and B2), Chen faces challenges in providing care with fewer resources, her second-least preferred outcome (2). However, this is Thompson's most preferred scenario (4) as he achieves cost-cutting without increasing physician workload.
+
+Should Dr. Chen agree to increase her patient load while Thompson maintains resources (A2 and B1), both face their least preferred outcome (1,1). Chen struggles with an overwhelming workload, while Thompson fails to cut costs and sees increased resource utilization.
+
+The final scenario occurs if Chen increases her patient load and Thompson reduces resources (A2 and B2). This is Chen's most preferred outcome (4) as she can see more patients with the promise of eventual resource increase, but it's Thompson's second-least preferred (2) as it may lead to quality of care issues and potential backlash.
+
+As they navigate this complex situation, both Dr. Chen and Mr. Thompson must carefully consider their choices, weighing the immediate and long-term consequences for patient care, hospital operations, and their own professional satisfaction.
+[/Scenario]

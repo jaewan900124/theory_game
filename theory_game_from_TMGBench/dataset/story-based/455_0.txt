@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a cloud-based solution",
+  "A2": "Develop an edge computing solution",
+  "B1": "Design a general-purpose processor",
+  "B2": "Design a specialized AI chip"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Edge computing solution with specialized AI chip",
+    3: "Edge computing solution with general-purpose processor",
+    2: "Cloud-based solution with general-purpose processor",
+    1: "Cloud-based solution with specialized AI chip"
+  },
+  "B": {
+    4: "Cloud-based solution with specialized AI chip",
+    3: "Edge computing solution with specialized AI chip",
+    2: "Edge computing solution with general-purpose processor",
+    1: "Cloud-based solution with general-purpose processor"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 1 \ 4 |
+| A2    | 3 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a tech startup developing a new smart home system. They need to decide on the system's architecture and hardware components. Alex, the software developer, is responsible for designing the software architecture, while Blake, the hardware engineer, is in charge of selecting the appropriate processing unit.
+
+Alex has two choices: develop a cloud-based solution (A1) or an edge computing solution (A2). Blake can either design a general-purpose processor (B1) or a specialized AI chip (B2).
+
+Alex prefers edge computing solutions as they offer better privacy and lower latency. He believes the edge computing solution paired with a specialized AI chip would be ideal for the smart home system. His second choice would be the edge computing solution with a general-purpose processor. He considers the cloud-based solution less desirable, with the combination of cloud-based and specialized AI chip being his least preferred option due to potential compatibility issues.
+
+Blake, on the other hand, is excited about the potential of specialized AI chips. He believes a cloud-based solution with a specialized AI chip would showcase the company's cutting-edge technology best. His second choice would be an edge computing solution with the specialized AI chip. He considers the general-purpose processor less innovative, with the cloud-based solution using a general-purpose processor being his least preferred option.
+
+Their preferences create a dilemma. If Alex chooses the cloud-based solution (A1) and Blake designs a general-purpose processor (B1), they both get suboptimal results (2,1). If Alex goes for edge computing (A2) and Blake chooses the general-purpose processor (B1), Alex is happier but Blake is still not fully satisfied (3,2). If Alex chooses cloud-based (A1) and Blake designs the specialized AI chip (B2), Blake is thrilled but Alex is disappointed (1,4). The ideal scenario for both would be Alex developing the edge computing solution (A2) and Blake designing the specialized AI chip (B2), resulting in a (4,3) outcome.
+
+The challenge lies in finding a way to communicate and collaborate effectively to achieve the best overall outcome for the project, balancing their individual preferences with the company's goals.
+[/Scenario]

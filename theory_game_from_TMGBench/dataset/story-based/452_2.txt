@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Alexander, commander of the Northern Alliance",
+  "B": "General Brennan, commander of the Southern Federation"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Fortify defensive positions",
+  "A2": "Launch a surprise attack",
+  "B1": "Reinforce border outposts",
+  "B2": "Conduct covert operations"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch a successful surprise attack while B conducts covert operations",
+    3: "Launch a surprise attack while B reinforces border outposts",
+    2: "Fortify defenses while B reinforces border outposts",
+    1: "Fortify defenses while B conducts covert operations"
+  },
+  "B": {
+    4: "Conduct successful covert operations while A fortifies defenses",
+    3: "Reinforce border outposts while A fortifies defenses",
+    2: "Reinforce border outposts while A launches a surprise attack",
+    1: "Conduct covert operations while A launches a surprise attack"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 1 \ 4 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a world torn by conflict, two rival nations face off across a contested border. General Alexander of the Northern Alliance and General Brennan of the Southern Federation must make crucial decisions that will shape the future of their respective countries.
+
+General Alexander, known for his strategic acumen, weighs his options carefully. He can either fortify his defensive positions, ensuring the safety of his troops and key strongholds, or launch a daring surprise attack to catch the enemy off guard. His ultimate goal is to gain a decisive advantage in the ongoing conflict.
+
+Across the border, General Brennan contemplates her own strategy. She can choose to reinforce her border outposts, strengthening her defensive line, or conduct covert operations to gather intelligence and potentially sabotage the Northern Alliance's plans.
+
+Both generals understand that their choices will have far-reaching consequences. General Alexander's preference is to launch a successful surprise attack while Brennan is distracted by covert operations, giving him the upper hand. His least desired outcome is to focus on fortifying defenses while Brennan successfully carries out covert operations against his forces.
+
+General Brennan, on the other hand, would prefer to successfully conduct covert operations while Alexander is preoccupied with fortifying his defenses. Her worst-case scenario is attempting covert operations only to be caught off guard by Alexander's surprise attack.
+
+As tensions mount, both commanders must make their decisions without knowing the other's choice. The fate of their nations hangs in the balance, and the outcome of their strategic maneuvering will determine the course of the war.
+
+Will General Alexander risk it all with a surprise attack, or play it safe with a defensive strategy? Will General Brennan focus on strengthening her borders or gamble on the success of covert operations? The chess game of military strategy unfolds, with each decision bringing unforeseen consequences and potential turning points in this high-stakes conflict.
+[/Scenario]

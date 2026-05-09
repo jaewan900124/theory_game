@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Blake, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept Blake's job offer",
+  "A2": "Reject Blake's job offer",
+  "B1": "Offer a competitive salary and benefits package",
+  "B2": "Offer a lower salary with potential future benefits"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a high-paying job with good benefits",
+    3: "Get a decent job with potential for growth",
+    2: "Continue job searching",
+    1: "Accept a low-paying job with uncertain future"
+  },
+  "B": {
+    4: "Hire a talented employee at a reasonable cost",
+    3: "Hire a talented employee at a higher cost",
+    2: "Hire a talented employee with future promises",
+    1: "Fail to hire the desired candidate"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 2 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, has been approached by Blake, the CEO of a promising tech startup. Blake is eager to bring Alex on board, recognizing his potential to significantly contribute to the company's growth. However, both Alex and Blake face a dilemma in their decision-making process.
+
+Alex has two choices: accept Blake's job offer (A1) or reject it (A2). Meanwhile, Blake must decide whether to offer a competitive salary and benefits package (B1) or a lower salary with potential future benefits (B2).
+
+If Alex accepts the offer and Blake provides a competitive package (A1, B1), Alex will be satisfied with a decent job and potential for growth (preference 3), while Blake will be thrilled to hire a talented employee at a reasonable cost (preference 4).
+
+Should Alex accept the offer but Blake opts for a lower initial salary (A1, B2), Alex will secure a high-paying job with good benefits due to future promises (preference 4). However, Blake will face the challenge of hiring a talented employee with future promises, which is less ideal (preference 2).
+
+If Alex rejects the offer when Blake proposes a competitive package (A2, B1), Alex will continue job searching (preference 2), while Blake will fail to hire the desired candidate (preference 1).
+
+Lastly, if Alex rejects the offer when Blake proposes a lower salary (A2, B2), Alex will avoid accepting a low-paying job with an uncertain future (preference 1), but Blake will have the opportunity to reconsider and potentially make a better offer in the future (preference 3).
+
+Both Alex and Blake must carefully consider their options, weighing the potential benefits and risks of each decision. Their choices will not only affect their immediate situation but also have long-term implications for their careers and the startup's success.
+[/Scenario]

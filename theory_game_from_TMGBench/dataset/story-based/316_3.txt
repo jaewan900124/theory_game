@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented but inexperienced tennis player",
+  "B": "Blake, a seasoned tennis coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Train independently",
+  "A2": "Join Blake's training program",
+  "B1": "Focus on other students",
+  "B2": "Offer personalized coaching to Alex"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive personalized coaching from Blake",
+    3: "Join Blake's training program",
+    2: "Train independently",
+    1: "Train independently while Blake focuses on others"
+  },
+  "B": {
+    4: "Offer personalized coaching to Alex",
+    3: "Include Alex in the training program",
+    2: "Focus on other students while Alex trains independently",
+    1: "Focus on other students while Alex joins the program"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Focus on others) | B2 (Offer personalized coaching) |
+|-------|----------------------|----------------------------------|
+| A1 (Train independently) | 2 \ 2 | 4 \ 4 |
+| A2 (Join program) | 1 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex is a talented young tennis player with immense potential but lacks professional guidance. Blake is a renowned tennis coach known for nurturing promising talents. They find themselves at a crossroads where their decisions will significantly impact both of their careers.
+
+Alex has two choices: train independently (A1) or join Blake's training program (A2). Blake, on the other hand, can choose to focus on other students (B1) or offer personalized coaching to Alex (B2).
+
+If Alex decides to train independently and Blake focuses on other students (A1, B1), both will achieve moderate success. Alex will improve slowly but steadily, while Blake maintains a stable coaching career. This scenario is their second-least preferred option, represented by a payoff of 2 for both.
+
+If Alex joins Blake's program, but Blake doesn't offer personalized attention (A2, B1), both will experience their least preferred outcome. Alex's potential may be overlooked in a group setting, and Blake might miss the opportunity to coach a future star. This scenario has a payoff of 1 for both.
+
+If Alex trains independently and Blake offers personalized coaching (A1, B2), both will achieve their most preferred outcome. Alex receives top-tier coaching while maintaining independence, and Blake gets to focus entirely on nurturing a promising talent. This scenario has the highest payoff of 4 for both.
+
+Lastly, if Alex joins Blake's program and receives personalized coaching (A2, B2), both will experience a positive outcome, though not their most preferred. Alex benefits from structured training and personalized attention, while Blake can coach Alex along with other students. This scenario has a payoff of 3 for both.
+
+The story unfolds as Alex and Blake must decide their course of action, each unaware of the other's decision. Their choices will determine the future of Alex's tennis career and Blake's coaching legacy. Will they make the decisions that lead to mutual benefit, or will their choices result in missed opportunities?
+[/Scenario]

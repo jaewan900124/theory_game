@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "General Alex",
+  "B": "Admiral Bella"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy land forces",
+  "A2": "Hold land forces in reserve",
+  "B1": "Launch naval assault",
+  "B2": "Maintain naval blockade"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Hold land forces in reserve while naval blockade is maintained",
+    3: "Deploy land forces while naval assault is launched",
+    2: "Deploy land forces while naval blockade is maintained",
+    1: "Hold land forces in reserve while naval assault is launched"
+  },
+  "B": {
+    4: "Launch naval assault while land forces are deployed",
+    3: "Launch naval assault while land forces are held in reserve",
+    2: "Maintain naval blockade while land forces are deployed",
+    1: "Maintain naval blockade while land forces are held in reserve"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Launch naval assault) | B2 (Maintain naval blockade) |
+|-------|---------------------------|------------------------------|
+| A1 (Deploy land forces) | 3 \ 4 | 2 \ 2 |
+| A2 (Hold land forces in reserve) | 1 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Alex of the land forces and Admiral Bella of the naval fleet must coordinate their strategies to secure a strategic island. Their decisions will determine the outcome of the operation and potentially the entire conflict.
+
+General Alex has two options: deploy land forces immediately (A1) or hold them in reserve (A2). Admiral Bella can either launch a naval assault (B1) or maintain the current naval blockade (B2).
+
+General Alex prefers to hold land forces in reserve while the naval blockade is maintained, as this conserves resources and maintains a strong defensive position. His second preference is to deploy land forces in conjunction with a naval assault, capitalizing on the combined arms approach. Deploying land forces while the naval blockade is maintained is his third choice, as it exposes troops without naval support. His least preferred option is holding forces in reserve during a naval assault, as it wastes the opportunity for a coordinated attack.
+
+Admiral Bella, on the other hand, favors launching a naval assault while land forces are deployed, maximizing the chances of a swift victory. Her second preference is launching the naval assault even if land forces are held back, believing in the navy's capability to secure the objective alone. Maintaining the blockade while land forces are deployed is her third choice, as it's a cautious approach that doesn't fully utilize naval capabilities. Her least preferred scenario is maintaining the blockade while land forces are held in reserve, viewing it as a missed opportunity.
+
+The payoff matrix reflects these preferences, with each number representing the degree of preference for each scenario (4 being most preferred, 1 being least preferred).
+
+As they sit in the war room, studying maps and intelligence reports, both leaders must make their decision. The success of the operation hangs in the balance, dependent on whether they can coordinate their strategies effectively or if conflicting priorities will lead to a suboptimal outcome.
+[/Scenario]

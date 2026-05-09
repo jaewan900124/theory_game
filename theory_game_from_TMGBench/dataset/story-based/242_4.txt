@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented AI researcher",
+  "B": "Blake, the CEO of a major tech company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate with Blake's company",
+  "A2": "Work independently on AI research",
+  "B1": "Offer Alex a lucrative job contract",
+  "B2": "Pursue AI development without Alex"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently and have Blake pursue AI without him",
+    3: "Collaborate with Blake's company",
+    2: "Work independently while Blake offers a job contract",
+    1: "Collaborate with Blake's company while Blake pursues AI without him"
+  },
+  "B": {
+    4: "Have Alex collaborate while offering a job contract",
+    3: "Pursue AI development without Alex while Alex collaborates",
+    2: "Pursue AI development without Alex while Alex works independently",
+    1: "Offer Alex a job contract while Alex works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 3 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the competitive world of artificial intelligence research, Alex, a brilliant AI researcher, finds himself at a crossroads. His groundbreaking work has caught the attention of Blake, the CEO of a major tech company eager to advance their AI capabilities.
+
+Alex faces a crucial decision: should he collaborate with Blake's company, potentially accelerating AI development but sacrificing some autonomy, or continue his independent research, maintaining full control but possibly slowing progress?
+
+Meanwhile, Blake must decide whether to offer Alex a lucrative job contract, bringing his expertise in-house, or pursue AI development without him, relying on the company's existing resources.
+
+Alex's preferences reflect his desire for independence and recognition. His ideal scenario is to work independently while Blake pursues AI development without him, allowing Alex to potentially outshine the company. His least preferred outcome is collaborating with Blake's company while they pursue AI without fully utilizing his skills.
+
+Blake, on the other hand, strongly prefers having Alex collaborate while under contract, securing his talents exclusively for the company. Blake's least desired outcome is offering Alex a contract only to have him continue working independently, wasting resources and missing out on his expertise.
+
+The payoff matrix reveals the complex dynamics of their choices. If Alex chooses to collaborate (A1) and Blake offers a contract (B1), it results in a suboptimal outcome for Alex (2) but the best for Blake (4). If Alex works independently (A2) and Blake pursues AI without him (B2), it's Alex's worst outcome (1) and only moderately beneficial for Blake (2).
+
+This scenario highlights the intricate balance between cooperation and competition in the tech industry, where individual brilliance and corporate resources often collide, leading to strategic decisions that shape the future of AI development.
+[/Scenario]

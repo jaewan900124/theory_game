@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a small coffee shop owner",
+  "B": "Michael, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Keep prices stable",
+  "A2": "Lower prices",
+  "B1": "Keep prices stable",
+  "B2": "Lower prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices while Michael keeps prices stable",
+    3: "Both keep prices stable",
+    2: "Both lower prices",
+    1: "Keep prices stable while Michael lowers prices"
+  },
+  "B": {
+    4: "Keep prices stable while Sarah keeps prices stable",
+    3: "Lower prices while Sarah lowers prices",
+    2: "Lower prices while Sarah keeps prices stable",
+    1: "Keep prices stable while Sarah lowers prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 2 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city neighborhood, Sarah, a passionate small coffee shop owner, faces stiff competition from Michael, the owner of a large coffee chain that recently opened a branch nearby. Both are contemplating their pricing strategies for the upcoming quarter.
+
+Sarah's quaint shop, "Bean There," has a loyal customer base but has been feeling the pressure from Michael's "Mega Brew" chain. She knows that lowering her prices could attract more customers but might also strain her already tight profit margins. On the other hand, keeping prices stable might maintain her current customer base but could risk losing some to the larger competitor.
+
+Michael, with his economies of scale, has more flexibility in pricing. He's aware that keeping prices stable would maximize profits if Sarah does the same, but he's also considering a price cut to potentially push Sarah out of the market.
+
+If both keep their prices stable (A1, B1), Sarah will struggle but survive, while Michael will enjoy high profits (1, 4). If Sarah keeps prices stable but Michael lowers his (A1, B2), Sarah will face moderate difficulties, and Michael's aggressive strategy will yield moderate returns (2, 2).
+
+Should Sarah lower her prices while Michael keeps his stable (A2, B1), she'll see a significant boost in customers and profits, while Michael will face unexpected losses (3, 1). If both lower their prices (A2, B2), Sarah will gain customers but with thin margins, while Michael will still make decent profits due to his volume (4, 3).
+
+Sarah, sitting in her shop after hours, pores over her financials, trying to decide her next move. Across town, Michael discusses strategies with his board, both unaware of the other's decision but acutely aware of its potential impact on their business. The tension in the local coffee market is palpable as both prepare to make their choices, each hoping to come out on top in this high-stakes game of economic strategy.
+[/Scenario]

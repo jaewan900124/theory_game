@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a sociologist",
+  "B": "Dr. Mark Thompson, a sociologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue individual research",
+  "B1": "Pursue individual research",
+  "B2": "Collaborate on a joint research project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while B pursues individual research",
+    3: "Both pursue individual research",
+    2: "Both collaborate",
+    1: "Pursue individual research while B collaborates"
+  },
+  "B": {
+    4: "Collaborate while A pursues individual research",
+    3: "Both pursue individual research",
+    2: "Pursue individual research while A collaborates",
+    1: "Both collaborate"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 4 \ 4 |
+| A2    | 3 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen and Dr. Mark Thompson are two sociologists working at the same university. They are both considering whether to collaborate on a joint research project or pursue their individual research interests.
+
+Emily (A) and Mark (B) each have two choices: collaborate (A1/B2) or pursue individual research (A2/B1). Their preferences for the different scenarios are based on potential career advancement, publication opportunities, and personal satisfaction.
+
+If both choose to collaborate (A1, B2), they would produce a high-impact paper, benefiting both of their careers significantly. This scenario is highly preferred by both (4,4).
+
+If Emily chooses to collaborate while Mark pursues individual research (A1, B1), Emily would gain some benefit from the collaboration, but not as much as she hoped (2), while Mark would make minimal progress on his individual project (1).
+
+If Mark chooses to collaborate while Emily pursues individual research (A2, B2), Mark would gain some benefit from the collaboration (2), but Emily would make little progress on her individual project (1).
+
+If both choose to pursue individual research (A2, B1), they would make moderate progress on their respective projects, resulting in a satisfactory outcome for both (3,3).
+
+Emily's most preferred outcome is collaborating while Mark pursues individual research, as she believes she can leverage Mark's work for her benefit. Mark's most preferred outcome is the opposite scenario for the same reason.
+
+Their second preference is for both to pursue individual research, as it allows them to focus on their personal interests without compromise. Their least preferred scenarios are when they choose to collaborate while the other pursues individual research, as they fear being taken advantage of.
+
+The challenge for Emily and Mark is to decide whether to cooperate or compete, knowing that their choices will impact not only their own careers but also their professional relationship and the potential for future collaborations.
+[/Scenario]

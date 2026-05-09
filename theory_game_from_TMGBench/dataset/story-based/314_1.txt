@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a skilled software developer",
+  "B": "Blake, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept job offer at Blake's startup",
+  "A2": "Decline job offer and stay at current job",
+  "B1": "Offer standard salary package",
+  "B2": "Offer competitive salary package with equity"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Join startup with competitive package",
+    3: "Stay at current job",
+    2: "Join startup with standard package",
+    1: "Decline offer, miss opportunity"
+  },
+  "B": {
+    4: "Hire Alex with competitive package",
+    3: "Hire Alex with standard package",
+    2: "Alex declines, save on salary",
+    1: "Offer competitive package, Alex declines"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 4 \ 4 |
+| A2    | 1 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, finds himself at a crossroads in his career. He's been approached by Blake, the ambitious CEO of a promising tech startup, with a job offer. The decision Alex faces isn't straightforward, as it involves weighing the security of his current position against the potential for growth and excitement at the startup.
+
+Blake, aware of Alex's reputation in the industry, is keen to bring him on board. However, as a startup CEO, Blake must balance the desire to attract top talent with the need to manage the company's limited resources.
+
+Alex has two choices: accept the job offer at Blake's startup (A1) or decline the offer and stay at his current job (A2). Blake, on the other hand, can either offer a standard salary package (B1) or propose a competitive salary package that includes equity in the company (B2).
+
+For Alex, the most preferred outcome (4) would be joining the startup with a competitive package, as it offers both financial security and potential for significant future gains. His second preference (3) is to stay at his current job, which represents a safe choice. Joining the startup with a standard package is his third choice (2), as it involves risk without substantial reward. His least preferred outcome (1) is declining the offer and missing out on a potentially lucrative opportunity.
+
+Blake's most preferred outcome (4) is hiring Alex with a competitive package, as it secures top talent crucial for the startup's success. His second preference (3) is hiring Alex with a standard package, which would be cost-effective. If Alex declines the offer, Blake's third preference (2) would be saving on salary costs. The least preferred outcome for Blake (1) is offering a competitive package and still having Alex decline, which would be both costly and disappointing.
+
+The payoff matrix reveals an interesting dynamic. If Blake offers a standard package (B1) and Alex accepts (A1), it results in a suboptimal outcome for both (2,1). If Blake offers a competitive package (B2) and Alex accepts (A1), both achieve their most preferred outcome (4,4). However, if Alex decides to stay at his current job (A2), Blake's offer of a standard package (B1) would actually be preferable for Blake (1,3) compared to offering a competitive package (3,2).
+
+This scenario illustrates the complex interplay between an employer's hiring strategy and a potential employee's career decisions, highlighting how their choices can lead to various outcomes with different levels of satisfaction for each party.
+[/Scenario]

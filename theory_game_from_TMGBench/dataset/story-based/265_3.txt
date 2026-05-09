@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Maya, an up-and-coming abstract painter",
+  "B": "Ethan, a well-established gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde painting",
+  "A2": "Create a safe, commercially appealing painting",
+  "B1": "Feature Maya's work in a prime gallery spot",
+  "B2": "Relegate Maya's work to a less prominent area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a provocative painting and get prime gallery spot",
+    3: "Create a provocative painting but get less prominent spot",
+    2: "Create a safe painting and get less prominent spot",
+    1: "Create a safe painting but get prime gallery spot"
+  },
+  "B": {
+    4: "Feature provocative painting in prime spot",
+    3: "Feature safe painting in less prominent spot",
+    2: "Feature safe painting in prime spot",
+    1: "Feature provocative painting in less prominent spot"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Maya \ Ethan | Feature in prime spot (B1) | Relegate to less prominent area (B2) |
+|---------------|----------------------------|--------------------------------------|
+| Provocative (A1) | 3 \ 4                      | 4 \ 1                                |
+| Safe (A2)        | 1 \ 3                      | 2 \ 2                                |
+[/Payoff Matrix]
+
+[Scenario]
+Maya, an up-and-coming abstract painter, is preparing for her first major exhibition at Ethan's prestigious art gallery. Ethan, a well-established gallery owner known for his keen eye and business acumen, is deciding how to showcase Maya's work.
+
+Maya faces a crucial decision: should she create a provocative, avant-garde painting that truly represents her artistic vision, or should she play it safe with a more commercially appealing piece? Her preference is to create something bold and get prime gallery placement, but she's also aware of the risks involved.
+
+Ethan, on the other hand, must decide whether to feature Maya's work in a prime gallery spot or relegate it to a less prominent area. He's intrigued by Maya's potential but is also mindful of his gallery's reputation and sales.
+
+If Maya creates a provocative painting and Ethan features it prominently (A1, B1), Maya will be satisfied with staying true to her vision and getting good exposure (3), while Ethan will be thrilled with the buzz and potential sales (4).
+
+If Maya goes avant-garde but Ethan puts her work in a less visible spot (A1, B2), Maya will still be happy about creating her ideal piece (4), but Ethan will worry about potential controversy and lost sales (1).
+
+If Maya plays it safe and gets the prime spot (A2, B1), she'll be disappointed in compromising her art (1), while Ethan will be content with a safe, sellable piece in a good location (3).
+
+Lastly, if Maya creates a safe piece and Ethan puts it in a less prominent area (A2, B2), both will feel they've settled for a mediocre outcome (2, 2).
+
+As the exhibition opening approaches, Maya and Ethan must make their choices, each hoping to achieve their best possible outcome while navigating the unpredictable world of contemporary art.
+[/Scenario]

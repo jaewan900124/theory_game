@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a talented software developer",
+  "B": "Blake, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work as a full-time employee",
+  "A2": "Work as a freelance consultant",
+  "B1": "Offer a full-time position with benefits",
+  "B2": "Hire as a freelance consultant"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work as a freelance consultant with high pay",
+    3: "Work as a full-time employee with good benefits",
+    2: "Work as a full-time employee with less ideal conditions",
+    1: "Work as a freelance consultant with low pay"
+  },
+  "B": {
+    4: "Hire a full-time employee at a lower cost",
+    3: "Hire a full-time employee with good benefits",
+    2: "Hire a freelance consultant at a higher rate",
+    1: "Fail to secure the talent"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 2 \ 4 |
+| A2    | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, is considering a job opportunity at a promising tech startup led by Blake, the company's CEO. Both Alex and Blake are weighing their options carefully, knowing that their decisions will impact not only their immediate future but also their long-term career trajectories and the startup's success.
+
+Alex has two choices: to work as a full-time employee (A1) or as a freelance consultant (A2). Working full-time would provide stability and benefits, while freelancing could potentially offer higher pay and more flexibility.
+
+Blake, on the other hand, is deciding whether to offer Alex a full-time position with benefits (B1) or hire him as a freelance consultant (B2). Hiring Alex full-time would ensure dedicated commitment to the company, while the freelance option might be more cost-effective in the short term.
+
+Their preferences and potential outcomes are represented in the payoff matrix:
+
+1. If Alex chooses to work full-time (A1) and Blake offers a full-time position (B1), both parties are reasonably satisfied (3,3). Alex gets job security and benefits, while Blake secures a committed employee.
+
+2. If Alex wants to work full-time (A1) but Blake only offers a freelance position (B2), Alex is less satisfied (2) as he loses out on benefits, while Blake is very pleased (4) due to lower costs and flexibility.
+
+3. If Alex prefers to work as a freelancer (A2) but Blake only offers a full-time position (B1), both parties are dissatisfied (1,1) as their expectations don't align.
+
+4. If Alex chooses to work as a freelancer (A2) and Blake agrees to hire him as such (B2), Alex is very satisfied (4) with the higher pay and flexibility, while Blake is moderately satisfied (2) with the arrangement despite the higher costs.
+
+As they sit down to negotiate, both Alex and Blake must carefully consider their options, knowing that their choices will significantly impact their future working relationship and individual success. The outcome of their decision will depend on how well they can align their preferences and reach a mutually beneficial agreement.
+[/Scenario]

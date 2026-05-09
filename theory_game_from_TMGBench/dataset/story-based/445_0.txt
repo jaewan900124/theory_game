@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a research psychologist",
+  "B": "Dr. Michael Chen, a clinical psychologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue individual research",
+  "B1": "Share patient data for research",
+  "B2": "Keep patient data confidential"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue individual research with access to patient data",
+    3: "Collaborate on a joint research project without patient data",
+    2: "Pursue individual research without patient data",
+    1: "Collaborate on a joint research project with limited data"
+  },
+  "B": {
+    4: "Keep patient data confidential while benefiting from collaboration",
+    3: "Keep patient data confidential while pursuing individual work",
+    2: "Share patient data for individual research purposes",
+    1: "Share patient data for a collaborative project"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 1 \ 4 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson and Dr. Michael Chen are two accomplished psychologists working at the same university. Emma, a research psychologist, is keen on advancing the field through groundbreaking studies. Michael, a clinical psychologist, has a wealth of patient data but is deeply committed to patient confidentiality.
+
+Emma approaches Michael with a proposal to collaborate on a joint research project that could potentially revolutionize their understanding of anxiety disorders. She believes that combining her research expertise with Michael's clinical data could lead to significant breakthroughs. However, Emma is also considering pursuing her own individual research, which could be even more impactful if she had access to Michael's patient data.
+
+Michael is faced with a dilemma. He recognizes the potential benefits of collaboration but is hesitant to share his patients' confidential information. He values his professional ethics highly and worries about potential breaches of trust. At the same time, he understands that sharing the data could lead to advancements that might ultimately benefit his patients.
+
+Emma's most preferred outcome would be to pursue her individual research with access to Michael's patient data, as this would give her the most control and potential for groundbreaking discoveries. Her second choice would be to collaborate with Michael without access to the full patient data, hoping that their combined expertise would still yield valuable results. Her least preferred scenario would be a collaboration where Michael's data remains largely inaccessible, limiting the potential of their joint work.
+
+Michael, on the other hand, would ideally like to keep his patient data confidential while still benefiting from collaboration with Emma. His second choice would be to maintain data confidentiality while each of them pursues individual work. Sharing data for Emma's individual research is his third choice, while his least preferred option is sharing data for a collaborative project, as he feels this would be the biggest breach of his patients' trust.
+
+The situation creates a complex interplay of professional ethics, research potential, and personal ambitions. Their decisions will not only affect their individual careers but also the broader field of psychology and potentially the lives of countless patients suffering from anxiety disorders. As they contemplate their choices, both Emma and Michael must weigh the potential benefits against the ethical considerations and personal preferences that shape their professional lives.
+[/Scenario]

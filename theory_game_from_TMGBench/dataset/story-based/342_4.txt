@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Blake, Alex's longtime doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play aggressively",
+  "A2": "Play defensively",
+  "B1": "Focus on net play",
+  "B2": "Cover the baseline"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Winning the match with an aggressive playstyle",
+    3: "Winning the match with a defensive playstyle",
+    2: "Losing the match while playing aggressively",
+    1: "Losing the match while playing defensively"
+  },
+  "B": {
+    4: "Winning the match while covering the baseline",
+    3: "Winning the match while focusing on net play",
+    2: "Losing the match while focusing on net play",
+    1: "Losing the match while covering the baseline"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Focus on net play) | B2 (Cover the baseline) |
+|-------|------------------------|-------------------------|
+| A1 (Play aggressively) | 2 \ 3 | 4 \ 4 |
+| A2 (Play defensively)  | 3 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake, longtime doubles partners, are facing a crucial match in the semifinals of a Grand Slam tournament. Their opponents are known for their powerful groundstrokes and aggressive playstyle. As they discuss their strategy before the match, they realize they need to make a decision on how to approach this game.
+
+Alex, known for his powerful serves and forehands, is considering whether to play aggressively or adopt a more defensive approach. Playing aggressively could overwhelm their opponents but also carries the risk of making more unforced errors. A defensive strategy might be safer but could put them at a disadvantage against their aggressive opponents.
+
+Blake, on the other hand, is deciding whether to focus on net play or cover the baseline. Focusing on net play could put pressure on their opponents and allow for quick points, but it might leave them vulnerable to lobs and passing shots. Covering the baseline would provide better court coverage but might not be as effective in finishing points quickly.
+
+Both players have their preferences:
+
+Alex prefers winning with an aggressive playstyle the most, followed by winning defensively. Losing while playing aggressively is his third choice, with losing defensively being his least preferred outcome.
+
+Blake's top preference is winning while covering the baseline, followed by winning with a focus on net play. Losing while focusing on net play is his third choice, with losing while covering the baseline being his least preferred scenario.
+
+The payoff matrix shows that if Alex plays aggressively and Blake covers the baseline, they have the best chance of winning (4,4). If Alex plays aggressively while Blake focuses on net play, they might not coordinate well, resulting in a lower chance of success (2,3). If Alex plays defensively and Blake focuses on net play, they might have some success (3,2), but if both play defensively/cover the baseline, they're likely to lose to their aggressive opponents (1,1).
+
+As they step onto the court, Alex and Blake must decide on their strategies, knowing that their choices will greatly impact their chances of reaching the finals. Will they find the right combination to secure victory, or will their decisions lead to a disappointing loss?
+[/Scenario]

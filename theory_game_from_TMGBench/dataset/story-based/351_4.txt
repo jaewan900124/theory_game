@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "EcoTech Corporation",
+  "B": "GreenForest Community"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement sustainable logging practices",
+  "A2": "Clear-cut logging",
+  "B1": "Allow limited logging access",
+  "B2": "Collaborate on forest management"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on forest management",
+    3: "Implement sustainable logging practices",
+    2: "Clear-cut logging with limited access",
+    1: "Clear-cut logging with no access"
+  },
+  "B": {
+    4: "Collaborate on forest management",
+    3: "Allow limited logging with sustainable practices",
+    2: "No logging access granted",
+    1: "Allow limited logging with clear-cutting"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 2 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush, biodiverse forest, EcoTech Corporation (A) and the GreenForest Community (B) find themselves at a crossroads. EcoTech, a logging company, seeks access to the forest's valuable timber resources, while the GreenForest Community aims to protect their ancestral lands and maintain ecological balance.
+
+EcoTech has two choices: implement sustainable logging practices (A1) or pursue clear-cut logging (A2). The GreenForest Community can either allow limited logging access (B1) or collaborate on forest management (B2).
+
+EcoTech's most preferred outcome is a collaborative forest management approach (4), which would provide long-term access and improve their public image. Their second preference is implementing sustainable logging practices with limited access (3), followed by clear-cut logging with limited access (2). Their least preferred scenario is being denied access for clear-cut logging (1).
+
+The GreenForest Community's top preference is also collaborative forest management (4), which would ensure the forest's long-term health and provide economic benefits. Their second choice is allowing limited logging with sustainable practices (3), followed by denying any logging access (2). Their least preferred outcome is allowing limited access for clear-cut logging (1).
+
+If EcoTech chooses sustainable logging (A1) and GreenForest allows limited access (B1), both parties achieve their third-best outcome (3,3). This represents a cautious cooperation scenario.
+
+If both parties choose to collaborate (A1, B2), they achieve their most preferred outcome (4,4), maximizing both economic and ecological benefits.
+
+However, if EcoTech opts for clear-cut logging (A2), the outcomes become less favorable. With limited access (B1), EcoTech gains some profit (2), but the community suffers (1). If the community attempts to collaborate (B2) while EcoTech clear-cuts, the company faces resistance and reputational damage (1), while the community struggles to mitigate the ecological impact (2).
+
+This scenario illustrates the potential for mutual benefit through cooperation in ecological management, as well as the risks and losses associated with exploitative practices. The optimal solution for both parties lies in collaborative forest management, highlighting the importance of sustainable practices and community engagement in ecological decision-making.
+[/Scenario]

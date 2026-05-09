@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Commander Zara Chen, leader of the Earth Space Agency (ESA)",
+  "B": "Director Alexei Volkov, head of the Martian Colonial Initiative (MCI)"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share advanced propulsion technology",
+  "A2": "Keep advanced propulsion technology secret",
+  "B1": "Share Mars terraforming research",
+  "B2": "Keep Mars terraforming research secret"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep propulsion technology secret while gaining terraforming research",
+    3: "Both parties share their technologies",
+    2: "Share propulsion technology without gaining terraforming research",
+    1: "Both parties keep their technologies secret"
+  },
+  "B": {
+    4: "Gain propulsion technology while keeping terraforming research secret",
+    3: "Both parties share their technologies",
+    2: "Share terraforming research without gaining propulsion technology",
+    1: "Both parties keep their technologies secret"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 2 \ 4 |
+| A2    | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+The year is 2075, and humanity stands on the brink of a new era in space exploration. Commander Zara Chen of the Earth Space Agency (ESA) and Director Alexei Volkov of the Martian Colonial Initiative (MCI) find themselves at a crucial crossroads that could shape the future of interplanetary travel and colonization.
+
+ESA has recently developed breakthrough propulsion technology that could drastically reduce travel time between Earth and Mars. Meanwhile, MCI has made significant progress in terraforming techniques that could accelerate the process of making Mars habitable for humans.
+
+Both leaders face a dilemma: should they share their advancements with each other, fostering cooperation and potentially accelerating progress for all of humanity? Or should they keep their secrets, hoping to gain an advantage in the race for space dominance?
+
+If both decide to share (A1 and B1), it would lead to rapid advancements in both propulsion and terraforming, benefiting both agencies equally (3 \ 3). This scenario represents their third preference, as it promotes overall progress but doesn't give either side a significant advantage.
+
+If Commander Chen shares the propulsion technology but Director Volkov keeps the terraforming research secret (A1 and B2), ESA would be at a disadvantage. This is Chen's second-least preferred outcome (2), while it's Volkov's most desired scenario (4), as MCI would gain a significant edge in both travel and colonization efforts.
+
+Conversely, if Chen keeps the propulsion technology secret while Volkov shares the terraforming research (A2 and B1), ESA would gain the upper hand. This is Chen's most preferred outcome (4), but Volkov's second-least desired scenario (2).
+
+Finally, if both leaders decide to keep their technologies secret (A2 and B2), it would result in slower overall progress for space exploration and colonization. This is the least preferred outcome for both Chen and Volkov (1 \ 1), as it hinders humanity's advancement into space.
+
+As the two leaders prepare for a crucial video conference, they must carefully consider their choices. Will they prioritize their own agency's interests or opt for cooperation in the name of human progress? The future of space exploration hangs in the balance, dependent on the decisions made by these two influential figures.
+[/Scenario]

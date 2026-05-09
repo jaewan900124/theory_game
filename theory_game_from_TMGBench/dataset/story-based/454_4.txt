@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Maria, an aspiring painter",
+  "B": "Thomas, the owner of a prestigious art gallery"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create traditional, crowd-pleasing artwork",
+  "A2": "Produce avant-garde, experimental pieces",
+  "B1": "Host a conventional art exhibition",
+  "B2": "Organize an innovative, interactive art show"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Produce avant-garde art for an innovative show",
+    3: "Create avant-garde art for a conventional exhibition",
+    2: "Make traditional art for a conventional exhibition",
+    1: "Create traditional art for an innovative show"
+  },
+  "B": {
+    4: "Host an innovative show with traditional art",
+    3: "Host a conventional exhibition with avant-garde art",
+    2: "Organize an innovative show with avant-garde art",
+    1: "Host a conventional exhibition with traditional art"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 1 \ 4 |
+| A2    | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Maria, an aspiring painter with a flair for the unconventional, finds herself at a crossroads in her career. She has caught the attention of Thomas, the owner of a prestigious art gallery known for its influence in the art world. Thomas is planning his next big exhibition and is considering featuring Maria's work.
+
+Maria faces a crucial decision: she can either create traditional, crowd-pleasing artwork (A1) that might appeal to a wider audience, or she can follow her passion and produce avant-garde, experimental pieces (A2) that truly reflect her artistic vision.
+
+Thomas, on the other hand, must decide between hosting a conventional art exhibition (B1) that aligns with his gallery's reputation, or taking a risk by organizing an innovative, interactive art show (B2) that could potentially attract a new demographic of art enthusiasts.
+
+Their preferences and potential outcomes create an interesting dynamic:
+
+1. If Maria creates traditional art (A1) and Thomas hosts a conventional exhibition (B1), it's a safe but uninspiring choice for both. Maria feels creatively stifled (preference 2), while Thomas sees minimal engagement from visitors (preference 1).
+
+2. If Maria produces traditional art (A1) for Thomas's innovative show (B2), Maria feels her work is out of place and underappreciated (preference 1), but Thomas enjoys a unique contrast that intrigues visitors (preference 4).
+
+3. If Maria creates avant-garde pieces (A2) for a conventional exhibition (B1), she feels satisfied with her artistic integrity (preference 3), and Thomas is pleasantly surprised by the positive reception (preference 3).
+
+4. If Maria produces avant-garde art (A2) for an innovative show (B2), she is thrilled with the perfect platform for her work (preference 4), but Thomas worries about the financial risk of such an experimental combination (preference 2).
+
+As they contemplate their choices, both Maria and Thomas must weigh their artistic integrity against commercial success, and consider how their decisions will impact not only their own careers but also the evolving landscape of the art world.
+[/Scenario]

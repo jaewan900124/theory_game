@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Zhao",
+  "B": "Admiral Chen"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops along the border",
+  "A2": "Launch a surprise naval attack",
+  "B1": "Strengthen coastal defenses",
+  "B2": "Send a peace envoy"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch a successful surprise naval attack",
+    3: "Maintain a strong defensive position",
+    2: "Engage in peace negotiations",
+    1: "Face a well-defended coast"
+  },
+  "B": {
+    4: "Successfully defend against a border attack",
+    3: "Achieve peace through diplomacy",
+    2: "Defend against a naval attack",
+    1: "Leave the coast vulnerable"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 3 |
+| A2    | 3 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense standoff between two rival nations, General Zhao of the land-based military and Admiral Chen of the naval forces find themselves at a critical juncture. Their decisions will determine the outcome of the conflict and the fate of their respective nations.
+
+General Zhao, known for his aggressive tactics, is considering two options: deploying troops along the border (A1) or launching a surprise naval attack (A2). Admiral Chen, on the other hand, must choose between strengthening coastal defenses (B1) or sending a peace envoy (B2).
+
+General Zhao's highest preference is to launch a successful surprise naval attack, which would give him a significant advantage. His second preference is to maintain a strong defensive position, followed by engaging in peace negotiations. His least preferred outcome is facing a well-defended coast, which would render his attacks ineffective.
+
+Admiral Chen's top priority is to successfully defend against a border attack, ensuring the safety of his nation. His second preference is to achieve peace through diplomacy, avoiding unnecessary bloodshed. Defending against a naval attack is his third choice, while leaving the coast vulnerable is his least desired outcome.
+
+If General Zhao deploys troops along the border (A1) and Admiral Chen strengthens coastal defenses (B1), Zhao faces his least preferred outcome (1) while Chen achieves his most desired result (4). If Zhao deploys troops (A1) and Chen sends a peace envoy (B2), Zhao slightly improves his position (2) while Chen still maintains a favorable outcome (3).
+
+However, if General Zhao opts for a surprise naval attack (A2) and Admiral Chen focuses on coastal defenses (B1), Zhao gains an advantage (3) while Chen faces his least preferred scenario (1). If Zhao launches the naval attack (A2) and Chen sends a peace envoy (B2), Zhao achieves his most desired outcome (4), but Chen is left in a vulnerable position (2).
+
+As both leaders contemplate their choices, they must consider not only their own preferences but also anticipate their opponent's moves. The fate of their nations hangs in the balance, with the potential for either devastating conflict or a path to peace.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current trade policies",
+  "A2": "Impose trade restrictions",
+  "B1": "Maintain current trade policies",
+  "B2": "Expand global market influence"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Impose trade restrictions while China maintains current policies",
+    3: "Both maintain current trade policies",
+    2: "Impose trade restrictions while China expands influence",
+    1: "Maintain current policies while China expands influence"
+  },
+  "B": {
+    4: "Expand influence while US maintains current policies",
+    3: "Both maintain current trade policies",
+    2: "Expand influence while US imposes restrictions",
+    1: "Maintain current policies while US imposes restrictions"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 3 \ 4 |
+| A2    | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex world of international relations, the United States and China find themselves at a critical juncture. Both nations are weighing their options in terms of trade policies and global influence, aware that their decisions will have far-reaching consequences not only for themselves but for the global economy as a whole.
+
+The United States, concerned about its economic supremacy, is considering whether to maintain its current trade policies or impose new restrictions. Maintaining the status quo could preserve stability but might allow China to gain ground. Imposing restrictions could protect American interests but risks escalating tensions and potential retaliation.
+
+China, on the other hand, is deliberating between maintaining its current trade stance or actively expanding its global market influence. Staying the course might avoid conflict but could limit growth opportunities. Expanding influence could boost China's economic power but might provoke a backlash from the US and its allies.
+
+Both nations prefer scenarios where they can advance their interests without significant opposition. The US would ideally impose restrictions while China remains passive, while China would prefer to expand its influence unopposed. However, they also recognize the value of mutual cooperation in maintaining global economic stability.
+
+The situation creates a tense atmosphere of strategic calculation. If both nations choose to maintain current policies, it results in a stable but suboptimal outcome for both (payoff: 1,1). If the US maintains policies while China expands influence, it's ideal for China but worst for the US (payoff: 3,4). If the US imposes restrictions while China maintains policies, it's best for the US but not ideal for China (payoff: 2,3). Finally, if both nations take aggressive stances - the US imposing restrictions and China expanding influence - it leads to a scenario of heightened tension, somewhat beneficial for the US but less so for China (payoff: 4,2).
+
+As diplomats and economic advisors from both nations gather for crucial talks, the world watches anxiously. The decisions made in these negotiation rooms will shape the future of global trade and international relations for years to come. Will they choose cooperation or competition? The stakes couldn't be higher.
+[/Scenario]

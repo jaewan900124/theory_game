@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a sociologist",
+  "B": "Dr. James Lee, another sociologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Conduct independent research",
+  "B1": "Pursue individual publication",
+  "B2": "Join the collaborative project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while B pursues individual publication",
+    3: "Conduct independent research while B pursues individual publication",
+    2: "Conduct independent research while B joins the collaboration",
+    1: "Both collaborate on the joint project"
+  },
+  "B": {
+    4: "Join the collaborative project while A collaborates",
+    3: "Pursue individual publication while A conducts independent research",
+    2: "Pursue individual publication while A collaborates",
+    1: "Pursue individual publication while A conducts independent research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 4 \ 4 |
+| A2    | 3 \ 3 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Dr. James Lee are two sociologists at a prestigious university, both specializing in urban social dynamics. They are faced with a decision that could significantly impact their careers and the field of sociology.
+
+Emma has proposed a groundbreaking collaborative research project on the effects of gentrification on community cohesion. She believes that combining their expertise could lead to a landmark study. However, she's also aware that collaboration might dilute her individual contributions.
+
+James, on the other hand, has been working on a promising individual study about social media's impact on urban communities. He's close to a breakthrough but recognizes the potential of Emma's collaborative project.
+
+Both sociologists must decide whether to collaborate or pursue their individual research paths. Emma can choose to either push forward with the collaborative project (A1) or focus on her independent research (A2). James can decide to continue his individual publication efforts (B1) or join Emma's collaborative project (B2).
+
+Emma's ideal scenario is to initiate the collaborative project while James continues his individual work, allowing her to benefit from both the joint research and James's independent insights (A1, B1). Her least preferred outcome is when both of them collaborate, as she fears it might limit the scope of their combined work (A1, B2).
+
+James, however, would most prefer to join the collaborative project while Emma leads it, potentially boosting his reputation through association (A1, B2). His least desired outcome is to pursue his individual publication while Emma conducts independent research, as he fears being overshadowed (A2, B1).
+
+The decision they make will not only affect their individual careers but also the potential advancements in urban sociology. Will they choose collaboration and potentially create a groundbreaking study, or will they pursue their individual paths, possibly making separate but significant contributions to the field?
+
+Their choices will demonstrate the complex interplay between individual ambition and collaborative potential in academia, reflecting broader sociological themes of cooperation and competition in professional settings.
+[/Scenario]

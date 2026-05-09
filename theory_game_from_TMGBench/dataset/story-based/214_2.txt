@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Emma Roberts, a cognitive psychologist",
+  "B": "Dr. Michael Chen, a behavioral psychologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Conduct independent research",
+  "B1": "Share research data",
+  "B2": "Keep research data private"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Conduct independent research while having access to shared data",
+    3: "Collaborate on a joint research project with shared data",
+    2: "Collaborate on a joint research project without shared data",
+    1: "Conduct independent research without access to shared data"
+  },
+  "B": {
+    4: "Collaborate on a joint research project with shared data",
+    3: "Conduct independent research while keeping data private",
+    2: "Share data for independent research",
+    1: "Collaborate on a joint research project without sharing data"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Share data) | B2 (Keep data private) |
+|-------|-----------------|------------------------|
+| A1 (Collaborate) | 2 \ 4           | 4 \ 1                  |
+| A2 (Independent) | 1 \ 2           | 3 \ 3                  |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Roberts and Dr. Michael Chen, two accomplished psychologists, find themselves at a crossroads in their careers. They are both researching the effects of social media on adolescent mental health, albeit from different perspectives.
+
+Dr. Roberts, a cognitive psychologist, is considering whether to collaborate with Dr. Chen or conduct her research independently. She prefers having access to more data but also values the freedom of independent work. Her ideal scenario would be to conduct independent research while having access to Dr. Chen's data.
+
+Dr. Chen, a behavioral psychologist, has amassed a significant amount of data on adolescent behavior patterns. He is torn between sharing this data and keeping it private for his own research. His preference is to collaborate on a joint project where both share their data and insights.
+
+The situation presents four possible scenarios:
+
+1. If they collaborate and Dr. Chen shares his data (A1, B1), it would be ideal for Dr. Chen (4) but only moderately satisfactory for Dr. Roberts (2).
+
+2. If they collaborate but Dr. Chen keeps his data private (A1, B2), Dr. Roberts would benefit most (4) as she gains a collaborator without compromising her research direction, while Dr. Chen would find this least preferable (1).
+
+3. If Dr. Roberts works independently and Dr. Chen shares his data (A2, B1), it would be least preferred by Dr. Roberts (1) as she might feel obligated without the benefits of full collaboration, while Dr. Chen would find it somewhat beneficial (2).
+
+4. If both decide to work independently with Dr. Chen keeping his data private (A2, B2), it would be moderately satisfactory for both (3), allowing them to pursue their research without complications.
+
+This scenario illustrates the complex dynamics in academic research, where the decision to collaborate or work independently, and to share or withhold data, can significantly impact both personal career advancement and the broader progress of scientific knowledge.
+[/Scenario]

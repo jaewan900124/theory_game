@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain open trade policies",
+  "A2": "Implement protectionist measures",
+  "B1": "Engage in technology sharing",
+  "B2": "Restrict technology transfers"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Open trade with restricted Chinese technology transfers",
+    3: "Open trade with Chinese technology sharing",
+    2: "Protectionist measures with restricted Chinese technology transfers",
+    1: "Protectionist measures with Chinese technology sharing"
+  },
+  "B": {
+    4: "Open US trade with Chinese technology sharing",
+    3: "US protectionism with restricted Chinese technology transfers",
+    2: "US protectionism with Chinese technology sharing",
+    1: "Open US trade with restricted Chinese technology transfers"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| US \ China | Tech Share (B1) | Restrict Tech (B2) |
+|------------|-----------------|---------------------|
+| Open Trade (A1) | 3 \ 4           | 4 \ 1              |
+| Protectionism (A2) | 1 \ 2           | 2 \ 3              |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex world of international relations, the United States and China find themselves at a critical juncture. Both nations must decide on their economic and technological policies, which will significantly impact their relationship and the global economy.
+
+The United States (A) faces a choice between maintaining open trade policies (A1) or implementing protectionist measures (A2). Open trade would foster economic growth and international cooperation, but it might expose the US to potential economic vulnerabilities. Protectionist measures could safeguard certain industries but risk slowing overall economic growth and straining international relations.
+
+China (B) must decide whether to engage in technology sharing (B1) or restrict technology transfers (B2). Sharing technology could accelerate global innovation and improve relations with the US, but it might risk losing competitive advantages. Restricting technology transfers could protect China's technological edge but potentially escalate tensions and hinder global progress.
+
+The US prefers open trade with restricted Chinese technology transfers the most, as it would allow for economic benefits while maintaining a technological advantage. Their least preferred scenario is implementing protectionist measures while China freely shares technology, as this would harm the US economy without gaining technological benefits.
+
+China, on the other hand, most prefers a scenario where the US maintains open trade while China shares technology, as this would provide maximum economic and diplomatic benefits. Their least preferred outcome is open US trade with restricted Chinese technology transfers, as this would give the US economic advantages without reciprocal technological benefits.
+
+The payoff matrix reveals the complex interdependence between the two nations' choices. If both countries choose their most cooperative options (A1 and B1), they achieve their second and first preferences, respectively. However, this scenario is unstable, as the US would be tempted to restrict technology transfers (moving to A1, B2) to achieve its highest preference.
+
+This scenario illustrates the delicate balance in international relations, where nations must weigh short-term gains against long-term cooperation and stability. The choices made by these two global powers will have far-reaching consequences for their own citizens and the entire world.
+[/Scenario]

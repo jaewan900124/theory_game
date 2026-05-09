@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, an aspiring painter",
+  "B": "Marcus, a gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create traditional art",
+  "A2": "Create avant-garde art",
+  "B1": "Showcase only traditional art",
+  "B2": "Showcase a mix of traditional and avant-garde art"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create avant-garde art and have it showcased in a mixed gallery",
+    3: "Create avant-garde art but only have traditional art showcased",
+    2: "Create traditional art and have it showcased in a mixed gallery",
+    1: "Create traditional art and have it showcased in a traditional-only gallery"
+  },
+  "B": {
+    4: "Showcase only traditional art, including Emma's traditional pieces",
+    3: "Showcase a mix of art, including Emma's traditional pieces",
+    2: "Showcase only traditional art, excluding Emma's avant-garde work",
+    1: "Showcase a mix of art, including Emma's avant-garde work"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Marcus | Showcase only traditional | Showcase mixed |
+|----------------|---------------------------|----------------|
+| Traditional    | 1 \ 4                     | 2 \ 3          |
+| Avant-garde    | 3 \ 2                     | 4 \ 1          |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, an aspiring painter, is preparing for her first major exhibition at Marcus's renowned gallery. Marcus, the gallery owner, is known for his traditional tastes but has been considering branching out to attract a wider audience.
+
+Emma faces a dilemma: should she create traditional art that aligns with Marcus's usual preferences, or should she follow her passion for avant-garde pieces? Similarly, Marcus must decide whether to maintain his gallery's traditional focus or diversify by showcasing a mix of traditional and avant-garde art.
+
+Emma's greatest desire is to create avant-garde art and have it showcased in a mixed gallery, as this would allow her to express her creativity fully while reaching a diverse audience. Her least preferred outcome is to create traditional art for a traditional-only gallery, feeling this would stifle her artistic growth.
+
+Marcus, on the other hand, would prefer to showcase only traditional art, including Emma's traditional pieces if she chooses to create them. His least desired outcome is to showcase a mix of art that includes Emma's avant-garde work, fearing it might alienate his established clientele.
+
+If Emma creates traditional art and Marcus showcases only traditional pieces, Emma will feel constrained (preference 1) while Marcus will be most satisfied (preference 4). If Emma goes avant-garde but Marcus sticks to traditional, Emma will have some satisfaction in creating her preferred style (preference 3) even if it's not showcased, while Marcus will be somewhat content with maintaining his gallery's theme (preference 2).
+
+If Emma creates traditional art and Marcus decides to showcase a mix, Emma will have some regret for not following her passion (preference 2), but Marcus will be relatively satisfied with the compromise (preference 3). Finally, if Emma creates avant-garde art and Marcus showcases a mix, Emma will be thrilled (preference 4), but Marcus will be least satisfied (preference 1).
+
+As they prepare for the exhibition, both Emma and Marcus must carefully consider their choices, weighing their personal preferences against the potential outcomes and the impact on their professional relationship.
+[/Scenario]

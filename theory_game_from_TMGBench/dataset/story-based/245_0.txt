@@ -1,0 +1,70 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a hospital administrator",
+  "B": "Dr. James Lee, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new integrated health care system",
+  "A2": "Maintain the current fragmented system",
+  "B1": "Join the integrated health care network",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new system with Dr. Lee joining",
+    3: "Maintain current system with Dr. Lee joining",
+    2: "Implement new system without Dr. Lee",
+    1: "Maintain current system with Dr. Lee independent"
+  },
+  "B": {
+    4: "Join new integrated system",
+    3: "Join current fragmented system",
+    2: "Remain independent under current system",
+    1: "Remain independent under new integrated system"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 3 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, the local healthcare landscape is at a crossroads. Dr. Emma Chen, the forward-thinking administrator of the city's main hospital, is contemplating the implementation of a new integrated health care system. This system promises to streamline patient care, reduce costs, and improve overall health outcomes. However, its success largely depends on the participation of local physicians.
+
+Dr. James Lee, a respected private practice physician, finds himself at the center of this decision. He must choose whether to join the proposed integrated network or maintain his independence.
+
+Dr. Chen (A) has two choices:
+A1: Implement the new integrated health care system, which could revolutionize patient care but requires buy-in from local physicians.
+A2: Maintain the current fragmented system, which is familiar but less efficient.
+
+Dr. Lee (B) also faces two options:
+B1: Join the integrated health care network, potentially benefiting from shared resources and a larger patient base.
+B2: Remain independent, maintaining full control over his practice but potentially missing out on the advantages of the integrated system.
+
+Their preferences and potential outcomes are as follows:
+
+For Dr. Chen:
+- Her most preferred outcome (4) is implementing the new system with Dr. Lee's participation, as it would significantly boost the system's credibility and effectiveness.
+- Her second choice (3) would be maintaining the current system but with Dr. Lee joining the hospital network, as it would still improve coordination of care.
+- Third (2) would be implementing the new system without Dr. Lee, which would be challenging but still progressive.
+- Her least preferred outcome (1) is maintaining the current system with Dr. Lee remaining independent, as it represents no progress.
+
+For Dr. Lee:
+- His top preference (4) is joining the new integrated system, seeing it as an opportunity for growth and improved patient care.
+- Second (3) is joining the current fragmented system, which offers some benefits of collaboration without major changes.
+- Third (2) is remaining independent under the current system, maintaining the status quo.
+- His least preferred outcome (1) is remaining independent under the new integrated system, potentially leaving him at a competitive disadvantage.
+
+The payoff matrix reflects these preferences and the complex interplay between their decisions. Both Dr. Chen and Dr. Lee must carefully consider their options, weighing personal interests against the potential for improved healthcare in their community. Their choices will not only affect their own careers but also the future of healthcare delivery in the city.
+[/Scenario]

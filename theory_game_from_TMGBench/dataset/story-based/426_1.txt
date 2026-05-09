@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Richards"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Thompson's re-election",
+  "B2": "Remain neutral in Senator Thompson's re-election"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill and gain Governor's neutrality",
+    3: "Support bill and gain Governor's neutrality",
+    2: "Support bill and gain Governor's endorsement",
+    1: "Oppose bill and lose Governor's support"
+  },
+  "B": {
+    4: "Senator supports bill and Governor remains neutral",
+    3: "Senator opposes bill and Governor remains neutral",
+    2: "Senator supports bill and Governor endorses",
+    1: "Senator opposes bill and Governor endorses"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support)   | 2 \ 2        | 3 \ 4        |
+| A2 (Oppose)    | 1 \ 1        | 4 \ 3        |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling political landscape of a swing state, Senator Sarah Thompson and Governor Mark Richards find themselves in a delicate dance of political maneuvering. The state is abuzz with talks of a bipartisan infrastructure bill that could bring significant improvements to roads, bridges, and public transportation.
+
+Senator Thompson, a moderate known for crossing party lines, is torn between supporting the bill, which aligns with her pragmatic approach to governance, and opposing it to appease her more conservative base. Her decision is complicated by her upcoming re-election campaign, where Governor Richards' endorsement could prove valuable.
+
+Governor Richards, on the other hand, is weighing the political capital of endorsing Senator Thompson against maintaining neutrality in the upcoming senatorial race. He recognizes the potential benefits of the infrastructure bill for the state but is wary of alienating his own supporters by openly backing Thompson.
+
+If Senator Thompson supports the bill and Governor Richards endorses her (A1, B1), both maintain their moderate image but risk some backlash from their respective bases (2, 2). If Thompson supports the bill and Richards remains neutral (A1, B2), Thompson gains some bipartisan credibility while Richards avoids potential controversy, his ideal scenario (3, 4).
+
+Should Thompson oppose the bill and Richards endorse her (A2, B1), both politicians risk appearing obstructionist and lose credibility (1, 1). However, if Thompson opposes the bill and Richards remains neutral (A2, B2), Thompson appeases her conservative base while Richards maintains flexibility, Thompson's preferred outcome (4, 3).
+
+As the vote on the infrastructure bill looms and the re-election campaign heats up, both Senator Thompson and Governor Richards must carefully consider their choices, knowing that their decisions will have far-reaching consequences for their political futures and the state they serve.
+[/Scenario]

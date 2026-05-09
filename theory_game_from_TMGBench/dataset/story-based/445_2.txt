@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local environmental conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new eco-friendly product",
+  "A2": "Expand existing product line",
+  "B1": "Collaborate with EcoTech",
+  "B2": "Run an independent conservation campaign"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Expand existing product line while GreenForest runs an independent campaign",
+    3: "Develop a new eco-friendly product while collaborating with GreenForest",
+    2: "Expand existing product line while collaborating with GreenForest",
+    1: "Develop a new eco-friendly product while GreenForest runs an independent campaign"
+  },
+  "B": {
+    4: "EcoTech develops a new eco-friendly product while GreenForest runs an independent campaign",
+    3: "EcoTech expands existing product line while GreenForest runs an independent campaign",
+    2: "EcoTech expands existing product line while collaborating with GreenForest",
+    1: "EcoTech develops a new eco-friendly product while collaborating with GreenForest"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 1 \ 4 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town surrounded by lush forests, EcoTech, a sustainable technology company, and GreenForest, a local environmental conservation group, are faced with crucial decisions that will impact the local ecosystem and economy.
+
+EcoTech is considering two options: developing a new eco-friendly product (A1) or expanding their existing product line (A2). The new product could potentially have a significant positive impact on the environment but comes with higher costs and risks. Expanding the existing line is safer and more profitable in the short term but may not be as environmentally beneficial.
+
+GreenForest, on the other hand, is deciding whether to collaborate with EcoTech (B1) or run an independent conservation campaign (B2). Collaboration could provide more resources and reach, but it might also compromise their autonomy and message.
+
+EcoTech's ideal scenario is to expand their existing product line while GreenForest runs an independent campaign. This allows them to maximize profits while still maintaining a green image. Their least preferred outcome is developing a new eco-friendly product while GreenForest runs an independent campaign, as this represents high risk and cost without the benefit of collaboration.
+
+GreenForest's most preferred outcome is for EcoTech to develop a new eco-friendly product while they run an independent campaign. This scenario allows them to maintain their autonomy while still seeing positive environmental action from the corporate sector. Their least preferred scenario is collaborating with EcoTech on a new product development, as they fear this might lead to greenwashing and loss of their independent voice.
+
+The choices made by both organizations will determine the future of the local environment and economy. Will they find a way to cooperate for mutual benefit, or will their differing priorities lead to competition? The fate of the forest hangs in the balance as EcoTech and GreenForest make their decisions.
+[/Scenario]

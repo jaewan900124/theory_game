@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Council President Emma"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new grading system",
+  "A2": "Keep the current grading system",
+  "B1": "Support the new grading system",
+  "B2": "Oppose the new grading system"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new system with student support",
+    3: "Keep current system with student support",
+    2: "Implement new system without student support",
+    1: "Keep current system without student support"
+  },
+  "B": {
+    4: "Professor keeps current system with student opposition",
+    3: "Professor keeps current system with student support",
+    2: "Professor implements new system with student opposition",
+    1: "Professor implements new system with student support"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Support) | B2 (Oppose) |
+|-------|--------------|-------------|
+| A1 (New)   | 2 \ 4        | 4 \ 2       |
+| A2 (Current) | 3 \ 3        | 1 \ 1       |
+[/Payoff Matrix]
+
+[Scenario]
+At Oakwood University, Professor Smith, the head of the Academic Affairs Committee, is considering implementing a new grading system that would focus more on practical skills and project-based assessments. This change could potentially improve students' real-world readiness but might also increase their workload.
+
+Emma, the Student Council President, has been approached by Professor Smith to gauge student sentiment on this proposed change. Emma has the power to either support or oppose the new system on behalf of the student body.
+
+Professor Smith's primary goal is to implement the new system, but he also values student cooperation. His ideal scenario would be to implement the new system with student support (preference 4). His second choice would be to keep the current system if students are on board (preference 3). Implementing the new system without student support is his third choice (preference 2), while keeping the current system without student support is his least preferred option (preference 1).
+
+Emma, on the other hand, is more concerned about maintaining the status quo and reducing student stress. Her ideal scenario would be to keep the current system while showing opposition to change (preference 4). Her second choice would be to support keeping the current system (preference 3). If the new system must be implemented, she would prefer to show opposition (preference 2) rather than support it (preference 1).
+
+The payoff matrix shows that if Professor Smith implements the new system (A1) and Emma supports it (B1), Smith gets his third choice (2) while Emma gets her least preferred option (1). If Smith implements the new system (A1) and Emma opposes it (B2), Smith achieves his most preferred outcome (4) while Emma gets her third choice (2).
+
+If Smith keeps the current system (A2) and Emma supports this decision (B1), both get their second-best outcomes (3,3). However, if Smith keeps the current system (A2) and Emma opposes it (B2), both end up with their least preferred scenarios (1,1).
+
+This situation creates an interesting dynamic where cooperation doesn't always lead to the best outcomes for both parties, and they must carefully consider their strategies based on their preferences and the potential actions of the other party.
+[/Scenario]

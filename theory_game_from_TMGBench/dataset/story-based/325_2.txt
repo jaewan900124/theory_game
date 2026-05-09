@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "General Hawke",
+  "B": "Admiral Stormwind"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy land forces",
+  "A2": "Hold position",
+  "B1": "Maintain naval blockade",
+  "B2": "Launch amphibious assault"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch coordinated land-sea assault",
+    3: "Hold position while navy attacks",
+    2: "Deploy land forces without naval support",
+    1: "Stalemate with both sides holding position"
+  },
+  "B": {
+    4: "Launch coordinated land-sea assault",
+    3: "Launch amphibious assault without land support",
+    2: "Maintain naval blockade without land engagement",
+    1: "Stalemate with both sides holding position"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Maintain blockade) | B2 (Amphibious assault) |
+|-------|------------------------|-------------------------|
+| A1 (Deploy land forces) | 1 \ 1 | 4 \ 4 |
+| A2 (Hold position) | 2 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Hawke of the land forces and Admiral Stormwind of the navy face a critical decision that could determine the outcome of their campaign against a well-fortified enemy position on a strategic coastline.
+
+General Hawke must decide whether to deploy his land forces (A1) or hold his current position (A2). Meanwhile, Admiral Stormwind must choose between maintaining the naval blockade (B1) or launching an amphibious assault (B2).
+
+Both leaders recognize that a coordinated land-sea assault would be the most effective strategy, potentially leading to a decisive victory (payoff 4 for both). However, this requires mutual cooperation and trust between the two branches of the military.
+
+If General Hawke deploys land forces while Admiral Stormwind maintains the blockade, or if Admiral Stormwind launches an amphibious assault while General Hawke holds position, the uncoordinated actions could lead to suboptimal outcomes (payoffs 2 and 3 respectively).
+
+The least desirable outcome for both leaders is a continued stalemate, where both sides maintain their current positions (payoff 1 for both). This scenario prolongs the conflict without any strategic gains.
+
+The challenge lies in the fact that neither leader knows the other's decision in advance. They must weigh the potential risks and rewards, considering not only their own preferences but also anticipating the other's actions.
+
+General Hawke, known for his aggressive tactics, is inclined to deploy his forces but worries about lack of naval support. Admiral Stormwind, while confident in his fleet's amphibious capabilities, is concerned about the vulnerability of his forces without land-based backup.
+
+As the deadline for action approaches, both leaders must make their decisions, knowing that the fate of the campaign - and potentially the war - hangs in the balance. Will they choose to cooperate and launch a coordinated assault, or will mistrust and caution lead to a less optimal outcome?
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Senator Sarah Johnson",
+  "B": "Governor Mark Thompson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Johnson's re-election",
+  "B2": "Remain neutral in Senator Johnson's re-election"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill and gain Governor's endorsement",
+    3: "Support bill and gain Governor's neutrality",
+    2: "Support bill and gain Governor's endorsement",
+    1: "Oppose bill and face Governor's neutrality"
+  },
+  "B": {
+    4: "Senator supports bill and Governor remains neutral",
+    3: "Senator supports bill and Governor endorses",
+    2: "Senator opposes bill and Governor endorses",
+    1: "Senator opposes bill and Governor remains neutral"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support)   | 2 \ 3        | 3 \ 4        |
+| A2 (Oppose)    | 1 \ 1        | 4 \ 2        |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling political landscape of a swing state, Senator Sarah Johnson and Governor Mark Thompson find themselves at a crossroads. A crucial bipartisan infrastructure bill is up for vote in the Senate, and both politicians must navigate their choices carefully to balance their political interests.
+
+Senator Johnson, facing a tough re-election campaign, must decide whether to support or oppose the infrastructure bill. Her decision will not only impact her constituents but also her relationship with Governor Thompson, whose endorsement could significantly boost her re-election chances.
+
+Governor Thompson, on the other hand, must choose whether to endorse Senator Johnson's re-election bid or remain neutral. His decision will influence both his own political capital and the fate of the infrastructure bill, which he believes could benefit the state.
+
+Senator Johnson's ideal scenario would be to oppose the bill (appealing to her more conservative base) while still securing Governor Thompson's endorsement. However, she also recognizes the potential benefits of supporting the bipartisan bill.
+
+Governor Thompson prefers a scenario where Senator Johnson supports the bill, believing it's in the best interest of the state. He'd ideally like to remain neutral in her re-election campaign to maintain his own political flexibility, but he's willing to endorse her if it means securing her support for the bill.
+
+If Senator Johnson supports the bill and Governor Thompson endorses her (A1, B1), both gain moderate benefits (2,3). If she supports the bill and he remains neutral (A1, B2), it's slightly better for her and ideal for him (3,4). If she opposes the bill and he endorses her (A2, B1), it's the worst outcome for both (1,1). Finally, if she opposes the bill and he remains neutral (A2, B2), it's ideal for her but suboptimal for him (4,2).
+
+As the vote approaches, both politicians must carefully consider their options, weighing personal political gains against their perceived duties to their constituents and party. Their decisions will not only shape their own political futures but also have lasting impacts on their state and potentially the nation's infrastructure policy.
+[/Scenario]

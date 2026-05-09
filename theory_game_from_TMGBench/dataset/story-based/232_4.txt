@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a psychologist specializing in cognitive behavioral therapy",
+  "B": "Alex Thompson, a patient struggling with social anxiety"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a traditional, gradual exposure therapy approach",
+  "A2": "Utilize a new, intensive virtual reality (VR) therapy method",
+  "B1": "Fully commit to the therapy and practice diligently",
+  "B2": "Participate in therapy sessions but avoid practicing between sessions"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successfully treat the patient with the new VR method, gaining recognition in the field",
+    3: "Successfully treat the patient with traditional methods, maintaining professional reputation",
+    2: "Partial success with the new VR method, with mixed results",
+    1: "Limited progress with traditional methods due to patient's lack of commitment"
+  },
+  "B": {
+    4: "Overcome anxiety with minimal effort through traditional therapy",
+    3: "Overcome anxiety through intensive VR therapy",
+    2: "Make some progress in managing anxiety with either method",
+    1: "Experience little improvement despite time invested in therapy"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 3 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen, a respected psychologist specializing in cognitive behavioral therapy, is faced with a challenging case. Her new patient, Alex Thompson, is struggling with severe social anxiety that has been impacting his personal and professional life. Dr. Chen must decide between two treatment approaches: a traditional, gradual exposure therapy method (A1) or a new, intensive virtual reality (VR) therapy technique (A2).
+
+Alex, on the other hand, has to choose between fully committing to the therapy and practicing diligently between sessions (B1) or simply participating in the therapy sessions without putting in extra effort outside of them (B2).
+
+Dr. Chen's primary goal is to help Alex while also advancing her career. She knows that successfully implementing the new VR method could gain her recognition in the field, but it comes with higher risks. The traditional method is safer but less likely to yield groundbreaking results.
+
+Alex wants to overcome his anxiety with as little discomfort as possible. He's drawn to the idea of quick results but is hesitant about the intensity of the VR therapy.
+
+If Dr. Chen chooses the traditional approach (A1) and Alex fully commits (B1), Alex will likely overcome his anxiety with minimal stress (his most preferred outcome, 4), but Dr. Chen will see this as a routine success (her least preferred outcome, 1).
+
+If Dr. Chen opts for the VR therapy (A2) and Alex fully commits (B1), Dr. Chen will likely gain recognition for her innovative approach (her second-most preferred outcome, 3), but Alex may find the process overwhelming (his least preferred outcome, 1).
+
+If Dr. Chen chooses the traditional approach (A1) and Alex doesn't practice between sessions (B2), Dr. Chen might still see good results due to her expertise (her most preferred outcome, 4), while Alex will see improvement with less effort (his second-most preferred outcome, 3).
+
+Finally, if Dr. Chen uses the VR therapy (A2) and Alex doesn't fully engage (B2), both may see moderate results (both their third-most preferred outcomes, 2).
+
+As they begin their first session together, both Dr. Chen and Alex must make their choices, knowing that the outcome of the therapy will depend on both of their decisions.
+[/Scenario]

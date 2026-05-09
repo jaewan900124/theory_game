@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Liam, a talented young basketball player",
+  "B": "Coach Thompson, Liam's high school basketball coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual performance",
+  "A2": "Prioritize team play",
+  "B1": "Emphasize star player development",
+  "B2": "Promote balanced team strategy"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive personal accolades while the team succeeds",
+    3: "Team success with less personal recognition",
+    2: "Personal success but team underperforms",
+    1: "Neither personal nor team success"
+  },
+  "B": {
+    4: "Team success with a well-rounded strategy",
+    3: "Team success relying on star player",
+    2: "Develop a star player but team underperforms",
+    1: "Neither star player development nor team success"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 4 \ 4 |
+| A2    | 1 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Liam, a talented young basketball player, finds himself at a crossroads in his high school career. His exceptional skills have caught the attention of college scouts, but his team's performance has been lackluster. Coach Thompson, a seasoned veteran with a history of nurturing NBA-caliber talent, faces a dilemma: should he build the team's strategy around Liam's individual brilliance or focus on developing a more balanced, team-oriented approach?
+
+Liam has two choices: he can either focus on his individual performance (A1) to boost his chances of a college scholarship, or prioritize team play (A2) to improve the team's overall success. Similarly, Coach Thompson can either emphasize star player development (B1) to showcase Liam's talents, or promote a balanced team strategy (B2) to enhance the team's collective performance.
+
+If Liam focuses on his individual performance (A1) and Coach Thompson emphasizes star player development (B1), Liam may achieve personal success, but the team's performance could suffer. This scenario is Liam's second preference (2) but Coach Thompson's least preferred outcome (1).
+
+If both Liam and Coach Thompson prioritize team play and balanced strategy (A2 and B2), the team is likely to perform well, but Liam's individual accolades might be less pronounced. This is the third preference for both Liam and Coach Thompson (3,3).
+
+If Liam focuses on his individual performance (A1) while Coach Thompson promotes a balanced team strategy (B2), they could potentially achieve the best of both worlds: Liam receives personal accolades while the team succeeds. This is the most preferred outcome for both Liam and Coach Thompson (4,4).
+
+Lastly, if Liam prioritizes team play (A2) but Coach Thompson emphasizes star player development (B1), it could lead to a mismatch in strategy, resulting in neither Liam nor the team performing at their best. This is Liam's least preferred outcome (1) and Coach Thompson's second preference (2).
+
+As the new season approaches, Liam and Coach Thompson must make their decisions, knowing that their choices will significantly impact not only their own success but also the future of the entire team.
+[/Scenario]

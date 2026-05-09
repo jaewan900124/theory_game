@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a corporate lawyer",
+  "B": "Mark, Sarah's client and CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential legal issues",
+  "A2": "Minimize disclosure of potential legal issues",
+  "B1": "Follow lawyer's advice",
+  "B2": "Ignore lawyer's advice"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Full disclosure advised, client follows (professional integrity maintained, potential issues addressed)",
+    3: "Full disclosure advised, client ignores (professional duty fulfilled, but client relationship strained)",
+    2: "Minimal disclosure, client ignores (ethical compromise, but less immediate conflict with client)",
+    1: "Minimal disclosure, client follows (ethical compromise and potential legal consequences)"
+  },
+  "B": {
+    4: "Full disclosure advised, client follows (legal risks mitigated, transparent business practices)",
+    3: "Minimal disclosure, client ignores (short-term gain, but increased legal risks)",
+    2: "Full disclosure advised, client ignores (maintain control, but increased legal exposure)",
+    1: "Minimal disclosure, client follows (potential legal issues unaddressed, future business risks)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Follow) | B2 (Ignore) |
+|-------|-------------|-------------|
+| A1 (Full)    | 3 \ 4       | 4 \ 2       |
+| A2 (Minimal) | 1 \ 1       | 2 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a seasoned corporate lawyer, finds herself in a delicate situation with her client, Mark, the CEO of a promising tech startup. As the company prepares for its IPO, Sarah uncovers potential legal issues that could impact the company's valuation and future operations.
+
+Sarah must decide whether to advise full disclosure of these issues (A1) or minimize the disclosure (A2). Meanwhile, Mark has the choice to either follow Sarah's advice (B1) or ignore it (B2).
+
+If Sarah advises full disclosure and Mark follows (A1, B1), it's the best outcome for Mark (4) as it mitigates legal risks and promotes transparent business practices. It's also good for Sarah (3) as she maintains her professional integrity and addresses potential issues.
+
+If Sarah advises full disclosure but Mark ignores it (A1, B2), it's the best outcome for Sarah (4) as she's fulfilled her professional duty, though it strains the client relationship. It's less favorable for Mark (2) as he maintains control but increases legal exposure.
+
+If Sarah minimizes disclosure and Mark ignores her advice (A2, B2), it's better for Mark (3) due to short-term gains, though it increases legal risks. It's somewhat better for Sarah (2) as there's less immediate conflict with the client, but she's ethically compromised.
+
+The worst scenario for both is if Sarah minimizes disclosure and Mark follows this advice (A2, B1). This leaves potential legal issues unaddressed, creating future business risks for Mark (1) and potential legal consequences for Sarah (1).
+
+Sarah and Mark must navigate this complex situation, balancing professional ethics, legal obligations, and business interests. Their decisions will not only impact the immediate IPO process but also shape the long-term future of the company and their professional relationship.
+[/Scenario]

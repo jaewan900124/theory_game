@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Alex, a talented young basketball player",
+  "B": "Coach Smith, the head coach of the high school basketball team"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play as a team player",
+  "A2": "Play selfishly to showcase individual skills",
+  "B1": "Give Alex more playing time",
+  "B2": "Limit Alex's playing time"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play selfishly and get more playing time",
+    3: "Play selfishly but get limited playing time",
+    2: "Play as a team player and get more playing time",
+    1: "Play as a team player but get limited playing time"
+  },
+  "B": {
+    4: "Alex plays as a team player and gets more playing time",
+    3: "Alex plays selfishly but gets limited playing time",
+    2: "Alex plays as a team player but gets limited playing time",
+    1: "Alex plays selfishly and gets more playing time"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (More playing time) | B2 (Limited playing time) |
+|-------|------------------------|---------------------------|
+| A1 (Team player) | 2 \ 4                  | 1 \ 2                     |
+| A2 (Selfish play) | 3 \ 3                  | 4 \ 1                     |
+[/Payoff Matrix]
+
+[Scenario]
+Alex is a highly talented young basketball player on the high school team coached by Coach Smith. As the team prepares for the upcoming championship, both Alex and Coach Smith face crucial decisions that will impact their individual goals and the team's performance.
+
+Alex has two choices: he can either play as a team player (A1), focusing on passing and creating opportunities for his teammates, or play selfishly (A2) to showcase his individual skills and potentially attract the attention of college scouts. Alex's preference is to play selfishly and get more playing time, as he believes this will give him the best chance to secure a college scholarship.
+
+Coach Smith, on the other hand, must decide whether to give Alex more playing time (B1) or limit his time on the court (B2). The coach's primary goal is to win games and develop a cohesive team, so he prefers Alex to play as a team player and receive more playing time.
+
+The payoff matrix reveals the complexity of their situation:
+
+1. If Alex plays as a team player (A1) and Coach Smith gives him more playing time (B1), Alex gets his third-best outcome (2), while Coach Smith achieves his most desired result (4).
+
+2. If Alex plays as a team player (A1) but Coach Smith limits his playing time (B2), both get their least preferred outcomes (1 for Alex, 2 for Coach Smith).
+
+3. If Alex plays selfishly (A2) and Coach Smith gives him more playing time (B1), Alex achieves his second-best outcome (3), and Coach Smith gets his second-best result (3).
+
+4. If Alex plays selfishly (A2) and Coach Smith limits his playing time (B2), Alex paradoxically achieves his most desired outcome (4), while Coach Smith faces his least preferred scenario (1).
+
+This situation creates a tense dynamic between Alex's individual ambitions and Coach Smith's team-oriented goals. Alex may be tempted to play selfishly, hoping that his skills will force Coach Smith to give him more playing time. However, this could backfire if the coach decides to bench him. Coach Smith must balance the need to win games with the development of his star player, knowing that giving Alex more playing time might encourage selfish behavior.
+
+The outcome of their choices will not only affect their individual goals but also the team's performance in the championship, creating a complex web of personal and collective consequences.
+[/Scenario]

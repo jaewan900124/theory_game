@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Rodriguez"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Thompson for re-election",
+  "B2": "Remain neutral in Senator Thompson's re-election"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill, gain Governor's endorsement",
+    3: "Support bill, no endorsement",
+    2: "Oppose bill, no endorsement",
+    1: "Support bill, gain Governor's endorsement"
+  },
+  "B": {
+    4: "Senator supports bill, Governor endorses",
+    3: "Senator opposes bill, Governor remains neutral",
+    2: "Senator opposes bill, Governor endorses",
+    1: "Senator supports bill, Governor remains neutral"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support)   | 1 \ 4        | 2 \ 1        |
+| A2 (Oppose)    | 3 \ 2        | 4 \ 3        |
+[/Payoff Matrix]
+
+[Scenario]
+Senator Sarah Thompson and Governor Mark Rodriguez find themselves in a delicate political dance as a crucial bipartisan infrastructure bill comes up for vote in the Senate. The bill, while potentially beneficial for their state, has become a contentious issue due to its high cost and some controversial provisions.
+
+Senator Thompson, up for re-election next year, is torn between supporting the bill, which could bring much-needed funding to her state, and opposing it to maintain her fiscal conservative image. Her ideal scenario would be to oppose the bill while still securing Governor Rodriguez's endorsement for her re-election campaign, as his support could significantly boost her chances.
+
+Governor Rodriguez, on the other hand, sees the infrastructure bill as a golden opportunity for the state's development. He strongly favors its passage but must weigh this against the political implications of his actions. His preferred outcome would be for Senator Thompson to support the bill while he endorses her re-election, showcasing unity and bipartisanship.
+
+The choices before them create four possible scenarios:
+
+1. Thompson supports the bill, Rodriguez endorses her (A1/B1): This is Rodriguez's most preferred outcome (4) but Thompson's least preferred (1), as it could alienate her base.
+
+2. Thompson supports the bill, Rodriguez remains neutral (A1/B2): This is the least preferred outcome for Rodriguez (1), as the bill passes but he loses political leverage. It's Thompson's second-least preferred outcome (2), as she risks her image without gaining the Governor's endorsement.
+
+3. Thompson opposes the bill, Rodriguez endorses her (A2/B1): This is Thompson's most preferred outcome (4) but Rodriguez's second-least preferred (2), as he loses the bill but maintains political alliance.
+
+4. Thompson opposes the bill, Rodriguez remains neutral (A2/B2): This is Thompson's second-most preferred outcome (3) and Rodriguez's second-most preferred (3), as both maintain their positions without direct conflict.
+
+As they navigate this political minefield, both Senator Thompson and Governor Rodriguez must carefully consider their choices, weighing personal political gain against state interests and party loyalty. Their decisions will not only impact the fate of the infrastructure bill but also shape the political landscape of their state for years to come.
+[/Scenario]

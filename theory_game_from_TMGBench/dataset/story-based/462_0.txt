@@ -1,0 +1,57 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Teach traditional lecture-style",
+  "A2": "Implement innovative project-based learning",
+  "B1": "Attend classes passively",
+  "B2": "Actively participate and engage in class"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement innovative teaching with active student participation",
+    3: "Implement innovative teaching with passive student attendance",
+    2: "Traditional teaching with active student participation",
+    1: "Traditional teaching with passive student attendance"
+  },
+  "B": {
+    4: "Traditional teaching with active participation",
+    3: "Traditional teaching with passive attendance",
+    2: "Innovative teaching with passive attendance",
+    1: "Innovative teaching with active participation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 2 \ 4 |
+| A2    | 3 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Evergreen University, Professor Smith is preparing for the upcoming semester's Introduction to Psychology course. He's torn between sticking to his traditional lecture-style teaching method and implementing an innovative project-based learning approach. Meanwhile, Jane, a sophomore student enrolled in the course, is deciding how to approach her studies.
+
+Professor Smith prefers the innovative teaching method, believing it leads to better learning outcomes. However, he's aware that its success heavily depends on student engagement. His ideal scenario is implementing the new method with active student participation, followed by using it even with passive attendance. He considers traditional teaching with active participation as his third choice, and traditional teaching with passive attendance as his least preferred option.
+
+Jane, on the other hand, is more comfortable with traditional teaching methods. She prefers active participation in a traditional setting, as it allows her to engage without the pressure of project work. Her second choice is passively attending traditional lectures. She's hesitant about the innovative teaching method, preferring passive attendance if it's implemented, and considering active participation in this new format as her least preferred option due to the perceived workload and uncertainty.
+
+Their choices create four possible scenarios:
+
+1. Traditional teaching with passive attendance (A1/B1): Professor Smith is dissatisfied (1), while Jane is relatively content (3).
+2. Traditional teaching with active participation (A1/B2): Professor Smith is somewhat satisfied (2), and Jane is most satisfied (4).
+3. Innovative teaching with passive attendance (A2/B1): Professor Smith is fairly satisfied (3), but Jane is uncomfortable (2).
+4. Innovative teaching with active participation (A2/B2): Professor Smith is most satisfied (4), but Jane is least satisfied (1).
+
+As the semester begins, both Professor Smith and Jane must decide on their approaches, knowing that their choices will significantly impact the learning experience and outcomes of the course.
+[/Scenario]

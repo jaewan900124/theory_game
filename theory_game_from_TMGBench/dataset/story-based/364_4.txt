@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emily, a senior mechanical engineer",
+  "B": "Alex, a junior software engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share the innovative design",
+  "A2": "Keep the design secret",
+  "B1": "Focus on individual project",
+  "B2": "Collaborate on the joint project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Share design, collaborate on joint project",
+    3: "Share design, Alex focuses on individual project",
+    2: "Keep design secret, collaborate on joint project",
+    1: "Keep design secret, Alex focuses on individual project"
+  },
+  "B": {
+    4: "Emily shares design, collaborate on joint project",
+    3: "Emily keeps design secret, Alex focuses on individual project",
+    2: "Emily keeps design secret, collaborate on joint project",
+    1: "Emily shares design, Alex focuses on individual project"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emily \ Alex | Focus on individual (B1) | Collaborate on joint project (B2) |
+|--------------|--------------------------|-----------------------------------|
+| Share (A1)   | 3 \ 1                    | 4 \ 4                             |
+| Keep secret (A2) | 1 \ 3                | 2 \ 2                             |
+[/Payoff Matrix]
+
+[Scenario]
+Emily, a senior mechanical engineer, and Alex, a junior software engineer, are working at a cutting-edge robotics company. The company has just launched a new project to develop an advanced prosthetic limb, combining mechanical engineering and artificial intelligence.
+
+Emily has recently developed an innovative design for the prosthetic's joint mechanism, which could significantly improve its functionality. She now faces a dilemma: should she share this design with the team, potentially accelerating the project but risking others taking credit for her work, or keep it secret to ensure her individual recognition?
+
+Alex, on the other hand, has been tasked with developing the AI algorithms for the prosthetic's control system. He can choose to focus solely on this individual project or propose a collaboration with Emily to integrate the mechanical and software aspects more seamlessly.
+
+Their choices will impact not only the project's success but also their personal career advancements. If Emily shares her design and Alex collaborates, they could create a groundbreaking product (4,4). If Emily shares but Alex focuses on his individual work, Emily's design might not be fully utilized (3,1). If Emily keeps her design secret and Alex focuses on his work, they might make moderate individual progress (1,3). Lastly, if Emily keeps her design secret but they still try to collaborate, the project might face difficulties due to the lack of information sharing (2,2).
+
+The outcome depends on their decisions to cooperate or compete, balancing personal recognition with project success. Will they choose to work together for the greater good of the project, or will they prioritize their individual achievements?
+[/Scenario]

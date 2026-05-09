@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Emma"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer a traditional lecture",
+  "A2": "Implement a group project",
+  "B1": "Actively participate",
+  "B2": "Passively attend"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement a group project with passive students",
+    3: "Offer a traditional lecture to passive students",
+    2: "Offer a traditional lecture with active participation",
+    1: "Implement a group project with active participation"
+  },
+  "B": {
+    4: "Actively participate in a traditional lecture",
+    3: "Passively attend a group project",
+    2: "Actively participate in a group project",
+    1: "Passively attend a traditional lecture"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Actively participate) | B2 (Passively attend) |
+|-------|---------------------------|------------------------|
+| A1 (Traditional lecture) | 2 \ 4                   | 4 \ 1                  |
+| A2 (Group project)     | 3 \ 2                   | 1 \ 3                  |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is preparing for his upcoming Education Theory course. He's considering two teaching methods: a traditional lecture (A1) or implementing a group project (A2). Meanwhile, student Emma is deciding how to approach the course: she can either actively participate (B1) or passively attend (B2).
+
+Professor Smith prefers implementing a group project with passive students (4) as it challenges him less and puts more responsibility on the students. His second preference is offering a traditional lecture to passive students (3), followed by a traditional lecture with active participation (2). His least preferred scenario is implementing a group project with active participation (1), as it requires more effort and guidance from him.
+
+Emma, on the other hand, most prefers actively participating in a traditional lecture (4) as she learns best through direct instruction and asking questions. Her second choice is passively attending a group project (3), where she can contribute minimally. She's less enthusiastic about actively participating in a group project (2), and least prefers passively attending a traditional lecture (1).
+
+The payoff matrix represents their preferences numerically. For instance, if Professor Smith chooses a traditional lecture (A1) and Emma actively participates (B1), Smith receives a payoff of 2 (his third preference), while Emma receives a payoff of 4 (her top preference).
+
+As they make their decisions independently, both Professor Smith and Emma must consider the potential choices of the other to maximize their own benefit. This situation creates an interesting dynamic where their individual preferences may lead to suboptimal outcomes for both, highlighting the complexities of decision-making in educational settings.
+[/Scenario]

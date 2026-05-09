@@ -1,0 +1,64 @@
+[Characters]
+{
+  "A": "Senator Alice",
+  "B": "Senator Bob"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the bipartisan bill",
+  "A2": "Oppose the bipartisan bill",
+  "B1": "Support the bipartisan bill",
+  "B2": "Oppose the bipartisan bill"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "The bill passes with only her support, gaining her sole credit",
+    3: "The bill passes with both senators' support",
+    2: "The bill fails with Bob's support but her opposition",
+    1: "The bill fails with neither senator's support"
+  },
+  "B": {
+    4: "The bill passes with both senators' support",
+    3: "The bill fails with Bob's support but Alice's opposition",
+    2: "The bill fails with neither senator's support",
+    1: "The bill passes with only Alice's support"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 1 |
+| A2    | 2 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense political climate, Senators Alice and Bob find themselves at the center of a crucial vote on a bipartisan bill. The bill aims to address a pressing national issue, and its passage could have significant implications for both senators' political careers and their constituents.
+
+Senator Alice, known for her ambitious nature, sees this as an opportunity to boost her political standing. She would ideally like to be the sole supporter of the bill, gaining all the credit for its passage. However, she also recognizes the value of bipartisan cooperation and the positive impact of the bill passing with both senators' support.
+
+Senator Bob, more concerned with the overall success of the legislation, prefers a scenario where both senators support the bill. He believes this would not only ensure its passage but also demonstrate unity across party lines. However, if Alice opposes the bill, he would rather continue supporting it to maintain his principles, even if it fails.
+
+Both senators must decide whether to support or oppose the bill, knowing that their decisions will interact to produce one of four possible outcomes:
+
+1. If both support the bill (A1, B1), it passes with bipartisan backing. This is Bob's most preferred outcome (4) and Alice's second-best scenario (3).
+
+2. If Alice supports the bill while Bob opposes it (A1, B2), the bill passes but with Alice getting sole credit. This is Alice's ideal outcome (4) but Bob's least preferred scenario (1).
+
+3. If Alice opposes the bill while Bob supports it (A2, B1), the bill fails despite Bob's support. This is Bob's second-best choice (3) and Alice's third-best outcome (2).
+
+4. If both oppose the bill (A2, B2), it fails without either senator's support. This is Bob's third-best scenario (2) and Alice's least preferred outcome (1).
+
+As the vote approaches, both senators must carefully consider their choices, weighing personal political gain against bipartisan cooperation and the bill's potential impact on their constituents. Their decision will not only affect the fate of the bill but also shape their political futures and the public's perception of their ability to govern effectively.
+
+Alice faces a dilemma: should she pursue personal glory by hoping to be the sole supporter, or should she prioritize the bill's passage through cooperation? Bob, on the other hand, must decide whether to maintain his support for the bill regardless of Alice's choice or to strategically oppose it if he believes Alice will support it alone.
+
+The outcome of this political game theory scenario will depend on how each senator assesses the other's likely move and how much they value their personal preferences versus the greater good.
+[/Scenario]

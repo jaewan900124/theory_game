@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Council President Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new grading system",
+  "A2": "Keep the current grading system",
+  "B1": "Support the new grading system",
+  "B2": "Oppose the new grading system"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new grading system without student opposition",
+    3: "Keep current grading system with student support",
+    2: "Implement new grading system with student opposition",
+    1: "Keep current grading system without student support"
+  },
+  "B": {
+    4: "New grading system implemented with student support",
+    3: "Current grading system kept with student support",
+    2: "Current grading system kept despite student opposition",
+    1: "New grading system implemented despite student opposition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 3 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith, the head of the Academic Affairs Committee, is considering implementing a new grading system that he believes will better reflect students' abilities and effort. However, the decision isn't entirely up to him; he needs to consider the students' perspective, represented by Student Council President Jane.
+
+Professor Smith has two choices: implement the new grading system (A1) or keep the current one (A2). Jane, representing the student body, can either support (B1) or oppose (B2) the new system.
+
+Professor Smith's ideal scenario is to implement the new system without student opposition (A1, B2), as this would allow for a smooth transition and showcase his leadership. His second preference is to keep the current system with student support (A2, B1), maintaining harmony on campus. Implementing the new system with student opposition (A1, B1) is his third choice, as it could lead to tensions. His least preferred outcome is keeping the current system without student support (A2, B2), which might make him appear ineffective.
+
+Jane, on the other hand, most prefers supporting a new system that gets implemented (A1, B1), as it would show the Student Council's influence and progressive thinking. Her second choice is to support keeping the current system (A2, B1), maintaining a good relationship with the administration. Opposing a change that doesn't happen (A2, B2) is her third preference, as it still shows the Council's stance. Her least preferred outcome is opposing a change that happens anyway (A1, B2), which would make the Student Council appear powerless.
+
+The situation creates an interesting dynamic where both parties must consider not only their own preferences but also how their choices might influence the other's decision. The outcome will depend on how well they can communicate, negotiate, and potentially find a compromise that satisfies both the administration's desire for academic improvement and the students' concerns about fairness and stability in their education.
+[/Scenario]

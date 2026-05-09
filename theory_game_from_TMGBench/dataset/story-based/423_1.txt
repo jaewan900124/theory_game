@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Blake, Alex's doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play defensively",
+  "A2": "Play aggressively",
+  "B1": "Cover the net",
+  "B2": "Cover the baseline"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play aggressively while partner covers the baseline",
+    3: "Play defensively while partner covers the baseline",
+    2: "Play defensively while partner covers the net",
+    1: "Play aggressively while partner covers the net"
+  },
+  "B": {
+    4: "Cover the baseline while partner plays defensively",
+    3: "Cover the net while partner plays aggressively",
+    2: "Cover the net while partner plays defensively",
+    1: "Cover the baseline while partner plays aggressively"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Cover the net) | B2 (Cover the baseline) |
+|-------|---------------------|-------------------------|
+| A1 (Play defensively) | 2 \ 2               | 3 \ 4                   |
+| A2 (Play aggressively) | 1 \ 3               | 4 \ 1                   |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake, professional tennis players and doubles partners, are preparing for the final match of a grand slam tournament. They need to decide on their strategy for the upcoming game.
+
+Alex, known for her powerful strokes, is contemplating whether to play defensively or aggressively. She prefers to play aggressively when Blake covers the baseline, as this allows her to dominate the front court. Her least preferred scenario is playing aggressively while Blake covers the net, as this leaves them vulnerable to lobs and passing shots.
+
+Blake, on the other hand, is deciding between covering the net or the baseline. He excels at volleying and prefers to cover the baseline when Alex plays defensively, as this allows him to anticipate and intercept opponent's shots. His least preferred scenario is covering the baseline while Alex plays aggressively, as this often leaves him out of position.
+
+Their coach has emphasized the importance of coordination, reminding them that their individual choices will greatly impact their performance as a team. The payoff matrix represents their perceived effectiveness in each scenario, with 4 being the most effective and 1 being the least.
+
+If both choose their most preferred strategies (Alex playing aggressively and Blake covering the baseline), they achieve the highest individual satisfaction but may leave gaps in their court coverage. If they both choose their second-best options (Alex playing defensively and Blake covering the net), they achieve a balanced but not optimal strategy.
+
+As they warm up on the court, Alex and Blake must make their decisions independently, knowing that their choices will determine their success in the final match. The tension builds as they realize the importance of their strategic choices and the potential consequences of misalignment in their game plan.
+[/Scenario]

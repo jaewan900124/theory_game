@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a clinical psychologist",
+  "B": "Alex Chen, a psychology graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Withhold research findings",
+  "B1": "Work independently",
+  "B2": "Collaborate with Dr. Thompson"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Share findings and collaborate (A1B2)",
+    3: "Share findings, Alex works independently (A1B1)",
+    2: "Withhold findings, Alex works independently (A2B1)",
+    1: "Withhold findings but collaborate (A2B2)",
+  },
+  "B": {
+    4: "Dr. Thompson shares findings and they collaborate (A1B2)",
+    3: "Dr. Thompson withholds findings but they collaborate (A2B2)",
+    2: "Dr. Thompson withholds findings, work independently (A2B1)",
+    1: "Dr. Thompson shares findings, work independently (A1B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 4 \ 4 |
+| A2    | 2 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson, a renowned clinical psychologist, has been working on groundbreaking research in cognitive behavioral therapy. Alex Chen, a promising psychology graduate student, has recently joined her department and is eager to make a name for themselves in the field.
+
+Dr. Thompson faces a dilemma: she can either share her latest research findings (A1) or withhold them (A2). Sharing would potentially accelerate progress in the field but might risk her losing credit for the work. Withholding would protect her intellectual property but could slow down overall scientific advancement.
+
+Alex, on the other hand, must decide whether to work independently on their own research project (B1) or collaborate with Dr. Thompson (B2). Working independently could lead to original findings but might be more challenging and time-consuming. Collaborating with Dr. Thompson could provide valuable mentorship and faster results but might overshadow Alex's individual contributions.
+
+Dr. Thompson's ideal scenario is to share her findings and collaborate with Alex (A1B2), as this would advance the field while ensuring her work is properly credited. Her least preferred outcome is withholding her findings while still collaborating (A2B2), as this would hinder progress and potentially damage her professional relationships.
+
+Alex's most desired outcome aligns with Dr. Thompson's: collaboration with shared findings (A1B2). This would provide the best learning opportunity and career advancement. However, Alex's least preferred scenario is when Dr. Thompson shares her findings but Alex works independently (A1B1), as this might make Alex's work seem less original by comparison.
+
+The scenario creates a complex interplay of trust, ambition, and scientific ethics. If they can overcome their individual concerns and choose to cooperate, both Dr. Thompson and Alex stand to gain the most. However, the fear of being taken advantage of or losing recognition for their work could lead them to make choices that result in suboptimal outcomes for both parties.
+[/Scenario]

@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a collaborative care program",
+  "A2": "Maintain the current hospital-centric model",
+  "B1": "Join the collaborative care program",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement collaborative care, Dr. Johnson remains independent",
+    3: "Implement collaborative care, Dr. Johnson joins",
+    2: "Maintain current model, Dr. Johnson remains independent",
+    1: "Maintain current model, Dr. Johnson joins"
+  },
+  "B": {
+    4: "Hospital implements collaborative care, he joins",
+    3: "Hospital implements collaborative care, he remains independent",
+    2: "Hospital maintains current model, he remains independent",
+    1: "Hospital maintains current model, he joins"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Join) | B2 (Independent) |
+|-------|-----------|-------------------|
+| A1 (Collaborative) | 3 \ 4     | 4 \ 3           |
+| A2 (Current Model) | 1 \ 2     | 2 \ 1           |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Greenville General Hospital, led by Dr. Sarah Chen, is considering implementing a new collaborative care program to improve patient outcomes and reduce healthcare costs. This program would involve partnering with local private practice physicians to create a more integrated healthcare system.
+
+Dr. Mark Johnson, a respected private practice physician in the community, is faced with the decision of whether to join this collaborative care program or remain independent. Both Dr. Chen and Dr. Johnson must make their decisions simultaneously, without knowing the other's choice.
+
+Dr. Chen prefers implementing the collaborative care program regardless of Dr. Johnson's decision, as she believes it will benefit the hospital and community in the long run. Her most preferred outcome is implementing the program while Dr. Johnson remains independent, as this would allow the hospital to maintain more control over the program's direction.
+
+Dr. Johnson, on the other hand, sees potential benefits in joining the collaborative care program but is also wary of losing his autonomy. His most preferred outcome is joining the program if it's implemented, as he believes this would provide the best balance of improved patient care and professional opportunities.
+
+The payoff matrix reflects these preferences:
+
+1. If Dr. Chen implements the collaborative care program (A1) and Dr. Johnson joins (B1), both benefit significantly, but Dr. Johnson slightly more (3 \ 4).
+
+2. If Dr. Chen implements the program (A1) but Dr. Johnson remains independent (B2), Dr. Chen achieves her most preferred outcome while Dr. Johnson still benefits somewhat (4 \ 3).
+
+3. If Dr. Chen maintains the current model (A2) and Dr. Johnson remains independent (B2), both are somewhat dissatisfied but maintain their status quo (2 \ 1).
+
+4. If Dr. Chen maintains the current model (A2) and Dr. Johnson attempts to join a non-existent program (B1), this leads to the least preferred outcome for Dr. Chen and a suboptimal outcome for Dr. Johnson (1 \ 2).
+
+This scenario illustrates the complex dynamics in healthcare decision-making, where individual preferences and system-wide changes can significantly impact patient care and professional relationships.
+[/Scenario]

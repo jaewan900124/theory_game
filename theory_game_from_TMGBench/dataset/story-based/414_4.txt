@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "EcoTech, a green technology company",
+  "B": "ForestCorp, a logging company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly logging technology",
+  "A2": "Focus on reforestation projects",
+  "B1": "Continue traditional logging practices",
+  "B2": "Adopt sustainable logging methods"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Focus on reforestation while ForestCorp adopts sustainable methods",
+    3: "Develop eco-friendly logging tech while ForestCorp continues traditional practices",
+    2: "Focus on reforestation while ForestCorp continues traditional practices",
+    1: "Develop eco-friendly logging tech while ForestCorp adopts sustainable methods"
+  },
+  "B": {
+    4: "Continue traditional practices while EcoTech develops eco-friendly logging tech",
+    3: "Adopt sustainable methods while EcoTech focuses on reforestation",
+    2: "Adopt sustainable methods while EcoTech develops eco-friendly logging tech",
+    1: "Continue traditional practices while EcoTech focuses on reforestation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoTech \ ForestCorp | Continue traditional (B1) | Adopt sustainable (B2) |
+|-----------------------|--------------------------|------------------------|
+| Develop eco-tech (A1) |          1 \ 1           |         3 \ 4          |
+| Focus reforest (A2)   |          2 \ 3           |         4 \ 2          |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush, biodiverse forest region, two companies find themselves at a crossroads of environmental responsibility and economic interests. EcoTech, a green technology company, and ForestCorp, a established logging company, must make decisions that will shape the future of the forest ecosystem.
+
+EcoTech faces a choice between developing eco-friendly logging technology (A1) or focusing on reforestation projects (A2). Meanwhile, ForestCorp must decide whether to continue their traditional logging practices (B1) or adopt more sustainable logging methods (B2).
+
+EcoTech's ideal scenario is to focus on reforestation while ForestCorp adopts sustainable methods, as this would have the most positive impact on the ecosystem. Their least preferred outcome is developing eco-friendly logging tech while ForestCorp already adopts sustainable methods, as this would make their technology redundant.
+
+ForestCorp, on the other hand, would prefer to continue their traditional practices while EcoTech develops eco-friendly logging tech, as this allows them to maintain their current operations while appearing environmentally conscious. Their least desired outcome is to continue traditional practices while EcoTech focuses on reforestation, as this would highlight their unsustainable methods.
+
+If both companies choose their first options (A1 and B1), they both receive minimal benefits (1,1) as the eco-tech goes unused and traditional logging continues. If EcoTech develops eco-tech and ForestCorp adopts sustainable methods (A1, B2), ForestCorp benefits most (3,4) by appearing progressive while using EcoTech's innovation.
+
+If EcoTech focuses on reforestation while ForestCorp continues traditional logging (A2, B1), ForestCorp gains more (2,3) by maintaining their practices while EcoTech struggles to make an impact. However, if EcoTech pursues reforestation and ForestCorp adopts sustainable methods (A2, B2), EcoTech achieves their best outcome (4,2) while ForestCorp makes a moderate compromise.
+
+This scenario illustrates the complex interplay between environmental conservation efforts and business interests in the realm of forest management.
+[/Scenario]

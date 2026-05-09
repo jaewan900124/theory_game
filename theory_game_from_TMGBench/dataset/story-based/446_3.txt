@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a psychology researcher",
+  "B": "Dr. James Chen, a psychology researcher"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on a similar project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while B works independently",
+    3: "Share findings openly while B collaborates",
+    2: "Keep findings private while B collaborates",
+    1: "Share findings openly while B works independently"
+  },
+  "B": {
+    4: "Work independently while A shares openly",
+    3: "Work independently while A keeps findings private",
+    2: "Collaborate while A shares openly",
+    1: "Collaborate while A keeps findings private"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 1 \ 4 |
+| A2    | 2 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson and Dr. James Chen are both psychology researchers working on similar projects related to cognitive biases in decision-making. They are faced with a dilemma that will test their professional ethics and personal ambitions.
+
+Dr. Thompson has recently made a breakthrough in her research, uncovering a new cognitive bias that could significantly impact the field. She must decide whether to share her findings openly with the scientific community (A1) or keep them private for now to maintain a competitive edge (A2).
+
+Dr. Chen, aware of Dr. Thompson's progress, must choose between proposing a collaboration on the project (B1) or working independently on a similar study (B2).
+
+Their decisions will lead to four possible scenarios:
+
+1. If Dr. Thompson shares openly (A1) and Dr. Chen collaborates (B1), they both benefit from shared knowledge and resources. This is Dr. Thompson's second-best outcome (3) and Dr. Chen's third-best (2).
+
+2. If Dr. Thompson shares openly (A1) but Dr. Chen works independently (B2), Dr. Chen gains the most benefit (4) by having access to Dr. Thompson's findings while maintaining his independence. However, this is Dr. Thompson's least preferred outcome (1).
+
+3. If Dr. Thompson keeps her findings private (A2) and Dr. Chen collaborates (B1), Dr. Thompson maintains some advantage (2) while Dr. Chen is at a disadvantage, making it his least preferred outcome (1).
+
+4. If Dr. Thompson keeps her findings private (A2) and Dr. Chen works independently (B2), Dr. Thompson achieves her most preferred outcome (4) by maintaining her competitive edge, while Dr. Chen still benefits moderately (3) by pursuing his own research.
+
+The researchers must navigate this complex situation, balancing their personal career goals with the potential benefits of collaboration and the ethical considerations of sharing scientific knowledge. Their choices will not only affect their individual careers but also the progress of psychological research in their field.
+[/Scenario]

@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a marine biologist",
+  "B": "Dr. Mark Thompson, an environmental scientist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual research",
+  "A2": "Collaborate on joint research project",
+  "B1": "Share limited data",
+  "B2": "Withhold data"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on joint research project while B withholds data",
+    3: "Collaborate on joint research project while B shares limited data",
+    2: "Focus on individual research while B shares limited data",
+    1: "Focus on individual research while B withholds data",
+  },
+  "B": {
+    4: "A focuses on individual research while B withholds data",
+    3: "Collaborate on joint research project while B shares limited data",
+    2: "Collaborate on joint research project while B withholds data",
+    1: "A focuses on individual research while B shares limited data"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Share limited data) | B2 (Withhold data) |
+|-------|-------------------------|---------------------|
+| A1 (Focus on individual research) | 2 \ 1 | 1 \ 4 |
+| A2 (Collaborate on joint research project) | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen, a marine biologist, and Dr. Mark Thompson, an environmental scientist, are both studying the effects of climate change on coral reefs in the Pacific Ocean. They have been working independently but have recently discovered that their research areas overlap significantly.
+
+Dr. Chen is considering whether to focus on her individual research or propose a collaborative project with Dr. Thompson. She believes that collaboration could lead to more comprehensive results and increased funding opportunities. However, she's unsure if Dr. Thompson will be willing to share his data fully.
+
+Dr. Thompson, on the other hand, is deciding whether to share his limited data or withhold it entirely. He's concerned about maintaining his competitive edge in the field but also recognizes the potential benefits of collaboration.
+
+Their choices will lead to different outcomes:
+
+1. If Dr. Chen focuses on individual research and Dr. Thompson shares limited data, both will make some progress, but it won't be optimal for either (2 for Chen, 1 for Thompson).
+
+2. If Dr. Chen focuses on individual research and Dr. Thompson withholds data, Chen's research will suffer, but Thompson will have a significant advantage (1 for Chen, 4 for Thompson).
+
+3. If Dr. Chen proposes collaboration and Dr. Thompson shares limited data, both will benefit from the partnership, leading to good results for both (3 for Chen, 3 for Thompson).
+
+4. If Dr. Chen proposes collaboration and Dr. Thompson withholds data, Chen will gain the most benefit as she'll have access to both datasets, while Thompson will still benefit from the collaboration but not as much as he could have (4 for Chen, 2 for Thompson).
+
+Dr. Chen's ideal scenario is collaborating while having full access to Dr. Thompson's data, as it would greatly enhance her research. Dr. Thompson's preferred outcome is maintaining his data advantage while benefiting from Dr. Chen's individual work.
+
+As they prepare for an upcoming conference where they'll both present their findings, they must decide on their course of action, knowing that their choices will significantly impact their research outcomes and professional relationships in the field of marine biology.
+[/Scenario]

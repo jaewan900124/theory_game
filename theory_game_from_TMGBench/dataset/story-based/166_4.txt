@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a cloud-based solution",
+  "A2": "Develop an on-premise solution",
+  "B1": "Design custom hardware",
+  "B2": "Use off-the-shelf components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop an on-premise solution with off-the-shelf components",
+    3: "Develop an on-premise solution with custom hardware",
+    2: "Develop a cloud-based solution with off-the-shelf components",
+    1: "Develop a cloud-based solution with custom hardware"
+  },
+  "B": {
+    4: "Design custom hardware for a cloud-based solution",
+    3: "Design custom hardware for an on-premise solution",
+    2: "Use off-the-shelf components for a cloud-based solution",
+    1: "Use off-the-shelf components for an on-premise solution"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 2 |
+| A2    | 3 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a tech startup developing a new smart home system. They need to decide on the software and hardware approaches for their product.
+
+Alex, the software developer, prefers an on-premise solution as it offers more control and customization. His top choice is to develop an on-premise solution using off-the-shelf components (A2, B2) as it's cost-effective and easier to implement. His second preference is an on-premise solution with custom hardware (A2, B1), which offers better performance but is more expensive. He's less enthusiastic about cloud-based solutions due to potential security concerns, with his least preferred option being a cloud solution with custom hardware (A1, B1).
+
+Blake, the hardware engineer, favors designing custom hardware as it showcases his skills and provides a competitive edge. His ideal scenario is to design custom hardware for a cloud-based solution (A1, B1), believing it offers the best performance and scalability. His second choice is custom hardware for an on-premise solution (A2, B1). He's less keen on using off-the-shelf components, with his least preferred option being off-the-shelf components for an on-premise solution (A2, B2).
+
+If they choose conflicting approaches, they'll need to compromise, resulting in suboptimal outcomes for both. The cloud-based solution with off-the-shelf components (A1, B2) is a middle ground but not ideal for either of them.
+
+Their decisions will impact the product's performance, cost, and market positioning. They must consider their individual preferences while also thinking about what's best for the company. The challenge lies in finding a balance between their professional desires and the optimal solution for the project.
+[/Scenario]

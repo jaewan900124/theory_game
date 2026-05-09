@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Sarah, a talented graphic designer",
+  "B": "Mike, a marketing specialist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Keep ideas to himself",
+  "B2": "Share ideas openly"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while Mike shares ideas openly",
+    3: "Collaborate while Mike keeps ideas to himself",
+    2: "Work independently while Mike shares ideas openly",
+    1: "Work independently while Mike keeps ideas to himself"
+  },
+  "B": {
+    4: "Sarah collaborates while he shares ideas openly",
+    3: "Sarah works independently while he keeps ideas to himself",
+    2: "Sarah collaborates while he keeps ideas to himself",
+    1: "Sarah works independently while he shares ideas openly"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Keep ideas) | B2 (Share ideas) |
+|-------|-----------------|-------------------|
+| A1 (Collaborate) | 3 \ 2           | 4 \ 4             |
+| A2 (Work independently) | 1 \ 3           | 2 \ 1             |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah and Mike work for a small advertising agency and have been assigned to create a campaign for a new client. Their boss has given them the option to either collaborate or work independently on the project.
+
+Sarah, known for her creative flair, is excited about the prospect of collaboration. She believes that combining her design skills with Mike's marketing expertise could lead to an outstanding campaign. However, she's also aware that working alone might allow her more creative freedom.
+
+Mike, on the other hand, is torn between keeping his innovative ideas to himself, potentially giving him an edge in future promotions, or sharing them openly for the benefit of the project.
+
+If they choose to collaborate and Mike shares his ideas openly (A1, B2), both will benefit greatly, creating a stellar campaign that impresses their boss and the client. This is the most preferred outcome for both (4,4).
+
+If they collaborate but Mike keeps his ideas to himself (A1, B1), Sarah will still produce good work, but not as innovative as it could be. Mike might feel he has an advantage for future opportunities. This scenario is Sarah's third preference but Mike's second (3,2).
+
+If Sarah decides to work independently and Mike shares his ideas openly (A2, B2), Sarah might incorporate some of Mike's ideas into her work, slightly improving her output. However, Mike might feel his ideas were used without proper credit. This is Sarah's second preference but Mike's least preferred outcome (2,1).
+
+Lastly, if Sarah works independently and Mike keeps his ideas to himself (A2, B1), Sarah's work might not be as strong, but Mike maintains his competitive edge. This is Sarah's least preferred outcome but Mike's third preference (1,3).
+
+The challenge for Sarah and Mike is to navigate this situation, balancing their individual interests with the potential for a successful collaborative project. Their choices will not only affect the outcome of this campaign but could also impact their working relationship and future opportunities within the agency.
+[/Scenario]

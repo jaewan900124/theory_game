@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, an ambitious young painter",
+  "B": "Marcus, an established gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a traditional, crowd-pleasing painting",
+  "A2": "Produce an avant-garde, controversial artwork",
+  "B1": "Offer exclusive representation to Emma",
+  "B2": "Decline to represent Emma"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create avant-garde art and get gallery representation",
+    3: "Create avant-garde art without gallery representation",
+    2: "Create traditional art and get gallery representation",
+    1: "Create traditional art without gallery representation"
+  },
+  "B": {
+    4: "Represent Emma with her traditional art",
+    3: "Represent Emma with her avant-garde art",
+    2: "Decline Emma with her avant-garde art",
+    1: "Decline Emma with her traditional art"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Marcus | Offer representation (B1) | Decline representation (B2) |
+|----------------|---------------------------|----------------------------|
+| Traditional (A1) | 1 \ 4                     | 2 \ 1                      |
+| Avant-garde (A2) | 3 \ 3                     | 4 \ 2                      |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, an ambitious young painter, is preparing for her first major exhibition. She's caught at a crossroads, torn between creating a traditional, crowd-pleasing painting that might appeal to a wider audience, or producing an avant-garde, controversial artwork that truly represents her artistic vision.
+
+Meanwhile, Marcus, an established gallery owner known for his keen eye for talent, has heard whispers about Emma's potential. He's considering whether to offer her exclusive representation, which could jumpstart her career, or to decline, keeping his gallery's current style intact.
+
+Emma's greatest desire is to create avant-garde art and secure gallery representation, as it would allow her to pursue her passion while gaining recognition. Her least preferred outcome would be to compromise her artistic vision with traditional art and still not get represented.
+
+Marcus, on the other hand, would ideally like to represent Emma if she produces traditional art, as it aligns with his gallery's current successful formula. His least desired scenario would be declining to represent Emma if she creates traditional art, potentially missing out on a profitable opportunity.
+
+If Emma chooses to create traditional art (A1) and Marcus offers representation (B1), Emma would be somewhat dissatisfied artistically but represented (1), while Marcus would be highly satisfied (4). If Marcus declines representation in this case (B2), Emma would be slightly better off pursuing her own path (2), but Marcus would regret the missed opportunity (1).
+
+Should Emma decide to create avant-garde art (A2) and Marcus offers representation (B1), both would find a satisfactory middle ground (3 for both). If Marcus declines representation for avant-garde art (B2), Emma would be artistically fulfilled but without gallery support (4), while Marcus would be content with maintaining his gallery's style (2).
+
+As they contemplate their decisions, both Emma and Marcus must weigh their artistic integrity against commercial success, and consider the potential for a mutually beneficial partnership or the risks of going their separate ways.
+[/Scenario]

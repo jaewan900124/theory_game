@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pursue diplomatic negotiations",
+  "A2": "Impose economic sanctions",
+  "B1": "Maintain current trade policies",
+  "B2": "Open markets and reduce tariffs"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Open markets with diplomatic negotiations",
+    3: "Impose sanctions while China maintains policies",
+    2: "Both pursue diplomatic negotiations",
+    1: "Impose sanctions while China opens markets"
+  },
+  "B": {
+    4: "Open markets with diplomatic negotiations",
+    3: "US pursues diplomacy while China maintains policies",
+    2: "US imposes sanctions while China maintains policies",
+    1: "US imposes sanctions while China opens markets"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 3 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex world of international relations, the United States and China find themselves at a critical juncture. Both nations are aware that their decisions will significantly impact global trade and diplomatic relations.
+
+The United States (A) has two options: pursue diplomatic negotiations (A1) or impose economic sanctions (A2). China (B) can either maintain its current trade policies (B1) or open its markets and reduce tariffs (B2).
+
+If both countries choose diplomacy and open markets (A1, B2), it results in the best outcome for both (4,4), fostering improved relations and economic growth. However, if the US pursues diplomacy while China maintains its current policies (A1, B1), China gains a slight advantage (2,3) as it benefits from positive diplomatic relations without making concessions.
+
+Should the US impose sanctions while China maintains its policies (A2, B1), the US gains a short-term advantage (3,2) by asserting its economic power, but at the cost of strained relations. The worst-case scenario for both nations occurs if the US imposes sanctions while China opens its markets (A2, B2), resulting in mutual economic harm and diplomatic tension (1,1).
+
+The challenge lies in the fact that while both countries would benefit most from mutual cooperation, the temptation to gain a unilateral advantage creates a delicate balance. The US must weigh the potential short-term gains of sanctions against the long-term benefits of diplomacy, while China must consider the economic advantages of open markets against the political costs of perceived concession.
+
+As global leaders watch with bated breath, the decisions made by these two superpowers will shape the future of international trade and diplomacy for years to come.
+[/Scenario]

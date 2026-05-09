@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Emma"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Teach traditionally",
+  "A2": "Implement innovative teaching methods",
+  "B1": "Engage actively in class",
+  "B2": "Study independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement innovative methods with independent students",
+    3: "Teach traditionally to engaged students",
+    2: "Implement innovative methods with engaged students",
+    1: "Teach traditionally to independent students"
+  },
+  "B": {
+    4: "Engage in traditional teaching",
+    3: "Study independently with innovative teaching",
+    2: "Study independently with traditional teaching",
+    1: "Engage in innovative teaching"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Engage) | B2 (Independent) |
+|-------|-------------|-------------------|
+| A1 (Traditional) | 1 \ 4 | 3 \ 1 |
+| A2 (Innovative) | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At Evergreen University, Professor Smith is preparing for the upcoming semester's Advanced Economics course. He's considering whether to stick with his traditional lecture-based approach or implement innovative teaching methods involving more technology and group projects. Meanwhile, Emma, a bright but introverted student, is enrolled in the course and must decide how to approach her studies.
+
+Professor Smith prefers implementing innovative methods, especially if students study independently, as it allows for more creativity and self-paced learning. However, he also values engaged students in a traditional setting. His least preferred scenario is teaching traditionally to independent students, as it feels like a missed opportunity for interaction.
+
+Emma, on the other hand, thrives in traditional classroom settings where she can engage actively, absorbing information directly from the professor. She's less comfortable with innovative methods that might require more group work or technology use. If forced to choose between innovative teaching methods, she'd prefer to study independently rather than engage in unfamiliar classroom activities.
+
+The semester begins, and both Professor Smith and Emma must make their choices:
+
+1. If Professor Smith teaches traditionally (A1) and Emma engages actively (B1), Smith finds it somewhat unfulfilling (1) while Emma is in her element (4).
+
+2. If Smith teaches traditionally (A1) and Emma studies independently (B2), Smith is satisfied with the autonomy students show (3), but Emma struggles without direct engagement (1).
+
+3. If Smith implements innovative methods (A2) and Emma engages actively (B1), Smith is pleased with the participation (2), and Emma adapts reasonably well (3).
+
+4. If Smith implements innovative methods (A2) and Emma studies independently (B2), Smith is thrilled with the outcome (4), while Emma finds it challenging but manageable (2).
+
+As the semester progresses, both Professor Smith and Emma must navigate their choices, balancing their personal preferences with the dynamics of the class and the evolving educational landscape.
+[/Scenario]

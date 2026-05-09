@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Michael, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new AI product",
+  "A2": "Propose a merger",
+  "B1": "Focus on expanding market share",
+  "B2": "Collaborate on AI development"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop AI product while B expands market (A1, B1)",
+    3: "Merge companies (A2, B1)",
+    2: "Both develop AI product collaboratively (A1, B2)",
+    1: "Propose merger but B collaborates on AI (A2, B2)"
+  },
+  "B": {
+    4: "TechInnovate develops AI while DataDrive expands (A1, B1)",
+    3: "Merge companies (A2, B1)",
+    2: "Collaborate on AI development (A1, B2)",
+    1: "Collaborate on AI while TechInnovate proposes merger (A2, B2)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 2 |
+| A2    | 3 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the competitive world of tech startups, Sarah, the CEO of TechInnovate, and Michael, the CEO of DataDrive, find themselves at a crossroads. Both companies have been making waves in the industry, but they now face crucial decisions that will shape their future.
+
+Sarah is contemplating two options: developing a groundbreaking AI product (A1) or proposing a merger with DataDrive (A2). Meanwhile, Michael is considering either focusing on expanding DataDrive's market share (B1) or collaborating with TechInnovate on AI development (B2).
+
+Sarah's ideal scenario is to develop the AI product while DataDrive focuses on market expansion (A1, B1). This would allow TechInnovate to innovate without direct competition while potentially benefiting from DataDrive's increased market presence. Her second preference is a merger (A2, B1), which would combine their strengths but reduce her autonomy. Collaborating on AI development (A1, B2) is her third choice, as it would mean sharing the innovation. Her least preferred outcome is proposing a merger while DataDrive opts for collaboration (A2, B2), as this misalignment could lead to complications.
+
+Michael, on the other hand, would prefer that TechInnovate develops the AI product while DataDrive expands its market share (A1, B1). This would allow him to grow his company while potentially benefiting from TechInnovate's innovation later. His second choice is a merger (A2, B1), seeing the potential in combining forces. Collaborating on AI development (A1, B2) is his third preference, as it would mean sharing resources and potential profits. His least desired outcome is a scenario where TechInnovate proposes a merger while DataDrive attempts to collaborate on AI (A2, B2), as this misalignment could lead to tension and missed opportunities.
+
+The payoff matrix reflects these preferences, with each CEO having to weigh their options carefully. Their decisions will not only affect their own companies but also shape the competitive landscape of the tech industry. As they prepare for a crucial meeting, both Sarah and Michael must consider their choices and the potential outcomes, knowing that their decisions will have far-reaching consequences for their businesses and careers.
+[/Scenario]

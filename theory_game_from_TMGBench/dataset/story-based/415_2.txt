@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a marine biologist",
+  "B": "Dr. Michael Torres, a conservation ecologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual species research",
+  "A2": "Expand research to ecosystem-wide studies",
+  "B1": "Concentrate on local conservation efforts",
+  "B2": "Implement a broader regional conservation plan"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Ecosystem-wide studies with regional conservation plan",
+    3: "Individual species research with regional conservation plan",
+    2: "Ecosystem-wide studies with local conservation efforts",
+    1: "Individual species research with local conservation efforts"
+  },
+  "B": {
+    4: "Individual species research with regional conservation plan",
+    3: "Ecosystem-wide studies with regional conservation plan",
+    2: "Ecosystem-wide studies with local conservation efforts",
+    1: "Individual species research with local conservation efforts"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 3 \ 4 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Dr. Michael Torres are marine biology researchers working on a critical project to protect the endangered coral reefs in the Pacific Ocean. They must decide on their research and conservation approaches, which will significantly impact the success of their project and the future of the marine ecosystem.
+
+Dr. Chen (A) is considering whether to focus on individual species research (A1) or expand her studies to encompass the entire ecosystem (A2). She believes that a broader approach might yield more comprehensive results but worries about losing depth in specific areas.
+
+Dr. Torres (B) is torn between concentrating on local conservation efforts (B1) or implementing a broader regional conservation plan (B2). He recognizes the potential for greater impact with a regional approach but is concerned about the complexity and resources required.
+
+Their choices will determine the outcome of their research and conservation efforts:
+
+1. If both choose narrow approaches (A1, B1), their work will have limited impact, resulting in the least preferred outcome for both (1,1).
+
+2. If Dr. Chen focuses on individual species while Dr. Torres implements a regional plan (A1, B2), it will benefit Dr. Torres's conservation efforts more than Dr. Chen's research (3,4).
+
+3. If Dr. Chen expands to ecosystem-wide studies and Dr. Torres sticks to local efforts (A2, B1), their work will have moderate impact, slightly favoring Dr. Chen's research (2,2).
+
+4. If both choose broader approaches (A2, B2), they will achieve the most comprehensive and impactful results, with a slight advantage to Dr. Chen's ecosystem-wide studies (4,3).
+
+The researchers must carefully consider their options, knowing that their decisions will not only affect their individual work but also the overall success of the coral reef protection project. They face the challenge of balancing personal research interests with the greater good of marine conservation, all while navigating the complexities of collaboration in the field of biology.
+[/Scenario]

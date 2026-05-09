@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Davis"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan climate bill",
+  "A2": "Oppose bipartisan climate bill",
+  "B1": "Endorse bipartisan climate bill",
+  "B2": "Reject bipartisan climate bill"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill while it gets rejected (political win, maintain party stance)",
+    3: "Support the bill while it gets endorsed (bipartisan success, but potential party backlash)",
+    2: "Oppose the bill while it gets endorsed (avoid party backlash, but seen as obstructionist)",
+    1: "Support the bill while it gets rejected (political loss, party criticism)"
+  },
+  "B": {
+    4: "Endorse the bill while it gets supported (bipartisan success, environmental win)",
+    3: "Reject the bill while it gets opposed (maintain conservative stance, avoid controversy)",
+    2: "Reject the bill while it gets supported (avoid controversy, but seen as obstructionist)",
+    1: "Endorse the bill while it gets opposed (political loss, conservative backlash)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Reject) |
+|-------|--------------|-------------|
+| A1 (Support) | 3 \ 4       | 1 \ 2      |
+| A2 (Oppose)  | 2 \ 1       | 4 \ 3      |
+[/Payoff Matrix]
+
+[Scenario]
+Senator Sarah Thompson and Governor Mark Davis find themselves at the center of a political storm surrounding a bipartisan climate bill. The bill aims to address climate change through a combination of renewable energy investments and carbon emission regulations.
+
+Senator Thompson, a moderate Democrat, is torn between supporting the bill to address climate issues and opposing it to maintain her party's more aggressive stance on environmental policies. Governor Davis, a moderate Republican, faces pressure from his conservative base to reject the bill, but also sees potential benefits in endorsing a bipartisan effort.
+
+If both support the bill (A1, B1), they achieve a bipartisan success, but risk backlash from their respective party bases. This scenario is moderately favorable for Thompson (3) but ideal for Davis (4).
+
+If Thompson supports the bill but Davis rejects it (A1, B2), Thompson suffers a political loss and faces criticism from her party (1), while Davis avoids controversy but may be seen as obstructionist (2).
+
+If Thompson opposes the bill and Davis endorses it (A2, B1), Thompson avoids party backlash but may be seen as obstructionist (2), while Davis faces severe conservative backlash (1).
+
+Finally, if both oppose the bill (A2, B2), Thompson scores a political win and maintains her party stance (4), while Davis maintains his conservative position and avoids controversy (3).
+
+As they approach the decision, both politicians must weigh their personal beliefs, political ambitions, and potential consequences of their choices. The fate of the climate bill and their political futures hang in the balance as they navigate this complex game of political strategy.
+[/Scenario]

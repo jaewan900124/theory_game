@@ -1,0 +1,66 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a proprietary software solution",
+  "A2": "Collaborate on an open-source project",
+  "B1": "Design a custom hardware platform",
+  "B2": "Use standard off-the-shelf components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop proprietary software for standard hardware",
+    3: "Collaborate on open-source project with custom hardware",
+    2: "Collaborate on open-source project with standard hardware",
+    1: "Develop proprietary software for custom hardware"
+  },
+  "B": {
+    4: "Design custom hardware for proprietary software",
+    3: "Design custom hardware for open-source project",
+    2: "Use standard hardware for open-source project",
+    1: "Use standard hardware for proprietary software"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 1 |
+| A2    | 3 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are tech entrepreneurs working on a revolutionary smart home system. They need to make crucial decisions about their approach to software and hardware development.
+
+Alex, the software developer, has two choices: develop a proprietary software solution (A1) or collaborate on an open-source project (A2). Blake, the hardware engineer, must decide between designing a custom hardware platform (B1) or using standard off-the-shelf components (B2).
+
+Their preferences and potential outcomes are as follows:
+
+1. If Alex develops proprietary software (A1) and Blake designs custom hardware (B1):
+   - Alex's least preferred outcome (1): Challenges in integration and limited market reach.
+   - Blake's most preferred outcome (4): Full control over hardware design and potential for premium pricing.
+
+2. If Alex develops proprietary software (A1) and Blake uses standard hardware (B2):
+   - Alex's most preferred outcome (4): Software exclusivity with wide hardware compatibility.
+   - Blake's least preferred outcome (1): Limited hardware innovation and reduced profit margins.
+
+3. If Alex collaborates on open-source (A2) and Blake designs custom hardware (B1):
+   - Both Alex and Blake's second-best outcome (3): Balanced innovation in both software and hardware.
+
+4. If Alex collaborates on open-source (A2) and Blake uses standard hardware (B2):
+   - Both Alex and Blake's third-best outcome (2): Easier integration but less differentiation in the market.
+
+Alex prefers developing proprietary software for standard hardware the most, as it offers the best balance of control and market reach. Blake, on the other hand, favors designing custom hardware for proprietary software, as it allows for the most innovation and potential profit.
+
+The challenge lies in finding a solution that satisfies both partners while maximizing the potential success of their smart home system. Will they prioritize individual preferences or find a middle ground for mutual benefit?
+[/Scenario]

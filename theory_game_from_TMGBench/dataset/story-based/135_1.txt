@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Tom, a talented basketball player",
+  "B": "Sarah, the team coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play as a team player",
+  "A2": "Play selfishly for personal glory",
+  "B1": "Give Tom more playtime",
+  "B2": "Limit Tom's playtime"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play selfishly and get more playtime",
+    3: "Play as a team player and get more playtime",
+    2: "Play as a team player with limited playtime",
+    1: "Play selfishly with limited playtime"
+  },
+  "B": {
+    4: "Tom plays as a team player and gets more playtime",
+    3: "Tom plays selfishly but with limited playtime",
+    2: "Tom plays selfishly and gets more playtime",
+    1: "Tom plays as a team player but with limited playtime"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (More playtime) | B2 (Limited playtime) |
+|-------|--------------------|-----------------------|
+| A1 (Team player) | 3 \ 4             | 2 \ 1                |
+| A2 (Selfish)     | 1 \ 3             | 4 \ 2                |
+[/Payoff Matrix]
+
+[Scenario]
+Tom is a talented basketball player on his high school team, known for his impressive scoring ability. Sarah, the team coach, is faced with a dilemma on how to manage Tom's playing style and time on the court.
+
+Tom has two choices: he can either play as a team player (A1), focusing on passing and creating opportunities for his teammates, or play selfishly (A2), prioritizing his own scoring statistics and personal glory. Sarah, on the other hand, can choose to give Tom more playtime (B1) or limit his time on the court (B2).
+
+Tom's preferences are clear: he most wants to play selfishly and get more playtime (4), as this allows him to showcase his skills and potentially attract college scouts. His second preference is to play as a team player with more playtime (3), followed by playing as a team player with limited playtime (2). His least preferred scenario is playing selfishly but with limited playtime (1), as this would frustrate his ambitions without benefiting the team.
+
+Sarah's preferences prioritize the team's success and harmony. She most prefers Tom to play as a team player with more playtime (4), as this would benefit the team's performance and morale. Her second choice is for Tom to play selfishly but with limited playtime (3), minimizing the negative impact on team dynamics. She less prefers Tom playing selfishly with more playtime (2), and least prefers Tom playing as a team player but with limited playtime (1), as this doesn't maximize his potential contribution to the team.
+
+The payoff matrix represents these preferences numerically. Tom and Sarah must now decide their strategies, knowing that their choices will affect not only their own satisfaction but also the team's overall performance and dynamics. The outcome of their decisions will shape the team's success for the upcoming season and potentially Tom's future in basketball.
+[/Scenario]

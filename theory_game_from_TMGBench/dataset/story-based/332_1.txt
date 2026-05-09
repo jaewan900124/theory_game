@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a small bakery owner",
+  "B": "Lucas, a local farmer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Buy ingredients from a large supplier",
+  "A2": "Buy ingredients from Lucas",
+  "B1": "Sell produce to local markets",
+  "B2": "Sell produce exclusively to Emma"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Buy from large supplier, Lucas sells exclusively to Emma",
+    3: "Buy from Lucas, Lucas sells to local markets",
+    2: "Buy from Lucas, Lucas sells exclusively to Emma",
+    1: "Buy from large supplier, Lucas sells to local markets"
+  },
+  "B": {
+    4: "Sell exclusively to Emma, Emma buys from large supplier",
+    3: "Sell to local markets, Emma buys from large supplier",
+    2: "Sell to local markets, Emma buys from Lucas",
+    1: "Sell exclusively to Emma, Emma buys from Lucas"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Sell to markets | Sell exclusively |
+|--------------|-----------------|-------------------|
+| Large supplier| 1 \ 3           | 4 \ 4             |
+| Buy from Lucas| 3 \ 2           | 2 \ 1             |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town, Emma runs a charming bakery known for its delicious pastries. She's facing a crucial decision about her ingredient sourcing strategy. Meanwhile, Lucas, a local farmer, is contemplating how to sell his fresh produce.
+
+Emma has two choices: she can either buy ingredients from a large supplier or purchase them from Lucas. The large supplier offers consistent quality and competitive prices, but buying from Lucas would support the local economy and potentially improve her bakery's image.
+
+Lucas, on the other hand, can either sell his produce to various local markets or commit to selling exclusively to Emma's bakery. Selling to local markets provides him with a diverse customer base, while selling exclusively to Emma could offer a stable, long-term partnership.
+
+Their decisions will impact each other's businesses significantly. If Emma chooses the large supplier and Lucas sells to local markets, Emma gets her least preferred outcome (1) due to potentially higher costs and missed opportunity for local sourcing, while Lucas achieves his third-best outcome (3) with a diverse customer base.
+
+If Emma buys from the large supplier and Lucas sells exclusively to her, both achieve their most preferred outcomes (4). Emma benefits from competitive pricing and Lucas gains a stable, exclusive customer.
+
+If Emma buys from Lucas and he sells to local markets, Emma achieves her second-best outcome (3) with local sourcing benefits, while Lucas gets his second-least preferred outcome (2) due to the partial commitment from Emma.
+
+Finally, if Emma buys from Lucas and he sells exclusively to her, Emma gets her second-least preferred outcome (2) due to potential supply limitations, while Lucas faces his least preferred scenario (1) with all eggs in one basket.
+
+This situation creates an interesting dynamic where their individual best choices don't necessarily align, leading to potential conflicts and negotiations as they try to maximize their respective benefits in this small-town economic ecosystem.
+[/Scenario]

@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a talented graphic designer",
+  "B": "Liam, a skilled web developer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Work independently",
+  "B2": "Collaborate on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate with Liam, resulting in a successful project",
+    3: "Work independently while Liam also works alone",
+    2: "Work independently while Liam wants to collaborate",
+    1: "Both attempt to collaborate but fail to communicate effectively"
+  },
+  "B": {
+    4: "Collaborate with Emma, resulting in a successful project",
+    3: "Work independently while Emma wants to collaborate",
+    2: "Work independently while Emma also works alone",
+    1: "Both attempt to collaborate but fail to communicate effectively"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 4 \ 4 |
+| A2    | 3 \ 2 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Liam are freelancers who have been hired to work on a high-profile website redesign project for a major tech company. They have never worked together before but have heard of each other's reputations in the industry.
+
+The project manager has given them the option to either collaborate or work independently on different aspects of the website. Both Emma and Liam must decide whether to reach out and collaborate or to keep to themselves and work alone.
+
+If they both choose to collaborate (A1, B2), they will combine their skills to create an outstanding website, impressing the client and potentially leading to more lucrative projects in the future. This is the most preferred outcome for both of them (4,4).
+
+If Emma decides to work independently while Liam wants to collaborate (A2, B2), Emma will have more creative freedom but miss out on Liam's technical expertise. Liam, on the other hand, will feel slightly disappointed but can still showcase his skills. This scenario is Emma's second preference (3) and Liam's third preference (2).
+
+Conversely, if Liam chooses to work independently while Emma wants to collaborate (A1, B1), Liam will have more control over the technical aspects, but miss out on Emma's design insights. Emma will feel slightly disappointed but can still demonstrate her design skills. This is Liam's second preference (3) and Emma's third preference (2).
+
+If both decide to work independently (A2, B1), they will complete the project without much interaction. While this allows them to work at their own pace, it may result in a less cohesive final product. This outcome is the third preference for Emma (2) and the second preference for Liam (3).
+
+The least preferred outcome for both (1,1) occurs if they both attempt to collaborate but fail to communicate effectively (A1, B1). This could lead to misunderstandings, conflicting designs, and a subpar final product.
+
+As they begin the project, Emma and Liam must decide whether to reach out and collaborate or to keep to themselves, each choice carrying potential benefits and risks for both their individual success and the overall quality of the website redesign.
+[/Scenario]

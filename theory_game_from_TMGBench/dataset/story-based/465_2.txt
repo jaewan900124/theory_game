@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "EcoTech, a renewable energy company",
+  "B": "ForestCorp, a logging company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop solar farms",
+  "A2": "Develop wind farms",
+  "B1": "Sustainable logging",
+  "B2": "Clear-cutting"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop wind farms while ForestCorp clear-cuts",
+    3: "Develop wind farms while ForestCorp practices sustainable logging",
+    2: "Develop solar farms while ForestCorp clear-cuts",
+    1: "Develop solar farms while ForestCorp practices sustainable logging"
+  },
+  "B": {
+    4: "Clear-cutting while EcoTech develops solar farms",
+    3: "Clear-cutting while EcoTech develops wind farms",
+    2: "Sustainable logging while EcoTech develops wind farms",
+    1: "Sustainable logging while EcoTech develops solar farms"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoTech \ ForestCorp | Sustainable logging (B1) | Clear-cutting (B2) |
+|-----------------------|--------------------------|---------------------|
+| Solar farms (A1)      | 1 \ 1                    | 2 \ 4               |
+| Wind farms (A2)       | 3 \ 2                    | 4 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush forest region, two companies find themselves at a crossroads of ecological and economic interests. EcoTech, a renewable energy company, is planning to expand its operations in the area. Meanwhile, ForestCorp, a logging company, is considering its approach to timber harvesting in the same region.
+
+EcoTech has two choices: develop solar farms (A1) or wind farms (A2). Solar farms would have a smaller footprint but lower energy output, while wind farms would be more efficient but require more land clearing.
+
+ForestCorp is deciding between sustainable logging practices (B1) or clear-cutting (B2). Sustainable logging would preserve the forest's long-term health but yield less immediate profit, while clear-cutting would maximize short-term gains at the expense of the ecosystem.
+
+EcoTech's preference is to develop wind farms, as they are more efficient and profitable. They would most prefer to do this while ForestCorp clear-cuts (4), as it would make land acquisition easier. Their second choice would be wind farms with sustainable logging (3). Solar farms are less preferred, but still viable if ForestCorp clear-cuts (2). Their least preferred scenario is solar farms with sustainable logging (1), as it would limit both their land use and energy output.
+
+ForestCorp, on the other hand, prefers clear-cutting for maximum profit. Their ideal scenario is clear-cutting while EcoTech develops solar farms (4), as it leaves more land available for logging. Clear-cutting with wind farms is their second choice (3). If they must practice sustainable logging, they'd prefer EcoTech to develop wind farms (2), as it might open up some areas for logging. Their least preferred option is sustainable logging with solar farms (1), which would significantly limit their operations.
+
+The companies must now decide their strategies, knowing that their choices will not only affect their own profits but also the long-term health of the forest ecosystem. Will they prioritize short-term gains or long-term sustainability? The fate of the forest hangs in the balance as EcoTech and ForestCorp make their moves in this ecological game of strategy.
+[/Scenario]

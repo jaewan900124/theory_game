@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Senator Jane Smith",
+  "B": "Governor Mark Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Smith for re-election",
+  "B2": "Remain neutral in Senate race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Bill passes with bipartisan support, gains Governor's endorsement",
+    3: "Bill fails, but maintains good relationship with Governor",
+    2: "Bill passes, but without Governor's endorsement",
+    1: "Bill fails and loses Governor's support"
+  },
+  "B": {
+    4: "Senator supports bill, Governor remains neutral",
+    3: "Senator opposes bill, Governor remains neutral",
+    2: "Senator opposes bill, Governor endorses Senator",
+    1: "Senator supports bill, Governor endorses Senator"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 1 |
+| A2    | 3 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Senator Jane Smith and Governor Mark Johnson find themselves in a delicate political situation as the vote for a crucial bipartisan infrastructure bill approaches. Senator Smith, up for re-election, must decide whether to support or oppose the bill, while Governor Johnson considers whether to endorse Smith or remain neutral in her Senate race.
+
+Senator Smith's primary goal is to see the infrastructure bill pass, as it would bring significant benefits to her state. However, she also values Governor Johnson's political support, which could boost her re-election chances. Her ideal scenario would be to support the bill and gain the Governor's endorsement (A1, B1: 2), but she would be even more satisfied if the bill passes without the endorsement (A1, B2: 4), as it would showcase her independence.
+
+Governor Johnson, on the other hand, is more concerned with maintaining his political flexibility. He prefers to remain neutral in the Senate race, especially if Senator Smith supports the bill (A1, B2: 1), as this would allow him to claim credit for the bill's benefits without tying himself too closely to Smith. His least preferred outcome is endorsing Smith if she supports the bill (A1, B1: 4), as this could be seen as political quid pro quo.
+
+If Senator Smith opposes the bill, Governor Johnson would prefer to remain neutral (A2, B2: 2), but he would consider endorsing her (A2, B1: 3) to maintain a good relationship with her faction of the party, even though the bill's failure would be a setback for the state.
+
+As the vote approaches, both politicians must carefully consider their choices, weighing the potential benefits of cooperation against the advantages of maintaining their independence. The outcome of their decisions will not only affect the fate of the infrastructure bill but also shape the political landscape of their state for years to come.
+[/Scenario]

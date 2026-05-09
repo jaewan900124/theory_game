@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Amelia Chen, a marine biologist",
+  "B": "Dr. Benjamin Torres, an oceanographer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual coral species research",
+  "A2": "Conduct comprehensive reef ecosystem study",
+  "B1": "Prioritize water quality analysis",
+  "B2": "Investigate oceanic current patterns"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Conduct comprehensive reef ecosystem study while Dr. Torres investigates oceanic current patterns",
+    3: "Focus on individual coral species research while Dr. Torres investigates oceanic current patterns",
+    2: "Conduct comprehensive reef ecosystem study while Dr. Torres prioritizes water quality analysis",
+    1: "Focus on individual coral species research while Dr. Torres prioritizes water quality analysis"
+  },
+  "B": {
+    4: "Focus on water quality analysis while Dr. Chen focuses on individual coral species research",
+    3: "Investigate oceanic current patterns while Dr. Chen focuses on individual coral species research",
+    2: "Prioritize water quality analysis while Dr. Chen conducts comprehensive reef ecosystem study",
+    1: "Investigate oceanic current patterns while Dr. Chen conducts comprehensive reef ecosystem study"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 3 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Amelia Chen and Dr. Benjamin Torres are marine scientists collaborating on a crucial research project to study the Great Barrier Reef's health. They have limited resources and must decide how to allocate their efforts for maximum impact.
+
+Dr. Chen can either focus on individual coral species research (A1) or conduct a comprehensive reef ecosystem study (A2). Dr. Torres can prioritize water quality analysis (B1) or investigate oceanic current patterns (B2).
+
+Their choices will determine the overall success of the project and their individual career advancements. The payoff matrix represents their preferences for different outcomes:
+
+1. If Dr. Chen focuses on individual coral species (A1) and Dr. Torres prioritizes water quality analysis (B1), it results in a specialized but disjointed study. This is Dr. Torres's most preferred outcome (4) but Dr. Chen's least preferred (1).
+
+2. If Dr. Chen focuses on individual coral species (A1) and Dr. Torres investigates oceanic currents (B2), they achieve a balanced approach. Both scientists find this moderately satisfying (3 for both).
+
+3. If Dr. Chen conducts a comprehensive ecosystem study (A2) and Dr. Torres prioritizes water quality (B1), they produce a broad but less detailed analysis. This is moderately satisfying for Dr. Chen (2) and Dr. Torres (2).
+
+4. If Dr. Chen conducts a comprehensive ecosystem study (A2) and Dr. Torres investigates oceanic currents (B2), they create a holistic understanding of the reef. This is Dr. Chen's most preferred outcome (4) but Dr. Torres's least preferred (1).
+
+The scientists must navigate their individual preferences and the potential for collaboration to make the best decision for their research and careers. Their choices will not only affect the immediate project but also shape future funding opportunities and the direction of reef conservation efforts.
+[/Scenario]

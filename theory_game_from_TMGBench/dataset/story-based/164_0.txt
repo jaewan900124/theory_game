@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, a local coffee shop owner",
+  "B": "Mark, a large coffee chain manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Open a new branch nearby",
+  "B2": "Not open a new branch"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices, no new competition",
+    3: "Maintain prices, new competition",
+    2: "Maintain prices, no new competition",
+    1: "Lower prices, new competition"
+  },
+  "B": {
+    4: "Open new branch, competitor maintains prices",
+    3: "No new branch, competitor lowers prices",
+    2: "Open new branch, competitor lowers prices",
+    1: "No new branch, competitor maintains prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Open)| B2 (Not open) |
+|-------|----------|---------------|
+| A1 (Maintain) | 1 \ 4     | 2 \ 1         |
+| A2 (Lower)    | 3 \ 2     | 4 \ 3         |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling town, Sarah, a local coffee shop owner, faces a dilemma when she learns that Mark, a manager from a large coffee chain, is considering opening a new branch nearby. This situation creates a classic game theory scenario in the realm of economics, where both parties must make strategic decisions that will affect their businesses.
+
+Sarah has two choices: she can either maintain her current prices (A1) or lower them (A2) in anticipation of the potential competition. Mark, on the other hand, must decide whether to open the new branch (B1) or not (B2).
+
+Sarah's preferences are clear: she would most prefer to lower her prices and have no new competition (4), as this would likely increase her customer base without the threat of a rival. Her least preferred scenario is lowering prices while facing new competition (1), as this would significantly cut into her profits. She would rather maintain her current prices with new competition (3) than maintain prices without competition (2), as the former shows her business can withstand competition without compromising on price.
+
+Mark's preferences are different: his ideal scenario is to open the new branch while Sarah maintains her prices (4), as this would give his new store a competitive edge. His least preferred outcome is not opening a new branch while Sarah maintains her prices (1), as this represents a missed opportunity. He would prefer to open the branch even if Sarah lowers her prices (2) rather than not open it when she lowers prices (3), as the latter scenario might indicate a missed market opportunity.
+
+The payoff matrix reflects these preferences, with each cell showing the preference ranking for Sarah (A) and Mark (B) respectively.
+
+This scenario illustrates the complex decision-making process in competitive markets. Sarah must weigh the potential threat of new competition against the immediate loss of revenue from lowering prices. Mark must assess the potential profitability of a new branch against the risk of entering a market where the existing competitor might lower prices. Their decisions are interdependent, creating a classic game theory situation in economics where the optimal strategy for each player depends on the actions of the other.
+[/Scenario]

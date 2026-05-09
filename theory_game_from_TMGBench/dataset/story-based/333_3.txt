@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Sarah, a tech startup founder",
+  "B": "Mark, a venture capitalist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Seek external funding",
+  "A2": "Bootstrap the company",
+  "B1": "Invest conservatively",
+  "B2": "Invest aggressively"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Receive aggressive investment",
+    3: "Bootstrap successfully",
+    2: "Receive conservative investment",
+    1: "Struggle with bootstrapping"
+  },
+  "B": {
+    4: "Invest aggressively in a promising startup",
+    3: "Invest conservatively in a self-funded company",
+    2: "Invest conservatively in an externally funded startup",
+    1: "Miss out on a successful self-funded company"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Invest conservatively) | B2 (Invest aggressively) |
+|-------|----------------------------|--------------------------|
+| A1 (Seek external funding) | 1 \ 2 | 4 \ 4 |
+| A2 (Bootstrap the company) | 3 \ 3 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a brilliant software engineer, has developed a groundbreaking AI algorithm that could revolutionize the tech industry. She's at a crossroads, deciding whether to seek external funding for her startup or bootstrap the company using her own resources.
+
+Mark, a seasoned venture capitalist, has heard about Sarah's innovation and is considering investing in her startup. He's weighing the options between a conservative investment approach and an aggressive one.
+
+Sarah prefers to receive aggressive investment (4) as it would provide her with ample resources to rapidly scale her company. Her second choice is to successfully bootstrap the company (3), maintaining full control but with slower growth. Receiving conservative investment (2) is her third preference, while struggling with bootstrapping (1) is her least desired outcome.
+
+Mark's top preference is to invest aggressively in a promising startup (4), potentially reaping significant returns. His second choice is to invest conservatively in a self-funded company (3), seeing it as a safer bet. Investing conservatively in an externally funded startup (2) is his third preference, while missing out on a successful self-funded company (1) is his least desired outcome.
+
+If Sarah seeks external funding (A1) and Mark invests conservatively (B1), Sarah will struggle with limited resources (1), while Mark makes a safe but unremarkable investment (2).
+
+If Sarah seeks external funding (A1) and Mark invests aggressively (B2), both parties achieve their most preferred outcome (4,4), with Sarah receiving the resources she needs and Mark potentially making a highly profitable investment.
+
+If Sarah decides to bootstrap (A2) and Mark invests conservatively (B1), both achieve their second-best outcomes (3,3). Sarah maintains control and grows steadily, while Mark makes a safe investment in a promising self-funded company.
+
+However, if Sarah bootstraps (A2) and Mark tries to invest aggressively (B2), Sarah will face challenges in growing her company without external support (2), while Mark misses out on the opportunity to invest in what could have been a highly successful venture (1).
+
+The decisions Sarah and Mark make will significantly impact the future of the startup and their potential partnership. They must carefully consider their choices, taking into account not only their own preferences but also anticipating the other party's likely decision.
+[/Scenario]

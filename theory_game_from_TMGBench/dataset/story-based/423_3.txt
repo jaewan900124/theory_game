@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emily Chen, a clinical psychologist",
+  "B": "Alex Thompson, her patient with anxiety disorder"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional talk therapy",
+  "A2": "Implement experimental virtual reality therapy",
+  "B1": "Fully engage in therapy sessions",
+  "B2": "Participate minimally in therapy sessions"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successfully treat patient with innovative method",
+    3: "Successfully treat patient with traditional method",
+    2: "Partial success with traditional method",
+    1: "Failure to treat patient with experimental method"
+  },
+  "B": {
+    4: "Overcome anxiety with minimal effort",
+    3: "Overcome anxiety through active participation",
+    2: "Slight improvement with minimal effort",
+    1: "No improvement despite significant effort"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 3 \ 4 |
+| A2    | 1 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emily Chen, a respected clinical psychologist, is faced with a challenging case: Alex Thompson, a patient struggling with severe anxiety disorder. Dr. Chen must decide between using her tried-and-true traditional talk therapy approach or implementing an experimental virtual reality therapy she's been developing.
+
+Alex, on the other hand, is torn between fully engaging in the therapy sessions, which requires significant emotional effort, or participating minimally to avoid confronting his anxieties head-on.
+
+If Dr. Chen chooses traditional talk therapy (A1) and Alex fully engages (B1), both will see moderate success (2,2). The therapy will yield some positive results, but it won't be groundbreaking for either of them.
+
+If Dr. Chen uses traditional therapy (A1) but Alex only minimally participates (B2), Dr. Chen will still see decent results for her practice (3), while Alex will experience some improvement without much effort (4).
+
+Should Dr. Chen opt for the experimental VR therapy (A2) and Alex fully engages (B1), it could be a breakthrough for Alex's treatment (3), but risky for Dr. Chen's reputation if it doesn't work as hoped (1).
+
+The most polarizing outcome occurs if Dr. Chen uses the experimental therapy (A2) and Alex minimally participates (B2). This could lead to a major success for Dr. Chen's innovative approach (4) but might leave Alex feeling worse due to the unfamiliar treatment combined with his lack of engagement (1).
+
+As they prepare for their next session, both Dr. Chen and Alex must weigh their options carefully, considering not only their own preferences but also how their choices might impact the other person's outcome. The decision they make will significantly influence the course of Alex's treatment and Dr. Chen's professional trajectory.
+[/Scenario]

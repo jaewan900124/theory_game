@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Senator Smith",
+  "B": "Governor Jones"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Smith for re-election",
+  "B2": "Remain neutral in Senator Smith's re-election"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill and gain popularity without losing endorsement",
+    3: "Support bill without endorsement",
+    2: "Support bill and receive endorsement",
+    1: "Oppose bill and lose potential endorsement"
+  },
+  "B": {
+    4: "Senator supports bill and receives endorsement",
+    3: "Senator opposes bill but still receives endorsement",
+    2: "Senator supports bill without giving endorsement",
+    1: "Senator opposes bill and receives no endorsement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 2 |
+| A2    | 1 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Senator Smith and Governor Jones find themselves in a delicate political dance as a crucial bipartisan infrastructure bill comes up for vote in the Senate. The bill, while potentially beneficial for their state, has become a contentious issue among voters.
+
+Senator Smith faces a dilemma: supporting the bill could help maintain a good relationship with Governor Jones, but it might not be popular with certain voter groups. Opposing the bill might boost his popularity among these voters, but it could jeopardize the Governor's support.
+
+Governor Jones strongly favors the infrastructure bill for its potential benefits to the state. He is considering whether to endorse Senator Smith for re-election, which could influence the Senator's decision on the bill.
+
+If Senator Smith supports the bill (A1) and Governor Jones endorses him (B1), Smith achieves his second-best outcome (2), while Jones reaches his most preferred outcome (4). This scenario represents full cooperation between the two politicians.
+
+If Smith supports the bill (A1) but Jones remains neutral (B2), Smith actually achieves a better personal outcome (3) due to maintaining his integrity without seeming too aligned with the Governor, while Jones gets his second-best outcome (2).
+
+If Smith opposes the bill (A2) and Jones still endorses him (B1), this is Smith's least preferred outcome (1) as it may appear inconsistent to voters, but Jones still achieves a relatively good outcome (3).
+
+Finally, if Smith opposes the bill (A2) and Jones remains neutral (B2), Smith gains the most popularity and achieves his best outcome (4), but this is Jones' least preferred outcome (1).
+
+Both politicians must carefully consider their choices, weighing the potential benefits and drawbacks of each decision in this complex political landscape. The outcome will depend on how much they value their personal political standing versus their relationship with each other and the potential benefits of the bill for their state.
+[/Scenario]

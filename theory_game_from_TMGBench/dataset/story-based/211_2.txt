@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a small business owner",
+  "B": "Luke, a local supplier"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Order supplies in bulk",
+  "A2": "Order supplies as needed",
+  "B1": "Offer a discount",
+  "B2": "Maintain regular prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Order in bulk with regular prices",
+    3: "Order as needed with discounted prices",
+    2: "Order in bulk with discounted prices",
+    1: "Order as needed with regular prices"
+  },
+  "B": {
+    4: "Bulk order with discounted prices",
+    3: "Bulk order with regular prices",
+    2: "As-needed order with discounted prices",
+    1: "As-needed order with regular prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Offer discount) | B2 (Regular prices) |
+|-------|---------------------|---------------------|
+| A1 (Bulk) | 2 \ 4               | 4 \ 3               |
+| A2 (As needed) | 1 \ 2               | 3 \ 1               |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a small business owner, is facing a decision regarding her supply ordering strategy with her local supplier, Luke. Emma has two choices: she can either order supplies in bulk (A1) or order supplies as needed (A2). Luke, on the other hand, needs to decide whether to offer a discount (B1) or maintain regular prices (B2).
+
+Emma's preference is to order in bulk at regular prices, as this allows her to save on long-term costs while maintaining her profit margins. Her least preferred option is to order as needed at regular prices, which could lead to potential stock-outs and higher overall costs.
+
+Luke prefers bulk orders with discounted prices, as this guarantees a large sale and customer loyalty. His least preferred scenario is when Emma orders as needed at regular prices, which provides neither the assurance of a large order nor the benefit of customer retention through discounts.
+
+If Emma chooses to order in bulk (A1) and Luke offers a discount (B1), Emma receives a moderate benefit (2) due to the reduced flexibility, while Luke receives the highest benefit (4) from securing a large order and customer loyalty.
+
+If Emma orders in bulk (A1) and Luke maintains regular prices (B2), Emma receives the highest benefit (4) from cost savings, while Luke receives a good benefit (3) from the large order.
+
+If Emma orders as needed (A2) and Luke offers a discount (B1), Emma receives the lowest benefit (1) due to the lack of bulk savings, while Luke receives a low benefit (2) from the smaller, irregular orders.
+
+If Emma orders as needed (A2) and Luke maintains regular prices (B2), Emma receives a good benefit (3) from the flexibility, while Luke receives the lowest benefit (1) from the lack of guaranteed large orders.
+
+The scenario presents a classic game theory situation where the choices of both parties significantly impact each other's outcomes, and finding the optimal strategy depends on anticipating the other's decision.
+[/Scenario]

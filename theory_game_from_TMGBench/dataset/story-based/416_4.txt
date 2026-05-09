@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Lisa"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Teach traditional lecture-style",
+  "A2": "Implement interactive learning methods",
+  "B1": "Attend class passively",
+  "B2": "Actively participate in class"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Interactive teaching with active student participation",
+    3: "Traditional teaching with active student participation",
+    2: "Interactive teaching with passive student attendance",
+    1: "Traditional teaching with passive student attendance"
+  },
+  "B": {
+    4: "Traditional teaching with active participation",
+    3: "Interactive teaching with active participation",
+    2: "Traditional teaching with passive attendance",
+    1: "Interactive teaching with passive attendance"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Passive) | B2 (Active) |
+|-------|--------------|-------------|
+| A1 (Traditional) | 1 \ 2       | 3 \ 4       |
+| A2 (Interactive) | 2 \ 1       | 4 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenville University, Professor Smith is preparing for his upcoming semester of "Introduction to Psychology." He's contemplating whether to stick with his traditional lecture-style approach or implement new interactive learning methods. Meanwhile, Lisa, a sophomore student enrolled in the course, is deciding how to approach her studies.
+
+Professor Smith prefers interactive teaching, believing it leads to better learning outcomes. However, he's aware that its success heavily depends on student participation. His least preferred scenario is giving traditional lectures to a passive audience, feeling it's a waste of everyone's time.
+
+Lisa, on the other hand, is more comfortable with traditional lectures. She likes the structure and finds it easier to take notes and prepare for exams. However, she knows that active participation can enhance her learning experience, regardless of the teaching style.
+
+If Professor Smith chooses traditional lectures (A1) and Lisa remains passive (B1), both will be unsatisfied (1,2). If Smith lectures traditionally but Lisa participates actively (A1, B2), Lisa will be most satisfied while Smith will be reasonably content (3,4).
+
+If Smith implements interactive methods (A2) but Lisa remains passive (B1), it will be Smith's second-worst scenario and Lisa's least preferred (2,1). However, if Smith uses interactive methods and Lisa actively participates (A2, B2), it will be Smith's ideal scenario and Lisa's second-best option (4,3).
+
+As the semester begins, both Professor Smith and Lisa must decide their approaches, knowing that their choices will significantly impact not only their own satisfaction but also the overall learning experience in the class.
+[/Scenario]

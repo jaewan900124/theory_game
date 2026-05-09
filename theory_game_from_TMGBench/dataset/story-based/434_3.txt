@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the infrastructure bill",
+  "A2": "Oppose the infrastructure bill",
+  "B1": "Allocate funds to urban areas",
+  "B2": "Allocate funds to rural areas"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill, funds go to rural areas",
+    3: "Support the bill, funds go to urban areas",
+    2: "Support the bill, funds go to rural areas",
+    1: "Oppose the bill, funds go to urban areas"
+  },
+  "B": {
+    4: "Bill supported, funds go to rural areas",
+    3: "Bill opposed, funds go to urban areas",
+    2: "Bill opposed, funds go to rural areas",
+    1: "Bill supported, funds go to urban areas"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Urban)| B2 (Rural)|
+|-------|-----------|-----------|
+| A1 (Support) | 3 \ 1     | 2 \ 4     |
+| A2 (Oppose)  | 1 \ 3     | 4 \ 2     |
+[/Payoff Matrix]
+
+[Scenario]
+In a crucial moment for state politics, Senator Sarah Thompson and Governor Mark Johnson find themselves at the center of a heated debate over a new infrastructure bill. The bill aims to allocate significant funds for development projects across the state, but the distribution of these funds has become a contentious issue.
+
+Senator Thompson, representing a predominantly rural constituency, is torn between supporting the bill for its potential benefits and opposing it due to concerns about fund allocation. Her ideal scenario would be to oppose the bill if the funds are directed to rural areas, as this would allow her to claim credit for rural development without supporting what she sees as unnecessary legislation. However, she also recognizes the political value in supporting the bill if it benefits urban areas, as it could broaden her appeal in future elections.
+
+Governor Johnson, on the other hand, is focused on the overall impact of the bill on the state's economy. He prefers the bill to be supported, especially if the funds are allocated to rural areas, as this aligns with his campaign promises to boost development in underserved regions. However, he's also aware that urban development could lead to more immediate economic growth, which would be beneficial for his administration's track record.
+
+The two politicians must navigate this complex situation, each weighing their personal political interests against the potential benefits for their constituents and the state as a whole. Their decisions will not only impact the fate of the infrastructure bill but also shape their political futures and the development trajectory of the state.
+
+As they prepare for the final vote and fund allocation decision, both Senator Thompson and Governor Johnson are acutely aware that their choices could lead to various outcomes, each with its own set of political consequences and public perceptions. The tension is palpable as they consider their options, knowing that their decisions will have far-reaching implications for both their careers and the communities they serve.
+[/Scenario]

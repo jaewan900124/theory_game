@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented high school basketball player",
+  "B": "Coach Brown, the high school basketball team coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on team play",
+  "A2": "Play selfishly to boost personal stats",
+  "B1": "Emphasize team strategy",
+  "B2": "Allow individual freedom on the court"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Individual freedom and personal success",
+    3: "Team success with personal recognition",
+    2: "Personal stats boost but team struggles",
+    1: "Restricted play and team underperformance"
+  },
+  "B": {
+    4: "Team success with star player performance",
+    3: "Solid team performance",
+    2: "Balanced team play",
+    1: "Team discord and poor performance"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 2 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented high school basketball player, finds himself at a crossroads in his senior year. He's caught between his desire for personal recognition and the need to contribute to his team's success. Coach Brown, a seasoned mentor, faces the challenge of managing Alex's talent while maintaining team cohesion.
+
+Alex has two choices: focus on team play (A1) or play selfishly to boost his personal stats (A2). Meanwhile, Coach Brown can either emphasize team strategy (B1) or allow individual freedom on the court (B2).
+
+If Alex focuses on team play (A1) and Coach Brown emphasizes team strategy (B1), the team performs well, and Alex gets some recognition (3 for Alex, 2 for Coach). This scenario represents a solid team performance that satisfies both parties to some extent.
+
+Should Alex focus on team play (A1) while Coach Brown allows individual freedom (B2), both achieve their best outcomes (4 for both). The team succeeds, and Alex's talent shines within the team context, leading to personal recognition and team success.
+
+If Alex decides to play selfishly (A2) and Coach Brown emphasizes team strategy (B1), Alex might boost his stats, but the team struggles (2 for Alex, 3 for Coach). Coach Brown maintains some control, but team performance suffers.
+
+Lastly, if Alex plays selfishly (A2) and Coach Brown allows individual freedom (B2), it leads to team discord and poor performance (1 for both). This scenario represents the worst outcome for both parties.
+
+As the basketball season progresses, Alex and Coach Brown must navigate these choices, balancing personal ambitions with team goals. Their decisions will not only impact the team's success but also Alex's future prospects and Coach Brown's reputation. The story unfolds as they face pivotal moments in games and practices, each decision shaping the team's dynamics and their relationship with each other.
+[/Scenario]

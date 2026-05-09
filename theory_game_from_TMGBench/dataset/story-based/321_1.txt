@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on developing a new software platform",
+  "A2": "Collaborate on integrating software with existing hardware",
+  "B1": "Develop a new hardware prototype",
+  "B2": "Adapt existing hardware for the new software platform"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "New software platform with adapted hardware",
+    3: "Integrated software with existing hardware",
+    2: "Develop software platform independently",
+    1: "No progress on software development"
+  },
+  "B": {
+    4: "New software platform with adapted hardware",
+    3: "New hardware prototype with existing software",
+    2: "Adapt existing hardware for new software",
+    1: "No progress on hardware development"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 4 \ 4 |
+| A2    | 2 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working for a tech company developing a revolutionary smart home system. Alex, a software engineer, is responsible for creating the control software, while Blake, a hardware engineer, is in charge of designing the physical components.
+
+The company has given them a tight deadline to produce a working prototype. They each have two choices on how to approach the project:
+
+Alex can either focus on developing a new software platform (A1) or collaborate on integrating software with the existing hardware (A2). Blake can either develop a new hardware prototype (B1) or adapt the existing hardware for the new software platform (B2).
+
+Their choices will lead to different outcomes:
+
+1. If Alex focuses on the new software platform (A1) and Blake develops a new hardware prototype (B1), they will work independently. This results in Alex making no progress on the software (preference 1) while Blake successfully creates a new prototype (preference 3).
+
+2. If Alex focuses on the new software platform (A1) and Blake adapts the existing hardware (B2), they achieve the best outcome for both. Alex creates an innovative software platform, and Blake successfully adapts the hardware to support it (both preference 4).
+
+3. If Alex collaborates on integrating software with existing hardware (A2) and Blake develops a new hardware prototype (B1), Alex makes some progress on software integration (preference 2), but Blake's new prototype becomes incompatible, resulting in no progress for hardware (preference 1).
+
+4. If Alex collaborates on integrating software with existing hardware (A2) and Blake adapts the existing hardware (B2), they achieve a moderate success. Alex successfully integrates the software (preference 3), while Blake makes some progress in adapting the hardware (preference 2).
+
+Both engineers want to impress their superiors and advance their careers. They must decide on their approaches without knowing what the other will choose. Their decisions will determine the success of the project and potentially their future in the company.
+
+As the deadline approaches, tension builds between Alex and Blake. They both know that cooperation could lead to the best outcome, but they are also tempted to pursue their individual interests. The choice they make will not only affect the project but also their professional relationship and the company's future in the smart home market.
+[/Scenario]

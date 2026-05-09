@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Roberts, a clinical psychologist",
+  "B": "Dr. James Chen, a research psychologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Work independently on separate projects",
+  "B1": "Focus on individual research goals",
+  "B2": "Participate in the collaborative project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate successfully, leading to groundbreaking research",
+    3: "Work independently, achieving moderate success",
+    2: "Attempt collaboration, but face challenges and minimal progress",
+    1: "Work independently, struggling with limited resources and support"
+  },
+  "B": {
+    4: "Collaborate successfully, gaining recognition in both clinical and research fields",
+    3: "Focus on individual research, making significant progress",
+    2: "Attempt collaboration, but encounter difficulties in integrating perspectives",
+    1: "Focus on individual research, but face limitations in practical applications"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 4 \ 4 |
+| A2    | 1 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Roberts, a renowned clinical psychologist, and Dr. James Chen, a brilliant research psychologist, find themselves at a crossroads in their careers. They are both considering whether to collaborate on a potentially groundbreaking project that combines their expertise or to continue working independently on their respective specialties.
+
+Emma (A) must decide whether to propose a collaboration (A1) or focus on her clinical work (A2). James (B) needs to choose between maintaining his focus on pure research (B1) or embracing the opportunity to work with Emma on a more applied project (B2).
+
+If they both choose to collaborate (A1 and B2), they have the potential to produce revolutionary work that bridges the gap between clinical practice and psychological research. This outcome is highly preferred by both (4,4), as it could lead to significant advancements in the field and boost their professional reputations.
+
+If Emma suggests collaboration but James declines (A1 and B1), they will both face challenges. Emma might struggle to integrate research components into her clinical work without expert support, while James might miss out on valuable practical insights. This scenario is their second least preferred outcome (2,2).
+
+Should Emma decide to work independently while James is open to collaboration (A2 and B2), they would both achieve moderate success in their respective fields but miss out on the potential synergies of working together. This is their third preference (3,3).
+
+The least preferred outcome for both (1,1) occurs if they both choose to work independently (A2 and B1). In this scenario, Emma might find it difficult to substantiate her clinical findings without robust research backing, while James could struggle to find practical applications for his theoretical work.
+
+As they contemplate their decisions, both Emma and James are aware that their choices will not only impact their individual careers but also potentially influence the future direction of psychological research and practice. The tension between cooperation and competition, between the safety of familiar territory and the risk of venturing into collaborative unknown, creates a complex psychological landscape for our two protagonists to navigate.
+[/Scenario]

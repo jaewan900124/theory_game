@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Professor Smith, a seasoned academic",
+  "B": "Dr. Johnson, a young, ambitious researcher"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a groundbreaking research project",
+  "A2": "Work independently on separate projects",
+  "B1": "Focus solely on personal research",
+  "B2": "Join forces with Professor Smith"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate with Dr. Johnson, resulting in a highly successful project",
+    3: "Work independently, achieving moderate success",
+    2: "Attempt collaboration, but Dr. Johnson focuses on personal work",
+    1: "Work independently, with limited success due to resource constraints"
+  },
+  "B": {
+    4: "Collaborate with Professor Smith, leading to a breakthrough discovery",
+    3: "Focus on personal research, gaining individual recognition",
+    2: "Work independently, achieving moderate success",
+    1: "Attempt independent work, but struggle without Professor Smith's expertise"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 4 \ 4 |
+| A2    | 2 \ 3 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Professor Smith and Dr. Johnson find themselves at a crossroads in their academic careers. Professor Smith, a well-established scholar with years of experience, has been working on a potentially groundbreaking research project in education. Dr. Johnson, a brilliant young researcher with fresh ideas, has recently joined the faculty and is eager to make a name for herself.
+
+The university has announced a significant grant for innovative education research, and both Professor Smith and Dr. Johnson are eligible to apply. They each face a crucial decision: to collaborate or to work independently.
+
+Professor Smith (A) must choose between collaborating on the project (A1) or working independently (A2). Dr. Johnson (B) must decide whether to focus solely on her personal research (B1) or join forces with Professor Smith (B2).
+
+If they choose to collaborate (A1, B2), their combined expertise could lead to a revolutionary breakthrough in educational theory, resulting in the best outcome for both (4,4). This scenario would bring them international recognition and secure the grant.
+
+If Professor Smith attempts to collaborate but Dr. Johnson focuses on her personal work (A1, B1), Smith would still achieve moderate success due to his experience (3), but Johnson might struggle without his guidance (1).
+
+If Dr. Johnson wants to collaborate but Professor Smith chooses to work independently (A2, B2), Smith might face limitations due to lack of fresh perspectives (1), while Johnson would achieve moderate success (2).
+
+In the case where both decide to work independently (A2, B1), Dr. Johnson would likely gain individual recognition for her innovative ideas (3), while Professor Smith would see some success but miss out on the potential of a collaborative breakthrough (2).
+
+The challenge lies in the fact that neither knows the other's decision in advance. Will they recognize the potential of collaboration, or will the allure of individual achievement lead them to work separately? Their choices will not only affect their personal careers but also the future of educational research at the university.
+[/Scenario]

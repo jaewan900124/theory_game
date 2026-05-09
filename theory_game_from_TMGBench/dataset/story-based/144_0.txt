@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a freelance graphic designer",
+  "B": "Sam, a small business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deliver a standard design",
+  "A2": "Create an elaborate, time-consuming design",
+  "B1": "Pay the agreed price",
+  "B2": "Negotiate for a lower price"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create an elaborate design and receive full payment",
+    3: "Deliver a standard design and receive full payment",
+    2: "Create an elaborate design but receive a lower payment",
+    1: "Deliver a standard design and receive a lower payment"
+  },
+  "B": {
+    4: "Receive a standard design and pay the agreed price",
+    3: "Receive an elaborate design and pay a lower price",
+    2: "Receive an elaborate design and pay the agreed price",
+    1: "Receive a standard design and pay a lower price"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 1 |
+| A2    | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a freelance graphic designer, has been commissioned by Sam, a small business owner, to create a new logo for Sam's company. They've agreed on an initial price, but both have options that could affect the outcome of their interaction.
+
+Alex has two choices: deliver a standard design (A1) that meets the basic requirements, or create an elaborate, time-consuming design (A2) that goes above and beyond expectations. Sam, on the other hand, can either pay the agreed price (B1) or attempt to negotiate for a lower price (B2) once the work is delivered.
+
+Alex's preference is to create an elaborate design and receive full payment, as this showcases their skills and provides the best financial reward. However, Alex also values their time and would be satisfied with delivering a standard design for full payment. The least desirable outcome for Alex would be to put in extra effort for a lower payment.
+
+Sam prefers to receive a standard design and pay the agreed price, as this meets the business needs without extra cost. However, Sam would be pleased to receive an elaborate design for a lower price. The least preferred scenario for Sam is to receive a standard design and pay a lower price, as this might damage the relationship with Alex without gaining any additional value.
+
+If Alex delivers a standard design (A1) and Sam pays the agreed price (B1), both parties are relatively satisfied (3,4). If Alex creates an elaborate design (A2) and Sam pays the agreed price (B1), Alex is somewhat satisfied while Sam feels they've paid more than necessary (2,2). If Alex delivers a standard design (A1) and Sam negotiates for a lower price (B2), both parties are dissatisfied (1,1). However, if Alex creates an elaborate design (A2) and Sam successfully negotiates a lower price (B2), Alex is highly satisfied with their work while Sam is pleased with the value received (4,3).
+
+This situation creates a dilemma for both Alex and Sam. They must decide whether to cooperate fully, potentially sacrificing some personal benefit, or to act in their own best interest at the risk of a less favorable outcome for both parties.
+[/Scenario]

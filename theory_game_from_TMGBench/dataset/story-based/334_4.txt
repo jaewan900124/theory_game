@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Lisa, an aspiring painter",
+  "B": "Mark, a gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a traditional landscape painting",
+  "A2": "Experiment with abstract art",
+  "B1": "Focus on selling established artists' work",
+  "B2": "Take a chance on promoting new talent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a traditional landscape and have it promoted by the gallery",
+    3: "Experiment with abstract art and have it accepted by the gallery",
+    2: "Experiment with abstract art but not have it promoted by the gallery",
+    1: "Create a traditional landscape but not have it promoted by the gallery"
+  },
+  "B": {
+    4: "Promote new talent with a traditional landscape painting",
+    3: "Focus on established artists with abstract art",
+    2: "Promote new talent with abstract art",
+    1: "Focus on established artists with traditional landscape painting"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 4 \ 4 |
+| A2    | 3 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Lisa, an aspiring painter, is at a crossroads in her artistic career. She's considering whether to create a traditional landscape painting, which she knows is popular among collectors, or to experiment with abstract art, which excites her creatively but might be riskier in terms of sales.
+
+Mark, a gallery owner, is facing a decision of his own. He can either focus on selling works by established artists, which is a safer bet financially, or take a chance on promoting new talent, which could potentially discover the next big name in the art world.
+
+Lisa's preference is to have her work promoted by Mark's gallery, regardless of the style she chooses. However, she would be most satisfied if she could create a traditional landscape and have it promoted (4), followed by having her abstract work accepted (3). She'd rather have her abstract work accepted even if it's not actively promoted (2) than create a traditional landscape that doesn't get gallery support (1).
+
+Mark, on the other hand, is most excited about the prospect of discovering new talent with a marketable traditional style (4). His second preference is to stick with established artists if the new talent is producing abstract work (3). He'd rather take a chance on new abstract art (2) than focus on established artists with traditional landscapes (1), which he feels the market is saturated with.
+
+If Lisa chooses to paint a traditional landscape (A1) and Mark decides to focus on established artists (B1), both will be in their least preferred scenario (1,1). They'll miss out on the opportunity to work together and potentially create something special.
+
+If Lisa paints a traditional landscape (A1) and Mark chooses to promote new talent (B2), they'll both achieve their most preferred outcome (4,4). Lisa's work will get the exposure she desires, and Mark will have a new, marketable artist to promote.
+
+If Lisa experiments with abstract art (A2) and Mark focuses on established artists (B1), they'll both end up in their second-best scenario (3,3). Lisa's work might be accepted by the gallery but not actively promoted, while Mark maintains a steady income from known artists.
+
+Lastly, if Lisa creates abstract art (A2) and Mark decides to promote new talent (B2), they'll both be in their third-best scenario (2,2). Mark takes a risk on promoting abstract work from a new artist, while Lisa gets her experimental work displayed but may not see the sales she hoped for.
+
+This scenario illustrates the complex interplay between artistic expression and market demands, as well as the risks and rewards of innovation in the art world.
+[/Scenario]

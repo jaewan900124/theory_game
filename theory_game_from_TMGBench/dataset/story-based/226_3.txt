@@ -1,0 +1,50 @@
+[Characters]
+{
+  "A": "Alex, a talented young basketball player",
+  "B": "Coach Thompson, the experienced team coach"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play aggressively and take more shots",
+  "A2": "Play conservatively and focus on team play",
+  "B1": "Give Alex more playing time",
+  "B2": "Limit Alex's playing time"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play aggressively with more playing time",
+    3: "Play conservatively with more playing time",
+    2: "Play aggressively with limited playing time",
+    1: "Play conservatively with limited playing time",
+  },
+  "B": {
+    4: "Alex plays aggressively with more playing time",
+    3: "Alex plays conservatively with more playing time",
+    2: "Alex plays aggressively with limited playing time",
+    1: "Alex plays conservatively with limited playing time"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Alex \ Coach | More playing time | Limited playing time |
+|--------------|--------------------|-----------------------|
+| Aggressive   | 1 \ 4              | 4 \ 2                 |
+| Conservative | 2 \ 3              | 3 \ 1                 |
+[/Payoff Matrix]
+
+[Scenario]
+As the basketball season reaches its climax, Alex, a talented young player, and Coach Thompson face a crucial decision that could determine the team's success. Alex, known for his scoring abilities, must choose between playing aggressively to showcase his skills or focusing on team play. Meanwhile, Coach Thompson must decide whether to give Alex more playing time or limit his minutes on the court.
+
+Alex prefers to play aggressively and receive more playing time, as it allows him to shine and potentially attract scouts' attention. However, he's aware that this might not align with the coach's strategy. His second choice would be to play conservatively with more playing time, followed by playing aggressively with limited time, and lastly, playing conservatively with limited time.
+
+Coach Thompson, on the other hand, values team cohesion and victory above individual performances. He believes that Alex playing aggressively with more time could benefit the team most, as it would utilize Alex's scoring abilities effectively. His second preference is for Alex to play conservatively with more time, focusing on team play. The coach's third choice would be Alex playing aggressively with limited time, and his least preferred scenario is Alex playing conservatively with limited time, as it doesn't maximize Alex's potential or benefit the team.
+
+The situation creates a complex dynamic where both Alex and Coach Thompson must consider not only their own preferences but also how their choices might affect the other's decision and the team's overall performance. Their decisions will ultimately shape the team's strategy for the crucial upcoming games and potentially influence Alex's future in basketball.
+[/Scenario]

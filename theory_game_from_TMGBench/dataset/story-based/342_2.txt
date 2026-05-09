@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, a small bakery owner",
+  "B": "Michael, a local grocery store owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Stock Sarah's products",
+  "B2": "Partner with Sarah for in-store bakery"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Partner with Michael while maintaining current prices",
+    3: "Lower prices and have products stocked in Michael's store",
+    2: "Maintain current prices and have products stocked in Michael's store",
+    1: "Lower prices but fail to secure partnership or stocking agreement"
+  },
+  "B": {
+    4: "Partner with Sarah while she maintains current prices",
+    3: "Stock Sarah's products at her current prices",
+    2: "Stock Sarah's products at lower prices",
+    1: "Fail to secure partnership or stocking agreement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 3 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling small town, Sarah, a talented baker, owns a charming local bakery known for its delicious pastries and breads. Across town, Michael runs a popular grocery store that caters to the community's daily needs. Both entrepreneurs are looking for ways to expand their businesses and increase their profits.
+
+Sarah is considering two options: maintaining her current prices (A1) or lowering them (A2) to potentially attract more customers. Meanwhile, Michael is weighing the decision to either stock Sarah's products in his store (B1) or propose a partnership to set up an in-store bakery (B2).
+
+Sarah's preference is to maintain her current prices while securing a partnership with Michael, as this would provide the highest profit margin and expand her reach (A1, B2). Her second-best option would be to lower her prices and have her products stocked in Michael's store, which would increase sales volume but at a lower profit margin (A2, B1). Maintaining current prices and having products stocked comes third (A1, B1), while lowering prices without any agreement with Michael is her least preferred outcome (A2, B2).
+
+Michael's top preference aligns with Sarah's: partnering for an in-store bakery while Sarah maintains her current prices, as this would attract more customers to his store and provide a unique offering (A1, B2). His second choice would be to stock Sarah's products at current prices, which would still benefit his store but to a lesser extent (A1, B1). Stocking Sarah's products at lower prices is his third preference (A2, B1), as it would mean smaller profits. His least preferred outcome is failing to reach any agreement with Sarah (A2, B2).
+
+The scenario presents a classic game theory situation where cooperation could lead to the best outcome for both parties (A1, B2), but each also has incentives to act independently. The challenge lies in whether Sarah and Michael can communicate effectively and trust each other enough to achieve the mutually beneficial partnership, or if they will settle for less optimal individual strategies.
+[/Scenario]

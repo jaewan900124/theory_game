@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play as a team player",
+  "A2": "Play selfishly",
+  "B1": "Play as a team player",
+  "B2": "Play selfishly"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Alex plays selfishly while Blake plays as a team player",
+    3: "Both Alex and Blake play as team players",
+    2: "Alex plays as a team player while Blake plays selfishly",
+    1: "Both Alex and Blake play selfishly"
+  },
+  "B": {
+    4: "Both Alex and Blake play as team players",
+    3: "Blake plays selfishly while Alex plays as a team player",
+    2: "Both Alex and Blake play selfishly",
+    1: "Blake plays as a team player while Alex plays selfishly"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Team) | B2 (Selfish) |
+|-------|-----------|--------------|
+| A1 (Team) | 3 \ 4     | 4 \ 3       |
+| A2 (Selfish) | 2 \ 1     | 1 \ 2       |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are star players on their high school basketball team. They're both talented and competitive, vying for the attention of college scouts. As they approach the state championship game, they face a crucial decision: play as team players or focus on individual glory.
+
+If both Alex and Blake choose to play as team players (A1, B1), their coordinated efforts lead to a strong team performance. This scenario is Blake's most preferred outcome (4) as it showcases his leadership and teamwork skills. For Alex, it's the second-best outcome (3) as it still allows for a good personal showing.
+
+If Alex plays selfishly while Blake remains a team player (A2, B1), Alex gets the most personal glory (4), but at the cost of team cohesion. This is Blake's least preferred outcome (1) as his efforts go unnoticed.
+
+Conversely, if Blake plays selfishly while Alex remains a team player (A1, B2), Blake gets a chance to shine individually (3), while Alex's team-first approach is overshadowed (2).
+
+Finally, if both play selfishly (A2, B2), their lack of cooperation leads to a poor team performance. This is Alex's least preferred outcome (1) and Blake's second-least preferred (2), as their individual efforts are diminished by the team's overall poor showing.
+
+As the championship game approaches, Alex and Blake must decide their strategy. Will they prioritize personal glory or team success? Their choices will not only affect the game's outcome but also their future prospects in basketball.
+[/Scenario]

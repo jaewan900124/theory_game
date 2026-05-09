@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a microbiologist",
+  "B": "Dr. James Lee, a geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on collaborative research",
+  "A2": "Pursue independent research",
+  "B1": "Share genetic data openly",
+  "B2": "Keep genetic data private"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue independent research while having access to shared genetic data",
+    3: "Pursue independent research with private genetic data",
+    2: "Collaborate on research with shared genetic data",
+    1: "Collaborate on research with limited genetic data"
+  },
+  "B": {
+    4: "Collaborate on research with shared genetic data",
+    3: "Pursue independent research with shared genetic data",
+    2: "Keep genetic data private while collaborating",
+    1: "Keep genetic data private during independent research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Share data) | B2 (Keep private) |
+|-------|-----------------|-------------------|
+| A1 (Collaborate) | 2 \ 4           | 1 \ 2             |
+| A2 (Independent) | 3 \ 3           | 4 \ 1             |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Dr. James Lee are leading researchers at a prestigious biotech institute, both working on groundbreaking projects related to antibiotic-resistant bacteria. Their research has the potential to revolutionize treatments for previously incurable infections.
+
+Dr. Chen, known for her innovative approaches, is torn between collaborating with Dr. Lee and pursuing her own independent research. She believes that working independently might lead to faster breakthroughs, but she also recognizes the value of collaboration.
+
+Dr. Lee has recently made significant progress in mapping the genetic structure of several resistant strains. He must decide whether to share this valuable data openly with the scientific community, including Dr. Chen, or keep it private to maintain a competitive edge.
+
+The two scientists face a crucial decision that will shape the course of their research and potentially impact global health outcomes. Their choices create four possible scenarios:
+
+1. If they collaborate and Dr. Lee shares the data (A1/B1), it would lead to a solid research partnership with shared resources. This is Dr. Lee's most preferred outcome (4) but only moderately beneficial for Dr. Chen (2).
+
+2. If Dr. Chen works independently while Dr. Lee shares the data (A2/B1), both scientists would make progress separately while benefiting from the shared genetic information. This scenario is reasonably favorable for both (3/3).
+
+3. If they collaborate but Dr. Lee keeps the data private (A1/B2), their research progress would be limited. This is the least preferred outcome for Dr. Chen (1) and only somewhat beneficial for Dr. Lee (2).
+
+4. If Dr. Chen works independently and Dr. Lee keeps the data private (A2/B2), Dr. Chen would have the freedom to pursue her innovative ideas without interference, making this her most preferred outcome (4). However, this scenario is least favorable for Dr. Lee (1), as he would miss out on potential collaborative breakthroughs.
+
+As they prepare for a crucial meeting to decide their research direction, both scientists must carefully consider their choices, weighing personal ambitions against the potential for groundbreaking collaborative discoveries in the fight against antibiotic-resistant bacteria.
+[/Scenario]

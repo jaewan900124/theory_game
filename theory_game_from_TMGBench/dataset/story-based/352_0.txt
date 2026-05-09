@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Maya, an emerging abstract painter",
+  "B": "Leo, a well-established gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional artwork",
+  "A2": "Create an experimental, avant-garde piece",
+  "B1": "Host a traditional art exhibition",
+  "B2": "Organize an innovative, interactive art show"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a conventional artwork for an innovative, interactive art show",
+    3: "Create a conventional artwork for a traditional art exhibition",
+    2: "Create an experimental, avant-garde piece for a traditional art exhibition",
+    1: "Create an experimental, avant-garde piece for an innovative, interactive art show"
+  },
+  "B": {
+    4: "Host an innovative, interactive art show featuring conventional artwork",
+    3: "Host a traditional art exhibition featuring conventional artwork",
+    2: "Host a traditional art exhibition featuring experimental, avant-garde pieces",
+    1: "Host an innovative, interactive art show featuring experimental, avant-garde pieces"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Maya \ Leo | Traditional Exhibition (B1) | Innovative Show (B2) |
+|-------------|----------------------------|----------------------|
+| Conventional (A1) | 3 \ 3                | 4 \ 4                |
+| Experimental (A2) | 2 \ 2                | 1 \ 1                |
+[/Payoff Matrix]
+
+[Scenario]
+Maya, an emerging abstract painter, is preparing for her first major exhibition. She has been invited to showcase her work at Leo's prestigious gallery, known for its cutting-edge approach to art presentation. Both Maya and Leo face a decision that will shape the nature of the upcoming event.
+
+Maya must choose between creating a conventional artwork (A1) that aligns with current market trends or pursuing an experimental, avant-garde piece (A2) that pushes the boundaries of her artistic expression. Simultaneously, Leo needs to decide whether to host a traditional art exhibition (B1) or organize an innovative, interactive art show (B2).
+
+Maya's preference is to have her work featured in an innovative show, as it would provide greater exposure and align with her artistic vision. However, she is also aware that a conventional piece might be more marketable and appeal to a wider audience. Leo, on the other hand, wants to maximize gallery attendance and sales while maintaining his reputation for showcasing groundbreaking art.
+
+If Maya creates a conventional artwork (A1) and Leo hosts a traditional exhibition (B1), both would benefit moderately (3,3). This scenario represents a safe choice for both parties, likely to generate steady interest and sales.
+
+The most preferred outcome for both Maya and Leo (4,4) would be if Maya creates a conventional artwork (A1) for Leo's innovative, interactive art show (B2). This combination would attract a wide audience while also showcasing the gallery's progressive approach.
+
+If Maya opts for an experimental piece (A2) and Leo chooses a traditional exhibition (B1), both would face some challenges (2,2). The avant-garde work might not resonate with the traditional audience, potentially affecting sales and reception.
+
+The least preferred scenario for both (1,1) would occur if Maya creates an experimental piece (A2) for Leo's innovative show (B2). While this might seem counterintuitive, it represents a high-risk situation where the experimental nature of both the artwork and the show format could alienate potential buyers and critics.
+
+As the exhibition date approaches, Maya and Leo must carefully consider their choices, weighing the potential benefits and risks of each scenario. Their decisions will not only impact the success of this particular event but could also influence their future careers in the competitive world of contemporary art.
+[/Scenario]

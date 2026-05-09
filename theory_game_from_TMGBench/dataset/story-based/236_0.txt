@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "EcoPark",
+  "B": "LocalCommunity"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement strict conservation measures",
+  "A2": "Allow limited resource use",
+  "B1": "Support conservation efforts",
+  "B2": "Exploit park resources"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Strict conservation with community support",
+    3: "Limited resource use with community support",
+    2: "Strict conservation without community support",
+    1: "Limited resource use without community support"
+  },
+  "B": {
+    4: "Strict conservation with resource exploitation",
+    3: "Limited resource use with community support",
+    2: "Strict conservation with community support",
+    1: "Limited resource use without community support"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 2 |
+| A2    | 3 \ 3 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush tropical region, the newly established EcoPark faces a critical decision regarding its conservation strategy. The park management must choose between implementing strict conservation measures (A1) or allowing limited resource use (A2). Simultaneously, the LocalCommunity living on the park's outskirts must decide whether to support conservation efforts (B1) or exploit the park's resources for short-term gain (B2).
+
+EcoPark's primary goal is to preserve the area's rich biodiversity. They strongly prefer a scenario where they can implement strict conservation measures with community support (A1B1, preference 4). However, they recognize that allowing limited resource use might be necessary to gain community cooperation (A2B1, preference 3). Their least preferred outcome is when they allow limited resource use, but the community still exploits the resources (A2B2, preference 1).
+
+The LocalCommunity, on the other hand, is torn between short-term economic gains and long-term environmental sustainability. Their most preferred scenario is one where they can exploit park resources even under strict conservation measures (A1B2, preference 4), as this would provide immediate economic benefits while potentially maintaining the park's long-term viability. However, they also see value in supporting conservation efforts if allowed limited resource use (A2B1, preference 3).
+
+The situation creates a complex interplay of interests. If EcoPark implements strict conservation (A1) and the LocalCommunity supports it (B1), the park achieves minimal conservation goals but misses out on community engagement opportunities (payoff 1), while the community gains long-term benefits but sacrifices immediate gains (payoff 4). If EcoPark allows limited resource use (A2) and the community supports it (B1), both parties achieve a balanced outcome (payoff 3 for both).
+
+However, if the LocalCommunity decides to exploit resources (B2), the outcomes change dramatically. Under strict conservation (A1B2), EcoPark achieves its conservation goals (payoff 4) but faces ongoing conflicts with the community (payoff 2 for LocalCommunity). If limited resource use is allowed but still exploited (A2B2), both parties suffer, with EcoPark failing in its mission (payoff 2) and the community depleting resources unsustainably (payoff 1).
+
+This delicate balance between conservation and community needs highlights the importance of cooperation in ecological management, while also illustrating the potential pitfalls when short-term interests conflict with long-term sustainability goals.
+[/Scenario]

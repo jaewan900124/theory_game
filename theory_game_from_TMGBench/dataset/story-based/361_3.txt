@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a small coffee shop owner",
+  "B": "Lucas, a local coffee bean supplier"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current order volume",
+  "A2": "Reduce order volume",
+  "B1": "Maintain current price",
+  "B2": "Offer a discount"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain order volume and receive a discount",
+    3: "Maintain order volume at current price",
+    2: "Reduce order volume and receive a discount",
+    1: "Reduce order volume at current price"
+  },
+  "B": {
+    4: "Emma maintains order volume and receives a discount",
+    3: "Emma maintains order volume at current price",
+    2: "Emma reduces order volume and receives a discount",
+    1: "Emma reduces order volume at current price"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Maintain price | Offer discount |
+|--------------|----------------|----------------|
+| Maintain     | 3 \ 3          | 4 \ 4          |
+| Reduce       | 1 \ 1          | 2 \ 2          |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town, Emma runs a cozy coffee shop that has been a local favorite for years. Her success largely depends on the quality of coffee beans she sources from Lucas, a local supplier. Recently, economic pressures have forced both Emma and Lucas to reconsider their business strategies.
+
+Emma is contemplating whether to maintain her current order volume of coffee beans or reduce it to cut costs. Meanwhile, Lucas is considering whether to maintain his current prices or offer a discount to encourage larger orders.
+
+If Emma maintains her order volume and Lucas keeps his current prices, both will continue their steady business relationship (3,3). However, if Lucas offers a discount and Emma maintains her order volume, both will benefit from increased sales and loyalty (4,4).
+
+If Emma reduces her order volume, regardless of Lucas's pricing decision, both will face losses. If Lucas maintains his prices and Emma reduces her order, both will suffer significant setbacks (1,1). Even if Lucas offers a discount but Emma still reduces her order, the outcome is slightly better but still unfavorable for both (2,2).
+
+Emma prefers to maintain her order volume, especially if she can get a discount. Her least preferred scenario is reducing her order at the current price. Similarly, Lucas's preferences align with Emma's, as he benefits most when Emma maintains her order volume, particularly if he can offer a discount to secure her loyalty.
+
+Both Emma and Lucas realize that their decisions are interdependent. They must carefully consider their choices, knowing that cooperation could lead to mutual benefits, while competition might result in losses for both parties. The future of their businesses hangs in the balance as they contemplate their next moves in this economic game.
+[/Scenario]

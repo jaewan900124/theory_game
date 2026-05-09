@@ -1,0 +1,57 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Blake, Alex's doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play aggressively",
+  "A2": "Play defensively",
+  "B1": "Cover the net",
+  "B2": "Stay at the baseline"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play defensively while Blake stays at the baseline",
+    3: "Play aggressively while Blake covers the net",
+    2: "Play defensively while Blake covers the net",
+    1: "Play aggressively while Blake stays at the baseline"
+  },
+  "B": {
+    4: "Alex plays aggressively while staying at the baseline",
+    3: "Alex plays defensively while covering the net",
+    2: "Alex plays aggressively while covering the net",
+    1: "Alex plays defensively while staying at the baseline"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Cover the net) | B2 (Stay at baseline) |
+|-------|---------------------|------------------------|
+| A1 (Play aggressively) | 3 \ 2 | 1 \ 4 |
+| A2 (Play defensively) | 2 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake, professional tennis doubles partners, are preparing for a crucial point in the championship match. They need to decide on their strategy quickly, but there's no time to communicate verbally.
+
+Alex, known for her powerful shots, is contemplating whether to play aggressively or defensively. She prefers playing defensively if Blake stays at the baseline, as this allows her to control the pace. However, if Blake covers the net, Alex would rather play aggressively to take advantage of Blake's positioning.
+
+Blake, on the other hand, is deciding whether to cover the net or stay at the baseline. Blake's ideal scenario is when Alex plays aggressively while Blake stays at the baseline, allowing for powerful returns. The next best option for Blake is covering the net while Alex plays defensively, creating a solid defensive formation.
+
+Their choices will determine the outcome of the point:
+
+1. If Alex plays aggressively (A1) and Blake covers the net (B1), they form a balanced offensive strategy (3 for Alex, 2 for Blake).
+2. If Alex plays aggressively (A1) but Blake stays at the baseline (B2), their positioning is misaligned, benefiting Blake but not Alex (1 for Alex, 4 for Blake).
+3. If Alex plays defensively (A2) and Blake covers the net (B1), they create a strong defensive formation (2 for Alex, 3 for Blake).
+4. If Alex plays defensively (A2) and Blake stays at the baseline (B2), Alex can control the pace, but their overall strategy is too passive (4 for Alex, 1 for Blake).
+
+As the opponents serve, Alex and Blake must make their choices independently, hoping their partner's decision aligns with their own for the best possible outcome.
+[/Scenario]

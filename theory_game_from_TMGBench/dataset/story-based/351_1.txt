@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current trade policies",
+  "A2": "Impose trade restrictions",
+  "B1": "Maintain current trade policies",
+  "B2": "Open markets further"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "China opens markets while US maintains policies",
+    3: "Both maintain current policies",
+    2: "US imposes restrictions, China maintains policies",
+    1: "US imposes restrictions, China opens markets"
+  },
+  "B": {
+    4: "China opens markets while US maintains policies",
+    3: "Both maintain current policies",
+    2: "US imposes restrictions, China opens markets",
+    1: "US imposes restrictions, China maintains policies"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 2 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the complex world of international relations, the United States and China find themselves at a critical juncture in their trade relationship. Both nations are weighing their options carefully, knowing that their decisions will have far-reaching consequences for their economies and global influence.
+
+The United States (A) is considering whether to maintain its current trade policies (A1) or impose new trade restrictions (A2). Meanwhile, China (B) is deliberating between maintaining its current trade policies (B1) or further opening its markets to international competition (B2).
+
+Both countries prefer scenarios where they can gain economic advantages without making concessions. The ideal outcome for both (preference 4) is for China to open its markets while the US maintains its current policies, as this would give US companies greater access to Chinese markets without reciprocal concessions.
+
+The second-best outcome for both nations (preference 3) is to maintain the status quo, where current policies remain in place. This option provides stability and predictability in their trade relationship.
+
+The least preferred outcomes differ for each country. The US ranks imposing restrictions while China opens markets as its least preferred option (preference 1), as this could lead to missed opportunities in the Chinese market. For China, the least preferred scenario is when the US imposes restrictions while China maintains its current policies (preference 1), as this could harm Chinese exports without any compensating benefits.
+
+As tensions rise and negotiations continue, both nations must carefully consider their moves. Will they choose cooperation, potentially leading to mutual benefits but requiring trust? Or will they opt for more protective stances, risking economic repercussions but potentially safeguarding their interests?
+
+The decisions made by these global powers will not only shape their bilateral relationship but also have significant implications for the global economy and the future of international trade relations.
+[/Scenario]

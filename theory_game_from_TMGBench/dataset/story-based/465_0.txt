@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented software engineer",
+  "B": "Blake, the CEO of a tech startup"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Stay at current job",
+  "A2": "Join Blake's startup",
+  "B1": "Maintain current team",
+  "B2": "Offer Alex a job"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Join startup with high salary",
+    3: "Stay at current job comfortably",
+    2: "Join startup with average offer",
+    1: "Stay at current job feeling stagnant"
+  },
+  "B": {
+    4: "Hire Alex with average offer",
+    3: "Maintain current team and grow steadily",
+    2: "Hire Alex with high salary",
+    1: "Maintain current team and struggle"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 2 \ 4 |
+| A2    | 3 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software engineer, has been working at a large tech company for several years. While the job is stable, Alex feels unchallenged and is considering new opportunities. Blake, the CEO of a promising tech startup, has heard about Alex's skills and is contemplating whether to offer Alex a position.
+
+Alex has two choices: stay at the current job (A1) or join Blake's startup (A2). Blake can either maintain the current team (B1) or offer Alex a job (B2).
+
+If Alex stays at the current job and Blake doesn't make an offer (A1, B1), both feel dissatisfied. Alex feels stagnant in their career, while Blake's startup struggles without key talent. This is the least preferred outcome for both (1,1).
+
+If Alex stays put but Blake makes an offer (A1, B2), Alex feels slightly better about their current job knowing they're in demand (2). Blake benefits most from this scenario (4), as they can claim they tried to recruit top talent without increasing costs.
+
+If Alex decides to join the startup without an official offer (A2, B1), Alex enjoys the new challenge and potential (3), while Blake is pleased to have new talent but concerned about the unexpected cost (2).
+
+The best outcome for Alex is joining the startup with a high salary offer (A2, B2), which is their most preferred state (4). Blake is satisfied with hiring Alex but prefers offering an average salary, making this their third-best outcome (3).
+
+This scenario illustrates the complex dynamics of job negotiations, where both parties try to maximize their benefits while managing risks and expectations.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "EcoTech, a green technology company",
+  "B": "ForestGuard, a local environmental protection organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products without extensive testing",
+  "A2": "Conduct thorough environmental impact studies before product development",
+  "B1": "Oppose EcoTech's activities in the local forest",
+  "B2": "Collaborate with EcoTech on sustainable development"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop products quickly with ForestGuard's support",
+    3: "Conduct thorough studies with ForestGuard's opposition",
+    2: "Develop products quickly despite ForestGuard's opposition",
+    1: "Conduct thorough studies with ForestGuard's support"
+  },
+  "B": {
+    4: "Collaborate with EcoTech on well-studied sustainable development",
+    3: "Successfully oppose EcoTech's hasty development",
+    2: "Collaborate with EcoTech despite lack of thorough studies",
+    1: "Unsuccessfully oppose EcoTech's hasty development"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoTech \ ForestGuard | Oppose (B1) | Collaborate (B2) |
+|-----------------------|-------------|-------------------|
+| Quick Development (A1)| 2 \ 1       | 4 \ 4             |
+| Thorough Studies (A2) | 1 \ 3       | 3 \ 2             |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush forest on the outskirts of a bustling city, EcoTech, a promising green technology company, sees an opportunity to develop innovative eco-friendly products using the forest's resources. However, their activities have caught the attention of ForestGuard, a local environmental protection organization dedicated to preserving the forest's ecosystem.
+
+EcoTech faces a crucial decision: they can either quickly develop their eco-friendly products without extensive testing (A1) or conduct thorough environmental impact studies before proceeding with product development (A2). The company is eager to bring their potentially beneficial products to market but is also aware of the importance of environmental responsibility.
+
+ForestGuard, on the other hand, must decide whether to oppose EcoTech's activities in the local forest (B1) or collaborate with the company on sustainable development (B2). They are torn between their mission to protect the forest and the potential benefits that EcoTech's eco-friendly products could bring to the environment on a larger scale.
+
+If EcoTech chooses quick development (A1) and ForestGuard opposes (B1), EcoTech will face some setbacks but can still proceed (payoff 2), while ForestGuard will struggle to stop the development (payoff 1). If ForestGuard collaborates instead (B2), both parties will benefit greatly (payoff 4 for both) as they can quickly bring eco-friendly products to market with local support.
+
+If EcoTech opts for thorough studies (A2) and ForestGuard opposes (B1), EcoTech will face significant delays (payoff 1), while ForestGuard will successfully protect the forest in the short term (payoff 3). However, if ForestGuard collaborates (B2) in this scenario, EcoTech will be able to conduct their studies more efficiently (payoff 3), but ForestGuard may feel they've compromised their principles somewhat (payoff 2).
+
+The fate of the forest and the potential impact of EcoTech's eco-friendly products hang in the balance as both parties consider their options. Will they find a way to cooperate and create a sustainable future, or will their competing interests lead to conflict and missed opportunities?
+[/Scenario]

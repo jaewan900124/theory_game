@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, CEO of TechInnovate",
+  "B": "Michael, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint AI project",
+  "A2": "Develop AI technology independently",
+  "B1": "Share proprietary data for the joint project",
+  "B2": "Withhold data and focus on internal development"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while B withholds data",
+    3: "Develop independently while B shares data",
+    2: "Both develop independently",
+    1: "Collaborate while B shares data"
+  },
+  "B": {
+    4: "Both collaborate with shared data",
+    3: "A develops independently while B shares data",
+    2: "A collaborates while B withholds data",
+    1: "Both develop independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 2 |
+| A2    | 2 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling tech hub of Silicon Valley, two rising stars in the artificial intelligence industry find themselves at a crossroads. Sarah, the brilliant and ambitious CEO of TechInnovate, has developed cutting-edge AI algorithms but lacks the extensive dataset needed to refine them. Michael, the shrewd and data-savvy CEO of DataDrive, possesses a treasure trove of user data but lacks the advanced AI capabilities to fully leverage it.
+
+Both CEOs recognize the potential for a groundbreaking AI project that could revolutionize the industry. They arrange a meeting to discuss the possibility of collaboration.
+
+Sarah faces a crucial decision: she can either propose a collaborative AI project (A1) or choose to develop her AI technology independently (A2). Meanwhile, Michael must decide whether to share his company's proprietary data for the joint project (B1) or withhold it and focus on internal development (B2).
+
+Sarah's ideal scenario would be to collaborate on the project while having access to Michael's data, but without Michael fully benefiting from her AI expertise (A1, B2). This would give her company a significant advantage in the market. Her least preferred outcome is a full collaboration where both companies benefit equally (A1, B1), as she fears losing her competitive edge.
+
+Michael, on the other hand, dreams of a scenario where both companies fully collaborate and share resources (A1, B1), believing this would lead to the most innovative breakthroughs. His worst-case scenario is if both companies decide to develop independently (A2, B2), as he knows his AI capabilities are not as advanced as Sarah's.
+
+As they sit across from each other in the sleek conference room, the tension is palpable. Each CEO must carefully consider their options, weighing the potential for innovation against the risks of losing their competitive advantages. The decision they make today could shape the future of AI technology and their respective companies' fortunes for years to come.
+
+Will they choose cooperation or competition? The fate of their AI empires hangs in the balance as Sarah and Michael prepare to reveal their choices.
+[/Scenario]

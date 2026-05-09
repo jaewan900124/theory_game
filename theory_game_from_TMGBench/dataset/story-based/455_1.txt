@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local environmental conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a small-scale eco-friendly power plant",
+  "A2": "Invest in large-scale renewable energy infrastructure",
+  "B1": "Support the small-scale power plant project",
+  "B2": "Oppose any development in the forest area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Large-scale infrastructure with GreenForest's opposition",
+    3: "Large-scale infrastructure with GreenForest's support",
+    2: "Small-scale power plant with GreenForest's support",
+    1: "Small-scale power plant with GreenForest's opposition"
+  },
+  "B": {
+    4: "Small-scale power plant with their opposition",
+    3: "Large-scale infrastructure with their opposition",
+    2: "Large-scale infrastructure with their support",
+    1: "Small-scale power plant with their support"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 1 | 1 \ 4 |
+| A2    | 3 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush forest region, EcoTech, a sustainable technology company, is planning to expand its renewable energy projects. They are considering two options: developing a small-scale eco-friendly power plant or investing in large-scale renewable energy infrastructure. Meanwhile, GreenForest, a local environmental conservation group, is closely monitoring the situation.
+
+EcoTech's primary goal is to maximize their energy output while maintaining a positive public image. They prefer the large-scale infrastructure project as it would generate more power and potentially higher profits. However, they are aware that this option might face more opposition from environmental groups.
+
+GreenForest's main objective is to preserve the forest ecosystem while acknowledging the need for sustainable energy solutions. They are skeptical of any development in the area but might be willing to compromise for a truly eco-friendly solution.
+
+If EcoTech chooses the small-scale power plant (A1) and GreenForest supports it (B1), EcoTech gets their third-best outcome (2) as they have a project with local support, but it's not as profitable. GreenForest gets their least preferred outcome (1) as they've agreed to some development, even if it's minimal.
+
+If EcoTech goes for the small-scale plant (A1) but GreenForest opposes it (B2), EcoTech faces their worst scenario (1) with a small project and local opposition. However, this is GreenForest's best outcome (4) as they've successfully opposed any development.
+
+If EcoTech chooses the large-scale infrastructure (A2) and GreenForest supports it (B1), EcoTech achieves their second-best outcome (3) with a big project and local support. GreenForest gets their second-worst outcome (2) as they've agreed to significant development, albeit sustainable.
+
+Finally, if EcoTech pursues the large-scale project (A2) and GreenForest opposes it (B2), EcoTech reaches their best outcome (4) with a big project, even with opposition. GreenForest achieves their second-best scenario (3) by maintaining their principles, though facing a larger development.
+
+This scenario illustrates the complex dynamics between economic development and environmental conservation, where both parties must navigate their choices carefully to balance their objectives and the ecological impact of their decisions.
+[/Scenario]

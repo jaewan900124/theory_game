@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on developing a user-friendly interface",
+  "A2": "Prioritize backend optimization",
+  "B1": "Design a standard processor",
+  "B2": "Develop a custom, high-performance chip"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "User-friendly interface with custom chip",
+    3: "Backend optimization with custom chip",
+    2: "User-friendly interface with standard processor",
+    1: "Backend optimization with standard processor"
+  },
+  "B": {
+    4: "User-friendly interface with custom chip",
+    3: "User-friendly interface with standard processor",
+    2: "Backend optimization with standard processor",
+    1: "Backend optimization with custom chip"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 1 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a cutting-edge smartphone project for a major tech company. Alex, the software engineer, is responsible for the operating system, while Blake, the hardware engineer, is in charge of processor design.
+
+As the project deadline approaches, they face crucial decisions that will determine the success of the smartphone. Alex must choose between focusing on a user-friendly interface (A1) or prioritizing backend optimization (A2). Meanwhile, Blake has to decide whether to design a standard processor (B1) or develop a custom, high-performance chip (B2).
+
+Their choices will impact not only the smartphone's performance but also their individual career prospects within the company. The combination of their decisions creates four possible scenarios, each with different outcomes for both engineers.
+
+Alex's highest preference (4) is to develop a user-friendly interface paired with Blake's custom chip, as this would showcase Alex's UI/UX skills while leveraging cutting-edge hardware. Alex's second choice (3) is to optimize the backend for the custom chip, which would still yield impressive performance. The third preference (2) is a user-friendly interface with a standard processor, which is less exciting but still demonstrates Alex's software skills. Alex's least preferred outcome (1) is backend optimization for a standard processor, which feels like a missed opportunity for innovation.
+
+Blake, on the other hand, most prefers (4) the scenario where Alex creates a user-friendly interface to complement Blake's custom chip, as this would highlight the chip's capabilities. Blake's second choice (3) is pairing a standard processor with Alex's user-friendly interface, which is a safe and solid option. The third preference (2) is a standard processor with backend optimization, which is less exciting but still functional. Blake's least preferred outcome (1) is developing a custom chip that's underutilized due to Alex focusing on backend optimization.
+
+The payoff matrix reflects these preferences, showing that their ideal scenario (A1, B2) aligns, potentially leading to cooperation. However, they face a dilemma: if one chooses their more ambitious option while the other plays it safe, the results could be suboptimal for one or both of them.
+
+As the deadline looms, Alex and Blake must decide whether to communicate and cooperate or make their choices independently, each hoping the other will complement their decision for the best possible outcome.
+[/Scenario]

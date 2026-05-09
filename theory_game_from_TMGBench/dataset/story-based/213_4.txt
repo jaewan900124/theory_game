@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new telemedicine program",
+  "A2": "Maintain current in-person healthcare services",
+  "B1": "Participate in the telemedicine program",
+  "B2": "Continue focusing on in-person consultations"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement telemedicine while Dr. Johnson continues in-person consultations",
+    3: "Both maintain current in-person services",
+    2: "Both implement and participate in telemedicine",
+    1: "Maintain in-person services while Dr. Johnson participates in telemedicine"
+  },
+  "B": {
+    4: "Both implement and participate in telemedicine",
+    3: "Both maintain current in-person services",
+    2: "Continue in-person consultations while hospital implements telemedicine",
+    1: "Participate in telemedicine while hospital maintains in-person services"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 2 |
+| A2    | 1 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized town, the local hospital administrator Dr. Sarah Chen is considering implementing a new telemedicine program to improve healthcare accessibility. Meanwhile, Dr. Mark Johnson, a respected private practice physician in the community, is weighing his options on whether to participate in this program or continue focusing on in-person consultations.
+
+Dr. Chen believes that telemedicine could significantly reduce costs for the hospital and improve patient outreach. However, she's concerned about the initial investment and potential resistance from some staff and patients. Her ideal scenario would be to implement the telemedicine program while Dr. Johnson continues his in-person consultations, as this would provide a balance of services for the community.
+
+Dr. Johnson, on the other hand, sees the potential benefits of telemedicine for his practice, such as increased flexibility and the ability to reach more patients. However, he's worried about the learning curve and the potential loss of the personal touch he values in his practice. His preferred outcome would be for both the hospital and his practice to embrace telemedicine, allowing for a coordinated approach to healthcare delivery in the town.
+
+If both decide to maintain the status quo, they would both be reasonably satisfied, as it's a familiar and stable situation. However, if Dr. Chen implements telemedicine while Dr. Johnson doesn't participate, it could lead to a fragmented healthcare system in the town. Conversely, if Dr. Johnson participates in telemedicine while the hospital doesn't implement it, both would face challenges: Dr. Johnson would struggle without proper infrastructure, and the hospital might lose patients to his more accessible services.
+
+As they consider their options, both Dr. Chen and Dr. Johnson must weigh the potential benefits and risks, not only for themselves but for the healthcare landscape of their community as a whole. Their decisions will shape the future of healthcare delivery in the town, affecting both medical professionals and patients alike.
+[/Scenario]

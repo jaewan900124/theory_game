@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a small cafe owner",
+  "B": "Blake, a local coffee bean supplier"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer exclusive partnership",
+  "A2": "Maintain multiple suppliers",
+  "B1": "Maintain current prices",
+  "B2": "Offer discounted prices"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Exclusive partnership with discounted prices",
+    3: "Multiple suppliers with discounted prices",
+    2: "Exclusive partnership with current prices",
+    1: "Multiple suppliers with current prices"
+  },
+  "B": {
+    4: "Exclusive partnership with discounted prices",
+    3: "Multiple suppliers with discounted prices",
+    2: "Multiple suppliers with current prices",
+    1: "Exclusive partnership with current prices"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Maintain current prices) | B2 (Offer discounted prices) |
+|-------|------------------------------|------------------------------|
+| A1 (Offer exclusive partnership) | 2 \ 1 | 4 \ 4 |
+| A2 (Maintain multiple suppliers) | 1 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Alex owns a small but popular cafe known for its quality coffee. Blake is a local coffee bean supplier who has been one of Alex's regular suppliers. As the coffee market becomes more competitive, both Alex and Blake are considering strategies to improve their businesses.
+
+Alex is contemplating whether to offer Blake an exclusive partnership or continue working with multiple suppliers. An exclusive partnership could potentially secure a stable supply and better prices, but it also carries the risk of dependency on a single supplier. On the other hand, maintaining multiple suppliers offers more flexibility but might result in less favorable terms.
+
+Blake, facing increasing competition from other suppliers, is deciding whether to maintain current prices or offer discounted prices to secure more business. Lowering prices could attract more customers but would also reduce profit margins.
+
+Both Alex and Blake prefer the scenario where they have an exclusive partnership with discounted prices, as it provides stability and mutual benefits. Their second preference is a situation where Alex works with multiple suppliers, including Blake, who offers discounted prices. This scenario provides some benefits to both parties while maintaining flexibility for Alex.
+
+Alex's third preference is an exclusive partnership with current prices, as it still offers some stability, while Blake prefers the scenario of multiple suppliers with current prices, as it allows for a broader customer base. Their least preferred scenarios are opposites: Alex least prefers multiple suppliers with current prices, while Blake least prefers an exclusive partnership with current prices.
+
+As they consider their options, both Alex and Blake must weigh the potential risks and rewards of their choices, knowing that their decisions will impact not only their own businesses but also their business relationship with each other.
+[/Scenario]

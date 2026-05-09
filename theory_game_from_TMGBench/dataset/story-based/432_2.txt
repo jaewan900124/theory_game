@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, CEO of TechInnovate",
+  "B": "Blair, CEO of DataDrive"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Propose a partnership",
+  "A2": "Develop competing product",
+  "B1": "Accept partnership",
+  "B2": "Reject partnership and expand independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop competing product while B expands independently",
+    3: "Both companies form a partnership",
+    2: "Propose partnership, but B rejects and expands independently",
+    1: "Develop competing product while B accepts partnership"
+  },
+  "B": {
+    4: "Reject partnership and expand independently while A proposes partnership",
+    3: "Both companies form a partnership",
+    2: "Accept partnership while A develops competing product",
+    1: "Reject partnership and expand independently while A develops competing product"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept partnership) | B2 (Reject and expand) |
+|-------|-------------------------|------------------------|
+| A1 (Propose partnership) | 3 \ 3                 | 2 \ 4                  |
+| A2 (Develop competing product) | 1 \ 2                 | 4 \ 1                  |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling tech hub of Silicon Valley, two rising stars in the software industry find themselves at a crossroads. Alex, the ambitious CEO of TechInnovate, and Blair, the strategic mind behind DataDrive, are both on the verge of launching revolutionary AI-driven analytics platforms.
+
+Alex, recognizing the potential for synergy, is considering proposing a partnership to Blair. This move could combine TechInnovate's innovative algorithms with DataDrive's extensive data resources, potentially dominating the market. However, Alex is also tempted by the prospect of developing a competing product, which could potentially outperform DataDrive if successful.
+
+Blair, on the other hand, is weighing the benefits of joining forces with TechInnovate against the allure of expanding DataDrive independently. A partnership could accelerate growth and market penetration, but going solo might allow for greater control and potentially higher profits in the long run.
+
+The scenario plays out as follows:
+
+1. If Alex proposes a partnership (A1) and Blair accepts (B1), both companies would benefit from combined resources and shared market dominance. This is their third-best outcome (3,3), as it provides stability and growth but limits individual control.
+
+2. If Alex proposes a partnership (A1) but Blair rejects it to expand independently (B2), TechInnovate would face tougher competition, making this Alex's second-least preferred outcome (2). However, this is Blair's most preferred scenario (4), as it allows DataDrive to maintain independence while potentially weakening a competitor.
+
+3. If Alex decides to develop a competing product (A2) and Blair had been open to a partnership (B1), this would be Alex's least preferred outcome (1), as it would mean missing out on a beneficial collaboration. For Blair, this is the second-least preferred scenario (2), as it means facing a new competitor while losing a potential ally.
+
+4. Finally, if Alex develops a competing product (A2) and Blair decides to expand independently (B2), this becomes a high-risk, high-reward situation for both. It's Alex's most preferred outcome (4), betting on TechInnovate's capability to outperform DataDrive. However, it's Blair's least preferred scenario (1), facing a strong new competitor without the buffer of a partnership.
+
+As both CEOs contemplate their moves, they must consider not only their own preferences but also anticipate the other's strategy. The decision they make will shape the future of both companies and potentially the entire AI analytics industry.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "General Alpha",
+  "B": "General Beta"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops to the border",
+  "A2": "Keep troops in reserve",
+  "B1": "Fortify defensive positions",
+  "B2": "Launch a preemptive strike"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch a successful preemptive strike",
+    3: "Maintain a strong defensive position",
+    2: "Engage in a costly conflict",
+    1: "Suffer a surprise attack"
+  },
+  "B": {
+    4: "Launch a successful preemptive strike",
+    3: "Maintain a strong defensive position",
+    2: "Engage in a costly conflict",
+    1: "Suffer a surprise attack"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Fortify) | B2 (Strike) |
+|-------|--------------|-------------|
+| A1 (Deploy) | 3 \ 3       | 4 \ 4       |
+| A2 (Reserve) | 1 \ 1       | 2 \ 2       |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense geopolitical climate, two neighboring countries find themselves on the brink of war. General Alpha and General Beta, the top military strategists of their respective nations, are tasked with making crucial decisions that will determine the fate of their countries.
+
+General Alpha must decide whether to deploy troops to the border (A1) or keep them in reserve (A2). Meanwhile, General Beta faces the choice of fortifying defensive positions (B1) or launching a preemptive strike (B2).
+
+Both generals share similar preferences. Their most desired outcome is to launch a successful preemptive strike, followed by maintaining a strong defensive position. Engaging in a costly conflict is their third preference, while suffering a surprise attack is the least desirable outcome.
+
+If both generals choose to fortify their positions (A1, B1), they will maintain a strong defensive stance, resulting in a relatively stable situation (3,3). However, if one general decides to strike while the other is deploying troops (A1, B2) or (A2, B1), the striking general will gain a significant advantage (4,4).
+
+In the scenario where both generals keep their troops in reserve (A2, B2), a limited conflict may occur, leading to some losses on both sides but avoiding a full-scale war (2,2). The worst-case scenario for either general is to keep troops in reserve while the other launches a strike (A2, B1) or (A1, B2), resulting in a devastating surprise attack (1,1).
+
+As tensions rise, both generals must carefully consider their options, weighing the potential risks and rewards of each decision. Their choices will not only affect their own nations but also shape the future of the entire region. The fate of thousands hangs in the balance as General Alpha and General Beta prepare to make their moves in this high-stakes game of military strategy.
+[/Scenario]

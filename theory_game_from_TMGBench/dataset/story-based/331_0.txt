@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "United States",
+  "B": "China"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Impose trade tariffs",
+  "A2": "Maintain open trade",
+  "B1": "Retaliate with counter-tariffs",
+  "B2": "Engage in trade negotiations"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Impose tariffs while China negotiates",
+    3: "Maintain open trade while China retaliates",
+    2: "Both engage in negotiations",
+    1: "Impose tariffs while China retaliates"
+  },
+  "B": {
+    4: "US imposes tariffs while China negotiates",
+    3: "US imposes tariffs while China retaliates",
+    2: "Both engage in negotiations",
+    1: "US maintains open trade while China retaliates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| US \ China | Retaliate (B1) | Negotiate (B2) |
+|-------------|----------------|----------------|
+| Tariffs (A1)|    1 \ 3       |     4 \ 4      |
+| Open (A2)   |    3 \ 1       |     2 \ 2      |
+[/Payoff Matrix]
+
+[Scenario]
+In the realm of international relations, the United States and China find themselves at a crossroads in their trade relationship. The two global superpowers must decide on their trade policies, which will significantly impact their economies and diplomatic ties.
+
+The United States (A) is considering whether to impose trade tariffs (A1) or maintain open trade (A2). Meanwhile, China (B) must choose between retaliating with counter-tariffs (B1) or engaging in trade negotiations (B2).
+
+The United States prefers a scenario where it can impose tariffs while China negotiates, as this would give the US a perceived economic advantage. Its second preference is maintaining open trade while China retaliates, which could potentially harm China's economy more than its own. The US considers mutual negotiations as its third choice, viewing it as a moderate outcome. The least preferred option for the US is imposing tariffs while China retaliates, which could lead to a damaging trade war.
+
+China, on the other hand, most prefers a situation where the US imposes tariffs while China negotiates, as this could potentially lead to concessions from the US. Its second preference is retaliating against US tariffs, viewing this as a strong stance. China considers mutual negotiations as its third choice, seeing it as a balanced but not ideal outcome. The least preferred scenario for China is retaliating while the US maintains open trade, as this could be seen as an unnecessary aggressive move.
+
+The payoff matrix reflects these preferences, with each country receiving different benefits or facing different consequences based on their combined choices. A score of 4 represents the most preferred outcome, while 1 represents the least preferred.
+
+As tensions rise and economic stakes grow higher, both nations must carefully consider their strategies. Will they choose cooperation through negotiations, or will they engage in a potentially damaging trade war? The decision made by each country will not only affect their bilateral relationship but also have far-reaching consequences for the global economy and international relations at large.
+[/Scenario]

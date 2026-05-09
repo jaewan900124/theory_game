@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Sarah, a daily commuter",
+  "B": "Tom, a rideshare driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use public transportation",
+  "A2": "Request a rideshare",
+  "B1": "Accept rideshare requests",
+  "B2": "Decline rideshare requests"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a rideshare quickly",
+    3: "Use public transportation",
+    2: "Wait for public transportation",
+    1: "Unable to get a ride"
+  },
+  "B": {
+    4: "Get a passenger quickly",
+    3: "Have free time for personal errands",
+    2: "Wait for passengers",
+    1: "Miss out on potential earnings"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept) | B2 (Decline) |
+|-------|-------------|--------------|
+| A1 (Public) | 2 \ 4     | 1 \ 3       |
+| A2 (Rideshare) | 3 \ 2     | 4 \ 1       |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Sarah, a daily commuter, faces a transportation dilemma every morning. She can either use public transportation or request a rideshare. Meanwhile, Tom, a rideshare driver, must decide whether to accept or decline rideshare requests during the morning rush hour.
+
+Sarah prefers getting a rideshare quickly (4) as it saves her time. Her second choice is using public transportation without waiting (3), followed by waiting for public transportation (2). Her least preferred option is being unable to get a ride at all (1).
+
+Tom's top preference is getting a passenger quickly (4), followed by having free time for personal errands (3). Waiting for passengers is his third choice (2), while missing out on potential earnings is his least preferred scenario (1).
+
+If Sarah chooses public transportation (A1) and Tom accepts rideshare requests (B1), Sarah will have to wait for public transportation (2), while Tom quickly gets another passenger (4).
+
+If Sarah opts for public transportation (A1) and Tom declines requests (B2), Sarah will still use public transportation (1), and Tom will have free time for errands (3).
+
+If Sarah requests a rideshare (A2) and Tom accepts (B1), Sarah gets a ride quickly (3), and Tom waits for his next passenger (2).
+
+Finally, if Sarah requests a rideshare (A2) but Tom declines (B2), Sarah is unable to get a ride (4), and Tom misses out on potential earnings (1).
+
+This scenario illustrates the complex interplay between commuters and rideshare drivers, highlighting how their individual choices can impact each other's outcomes in the urban transportation ecosystem.
+[/Scenario]

@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Ben, a product manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new feature",
+  "A2": "Optimize existing code",
+  "B1": "Prioritize user experience",
+  "B2": "Focus on monetization"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop a new feature while focusing on monetization",
+    3: "Develop a new feature while prioritizing user experience",
+    2: "Optimize existing code while prioritizing user experience",
+    1: "Optimize existing code while focusing on monetization"
+  },
+  "B": {
+    4: "Develop a new feature while prioritizing user experience",
+    3: "Optimize existing code while prioritizing user experience",
+    2: "Develop a new feature while focusing on monetization",
+    1: "Optimize existing code while focusing on monetization"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (UX)   | B2 (Monetization) |
+|-------|-----------|-------------------|
+| A1 (New Feature) | 3 \ 4     | 4 \ 2             |
+| A2 (Optimize)    | 2 \ 3     | 1 \ 1             |
+[/Payoff Matrix]
+
+[Scenario]
+At a bustling tech startup, software engineer Alex and product manager Ben find themselves at a crossroads. They're working on a popular mobile app and need to decide on the next steps for development.
+
+Alex, known for his innovative coding skills, is torn between two choices: developing an exciting new feature (A1) or optimizing the existing codebase (A2). He's most excited about the prospect of creating something new, especially if it could boost the app's revenue. However, he also recognizes the value of a smooth user experience.
+
+Ben, with his keen eye on user satisfaction and market trends, must choose between prioritizing user experience (B1) or focusing on monetization strategies (B2). He strongly believes that a great user experience is key to long-term success, but he's also aware of the pressure to increase short-term revenue.
+
+Their choices will determine the app's direction and potentially its success in the competitive market. The combination of their decisions leads to four possible scenarios:
+
+1. If Alex develops a new feature (A1) and Ben prioritizes user experience (B1), they'll create an innovative, user-friendly addition to the app. This is Ben's most preferred outcome (4) and Alex's second-best choice (3).
+
+2. If Alex develops a new feature (A1) while Ben focuses on monetization (B2), they'll launch a revenue-generating feature that might compromise user experience. This is Alex's top choice (4) but Ben's third preference (2).
+
+3. If Alex optimizes the existing code (A2) and Ben prioritizes user experience (B1), they'll improve the app's performance and user satisfaction. This is Ben's second-best outcome (3) and Alex's third choice (2).
+
+4. If Alex optimizes the existing code (A2) while Ben focuses on monetization (B2), they'll make minor improvements while trying to increase revenue, potentially at the cost of user experience. This is the least preferred outcome for both (1).
+
+As they sit in the meeting room, both Alex and Ben must make their decisions, knowing that their choices will significantly impact the app's future and their working relationship. The tension is palpable as they weigh their options, each hoping to find a balance between innovation, user satisfaction, and financial success.
+[/Scenario]

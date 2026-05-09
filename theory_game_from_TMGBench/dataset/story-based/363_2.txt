@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a psychology researcher",
+  "B": "Dr. Alex Chen, another psychology researcher"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Withhold research findings",
+  "B1": "Withhold research findings",
+  "B2": "Share research findings"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both share findings, leading to a breakthrough collaboration",
+    3: "Emma shares, Alex withholds, Emma gains some recognition",
+    2: "Both withhold findings, maintaining status quo",
+    1: "Emma withholds, Alex shares, Emma misses an opportunity"
+  },
+  "B": {
+    4: "Both share findings, leading to a breakthrough collaboration",
+    3: "Alex shares, Emma withholds, Alex gains some recognition",
+    2: "Both withhold findings, maintaining status quo",
+    1: "Alex withholds, Emma shares, Alex misses an opportunity"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Withhold) | B2 (Share) |
+|-------|---------------|------------|
+| A1 (Share) | 3 \ 2         | 4 \ 4      |
+| A2 (Withhold) | 1 \ 3         | 2 \ 1      |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson and Dr. Alex Chen are two prominent psychology researchers working on similar projects related to cognitive biases in decision-making. They are both on the verge of a breakthrough that could significantly impact their field. However, they face a dilemma: whether to share their findings with each other or keep them secret.
+
+Emma and Alex are attending a prestigious psychology conference where they have the opportunity to present their research. They each have two choices: share their findings or withhold them.
+
+If both Emma and Alex choose to share their findings (A1, B2), it would lead to a groundbreaking collaboration, resulting in the highest payoff for both (4,4). This scenario represents their most preferred outcome, as it would advance the field significantly and bring them both recognition and success.
+
+If Emma shares her findings but Alex withholds (A1, B1), Emma would gain some recognition for her openness and contribution (3), while Alex would benefit from both Emma's shared information and his own withheld findings (2). This is Emma's second-best outcome but Alex's third preference.
+
+Conversely, if Alex shares while Emma withholds (A2, B2), Alex would gain recognition (3), while Emma would miss an opportunity (1). This is Alex's second-best outcome but Emma's least preferred scenario.
+
+If both decide to withhold their findings (A2, B1), they maintain the status quo. This results in a moderate payoff for both (2,3), representing their third and second preferences respectively. While not ideal, this outcome protects their individual work.
+
+The researchers must navigate this complex situation, balancing the potential for collaboration and advancement of the field against the risk of losing individual recognition or being scooped by the other. Their decision will not only affect their personal careers but also the progress of psychological research in cognitive biases.
+
+As they approach each other at the conference, both Emma and Alex must decide whether to trust in the spirit of scientific collaboration or to protect their individual interests. The outcome of their choices will shape the future of their research and potentially the entire field of cognitive psychology.
+[/Scenario]

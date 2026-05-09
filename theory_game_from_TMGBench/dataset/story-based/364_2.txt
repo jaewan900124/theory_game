@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Emma, a talented programmer",
+  "B": "Jack, a charismatic salesperson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share the innovative idea",
+  "A2": "Keep the idea to herself",
+  "B1": "Focus on individual sales",
+  "B2": "Collaborate on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Jack collaborates, and Emma shares her idea",
+    3: "Emma shares her idea, but Jack focuses on individual sales",
+    2: "Both keep to themselves",
+    1: "Emma keeps the idea to herself, but Jack wants to collaborate"
+  },
+  "B": {
+    4: "Jack collaborates, and Emma shares her idea",
+    3: "Emma keeps the idea to herself, but Jack focuses on individual sales",
+    2: "Both keep to themselves",
+    1: "Emma shares her idea, but Jack focuses on individual sales"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 4 \ 4 |
+| A2    | 1 \ 3 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Jack work for a cutting-edge tech startup. Emma, a brilliant programmer, has just conceived an innovative idea that could revolutionize their product. Jack, known for his exceptional sales skills, is looking for the next big thing to pitch to clients.
+
+Emma faces a dilemma: should she share her groundbreaking idea with Jack, potentially boosting the company's success but risking her individual recognition? Or should she keep it to herself, ensuring personal credit but possibly limiting the idea's impact?
+
+Jack, on the other hand, is deciding whether to focus on his individual sales targets or collaborate with the development team on new projects. He knows that collaboration could lead to more significant breakthroughs, but it might temporarily affect his personal sales numbers.
+
+If Emma shares her idea (A1) and Jack decides to collaborate (B2), it would be the best outcome for both (4,4). The company would thrive, and they would both receive recognition for their contributions.
+
+If Emma shares her idea (A1) but Jack focuses on individual sales (B1), Emma would still benefit from sharing her innovation (3), but Jack would miss out on the opportunity, making it his least preferred outcome (1).
+
+If Emma keeps the idea to herself (A2) and Jack focuses on individual sales (B1), Jack would achieve his sales targets (3), but Emma would feel frustrated for not contributing her full potential (1).
+
+If both decide to keep to themselves (A2, B2), they would maintain their status quo, resulting in a suboptimal outcome for both (2,2).
+
+The challenge lies in their ability to trust each other and communicate effectively. Will Emma take the risk of sharing her idea? Will Jack recognize the value of collaboration over individual achievement? Their decisions will not only affect their personal careers but also the future of their startup.
+[/Scenario]

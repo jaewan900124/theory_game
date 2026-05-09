@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a product manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use existing technology",
+  "A2": "Develop new proprietary technology",
+  "B1": "Focus on current product features",
+  "B2": "Expand product capabilities"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Expand capabilities with existing technology",
+    3: "Maintain current features with existing technology",
+    2: "Develop new technology for current features",
+    1: "Develop new technology for expanded capabilities"
+  },
+  "B": {
+    4: "Expand capabilities with existing technology",
+    3: "Maintain current features with existing technology",
+    2: "Develop new technology for current features",
+    1: "Develop new technology for expanded capabilities"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Focus on current) | B2 (Expand capabilities) |
+|-------|------------------------|--------------------------|
+| A1 (Existing tech) | 3 \ 3                | 4 \ 4                    |
+| A2 (New tech)      | 2 \ 2                | 1 \ 1                    |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a growing tech startup that develops productivity software. They're facing a crucial decision about the direction of their main product.
+
+Alex, the software engineer, is considering whether to use existing technology (A1) or develop new proprietary technology (A2). Using existing technology would be faster and more reliable, but developing new technology could potentially give them a competitive edge in the long run.
+
+Blake, the product manager, is deciding whether to focus on improving current product features (B1) or expanding the product's capabilities (B2). Focusing on current features would solidify their existing user base, while expanding capabilities could attract new customers but might also introduce complexities.
+
+Both Alex and Blake prefer expanding capabilities with existing technology the most (4), as it allows for growth without the risks of new, untested technology. Their second preference is maintaining current features with existing technology (3), which is a safe and stable option.
+
+Developing new technology for current features is their third choice (2), as it involves risk without immediate benefit to users. Their least preferred option is developing new technology for expanded capabilities (1), which combines the highest risk with the most complex implementation.
+
+If they choose different strategies (A2B1 or A1B2), it would lead to misaligned efforts and suboptimal outcomes. The best outcome for both is to expand capabilities using existing technology (A1B2), while the second-best is to focus on current features with existing technology (A1B1).
+
+Alex and Blake must communicate effectively and align their strategies to achieve the best outcome for the company and themselves. Their decision will significantly impact the product's future and the company's success in the competitive tech industry.
+[/Scenario]

@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Emma, a talented freelance graphic designer",
+  "B": "Alex, a startup founder looking for a logo design"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer a standard design package",
+  "A2": "Propose a premium, customized design service",
+  "B1": "Accept the designer's first offer",
+  "B2": "Negotiate for a better deal"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "B accepts the premium service without negotiation",
+    3: "B accepts the standard package without negotiation",
+    2: "B negotiates and accepts the standard package",
+    1: "B negotiates and accepts the premium service"
+  },
+  "B": {
+    4: "A offers the standard package and B accepts without negotiation",
+    3: "A offers the premium service and B successfully negotiates",
+    2: "A offers the premium service and B accepts without negotiation",
+    1: "A offers the standard package and B unsuccessfully negotiates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 1 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented freelance graphic designer, receives an inquiry from Alex, a startup founder looking for a logo design for his new company. Both Emma and Alex have different preferences and strategies in mind as they approach this potential collaboration.
+
+Emma has two choices: she can either offer a standard design package (A1) or propose a premium, customized design service (A2). Alex, on the other hand, can choose to accept the designer's first offer (B1) or negotiate for a better deal (B2).
+
+Emma's most preferred outcome is when Alex accepts her premium service without negotiation, as it would provide her with the highest profit and creative freedom. Her least preferred scenario is when Alex negotiates and accepts the premium service, as it would mean more work for potentially less pay.
+
+Alex's top preference is to get the standard package without negotiation, as it would be cost-effective for his startup. His least desired outcome is negotiating for the standard package unsuccessfully, which might strain the relationship with the designer.
+
+The interaction between Emma and Alex can lead to four different scenarios:
+
+1. If Emma offers the standard package (A1) and Alex accepts without negotiation (B1), Emma gets her third preference (2), while Alex achieves his top preference (4).
+
+2. If Emma offers the standard package (A1) and Alex negotiates (B2), Emma actually achieves her second-best outcome (4), as she can potentially upsell to the premium package, while Alex gets his second preference (3) by potentially getting a better deal.
+
+3. If Emma proposes the premium service (A2) and Alex accepts without negotiation (B1), Emma gets her least preferred outcome (1), as she might have underpriced her premium service, while Alex also gets his least preferred outcome (1), as he pays more than he initially wanted.
+
+4. If Emma proposes the premium service (A2) and Alex negotiates (B2), Emma achieves her second preference (3), as she still gets to work on a premium project with some compromise, while Alex gets his third preference (2), as he gets a better deal on the premium service.
+
+This scenario demonstrates the complex dynamics of freelancer-client relationships, where both parties try to maximize their benefits while navigating the delicate balance of negotiation and cooperation.
+[/Scenario]

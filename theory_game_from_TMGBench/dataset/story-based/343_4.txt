@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Captain Zara, leader of the Earth Space Agency",
+  "B": "Commander Xen, head of the Martian Colonization Project"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share advanced propulsion technology",
+  "A2": "Withhold advanced propulsion technology",
+  "B1": "Restrict access to Martian resources",
+  "B2": "Offer unrestricted access to Martian resources"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Gain unrestricted access to Martian resources while sharing technology",
+    3: "Withhold technology while having restricted access to Martian resources",
+    2: "Share technology while having restricted access to Martian resources",
+    1: "Withhold technology and be denied access to Martian resources"
+  },
+  "B": {
+    4: "Gain advanced propulsion technology while offering unrestricted resource access",
+    3: "Restrict resource access while not receiving advanced technology",
+    2: "Restrict resource access while receiving advanced technology",
+    1: "Offer unrestricted resource access without receiving advanced technology"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Restrict) | B2 (Unrestricted) |
+|-------|---------------|-------------------|
+| A1 (Share) | 2 \ 2 | 4 \ 4 |
+| A2 (Withhold) | 3 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+The year is 2150, and humanity has established a thriving colony on Mars. Captain Zara of the Earth Space Agency and Commander Xen of the Martian Colonization Project find themselves at a crucial juncture in interplanetary relations.
+
+Earth has developed revolutionary propulsion technology that could drastically reduce travel time between the two planets. Meanwhile, Mars has discovered vast deposits of rare minerals essential for advanced technology manufacturing.
+
+Captain Zara must decide whether to share the propulsion technology with Mars. Sharing would foster goodwill and potentially lead to unrestricted access to Martian resources, but it would also mean losing Earth's technological edge. Withholding the technology might secure a strategic advantage for Earth but could strain relations with Mars.
+
+Commander Xen faces a similar dilemma. Offering unrestricted access to Martian resources could lead to receiving the advanced propulsion technology, accelerating Mars' development. However, restricting access could protect Martian interests and maintain leverage in negotiations.
+
+If both leaders choose to cooperate (A1B2), sharing technology and resources freely, it would lead to rapid advancements in space exploration, benefiting both planets equally. This is the most preferred outcome for both (4\4).
+
+If Zara shares the technology but Xen restricts resources (A1B1), Earth gains some access to Martian resources but at a disadvantage, while Mars benefits from the new technology but misses out on potential Earth investments. This is less preferred by both (2\2).
+
+If Zara withholds the technology and Xen restricts resources (A2B1), both planets maintain their strategic assets but miss out on potential growth from collaboration. This is the third-best outcome for both (3\3).
+
+The least preferred scenario for both (1\1) occurs if Zara withholds the technology while Xen offers unrestricted access to resources, leaving Mars at a significant disadvantage without gaining any benefits.
+
+As tensions mount and the deadline for decisions approaches, both leaders must carefully consider their choices, knowing that their decisions will shape the future of interplanetary relations and space exploration for decades to come.
+[/Scenario]

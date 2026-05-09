@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Alice Chen, a geneticist",
+  "B": "Dr. Bob Smith, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data",
+  "A2": "Withhold research data",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Withhold data and work independently",
+    3: "Share data and work independently",
+    2: "Share data and collaborate",
+    1: "Withhold data and collaborate"
+  },
+  "B": {
+    4: "Receive shared data and work independently",
+    3: "Collaborate with shared data",
+    2: "Collaborate without shared data",
+    1: "Work independently without shared data"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Work Independently) |
+|-------|------------------|-------------------------|
+| A1 (Share)    | 2 \ 3           | 3 \ 4                   |
+| A2 (Withhold) | 1 \ 2           | 4 \ 1                   |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Alice Chen and Dr. Bob Smith are leading researchers in the field of antibiotic resistance. They have been independently working on similar projects to develop a novel approach to combat multi-drug resistant bacteria. Their university has encouraged them to consider collaboration to accelerate progress and secure more funding.
+
+Dr. Chen has recently made a breakthrough in identifying a key genetic marker associated with antibiotic resistance. She now faces a dilemma: should she share this valuable data with Dr. Smith or keep it to herself? Dr. Chen prefers to work independently but recognizes the potential benefits of collaboration.
+
+Dr. Smith, on the other hand, is eager to collaborate but is unaware of Dr. Chen's recent discovery. He believes that combining their expertise could lead to faster results, but he's also content to continue his work independently if necessary.
+
+Both scientists must decide on their course of action without knowing the other's choice. Their decisions will impact the progress of their research and potentially the speed at which a solution to antibiotic resistance is found.
+
+If Dr. Chen shares her data and Dr. Smith chooses to collaborate (A1, B1), they will make steady progress together, but Dr. Chen feels she could have achieved more on her own (payoff: 2 for Chen, 3 for Smith).
+
+If Dr. Chen shares her data but Dr. Smith decides to work independently (A1, B2), Dr. Smith gains a significant advantage in his research while Dr. Chen loses her competitive edge (payoff: 3 for Chen, 4 for Smith).
+
+If Dr. Chen withholds her data and Dr. Smith chooses to collaborate (A2, B1), their collaboration is hindered by the lack of shared information, resulting in slow progress and frustration (payoff: 1 for Chen, 2 for Smith).
+
+Finally, if Dr. Chen withholds her data and Dr. Smith works independently (A2, B2), Dr. Chen maintains her advantage and makes rapid progress, while Dr. Smith continues his work without the benefit of the new data (payoff: 4 for Chen, 1 for Smith).
+
+The outcome of their choices will not only affect their individual careers but also the broader field of antibiotic resistance research, highlighting the complex interplay between competition and cooperation in scientific endeavors.
+[/Scenario]

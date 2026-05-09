@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Amelia Chen, a geneticist",
+  "B": "Dr. Benjamin Park, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while B works independently",
+    3: "Share findings openly while B collaborates",
+    2: "Share findings openly while B works independently",
+    1: "Keep findings private while B collaborates"
+  },
+  "B": {
+    4: "A shares findings openly while working independently",
+    3: "A shares findings openly while collaborating",
+    2: "A keeps findings private while collaborating",
+    1: "A keeps findings private while working independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Work Independently) |
+|-------|------------------|-------------------------|
+| A1 (Share)    | 3 \ 3           | 2 \ 4                   |
+| A2 (Keep Private) | 1 \ 2           | 4 \ 1                   |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Amelia Chen and Dr. Benjamin Park are leading researchers at a prestigious biotech institute, both working on groundbreaking projects related to antibiotic resistance in bacteria. Their work has the potential to revolutionize treatments for drug-resistant infections, but they find themselves at a crossroads in their research.
+
+Dr. Chen has made significant progress in identifying a novel genetic mechanism that could be key to overcoming antibiotic resistance. She now faces a decision: should she share her findings openly with the scientific community, including Dr. Park, or keep them private to maintain her competitive edge?
+
+Dr. Park, on the other hand, has developed an innovative method for studying bacterial populations in real-time. He must decide whether to collaborate with Dr. Chen, combining their expertise, or to work independently on his project.
+
+Their choices will not only affect their individual careers but also the speed at which this critical research progresses. If both choose to collaborate and share openly (A1/B1), they could make faster progress, benefiting equally (3/3). However, if Dr. Chen shares while Dr. Park works independently (A1/B2), Park could potentially gain more recognition (2/4).
+
+If Dr. Chen keeps her findings private while Dr. Park attempts to collaborate (A2/B1), Chen risks falling behind as Park makes some progress alone (1/2). In the scenario where Chen keeps her research private and Park works independently (A2/B2), Chen could potentially make a breakthrough alone, but at the cost of slowing overall progress in the field (4/1).
+
+The institute's director has encouraged collaboration, but ultimately, the decision rests with the two scientists. They must weigh their personal ambitions against the potential for faster scientific progress and the greater good of advancing antibiotic resistance research. As they sit down for a meeting to discuss their next steps, the tension is palpable. The choice they make will shape not only their careers but potentially the future of medical treatments for millions of patients worldwide.
+[/Scenario]

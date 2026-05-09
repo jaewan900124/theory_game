@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Roberts"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support the governor's infrastructure bill",
+  "A2": "Oppose the governor's infrastructure bill",
+  "B1": "Endorse the senator for re-election",
+  "B2": "Remain neutral in the senator's re-election campaign"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose the bill and gain governor's endorsement",
+    3: "Support the bill and gain governor's endorsement",
+    2: "Oppose the bill without governor's endorsement",
+    1: "Support the bill without governor's endorsement",
+  },
+  "B": {
+    4: "Senator supports the bill and receives endorsement",
+    3: "Senator opposes the bill but doesn't receive endorsement",
+    2: "Senator supports the bill without receiving endorsement",
+    1: "Senator opposes the bill and receives endorsement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 2 \ 2 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling state capital, Senator Sarah Thompson and Governor Mark Roberts find themselves entangled in a complex political dance. The governor has recently proposed an ambitious infrastructure bill, which has become a hot topic in the state's political landscape. Meanwhile, Senator Thompson is gearing up for her re-election campaign.
+
+Governor Roberts is keen on getting his infrastructure bill passed, as it would be a significant achievement for his administration. He believes Senator Thompson's support could be crucial in swaying public opinion and ensuring the bill's success. On the other hand, Senator Thompson is weighing her options carefully, considering both the merits of the bill and its potential impact on her re-election prospects.
+
+The two politicians have a choice to make. Senator Thompson can either support or oppose the governor's infrastructure bill. Governor Roberts, in turn, can choose to endorse the senator for re-election or remain neutral in her campaign.
+
+Senator Thompson's ideal scenario would be to oppose the bill while still securing the governor's endorsement for her re-election. This would allow her to maintain her political independence while benefiting from the governor's support. Her least preferred outcome would be supporting the bill without receiving the governor's endorsement, as it might alienate some of her base without any political gain.
+
+Governor Roberts, however, would most prefer the senator to support his bill while he endorses her for re-election, seeing it as a win-win situation that strengthens their political alliance. His least desired outcome would be endorsing the senator while she opposes his bill, as it could be seen as a political misstep.
+
+The political landscape is tense as both politicians consider their moves. If Senator Thompson supports the bill and Governor Roberts endorses her (A1, B1), it would be the governor's most preferred outcome but the senator's least preferred. If the senator supports the bill but the governor remains neutral (A1, B2), both would achieve their second-least preferred outcomes.
+
+If Senator Thompson opposes the bill and the governor still endorses her (A2, B1), it would be the senator's most preferred outcome but the governor's least preferred. Finally, if the senator opposes the bill and the governor remains neutral (A2, B2), it would be the senator's second-most preferred outcome and the governor's second-most preferred outcome.
+
+As they navigate this political minefield, both Senator Thompson and Governor Roberts must carefully consider their choices, weighing personal political gain against potential cooperation and the greater good of their constituents. The outcome of their decisions will not only affect their political futures but also the fate of the infrastructure bill and, by extension, the state's development.
+[/Scenario]

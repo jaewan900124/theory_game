@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a talented but struggling painter",
+  "B": "Marcus, a well-established art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate with Marcus on a joint exhibition",
+  "A2": "Create a provocative solo exhibition",
+  "B1": "Offer Emma exclusive representation",
+  "B2": "Feature Emma's work alongside other artists"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a provocative solo exhibition and be featured alongside other artists",
+    3: "Collaborate with Marcus on a joint exhibition and receive exclusive representation",
+    2: "Collaborate with Marcus on a joint exhibition and be featured alongside other artists",
+    1: "Create a provocative solo exhibition and receive exclusive representation"
+  },
+  "B": {
+    4: "Collaborate on a joint exhibition and offer Emma exclusive representation",
+    3: "Feature Emma's work alongside other artists and have her collaborate on a joint exhibition",
+    2: "Feature Emma's work alongside other artists and have her create a provocative solo exhibition",
+    1: "Offer Emma exclusive representation and have her create a provocative solo exhibition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 3 |
+| A2    | 1 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented but struggling painter, finds herself at a crossroads in her career. She's caught the attention of Marcus, a well-established art gallery owner known for his keen eye and ability to launch artists into stardom. As they meet to discuss potential collaboration, both Emma and Marcus face crucial decisions that will shape their future in the art world.
+
+Emma has two choices: she can either collaborate with Marcus on a joint exhibition, combining her fresh perspective with his industry expertise, or she can take a bold risk and create a provocative solo exhibition that pushes the boundaries of conventional art.
+
+Marcus, on the other hand, must decide whether to offer Emma exclusive representation, tying her future closely to his gallery, or to feature her work alongside other artists, maintaining a diverse portfolio but potentially diluting Emma's impact.
+
+Emma's ultimate desire is to create her provocative solo exhibition while being featured alongside other artists. This would allow her to maintain her artistic integrity while still benefiting from Marcus's gallery exposure. Her second preference would be to collaborate with Marcus on a joint exhibition and receive exclusive representation, as it offers stability and mentorship. Her third choice would be to collaborate on the joint exhibition but be featured alongside other artists, which feels less personal. Her least preferred option is to create her provocative solo exhibition under exclusive representation, fearing it might limit her creative freedom.
+
+Marcus, however, would ideally like to collaborate on a joint exhibition and offer Emma exclusive representation, seeing great potential in nurturing her talent exclusively. His second choice would be to feature Emma's work alongside other artists while still collaborating on a joint exhibition, spreading his risk. Third, he'd prefer to feature her work alongside others even if she creates a provocative solo exhibition, as it still brings attention to his gallery. His least desired outcome is offering exclusive representation only to have Emma create a provocative solo exhibition, which might not align with his gallery's image.
+
+As they sit across from each other in Marcus's stylish office, surrounded by exquisite artworks, the tension is palpable. Emma fidgets with her paintbrush, while Marcus taps his fingers on the sleek desk. They both know that their decisions will not only affect their individual careers but also potentially reshape the local art scene. The question remains: will they find a way to align their interests, or will their choices lead them down separate paths in the competitive world of art?
+[/Scenario]

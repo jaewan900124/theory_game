@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Sarah, CEO of a tech startup",
+  "B": "Mark, CEO of a larger, established tech company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new product independently",
+  "A2": "Propose a partnership with Mark's company",
+  "B1": "Reject partnership and compete",
+  "B2": "Accept partnership offer"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Partnership accepted, gaining resources and market share",
+    3: "Independent development, outperforming competitor",
+    2: "Independent development, struggling against competition",
+    1: "Partnership rejected, facing tough competition"
+  },
+  "B": {
+    4: "Reject partnership, maintain market dominance",
+    3: "Accept partnership, share success with startup",
+    2: "Reject partnership, lose market share to startup",
+    1: "Accept partnership, startup outperforms expectations"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Reject) | B2 (Accept) |
+|-------|-------------|-------------|
+| A1 (Independent) | 1 \ 3 | 2 \ 4 |
+| A2 (Partnership) | 3 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, the ambitious CEO of a promising tech startup, finds herself at a crossroads. Her company has developed a groundbreaking algorithm that could revolutionize the industry, but they lack the resources to bring it to market effectively. Sarah is considering two options: develop the product independently (A1) or propose a partnership with Mark's larger, established tech company (A2).
+
+Mark, the CEO of the larger company, has caught wind of Sarah's innovation and is weighing his options. He can either reject any partnership offers and compete directly (B1) or accept a potential partnership to leverage the new technology (B2).
+
+Sarah's preferences are clear. Her most desired outcome (4) is to have Mark accept a partnership, which would provide her startup with the resources and market reach they need. Her second-best scenario (3) is successfully developing the product independently and outperforming Mark's company. She'd rather struggle independently (2) than face tough competition after a rejected partnership offer (1).
+
+Mark, on the other hand, would prefer to reject the partnership and maintain his company's market dominance (4). His second choice would be to accept the partnership and share in the success (3). He's less keen on rejecting the partnership only to lose market share to Sarah's startup (2), and his least preferred outcome is accepting the partnership only to have Sarah's company outperform expectations and potentially overshadow his own (1).
+
+The situation creates a tense atmosphere in the tech industry. If both decide to go independent (A1, B1), Sarah's startup will struggle against the established competition, while Mark's company will maintain its strong position. If Sarah proposes a partnership and Mark rejects it (A2, B1), Sarah's company might perform better than expected, catching Mark off guard. If Sarah develops independently and Mark tries to partner later (A1, B2), Sarah might gain some ground, but Mark would still have the upper hand. The most mutually beneficial outcome would be if Sarah proposes a partnership and Mark accepts (A2, B2), although this isn't the most preferred outcome for Mark.
+
+As news of Sarah's innovation spreads, both CEOs must make their decisions, knowing that their choices will shape the future of their companies and potentially the entire industry.
+[/Scenario]

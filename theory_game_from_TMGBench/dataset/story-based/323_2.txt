@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a commuter",
+  "B": "Blake, a rideshare driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Take public transit",
+  "A2": "Request a rideshare",
+  "B1": "Decline rideshare requests",
+  "B2": "Accept rideshare requests"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a rideshare quickly",
+    3: "Take public transit",
+    2: "Wait longer for a rideshare",
+    1: "Miss important meeting due to lack of transportation"
+  },
+  "B": {
+    4: "Get a passenger quickly",
+    3: "Have time for personal errands",
+    2: "Wait longer for passengers",
+    1: "Lose potential income"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Decline) | B2 (Accept) |
+|-------|--------------|-------------|
+| A1 (Transit) | 1 \ 2       | 4 \ 4       |
+| A2 (Rideshare) | 2 \ 3       | 3 \ 1       |
+[/Payoff Matrix]
+
+[Scenario]
+It's a busy Monday morning in the city. Alex, a commuter, is preparing for an important meeting and needs to decide how to get to work. Blake, a rideshare driver, is contemplating whether to start accepting ride requests or take some personal time.
+
+Alex has two choices: take public transit (A1) or request a rideshare (A2). Blake can either decline rideshare requests (B1) or accept them (B2).
+
+If Alex chooses public transit (A1) and Blake declines requests (B1), Alex risks missing the important meeting due to potential delays (preference 1), while Blake has time for personal errands (preference 2).
+
+If Alex requests a rideshare (A2) and Blake declines (B1), Alex might have to wait longer for a ride (preference 2), but Blake still has time for errands (preference 3).
+
+If Alex takes public transit (A1) and Blake accepts requests (B2), Alex arrives on time (preference 4), and Blake quickly gets a passenger (preference 4). This is the optimal outcome for both.
+
+However, if Alex requests a rideshare (A2) and Blake accepts (B2), Alex gets a ride but may face surge pricing or longer wait times (preference 3), while Blake might end up waiting longer for passengers in a saturated market (preference 1).
+
+Alex prefers getting a rideshare quickly but is also content with reliable public transit. Blake prefers getting passengers quickly but also values having time for personal errands. Their choices will determine the outcome of their morning commute and work schedule.
+[/Scenario]

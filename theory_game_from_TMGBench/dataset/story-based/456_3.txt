@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Rodriguez"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Thompson's re-election",
+  "B2": "Remain neutral in Senator Thompson's re-election"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill and gain Governor's neutrality",
+    3: "Oppose bill but lose Governor's endorsement",
+    2: "Support bill and gain Governor's endorsement",
+    1: "Support bill but Governor remains neutral"
+  },
+  "B": {
+    4: "Senator supports bill and Governor remains neutral",
+    3: "Senator opposes bill and Governor remains neutral",
+    2: "Senator supports bill and Governor endorses",
+    1: "Senator opposes bill but Governor endorses"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Endorse) | B2 (Neutral) |
+|-------|--------------|--------------|
+| A1 (Support) | 2 \ 2       | 1 \ 4        |
+| A2 (Oppose)  | 3 \ 1       | 4 \ 3        |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling political landscape of a swing state, Senator Sarah Thompson and Governor Mark Rodriguez find themselves at a crucial crossroads. A bipartisan infrastructure bill is on the table, and their decisions regarding this bill and each other's political futures will shape the state's direction.
+
+Senator Thompson, a moderate known for crossing party lines, is facing a tough re-election campaign. She must decide whether to support or oppose the infrastructure bill, knowing that her choice will impact her constituents and her political future.
+
+Governor Rodriguez, a popular figure in the state, holds significant influence over voters. He must decide whether to endorse Senator Thompson's re-election bid or remain neutral, considering how his decision might affect his own political capital and the state's interests.
+
+The infrastructure bill presents a dilemma for both politicians. Supporting it could bring much-needed funding and jobs to the state, but it might alienate certain voter bases. Opposing it could appease some constituents but potentially harm the state's economic prospects.
+
+Senator Thompson's ideal scenario (preference 4) is to oppose the bill, believing it will solidify her base, while the Governor remains neutral, allowing her to maintain independence. Her least preferred outcome (preference 1) is supporting the bill without gaining the Governor's endorsement, which she fears might make her appear ineffective.
+
+Governor Rodriguez, on the other hand, would most prefer (preference 4) for the Senator to support the bill while he remains neutral, allowing him to claim credit for the bill's benefits without tying himself to Thompson's campaign. His least preferred outcome (preference 1) is endorsing Thompson if she opposes the bill, which could damage his reputation for bipartisanship.
+
+As they weigh their options, both politicians must consider the long-term implications of their choices. Will they prioritize personal political gain or the greater good of the state? The decision they make will not only affect their own careers but also the lives of their constituents and the future of their state.
+[/Scenario]

@@ -1,0 +1,57 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Provide traditional lectures",
+  "A2": "Implement project-based learning",
+  "B1": "Attend classes regularly",
+  "B2": "Study independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement project-based learning while student studies independently",
+    3: "Implement project-based learning while student attends regularly",
+    2: "Provide traditional lectures while student attends regularly",
+    1: "Provide traditional lectures while student studies independently"
+  },
+  "B": {
+    4: "Professor provides traditional lectures while studying independently",
+    3: "Professor provides traditional lectures while attending regularly",
+    2: "Professor implements project-based learning while studying independently",
+    1: "Professor implements project-based learning while attending regularly"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 1 \ 4 |
+| A2    | 3 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is preparing for his upcoming course on Advanced Educational Theory. He's contemplating whether to stick with his traditional lecture-based approach or implement a new project-based learning method. Meanwhile, Jane, a diligent student enrolled in the course, is deciding between attending classes regularly or studying independently using the course materials.
+
+Professor Smith believes that project-based learning will lead to better learning outcomes and professional development for students. He prefers this method, especially if students study independently, as it encourages self-directed learning. His least preferred scenario is giving traditional lectures to students who don't attend regularly, as he feels this combination is least effective for learning.
+
+Jane, on the other hand, feels most comfortable with traditional lectures and prefers to study independently, believing this allows her to learn at her own pace. She's least enthusiastic about project-based learning with mandatory attendance, as she finds group work challenging and time-consuming.
+
+Their choices create four possible scenarios:
+
+1. Traditional lectures with regular attendance: This is Professor Smith's second-least preferred option but Jane's second-most preferred.
+2. Traditional lectures with independent study: This is Professor Smith's least preferred option but Jane's most preferred.
+3. Project-based learning with regular attendance: This is Professor Smith's second-most preferred option but Jane's least preferred.
+4. Project-based learning with independent study: This is Professor Smith's most preferred option and Jane's second-least preferred.
+
+As the semester begins, both Professor Smith and Jane must make their decisions, knowing that their choices will significantly impact the course dynamics and learning outcomes. The tension between innovative teaching methods and student comfort zones creates a complex educational scenario where both parties must navigate their preferences and the potential benefits of each approach.
+[/Scenario]

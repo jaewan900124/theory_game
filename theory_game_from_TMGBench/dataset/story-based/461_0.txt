@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Alex, Emma's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research credit",
+  "A2": "Claim sole authorship",
+  "B1": "Contribute additional data",
+  "B2": "Withhold valuable information"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Claim sole authorship while receiving additional data",
+    3: "Claim sole authorship without additional data",
+    2: "Share credit while receiving additional data",
+    1: "Share credit without additional data"
+  },
+  "B": {
+    4: "Receive shared credit while withholding information",
+    3: "Receive shared credit while contributing data",
+    2: "No credit but withhold information",
+    1: "No credit and contribute data"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Alex | Contribute data | Withhold info |
+|-------------|-----------------|---------------|
+| Share credit| 1 \ 3           | 2 \ 4         |
+| Claim sole  | 3 \ 1           | 4 \ 2         |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a respected sociology professor, is on the verge of publishing a groundbreaking paper on social dynamics in urban communities. Her research assistant, Alex, has been instrumental in gathering data for the project. As they approach the publication deadline, both Emma and Alex face crucial decisions that will impact their professional relationship and individual careers.
+
+Emma must decide whether to share the research credit with Alex or claim sole authorship. Sharing credit would acknowledge Alex's contributions but potentially diminish Emma's prominence in the field. Claiming sole authorship could boost Emma's career but might strain their working relationship.
+
+Alex, on the other hand, possesses additional valuable data that could significantly enhance the paper's impact. They must choose whether to contribute this additional data or withhold it, potentially using it for their own future research.
+
+Emma's ideal scenario is to claim sole authorship while benefiting from Alex's additional data, as this would maximize her professional gain. Her least preferred outcome is sharing credit without receiving the extra data, as this offers her the least personal benefit.
+
+Alex prefers to receive shared credit while withholding the valuable information, as this would boost their career while preserving future research opportunities. Their least desired outcome is contributing the data without receiving any credit, as this offers no immediate benefit and reduces future research potential.
+
+The situation creates a complex dynamic where both Emma and Alex must weigh their personal ambitions against professional ethics and the potential for collaboration. Their choices will not only affect the outcome of this particular research paper but also shape their future working relationship and individual career trajectories in the field of sociology.
+[/Scenario]

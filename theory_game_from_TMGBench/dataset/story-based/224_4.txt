@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenSpace, a local environmental conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new eco-friendly product",
+  "A2": "Collaborate on a joint conservation project",
+  "B1": "Focus on independent conservation efforts",
+  "B2": "Partner with EcoTech for product development"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop a new eco-friendly product while GreenSpace focuses on independent conservation",
+    3: "Collaborate on a joint conservation project with GreenSpace",
+    2: "Collaborate on a joint conservation project while GreenSpace focuses on independent efforts",
+    1: "Develop a new eco-friendly product while partnering with GreenSpace"
+  },
+  "B": {
+    4: "Focus on independent conservation while EcoTech develops a new eco-friendly product",
+    3: "Partner with EcoTech for product development while collaborating on a joint project",
+    2: "Focus on independent conservation while collaborating on a joint project with EcoTech",
+    1: "Partner with EcoTech for product development while EcoTech develops a new product"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 1 |
+| A2    | 2 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a small coastal town, EcoTech, a sustainable technology company, and GreenSpace, a local environmental conservation group, are facing a crucial decision that will impact the local ecosystem and economy.
+
+EcoTech has two options: they can either develop a new eco-friendly product (A1) or collaborate with GreenSpace on a joint conservation project (A2). Meanwhile, GreenSpace can choose to focus on their independent conservation efforts (B1) or partner with EcoTech for product development (B2).
+
+EcoTech's primary goal is to innovate and create sustainable products, but they also recognize the importance of conservation efforts. Their ideal scenario is to develop their new product while GreenSpace focuses on independent conservation, allowing both organizations to specialize in their areas of expertise.
+
+GreenSpace, on the other hand, is passionate about hands-on conservation work. They prefer to focus on their independent efforts while EcoTech develops new eco-friendly technologies that could indirectly support their cause.
+
+If both organizations decide to collaborate on a joint conservation project (A2 and B2), they would achieve a mutually beneficial outcome, though not their top preference. This scenario would allow them to combine their resources and expertise, potentially leading to more effective conservation efforts and sustainable product development.
+
+The least preferred scenarios for both parties involve one organization trying to collaborate while the other pursues their independent goals. This misalignment could lead to wasted resources and missed opportunities for both EcoTech and GreenSpace.
+
+As the decision deadline approaches, both organizations must carefully consider their choices, weighing the potential benefits of collaboration against the desire to pursue their individual priorities. The outcome of their decisions will not only affect their own success but also the long-term environmental health of the coastal town.
+[/Scenario]

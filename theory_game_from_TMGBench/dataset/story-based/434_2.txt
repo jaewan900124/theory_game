@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Alex, a freelance graphic designer",
+  "B": "Blake, a small business owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deliver a standard design",
+  "A2": "Create an elaborate, time-consuming design",
+  "B1": "Pay the agreed fee",
+  "B2": "Offer a bonus for exceptional work"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create an elaborate design and receive a bonus",
+    3: "Deliver a standard design and receive the agreed fee",
+    2: "Deliver a standard design and receive a bonus",
+    1: "Create an elaborate design but only receive the agreed fee"
+  },
+  "B": {
+    4: "Receive a standard design and pay only the agreed fee",
+    3: "Receive an elaborate design and pay a bonus",
+    2: "Receive an elaborate design and pay only the agreed fee",
+    1: "Receive a standard design and pay a bonus"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 2 \ 4 |
+| A2    | 1 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a freelance graphic designer, has been hired by Blake, a small business owner, to create a new logo for Blake's company. They've agreed on a standard fee, but both are aware that the quality of the work and the compensation could potentially change.
+
+Alex has two choices: deliver a standard design (A1) that meets the basic requirements, or create an elaborate, time-consuming design (A2) that goes above and beyond expectations. Meanwhile, Blake can either pay the agreed fee (B1) or offer a bonus for exceptional work (B2).
+
+Alex prefers to be fairly compensated for their efforts. Their ideal scenario is to create an elaborate design and receive a bonus (A2, B2), as this showcases their skills and maximizes their earnings. Their second choice is to deliver a standard design and receive the agreed fee (A1, B1), which is a fair exchange. Alex's third preference is to deliver a standard design and receive a bonus (A1, B2), which is unexpected but welcome. Their least preferred outcome is to create an elaborate design but only receive the agreed fee (A2, B1), as this undervalues their extra effort.
+
+Blake, on the other hand, wants the best value for their money. Their top preference is to receive a standard design and pay only the agreed fee (A1, B1), as this meets their needs at the lowest cost. Their second choice is to receive an elaborate design and pay a bonus (A2, B2), recognizing the value of exceptional work. Blake's third preference is to receive an elaborate design and pay only the agreed fee (A2, B1), getting extra value at no additional cost. Their least preferred outcome is to receive a standard design and pay a bonus (A1, B2), as this provides no additional value for the extra cost.
+
+As they begin their collaboration, both Alex and Blake must decide on their actions without knowing what the other will choose. Their decisions will determine the quality of the logo, the compensation, and ultimately, the satisfaction of both parties in this business interaction.
+[/Scenario]

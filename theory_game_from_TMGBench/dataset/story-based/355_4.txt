@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "General Smith",
+  "B": "Admiral Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Launch a land offensive",
+  "A2": "Maintain defensive positions",
+  "B1": "Conduct naval blockade",
+  "B2": "Provide naval support for land operations"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch a successful land offensive with naval support",
+    3: "Launch a land offensive without naval interference",
+    2: "Maintain defensive positions while navy conducts blockade",
+    1: "Maintain defensive positions while navy supports land operations"
+  },
+  "B": {
+    4: "Provide naval support for a successful land offensive",
+    3: "Conduct naval blockade while army maintains defensive positions",
+    2: "Conduct naval blockade while army launches offensive",
+    1: "Provide naval support for land operations while army maintains defensive positions"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 1 | 4 \ 4 |
+| A2    | 2 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Smith of the Army and Admiral Johnson of the Navy find themselves at a critical juncture. The enemy forces are entrenched along the coastline, and the two commanders must decide on the best course of action to secure victory.
+
+General Smith, known for his aggressive tactics, is considering launching a land offensive (A1) to push back the enemy. However, he's also aware that maintaining defensive positions (A2) could be a safer option. His ideal scenario would be a successful land offensive supported by naval forces, which would likely lead to a decisive victory.
+
+Admiral Johnson, on the other hand, is weighing the options of conducting a naval blockade (B1) to cut off enemy supplies or providing direct naval support for land operations (B2). He believes that supporting a successful land offensive would be the most effective use of naval resources, but he's also confident in the blockade strategy's ability to weaken the enemy over time.
+
+The two commanders must make their decisions independently, without knowing the other's choice. Their combined strategies will determine the outcome of the operation:
+
+1. If General Smith launches an offensive (A1) and Admiral Johnson conducts a blockade (B1), the army will make some progress but face challenges without naval support (3 for A), while the navy's effectiveness will be limited (1 for B).
+
+2. If General Smith launches an offensive (A1) and Admiral Johnson provides naval support (B2), this coordinated attack would likely lead to a major victory (4 for both A and B).
+
+3. If General Smith maintains defensive positions (A2) and Admiral Johnson conducts a blockade (B1), both forces will be relatively safe but make little progress (2 for both A and B).
+
+4. If General Smith maintains defensive positions (A2) and Admiral Johnson provides naval support (B2), the navy's resources will be underutilized (3 for B), while the army misses an opportunity to advance (1 for A).
+
+As they consider their options, both commanders are acutely aware that their individual decisions will significantly impact the overall success of the operation and potentially the course of the entire conflict.
+[/Scenario]

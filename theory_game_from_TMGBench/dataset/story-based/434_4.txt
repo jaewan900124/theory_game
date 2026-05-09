@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a small bakery owner",
+  "B": "Marcus, a local supermarket manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current prices",
+  "A2": "Lower prices",
+  "B1": "Stock Emma's products",
+  "B2": "Don't stock Emma's products"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Lower prices, supermarket doesn't stock (higher profit margin, less competition)",
+    3: "Maintain prices, supermarket stocks (steady business, wider reach)",
+    2: "Maintain prices, supermarket doesn't stock (status quo)",
+    1: "Lower prices, supermarket stocks (lowest profit margin)"
+  },
+  "B": {
+    4: "Emma maintains prices, supermarket doesn't stock (higher profit from own bakery section)",
+    3: "Emma lowers prices, supermarket stocks (increased foot traffic)",
+    2: "Emma lowers prices, supermarket doesn't stock (potential lost customers)",
+    1: "Emma maintains prices, supermarket stocks (lowest profit margin)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Marcus | Stock (B1) | Don't Stock (B2) |
+|----------------|------------|-------------------|
+| Maintain (A1)  | 3 \ 1      | 2 \ 4             |
+| Lower (A2)     | 1 \ 3      | 4 \ 2             |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town, Emma runs a beloved local bakery known for its artisanal bread and pastries. Recently, Marcus, the manager of the town's only supermarket, has been considering whether to stock Emma's products in his store.
+
+Emma faces a dilemma: she can either maintain her current prices or lower them to potentially attract more customers. Meanwhile, Marcus must decide whether to stock Emma's products or not, which would affect his own bakery section's profits.
+
+If Emma maintains her prices and Marcus stocks her products, Emma will benefit from increased exposure, but her profit margin will remain the same. Marcus, however, will see lower profits in his bakery section due to the competition. This scenario is Emma's second-best outcome but Marcus's least preferred.
+
+If Emma maintains her prices and Marcus doesn't stock her products, both parties continue as before. This is Emma's third choice, as she misses out on potential growth, but it's Marcus's best scenario, as he avoids competition in his bakery section.
+
+If Emma lowers her prices and Marcus stocks her products, Emma will see her profit margins shrink, but potentially gain more customers. Marcus will benefit from increased foot traffic in his store. This is Emma's least preferred outcome but Marcus's second-best.
+
+Finally, if Emma lowers her prices and Marcus doesn't stock her products, Emma might attract more direct customers to her bakery with competitive pricing. Marcus, however, risks losing some bakery customers to Emma's shop. This is Emma's most preferred outcome but Marcus's third choice.
+
+As they both consider their options, Emma and Marcus must weigh the potential benefits and drawbacks of their choices, knowing that their decisions will impact not only their own businesses but also their relationship as local business owners in the small town economy.
+[/Scenario]

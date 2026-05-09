@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a commuter",
+  "B": "Ben, a ride-share driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Take public transit",
+  "A2": "Request a ride-share",
+  "B1": "Accept ride requests",
+  "B2": "Decline ride requests"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Get a ride-share when Ben is accepting requests",
+    3: "Take public transit when Ben is declining requests",
+    2: "Take public transit when Ben is accepting requests",
+    1: "Request a ride-share when Ben is declining requests"
+  },
+  "B": {
+    4: "Decline requests when Alex takes public transit",
+    3: "Accept requests when Alex takes public transit",
+    2: "Accept requests when Alex requests a ride-share",
+    1: "Decline requests when Alex requests a ride-share"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Accept)| B2 (Decline)|
+|-------|------------|-------------|
+| A1 (Transit) | 1 \ 3      | 3 \ 4       |
+| A2 (Ride-share) | 2 \ 2      | 4 \ 1       |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Alex, a daily commuter, faces a transportation dilemma each morning. He can either take public transit or request a ride-share. Simultaneously, Ben, a ride-share driver, must decide whether to accept or decline ride requests during the morning rush hour.
+
+Alex prefers the convenience of a ride-share when drivers are available but finds public transit acceptable when ride-shares are scarce. His least preferred scenario is requesting a ride-share only to find no drivers available.
+
+Ben, on the other hand, prefers to have a relaxed morning by declining requests, especially if commuters like Alex are using public transit. He's willing to accept requests if needed but finds it frustrating to be online with no ride requests coming in.
+
+Their choices create four possible scenarios:
+
+1. If Alex takes public transit and Ben accepts requests, Alex has a less comfortable but reliable commute (1), while Ben has a decent chance of getting rides (3).
+
+2. If Alex takes public transit and Ben declines requests, Alex still has a reliable commute (3), and Ben enjoys a stress-free morning (4).
+
+3. If Alex requests a ride-share and Ben accepts requests, Alex gets a comfortable ride (4), and Ben secures a passenger (2).
+
+4. If Alex requests a ride-share but Ben declines requests, Alex is left stranded (2), and Ben misses out on potential earnings (1).
+
+This situation creates an interesting dynamic where Alex and Ben's decisions significantly impact each other's mornings, demonstrating the complex interplay between commuters and ride-share drivers in urban transportation systems.
+[/Scenario]

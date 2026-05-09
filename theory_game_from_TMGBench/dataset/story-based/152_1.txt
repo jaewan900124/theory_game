@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Dr. Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings",
+  "A2": "Keep research findings private",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep findings private while Dr. Johnson works independently",
+    3: "Keep findings private while Dr. Johnson collaborates",
+    2: "Share findings while Dr. Johnson collaborates",
+    1: "Share findings while Dr. Johnson works independently"
+  },
+  "B": {
+    4: "Professor Smith shares findings while Dr. Johnson collaborates",
+    3: "Professor Smith shares findings while Dr. Johnson works independently",
+    2: "Professor Smith keeps findings private while Dr. Johnson works independently",
+    1: "Professor Smith keeps findings private while Dr. Johnson collaborates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Work independently) |
+|-------|------------------|-------------------------|
+| A1 (Share)    | 2 \ 4           | 1 \ 3                   |
+| A2 (Keep private) | 3 \ 1           | 4 \ 2                   |
+[/Payoff Matrix]
+
+[Scenario]
+Professor Smith and Dr. Johnson are two sociology researchers at a prestigious university, both working on similar projects related to social media's impact on community engagement. They face a dilemma regarding whether to share their research findings and collaborate or keep their work private and independent.
+
+Professor Smith has recently made a breakthrough in her research, discovering a novel correlation between social media usage patterns and local volunteer participation rates. She must decide whether to share these findings with Dr. Johnson or keep them to herself. Sharing could lead to a more comprehensive study but might dilute her individual recognition. Keeping the findings private could give her a competitive edge but might hinder overall progress in the field.
+
+Dr. Johnson, aware of Professor Smith's recent progress, must decide whether to propose a collaboration or continue working independently. Collaboration could potentially lead to a more impactful study, but it might also mean sharing credit for the findings. Working independently would allow him to maintain full control over his research direction but could result in a less comprehensive study.
+
+The payoff matrix reflects their preferences:
+
+1. If Professor Smith shares her findings (A1) and Dr. Johnson collaborates (B1), they would produce a strong joint study. This is Dr. Johnson's most preferred outcome (4) as he gains access to valuable data and a respected co-author. For Professor Smith, this is her third-best outcome (2) as she benefits from collaboration but shares credit for her breakthrough.
+
+2. If Professor Smith shares her findings (A1) but Dr. Johnson works independently (B2), Professor Smith gains little benefit and risks her ideas being used without proper credit. This is her least preferred outcome (1). For Dr. Johnson, this is his second-best outcome (3) as he gains valuable information without the constraints of collaboration.
+
+3. If Professor Smith keeps her findings private (A2) and Dr. Johnson collaborates (B1), Professor Smith maintains control over her breakthrough while potentially gaining insights from collaboration. This is her second-best outcome (3). For Dr. Johnson, this is his least preferred outcome (1) as he commits to collaboration without gaining access to Professor Smith's key findings.
+
+4. If Professor Smith keeps her findings private (A2) and Dr. Johnson works independently (B2), Professor Smith maximizes her individual potential, making this her most preferred outcome (4). For Dr. Johnson, this is his third-best outcome (2) as he maintains independence but misses out on potentially valuable collaboration.
+
+This scenario highlights the tension between individual achievement and collaborative progress in academia, reflecting broader sociological themes of competition and cooperation in professional settings.
+[/Scenario]

@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, a corporate lawyer",
+  "B": "Michael, Sarah's client and CEO of a tech company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Advise full disclosure of potential legal issues",
+  "A2": "Advise minimal disclosure of potential legal issues",
+  "B1": "Follow lawyer's advice",
+  "B2": "Partially follow lawyer's advice"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Minimal disclosure advised, client fully complies",
+    3: "Full disclosure advised, client fully complies",
+    2: "Minimal disclosure advised, client partially complies",
+    1: "Full disclosure advised, client partially complies"
+  },
+  "B": {
+    4: "Full disclosure advised, fully comply",
+    3: "Full disclosure advised, partially comply",
+    2: "Minimal disclosure advised, partially comply",
+    1: "Minimal disclosure advised, fully comply"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 3 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a seasoned corporate lawyer, finds herself in a delicate situation with her client, Michael, the CEO of a rapidly growing tech company. The company is on the verge of going public, but there are potential legal issues that could impact the IPO.
+
+Sarah must decide whether to advise full disclosure of these potential legal issues (A1) or suggest minimal disclosure (A2). Meanwhile, Michael can choose to either follow Sarah's advice completely (B1) or only partially comply with it (B2).
+
+Sarah's primary concern is maintaining her professional integrity while also keeping her client satisfied. She prefers a scenario where she advises minimal disclosure and Michael fully complies (A2B1, payoff 4) as it would protect the company's interests without compromising her ethics too much. Her second preference is advising full disclosure with Michael's full compliance (A1B1, payoff 3), which would be ethically sound but might negatively impact the IPO. Her third choice would be minimal disclosure with partial compliance (A2B2, payoff 2), and her least preferred outcome is advising full disclosure but having Michael only partially comply (A1B2, payoff 1).
+
+Michael, on the other hand, wants to ensure a successful IPO while minimizing legal risks. His top preference is for Sarah to advise full disclosure and for him to fully comply (A1B1, payoff 4), as this would provide the most legal protection. His second choice would be full disclosure advice with partial compliance (A1B2, payoff 3), allowing him some flexibility. His third preference is minimal disclosure with partial compliance (A2B2, payoff 2), and his least favored scenario is minimal disclosure advice that he fully complies with (A2B1, payoff 1), as he feels this might leave the company vulnerable.
+
+The tension between Sarah's professional obligations and Michael's business interests creates a complex decision-making scenario. Their choices will not only affect the immediate outcome of the IPO but also their long-term professional relationship and potentially the future of the company.
+[/Scenario]

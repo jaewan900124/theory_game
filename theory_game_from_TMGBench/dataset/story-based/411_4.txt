@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and friend"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Take the shot",
+  "B1": "Set a screen",
+  "B2": "Cut to the basket"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Take the shot and score while Blake cuts to the basket",
+    3: "Pass the ball while Blake cuts to the basket",
+    2: "Take the shot while Blake sets a screen",
+    1: "Pass the ball while Blake sets a screen",
+  },
+  "B": {
+    4: "Alex passes the ball while Blake cuts to the basket",
+    3: "Alex passes the ball while Blake sets a screen",
+    2: "Alex takes the shot and scores while Blake cuts to the basket",
+    1: "Alex takes the shot while Blake sets a screen"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set a screen) | B2 (Cut to the basket) |
+|-------|-------------------|------------------------|
+| A1 (Pass the ball) | 1 \ 3 | 3 \ 4 |
+| A2 (Take the shot) | 2 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+It's the final seconds of a crucial basketball game, and Alex's team is down by one point. Alex has just received the ball at the three-point line, with Blake nearby. They have mere moments to make a decision that could win or lose the game.
+
+Alex, known for his sharp shooting, is contemplating whether to take the shot himself or pass the ball to Blake. He knows that if he takes the shot and scores while Blake cuts to the basket, it would be the ideal outcome for him personally (preference 4). However, passing the ball to Blake as he cuts to the basket is also a favorable option (preference 3). Taking the shot while Blake sets a screen is less preferred (preference 2), and passing while Blake sets a screen is his least favored option (preference 1).
+
+Blake, on the other hand, is deciding between setting a screen for Alex or cutting to the basket. His top preference is for Alex to pass him the ball while he cuts to the basket (preference 4), believing in his ability to score. His second choice would be to set a screen and receive a pass (preference 3). If Alex decides to take the shot, Blake would prefer to be cutting to the basket for a potential rebound (preference 2) rather than setting a screen (preference 1).
+
+The payoff matrix reflects these preferences, with each number representing the level of satisfaction for each player based on the combination of their choices. Both players must make their decisions simultaneously, without knowing what the other will do.
+
+As the clock ticks down, the tension mounts. Will Alex trust his own shot or pass to Blake? Will Blake set a screen to give Alex a better shot or cut to the basket for a potential pass or rebound? Their split-second decision will determine not only the outcome of the game but also how they feel about their performance and teamwork.
+[/Scenario]

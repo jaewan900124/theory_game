@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Senator Smith",
+  "B": "Governor Jones"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Smith for re-election",
+  "B2": "Remain neutral in senatorial race"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill and get re-elected",
+    3: "Support bill and maintain political standing",
+    2: "Oppose bill but lose endorsement",
+    1: "Support bill but lose re-election chances"
+  },
+  "B": {
+    4: "Get infrastructure bill passed and maintain influence",
+    3: "Maintain political alliance without compromising",
+    2: "Preserve neutrality but lose potential ally",
+    1: "Lose influence and fail to pass bill"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 3 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a crucial moment of state politics, Senator Smith and Governor Jones find themselves at a crossroads. The state is considering a bipartisan infrastructure bill that could significantly impact the region's development. However, the political implications of their decisions could affect their careers and alliances.
+
+Senator Smith is facing a tough re-election campaign. Supporting the infrastructure bill could boost his image as a bipartisan collaborator, but it might alienate some of his base voters who oppose increased government spending. Opposing the bill could solidify his support among fiscal conservatives but might paint him as obstructionist.
+
+Governor Jones, on the other hand, sees the infrastructure bill as a key to his legacy. Getting it passed would be a major win, but he needs political allies to make it happen. He has the option to endorse Senator Smith for re-election, which could help secure Smith's support for the bill, or remain neutral to avoid potential backlash.
+
+If Senator Smith supports the bill (A1) and Governor Jones endorses him (B1), Smith risks his re-election but Jones achieves his goal (1 \ 4). If Smith supports the bill but Jones remains neutral (A1, B2), both maintain their political standing without significant gains or losses (3 \ 3).
+
+If Smith opposes the bill and Jones still endorses him (A2, B1), Smith improves his re-election chances but Jones loses influence (2 \ 2). In the scenario where Smith opposes the bill and Jones remains neutral (A2, B2), Smith maximizes his re-election chances but Jones fails to pass his key legislation (4 \ 1).
+
+As they weigh their options, both politicians must consider not only their immediate goals but also the long-term consequences of their choices on their political careers and the state's future.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Alice Chen, a geneticist",
+  "B": "Dr. Bob Smith, a microbiologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on individual research",
+  "A2": "Collaborate on joint research",
+  "B1": "Focus on individual research",
+  "B2": "Collaborate on joint research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while Bob focuses on individual research",
+    3: "Both collaborate on joint research",
+    2: "Both focus on individual research",
+    1: "Focus on individual research while Bob collaborates"
+  },
+  "B": {
+    4: "Collaborate while Alice focuses on individual research",
+    3: "Both collaborate on joint research",
+    2: "Both focus on individual research",
+    1: "Focus on individual research while Alice collaborates"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 2 \ 4 |
+| A2    | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Alice Chen and Dr. Bob Smith are two renowned scientists working at a prestigious research institute. They have been assigned to study a newly discovered microorganism with potential applications in medicine and biotechnology. Both scientists have the option to either focus on their individual research or collaborate on a joint project.
+
+Alice, a geneticist, specializes in studying the organism's DNA structure and potential genetic modifications. Bob, a microbiologist, focuses on the organism's behavior and interactions with other microbes. Their expertise is complementary, but they also have their own research goals and career aspirations.
+
+The institute has announced a significant grant for groundbreaking research in this field. The scientists must decide whether to pursue their individual projects or collaborate, knowing that their decision will impact both their personal career advancement and the overall progress of the research.
+
+If both Alice and Bob choose to focus on their individual research (A1, B1), they will make steady progress but miss out on potential breakthroughs that could come from combining their expertise. This scenario is their least preferred option (1,1).
+
+If Alice collaborates while Bob focuses on his individual research (A2, B1), Alice benefits from Bob's insights while still leading the project, making this her most preferred outcome (3,3). Similarly, if Bob collaborates while Alice focuses on her individual research (A1, B2), Bob gains the most benefit, making this his most preferred scenario (2,4).
+
+If both decide to collaborate (A2, B2), they have the potential to make significant discoveries by combining their knowledge. This scenario is highly beneficial for both, but slightly less so than when one collaborates while the other focuses on individual research (4,2).
+
+The scientists must weigh their options carefully, considering the potential for personal gain, the advancement of scientific knowledge, and the impact on their professional relationship. Their decision will not only affect their individual careers but also the progress of research in this crucial field of biology.
+[/Scenario]

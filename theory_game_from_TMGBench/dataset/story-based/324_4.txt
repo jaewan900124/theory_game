@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "EcoTech, a green technology company",
+  "B": "NatureLand, a national park"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly tourist facilities in the park",
+  "A2": "Focus on off-site conservation projects",
+  "B1": "Restrict park access and focus on preservation",
+  "B2": "Allow controlled tourism and collaborate with EcoTech"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop facilities with NatureLand's cooperation",
+    3: "Focus on off-site projects while NatureLand allows tourism",
+    2: "Focus on off-site projects while NatureLand restricts access",
+    1: "Attempt to develop facilities while NatureLand restricts access"
+  },
+  "B": {
+    4: "Allow controlled tourism with EcoTech's eco-friendly facilities",
+    3: "Restrict access while EcoTech focuses off-site",
+    2: "Allow tourism while EcoTech focuses off-site",
+    1: "Restrict access while EcoTech attempts to develop facilities"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 1 | 4 \ 4 |
+| A2    | 2 \ 3 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a picturesque region known for its biodiversity, EcoTech, a cutting-edge green technology company, and NatureLand, a vast national park, find themselves at a crossroads. The park's ecosystems are under increasing pressure from climate change and human activity, while the local economy is in need of sustainable development.
+
+EcoTech sees an opportunity to showcase its eco-friendly technologies by developing tourist facilities within NatureLand. This could include solar-powered lodges, electric vehicle charging stations, and interactive educational exhibits about conservation. However, they're also considering focusing their efforts on off-site conservation projects, which would have less direct impact on the park but could benefit the wider region.
+
+NatureLand's management is torn between two approaches: strictly limiting park access to focus on preservation, or allowing controlled tourism to generate funds for conservation efforts and educate the public about environmental issues.
+
+If EcoTech develops facilities (A1) and NatureLand allows controlled tourism (B2), both parties achieve their most preferred outcome (4,4). EcoTech gets to showcase its technology in a high-profile setting, while NatureLand receives state-of-the-art facilities that minimize environmental impact and attract eco-conscious visitors.
+
+If EcoTech focuses off-site (A2) while NatureLand restricts access (B1), it's a moderately positive outcome for both (2,3). EcoTech can still work on conservation, though with less visibility, while NatureLand can focus on preservation without the complications of managing tourism.
+
+If EcoTech focuses off-site (A2) and NatureLand allows tourism (B2), EcoTech benefits more than NatureLand (3,2). EcoTech can still engage in conservation work with less risk, while NatureLand has to manage tourism without the benefit of EcoTech's eco-friendly facilities.
+
+The least preferred outcome for both parties (1,1) occurs if EcoTech tries to develop facilities (A1) while NatureLand restricts access (B1). This leads to conflict, wasted resources, and potentially negative publicity for both organizations.
+
+The challenge for both EcoTech and NatureLand is to communicate effectively and find a way to align their goals, potentially achieving the win-win scenario of sustainable eco-tourism that benefits both conservation efforts and the local economy.
+[/Scenario]

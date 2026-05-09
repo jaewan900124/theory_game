@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Alice, a daily commuter",
+  "B": "Bob, a rideshare driver"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use public transportation",
+  "A2": "Request a rideshare",
+  "B1": "Drive in the city",
+  "B2": "Drive on the highway"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Quick and comfortable rideshare on the highway",
+    3: "Convenient rideshare in the city",
+    2: "Reliable public transportation",
+    1: "Slow public transportation due to traffic"
+  },
+  "B": {
+    4: "Long, profitable highway ride",
+    3: "Short, easy city ride",
+    2: "Multiple short city rides",
+    1: "Long, unprofitable city ride"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (City)   | B2 (Highway) |
+|-------|-------------|--------------|
+| A1 (Public) | 2 \ 3       | 4 \ 4        |
+| A2 (Rideshare) | 3 \ 1       | 1 \ 2        |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling metropolis, Alice, a daily commuter, faces a decision on how to get to work. She can either use public transportation or request a rideshare. Meanwhile, Bob, a rideshare driver, must choose between driving in the city or taking the highway route.
+
+Alice prefers a quick and comfortable ride, which she can get if she chooses a rideshare and Bob takes the highway (A2, B2). Her second choice would be a convenient rideshare in the city (A2, B1). Using public transportation is her third preference, as it's reliable but not as comfortable (A1, B1 or A1, B2). Her least preferred option is using slow public transportation due to heavy city traffic (A1, B1).
+
+Bob, on the other hand, prefers long, profitable highway rides the most (A2, B2). His second choice is a short, easy city ride (A1, B1). Multiple short city rides come third in his preferences (A1, B1). His least favored scenario is a long, unprofitable city ride (A2, B1).
+
+If Alice chooses public transportation (A1) and Bob decides to drive in the city (B1), Alice gets her third preference (2) while Bob gets his second preference (3). This scenario represents a moderate outcome for both.
+
+If Alice opts for public transportation (A1) and Bob chooses the highway (B2), both get their top preferences (4, 4). This unusual scenario might occur if the public transportation system has a dedicated lane on the highway, making it faster than usual.
+
+If Alice requests a rideshare (A2) and Bob stays in the city (B1), Alice gets her second preference (3), but Bob ends up with his least preferred option (1). This represents a good outcome for Alice but a poor one for Bob.
+
+Lastly, if Alice requests a rideshare (A2) and Bob takes the highway (B2), Alice ends up with her least preferred option (1) due to the longer route, while Bob gets his third preference (2) as the ride is long but not as profitable as he hoped.
+
+This scenario demonstrates how the choices of both Alice and Bob interact to create different outcomes, each with its own set of benefits and drawbacks for both parties involved.
+[/Scenario]

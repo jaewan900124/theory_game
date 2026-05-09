@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Emma",
+  "B": "Liam"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share project idea",
+  "A2": "Keep idea secret",
+  "B1": "Collaborate",
+  "B2": "Work independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Share idea and work independently",
+    3: "Keep idea secret and work independently",
+    2: "Keep idea secret and collaborate",
+    1: "Share idea and collaborate"
+  },
+  "B": {
+    4: "Emma shares idea and Liam collaborates",
+    3: "Emma keeps idea secret and Liam works independently",
+    2: "Emma keeps idea secret and Liam collaborates",
+    1: "Emma shares idea and Liam works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Liam | Collaborate | Work independently |
+|-------------|-------------|---------------------|
+| Share idea  | 1 \ 4       | 4 \ 1               |
+| Keep secret | 3 \ 2       | 2 \ 3               |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Liam are talented software developers working for the same tech company. They've been assigned to develop a revolutionary new app, but their manager has left it up to them to decide how to approach the project.
+
+Emma has come up with a brilliant idea for the app but is hesitant about sharing it. She can either share her idea with Liam or keep it to herself. Emma's ideal scenario would be to share her idea but work independently, allowing her to take full credit for the concept while benefiting from Liam's contributions. Her least preferred outcome is sharing the idea and collaborating, as she fears Liam might overshadow her contributions.
+
+Liam, on the other hand, is eager to collaborate but also values his independence. He can choose to either collaborate with Emma or work independently on the project. Liam's most desired outcome is for Emma to share her idea and for them to collaborate, as he believes this would lead to the best possible app. His least preferred scenario is Emma sharing the idea but him working independently, as he would feel left out of a potentially groundbreaking project.
+
+If Emma shares her idea and Liam chooses to collaborate, Emma would be disappointed (1) while Liam would be thrilled (4). If Emma shares but Liam works independently, Emma would be extremely satisfied (4) while Liam would be frustrated (1).
+
+In the case where Emma keeps her idea secret and Liam collaborates, Emma would feel somewhat secure (3) while Liam would be slightly disappointed (2). If Emma keeps her idea secret and Liam works independently, Emma would be moderately content (2) and Liam would be reasonably satisfied (3).
+
+As they sit across from each other in the office, both Emma and Liam must decide their course of action, knowing that their choices will significantly impact the project's outcome and their professional relationship.
+[/Scenario]

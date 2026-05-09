@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a hospital administrator",
+  "B": "Dr. Mark Johnson, a private practice physician"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement a new integrated health record system",
+  "A2": "Maintain the current separate record systems",
+  "B1": "Join the hospital network",
+  "B2": "Remain independent"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement new system with Dr. Johnson joining the network",
+    3: "Maintain current system with Dr. Johnson joining the network",
+    2: "Implement new system with Dr. Johnson remaining independent",
+    1: "Maintain current system with Dr. Johnson remaining independent"
+  },
+  "B": {
+    4: "Join network with current system maintained",
+    3: "Remain independent with current system maintained",
+    2: "Remain independent with new system implemented",
+    1: "Join network with new system implemented"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Join)| B2 (Remain)|
+|-------|----------|------------|
+| A1 (Implement) | 2 \ 4     | 4 \ 1      |
+| A2 (Maintain)  | 1 \ 3     | 3 \ 2      |
+[/Payoff Matrix]
+
+[Scenario]
+In a mid-sized city, Dr. Sarah Chen, the administrator of the local hospital, is facing a crucial decision about modernizing the health record system. At the same time, Dr. Mark Johnson, a respected private practice physician in the community, is contemplating whether to join the hospital network or remain independent.
+
+Dr. Chen believes that implementing a new integrated health record system (A1) would greatly improve patient care and operational efficiency. However, the success of this system largely depends on the participation of local physicians. If she chooses to maintain the current separate record systems (A2), it would be less costly in the short term but may hinder long-term progress.
+
+Dr. Johnson is weighing his options carefully. Joining the hospital network (B1) could provide him with more resources and a larger patient base, but it would mean less autonomy. Remaining independent (B2) would preserve his freedom in decision-making but might limit his access to advanced technologies and collaborative opportunities.
+
+Their decisions are interconnected, creating four possible scenarios:
+
+1. If Dr. Chen implements the new system and Dr. Johnson joins the network (A1, B1), the hospital benefits moderately (2) while Dr. Johnson receives maximum benefit (4) from access to new technology without the burden of implementation.
+
+2. If Dr. Chen implements the new system but Dr. Johnson remains independent (A1, B2), the hospital maximizes its benefit (4) by modernizing, while Dr. Johnson faces significant challenges (1) in staying competitive.
+
+3. If Dr. Chen maintains the current system and Dr. Johnson joins the network (A2, B1), the hospital sees minimal improvement (1), but Dr. Johnson gains considerable advantages (3) from network resources.
+
+4. If Dr. Chen maintains the current system and Dr. Johnson remains independent (A2, B2), the hospital sees some benefit (3) from reduced costs, while Dr. Johnson maintains a moderate position (2) in the market.
+
+Both professionals must carefully consider their options, knowing that their decisions will significantly impact not only their own situations but also the overall healthcare landscape in their community.
+[/Scenario]

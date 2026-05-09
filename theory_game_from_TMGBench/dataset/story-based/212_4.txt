@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a robotics engineer",
+  "B": "Dr. Michael Lee, an AI specialist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on improving robot hardware",
+  "A2": "Focus on integrating AI into existing robots",
+  "B1": "Develop a standalone AI system",
+  "B2": "Collaborate on AI-robot integration"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Improve robot hardware while B develops standalone AI",
+    3: "Collaborate on AI-robot integration",
+    2: "Both focus on their specialties independently",
+    1: "Integrate AI into existing robots while B develops standalone AI"
+  },
+  "B": {
+    4: "Both focus on their specialties independently",
+    3: "Improve robot hardware while B develops standalone AI",
+    2: "Collaborate on AI-robot integration",
+    1: "Integrate AI into existing robots while B develops standalone AI"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 1 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious engineering firm, Dr. Sarah Chen and Dr. Michael Lee find themselves at a crossroads in their latest project. The company aims to revolutionize the field of robotics by creating more intelligent and adaptable machines. Sarah, a robotics engineer, and Michael, an AI specialist, must decide how to approach this challenge.
+
+Sarah has two options: she can either focus on improving the robot hardware (A1) or work on integrating AI into existing robots (A2). Meanwhile, Michael can choose to develop a standalone AI system (B1) or collaborate with Sarah on AI-robot integration (B2).
+
+Sarah's ideal scenario is to improve robot hardware while Michael develops a standalone AI system (A1, B1). This allows her to showcase her expertise in robotics while potentially incorporating Michael's AI advancements later. Her second preference is to collaborate on AI-robot integration (A1, B2), as it still allows her to work on hardware improvements. She least prefers integrating AI into existing robots while Michael works independently on AI (A2, B1), as it takes her out of her comfort zone without the benefit of collaboration.
+
+Michael, on the other hand, most prefers working independently on his AI system while Sarah focuses on hardware (A1, B1). This scenario allows him to dive deep into AI development without the complexities of robot integration. His second choice is to develop his AI system while Sarah works on integration (A2, B1), as it still gives him freedom in his work. He least prefers the scenario where both of them work on integrating AI into existing robots (A2, B2), as it limits his ability to push the boundaries of AI technology.
+
+The payoff matrix reflects these preferences, with each number representing the degree of satisfaction for each engineer in the various scenarios. As they prepare to make their decisions, both Sarah and Michael must consider not only their own preferences but also how their choices will affect their colleague and the overall success of the project.
+[/Scenario]

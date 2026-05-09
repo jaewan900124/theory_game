@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented but struggling tennis player",
+  "B": "Blake, Alex's longtime doubles partner and friend"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Train individually to improve personal skills",
+  "A2": "Focus on doubles training with Blake",
+  "B1": "Train individually to improve personal skills",
+  "B2": "Focus on doubles training with Alex"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both focus on doubles training, leading to great teamwork and success",
+    3: "Alex focuses on doubles while Blake trains individually, maintaining the partnership but with less synergy",
+    2: "Both train individually, potentially improving personal skills but weakening their doubles performance",
+    1: "Alex trains individually while Blake focuses on doubles, potentially straining their partnership"
+  },
+  "B": {
+    4: "Both focus on doubles training, leading to great teamwork and success",
+    3: "Blake trains individually while Alex focuses on doubles, allowing personal growth while maintaining the partnership",
+    2: "Both train individually, potentially improving personal skills but weakening their doubles performance",
+    1: "Blake focuses on doubles while Alex trains individually, potentially straining their partnership"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 4 \ 4 |
+| A2    | 1 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake, longtime doubles partners on the professional tennis circuit, find themselves at a crossroads in their careers. They've been moderately successful as a team, but both feel they could achieve more. With a major tournament approaching, they must decide how to allocate their training time.
+
+Alex, feeling pressure to improve his individual ranking, is torn between focusing on personal skills (A1) or committing to doubles training with Blake (A2). Blake faces a similar dilemma, weighing the benefits of individual improvement (B1) against strengthening their doubles game (B2).
+
+If both choose to train individually (A1, B1), they might improve their personal skills, but their doubles performance could suffer due to lack of practice together. This scenario is their third preference, as it balances personal growth with team potential.
+
+If Alex trains individually while Blake focuses on doubles (A1, B2), it could lead to an imbalance in their partnership. This is Alex's most preferred outcome, as it allows personal improvement while still benefiting from Blake's doubles focus. However, it's Blake's least preferred scenario, potentially feeling let down by Alex's choice.
+
+Conversely, if Alex focuses on doubles while Blake trains individually (A2, B1), the roles are reversed. This is Blake's third preference but Alex's least preferred outcome.
+
+The ideal scenario for both is to focus on doubles training together (A2, B2). This choice would strengthen their partnership, improve their teamwork, and potentially lead to greater success in the upcoming tournament.
+
+As they stand on separate practice courts, rackets in hand, Alex and Blake must make their decisions. Will they prioritize individual goals or choose to invest in their partnership? Their choices will not only affect their performance in the upcoming tournament but could also shape the future of their doubles career together.
+[/Scenario]

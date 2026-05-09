@@ -1,0 +1,59 @@
+[Characters]
+{
+  "A": "Alex, a talented young basketball player",
+  "B": "Coach Thompson, the head coach of the high school basketball team"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Play as a team player",
+  "A2": "Play selfishly to showcase individual skills",
+  "B1": "Give Alex more playing time",
+  "B2": "Limit Alex's playing time"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play selfishly and get more playing time",
+    3: "Play as a team player and get more playing time",
+    2: "Play as a team player but get limited playing time",
+    1: "Play selfishly and get limited playing time",
+  },
+  "B": {
+    4: "Alex plays as a team player and gets more playing time",
+    3: "Alex plays selfishly but gets limited playing time",
+    2: "Alex plays selfishly and gets more playing time",
+    1: "Alex plays as a team player but gets limited playing time",
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Alex \ Coach | Give more time (B1) | Limit time (B2) |
+|--------------|---------------------|-----------------|
+| Team play (A1) | 3 \ 4               | 2 \ 1           |
+| Selfish (A2)   | 1 \ 2               | 4 \ 3           |
+[/Payoff Matrix]
+
+[Scenario]
+Alex is a talented young basketball player on the high school team, known for his impressive individual skills. Coach Thompson, the head coach, is faced with a dilemma on how to manage Alex's playing style and time on the court.
+
+Alex has two choices: he can either play as a team player, focusing on passing and creating opportunities for his teammates, or he can play selfishly, showcasing his individual skills to attract the attention of college scouts. Coach Thompson, on the other hand, can either give Alex more playing time or limit his minutes on the court.
+
+Alex's preferences are clear: he would ideally like to play selfishly and get more playing time, as this would give him the best chance to impress scouts. His least preferred scenario is playing selfishly but getting limited time, as this would hurt both his personal stats and the team's performance.
+
+Coach Thompson prefers Alex to play as a team player and rewards this behavior with more playing time. His least preferred scenario is when Alex plays as a team player but gets limited time, as this doesn't benefit the team or Alex's development.
+
+The payoff matrix reflects these preferences:
+
+1. If Alex plays as a team player (A1) and Coach gives him more time (B1), Alex is moderately satisfied (3) while the Coach is very happy (4).
+2. If Alex plays as a team player (A1) but Coach limits his time (B2), Alex is somewhat disappointed (2) and the Coach is very unsatisfied (1).
+3. If Alex plays selfishly (A2) and Coach gives him more time (B1), Alex is very unsatisfied (1) as this hurts the team, while the Coach is somewhat disappointed (2).
+4. If Alex plays selfishly (A2) and Coach limits his time (B2), Alex is very happy (4) as he can showcase his skills in limited time, while the Coach is moderately satisfied (3) as it minimizes the impact on the team.
+
+This scenario presents a classic game theory dilemma in sports, where individual ambitions can conflict with team goals, and coaches must balance player development with team success.
+[/Scenario]

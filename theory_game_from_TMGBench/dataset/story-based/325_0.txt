@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Senator Emma Thompson",
+  "B": "Governor Mark Rodriguez"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan climate bill",
+  "A2": "Oppose bipartisan climate bill",
+  "B1": "Oppose bipartisan climate bill",
+  "B2": "Support bipartisan climate bill"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both support the bill, gaining widespread approval and environmental progress",
+    3: "Both oppose the bill, maintaining status quo and party loyalty",
+    2: "A opposes while B supports, risking political backlash",
+    1: "A supports while B opposes, facing criticism and potential isolation"
+  },
+  "B": {
+    4: "Both support the bill, achieving environmental progress and bipartisan success",
+    3: "Both oppose the bill, preserving current policies and conservative base",
+    2: "B opposes while A supports, maintaining conservative stance but risking criticism",
+    1: "B supports while A opposes, facing potential conservative backlash"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Oppose) | B2 (Support) |
+|-------|-------------|--------------|
+| A1 (Support) | 1 \ 1 | 4 \ 4 |
+| A2 (Oppose) | 2 \ 2 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Senator Emma Thompson, a moderate Democrat, and Governor Mark Rodriguez, a moderate Republican, find themselves at a crossroads over a crucial bipartisan climate bill. The bill aims to significantly reduce carbon emissions while providing economic incentives for clean energy adoption.
+
+Both politicians are aware that their decisions will have far-reaching consequences for their political careers and the environment. They each have two choices: support or oppose the bill.
+
+If both support the bill (A1, B2), they would gain widespread approval from moderates and environmentalists, potentially boosting their national profiles. This is their most preferred outcome (4,4), as it allows them to showcase bipartisanship and environmental leadership.
+
+If both oppose the bill (A2, B1), they would maintain the status quo and please their respective party hardliners. This is their third-best option (2,2), as it avoids rocking the boat but misses an opportunity for progress.
+
+If Senator Thompson supports the bill while Governor Rodriguez opposes it (A1, B1), Thompson risks isolation from conservative colleagues and potential criticism for "overreach," while Rodriguez maintains his conservative base but faces backlash from moderates and environmentalists. This is the least preferred outcome for both (1,1).
+
+If Senator Thompson opposes the bill while Governor Rodriguez supports it (A2, B2), Thompson risks appearing obstructionist and facing criticism from her base, while Rodriguez risks alienating his conservative supporters. This is their second-least preferred outcome (3,3).
+
+As the vote approaches, both politicians must weigh their options carefully, considering the potential for cooperation or competition, and the impact their choices will have on their political futures and the environment.
+[/Scenario]

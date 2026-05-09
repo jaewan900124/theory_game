@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a custom software solution",
+  "A2": "Use an off-the-shelf software package",
+  "B1": "Design a specialized hardware component",
+  "B2": "Use standard hardware components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Use off-the-shelf software with standard hardware",
+    3: "Develop custom software with specialized hardware",
+    2: "Develop custom software with standard hardware",
+    1: "Use off-the-shelf software with specialized hardware"
+  },
+  "B": {
+    4: "Custom software with specialized hardware",
+    3: "Custom software with standard hardware",
+    2: "Off-the-shelf software with specialized hardware",
+    1: "Off-the-shelf software with standard hardware"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Specialized) | B2 (Standard) |
+|-------|-------------------|----------------|
+| A1 (Custom) | 3 \ 4 | 2 \ 3 |
+| A2 (Off-the-shelf) | 1 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are engineers working on a critical project for an autonomous vehicle system. They need to decide on the software and hardware components for the central control unit.
+
+Alex, the software engineer, has two choices: develop a custom software solution (A1) or use an off-the-shelf software package (A2). Blake, the hardware engineer, can either design a specialized hardware component (B1) or use standard hardware components (B2).
+
+Alex prefers using off-the-shelf software with standard hardware the most, as it's the easiest to implement and maintain. His second choice is developing custom software with specialized hardware, appreciating the potential for optimal performance. His third preference is custom software with standard hardware, and he least prefers off-the-shelf software with specialized hardware, feeling it wastes Blake's efforts.
+
+Blake, on the other hand, most prefers the combination of custom software with specialized hardware, believing it offers the best performance and control. His second choice is custom software with standard hardware, still valuing Alex's custom work. Third, he prefers off-the-shelf software with specialized hardware, and least prefers off-the-shelf software with standard hardware, feeling it's a missed opportunity for innovation.
+
+The payoff matrix reflects their preferences, with higher numbers indicating greater satisfaction. They must decide independently, without knowing the other's choice, leading to a classic game theory scenario in engineering design.
+
+If both choose their preferred options (A2 and B1), it results in a suboptimal outcome for both (1,2). The best overall outcome (3,4) occurs when they cooperate on custom software and specialized hardware (A1 and B1), but this requires Alex to compromise. The challenge lies in finding a balance between individual preferences and the best overall solution for the project.
+[/Scenario]

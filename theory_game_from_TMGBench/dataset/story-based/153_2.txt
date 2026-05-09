@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Alex"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Assign traditional homework",
+  "A2": "Implement project-based learning",
+  "B1": "Fully engage in coursework",
+  "B2": "Minimal effort in coursework"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement project-based learning with minimal student effort",
+    3: "Implement project-based learning with full student engagement",
+    2: "Assign traditional homework with full student engagement",
+    1: "Assign traditional homework with minimal student effort"
+  },
+  "B": {
+    4: "Traditional homework with full engagement",
+    3: "Project-based learning with minimal effort",
+    2: "Traditional homework with minimal effort",
+    1: "Project-based learning with full engagement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 2 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is planning the curriculum for his upcoming advanced psychology course. He's torn between sticking to traditional homework assignments and implementing a more innovative project-based learning approach. Meanwhile, his student Alex is deciding how much effort to invest in the course.
+
+Professor Smith prefers project-based learning as he believes it fosters creativity and practical skills. However, he's aware that it requires more preparation on his part. He would be most satisfied if he could implement project-based learning while students put in minimal effort, as this would validate his teaching method's effectiveness. His least preferred scenario is assigning traditional homework that students don't engage with fully.
+
+Alex, on the other hand, is more comfortable with traditional homework. He finds it easier to manage and believes it's the most efficient way to get good grades. Alex would be most satisfied with a traditional homework structure where he can fully engage and excel. His least preferred scenario is a project-based approach that demands full engagement, as he finds it time-consuming and potentially risky for his GPA.
+
+If Professor Smith chooses traditional homework and Alex fully engages, Smith will be moderately satisfied (2) while Alex will be extremely pleased (4). If Smith assigns traditional homework but Alex puts in minimal effort, Smith will be frustrated (1) and Alex will be somewhat satisfied (2).
+
+In the case of project-based learning with Alex's full engagement, Smith will be very satisfied (3), but Alex will be displeased (1). If Smith implements project-based learning and Alex puts in minimal effort, Smith will be extremely satisfied (4) as it appears his method works effortlessly, while Alex will be quite content (3) with the perceived ease of the course.
+
+As the semester begins, both Professor Smith and Alex must make their choices, each hoping to achieve their most preferred outcome while being unaware of the other's decision.
+[/Scenario]

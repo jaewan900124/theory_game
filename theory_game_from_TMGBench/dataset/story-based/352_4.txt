@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Lisa, a talented tennis player",
+  "B": "Mark, Lisa's doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Train together",
+  "A2": "Train alone",
+  "B1": "Train together",
+  "B2": "Attend a sponsorship event"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Train together while Mark attends sponsorship event",
+    3: "Train together with Mark",
+    2: "Train alone while Mark trains alone",
+    1: "Train alone while Mark attends sponsorship event"
+  },
+  "B": {
+    4: "Attend sponsorship event while Lisa trains together",
+    3: "Train together with Lisa",
+    2: "Train alone while Lisa trains alone",
+    1: "Attend sponsorship event while Lisa trains alone"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Train together) | B2 (Attend sponsorship event) |
+|-------|---------------------|-------------------------------|
+| A1 (Train together) | 3 \ 3               | 4 \ 4                         |
+| A2 (Train alone)    | 2 \ 2               | 1 \ 1                         |
+[/Payoff Matrix]
+
+[Scenario]
+Lisa and Mark are professional tennis players who have been successful doubles partners for several years. They are preparing for an important tournament coming up in a month. Both players need to decide how to spend their training day.
+
+Lisa has two choices: train together with Mark (A1) or train alone (A2). Mark also has two choices: train together with Lisa (B1) or attend a sponsorship event (B2) that could boost his individual career.
+
+Lisa prefers training together, as it improves their coordination and teamwork. However, she wouldn't mind if Mark attended the sponsorship event, as it could bring more attention to their partnership. Her least preferred scenario is training alone while Mark attends the event, as she feels it might affect their team dynamics.
+
+Mark values the partnership with Lisa but also sees the sponsorship event as a great opportunity. He would ideally like to attend the event while Lisa continues their joint training routine. His least preferred scenario is attending the event while Lisa trains alone, as he feels guilty about potentially letting the team down.
+
+If they both choose to train together (A1, B1), they maintain their strong partnership and both feel satisfied with the progress (3, 3). If Lisa trains together and Mark attends the sponsorship event (A1, B2), Lisa gets extra practice time, and Mark benefits from the sponsorship, resulting in the best outcome for both (4, 4).
+
+If Lisa decides to train alone and Mark also trains alone or attends the event (A2, B1 or A2, B2), it leads to suboptimal outcomes. Training alone (A2, B1) results in missed opportunities for team improvement (2, 2), while Lisa training alone and Mark attending the event (A2, B2) creates tension in their partnership and is the least preferred outcome for both (1, 1).
+
+As they discuss their plans for the day, both Lisa and Mark must consider not only their individual preferences but also the impact of their choices on their partnership and upcoming tournament performance.
+[/Scenario]

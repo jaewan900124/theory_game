@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Bella, a UX designer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a complex, feature-rich app",
+  "A2": "Create a simple, bare-bones app",
+  "B1": "Design an intuitive, user-friendly interface",
+  "B2": "Design a flashy, visually striking interface"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Complex app with flashy interface",
+    3: "Complex app with intuitive interface",
+    2: "Simple app with intuitive interface",
+    1: "Simple app with flashy interface"
+  },
+  "B": {
+    4: "Complex app with intuitive interface",
+    3: "Simple app with intuitive interface",
+    2: "Complex app with flashy interface",
+    1: "Simple app with flashy interface"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 2 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Bella are collaborating on a new mobile app for their startup. As the software engineer, Alex is responsible for the app's functionality, while Bella, the UX designer, is in charge of the user interface.
+
+Alex has two options: develop a complex, feature-rich app (A1) or create a simple, bare-bones app (A2). He prefers to showcase his technical skills with a complex app but knows that a simpler app might be easier to use.
+
+Bella also faces two choices: design an intuitive, user-friendly interface (B1) or create a flashy, visually striking interface (B2). She values user experience but also wants to demonstrate her creative design skills.
+
+Their preferences and potential outcomes are as follows:
+
+1. If Alex develops a complex app (A1) and Bella designs an intuitive interface (B1), it results in a powerful yet user-friendly product. Alex is satisfied (3) and Bella is thrilled (4).
+
+2. If Alex develops a complex app (A1) and Bella creates a flashy interface (B2), the result is a feature-rich app with an eye-catching design. This is Alex's ideal scenario (4), but Bella worries about usability (2).
+
+3. If Alex creates a simple app (A2) and Bella designs an intuitive interface (B1), the outcome is a basic but easy-to-use app. Alex feels his skills are underutilized (2), while Bella is content with the user experience (3).
+
+4. If Alex creates a simple app (A2) and Bella designs a flashy interface (B2), the result is a bare-bones app with a potentially confusing interface. Both Alex and Bella are disappointed with this outcome (1 for both).
+
+Alex and Bella must decide on their approaches independently, knowing that their choices will affect not only their own satisfaction but also the success of their startup's app. The challenge lies in balancing personal preferences with the need for cooperation to create the best possible product.
+[/Scenario]

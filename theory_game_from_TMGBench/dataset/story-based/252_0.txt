@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "General Smith",
+  "B": "Admiral Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy land forces",
+  "A2": "Hold back land forces",
+  "B1": "Provide naval support",
+  "B2": "Withhold naval support"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Deploy land forces with no naval support",
+    3: "Deploy land forces with naval support",
+    2: "Hold back land forces with naval support available",
+    1: "Hold back land forces with no naval support"
+  },
+  "B": {
+    4: "Provide naval support for deployed land forces",
+    3: "Withhold naval support from deployed land forces",
+    2: "Withhold naval support when land forces are held back",
+    1: "Provide naval support when land forces are held back"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 2 \ 1 | 1 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Smith of the Army and Admiral Johnson of the Navy face a critical decision regarding an imminent coastal operation. Their choices will determine the success of the mission and potentially impact national security.
+
+General Smith must decide whether to deploy land forces (A1) or hold them back (A2). Simultaneously, Admiral Johnson must choose to provide naval support (B1) or withhold it (B2). Their decisions are interdependent, creating a complex strategic scenario.
+
+General Smith's ideal outcome is to deploy land forces without naval support (A1B2), as it would showcase the Army's capabilities and potentially secure more funding. His second preference is deploying with naval support (A1B1), which is safer but shares credit. Holding back troops with naval support available (A2B1) is his third choice, while holding back without naval support (A2B2) is least preferred.
+
+Admiral Johnson's top preference is providing naval support for deployed land forces (A1B1), as it demonstrates the Navy's crucial role. His second choice is withholding support from deployed forces (A1B2), which might expose the Army's limitations. Withholding support when land forces are held back (A2B2) is his third preference, while providing support for non-deployed forces (A2B1) is least desirable, as it wastes resources.
+
+The payoff matrix reflects these preferences, with each leader considering their strategic position and the potential outcomes of their combined decisions. As they contemplate their choices, both leaders must weigh the risks and benefits, knowing that their decision will have far-reaching consequences for the operation's success and their respective service branches' reputations.
+[/Scenario]

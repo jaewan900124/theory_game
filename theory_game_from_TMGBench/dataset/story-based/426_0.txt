@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Dean Johnson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Maintain current curriculum",
+  "A2": "Implement innovative teaching methods",
+  "B1": "Keep current budget allocation",
+  "B2": "Increase department funding"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement innovative teaching methods with increased funding",
+    3: "Maintain current curriculum with increased funding",
+    2: "Maintain current curriculum with current budget",
+    1: "Implement innovative teaching methods with current budget"
+  },
+  "B": {
+    4: "Maintain current curriculum with increased funding",
+    3: "Implement innovative teaching methods with increased funding",
+    2: "Maintain current curriculum with current budget",
+    1: "Implement innovative teaching methods with current budget"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Keep current budget) | B2 (Increase funding) |
+|-------|--------------------------|------------------------|
+| A1 (Maintain curriculum) | 2 \ 2 | 3 \ 4 |
+| A2 (Implement innovation) | 1 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At Evergreen University, Professor Smith, a passionate educator in the Computer Science department, is contemplating whether to maintain the current curriculum or implement innovative teaching methods. Meanwhile, Dean Johnson is considering whether to keep the current budget allocation or increase funding for the department.
+
+Professor Smith believes that implementing innovative teaching methods could greatly benefit students, but it would require additional resources and support from the administration. On the other hand, maintaining the current curriculum is a safer option that requires less effort and risk.
+
+Dean Johnson is focused on balancing the university's budget while ensuring academic excellence. Increasing funding for the Computer Science department could potentially lead to better outcomes, but it would mean reallocating resources from other areas.
+
+If both maintain the status quo (A1, B1), they achieve a moderate level of satisfaction (2,2). If Professor Smith innovates without additional funding (A2, B1), both parties face challenges and dissatisfaction (1,1). If the curriculum stays the same but funding increases (A1, B2), Dean Johnson is most satisfied while Professor Smith is content (3,4). The ideal scenario for Professor Smith is implementing innovations with increased funding (A2, B2), which also satisfies Dean Johnson, but to a lesser extent (4,3).
+
+Professor Smith and Dean Johnson must now decide their courses of action, knowing that their choices will impact not only their own satisfaction but also the future of the Computer Science department and its students.
+[/Scenario]

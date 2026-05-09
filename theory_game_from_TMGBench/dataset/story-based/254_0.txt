@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Prosecutor Alex",
+  "B": "Defense Attorney Beth"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer a plea bargain",
+  "A2": "Go to trial",
+  "B1": "Accept plea bargain",
+  "B2": "Reject plea bargain and go to trial"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Offer plea bargain, defendant rejects, win at trial",
+    3: "Offer plea bargain, defendant accepts",
+    2: "Go to trial, defendant pleads guilty before trial",
+    1: "Go to trial, lose case"
+  },
+  "B": {
+    4: "Accept plea bargain offered",
+    3: "Reject plea bargain, prosecutor loses at trial",
+    2: "Reject plea bargain, plead guilty before trial",
+    1: "Reject plea bargain, prosecutor wins at trial"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 1 |
+| A2    | 2 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a high-profile criminal case, Prosecutor Alex and Defense Attorney Beth find themselves locked in a legal chess match. The case involves a wealthy businessman accused of embezzlement, and both lawyers know that the outcome will significantly impact their careers.
+
+Prosecutor Alex has two options: offer a plea bargain or go to trial. Defense Attorney Beth can either accept the plea bargain if offered or reject it and proceed to trial. Their choices will determine the outcome of the case and their professional reputations.
+
+Alex's most preferred outcome is to offer a plea bargain, have Beth reject it, and then win at trial. This would showcase Alex's negotiation skills and courtroom prowess. The second-best scenario for Alex is offering a plea bargain that Beth accepts, which would result in a swift resolution and a guaranteed conviction. Alex's third choice would be to go to trial and have the defendant plead guilty before the trial begins, saving time and resources. The least desirable outcome for Alex is going to trial and losing the case.
+
+Beth, on the other hand, most prefers accepting a favorable plea bargain, which would minimize her client's potential sentence and avoid the uncertainties of a trial. Her second-best outcome is rejecting the plea bargain and winning at trial, which would boost her reputation as a formidable defense attorney. The third choice for Beth is rejecting the plea bargain but having her client plead guilty before trial, which might still result in some leniency from the judge. Beth's least preferred scenario is rejecting the plea bargain and losing at trial, which would be devastating for both her client and her career.
+
+As they prepare for their next move, both lawyers must carefully consider their options and anticipate the other's strategy. The stakes are high, and the outcome of this legal battle will depend on their ability to outmaneuver each other in this intricate game of law and strategy.
+[/Scenario]

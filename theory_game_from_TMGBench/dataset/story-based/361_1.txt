@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "General Smith",
+  "B": "General Zhang"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops along the border",
+  "A2": "Keep troops in reserve",
+  "B1": "Maintain defensive posture",
+  "B2": "Propose peace talks"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Peace talks with troops deployed (show of strength)",
+    3: "Both sides maintain current positions",
+    2: "Peace talks with troops in reserve",
+    1: "Defensive standoff with troops in reserve"
+  },
+  "B": {
+    4: "Peace talks with opponent's troops deployed",
+    3: "Both sides maintain current positions",
+    2: "Peace talks with opponent's troops in reserve",
+    1: "Defensive standoff with opponent's troops in reserve"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 3 | 4 \ 4 |
+| A2    | 1 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense border region, two opposing military forces face each other across a disputed territory. General Smith of the Western Alliance and General Zhang of the Eastern Federation are tasked with managing the situation and preventing an outbreak of hostilities while protecting their respective national interests.
+
+General Smith must decide whether to deploy troops along the border (A1) or keep them in reserve (A2). Meanwhile, General Zhang can choose to maintain a defensive posture (B1) or propose peace talks (B2).
+
+Both generals prefer a peaceful resolution but want to maintain a position of strength. Their most desired outcome is to engage in peace talks while having a strong military presence (4). Their second preference is to maintain the current standoff without escalation (3). The third choice for both is to enter peace talks from a position of reduced military readiness (2). The least preferred outcome is a continued standoff with troops held back in reserve (1).
+
+If both generals choose to maintain their current positions (A1, B1), they achieve a stable but tense equilibrium (3,3). If General Smith deploys troops and General Zhang proposes peace talks (A1, B2), both achieve their most preferred outcome (4,4). However, if General Smith keeps troops in reserve while General Zhang maintains a defensive posture (A2, B1), both end up in their least preferred situation (1,1). Lastly, if General Smith keeps troops in reserve and General Zhang proposes peace talks (A2, B2), they reach a suboptimal peace negotiation scenario (2,2).
+
+The generals must now decide their courses of action, knowing that their choices will significantly impact the region's stability and their nations' strategic positions.
+[/Scenario]

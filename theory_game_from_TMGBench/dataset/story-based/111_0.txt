@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, a small coffee shop owner",
+  "B": "Mark, owner of a large coffee chain"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Keep prices steady",
+  "A2": "Lower prices",
+  "B1": "Maintain current operations",
+  "B2": "Expand aggressively in Sarah's area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (4 most preferred, 1 least preferred):
+{
+  "A": {
+    4: "Lower prices while Mark expands (survive and gain market share)",
+    3: "Keep prices steady while Mark maintains operations (stable coexistence)",
+    2: "Lower prices while Mark maintains operations (unnecessary price war)",
+    1: "Keep prices steady while Mark expands (lose customers)"
+  },
+  "B": {
+    4: "Maintain operations while Sarah keeps prices steady (maximize profits)",
+    3: "Expand while Sarah keeps prices steady (gain market share)",
+    2: "Maintain operations while Sarah lowers prices (status quo)",
+    1: "Expand while Sarah lowers prices (costly competition)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 3 |
+| A2    | 2 \ 2 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a bustling city, Sarah runs a cozy, independent coffee shop that has been a local favorite for years. Recently, Mark's large coffee chain has been eyeing expansion into Sarah's neighborhood, threatening her business.
+
+Sarah faces a critical decision: she can either keep her prices steady (A1) or lower them (A2) to attract more customers. Meanwhile, Mark must decide whether to maintain his current operations (B1) or aggressively expand into Sarah's area (B2).
+
+If Sarah keeps her prices steady and Mark maintains his current operations (A1, B1), Sarah struggles to compete (1) while Mark enjoys maximum profits (4). If Sarah lowers her prices and Mark stays put (A2, B1), both experience moderate success (2, 2) as Sarah attracts some new customers without directly competing with Mark.
+
+Should Mark decide to expand while Sarah keeps prices steady (A1, B2), both would face challenges but could coexist (3, 3) as Sarah retains loyal customers and Mark gains new ones. However, if Sarah lowers her prices as Mark expands (A2, B2), Sarah might survive and even gain market share (4), but Mark would face costly competition (1).
+
+Their decisions will shape the local coffee market and determine the fate of Sarah's beloved shop.
+[/Scenario]

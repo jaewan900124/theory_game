@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a psychologist",
+  "B": "Alex Chen, a psychology student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on research",
+  "A2": "Work independently",
+  "B1": "Assist with data collection",
+  "B2": "Focus on personal studies"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work independently while Alex focuses on personal studies",
+    3: "Collaborate on research while Alex assists with data collection",
+    2: "Work independently while Alex assists with data collection",
+    1: "Collaborate on research while Alex focuses on personal studies"
+  },
+  "B": {
+    4: "Assist with data collection while Dr. Thompson collaborates on research",
+    3: "Focus on personal studies while Dr. Thompson works independently",
+    2: "Focus on personal studies while Dr. Thompson collaborates on research",
+    1: "Assist with data collection while Dr. Thompson works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 2 |
+| A2    | 2 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson, a respected psychologist at a prestigious university, is faced with a decision regarding her upcoming research project. She has the option to either collaborate on research with her colleagues or work independently on a novel idea she's been developing. At the same time, Alex Chen, a bright psychology student in Dr. Thompson's department, is trying to decide whether to assist with data collection for faculty research or focus solely on his personal studies.
+
+Dr. Thompson's ideal scenario would be to work independently on her groundbreaking idea while Alex focuses on his studies, allowing her to maintain full control over her research. However, she also recognizes the value of collaboration and would find it beneficial to work with colleagues if Alex were available to assist with data collection.
+
+Alex, on the other hand, is most excited about the prospect of assisting with data collection, especially if it means working on a collaborative project with Dr. Thompson and her colleagues. He sees this as an excellent opportunity to gain practical experience and network within the field. However, if Dr. Thompson decides to work independently, Alex would prefer to focus on his studies rather than assist with data collection for a project he's less invested in.
+
+The situation creates an interesting dynamic where both Dr. Thompson and Alex have to consider not only their own preferences but also how their decisions might impact the other person. Dr. Thompson must weigh the benefits of collaboration against the potential for more impactful independent work, while Alex needs to balance his desire for hands-on experience with the need to excel in his studies.
+
+Their choices will ultimately determine the outcome of the research project and Alex's academic experience. Will they find a way to align their interests, or will they pursue their individual goals at the expense of potential synergy?
+[/Scenario]

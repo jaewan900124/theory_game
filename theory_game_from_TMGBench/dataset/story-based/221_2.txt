@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Sarah, a talented software developer",
+  "B": "TechCorp, a growing technology company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept TechCorp's job offer",
+  "A2": "Decline TechCorp's job offer",
+  "B1": "Offer competitive salary and benefits",
+  "B2": "Offer standard salary and benefits"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Accept job offer with competitive salary and benefits",
+    3: "Accept job offer with standard salary and benefits",
+    2: "Decline job offer, continue job search",
+    1: "Accept job offer, but feel undervalued"
+  },
+  "B": {
+    4: "Hire Sarah with standard salary and benefits",
+    3: "Hire Sarah with competitive salary and benefits",
+    2: "Sarah declines, continue candidate search",
+    1: "Fail to hire Sarah, potentially lose market advantage"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 3 |
+| A2    | 2 \ 2 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Sarah, a talented software developer, has just received a job offer from TechCorp, a growing technology company. Both Sarah and TechCorp face a crucial decision that will impact their future.
+
+Sarah (A) has two choices: accept TechCorp's job offer (A1) or decline it (A2). TechCorp (B) also has two options: offer a competitive salary and benefits package (B1) or propose a standard salary and benefits package (B2).
+
+Sarah's most preferred outcome is to accept the job offer with a competitive salary and benefits (A1B1, preference 4). Her second choice would be to accept the offer with standard compensation (A1B2, preference 3). If she declines the offer, she would prefer to continue her job search rather than feel undervalued in a new position (A2B1, preference 2). Her least preferred scenario is accepting the job but feeling undervalued due to subpar compensation (A1B1, preference 1).
+
+TechCorp's ideal scenario is to hire Sarah with a standard salary and benefits package (A1B2, preference 4). Their second choice is to secure Sarah's talent with a competitive offer (A1B1, preference 3). If Sarah declines, they would prefer to continue their candidate search (A2B1 or A2B2, preference 2). Their least desired outcome is failing to hire Sarah and potentially losing market advantage to competitors (A2B2, preference 1).
+
+The payoff matrix reflects these preferences, showing the complex interplay between Sarah's career aspirations and TechCorp's business goals. Sarah must weigh the opportunity against her worth, while TechCorp must balance their budget with the need to attract top talent. Their decisions will determine whether they forge a mutually beneficial partnership or part ways, each facing the consequences of their choices in the competitive tech industry landscape.
+[/Scenario]

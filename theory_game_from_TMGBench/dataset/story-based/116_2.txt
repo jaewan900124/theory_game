@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Senator Sarah Thompson",
+  "B": "Governor Mark Anderson"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Support bipartisan infrastructure bill",
+  "A2": "Oppose bipartisan infrastructure bill",
+  "B1": "Endorse Senator Thompson's re-election",
+  "B2": "Remain neutral in Senator Thompson's re-election"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Oppose bill and receive endorsement",
+    3: "Support bill and not receive endorsement",
+    2: "Oppose bill and not receive endorsement",
+    1: "Support bill and receive endorsement"
+  },
+  "B": {
+    4: "Senator supports bill and receives endorsement",
+    3: "Senator opposes bill and receives endorsement",
+    2: "Senator supports bill and doesn't receive endorsement",
+    1: "Senator opposes bill and doesn't receive endorsement"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 3 \ 2 |
+| A2    | 2 \ 3 | 4 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Senator Sarah Thompson and Governor Mark Anderson find themselves in a complex political situation as the vote for a bipartisan infrastructure bill approaches. Senator Thompson, facing a tough re-election campaign, must decide whether to support or oppose the bill. Meanwhile, Governor Anderson, a popular figure in the state, is considering whether to endorse Senator Thompson's re-election bid.
+
+Senator Thompson is torn. Supporting the bill could bring much-needed funding to her state, but it might alienate her core supporters who oppose increased government spending. Opposing the bill aligns with her base but might cost her moderate voters. Her ideal scenario would be to oppose the bill (maintaining her conservative credentials) while still receiving the governor's endorsement, which could sway moderate voters.
+
+Governor Anderson sees the infrastructure bill as vital for the state's development. He wants Senator Thompson to support it, but he's also aware of the political capital his endorsement carries. Ideally, he'd like to endorse the senator if she supports the bill, as this would both advance his policy goals and maintain a good relationship with a potential ally in Washington.
+
+The payoff matrix reflects their complex preferences:
+
+1. If Senator Thompson supports the bill (A1) and receives the endorsement (B1), she gains some moderate voters but risks her base (payoff 1), while the Governor achieves his ideal outcome (payoff 4).
+
+2. If Thompson supports the bill (A1) without the endorsement (B2), she maintains a moderate stance without appearing too cozy with the popular governor (payoff 3), while the Governor gets the bill support but loses leverage (payoff 2).
+
+3. If Thompson opposes the bill (A2) and receives the endorsement (B1), she keeps her base happy and gains moderate support (payoff 4), while the Governor maintains political ties but loses on policy (payoff 3).
+
+4. If Thompson opposes the bill (A2) without the endorsement (B2), she pleases her base but struggles with moderates (payoff 2), while the Governor faces his worst-case scenario (payoff 1).
+
+As the vote approaches, both politicians must carefully consider their choices, weighing personal political gain against policy outcomes and long-term political relationships.
+[/Scenario]

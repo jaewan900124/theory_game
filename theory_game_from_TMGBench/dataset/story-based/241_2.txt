@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "General Hawke",
+  "B": "Admiral Storm"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Launch a land invasion",
+  "A2": "Hold defensive positions",
+  "B1": "Conduct naval blockade",
+  "B2": "Provide air support"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Launch a land invasion with air support",
+    3: "Hold defensive positions with naval blockade",
+    2: "Launch a land invasion with naval blockade",
+    1: "Hold defensive positions with air support"
+  },
+  "B": {
+    4: "Conduct naval blockade with land invasion",
+    3: "Provide air support with land invasion",
+    2: "Conduct naval blockade with defensive positions",
+    1: "Provide air support with defensive positions"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 4 \ 3 |
+| A2    | 3 \ 2 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Hawke of the Army and Admiral Storm of the Navy face a critical decision that could determine the outcome of a conflict in a strategic coastal region.
+
+General Hawke has two options: launch a daring land invasion (A1) or hold defensive positions (A2). Admiral Storm must choose between conducting a naval blockade (B1) or providing air support (B2).
+
+General Hawke's ideal scenario is to launch a land invasion with air support (A1-B2), as it provides the best chance for a swift victory. His second preference is to hold defensive positions while the navy conducts a blockade (A2-B1), which is a safer but less decisive option. Launching a land invasion with only naval blockade support (A1-B1) is his third choice, as it lacks air cover. His least preferred option is holding defensive positions with only air support (A2-B2), as it doesn't utilize the army's strengths.
+
+Admiral Storm, on the other hand, prefers conducting a naval blockade while the army launches a land invasion (A1-B1), as it maximizes the navy's impact. His second choice is providing air support for a land invasion (A1-B2), which still contributes significantly to the operation. Conducting a naval blockade while the army holds defensive positions (A2-B1) is his third preference, as it's less impactful. His least favored scenario is providing air support while the army remains defensive (A2-B2), which he sees as an inefficient use of resources.
+
+The payoff matrix reflects these preferences, with each officer's choices leading to different strategic outcomes. They must now decide their courses of action, knowing that their individual decisions will significantly impact the overall military strategy and the conflict's outcome.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "General Alpha",
+  "B": "General Beta"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops to the border",
+  "A2": "Conduct a surprise attack",
+  "B1": "Strengthen defensive positions",
+  "B2": "Launch a preemptive strike"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successful surprise attack",
+    3: "Mutual border reinforcement",
+    2: "Failed surprise attack",
+    1: "Suffer preemptive strike"
+  },
+  "B": {
+    4: "Successful defense against deployed troops",
+    3: "Successful defense against surprise attack",
+    2: "Mutual border reinforcement",
+    1: "Suffer surprise attack"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 1 \ 1 |
+| A2    | 2 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense geopolitical climate, two neighboring countries find themselves on the brink of conflict. General Alpha, commander of the Alphaland forces, and General Beta, leader of the Betaland military, must make crucial decisions that will determine the fate of their nations.
+
+General Alpha has two options: deploy troops to the border (A1) or conduct a surprise attack (A2). General Beta can either strengthen defensive positions (B1) or launch a preemptive strike (B2).
+
+If both generals choose to reinforce their positions (A1, B1), it results in a mutual border reinforcement. This scenario is General Alpha's third preference and General Beta's fourth preference, as it maintains the status quo but increases tension.
+
+Should General Alpha deploy troops while General Beta launches a preemptive strike (A1, B2), both countries suffer significant losses. This is the least preferred outcome for both generals, as it leads to a destructive conflict with no clear advantage.
+
+If General Alpha conducts a surprise attack while General Beta focuses on defense (A2, B1), it results in a failed surprise attack. This is General Alpha's second preference, as the attack is repelled but without severe losses. It's General Beta's third preference, as they successfully defend but face increased hostilities.
+
+Finally, if General Alpha launches a surprise attack while General Beta attempts a preemptive strike (A2, B2), Alpha's forces would likely succeed due to better preparation. This is General Alpha's most preferred outcome but only General Beta's second preference, as they fail to prevent the attack but avoid total defeat.
+
+The generals must now decide their strategies, knowing that their choices will have far-reaching consequences for their nations and the region's stability.
+[/Scenario]

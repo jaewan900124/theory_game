@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Captain Elena Ramos, commander of the interstellar exploration vessel 'Horizon'",
+  "B": "Dr. Xander Chen, lead scientist of the alien biology research team"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Follow strict safety protocols",
+  "A2": "Take calculated risks for potential breakthroughs",
+  "B1": "Focus on non-invasive observation",
+  "B2": "Conduct hands-on experiments with alien specimens"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Take risks and make groundbreaking discoveries",
+    3: "Take risks while the research team observes cautiously",
+    2: "Maintain safety while allowing hands-on experiments",
+    1: "Strictly adhere to safety protocols with minimal research progress"
+  },
+  "B": {
+    4: "Conduct hands-on experiments with the captain's support",
+    3: "Take risks and make breakthroughs together",
+    2: "Observe safely while following protocols",
+    1: "Limit research to observation while the captain takes risks"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 2 \ 4 |
+| A2    | 3 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+The interstellar exploration vessel 'Horizon' has just landed on an uncharted exoplanet teeming with exotic alien life forms. Captain Elena Ramos, known for her cautious approach to space exploration, faces a crucial decision. She must choose between strictly adhering to safety protocols (A1) or taking calculated risks for potential breakthroughs (A2).
+
+Meanwhile, Dr. Xander Chen, the enthusiastic lead scientist of the alien biology research team, is eager to study the new life forms. He must decide whether to focus on non-invasive observation (B1) or conduct hands-on experiments with alien specimens (B2).
+
+Captain Ramos prefers scenarios where groundbreaking discoveries are made, especially if she's involved in taking the risks. However, she's also mindful of her crew's safety. Dr. Chen, on the other hand, is most excited about the prospect of hands-on experiments, particularly if he has the captain's support.
+
+If both choose the safest options (A1, B1), minimal progress is made, frustrating both of them (payoff: 1,2). If Ramos takes risks while Chen observes (A2, B1), she feels accomplished but Chen feels left out (payoff: 3,1). If Ramos maintains safety while Chen experiments (A1, B2), Chen is thrilled but Ramos worries about potential dangers (payoff: 2,4). The ideal scenario for both is taking risks together and making breakthroughs (A2, B2), resulting in the highest combined payoff (4,3).
+
+As they stand at the airlock, preparing to step onto the alien world, Captain Ramos and Dr. Chen exchange glances. The decision they make in the next few moments will not only shape their mission but potentially change the course of human understanding of extraterrestrial life. The tension is palpable as they weigh their options, knowing that their choices will have far-reaching consequences for space exploration.
+[/Scenario]

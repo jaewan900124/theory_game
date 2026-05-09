@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "EcoTech, a green technology company",
+  "B": "NatureLand, a national park"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Implement advanced eco-monitoring system",
+  "A2": "Maintain current technology",
+  "B1": "Allow unrestricted access for research",
+  "B2": "Limit research access"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement system with unrestricted access",
+    3: "Implement system with limited access",
+    2: "Maintain current tech with limited access",
+    1: "Maintain current tech with unrestricted access",
+  },
+  "B": {
+    4: "Unrestricted access with current tech",
+    3: "Limited access with new system",
+    2: "Limited access with current tech",
+    1: "Unrestricted access with new system",
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoTech \ NatureLand | Allow unrestricted access (B1) | Limit research access (B2) |
+|-----------------------|--------------------------------|----------------------------|
+| Implement system (A1) | 1 \ 4                          | 4 \ 1                      |
+| Maintain current (A2) | 2 \ 2                          | 3 \ 3                      |
+[/Payoff Matrix]
+
+[Scenario]
+In a world increasingly focused on environmental preservation, EcoTech, a cutting-edge green technology company, and NatureLand, a sprawling national park, find themselves at a crossroads. EcoTech has developed an advanced eco-monitoring system that could revolutionize wildlife tracking and environmental data collection. However, its implementation requires significant access to NatureLand's pristine ecosystems.
+
+EcoTech's choices are to either implement this new system (A1) or maintain their current technology (A2). They prefer to implement the system with unrestricted access, as this would provide the most comprehensive data. Their least preferred outcome is maintaining current technology with unrestricted access, as this would mean missed opportunities and potential overcrowding of research areas.
+
+NatureLand, on the other hand, must decide whether to allow unrestricted access for research (B1) or limit research access (B2). Their top preference is unrestricted access with current technology, as this allows for research without the potential disruption of new, untested systems. Their least preferred scenario is unrestricted access with the new system, fearing it might disturb the delicate balance of their ecosystems.
+
+If EcoTech implements the system and NatureLand allows unrestricted access, EcoTech faces challenges in managing the influx of data and potential ecosystem disruption (payoff: 1), while NatureLand benefits from cutting-edge research (payoff: 4).
+
+If EcoTech implements the system but NatureLand limits access, EcoTech gets ideal conditions for their technology (payoff: 4), but NatureLand struggles with limited data and potential ecosystem imbalances (payoff: 1).
+
+If EcoTech maintains current technology and NatureLand allows unrestricted access, both parties achieve a moderate outcome (payoffs: 2, 2), balancing research opportunities with ecosystem preservation.
+
+Finally, if EcoTech maintains current technology and NatureLand limits access, both achieve a satisfactory compromise (payoffs: 3, 3), allowing for controlled research without risking major ecosystem disruption.
+
+The challenge lies in finding a solution that balances technological advancement with ecological preservation, a dilemma that mirrors real-world struggles in environmental management and conservation.
+[/Scenario]

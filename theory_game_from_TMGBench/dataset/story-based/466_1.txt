@@ -1,0 +1,70 @@
+[Characters]
+{
+  "A": "Dr. Elara Voss, brilliant astrophysicist",
+  "B": "Captain Zane Orion, experienced space explorer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on Mars exploration",
+  "A2": "Pursue deep space research",
+  "B1": "Collaborate on joint mission",
+  "B2": "Launch independent expedition"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue deep space research independently",
+    3: "Collaborate on deep space research",
+    2: "Focus on Mars exploration independently",
+    1: "Collaborate on Mars exploration"
+  },
+  "B": {
+    4: "Launch independent Mars expedition",
+    3: "Collaborate on deep space research",
+    2: "Collaborate on Mars exploration",
+    1: "Support deep space research independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Collaborate) | B2 (Independent) |
+|-------|------------------|-------------------|
+| A1 (Mars) | 1 \ 2           | 2 \ 4            |
+| A2 (Deep Space) | 3 \ 1           | 4 \ 3            |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, humanity stands at the brink of a new era in space exploration. Dr. Elara Voss, a brilliant astrophysicist, and Captain Zane Orion, an experienced space explorer, find themselves at the forefront of this exciting frontier. The Global Space Agency has tasked them with making a crucial decision that will shape the future of space exploration.
+
+Dr. Voss has always been fascinated by the mysteries of deep space and believes that pursuing research in this area could lead to groundbreaking discoveries about the nature of the universe. Her preference is to focus on deep space exploration, which she believes will yield the most significant scientific advancements.
+
+Captain Orion, on the other hand, is more pragmatic. He sees Mars as the next logical step in human space exploration and believes that establishing a presence on the Red Planet should be the priority. His experience has taught him the value of tangible goals and immediate results.
+
+The Global Space Agency has given them two options each:
+
+Dr. Voss can choose to:
+A1: Focus on Mars exploration
+A2: Pursue deep space research
+
+Captain Orion can decide to:
+B1: Collaborate on a joint mission
+B2: Launch an independent expedition
+
+Their decisions will determine the course of the space program for the next decade. The outcomes of their choices are reflected in the payoff matrix, where higher numbers represent more preferred scenarios for each character.
+
+If they both choose to collaborate on Mars exploration (A1, B1), it would be Dr. Voss's least preferred outcome (1) as it diverts resources from deep space research. For Captain Orion, it's a moderately good option (2) as he gets to work on his preferred destination.
+
+If Dr. Voss focuses on Mars while Captain Orion launches an independent expedition (A1, B2), it's slightly better for Dr. Voss (2) as she has more control, and it's Captain Orion's most preferred outcome (4) as he can fully pursue his Mars mission.
+
+If they collaborate on deep space research (A2, B1), it's Dr. Voss's second-best outcome (3) as she gets to work on her preferred area with support. However, it's Captain Orion's least preferred option (1) as it takes him away from Mars exploration.
+
+Finally, if they both pursue independent missions (A2, B2), with Dr. Voss focusing on deep space and Captain Orion on Mars, it's the best outcome for Dr. Voss (4) and a good outcome for Captain Orion (3) as they both get to work on their preferred projects.
+
+As they sit across from each other in the space agency's conference room, the weight of their decision hangs in the air. Will they choose to collaborate or pursue their individual passions? The future of space exploration rests on their choices.
+[/Scenario]

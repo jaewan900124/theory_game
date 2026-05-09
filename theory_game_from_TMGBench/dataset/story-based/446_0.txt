@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local environmental conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products using local resources",
+  "A2": "Outsource production to reduce costs",
+  "B1": "Collaborate with EcoTech for sustainable resource management",
+  "B2": "Oppose any commercial activity in the forest"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Outsource production while GreenForest opposes (maximum profit)",
+    3: "Develop eco-friendly products with GreenForest's collaboration",
+    2: "Outsource production with GreenForest's collaboration",
+    1: "Develop eco-friendly products while GreenForest opposes"
+  },
+  "B": {
+    4: "EcoTech develops eco-friendly products while GreenForest opposes",
+    3: "EcoTech outsources production while GreenForest opposes",
+    2: "EcoTech develops eco-friendly products with GreenForest's collaboration",
+    1: "EcoTech outsources production with GreenForest's collaboration"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| EcoTech \ GreenForest | Collaborate (B1) | Oppose (B2) |
+|-----------------------|-------------------|-------------|
+| Eco-friendly (A1)     | 3 \ 2             | 1 \ 4       |
+| Outsource (A2)        | 2 \ 1             | 4 \ 3       |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town nestled at the edge of a lush forest, EcoTech, a sustainable technology company, is planning to expand its operations. The company is known for its innovative eco-friendly products but is also under pressure to increase profits. On the other side, GreenForest, a local environmental conservation group, is dedicated to protecting the forest's ecosystem and biodiversity.
+
+EcoTech faces a crucial decision: they can either develop eco-friendly products using local resources (A1) or outsource production to reduce costs (A2). Meanwhile, GreenForest must decide whether to collaborate with EcoTech for sustainable resource management (B1) or oppose any commercial activity in the forest (B2).
+
+EcoTech's ideal scenario is to outsource production while GreenForest opposes (A2, B2), as this would maximize their profits while maintaining a "green" image. Their second preference is to develop eco-friendly products with GreenForest's collaboration (A1, B1), which would be good for their reputation but less profitable. Their least preferred option is to develop eco-friendly products while GreenForest opposes (A1, B2), as this would hurt both their profits and reputation.
+
+GreenForest, on the other hand, would most prefer EcoTech to develop eco-friendly products while they maintain their opposition (A1, B2), as this would minimize forest impact while keeping them true to their principles. Their least preferred scenario is EcoTech outsourcing production with GreenForest's collaboration (A2, B1), as this would be seen as compromising their values without any ecological benefit.
+
+The town watches anxiously as these two influential entities make their decisions, knowing that the outcome will significantly impact both the local economy and the forest's future. Will EcoTech and GreenForest find a way to cooperate, or will their competing interests lead to conflict? The delicate balance of ecology and economy hangs in the balance, dependent on the choices these two groups make.
+[/Scenario]

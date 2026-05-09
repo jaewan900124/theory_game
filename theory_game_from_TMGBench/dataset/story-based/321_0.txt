@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop eco-friendly products using local resources",
+  "A2": "Outsource production to reduce costs",
+  "B1": "Collaborate with EcoTech for sustainable resource management",
+  "B2": "Implement strict conservation measures limiting resource use"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop eco-friendly products with full access to local resources",
+    3: "Outsource production while maintaining a positive local image",
+    2: "Outsource production but face local criticism",
+    1: "Limited access to resources for eco-friendly product development"
+  },
+  "B": {
+    4: "Strict conservation with eco-friendly local production",
+    3: "Collaborative sustainable resource management",
+    2: "Strict conservation measures with outsourced production",
+    1: "Uncontrolled resource use for local production"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 4 \ 4 |
+| A2    | 2 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a lush, biodiverse forest region, EcoTech, a sustainable technology company, and GreenForest, a local conservation group, find themselves at a crossroads. EcoTech aims to develop eco-friendly products while balancing profitability, whereas GreenForest is dedicated to preserving the local ecosystem.
+
+EcoTech has two options: develop eco-friendly products using local resources (A1) or outsource production to reduce costs (A2). GreenForest can either collaborate with EcoTech for sustainable resource management (B1) or implement strict conservation measures limiting resource use (B2).
+
+EcoTech's most preferred outcome is to develop eco-friendly products with full access to local resources, followed by outsourcing production while maintaining a positive local image. Their least preferred scenario is having limited access to resources for eco-friendly product development.
+
+GreenForest's top preference is to implement strict conservation measures while supporting eco-friendly local production. They also value collaborative sustainable resource management but are less enthusiastic about strict conservation with outsourced production. Their least preferred outcome is uncontrolled resource use for local production.
+
+The payoff matrix reveals that if both parties choose to collaborate (A1, B1), EcoTech faces its least preferred outcome (1) due to increased costs and regulations, while GreenForest achieves its second-best outcome (3) through balanced conservation and development.
+
+If EcoTech develops locally and GreenForest implements strict measures (A1, B2), both parties achieve their most preferred outcomes (4, 4), creating a win-win situation with sustainable local production and strong conservation efforts.
+
+When EcoTech outsources and GreenForest collaborates (A2, B1), EcoTech gains its third-best outcome (2) by reducing costs but facing some local criticism, while GreenForest experiences its least preferred scenario (1) due to reduced local economic benefits and potential ecosystem impact.
+
+Lastly, if EcoTech outsources and GreenForest implements strict measures (A2, B2), EcoTech achieves its second-best outcome (3) by maintaining a somewhat positive image despite outsourcing, while GreenForest settles for its third-best scenario (2), ensuring conservation but missing out on local sustainable development opportunities.
+
+This complex interplay between economic interests and environmental conservation highlights the challenges and potential synergies in achieving sustainable development in ecologically sensitive areas.
+[/Scenario]

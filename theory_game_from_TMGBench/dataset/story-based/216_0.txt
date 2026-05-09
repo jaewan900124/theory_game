@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer extra credit assignment",
+  "A2": "No extra credit assignment",
+  "B1": "Participate in study group",
+  "B2": "Study independently"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Students perform well with minimal effort from professor",
+    3: "Students perform well but require extra effort from professor",
+    2: "Students struggle but professor maintains work-life balance",
+    1: "Students struggle and professor's efforts are wasted"
+  },
+  "B": {
+    4: "Achieve high grades with peer support",
+    3: "Achieve good grades through independent study",
+    2: "Improve grades through extra credit",
+    1: "Struggle with grades despite extra work"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Participate in study group) | B2 (Study independently) |
+|-------|----------------------------------|--------------------------|
+| A1 (Offer extra credit) | 2 \ 4 | 4 \ 2 |
+| A2 (No extra credit) | 1 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is teaching a challenging course in Advanced Economics. As the semester progresses, he notices that many students, including Jane, are struggling with the material. Professor Smith must decide whether to offer an extra credit assignment to help boost grades, while Jane is contemplating whether to join a study group or continue studying independently.
+
+Professor Smith prefers that students perform well without him having to put in extra effort (4). His second preference is for students to do well, even if it means more work for him (3). He'd rather maintain his work-life balance even if students struggle (2) than waste effort on interventions that don't help (1).
+
+Jane, on the other hand, most wants to achieve high grades with peer support (4), followed by succeeding through independent study (3). She'd prefer to improve her grades through extra credit (2) rather than struggle despite putting in extra work (1).
+
+If Professor Smith offers the extra credit assignment (A1) and Jane participates in the study group (B1), Jane will benefit greatly from both the peer support and the additional opportunity to improve her grade (4). However, Professor Smith will find this scenario somewhat taxing, as he'll need to create and grade the extra assignment while students are already getting support elsewhere (2).
+
+If Professor Smith offers extra credit (A1) but Jane decides to study independently (B2), this will be ideal for Professor Smith. Students will have the opportunity to improve their grades without requiring additional support from him (4). Jane will see some improvement but miss out on the benefits of peer collaboration (2).
+
+If Professor Smith doesn't offer extra credit (A2) and Jane joins the study group (B1), Jane will still benefit from peer support and likely improve her performance (3). However, Professor Smith will be disappointed that students are struggling and seeking additional help when he hasn't provided extra resources (1).
+
+Lastly, if Professor Smith doesn't offer extra credit (A2) and Jane studies independently (B2), Professor Smith will maintain his work-life balance despite student struggles (3). Unfortunately, Jane will find herself struggling with the material without additional support or opportunities to improve her grade (1).
+
+As the decision deadline approaches, both Professor Smith and Jane must carefully consider their options, knowing that their choices will impact not only their own outcomes but also those of the other party.
+[/Scenario]

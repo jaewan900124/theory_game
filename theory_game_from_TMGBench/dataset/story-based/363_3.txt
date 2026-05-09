@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented software engineer",
+  "B": "Blake, a visionary tech entrepreneur"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on Blake's startup project",
+  "A2": "Work independently on personal projects",
+  "B1": "Keep the project closed-source",
+  "B2": "Make the project open-source"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on an open-source project",
+    3: "Collaborate on a closed-source project",
+    2: "Work independently while the project is open-source",
+    1: "Work independently while the project is closed-source"
+  },
+  "B": {
+    4: "Collaborate on an open-source project",
+    3: "Keep the project closed-source with Alex's collaboration",
+    2: "Keep the project closed-source without Alex's collaboration",
+    1: "Make the project open-source without Alex's collaboration"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Closed) | B2 (Open) |
+|-------|-------------|-----------|
+| A1 (Collaborate) | 3 \ 3     | 4 \ 4     |
+| A2 (Independent) | 1 \ 2     | 2 \ 1     |
+[/Payoff Matrix]
+
+[Scenario]
+In the bustling tech hub of Silicon Valley, Alex, a brilliant software engineer, crosses paths with Blake, a charismatic tech entrepreneur with a groundbreaking idea for a new AI-powered personal assistant. Blake is eager to bring Alex on board to help develop the project, but faces a crucial decision: whether to keep the project closed-source or make it open-source.
+
+Alex, known for their innovative coding skills and passion for collaborative work, is intrigued by Blake's proposal. However, Alex is also contemplating focusing on personal projects that could potentially lead to individual success in the tech world.
+
+Both Alex and Blake have different preferences for how they'd like the situation to unfold:
+
+Alex's ideal scenario would be to collaborate on an open-source project, allowing for community contributions and widespread recognition. Their second preference would be to collaborate on a closed-source project, still benefiting from the teamwork but with less public visibility. If working independently, Alex would prefer the project to be open-source, allowing them to potentially contribute or learn from it. Their least preferred outcome would be working independently while the project remains closed-source, feeling like a missed opportunity.
+
+Blake, on the other hand, sees the greatest potential in collaborating with Alex on an open-source project, believing it could lead to rapid development and adoption of their AI assistant. Their second choice would be to keep the project closed-source with Alex's collaboration, maintaining more control over the intellectual property. If Alex decides not to collaborate, Blake would prefer to keep the project closed-source to protect their idea. Making the project open-source without Alex's expertise is Blake's least preferred outcome, fearing it might not reach its full potential.
+
+As they sit across from each other in a trendy Silicon Valley coffee shop, both Alex and Blake must make their decisions. Will Alex choose to collaborate or pursue independent projects? Will Blake opt for an open or closed-source approach? Their choices will not only shape the future of the AI assistant project but also their own careers in the fast-paced world of technology.
+
+The tension is palpable as they consider their options, knowing that their decisions will have far-reaching consequences in the ever-evolving landscape of tech innovation.
+[/Scenario]

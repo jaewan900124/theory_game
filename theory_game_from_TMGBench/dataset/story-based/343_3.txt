@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, a project manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work overtime",
+  "A2": "Maintain regular hours",
+  "B1": "Maintain current project scope",
+  "B2": "Expand project scope"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Work overtime with expanded project scope",
+    3: "Maintain regular hours with current project scope",
+    2: "Work overtime with current project scope",
+    1: "Maintain regular hours with expanded project scope"
+  },
+  "B": {
+    4: "Alex works overtime with expanded project scope",
+    3: "Alex maintains regular hours with current project scope",
+    2: "Alex works overtime with current project scope",
+    1: "Alex maintains regular hours with expanded project scope"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Maintain scope) | B2 (Expand scope) |
+|-------|---------------------|-------------------|
+| A1 (Overtime) | 2 \ 2             | 4 \ 4             |
+| A2 (Regular hours) | 3 \ 3             | 1 \ 1             |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented software developer, and Blake, an ambitious project manager, are working together on a critical software project for their company. As the deadline approaches, they face a crucial decision that will impact both the project's outcome and their work-life balance.
+
+Alex has two choices: work overtime (A1) or maintain regular hours (A2). Blake, on the other hand, can either maintain the current project scope (B1) or expand it to include additional features (B2).
+
+If Alex chooses to work overtime and Blake maintains the current scope (A1, B1), they both receive a moderate benefit (2,2). The project progresses smoothly, but Alex sacrifices personal time, and Blake misses an opportunity for project expansion.
+
+If Alex maintains regular hours and Blake keeps the current scope (A2, B1), they both enjoy a better work-life balance and project stability (3,3). This scenario is preferable to the previous one for both parties.
+
+The most rewarding scenario for both Alex and Blake occurs when Alex agrees to work overtime and Blake expands the project scope (A1, B2). This results in a successful, feature-rich project and potential career advancements for both (4,4).
+
+However, if Alex insists on maintaining regular hours while Blake expands the project scope (A2, B2), both face negative consequences (1,1). The project may fail to meet its expanded goals, potentially harming both of their careers.
+
+Alex and Blake must carefully consider their choices, balancing personal well-being with professional ambitions. Their decision will not only affect the project's outcome but also their working relationship and future opportunities within the company. The challenge lies in finding a mutually beneficial solution that aligns with both their individual preferences and the project's needs.
+[/Scenario]

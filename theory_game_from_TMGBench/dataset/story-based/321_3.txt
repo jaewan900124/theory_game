@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emma, a sociology graduate student",
+  "B": "Dr. Chen, Emma's thesis advisor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pursue original research idea",
+  "A2": "Follow advisor's suggested research direction",
+  "B1": "Support Emma's original idea",
+  "B2": "Insist on own research direction"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue original idea with advisor's support",
+    3: "Follow advisor's direction with their support",
+    2: "Pursue original idea without advisor's support",
+    1: "Follow advisor's direction without their enthusiasm"
+  },
+  "B": {
+    4: "Emma follows suggested direction with enthusiasm",
+    3: "Support Emma's original idea",
+    2: "Emma reluctantly follows suggested direction",
+    1: "Emma pursues original idea without support"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 3 | 4 \ 4 |
+| A2    | 2 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a passionate sociology graduate student, is at a crucial point in her academic journey. She has developed an innovative research idea that she believes could make a significant contribution to the field. However, her thesis advisor, Dr. Chen, has a different vision for her research direction.
+
+Emma must decide whether to pursue her original research idea (A1) or follow Dr. Chen's suggested research direction (A2). Simultaneously, Dr. Chen must choose between supporting Emma's original idea (B1) or insisting on his own research direction (B2).
+
+Emma's ideal scenario is to pursue her original idea with Dr. Chen's support (A1, B1), which would give her the highest satisfaction (4). Her second preference is to follow Dr. Chen's direction with his enthusiastic support (A2, B2), ensuring a smooth collaboration (3). If she decides to pursue her original idea without support (A1, B2), she would face challenges but still find some satisfaction in following her passion (2). Her least preferred outcome is to follow Dr. Chen's direction without his enthusiasm (A2, B1), feeling constrained and unsupported (1).
+
+Dr. Chen, on the other hand, would be most satisfied if Emma enthusiastically follows his suggested direction (A2, B2), as it aligns with his expertise and research goals (4). His second preference is to support Emma's original idea (A1, B1), recognizing the potential for innovation (3). If Emma reluctantly follows his direction (A2, B1), he would find the collaboration less rewarding (2). His least preferred scenario is Emma pursuing her original idea without his support (A1, B2), potentially straining their academic relationship (1).
+
+The outcome of their decisions will significantly impact Emma's thesis, their working relationship, and potentially the field of sociology. Their choices reflect the delicate balance between academic freedom, mentorship, and the pursuit of knowledge in the realm of sociological research.
+[/Scenario]

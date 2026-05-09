@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Jane"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer extra credit assignment",
+  "A2": "No extra credit assignment",
+  "B1": "Attend office hours",
+  "B2": "Skip office hours"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Student skips office hours, but extra credit is offered",
+    3: "No extra credit offered, student skips office hours",
+    2: "Student attends office hours, no extra credit offered",
+    1: "Student attends office hours, extra credit is offered"
+  },
+  "B": {
+    4: "Attend office hours, extra credit is offered",
+    3: "Attend office hours, no extra credit offered",
+    2: "Skip office hours, extra credit is offered",
+    1: "Skip office hours, no extra credit offered"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Attend) | B2 (Skip) |
+|-------|-------------|-----------|
+| A1 (Offer) | 1 \ 4 | 4 \ 2 |
+| A2 (No offer) | 2 \ 3 | 3 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Professor Smith is teaching a challenging course in advanced mathematics. As the semester progresses, he notices that many students, including Jane, are struggling with the material. He's considering offering an extra credit assignment to boost grades, but he's concerned that it might reduce attendance at his office hours, which he believes are crucial for students' understanding.
+
+Professor Smith has two choices: offer the extra credit assignment (A1) or not (A2). He prefers students to work independently and not rely too heavily on his office hours, so his ideal scenario is when extra credit is offered but students don't attend office hours (4). His least preferred scenario is when he offers extra credit and students still attend office hours (1), as he feels this defeats the purpose of encouraging independent work.
+
+Student Jane, on the other hand, is torn between attending office hours (B1) or skipping them (B2). She's struggling in the class and knows that office hours could be beneficial, but she's also busy with other coursework. Jane's ideal scenario is when extra credit is offered and she attends office hours (4), as this gives her the most support. Her least preferred scenario is when there's no extra credit and she skips office hours (1), as this provides her with no additional help.
+
+The situation creates an interesting dynamic:
+- If Professor Smith offers extra credit and Jane attends office hours, Smith feels his time is wasted (1) while Jane gets maximum benefit (4).
+- If Smith offers extra credit and Jane skips office hours, Smith is satisfied (4) but Jane misses out on potential help (2).
+- If Smith doesn't offer extra credit and Jane attends office hours, Smith feels it's somewhat productive (2) and Jane gets some benefit (3).
+- If Smith doesn't offer extra credit and Jane skips office hours, Smith is relatively content (3) but Jane receives no additional support (1).
+
+This scenario illustrates the complex interplay between a professor's teaching strategy and a student's learning approach, highlighting how their choices can lead to different outcomes for both parties involved in the educational process.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "EcoTech, a renewable energy company",
+  "B": "GreenSpace, a conservation organization"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a solar farm in a natural habitat",
+  "A2": "Invest in offshore wind energy",
+  "B1": "Oppose the solar farm development",
+  "B2": "Collaborate on the solar farm project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop solar farm with GreenSpace's collaboration",
+    3: "Invest in offshore wind energy",
+    2: "Develop solar farm despite opposition",
+    1: "Abandon solar farm due to opposition"
+  },
+  "B": {
+    4: "Collaborate on solar farm project",
+    3: "Successfully oppose solar farm development",
+    2: "Unsuccessfully oppose solar farm development",
+    1: "Lose credibility by opposing beneficial project"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 4 \ 4 |
+| A2    | 3 \ 1 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a picturesque valley, EcoTech, a renewable energy company, sees an opportunity to develop a large-scale solar farm. The proposed site is a natural habitat that's home to various species but also receives abundant sunlight, making it ideal for solar energy production. GreenSpace, a local conservation organization, becomes aware of EcoTech's plans and must decide how to respond.
+
+EcoTech (A) has two choices: develop the solar farm in the natural habitat (A1) or invest in offshore wind energy instead (A2). GreenSpace (B) can either oppose the solar farm development (B1) or collaborate on the project to ensure it's done with minimal environmental impact (B2).
+
+If EcoTech proceeds with the solar farm and GreenSpace opposes it (A1, B1), both parties end up in a moderately unfavorable situation. EcoTech faces delays and increased costs due to the opposition, while GreenSpace partially succeeds in protecting the habitat but at the cost of potentially slowing down renewable energy adoption.
+
+If EcoTech chooses offshore wind and GreenSpace opposes the non-existent solar project (A2, B1), EcoTech avoids conflict but misses out on the more profitable solar opportunity. GreenSpace loses credibility by opposing a project that isn't happening.
+
+If EcoTech develops the solar farm and GreenSpace collaborates (A1, B2), both parties achieve their most preferred outcome. EcoTech gets to build its solar farm with community support, while GreenSpace ensures the project is developed sustainably and gains influence in future eco-friendly initiatives.
+
+Lastly, if EcoTech opts for offshore wind and GreenSpace offers to collaborate on the solar project (A2, B2), EcoTech misses out on the collaboration opportunity, while GreenSpace gains some goodwill but doesn't achieve any concrete conservation goals.
+
+The scenario highlights the potential for mutual benefit when environmental and renewable energy organizations work together, as well as the complexities and trade-offs involved in balancing conservation with clean energy development.
+[/Scenario]

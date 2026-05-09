@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Sam, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Attempt to score",
+  "B1": "Set a screen",
+  "B2": "Call for the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Score points and be the hero",
+    3: "Make a successful pass and contribute to team success",
+    2: "Miss the shot but maintain possession",
+    1: "Lose possession of the ball"
+  },
+  "B": {
+    4: "Receive a pass and score",
+    3: "Help teammate score through effective screening",
+    2: "Contribute to team play without direct involvement",
+    1: "Be ignored and left out of the play"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set a screen) | B2 (Call for the ball) |
+|-------|-------------------|------------------------|
+| A1 (Pass the ball) | 3 \ 4             | 4 \ 1                  |
+| A2 (Attempt to score) | 1 \ 2             | 2 \ 3                  |
+[/Payoff Matrix]
+
+[Scenario]
+In the final seconds of a crucial basketball game, Alex finds himself with the ball at the top of the key. The team is down by one point, and this possession could decide the game. Alex's teammate and rival, Sam, is also on the court.
+
+Alex has two choices: pass the ball (A1) or attempt to score (A2). Meanwhile, Sam can either set a screen (B1) or call for the ball (B2).
+
+If Alex passes the ball (A1) and Sam sets a screen (B1), it creates an opportunity for Alex to get open and potentially score after receiving a return pass. This scenario is favorable for both players, with Alex contributing to team success (preference 3) and Sam potentially helping his teammate score (preference 4).
+
+If Alex passes the ball (A1) and Sam calls for it (B2), Alex might make a successful pass, becoming the playmaker (preference 4). However, Sam might not be in the best position to score, leaving him feeling left out (preference 1).
+
+If Alex attempts to score (A2) and Sam sets a screen (B1), Alex might miss the shot due to lack of space, but the team could maintain possession (preference 2). Sam would feel he contributed to the play without direct involvement (preference 2).
+
+Lastly, if Alex attempts to score (A2) while Sam calls for the ball (B2), Alex might score and be the hero (preference 2), while Sam could feel he had a chance to be involved in the play (preference 3).
+
+The tension between individual glory and team success creates a complex decision-making process for both players. Their choices will not only affect the outcome of the game but also their personal standings within the team and their relationship with each other.
+[/Scenario]

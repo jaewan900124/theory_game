@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emily, a talented but struggling painter",
+  "B": "Marcus, a successful art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a provocative, avant-garde piece",
+  "A2": "Paint a safe, commercially appealing work",
+  "B1": "Offer exclusive representation to Emily",
+  "B2": "Decline to represent Emily"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create provocative art and get exclusive representation",
+    3: "Create safe art and get exclusive representation",
+    2: "Create provocative art without representation",
+    1: "Create safe art without representation"
+  },
+  "B": {
+    4: "Represent Emily's provocative art exclusively",
+    3: "Decline to represent Emily's safe art",
+    2: "Represent Emily's safe art exclusively",
+    1: "Decline to represent Emily's provocative art"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emily \ Marcus | Offer exclusive representation | Decline representation |
+|-----------------|--------------------------------|------------------------|
+| Provocative art | 2 \ 4                          | 4 \ 1                  |
+| Safe art        | 1 \ 3                          | 3 \ 2                  |
+[/Payoff Matrix]
+
+[Scenario]
+Emily, a talented but struggling painter, stands at a crossroads in her artistic career. She has caught the attention of Marcus, a successful art gallery owner known for his keen eye and influential position in the art world. Emily must decide whether to create a provocative, avant-garde piece that truly reflects her artistic vision or to paint a safe, commercially appealing work that might be more marketable.
+
+Marcus, on the other hand, is considering whether to offer Emily exclusive representation in his gallery or to decline working with her altogether. He recognizes Emily's potential but is unsure about the marketability of her work.
+
+Emily's preferences are clear: her dream scenario is to create provocative art and secure exclusive representation (4), followed by creating safe art with representation (3). She would rather create provocative art without representation (2) than compromise her vision for a safe piece that doesn't get represented (1).
+
+Marcus prefers to represent Emily's provocative art exclusively (4), as he believes it could generate buzz and elevate his gallery's reputation. His second choice would be to decline representing Emily's safe art (3), as it doesn't align with his gallery's image. Representing Emily's safe art (2) is less appealing but still profitable, while declining her provocative art (1) is his least preferred option, as he fears missing out on a potential groundbreaking artist.
+
+The situation creates a complex dynamic where Emily's artistic integrity and Marcus's business acumen are put to the test. If Emily creates provocative art and Marcus offers representation, it's a good outcome for both, but not ideal for Emily (2 \ 4). If Emily goes the safe route and Marcus represents her, it's Emily's second-worst outcome but Marcus's second-best (1 \ 3).
+
+The most intriguing scenarios arise when their choices don't align. If Emily creates provocative art but Marcus declines representation, Emily achieves her second-best outcome while Marcus faces his worst (4 \ 1). Conversely, if Emily plays it safe and Marcus declines, it's a mediocre outcome for both, but slightly better for Emily (3 \ 2).
+
+As they contemplate their decisions, both Emily and Marcus must consider not only their own preferences but also anticipate the other's choice, creating a tense and thought-provoking artistic dilemma.
+[/Scenario]

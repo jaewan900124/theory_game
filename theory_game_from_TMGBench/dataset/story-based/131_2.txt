@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a civil engineer",
+  "B": "Blake, an architectural engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Use traditional concrete",
+  "A2": "Use experimental eco-friendly material",
+  "B1": "Design for maximum aesthetics",
+  "B2": "Design for maximum functionality"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Eco-friendly material with functional design",
+    3: "Traditional concrete with aesthetic design",
+    2: "Traditional concrete with functional design",
+    1: "Eco-friendly material with aesthetic design"
+  },
+  "B": {
+    4: "Traditional concrete with aesthetic design",
+    3: "Traditional concrete with functional design",
+    2: "Eco-friendly material with aesthetic design",
+    1: "Eco-friendly material with functional design"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Aesthetics) | B2 (Functionality) |
+|-------|-----------------|---------------------|
+| A1 (Traditional) | 3 \ 4           | 2 \ 3               |
+| A2 (Eco-friendly) | 1 \ 2           | 4 \ 1               |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake are collaborating on a new sustainable office building project. As the civil engineer, Alex is responsible for choosing the primary construction material, while Blake, the architectural engineer, must decide on the overall design approach.
+
+Alex is torn between using traditional concrete (A1) and an experimental eco-friendly material (A2). The eco-friendly option aligns with the project's sustainability goals but is riskier and less tested. Blake, on the other hand, must choose between prioritizing aesthetics (B1) or functionality (B2) in the building's design.
+
+Alex's top preference is to use the eco-friendly material with a functional design, as it would showcase innovation while ensuring practicality. However, Alex also recognizes that using traditional concrete with an aesthetic design would be a safe and visually appealing choice. The least preferable option for Alex is using the eco-friendly material with a purely aesthetic design, as it might compromise the building's structural integrity.
+
+Blake prefers working with traditional materials and prioritizes aesthetics, believing that a visually striking building will attract more attention and clients. Blake's second choice would be a functional design using traditional concrete, valuing reliability. The eco-friendly material is Blake's least preferred option, especially when combined with a functional design, as it presents unknown challenges and might limit creative expression.
+
+The payoff matrix reflects their preferences, with each number representing the degree of satisfaction for each scenario (4 being most preferred, 1 being least preferred).
+
+If they choose conflicting approaches (e.g., eco-friendly material with aesthetic design), it could lead to complications in the project. However, if they can find a middle ground or convince each other of their preferred choices, they might achieve a more satisfactory outcome for both.
+
+As they sit down to discuss their options, both Alex and Blake must consider not only their own preferences but also how their choices will affect their colleague and the overall success of the project. Their decision will shape the future of sustainable architecture in their city and potentially influence industry standards.
+[/Scenario]

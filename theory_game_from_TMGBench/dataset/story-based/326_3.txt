@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Olivia, a passionate abstract painter",
+  "B": "Marcus, a skilled digital artist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a mixed-media project",
+  "A2": "Work independently on separate artworks",
+  "B1": "Stick to his digital-only approach",
+  "B2": "Embrace a mixed-media collaboration"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate on a mixed-media project while Marcus embraces the idea",
+    3: "Work independently on separate artworks while Marcus does the same",
+    2: "Work independently while Marcus sticks to digital-only",
+    1: "Attempt collaboration while Marcus refuses to deviate from digital"
+  },
+  "B": {
+    4: "Embrace mixed-media collaboration with Olivia",
+    3: "Work independently on digital art while Olivia works separately",
+    2: "Stick to digital-only while Olivia attempts collaboration",
+    1: "Maintain digital-only approach while Olivia works independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 2 | 4 \ 4 |
+| A2    | 2 \ 1 | 3 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Olivia and Marcus are two talented artists invited to create pieces for an upcoming exhibition at a prestigious gallery. Olivia, known for her vibrant abstract paintings, sees this as an opportunity to push boundaries and explore new artistic territories. Marcus, on the other hand, has built his reputation on cutting-edge digital art and is comfortable in that realm.
+
+The gallery owner has hinted that innovative, collaborative works might receive prime placement and additional promotion. This sets the stage for a potential collaboration between Olivia and Marcus, but also introduces a element of competition as they each consider their artistic integrity and personal success.
+
+Olivia is excited about the idea of a mixed-media collaboration (A1), believing it could lead to groundbreaking art that combines her painterly techniques with Marcus's digital expertise. This is her most preferred outcome, especially if Marcus is equally enthusiastic (A1/B2, payoff 4/4).
+
+Marcus is initially hesitant about deviating from his digital comfort zone. His natural inclination is to stick to his digital-only approach (B1). However, he's intrigued by the potential benefits of collaboration and the gallery owner's hints.
+
+If Olivia pushes for collaboration while Marcus resists (A1/B1, payoff 1/2), it could lead to tension and a subpar result. Olivia would be frustrated by the limitations, while Marcus might feel a small sense of satisfaction in maintaining his artistic identity.
+
+Both artists have the option to work independently (A2/B2, payoff 3/3). This "safe" choice would allow them to create solid individual pieces, but they might miss out on the excitement and potential rewards of collaboration.
+
+If Olivia decides to work independently while Marcus has a change of heart and wants to collaborate (A2/B2, payoff 3/3), they'd still end up working separately but with a sense of missed opportunity.
+
+The scenario where Olivia works independently and Marcus sticks to digital (A2/B1, payoff 2/1) would be the least satisfying for Marcus, as he'd feel he missed a chance to innovate, while Olivia would have slightly more satisfaction in creating her own work.
+
+As the exhibition deadline approaches, Olivia and Marcus must decide whether to take the risk of collaboration or play it safe with their individual strengths. Their choices will not only affect the art they create but also their professional relationship and future opportunities in the art world.
+[/Scenario]

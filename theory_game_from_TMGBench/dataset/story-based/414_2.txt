@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a talented basketball player",
+  "B": "Blake, Alex's teammate and rival"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Pass the ball",
+  "A2": "Shoot the ball",
+  "B1": "Set a screen",
+  "B2": "Call for the ball"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Shoot and score",
+    3: "Pass and teammate scores",
+    2: "Shoot and miss",
+    1: "Pass and turnover"
+  },
+  "B": {
+    4: "Receive pass and score",
+    3: "Set screen leading to teammate's score",
+    2: "Set screen but play fails",
+    1: "Call for ball but doesn't receive it"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Set screen) | B2 (Call for ball) |
+|-------|-----------------|---------------------|
+| A1 (Pass) | 1 \ 1           | 3 \ 4              |
+| A2 (Shoot) | 2 \ 3           | 4 \ 2              |
+[/Payoff Matrix]
+
+[Scenario]
+In the final seconds of a crucial basketball game, Alex finds himself with the ball at the three-point line. The team is down by two points, and this possession will likely determine the outcome of the game. Alex's teammate and longtime rival, Blake, is also on the court.
+
+Alex (A) has two choices: pass the ball (A1) or attempt to shoot (A2). Meanwhile, Blake (B) can either set a screen (B1) or call for the ball (B2).
+
+If Alex passes (A1) and Blake sets a screen (B1), it results in a turnover, the worst outcome for both (1,1). If Alex passes (A1) and Blake calls for the ball (B2), Blake receives it and scores, leading to a great outcome for Blake and a good one for Alex (3,4).
+
+If Alex decides to shoot (A2) and Blake sets a screen (B1), Alex might score, resulting in a moderate outcome for Alex and a good one for Blake (2,3). However, if Alex shoots (A2) while Blake calls for the ball (B2), Alex is more likely to score due to less defensive pressure, giving Alex the best outcome but leaving Blake disappointed (4,2).
+
+Alex prefers to be the hero by shooting and scoring, but passing to Blake for a score is his second choice. Blake, on the other hand, wants to receive the pass and score most, but setting a successful screen is his second preference.
+
+The tension mounts as both players must make their decisions in a split second, knowing that their choices will not only affect the game's outcome but also their personal glory and team dynamics.
+[/Scenario]

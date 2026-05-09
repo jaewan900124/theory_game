@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emma, a talented but struggling painter",
+  "B": "Marcus, a successful art gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a traditional painting",
+  "A2": "Experiment with a controversial modern style",
+  "B1": "Feature Emma's work in a group exhibition",
+  "B2": "Offer Emma a solo exhibition"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Experiment with modern style and get a solo exhibition",
+    3: "Create a traditional painting and be featured in a group exhibition",
+    2: "Create a traditional painting and get a solo exhibition",
+    1: "Experiment with modern style and be featured in a group exhibition"
+  },
+  "B": {
+    4: "Feature traditional painting in a solo exhibition",
+    3: "Feature modern style in a group exhibition",
+    2: "Feature traditional painting in a group exhibition",
+    1: "Feature modern style in a solo exhibition"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Marcus | Group Exhibition (B1) | Solo Exhibition (B2) |
+|----------------|----------------------|----------------------|
+| Traditional (A1) | 3 \ 2               | 2 \ 4                |
+| Modern (A2)      | 1 \ 3               | 4 \ 1                |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented but struggling painter, finds herself at a crossroads in her artistic career. She has caught the attention of Marcus, a successful art gallery owner known for his keen eye for emerging talent. Marcus is considering featuring Emma's work in his gallery, but both of them face important decisions that will shape their collaboration and potentially Emma's future in the art world.
+
+Emma must choose between creating a traditional painting (A1) that aligns with her current style or experimenting with a controversial modern approach (A2) that excites her creatively but might be risky. Meanwhile, Marcus needs to decide whether to feature Emma's work in a group exhibition alongside other artists (B1) or take a chance and offer her a solo exhibition (B2).
+
+Emma's preferences are primarily driven by her desire for artistic growth and recognition. Her ideal scenario would be to experiment with her modern style and secure a solo exhibition (A2, B2), as this would give her the most creative freedom and exposure. Her second choice would be to stick with her traditional style and be featured in a group exhibition (A1, B1), which feels safe but still beneficial. Creating a traditional painting for a solo exhibition (A1, B2) is her third choice, as it doesn't fully satisfy her creative ambitions. Her least preferred outcome is to experiment with her modern style only to be placed in a group exhibition (A2, B1), as she feels this wouldn't give her new work the attention it deserves.
+
+Marcus, on the other hand, is motivated by both artistic merit and commercial success. His ideal scenario is to feature Emma's traditional work in a solo exhibition (A1, B2), as he believes this would be the safest bet for attracting buyers. His second preference is to include Emma's modern style in a group exhibition (A2, B1), which allows him to test the market's reaction without too much risk. Featuring traditional work in a group exhibition (A1, B1) is his third choice, as it's safe but not as potentially lucrative. His least preferred outcome is to commit to a solo exhibition for Emma's modern style (A2, B2), which he sees as the riskiest option.
+
+As they make their decisions, Emma and Marcus must consider not only their own preferences but also how their choices might influence the other's decision. The outcome will depend on how well they can balance their individual goals with the potential for mutual benefit, showcasing the delicate interplay between artistic integrity and commercial considerations in the art world.
+[/Scenario]

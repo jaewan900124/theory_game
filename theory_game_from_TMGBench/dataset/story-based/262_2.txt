@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blake, a product manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new feature",
+  "A2": "Focus on bug fixes",
+  "B1": "Prioritize the new feature",
+  "B2": "Prioritize bug fixes"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Develop new feature while Blake prioritizes it",
+    3: "Develop new feature while Blake prioritizes bug fixes",
+    2: "Focus on bug fixes while Blake prioritizes them",
+    1: "Focus on bug fixes while Blake prioritizes new feature"
+  },
+  "B": {
+    4: "Alex develops new feature while prioritizing it",
+    3: "Alex focuses on bug fixes while prioritizing them",
+    2: "Both focus on bug fixes",
+    1: "Misaligned priorities (new feature vs bug fixes)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 3 |
+| A2    | 1 \ 1 | 2 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blake work for a growing tech startup. They're facing a crucial decision about the direction of their flagship app. Alex, the software engineer, is excited about developing a cutting-edge feature that could potentially attract a lot of new users. Blake, the product manager, is torn between supporting this new feature and addressing a backlog of user-reported bugs.
+
+Alex has two choices: A1) Develop the new feature, or A2) Focus on bug fixes. Blake also has two choices: B1) Prioritize the new feature, or B2) Prioritize bug fixes.
+
+Alex's preference is to work on the new feature, especially if Blake prioritizes it (4). Even if Blake prioritizes bug fixes, Alex still prefers working on the new feature (3). Alex's least preferred scenario is focusing on bug fixes while Blake pushes for the new feature (1).
+
+Blake's top preference is for Alex to develop the new feature while Blake prioritizes it (4), as this could lead to significant growth. However, Blake also values user satisfaction and sees merit in addressing bugs, preferring a scenario where both focus on bug fixes (2) over misaligned priorities (1).
+
+The payoff matrix represents these preferences numerically. If they cooperate on either the new feature (A1, B1) or bug fixes (A2, B2), they achieve better outcomes than when their priorities are misaligned.
+
+As they sit down to discuss the project roadmap, both Alex and Blake must consider not only their own preferences but also how their choices might impact each other and the overall success of the product. Their decision will shape the immediate future of the app and potentially the company's trajectory in the competitive tech landscape.
+[/Scenario]

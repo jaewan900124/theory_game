@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a sociologist",
+  "B": "Professor Mark Thompson, a fellow sociologist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue independent research",
+  "B1": "Collaborate on a joint research project",
+  "B2": "Pursue independent research"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Sole authorship with shared resources",
+    3: "Joint authorship with shared resources",
+    2: "Sole authorship with limited resources",
+    1: "No publication due to lack of resources"
+  },
+  "B": {
+    4: "Joint authorship with shared resources",
+    3: "Sole authorship with limited resources",
+    2: "Sole authorship with shared resources",
+    1: "No publication due to lack of resources"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 4 \ 2 |
+| A2    | 2 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Professor Mark Thompson are sociologists at a prestigious university, both specializing in the study of urban communities. They've been presented with an opportunity to research the impact of gentrification on local cultures in a rapidly changing neighborhood.
+
+Emma (A) and Mark (B) each have two choices: collaborate on a joint research project (A1/B1) or pursue independent research (A2/B2). Their decisions will affect their access to resources, publication outcomes, and professional recognition.
+
+If both choose to collaborate (A1/B1), they'll share resources and publish jointly. This scenario is Mark's most preferred outcome (4) as he values collaborative work highly. It's Emma's second-best outcome (3) as she appreciates the shared resources but would prefer sole authorship.
+
+If Emma chooses to collaborate but Mark doesn't (A1/B2), Emma will benefit from Mark's initial input and some shared resources, allowing her to publish independently. This is Emma's most preferred outcome (4) as she gets sole authorship with enhanced resources. It's Mark's third choice (2) as he misses out on the collaboration but still produces independent work.
+
+If Mark chooses to collaborate but Emma doesn't (A2/B1), Mark will have access to some of Emma's initial ideas and limited shared resources, allowing him to publish independently. This is Mark's second-best outcome (3) as he gets sole authorship, albeit with limited resources. It's Emma's third choice (2) as she misses out on shared resources but still produces independent work.
+
+If both choose to work independently (A2/B2), they'll struggle with limited resources and potentially fail to publish meaningful results. This is the least preferred outcome for both (1/1).
+
+Emma must decide whether the potential for sole authorship is worth the risk of limited resources, while Mark must weigh his preference for collaboration against the possibility of independent work with fewer resources. Their choices will not only affect their immediate research outcomes but also their long-term professional relationships and reputations in the field of sociology.
+[/Scenario]

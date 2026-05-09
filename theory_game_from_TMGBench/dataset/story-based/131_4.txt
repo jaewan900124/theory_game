@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a talented software developer",
+  "B": "TechCorp, a growing tech company"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Accept TechCorp's job offer",
+  "A2": "Negotiate for better terms",
+  "B1": "Maintain original offer",
+  "B2": "Improve the job offer"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successfully negotiate for better terms",
+    3: "Accept the original job offer",
+    2: "Accept the improved job offer",
+    1: "Negotiations fail, no job offer"
+  },
+  "B": {
+    4: "Emma accepts the original offer",
+    3: "Emma accepts an improved offer",
+    2: "Emma declines, company keeps searching",
+    1: "Company improves offer, Emma still declines"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ TechCorp | Maintain offer | Improve offer |
+|-----------------|----------------|---------------|
+| Accept offer    | 3 \ 4          | 2 \ 3         |
+| Negotiate       | 1 \ 2          | 4 \ 1         |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a talented software developer, has just received a job offer from TechCorp, a growing tech company. Both Emma and TechCorp find themselves in a delicate situation where their decisions will impact the outcome of the employment opportunity.
+
+Emma has two choices: she can either accept TechCorp's original job offer (A1) or attempt to negotiate for better terms (A2). TechCorp, on the other hand, can choose to maintain their original offer (B1) or improve the job offer (B2).
+
+Emma's preferences are clear. Her most desired outcome (4) is successfully negotiating for better terms. Her second preference (3) is accepting the original job offer, followed by accepting an improved offer (2). Her least preferred outcome (1) is failing in negotiations and losing the job opportunity altogether.
+
+TechCorp's preferences differ. Their most desired outcome (4) is Emma accepting the original offer. Their second choice (3) is Emma accepting an improved offer. They would prefer Emma declining and continuing their search (2) over improving the offer and still having Emma decline (1).
+
+The payoff matrix reflects these preferences. If Emma accepts the original offer (A1) and TechCorp maintains it (B1), Emma gets her second-best outcome (3), while TechCorp achieves its best outcome (4). If Emma accepts (A1) but TechCorp improves the offer (B2), Emma gets her third-best outcome (2), and TechCorp gets its second-best (3).
+
+If Emma negotiates (A2) and TechCorp maintains the original offer (B1), both get their least preferred outcomes (1 for Emma, 2 for TechCorp). However, if Emma negotiates (A2) and TechCorp improves the offer (B2), Emma achieves her best outcome (4), but TechCorp ends up with its least preferred situation (1).
+
+This scenario demonstrates the complex dynamics of job negotiations, where both parties must carefully consider their strategies to achieve the best possible outcome while managing the risks of potential loss.
+[/Scenario]

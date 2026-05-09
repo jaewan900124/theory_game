@@ -1,0 +1,50 @@
+[Characters]
+{
+  "A": "EcoTech, a sustainable technology company",
+  "B": "GreenForest, a local environmental conservation group"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a new eco-friendly product using local resources",
+  "A2": "Import materials and manufacture products elsewhere",
+  "B1": "Collaborate with EcoTech and provide local resources",
+  "B2": "Oppose EcoTech's operations in the area"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Import materials and manufacture elsewhere while facing no opposition",
+    3: "Develop new eco-friendly product using local resources without opposition",
+    2: "Develop new eco-friendly product using local resources but face opposition",
+    1: "Import materials and manufacture elsewhere while facing opposition"
+  },
+  "B": {
+    4: "Collaborate with EcoTech on eco-friendly product using local resources",
+    3: "Successfully oppose EcoTech's operations to import materials",
+    2: "Collaborate with EcoTech but they import materials instead",
+    1: "Oppose EcoTech but they still develop eco-friendly product locally"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 1 |
+| A2    | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town surrounded by lush forests, EcoTech, a sustainable technology company, is considering expanding its operations. They have two choices: develop a new eco-friendly product using local resources (A1) or import materials and manufacture products elsewhere (A2). Meanwhile, GreenForest, a local environmental conservation group, must decide whether to collaborate with EcoTech and provide local resources (B1) or oppose EcoTech's operations in the area (B2).
+
+EcoTech's most preferred outcome is to import materials and manufacture elsewhere without facing opposition (A2, B1), as this would maximize their profits while avoiding local complications. Their second preference is to develop the eco-friendly product locally without opposition (A1, B1), which would boost their green credentials but potentially be less profitable. Their third choice is to develop the product locally despite opposition (A1, B2), demonstrating their commitment to sustainability but facing challenges. Their least preferred scenario is to import materials and face opposition (A2, B2), which could damage their reputation and operations.
+
+GreenForest's top priority is to collaborate with EcoTech on an eco-friendly product using local resources (A1, B1), as this aligns with their conservation goals and provides local economic benefits. Their second preference is to successfully oppose EcoTech's plans to import materials (A2, B2), protecting the local environment from potential exploitation. Their third choice is to collaborate with EcoTech even if they import materials (A2, B1), maintaining a working relationship but compromising on their ideals. Their least preferred outcome is opposing EcoTech but failing to prevent the local development of the eco-friendly product (A1, B2), which might make them appear obstructionist.
+
+The choices made by both parties will determine the future of the town's ecology and economy. Will EcoTech prioritize profit or sustainability? Will GreenForest choose collaboration or opposition? Their decisions will shape the delicate balance between development and conservation in this small forest town.
+[/Scenario]

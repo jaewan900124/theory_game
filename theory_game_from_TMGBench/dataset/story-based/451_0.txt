@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Lucas, Emma's research assistant"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research data with Lucas",
+  "A2": "Keep research data to herself",
+  "B1": "Contribute additional unpublished findings",
+  "B2": "Withhold additional unpublished findings"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep data to herself while Lucas contributes additional findings",
+    3: "Keep data to herself while Lucas withholds additional findings",
+    2: "Share data while Lucas contributes additional findings",
+    1: "Share data while Lucas withholds additional findings"
+  },
+  "B": {
+    4: "Emma shares data while he withholds additional findings",
+    3: "Both share their respective information",
+    2: "Both withhold their respective information",
+    1: "Emma keeps data while he contributes additional findings"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Lucas | Contribute (B1) | Withhold (B2) |
+|--------------|-----------------|----------------|
+| Share (A1)   | 2 \ 3           | 1 \ 4          |
+| Keep (A2)    | 3 \ 1           | 4 \ 2          |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a respected sociology professor, is working on a groundbreaking study about social media's impact on community engagement. Her research assistant, Lucas, has been helping her collect and analyze data for the past year. As they near the publication deadline, both Emma and Lucas face a dilemma that will test their professional ethics and personal ambitions.
+
+Emma has compiled an extensive dataset that could significantly contribute to the field. She must decide whether to share this data with Lucas (A1) or keep it to herself (A2). Sharing would potentially enhance the quality of their joint work but might diminish her individual recognition. Keeping the data to herself could lead to a more impactful solo publication but might hinder the overall progress of the study.
+
+Lucas, on the other hand, has stumbled upon some additional unpublished findings from his previous internship that are highly relevant to their current research. He must choose whether to contribute these findings (B1) or withhold them (B2). Contributing would enrich the study but might overshadow his role as just an assistant. Withholding the information could give him leverage for future opportunities but might compromise the integrity of the research.
+
+Emma's ideal scenario is to keep her data while Lucas contributes his findings, allowing her to maintain control over the primary research while benefiting from additional insights. Her least preferred outcome is sharing her data only to have Lucas withhold his findings, leaving her feeling vulnerable and potentially exploited.
+
+Lucas, conversely, would most prefer that Emma shares her data while he withholds his findings, giving him access to valuable information without compromising his future leverage. His least desired outcome is contributing his findings while Emma keeps her data, feeling that he would be giving away his advantage without reciprocation.
+
+The scenario where both share their information ranks second for Lucas and third for Emma, reflecting a cautious approach to collaboration. The scenario where both withhold information is the second-least preferred for both, acknowledging that while it maintains individual control, it hampers the overall research quality.
+
+As the deadline approaches, Emma and Lucas must make their decisions, balancing personal ambitions with professional ethics and the potential impact on their field of study. Their choices will not only affect the outcome of this research but also shape their future professional relationship and individual career trajectories in the competitive world of academic sociology.
+[/Scenario]

@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Dr. Ava Chen, a brilliant astrophysicist",
+  "B": "Captain Leo Novak, an experienced astronaut"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Focus on studying a newly discovered exoplanet",
+  "A2": "Prioritize researching an asteroid belt for potential mining",
+  "B1": "Lead a manned mission to the exoplanet",
+  "B2": "Command a robotic exploration of both the exoplanet and asteroid belt"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Study the exoplanet with robotic assistance",
+    3: "Research the asteroid belt with robotic assistance",
+    2: "Study the exoplanet with a manned mission",
+    1: "Research the asteroid belt with a manned mission"
+  },
+  "B": {
+    4: "Lead a manned mission to study the exoplanet",
+    3: "Command robotic exploration of both locations",
+    2: "Lead a manned mission to the asteroid belt",
+    1: "Stay on Earth due to mission cancellation"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 1 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, humanity stands on the brink of a new era in space exploration. The International Space Agency (ISA) has made two groundbreaking discoveries: a potentially habitable exoplanet and a resource-rich asteroid belt, both within reach of current technology. Dr. Ava Chen, a brilliant astrophysicist, and Captain Leo Novak, an experienced astronaut, are tasked with deciding the focus of humanity's next major space mission.
+
+Dr. Chen has two options: focus on studying the newly discovered exoplanet (A1) or prioritize researching the asteroid belt for potential mining (A2). She prefers to study the exoplanet, especially if it can be done with robotic assistance, as it aligns with her scientific curiosity and could lead to groundbreaking discoveries about potential extraterrestrial life.
+
+Captain Novak, on the other hand, can choose to lead a manned mission to the exoplanet (B1) or command a robotic exploration of both the exoplanet and asteroid belt (B2). As an adventurous spirit, he's most excited about the prospect of leading a manned mission to the exoplanet, but he also sees the value in a comprehensive robotic exploration.
+
+Their decisions will shape the future of space exploration, but they must also consider the political and financial implications of their choices. The ISA has limited resources and can only fully support one major initiative.
+
+If Dr. Chen chooses to study the exoplanet (A1) and Captain Novak leads a manned mission there (B1), it would result in a scenario where Dr. Chen's research is somewhat compromised by the presence of a human crew (payoff 2), while Captain Novak gets to fulfill his dream of leading an interstellar mission (payoff 3).
+
+If Dr. Chen focuses on the exoplanet (A1) and Captain Novak opts for robotic exploration (B2), both achieve their most preferred outcomes (payoff 4 for both). Dr. Chen gets to study the exoplanet with the assistance of advanced robots, while Captain Novak commands a comprehensive mission that explores both locations.
+
+If Dr. Chen prioritizes the asteroid belt (A2) and Captain Novak chooses the manned exoplanet mission (B1), both end up with their least preferred outcomes (payoff 1 for both). The mission becomes unfocused and may be canceled due to lack of coherent direction.
+
+Finally, if Dr. Chen focuses on the asteroid belt (A2) and Captain Novak chooses robotic exploration (B2), Dr. Chen gets to research the asteroid belt with robotic assistance (payoff 3), while Captain Novak settles for his second choice of commanding robots instead of a manned mission (payoff 2).
+
+As the deadline for their decision approaches, Dr. Chen and Captain Novak must carefully consider their options, knowing that their choice will not only affect their personal goals but also the future of human space exploration.
+[/Scenario]

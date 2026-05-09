@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Captain Zara, leader of the Earth Space Agency (ESA)",
+  "B": "Commander Xen, representative of the Galactic Alliance (GA)"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share Earth's advanced propulsion technology",
+  "A2": "Withhold Earth's advanced propulsion technology",
+  "B1": "Grant Earth access to the Galactic Alliance's hyperspace network",
+  "B2": "Deny Earth access to the Galactic Alliance's hyperspace network"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Withhold technology but gain access to hyperspace network",
+    3: "Share technology and gain access to hyperspace network",
+    2: "Share technology but denied access to hyperspace network",
+    1: "Withhold technology and denied access to hyperspace network"
+  },
+  "B": {
+    4: "Gain Earth's technology and grant hyperspace access",
+    3: "Gain Earth's technology but deny hyperspace access",
+    2: "Don't gain Earth's technology but grant hyperspace access",
+    1: "Don't gain Earth's technology and deny hyperspace access"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 4 | 2 \ 1 |
+| A2    | 1 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2150, humanity has made significant strides in space exploration but has yet to venture beyond the solar system. Captain Zara, the brilliant and ambitious leader of the Earth Space Agency (ESA), has developed a revolutionary propulsion technology that could dramatically accelerate space travel. However, Earth's resources are limited, and full implementation of this technology would take decades.
+
+During a routine deep space mission, Earth makes first contact with the Galactic Alliance (GA), an advanced coalition of alien civilizations. Commander Xen, the GA's diplomatic representative, arrives on Earth to negotiate potential collaboration. The GA possesses a vast hyperspace network that allows near-instantaneous travel across the galaxy, but they're intrigued by Earth's unique propulsion technology.
+
+Captain Zara and Commander Xen must now decide on their strategic moves. Zara can choose to share Earth's propulsion technology (A1) or withhold it (A2). Xen can grant Earth access to the GA's hyperspace network (B1) or deny access (B2).
+
+Zara's ultimate goal is to advance Earth's space exploration capabilities. Her most preferred outcome (4) is to withhold the propulsion technology while gaining access to the hyperspace network, allowing Earth to benefit from both technologies. Her second preference (3) is to share the technology and gain hyperspace access, fostering cooperation but losing Earth's technological edge. Her third choice (2) is to share the technology without gaining hyperspace access, hoping it might lead to future cooperation. Her least preferred outcome (1) is to withhold the technology and be denied hyperspace access, leaving Earth isolated.
+
+Commander Xen aims to expand the GA's technological knowledge while maintaining control over its hyperspace network. Xen's top preference (4) is to acquire Earth's propulsion technology and grant hyperspace access, expanding the GA's capabilities and influence. The second choice (3) is to gain the technology but deny hyperspace access, maintaining the GA's travel advantage. The third preference (2) is to grant hyperspace access without gaining Earth's technology, expanding the alliance but not its technological edge. The least preferred outcome (1) is to neither gain the technology nor grant hyperspace access, missing an opportunity for growth and cooperation.
+
+As they sit across from each other in the negotiation room, both leaders must carefully consider their choices, knowing that their decisions will shape the future of interstellar relations and space exploration for years to come.
+[/Scenario]

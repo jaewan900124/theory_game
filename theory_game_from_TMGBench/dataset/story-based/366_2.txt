@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Alex, a software engineer",
+  "B": "Blair, a hardware engineer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Develop a custom software solution",
+  "A2": "Use off-the-shelf software",
+  "B1": "Design custom hardware",
+  "B2": "Use standard hardware components"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Custom software with standard hardware (A1, B2)",
+    3: "Custom software with custom hardware (A1, B1)",
+    2: "Off-the-shelf software with standard hardware (A2, B2)",
+    1: "Off-the-shelf software with custom hardware (A2, B1)"
+  },
+  "B": {
+    4: "Custom software with standard hardware (A1, B2)",
+    3: "Off-the-shelf software with standard hardware (A2, B2)",
+    2: "Custom software with custom hardware (A1, B1)",
+    1: "Off-the-shelf software with custom hardware (A2, B1)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Custom HW) | B2 (Standard HW) |
+|-------|----------------|-------------------|
+| A1 (Custom SW) | 3 \ 2 | 4 \ 4 |
+| A2 (Off-the-shelf SW) | 1 \ 1 | 2 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Blair are engineers working on a new smart home automation system for their company. They need to decide on the software and hardware components for the project.
+
+Alex, the software engineer, has two choices: develop a custom software solution (A1) or use off-the-shelf software (A2). Blair, the hardware engineer, can either design custom hardware (B1) or use standard hardware components (B2).
+
+Alex prefers developing custom software as it allows for more flexibility and control. Their top choice would be to pair their custom software with standard hardware (A1, B2), as it balances innovation with reliability. Their second preference is custom software with custom hardware (A1, B1), which offers the most control but might be riskier. Using off-the-shelf software is less appealing to Alex, with standard hardware (A2, B2) being slightly preferred over custom hardware (A2, B1).
+
+Blair, on the other hand, favors using standard hardware components due to their reliability and cost-effectiveness. Their top choice aligns with Alex's: custom software with standard hardware (A1, B2), as it provides the best balance of innovation and reliability. Their second preference is pairing standard hardware with off-the-shelf software (A2, B2), as it's the safest option. Custom hardware with custom software (A1, B1) is their third choice, while pairing custom hardware with off-the-shelf software (A2, B1) is their least preferred option.
+
+The payoff matrix shows that if they both choose their preferred options (A1, B2), they'll achieve the best outcome for both (4, 4). However, if they don't communicate effectively, they might end up with less optimal solutions. For example, if Alex chooses custom software (A1) expecting Blair to use standard hardware, but Blair decides on custom hardware (B1), they'll end up with a suboptimal solution (3, 2).
+
+The challenge for Alex and Blair is to communicate effectively and make decisions that will lead to the best outcome for the project and satisfy both of their preferences.
+[/Scenario]

@@ -1,0 +1,50 @@
+[Characters]
+{
+  "A": "Alex, a software developer",
+  "B": "Blake, the project manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Work overtime",
+  "A2": "Maintain regular hours",
+  "B1": "Offer a bonus",
+  "B2": "Don't offer a bonus"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Maintain regular hours and receive a bonus",
+    3: "Work overtime without a bonus",
+    2: "Maintain regular hours without a bonus",
+    1: "Work overtime and receive a bonus"
+  },
+  "B": {
+    4: "Alex works overtime with a bonus offered",
+    3: "Alex maintains regular hours without a bonus offered",
+    2: "Alex maintains regular hours with a bonus offered",
+    1: "Alex works overtime without a bonus offered"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Offer bonus) | B2 (Don't offer bonus) |
+|-------|------------------|------------------------|
+| A1 (Work overtime) | 1 \ 4 | 3 \ 1 |
+| A2 (Maintain regular hours) | 2 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At a bustling tech startup, Alex, a talented software developer, and Blake, the project manager, find themselves in a delicate situation as an important project deadline looms. Blake needs to decide whether to offer a bonus to motivate the team, while Alex must choose between working overtime or maintaining regular hours.
+
+Alex, valuing work-life balance, prefers to maintain regular hours but wouldn't mind the extra money from a bonus. Working overtime is less appealing, especially if there's no bonus involved. Surprisingly, Alex's least preferred scenario is working overtime with a bonus, as the extra work negates the financial benefit in their mind.
+
+Blake, focused on project completion, would ideally like Alex to work overtime with the incentive of a bonus. If that's not possible, Blake would prefer Alex to maintain regular hours without the need for a bonus, to keep costs down. Offering a bonus for regular hours is less desirable, and the least favorable outcome for Blake is Alex working overtime without any bonus offered, as it might lead to resentment.
+
+The choices they make will not only affect the project's outcome but also their working relationship and the company's resources. As they both consider their options, the tension in the office is palpable, with team members watching closely to see how this situation unfolds and potentially sets a precedent for future projects.
+[/Scenario]

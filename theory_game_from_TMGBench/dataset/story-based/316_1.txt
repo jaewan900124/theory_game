@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Emma, an aspiring painter",
+  "B": "Leo, a gallery owner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a conventional painting",
+  "A2": "Create an avant-garde painting",
+  "B1": "Host a traditional art exhibition",
+  "B2": "Host an experimental art exhibition"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create a conventional painting for an experimental exhibition",
+    3: "Create an avant-garde painting for an experimental exhibition",
+    2: "Create a conventional painting for a traditional exhibition",
+    1: "Create an avant-garde painting for a traditional exhibition"
+  },
+  "B": {
+    4: "Host an experimental exhibition with conventional paintings",
+    3: "Host an experimental exhibition with avant-garde paintings",
+    2: "Host a traditional exhibition with conventional paintings",
+    1: "Host a traditional exhibition with avant-garde paintings"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Leo | Traditional Exhibition | Experimental Exhibition |
+|------------|------------------------|-------------------------|
+| Conventional | 2 \ 2                  | 4 \ 4                   |
+| Avant-garde  | 1 \ 1                  | 3 \ 3                   |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, an aspiring painter, and Leo, a gallery owner, are preparing for an upcoming art exhibition. They each have to make a decision that will affect the success of the event and their careers.
+
+Emma must choose between creating a conventional painting or an avant-garde piece. She prefers to create conventional art for an experimental exhibition, as it would showcase her versatility and appeal to a wider audience. Her least preferred option is to create an avant-garde painting for a traditional exhibition, fearing it might be misunderstood or rejected.
+
+Leo, on the other hand, must decide whether to host a traditional or an experimental art exhibition. He most desires to host an experimental exhibition featuring conventional paintings, believing it would attract both traditional art enthusiasts and those seeking something new. His least preferred scenario is hosting a traditional exhibition with avant-garde paintings, worried it might confuse his regular clientele.
+
+If Emma creates a conventional painting and Leo hosts a traditional exhibition, both will achieve moderate success (2,2). If Emma creates an avant-garde piece for a traditional exhibition, or vice versa, both will likely face challenges and disappointment (1,1).
+
+The ideal scenario for both Emma and Leo is if Emma creates a conventional painting for Leo's experimental exhibition (4,4). This would showcase Emma's skills in a fresh context and allow Leo to innovate while still appealing to his traditional base.
+
+If Emma creates an avant-garde piece and Leo hosts an experimental exhibition, they would both achieve good results (3,3), though not as ideal as the conventional-experimental combination.
+
+As they prepare for the exhibition, Emma and Leo must consider their choices carefully, weighing their personal preferences against the potential outcomes of their collaboration.
+[/Scenario]

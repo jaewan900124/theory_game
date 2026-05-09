@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Sarah Chen, a sociology professor",
+  "B": "Dr. Michael Rodriguez, another sociology professor"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a joint research project",
+  "A2": "Pursue an individual research project",
+  "B1": "Collaborate on a joint research project",
+  "B2": "Pursue an individual research project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Pursue individual research while B collaborates",
+    3: "Both pursue individual research",
+    2: "Both collaborate on joint research",
+    1: "Collaborate while B pursues individual research"
+  },
+  "B": {
+    4: "Pursue individual research while A collaborates",
+    3: "Both collaborate on joint research",
+    2: "Both pursue individual research",
+    1: "Collaborate while A pursues individual research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 1 \ 4 |
+| A2    | 3 \ 1 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+At a prestigious university, Dr. Sarah Chen and Dr. Michael Rodriguez, both sociology professors, are faced with a crucial decision regarding their upcoming research projects. The university has announced a significant grant for groundbreaking sociological research, and both professors are eager to secure funding for their work.
+
+Dr. Chen, known for her innovative approaches to urban sociology, has been developing a project on the impact of gentrification on community dynamics. Dr. Rodriguez, on the other hand, has been working on a study about the effects of social media on political polarization.
+
+The university has subtly hinted that collaborative projects might be viewed more favorably, but also emphasizes the importance of individual contributions to the field. This creates a dilemma for both professors: should they collaborate on a joint project, combining their expertise, or should they pursue their individual research interests?
+
+If they choose to collaborate (A1 and B1), they would work on a project examining how social media influences urban community dynamics and political attitudes. This scenario would result in a moderate outcome for both (2 for Dr. Chen and 3 for Dr. Rodriguez), as they would benefit from shared resources and increased chances of funding, but would have to compromise on their individual research interests.
+
+If Dr. Chen chooses to collaborate while Dr. Rodriguez pursues his individual project (A1 and B2), Dr. Chen would be at a disadvantage (1) as she would have to adapt her research to accommodate Dr. Rodriguez's interests without reciprocation. Meanwhile, Dr. Rodriguez would benefit greatly (4) from this scenario, as he could pursue his own research while potentially leveraging Dr. Chen's contribution.
+
+Conversely, if Dr. Rodriguez chooses to collaborate while Dr. Chen pursues her individual project (A2 and B1), the outcomes would be reversed. Dr. Chen would benefit significantly (3) while Dr. Rodriguez would be at a disadvantage (1).
+
+Finally, if both decide to pursue their individual projects (A2 and B2), Dr. Chen would achieve her most preferred outcome (4) as she could fully focus on her gentrification study. Dr. Rodriguez would also fare well (2), though not as optimally as in the scenario where only he pursues individual research.
+
+This situation creates a classic game theory scenario in sociology, where the professors must weigh the benefits of collaboration against the potential rewards of individual pursuit, all while considering the possible actions of their colleague.
+[/Scenario]

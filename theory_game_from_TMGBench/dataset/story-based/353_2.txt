@@ -1,0 +1,60 @@
+[Characters]
+{
+  "A": "Emma, a sociology professor",
+  "B": "Alex, a graduate student"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on a research project",
+  "A2": "Work independently on separate projects",
+  "B1": "Focus on their own thesis",
+  "B2": "Join Emma's research project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate with Alex, who joins the project",
+    3: "Work independently while Alex focuses on their thesis",
+    2: "Work independently while Alex joins the project",
+    1: "Both work independently"
+  },
+  "B": {
+    4: "Join Emma's project while she's willing to collaborate",
+    3: "Focus on own thesis while Emma works independently",
+    2: "Focus on own thesis while Emma wants to collaborate",
+    1: "Both work independently"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 2 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma, a respected sociology professor, and Alex, a promising graduate student, find themselves at a crossroads in their academic pursuits. Emma is considering starting a new research project and must decide whether to collaborate with Alex or work independently. Meanwhile, Alex is torn between focusing on their own thesis or joining Emma's project.
+
+Emma values collaboration but also respects individual work. Her ideal scenario would be to collaborate with Alex if they're willing to join her project. However, if Alex chooses to focus on their thesis, Emma would prefer to work independently rather than force a collaboration.
+
+Alex, on the other hand, sees great value in working with Emma but is also passionate about their thesis. Their ideal outcome would be to join Emma's project if she's open to collaboration. If Emma decides to work independently, Alex would rather focus on their own thesis than try to join a project where they're not wanted.
+
+The situation creates four possible scenarios:
+
+1. Emma collaborates, Alex focuses on thesis (3,2): Emma is satisfied with her decision to collaborate, even though Alex isn't joining. Alex is somewhat disappointed but can focus on their thesis.
+
+2. Emma collaborates, Alex joins project (4,4): The ideal outcome for both. Emma gets to collaborate, and Alex gets to work on an exciting project with a respected professor.
+
+3. Emma works independently, Alex focuses on thesis (2,3): Emma is slightly disappointed not to collaborate, but Alex is content focusing on their thesis.
+
+4. Emma works independently, Alex tries to join project (1,1): The worst outcome for both. Emma doesn't want to collaborate, and Alex feels unwanted on the project.
+
+This scenario highlights the importance of communication and mutual understanding in academic settings. The best outcome for both parties requires them to align their choices, emphasizing the value of cooperation in sociological research and mentorship.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a talented young basketball player",
+  "B": "Coach Thompson, the head coach of the city's professional basketball team"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Join the professional team",
+  "A2": "Play for a college team",
+  "B1": "Offer Alex a starting position",
+  "B2": "Offer Alex a bench role"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Play for a college team and gain more experience",
+    3: "Join the professional team as a starter",
+    2: "Join the professional team as a bench player",
+    1: "Play for a college team with less visibility"
+  },
+  "B": {
+    4: "Alex joins the team as a bench player",
+    3: "Alex plays for a college team and develops further",
+    2: "Alex joins the team as a starter",
+    1: "Alex plays for a college team and potentially joins a rival pro team later"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Starter) | B2 (Bench) |
+|-------|--------------|------------|
+| A1 (Pro)  | 2 \ 1        | 1 \ 4      |
+| A2 (College) | 3 \ 3        | 4 \ 2      |
+[/Payoff Matrix]
+
+[Scenario]
+Alex, a talented young basketball player, finds himself at a crossroads in his career. He has caught the attention of Coach Thompson, the head coach of the city's professional basketball team. Both Alex and Coach Thompson face a crucial decision that will impact their futures.
+
+Alex has two choices: join the professional team (A1) or play for a college team (A2). Meanwhile, Coach Thompson can either offer Alex a starting position (B1) or a bench role (B2).
+
+Alex's preference is to play for a college team and gain more experience (4), followed by joining the pro team as a starter (3). His least preferred option is to play for a college team with less visibility (1), just below joining the pro team as a bench player (2).
+
+Coach Thompson, on the other hand, would ideally like Alex to join the team as a bench player (4), allowing him to develop gradually. His second preference is for Alex to play college ball and develop further (3), followed by Alex joining as a starter (2). His least preferred outcome is Alex playing for a college team and potentially joining a rival pro team later (1).
+
+If Alex decides to join the pro team (A1) and Coach Thompson offers a starting position (B1), Alex gets his third-best outcome (2) while the coach gets his second-worst (1). If Alex joins (A1) but is offered a bench role (B2), it's Alex's second-worst outcome (1) but the coach's best (4).
+
+Should Alex choose to play college ball (A2) and the coach offers a starting position (B1) - which wouldn't actually happen in this scenario - both get their second-best outcomes (3). If Alex chooses college (A2) and the coach offers a bench role (B2) - again, not applicable in reality - Alex gets his best outcome (4) while the coach gets his third-best (2).
+
+This situation presents a classic game theory dilemma, where the best individual choices don't necessarily lead to the best collective outcome. Alex and Coach Thompson must carefully consider their options and potential consequences before making their decisions.
+[/Scenario]

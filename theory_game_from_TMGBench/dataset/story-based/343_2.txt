@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Alex, a professional tennis player",
+  "B": "Ben, Alex's doubles partner"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Train individually",
+  "A2": "Train together with Ben",
+  "B1": "Train individually",
+  "B2": "Train together with Alex"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Both train together, improving teamwork and individual skills",
+    3: "Train individually while Ben trains together, focusing on personal improvement",
+    2: "Both train individually, maintaining current skill levels",
+    1: "Train together while Ben trains individually, feeling held back"
+  },
+  "B": {
+    4: "Both train together, improving teamwork and individual skills",
+    3: "Train individually while Alex trains together, focusing on personal improvement",
+    2: "Both train individually, maintaining current skill levels",
+    1: "Train together while Alex trains individually, feeling held back"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 2 | 4 \ 4 |
+| A2    | 3 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Alex and Ben are professional tennis players who have been doubles partners for several years. They're preparing for an upcoming major tournament and need to decide on their training strategy for the next month.
+
+Each player has two choices: train individually or train together. Their decision will impact both their individual performance and their teamwork. The payoff matrix represents the benefits they'll receive based on their choices.
+
+If both choose to train individually (A1, B1), they'll maintain their current skill levels but won't improve their teamwork, resulting in a moderate benefit for both (2, 2).
+
+If one chooses to train individually while the other wants to train together (A1, B2 or A2, B1), the player training individually will benefit more from focused personal improvement, while the other feels somewhat held back (4, 4 or 3, 3 respectively).
+
+The ideal scenario is when both choose to train together (A2, B2), as this improves both their individual skills and teamwork, maximizing their chances of success in the tournament (4, 4).
+
+However, if they misalign their choices and one trains individually while the other expects to train together, it leads to the least preferred outcome for both (1, 1), as it creates tension in their partnership and hinders their preparation.
+
+Alex and Ben must carefully consider their options, weighing the potential benefits of individual improvement against the advantages of enhancing their teamwork. Their decision will significantly impact their performance in the upcoming tournament and potentially the future of their partnership.
+[/Scenario]

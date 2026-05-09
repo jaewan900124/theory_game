@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emma Thompson, a clinical psychologist",
+  "B": "Alex Chen, Emma's patient struggling with social anxiety"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Traditional therapy approach",
+  "A2": "Experimental therapy approach",
+  "B1": "Actively participate in therapy",
+  "B2": "Passively engage in therapy"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Successful experimental therapy with active patient participation",
+    3: "Successful traditional therapy with active patient participation",
+    2: "Traditional therapy with passive patient engagement",
+    1: "Unsuccessful experimental therapy with passive patient engagement"
+  },
+  "B": {
+    4: "Successful traditional therapy with active participation",
+    3: "Successful experimental therapy with active participation",
+    2: "Passive engagement in experimental therapy",
+    1: "Passive engagement in traditional therapy"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 1 \ 1 |
+| A2    | 3 \ 3 | 4 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Thompson, a respected clinical psychologist, is faced with a challenging case: Alex Chen, a 28-year-old software engineer struggling with severe social anxiety. As they begin their therapy sessions, both Emma and Alex must make decisions that will significantly impact the course and outcome of the treatment.
+
+Emma has two therapeutic approaches at her disposal. She can either stick to her traditional therapy approach (A1), which has proven effective for many patients over the years, or she can try an experimental therapy approach (A2) that shows promise but is less tested.
+
+Alex, on the other hand, has the choice to either actively participate in the therapy sessions (B1), engaging fully in the process and completing all assignments, or to passively engage (B2), attending sessions but not fully committing to the therapeutic process.
+
+Emma's preference is to see the experimental therapy succeed with an actively participating patient, as this could lead to groundbreaking results in her field. Her second choice would be to see success with her traditional approach and an engaged patient. She least prefers the scenario where her experimental approach fails due to a passive patient.
+
+Alex, however, feels most comfortable with the idea of success through traditional therapy methods, as the familiarity provides a sense of security. His second preference is success through the experimental approach, though it makes him somewhat nervous. He least prefers passively engaging in traditional therapy, as he fears it would be a waste of time and money.
+
+The payoff matrix represents these preferences numerically. If Emma chooses the traditional approach (A1) and Alex actively participates (B1), Emma receives a payoff of 2 (her third preference), while Alex receives a payoff of 4 (his top preference). If Emma chooses the experimental approach (A2) and Alex actively participates (B1), both receive a payoff of 3 (their second preferences).
+
+As they begin their first session, Emma must decide which approach to take, while Alex grapples with how much he's willing to engage in the process. Their choices will determine not only the course of Alex's treatment but also potentially influence Emma's professional research and the future of anxiety treatment methods.
+
+The tension builds as both Emma and Alex silently contemplate their options, knowing that their decisions will profoundly impact the outcome of the therapy and, ultimately, Alex's ability to overcome his social anxiety.
+[/Scenario]

@@ -1,0 +1,56 @@
+[Characters]
+{
+  "A": "Sarah, a defense attorney",
+  "B": "Mark, the district attorney"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Propose a plea bargain",
+  "A2": "Go to trial",
+  "B1": "Accept the plea bargain",
+  "B2": "Reject the plea bargain and go to trial"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Plea bargain accepted, case resolved quickly",
+    3: "Win at trial",
+    2: "Plea bargain proposed but rejected",
+    1: "Lose at trial"
+  },
+  "B": {
+    4: "Win at trial with a plea bargain rejected",
+    3: "Plea bargain accepted",
+    2: "Win at trial without plea bargain offered",
+    1: "Lose at trial"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 1 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+In a high-profile criminal case, defense attorney Sarah and district attorney Mark find themselves at a crucial juncture. Sarah's client, a wealthy businessman, is accused of white-collar crimes that have garnered significant media attention.
+
+Sarah (A) has two choices: propose a plea bargain (A1) or go directly to trial (A2). Mark (B) can either accept the plea bargain if offered (B1) or reject it and proceed to trial (B2).
+
+Sarah's most preferred outcome is to have her plea bargain accepted, resolving the case quickly and minimizing potential damage to her client's reputation. Her least preferred outcome is losing at trial, which would result in maximum penalties for her client and negative publicity for her practice.
+
+Mark, on the other hand, most prefers winning at trial after rejecting a plea bargain, as it would boost his reputation and career prospects. His least preferred outcome is losing at trial, which could harm his professional standing.
+
+If Sarah proposes a plea bargain (A1) and Mark accepts (B1), it results in a moderately favorable outcome for both (2 for Sarah, 3 for Mark). If Sarah proposes a plea bargain (A1) and Mark rejects it (B2), going to trial could lead to the best outcome for both if Mark wins (4 for both).
+
+If Sarah decides to go to trial without offering a plea bargain (A2) and Mark would have accepted one (B1), it leads to the worst outcome for both (1 for both) as they miss an opportunity for a mutually beneficial resolution. If Sarah goes to trial (A2) and Mark also chooses trial (B2), the outcome favors Sarah slightly more (3 for Sarah, 2 for Mark) as she has prepared her defense strategy without revealing her hand through plea negotiations.
+
+As the trial date approaches, both attorneys must carefully consider their strategies, weighing the potential risks and rewards of cooperation versus competition in this high-stakes legal battle.
+[/Scenario]

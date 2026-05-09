@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Dr. Emma Chen, a molecular biologist",
+  "B": "Dr. Michael Torres, a geneticist"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share research findings openly",
+  "A2": "Keep research findings confidential",
+  "B1": "Collaborate on the project",
+  "B2": "Work independently on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Sole credit for groundbreaking discovery",
+    3: "Shared credit for significant progress",
+    2: "Minor progress with potential future collaboration",
+    1: "No progress and damaged professional relationship"
+  },
+  "B": {
+    4: "Access to crucial data for personal breakthrough",
+    3: "Shared credit for significant progress",
+    2: "Independent progress with limited scope",
+    1: "Wasted time and resources on dead-end research"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 1 \ 4 | 4 \ 2 |
+| A2    | 3 \ 3 | 2 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Dr. Emma Chen and Dr. Michael Torres are both working on cutting-edge research in the field of gene editing for cancer treatment. They work at different institutions but are aware of each other's work through academic publications and conferences.
+
+Dr. Chen has recently made a breakthrough in her research, discovering a novel mechanism for targeting specific cancer cells. She faces a dilemma: should she share her findings openly (A1) or keep them confidential (A2)?
+
+Dr. Torres, on the other hand, has developed an innovative delivery system for gene-editing tools. He must decide whether to collaborate with Dr. Chen (B1) or continue working independently (B2).
+
+If Dr. Chen shares her findings openly (A1) and Dr. Torres chooses to collaborate (B1), Dr. Torres gains access to crucial data for a personal breakthrough (4), while Dr. Chen feels her work is being used without proper credit (1).
+
+If Dr. Chen shares openly (A1) but Dr. Torres works independently (B2), Dr. Chen gets sole credit for a groundbreaking discovery (4), while Dr. Torres makes independent progress with limited scope (2).
+
+If Dr. Chen keeps her research confidential (A2) and Dr. Torres collaborates (B1), they both benefit from shared credit for significant progress (3,3).
+
+Finally, if Dr. Chen keeps her findings confidential (A2) and Dr. Torres works independently (B2), Dr. Chen makes minor progress with potential for future collaboration (2), while Dr. Torres wastes time and resources on dead-end research (1).
+
+The decisions they make will not only affect their personal careers but also the progress of cancer research as a whole. Both scientists must weigh their personal ambitions against the potential for collaborative breakthroughs that could save countless lives.
+[/Scenario]

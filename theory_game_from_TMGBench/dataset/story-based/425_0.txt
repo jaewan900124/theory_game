@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Professor Smith",
+  "B": "Student Alex"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Offer traditional lecture",
+  "A2": "Implement project-based learning",
+  "B1": "Attend passively",
+  "B2": "Engage actively"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Implement project-based learning with active student engagement",
+    3: "Offer traditional lecture with active student engagement",
+    2: "Offer traditional lecture with passive student attendance",
+    1: "Implement project-based learning with passive student attendance"
+  },
+  "B": {
+    4: "Engage actively in traditional lecture",
+    3: "Engage actively in project-based learning",
+    2: "Attend passively in project-based learning",
+    1: "Attend passively in traditional lecture"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Attend passively) | B2 (Engage actively) |
+|-------|-------|-------|
+| A1 (Traditional lecture) | 2 \ 1 | 3 \ 4 |
+| A2 (Project-based learning) | 1 \ 2 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+At Greenwood University, Professor Smith is preparing for the upcoming semester's Advanced Economics course. He's contemplating whether to stick with his traditional lecture-style teaching method or implement a new project-based learning approach. Meanwhile, Alex, a diligent student enrolled in the course, is deciding how to approach their studies.
+
+Professor Smith has two choices: offer a traditional lecture (A1) or implement project-based learning (A2). He prefers project-based learning if students engage actively, as it fosters creativity and practical skills. However, if students are passive, he'd rather stick to traditional lectures where he can at least ensure the material is covered.
+
+Alex, on the other hand, can choose to attend passively (B1) or engage actively (B2). Alex prefers active engagement in a traditional lecture setting, as it allows for direct interaction with the professor and clear note-taking. However, active engagement in project-based learning is still preferable to passive attendance in either format.
+
+If Professor Smith chooses traditional lectures (A1) and Alex attends passively (B1), it results in a suboptimal scenario (2,1) where the material is covered but without much student involvement. If Alex engages actively (B2) in this setting, it leads to a highly beneficial scenario for both (3,4), with dynamic discussions and deep learning.
+
+Should Professor Smith implement project-based learning (A2) and Alex attend passively (B1), it results in the least preferred scenario for the professor (1,2), as projects require student initiative to be effective. However, if Alex engages actively (B2) in this project-based setting, it creates the most preferred scenario for Professor Smith (4,3), fostering innovation and practical application of knowledge.
+
+The challenge lies in the fact that neither party knows the other's choice in advance. Professor Smith must decide on his teaching method before the semester starts, while Alex's level of engagement may vary. Their decisions will significantly impact the quality of education and learning experience for both parties.
+[/Scenario]

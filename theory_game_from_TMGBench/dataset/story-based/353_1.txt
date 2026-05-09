@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Emma, a talented graphic designer",
+  "B": "Jack, a skilled web developer"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Collaborate on the project",
+  "A2": "Work independently",
+  "B1": "Work independently",
+  "B2": "Collaborate on the project"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Collaborate while Jack works independently (A1, B1)",
+    3: "Both collaborate (A1, B2)",
+    2: "Both work independently (A2, B1)",
+    1: "Work independently while Jack collaborates (A2, B2)"
+  },
+  "B": {
+    4: "Both collaborate (A1, B2)",
+    3: "Work independently while Emma collaborates (A2, B1)",
+    2: "Both work independently (A1, B1)",
+    1: "Collaborate while Emma works independently (A2, B2)"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 3 \ 2 | 4 \ 4 |
+| A2    | 2 \ 3 | 1 \ 1 |
+[/Payoff Matrix]
+
+[Scenario]
+Emma and Jack are freelancers who have been offered a joint project by a prestigious tech company. The project requires both graphic design and web development skills, making it an ideal opportunity for collaboration. However, they must decide whether to work together or pursue the project independently.
+
+Emma, the graphic designer, is confident in her abilities and believes she could potentially handle the design aspects alone. She prefers the idea of collaborating while Jack works independently (A1, B1) as it would allow her to showcase her skills while still benefiting from Jack's web development work. Her second choice would be full collaboration (A1, B2), followed by both working independently (A2, B1). Her least preferred option is working alone while Jack collaborates (A2, B2), as she fears this might overshadow her contributions.
+
+Jack, on the other hand, sees the greatest value in full collaboration (A1, B2). He believes that combining their skills would produce the best results and potentially lead to more joint projects in the future. His second preference is to work independently while Emma collaborates (A2, B1), as he feels confident in his web development skills. Working completely independently (A1, B1) is his third choice, while collaborating while Emma works alone (A2, B2) is his least preferred option, as he worries about potential conflicts and inefficiencies.
+
+The payoff matrix reflects their preferences, with higher numbers indicating more preferred outcomes. Both Emma and Jack must make their decisions simultaneously, without knowing the other's choice. Their decision will not only affect the outcome of this project but could also impact their professional relationship and future opportunities.
+
+As they contemplate their choices, Emma and Jack must consider the potential benefits of collaboration versus the desire for individual recognition. They must also weigh the risks of miscommunication or conflict against the possibilities of creating something greater than what they could achieve alone. The decision they make will determine not only the success of the project but also the dynamics of their professional interaction moving forward.
+[/Scenario]

@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "General Alice",
+  "B": "General Bob"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy troops to the border",
+  "A2": "Conduct covert operations",
+  "B1": "Fortify defensive positions",
+  "B2": "Launch a preemptive strike"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Conduct covert operations while B fortifies defenses",
+    3: "Conduct covert operations while B launches preemptive strike",
+    2: "Deploy troops to border while B fortifies defenses",
+    1: "Deploy troops to border while B launches preemptive strike"
+  },
+  "B": {
+    4: "Fortify defenses while A deploys troops to border",
+    3: "Launch preemptive strike while A deploys troops to border",
+    2: "Fortify defenses while A conducts covert operations",
+    1: "Launch preemptive strike while A conducts covert operations"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Fortify) | B2 (Strike) |
+|-------|--------------|-------------|
+| A1 (Deploy) | 2 \ 4       | 1 \ 3       |
+| A2 (Covert) | 3 \ 1       | 4 \ 2       |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense geopolitical climate, two neighboring countries find themselves on the brink of conflict. General Alice, commanding the forces of her nation, faces off against General Bob, leader of the opposing military.
+
+General Alice must decide between deploying troops to the border, a visible show of force, or conducting covert operations to gain strategic advantage. Meanwhile, General Bob grapples with the choice of fortifying his defensive positions or launching a preemptive strike against Alice's forces.
+
+Alice prefers covert operations, as they allow for greater flexibility and minimal risk to her troops. Her ideal scenario is conducting these operations while Bob focuses on fortifying his defenses, giving her the upper hand. Her least preferred outcome is deploying troops to the border only to face Bob's preemptive strike, potentially resulting in significant casualties.
+
+Bob, on the other hand, favors a strong defensive stance. His preferred scenario is fortifying his positions while Alice deploys troops to the border, allowing him to prepare for any potential attack. His least desired outcome is launching a preemptive strike while Alice conducts covert operations, which could leave his forces vulnerable and poorly positioned.
+
+The payoff matrix reflects these preferences, with each general's choices leading to different strategic outcomes. A score of 4 represents the best outcome for each general, while 1 represents the worst.
+
+As tensions mount, both generals must carefully consider their options, weighing the potential consequences of their actions and trying to anticipate their opponent's moves. The fate of their nations hangs in the balance as they engage in this high-stakes game of military strategy.
+[/Scenario]

@@ -1,0 +1,52 @@
+[Characters]
+{
+  "A": "Coach Sarah",
+  "B": "Star player Mike"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Run a conservative game plan",
+  "A2": "Implement an aggressive strategy",
+  "B1": "Play team-oriented basketball",
+  "B2": "Focus on individual performance"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Aggressive strategy with team play",
+    3: "Conservative plan with team play",
+    2: "Aggressive strategy with individual focus",
+    1: "Conservative plan with individual focus"
+  },
+  "B": {
+    4: "Conservative plan with team play",
+    3: "Aggressive strategy with individual focus",
+    2: "Conservative plan with individual focus",
+    1: "Aggressive strategy with team play"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Coach Sarah \ Mike | Play team-oriented (B1) | Focus on individual (B2) |
+|---------------------|-------------------------|--------------------------|
+| Conservative (A1)   | 3 \ 4                   | 1 \ 2                    |
+| Aggressive (A2)     | 2 \ 1                   | 4 \ 3                    |
+[/Payoff Matrix]
+
+[Scenario]
+It's the night before the championship game, and Coach Sarah is faced with a crucial decision. She needs to choose between running a conservative game plan or implementing an aggressive strategy. At the same time, star player Mike is contemplating whether to play team-oriented basketball or focus on his individual performance to boost his stats for potential recruiters in the audience.
+
+Coach Sarah prefers an aggressive strategy combined with team play the most, as she believes it gives them the best chance to win. Her second choice would be a conservative plan with team play, which is safer but less likely to lead to a decisive victory. She least prefers a conservative plan with Mike focusing on his individual performance, as she fears it might disrupt the team's rhythm.
+
+Mike, on the other hand, prefers playing team-oriented basketball under a conservative plan the most, as it allows him to showcase his leadership skills without taking too many risks. His second choice would be to focus on his individual performance under an aggressive strategy, which could highlight his skills but might not be best for the team. He least prefers playing team-oriented under an aggressive strategy, as he feels it might limit his opportunities to stand out.
+
+If Coach Sarah chooses a conservative plan and Mike plays team-oriented (A1, B1), they both achieve relatively high satisfaction (3 for Sarah, 4 for Mike). If Sarah goes aggressive and Mike focuses on individual performance (A2, B2), they also reach a fairly good outcome (4 for Sarah, 3 for Mike). However, if their choices don't align (A1, B2 or A2, B1), one of them will be significantly less satisfied.
+
+As they both contemplate their choices, they realize that communication and finding a balance between their individual goals and the team's success will be crucial for their performance in the championship game.
+[/Scenario]

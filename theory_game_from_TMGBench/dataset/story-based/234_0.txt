@@ -1,0 +1,62 @@
+[Characters]
+{
+  "A": "Emma, a small bakery owner",
+  "B": "Jack, a local supermarket manager"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Keep prices low",
+  "A2": "Raise prices",
+  "B1": "Stock Emma's baked goods",
+  "B2": "Don't stock Emma's baked goods"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Keep prices low, supermarket doesn't stock her goods",
+    3: "Raise prices, supermarket stocks her goods",
+    2: "Raise prices, supermarket doesn't stock her goods",
+    1: "Keep prices low, supermarket stocks her goods",
+  },
+  "B": {
+    4: "Emma keeps prices low, stock her goods",
+    3: "Emma raises prices, don't stock her goods",
+    2: "Emma raises prices, stock her goods",
+    1: "Emma keeps prices low, don't stock her goods"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| Emma \ Jack | Stock (B1) | Don't Stock (B2) |
+|-------------|------------|-------------------|
+| Low Price (A1) | 1 \ 4     | 4 \ 1            |
+| High Price (A2) | 3 \ 2     | 2 \ 3            |
+[/Payoff Matrix]
+
+[Scenario]
+In a small town, Emma runs a beloved local bakery known for its delicious pastries. Jack manages the town's only supermarket, which has been considering stocking locally-made products. Emma and Jack find themselves in a complex economic situation where their decisions will significantly impact each other's businesses.
+
+Emma has two choices: keep her prices low to maintain customer loyalty or raise prices to increase profit margins. Jack, on the other hand, can decide whether to stock Emma's baked goods in his supermarket or not.
+
+Emma's preferences are shaped by her desire for independence and profit. She most prefers keeping prices low while not being stocked in the supermarket, as this allows her to maintain her customer base without sharing profits. Her least preferred scenario is keeping prices low while being stocked in the supermarket, as this would mean lower profits and potential loss of direct customers.
+
+Jack's preferences revolve around attracting customers and maximizing store profits. He most prefers stocking Emma's low-priced goods, as this would draw customers to his store. His least preferred outcome is not stocking Emma's goods when they're low-priced, as he might lose customers to her bakery.
+
+The scenario unfolds as follows:
+
+1. If Emma keeps prices low and Jack stocks her goods (A1, B1), Emma receives her least preferred outcome (1) while Jack gets his most preferred (4). Emma loses direct customers but Jack's store becomes more attractive.
+
+2. If Emma keeps prices low but Jack doesn't stock her goods (A1, B2), Emma gets her most preferred outcome (4) while Jack receives his least preferred (1). Emma retains her customer base, but Jack's store is less appealing.
+
+3. If Emma raises prices and Jack stocks her goods (A2, B1), Emma receives her second-best outcome (3) and Jack his third-best (2). Emma gains from higher margins and wider distribution, while Jack benefits moderately from stocking premium local goods.
+
+4. If Emma raises prices and Jack doesn't stock her goods (A2, B2), Emma gets her third-best outcome (2) and Jack his second-best (3). Emma maintains higher prices but with a potentially smaller customer base, while Jack avoids competition with premium-priced local goods.
+
+This economic game theory scenario illustrates the complex dynamics between small local businesses and larger retailers, highlighting how pricing and stocking decisions can create various outcomes for both parties involved.
+[/Scenario]

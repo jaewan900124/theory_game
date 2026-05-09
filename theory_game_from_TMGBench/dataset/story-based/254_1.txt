@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "General Anderson",
+  "B": "Admiral Chen"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Deploy ground troops",
+  "A2": "Hold position",
+  "B1": "Provide naval support",
+  "B2": "Focus on coastal defense"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Deploy ground troops with naval support",
+    3: "Deploy ground troops without naval support",
+    2: "Hold position with naval support",
+    1: "Hold position without naval support",
+  },
+  "B": {
+    4: "Provide naval support for ground troop deployment",
+    3: "Focus on coastal defense while ground troops hold position",
+    2: "Provide naval support while ground troops hold position",
+    1: "Focus on coastal defense during ground troop deployment",
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1 (Provide naval support) | B2 (Focus on coastal defense) |
+|-------|----------------------------|-------------------------------|
+| A1 (Deploy ground troops) | 3 \ 4 | 4 \ 1 |
+| A2 (Hold position) | 2 \ 2 | 1 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In a tense military standoff, General Anderson of the Army and Admiral Chen of the Navy find themselves at a critical juncture. The enemy forces are advancing, and a decision must be made quickly to defend their nation's borders.
+
+General Anderson, known for his aggressive tactics, is considering deploying ground troops to engage the enemy directly. However, he's aware that naval support could significantly enhance the effectiveness of this strategy. On the other hand, he could choose to hold his current position, which might be safer but less impactful.
+
+Admiral Chen faces her own dilemma. She can either provide naval support to boost the Army's operations or focus on coastal defense to protect against potential maritime threats. Her decision will greatly influence the overall military strategy.
+
+If General Anderson deploys ground troops and Admiral Chen provides naval support, it would be the ideal scenario for both (3 for Anderson, 4 for Chen). This combined arms approach would likely be most effective against the enemy.
+
+However, if Anderson deploys troops without naval support, it could lead to a riskier situation for the ground forces but might allow for a surprise attack (4 for Anderson, 1 for Chen). This scenario is Anderson's preferred outcome but Chen's least favored.
+
+If Anderson holds position and Chen provides naval support, it would result in a somewhat balanced but potentially ineffective strategy (2 for both). This scenario is the third preference for both leaders.
+
+Lastly, if Anderson holds position and Chen focuses on coastal defense, it would be the least preferred outcome for Anderson (1) but the second-best for Chen (3). This defensive stance might protect their current holdings but wouldn't push back the enemy advance.
+
+The two leaders must now decide their actions, knowing that their choices will significantly impact the course of the conflict and potentially the fate of their nation.
+[/Scenario]

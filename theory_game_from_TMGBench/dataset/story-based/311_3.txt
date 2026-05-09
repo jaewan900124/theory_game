@@ -1,0 +1,58 @@
+[Characters]
+{
+  "A": "Marina, an up-and-coming abstract painter",
+  "B": "Liam, the owner of a trendy art gallery"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Create a series of conventional, commercially appealing paintings",
+  "A2": "Produce a bold, experimental collection that pushes artistic boundaries",
+  "B1": "Host a traditional art exhibition",
+  "B2": "Organize an interactive, multimedia art experience"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Create conventional paintings for an interactive exhibition",
+    3: "Produce experimental art for an interactive exhibition",
+    2: "Create conventional paintings for a traditional exhibition",
+    1: "Produce experimental art for a traditional exhibition"
+  },
+  "B": {
+    4: "Host an interactive exhibition with conventional paintings",
+    3: "Host a traditional exhibition with conventional paintings",
+    2: "Host an interactive exhibition with experimental art",
+    1: "Host a traditional exhibition with experimental art"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 3 | 4 \ 4 |
+| A2    | 1 \ 1 | 3 \ 2 |
+[/Payoff Matrix]
+
+[Scenario]
+Marina, an up-and-coming abstract painter, has been offered a solo exhibition at Liam's trendy art gallery. Both are excited about the opportunity but face a dilemma in how to approach the show.
+
+Marina is torn between creating a series of conventional, commercially appealing paintings (A1) that are likely to sell well, or producing a bold, experimental collection (A2) that pushes artistic boundaries but might be less marketable. She prefers to create conventional paintings for an interactive exhibition the most, as it would provide both financial security and an engaging platform for her work.
+
+Liam, the gallery owner, is deciding between hosting a traditional art exhibition (B1) or organizing an interactive, multimedia art experience (B2). He's most interested in hosting an interactive exhibition with conventional paintings, as it would attract a wide audience while maintaining the gallery's reputation for innovation.
+
+If Marina chooses conventional paintings (A1) and Liam opts for a traditional exhibition (B1), Marina would be somewhat satisfied (2) as her work would sell, but she'd miss the opportunity for innovation. Liam would be quite pleased (3) with the marketable artwork in a familiar format.
+
+If Marina creates conventional paintings (A1) and Liam organizes an interactive experience (B2), both would be thrilled (4,4) as it combines commercial appeal with an innovative presentation.
+
+If Marina produces experimental art (A2) and Liam hosts a traditional exhibition (B1), both would be disappointed (1,1) as the unconventional art might not sell well in a conventional setting.
+
+Finally, if Marina creates experimental art (A2) and Liam arranges an interactive experience (B2), Marina would be quite happy (3) with the chance to showcase her innovative work in an exciting format. Liam would be moderately satisfied (2), appreciating the innovative approach but concerned about potential sales.
+
+As they prepare for the exhibition, Marina and Liam must each decide on their approach, knowing that their choices will significantly impact the success of the show and their professional relationship moving forward.
+[/Scenario]

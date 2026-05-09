@@ -1,0 +1,54 @@
+[Characters]
+{
+  "A": "Dr. Elena Vasquez, lead scientist of Earth's Space Exploration Agency",
+  "B": "Captain Zhang Wei, commander of the International Space Station"
+}
+[/Characters]
+
+[Choices]
+{
+  "A1": "Share all research data with the International Space Station",
+  "A2": "Withhold key research findings",
+  "B1": "Provide full access to the station's resources",
+  "B2": "Restrict access to critical equipment"
+}
+[/Choices]
+
+[Preferences]
+Characters' preferences for different scenarios (preferred degree: 4>3>2>1):
+{
+  "A": {
+    4: "Withhold key research findings while having full access to station resources",
+    3: "Share all research data while having restricted access to critical equipment",
+    2: "Share all research data and have full access to station resources",
+    1: "Withhold key research findings and have restricted access to critical equipment"
+  },
+  "B": {
+    4: "Receive all research data while providing full access to station resources",
+    3: "Restrict access to critical equipment while receiving withheld research findings",
+    2: "Restrict access to critical equipment while receiving all research data",
+    1: "Provide full access to station resources but receive withheld research findings"
+  }
+}
+[/Preferences]
+
+[Payoff Matrix]
+| A \ B | B1    | B2    |
+|-------|-------|-------|
+| A1    | 2 \ 4 | 3 \ 2 |
+| A2    | 1 \ 1 | 4 \ 3 |
+[/Payoff Matrix]
+
+[Scenario]
+In the year 2045, Earth's Space Exploration Agency (ESEA) and the International Space Station (ISS) are at a crucial juncture in their joint mission to explore a newly discovered exoplanet. Dr. Elena Vasquez, the brilliant lead scientist of ESEA, has made groundbreaking discoveries about the exoplanet's potential for sustaining life. Meanwhile, Captain Zhang Wei, the seasoned commander of the ISS, controls access to advanced equipment vital for further research and potential colonization efforts.
+
+Dr. Vasquez must decide whether to share all of ESEA's research data (A1) or withhold key findings (A2). Simultaneously, Captain Zhang must choose between providing full access to the station's resources (B1) or restricting access to critical equipment (B2).
+
+Dr. Vasquez's ideal scenario is to withhold key research findings while having full access to the station's resources (A2, B1). This would give ESEA a competitive edge in the space race. Her least preferred outcome is withholding information and being denied access to critical equipment (A2, B2), as it would hinder ESEA's progress significantly.
+
+Captain Zhang, on the other hand, would prefer to receive all research data while providing full access to station resources (A1, B1). This aligns with his mission of fostering international cooperation in space exploration. His worst-case scenario is providing full access to resources but receiving incomplete research data (A2, B1), as it undermines the spirit of collaboration and potentially jeopardizes the mission's success.
+
+The decision-making process is further complicated by political pressures, ethical considerations, and the potential impact on humanity's future in space. As both leaders contemplate their choices, they must weigh personal ambitions against the greater good of scientific advancement and international cooperation.
+
+The fate of the exoplanet mission and possibly the future of human space exploration hangs in the balance, dependent on the choices made by Dr. Vasquez and Captain Zhang in this high-stakes game of trust and strategy.
+[/Scenario]
