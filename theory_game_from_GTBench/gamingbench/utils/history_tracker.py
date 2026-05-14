@@ -73,12 +73,22 @@ class GameMatch:
         self.status = "Normal"
         self.agents_at_fault = []
         self.agents = set()
+        self.agent_order = []
+        self.model_order = []
         self.winner_score = 0
         self.loser_score = 0
+        self.scores = {}
         pass
 
     def set_winner(self, winner):
         self.winner = winner
+
+    def set_player_order(self, agent_order, model_order):
+        self.agent_order = list(agent_order)
+        self.model_order = list(model_order)
+
+    def set_scores(self, scores):
+        self.scores = dict(scores)
 
     def reset(self):
         '''
@@ -107,9 +117,13 @@ class GameMatch:
     def to_dict(self):
         return {"winner": self.winner,
                 "agents": list(self.agents),
+                "agent_order": self.agent_order,
+                "model_order": self.model_order,
+                "starting_agent": self.steps[0].agent if self.steps else "",
                 "steps": [s.to_dict() for s in self.steps],
                 "status": self.status,
                 "agents_at_fault": self.agents_at_fault,
+                "scores": self.scores,
                 "winner_score": self.winner_score,
                 "loser_score": self.loser_score,
                 "token_size": self.get_token_size()}
@@ -146,6 +160,56 @@ class HistoryTracker:
 
         return dict(agents_win_match)
 
+    def get_payoff_summary(self):
+        summary = defaultdict(lambda: {
+            "total_payoff": 0.0,
+            "matches": 0,
+        })
+
+        for match in self.matches:
+            if match.status != "Normal":
+                continue
+
+            scores = getattr(match, "scores", None)
+            if scores:
+                for agent, score in scores.items():
+                    summary[agent]["total_payoff"] += score
+                    summary[agent]["matches"] += 1
+                continue
+
+            if len(match.agent_order) != len(match.model_order):
+                continue
+
+            participants = [
+                f"{agent}_{model}"
+                for agent, model in zip(match.agent_order, match.model_order)
+            ]
+            for participant in participants:
+                if match.winner == "":
+                    score = 0.0
+                elif participant == match.winner:
+                    score = match.winner_score
+                else:
+                    score = match.loser_score
+                summary[participant]["total_payoff"] += score
+                summary[participant]["matches"] += 1
+
+        output = {}
+        for agent, values in sorted(summary.items()):
+            matches = values["matches"]
+            output[agent] = {
+                "total_payoff": values["total_payoff"],
+                "average_payoff": values["total_payoff"] / matches if matches else 0.0,
+                "matches": matches,
+            }
+        return output
+
+    def get_average_payoff(self):
+        return {
+            agent: values["average_payoff"]
+            for agent, values in self.get_payoff_summary().items()
+        }
+
     def get_all_matches(self):
         return self.matches
 
@@ -173,6 +237,8 @@ class HistoryTracker:
             "agents_config": self.agents_config,
             "models_config": self.models_config,
             "win_rate": self.get_win_rate(),
+            "average_payoff": self.get_average_payoff(),
+            "payoff_summary": self.get_payoff_summary(),
             "matches": [m.to_dict() for m in self.matches],
             "token_size": self.get_token_size()}
 
@@ -196,4 +262,3 @@ class HistoryTracker:
         with open(path, 'w') as json_file:
             json_file.write(json_data)
         pass
-

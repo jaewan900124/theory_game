@@ -1,0 +1,494 @@
+policy_version: 1
+
+global_rules:
+  objective: "Derive fields from game rules and game theory without directly encoding the answer."
+  allowed:
+    - "Current-state summaries"
+    - "Action consequence maps"
+    - "Risk summaries"
+    - "Belief summaries only when derivable from rules plus current information"
+    - "Heuristic or theoretical scores attached to actions"
+    - "Unavailable markers when a quantity cannot be computed deterministically"
+  forbidden:
+    - "recommended_action"
+    - "optimal_move"
+    - "best_action"
+    - "must_play_X"
+    - "if condition then choose action" 
+    - "precomputed argmax action as a field value"
+    - "using hidden future outcome information"
+    - "using terminal returns before the action is taken"
+  implementation_rule: "Fields may score or describe actions, but may not decide actions."
+
+games:
+  tictactoe:
+    rationale: "Perfect-information tactical board game. Tactical structure is legitimate, but direct move selection should remain outside field computation."
+    low_engineering:
+      allowed_fields:
+        - board_reading
+        - immediate_win_actions
+        - immediate_block_actions
+      forbidden_patterns:
+        - immediate_win_actions_as_forced_answer_set
+        - fork_best_move_selector
+    high_engineering:
+      allowed_fields:
+        - board_reading
+        - immediate_win_actions
+        - immediate_block_actions
+        - fork_creation_actions
+        - fork_block_actions
+        - heuristic_tiebreak_center_corner_edge
+      still_forbidden:
+        - recommended_move
+        - solved_policy_lookup
+
+  connect4:
+    rationale: "Perfect-information gravity game. One-ply tactical fields are allowed; direct search-policy output is not."
+    low_engineering:
+      allowed_fields:
+        - board_reconstruction
+        - column_heights
+        - playable_row_by_column
+        - immediate_win_columns
+        - immediate_block_columns
+      forbidden_patterns:
+        - safe_columns_as_final_answer
+        - direct_minimax_move
+    high_engineering:
+      allowed_fields:
+        - board_reconstruction
+        - column_heights
+        - playable_row_by_column
+        - immediate_win_columns
+        - immediate_block_columns
+        - dangerous_moves_that_enable_opponent_win
+        - heuristic_tiebreak_center_distance_by_column
+      still_forbidden:
+        - direct_column_choice
+        - search_result_disguised_as_field
+
+  breakthrough:
+    rationale: "Race and capture structure is derivable from public state, but direct best-move selection should remain with the model."
+    low_engineering:
+      allowed_fields:
+        - board_reconstruction
+        - my_pieces
+        - opponent_pieces
+        - promotion_row_by_player
+        - immediate_promotion_actions
+        - capture_actions
+      forbidden_patterns:
+        - best_race_move
+        - direct_countermove_selector
+    high_engineering:
+      allowed_fields:
+        - board_reconstruction
+        - my_pieces
+        - opponent_pieces
+        - promotion_row_by_player
+        - immediate_promotion_actions
+        - opponent_immediate_promotion_threats
+        - capture_actions
+        - unsafe_advances
+        - race_distance_by_piece
+      still_forbidden:
+        - direct_action_ranking_winner
+        - hidden rollout result
+
+  nim:
+    rationale: "Combinatorial structure is exactly derivable from rules, but we still separate state scoring from direct action choice."
+    low_engineering:
+      allowed_fields:
+        - pile_state_from_legal_actions
+        - legal_move_effects
+        - misere_phase_by_action
+        - singleton_parity_by_action
+        - misere_rule_check
+      forbidden_patterns:
+        - preselected_zero_nim_sum_action
+        - choose_action_with_lowest_nim_sum_rule
+    high_engineering:
+      allowed_fields:
+        - pile_state_from_legal_actions
+        - legal_move_effects
+        - misere_phase_by_action
+        - singleton_parity_by_action
+        - nim_sum_by_action
+        - opponent_position_value_by_action
+        - misere_rule_check
+      still_forbidden:
+        - opponent_losing_score_used_as_direct_argmax_rule
+        - optimal_action_field
+    high_engineering_alt6:
+      allowed_fields:
+        - legal_move_effects
+        - misere_phase_by_action
+        - singleton_parity_by_action
+        - nim_sum_by_action
+        - opponent_position_value_by_action
+        - opponent_losing_score_by_action
+      still_forbidden:
+        - direct_action_from_score_argmax
+        - optimal_action_field
+    nim_group_01:
+      allowed_fields:
+        - large_pile_count_by_action
+        - phase_classification_by_action
+        - zero_nim_sum_flag_by_action
+        - all_singletons_flag_by_action
+        - terminal_take_last_flag_by_action
+        - opponent_position_value_by_action
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    nim_group_02:
+      allowed_fields:
+        - total_matches_after_action
+        - large_pile_count_by_action
+        - all_singletons_flag_by_action
+        - terminal_take_last_flag_by_action
+        - endgame_parity_target_by_action
+        - opponent_position_value_by_action
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    nim_group_03:
+      allowed_fields:
+        - large_pile_count_by_action
+        - nim_sum_by_action
+        - all_singletons_flag_by_action
+        - terminal_take_last_flag_by_action
+        - forced_loss_indicator
+        - action_equivalence_classes_by_successor_state
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    nim_group_04:
+      allowed_fields:
+        - nonzero_pile_count_by_action
+        - large_pile_count_by_action
+        - phase_classification_by_action
+        - nim_sum_by_action
+        - zero_nim_sum_flag_by_action
+        - opponent_position_value_by_action
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    nim_group_05:
+      allowed_fields:
+        - total_matches_after_action
+        - phase_classification_by_action
+        - nim_sum_by_action
+        - zero_nim_sum_flag_by_action
+        - all_singletons_flag_by_action
+        - action_equivalence_classes_by_successor_state
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    nim_group_06:
+      allowed_fields:
+        - legal_move_effects
+        - singleton_count_by_action
+        - phase_classification_by_action
+        - endgame_parity_target_by_action
+        - forced_loss_indicator
+        - action_equivalence_classes_by_successor_state
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    nim_group_07:
+      allowed_fields:
+        - legal_move_effects
+        - nonzero_pile_count_by_action
+        - zero_nim_sum_flag_by_action
+        - all_singletons_flag_by_action
+        - endgame_parity_target_by_action
+        - action_equivalence_classes_by_successor_state
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    nim_group_08:
+      allowed_fields:
+        - legal_move_effects
+        - nonzero_pile_count_by_action
+        - large_pile_count_by_action
+        - singleton_count_by_action
+        - phase_classification_by_action
+        - endgame_parity_target_by_action
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    nim_group_09:
+      allowed_fields:
+        - total_matches_after_action
+        - large_pile_count_by_action
+        - endgame_parity_target_by_action
+        - opponent_position_value_by_action
+        - forced_loss_indicator
+        - action_equivalence_classes_by_successor_state
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    nim_group_10:
+      allowed_fields:
+        - total_matches_after_action
+        - large_pile_count_by_action
+        - singleton_count_by_action
+        - zero_nim_sum_flag_by_action
+        - endgame_parity_target_by_action
+        - opponent_position_value_by_action
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+
+  pig:
+    rationale: "Expected-value stopping structure is legitimate, but stop/roll must not be hard-coded as a direct answer."
+    low_engineering:
+      allowed_fields:
+        - current_scores
+        - target_score
+        - score_after_stop
+        - stop_wins_now
+        - bust_loss
+      forbidden_patterns:
+        - if_turn_total_zero_then_roll
+        - direct_stop_rule
+    high_engineering:
+      allowed_fields:
+        - current_scores
+        - target_score
+        - score_after_stop
+        - stop_wins_now
+        - bust_loss
+        - roll_has_no_bust_loss
+        - score_race_pressure
+        - one_roll_heuristic_value_by_action
+        - stop_or_roll_comparison
+      still_forbidden:
+        - direct_roll_or_stop_decider
+        - full_policy_table
+
+  kuhn_poker:
+    rationale: "Imperfect-information poker should expose information-set structure and payoff ingredients, not a hand-coded equilibrium action."
+    low_engineering:
+      allowed_fields:
+        - turn_and_history_perspective
+        - my_player_id
+        - current_actor
+        - is_my_turn
+        - public_history
+        - private_card_fields
+        - legal_action_context
+        - facing_bet
+        - hand_strength_class
+        - opponent_card_belief_probabilities
+        - action_payoff_by_opponent_card
+        - expected_value_by_action
+      forbidden_patterns:
+        - with_Q_open_bet
+        - call_with_K
+        - hardcoded_bluff_rule
+    high_engineering:
+      allowed_fields:
+        - turn_and_history_perspective
+        - my_player_id
+        - current_actor
+        - is_my_turn
+        - public_history
+        - private_card_fields
+        - legal_action_context
+        - facing_bet
+        - hand_strength_class
+        - possible_opponent_cards_excluding_private_card
+        - opponent_card_belief_probabilities
+        - action_payoff_by_opponent_card
+        - expected_value_by_action
+      still_forbidden:
+        - mixed_strategy_answer_table
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_01:
+      allowed_fields:
+        - hand_strength_class
+        - legal_action_context
+        - possible_opponent_cards
+        - call_value_by_opponent_card
+        - expected_value_by_action
+        - action_risk_profile
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_02:
+      allowed_fields:
+        - information_set_class
+        - hand_strength_class
+        - fold_value
+        - bet_fold_equity
+        - expected_value_by_action
+        - opponent_response_if_i_bet
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_03:
+      allowed_fields:
+        - information_set_class
+        - possible_opponent_cards
+        - posterior_over_opponent_cards
+        - showdown_result_by_opponent_card
+        - call_value_by_opponent_card
+        - bluff_incentive
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_04:
+      allowed_fields:
+        - information_set_class
+        - pot_size
+        - facing_bet
+        - call_value_by_opponent_card
+        - bluff_incentive
+        - value_bet_incentive
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_05:
+      allowed_fields:
+        - legal_action_context
+        - showdown_result_by_opponent_card
+        - call_value_by_opponent_card
+        - bluff_incentive
+        - expected_value_by_action
+        - opponent_response_if_i_bet
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_06:
+      allowed_fields:
+        - information_set_class
+        - pot_size
+        - facing_bet
+        - possible_opponent_cards
+        - bet_fold_equity
+        - action_risk_profile
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_07:
+      allowed_fields:
+        - pot_size
+        - possible_opponent_cards
+        - call_value_by_opponent_card
+        - bluff_incentive
+        - value_bet_incentive
+        - action_risk_profile
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_08:
+      allowed_fields:
+        - legal_action_context
+        - bluff_incentive
+        - value_bet_incentive
+        - expected_value_by_action
+        - opponent_response_if_i_bet
+        - action_risk_profile
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_09:
+      allowed_fields:
+        - legal_action_context
+        - possible_opponent_cards
+        - posterior_over_opponent_cards
+        - showdown_result_by_opponent_card
+        - bluff_incentive
+        - value_bet_incentive
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_group_10:
+      allowed_fields:
+        - hand_strength_class
+        - facing_bet
+        - posterior_over_opponent_cards
+        - showdown_result_by_opponent_card
+        - fold_value
+        - action_risk_profile
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_top_fields:
+      allowed_fields:
+        - expected_value_by_action
+        - opponent_response_if_i_bet
+        - legal_action_context
+        - call_value_by_opponent_card
+        - hand_strength_class
+        - action_risk_profile
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+    kuhn_context_split:
+      context_selector_field: facing_bet
+      when_selector_false_allowed_fields:
+        - legal_action_context
+        - hand_strength_class
+        - bluff_incentive
+        - value_bet_incentive
+        - opponent_response_if_i_bet
+        - action_risk_profile
+      when_selector_true_allowed_fields:
+        - legal_action_context
+        - hand_strength_class
+        - expected_value_by_action
+        - call_value_by_opponent_card
+        - fold_value
+        - action_risk_profile
+      fallback_allowed_fields:
+        - legal_action_context
+        - hand_strength_class
+        - action_risk_profile
+      still_forbidden:
+        - direct_action_from_equilibrium_lookup
+
+  negotiation:
+    rationale: "Private-value bargaining can expose payoff and signaling structure, but must not encode a fixed acceptance or concession policy."
+    low_engineering:
+      allowed_fields:
+        - item_pool
+        - self_value_vector
+        - current_stage
+        - latest_offer_if_any
+        - self_payoff_of_latest_offer
+        - legal_agree_available
+        - proposal_payoff_by_candidate
+      forbidden_patterns:
+        - accept_if_payoff_ge_threshold
+        - direct_best_proposal_selector
+    high_engineering:
+      allowed_fields:
+        - belief_state
+        - item_pool
+        - self_value_vector
+        - current_stage
+        - latest_offer_if_any
+        - self_payoff_of_latest_offer
+        - legal_agree_available
+        - proposal_payoff_by_candidate
+        - acceptance_threshold_model
+        - opponent_preference_belief_model
+      still_forbidden:
+        - hard_acceptance_threshold
+        - direct_counteroffer_choice
+
+  prisoners_dilemma:
+    rationale: "Repeated-game structure may be summarized, but trigger strategies must not be directly encoded as fixed answers."
+    low_engineering:
+      allowed_fields:
+        - opponent_recent_actions
+        - cooperation_rate
+        - opponent_cooperation_rate
+        - opponent_defection_rate
+        - pattern_detection
+        - next_action_implications
+      forbidden_patterns:
+        - if_opponent_defected_then_testify
+        - fixed_tit_for_tat_output
+    high_engineering:
+      allowed_fields:
+        - history_summary
+        - opponent_defection_count
+        - opponent_cooperation_count
+        - trigger_strategy_state
+        - opponent_recent_defection
+        - stage_game_payoff_bounds_by_action
+        - stage_game_worst_case_payoff_by_action
+        - strictly_dominant_stage_actions
+        - future_interaction_value
+        - opponent_recent_actions
+        - opponent_cooperation_rate
+        - opponent_defection_rate
+        - pattern_detection
+        - next_action_implications
+      still_forbidden:
+        - direct_action_trigger_rule
+        - precommitted_repeated_game_policy

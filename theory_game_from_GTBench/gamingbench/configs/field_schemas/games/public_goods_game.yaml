@@ -1,0 +1,14 @@
+game_id: public_goods_game
+game_form: simultaneous public-goods contribution game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  endowment: {type: number_or_unknown, required: true, instruction: "My contribution budget if provided."}
+  contribution_actions: {type: list, required: true, instruction: "Legal contribution actions."}
+  marginal_public_return: {type: number_or_unknown, required: true, instruction: "Benefit multiplier or marginal per-capita return if known."}
+  private_cost_by_action: {type: object, required: true, instruction: "Private cost for each legal contribution."}
+  group_benefit_by_action: {type: object, required: true, instruction: "Total group benefit implication for each legal contribution."}
+  free_riding_incentive: {type: object, required: true, instruction: "Private incentive to contribute less holding others fixed."}
+  social_optimum_vs_private_optimum: {type: object, required: true, instruction: "Contrast group-best contribution with individual best response."}
+common_failure_modes: [confusing_group_and_individual_payoff, ignoring_free_riding_incentive, assuming_others_contribute]
+invalid_claims: [maximizing_total_payoff_as_if_individual_payoff, claiming_dominant_full_contribution_without_mpr_support]
+objective_alignment_notes: "Public-good social optimum can diverge from individual best response due to free riding."

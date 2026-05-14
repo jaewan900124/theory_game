@@ -1,0 +1,16 @@
+game_id: breakthrough
+game_form: finite perfect-information race and capture board game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  board_reconstruction: {type: object, required: true, instruction: "Parse piece locations by player from board or public history."}
+  my_pieces: {type: list, required: true, instruction: "My current piece coordinates."}
+  opponent_pieces: {type: list, required: true, instruction: "Opponent current piece coordinates."}
+  promotion_row_by_player: {type: object, required: true, instruction: "State my promotion row and opponent promotion row."}
+  immediate_promotion_actions: {type: list, required: true, instruction: "Legal moves that immediately reach my promotion row."}
+  opponent_immediate_promotion_threats: {type: list, required: true, instruction: "Opponent moves that would promote next turn if not stopped."}
+  capture_actions: {type: list, required: true, instruction: "Legal diagonal captures and captured piece coordinates."}
+  unsafe_advances: {type: list, required: true, instruction: "Legal moves that allow immediate capture or promotion loss."}
+  race_distance_by_piece: {type: object, required: true, instruction: "Minimum forward steps to promotion for relevant pieces."}
+common_failure_modes: [wrong_forward_direction, missed_one_move_promotion, capture_legality_error, race_distance_error]
+invalid_claims: [claiming_backward_move_is_forward, claiming_capture_on_empty_square, ignoring_opponent_immediate_promotion]
+objective_alignment_notes: "Environment objective is promotion or eliminating opponent pieces; immediate promotion and stopping opponent promotion dominate material."

@@ -13,6 +13,7 @@ def construct_observation_prompt(observations):
     legal_moves = observations.get('legal_moves', [])
     opponent_moves = observations.get('opponent_moves', [])
     self_moves = observations.get('self_moves', [])
+    board = observations.get('board', '')
 
     assert len(legal_moves) != 0
 
@@ -34,6 +35,8 @@ def construct_observation_prompt(observations):
     legal_pos = ', '.join(legal_moves)
     legal_position_prompt = f'Currently, the legal actions are {legal_pos}.'
 
-    prompt = f'{_construct_head_prompt()}\n{finished_move_prompt}\n{legal_position_prompt}'
+    board_prompt = f'Current board:\n{board}\n' if board else ''
+
+    prompt = f'{_construct_head_prompt()}\n{board_prompt}{finished_move_prompt}\n{legal_position_prompt}'
 
     return prompt

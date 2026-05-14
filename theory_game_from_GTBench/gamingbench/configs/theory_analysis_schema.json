@@ -1,0 +1,189 @@
+{
+  "common_output_schema": {
+    "decision_problem": "One sentence describing the current decision to solve.",
+    "strategic_objective": "One sentence connecting the chosen theory to the objective in this state.",
+    "critical_facts": [
+      "Observable or private facts from the current state that matter for this decision."
+    ],
+    "theory_specific_analysis": {},
+    "candidate_actions": [
+      {
+        "action": "A legal action label copied exactly from legal_actions.",
+        "reason": "Theory-grounded reason for considering the action.",
+        "risk": "Main strategic risk or opponent/chance response.",
+        "expected_continuation": "Expected next-state implication."
+      }
+    ],
+    "chosen_action": "One legal action label copied exactly from legal_actions.",
+    "chosen_action_rationale": "Concise theory-grounded rationale for the chosen action."
+  },
+  "schemas": {
+    "perfect_information_extensive_game": {
+      "applies_to_game_types": [
+        "finite extensive-form game with perfect information"
+      ],
+      "field_purpose": "Use when the whole state and all legal moves are public, deterministic, and adversarial.",
+      "analysis_fields": [
+        "terminal_or_immediate_win",
+        "immediate_opponent_threat",
+        "forced_response",
+        "lookahead_depth_or_horizon",
+        "continuation_value",
+        "maxmin_defense",
+        "subgame_stability"
+      ],
+      "candidate_action_fields": [
+        "does_it_win_now",
+        "does_it_block_now",
+        "opponent_best_response",
+        "worst_case_continuation",
+        "position_value_change"
+      ]
+    },
+    "combinatorial_perfect_information_game": {
+      "applies_to_game_types": [
+        "finite extensive-form game with perfect information"
+      ],
+      "field_purpose": "Use when the public deterministic state has a compact mathematical state value, such as Nim.",
+      "analysis_fields": [
+        "state_value",
+        "winning_or_losing_state",
+        "target_losing_state",
+        "legal_state_transition",
+        "opponent_response_class"
+      ],
+      "candidate_action_fields": [
+        "resulting_state_value",
+        "moves_to_target_state",
+        "opponent_can_restore_advantage"
+      ]
+    },
+    "stochastic_dynamic_game": {
+      "applies_to_game_types": [
+        "stochastic dynamic decision problem with chance nodes"
+      ],
+      "field_purpose": "Use when the decision trades current payoff against chance-node risk and future state value.",
+      "analysis_fields": [
+        "current_payoff_if_stop",
+        "chance_events",
+        "probability_of_bad_event",
+        "expected_increment",
+        "score_gap",
+        "target_or_terminal_pressure",
+        "expected_continuation_value"
+      ],
+      "candidate_action_fields": [
+        "immediate_value",
+        "chance_risk",
+        "expected_value",
+        "terminal_or_race_effect"
+      ]
+    },
+    "bayesian_private_value_game": {
+      "applies_to_game_types": [
+        "Bayesian private-value strategic game"
+      ],
+      "field_purpose": "Use when a player knows its own private value but must act under uncertainty about the opponent.",
+      "analysis_fields": [
+        "private_information",
+        "opponent_type_or_value_belief",
+        "surplus_if_successful",
+        "success_probability_belief",
+        "expected_payoff_by_candidate",
+        "dominance_or_overbid_risk"
+      ],
+      "candidate_action_fields": [
+        "surplus_if_win",
+        "belief_based_win_probability",
+        "expected_payoff",
+        "overpayment_or_exposure_risk"
+      ]
+    },
+    "imperfect_information_extensive_game": {
+      "applies_to_game_types": [
+        "imperfect-information extensive-form game"
+      ],
+      "field_purpose": "Use when the player observes private information and public history but not the opponent's hidden information.",
+      "analysis_fields": [
+        "private_information",
+        "public_history",
+        "information_set",
+        "opponent_belief_distribution",
+        "signaling_or_bluff_incentive",
+        "expected_payoff_by_candidate",
+        "mixed_strategy_pressure"
+      ],
+      "candidate_action_fields": [
+        "information_revealed",
+        "belief_response",
+        "showdown_or_terminal_value",
+        "bluff_or_call_value"
+      ]
+    },
+    "imperfect_information_chance_game": {
+      "applies_to_game_types": [
+        "imperfect-information extensive-form game with chance"
+      ],
+      "field_purpose": "Use when hidden private draws and public claims/actions jointly determine beliefs.",
+      "analysis_fields": [
+        "private_signal_or_dice",
+        "public_claim_history",
+        "last_claim_or_public_action",
+        "posterior_belief",
+        "claim_truth_probability",
+        "bluff_incentive",
+        "challenge_or_raise_value"
+      ],
+      "candidate_action_fields": [
+        "truthfulness",
+        "posterior_support",
+        "bluff_risk",
+        "challenge_value",
+        "future_claim_space"
+      ]
+    },
+    "bargaining_private_preferences": {
+      "applies_to_game_types": [
+        "bargaining game with private preferences and strategic communication"
+      ],
+      "field_purpose": "Use when offers, acceptance, and messages depend on private values and agreement feasibility.",
+      "analysis_fields": [
+        "self_value_vector",
+        "item_pool",
+        "current_offer_or_message",
+        "opponent_preference_belief",
+        "self_payoff_by_candidate",
+        "acceptance_probability",
+        "outside_option_or_continuation_value",
+        "strategic_signal"
+      ],
+      "candidate_action_fields": [
+        "self_payoff",
+        "opponent_plausible_payoff",
+        "acceptance_or_rejection_risk",
+        "information_revealed"
+      ]
+    },
+    "repeated_strategic_game": {
+      "applies_to_game_types": [
+        "repeated strategic game"
+      ],
+      "field_purpose": "Use when the one-shot incentive differs from the long-run incentive created by public history.",
+      "analysis_fields": [
+        "stage_game_incentive",
+        "public_action_history",
+        "last_opponent_action",
+        "cooperation_rate",
+        "punishment_or_forgiveness_state",
+        "future_interaction_value",
+        "history_dependent_strategy"
+      ],
+      "candidate_action_fields": [
+        "one_shot_payoff_effect",
+        "reputation_effect",
+        "retaliation_or_forgiveness_effect",
+        "future_cooperation_effect"
+      ]
+    }
+  }
+}

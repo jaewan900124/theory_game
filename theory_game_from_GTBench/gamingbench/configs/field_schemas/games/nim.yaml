@@ -1,0 +1,14 @@
+game_id: nim
+game_form: finite perfect-information combinatorial game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  pile_state: {type: object, required: true, instruction: "Current pile sizes from observation."}
+  legal_move_effects: {type: object, required: true, instruction: "Next pile state for each legal action."}
+  misere_rule_check: {type: boolean, required: true, instruction: "Whether taking the final match loses."}
+  phase_classification_by_action: {type: object, required: true, instruction: "Normal or endgame phase after each candidate action."}
+  nim_sum_by_action: {type: object, required: true, instruction: "Nim-sum for each candidate next state when applicable."}
+  singleton_parity_by_action: {type: object, required: true, instruction: "Endgame singleton parity when applicable."}
+  opponent_position_value_by_action: {type: object, required: true, instruction: "Whether each action gives opponent a winning or losing state."}
+common_failure_modes: [normal_misere_confusion, wrong_next_state, ignoring_singleton_parity]
+invalid_claims: [changing_multiple_piles, using_normal_nim_in_misere_endgame, choosing_without_opponent_position_value]
+objective_alignment_notes: "Environment objective is to force opponent to take the final match in misere Nim."

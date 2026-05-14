@@ -6,13 +6,36 @@ import numpy as np
 import yaml
 import concurrent
 import json
+import pathlib
 
 from concurrent.futures import ThreadPoolExecutor
-from box import Box
-from gamingbench import agents
-from gamingbench import games
-from gamingbench import models
+try:
+    from box import Box
+except ModuleNotFoundError:
+    Box = None
 
+
+class ConfigBox(dict):
+    def __getattr__(self, key):
+        try:
+            return self[key]
+        except KeyError as exc:
+            raise AttributeError(key) from exc
+
+    @classmethod
+    def from_mapping(cls, value):
+        if isinstance(value, dict):
+            return cls({k: cls.from_mapping(v) for k, v in value.items()})
+        if isinstance(value, list):
+            return [cls.from_mapping(v) for v in value]
+        return value
+
+
+def load_yaml_config(config_path):
+    if Box is not None:
+        return Box.from_yaml(filename=config_path, Loader=yaml.FullLoader)
+    with open(config_path, "r", encoding="utf-8") as file:
+        return ConfigBox.from_mapping(yaml.load(file, Loader=yaml.FullLoader))
 
 def get_game_config_path(game):
     config_root = './gamingbench/configs/game_configs'
@@ -38,32 +61,35 @@ def get_game_config_path(game):
         return os.path.join(config_root, 'pig.yaml')
     elif game == 'kuhn_poker':
         return os.path.join(config_root, 'kuhn_poker.yaml')
+    elif game == 'kuhn_poker_history10':
+        return os.path.join(config_root, 'kuhn_poker_history10.yaml')
     else:
         raise NotImplementedError
 
 
 def load_game(game_config_path):
-    game_config = Box.from_yaml(
-        filename=game_config_path, Loader=yaml.FullLoader)
+    from gamingbench import games
+
+    game_config = load_yaml_config(game_config_path)
     return getattr(games, game_config.game_name)()
 
 
 def load_config(config_path):
-    config = Box.from_yaml(
-        filename=config_path, Loader=yaml.FullLoader)
-
-    return config
+    return load_yaml_config(config_path)
 
 
 def load_agent(agent_config_path, **kwargs):
-    agent_config = Box.from_yaml(
-        filename=agent_config_path, Loader=yaml.FullLoader)
-    return getattr(agents, agent_config.agent_name)(agent_config, **kwargs)
+    from gamingbench import agents
+
+    agent_config = load_yaml_config(agent_config_path)
+    agent_class = getattr(agent_config, "agent_class", agent_config.agent_name)
+    return getattr(agents, agent_class)(agent_config, **kwargs)
 
 
 def load_model(model_config_path):
-    model_config = Box.from_yaml(
-        filename=model_config_path, Loader=yaml.FullLoader)
+    from gamingbench import models
+
+    model_config = load_yaml_config(model_config_path)
     return getattr(models, model_config.model_type)(model_config)
 
 
@@ -119,23 +145,55 @@ def save_jsonl(results, path):
 
 
 class LLMBenchLogger:
-    _instance = None
+    _active_logger = None
+    _loggers = {}
 
     def __new__(cls, logger_path, debug=False, rm_existed=False):
-        if cls._instance is None:
-            cls._instance = super(LLMBenchLogger, cls).__new__(cls)
-            cls._instance.logger = cls._configure_logger(
+        if logger_path is None:
+            if cls._active_logger is None:
+                cls._active_logger = cls._configure_logger(
+                    None, debug, rm_existed)
+            return cls._active_logger
+
+        logger_key = os.path.abspath(logger_path)
+        if rm_existed and logger_key in cls._loggers:
+            for handler in cls._loggers[logger_key].handlers[:]:
+                handler.close()
+                cls._loggers[logger_key].removeHandler(handler)
+            del cls._loggers[logger_key]
+
+        if logger_key not in cls._loggers:
+            cls._loggers[logger_key] = cls._configure_logger(
                 logger_path, debug, rm_existed)
-        return cls._instance.logger
+
+        cls._active_logger = cls._loggers[logger_key]
+        return cls._active_logger
 
     @staticmethod
     def _configure_logger(logger_path, debug, rm_existed):
-        logger = logging.getLogger(__name__)
+        if logger_path is None:
+            logger_name = __name__
+        else:
+            game_name = os.path.basename(os.path.dirname(logger_path))
+            run_name = os.path.splitext(os.path.basename(logger_path))[0]
+            logger_name = f"{__name__}.{game_name}.{run_name}"
+        logger = logging.getLogger(logger_name)
         logger.setLevel(logging.INFO)
+        logger.propagate = False
+
+        for handler in logger.handlers[:]:
+            handler.close()
+            logger.removeHandler(handler)
+
         ch = logging.StreamHandler()
         ch.setFormatter(logging.Formatter(
             '%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
         logger.addHandler(ch)
+
+        if logger_path is None:
+            return logger
+
+        pathlib.Path(os.path.dirname(logger_path)).mkdir(parents=True, exist_ok=True)
 
         if rm_existed and os.path.exists(logger_path):
             os.remove(logger_path)

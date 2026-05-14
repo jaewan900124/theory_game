@@ -1,0 +1,15 @@
+game_id: pig
+game_form: stochastic dynamic stopping game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  current_scores: {type: object, required: true, instruction: "Read self_score, opponent_score, and turn_total."}
+  target_score: {type: number, required: true, instruction: "Winning threshold from rules or observation."}
+  score_after_stop: {type: number, required: true, instruction: "self_score + turn_total."}
+  stop_wins_now: {type: boolean, required: true, instruction: "Whether stopping reaches target score."}
+  bust_loss: {type: number, required: true, instruction: "Turn total lost if rolling a 1."}
+  one_roll_heuristic_value_by_action: {type: object, required: true, instruction: "One-roll heuristic value using bust probability and safe gains; not a full dynamic-programming value."}
+  score_race_pressure: {type: object, required: true, instruction: "Distances to target for self and opponent."}
+  stop_or_roll_comparison: {type: object, required: true, instruction: "Compare legal stop/roll actions by risk-adjusted value."}
+common_failure_modes: [confusing_bust_loss_with_total_score, stopping_short_when_opponent_can_win, rolling_when_stop_wins_now]
+invalid_claims: [rolling_when_stop_wins_immediately, saying_bust_loses_permanent_score, ignoring_turn_total_zero]
+objective_alignment_notes: "Environment objective is reaching target first; stopping value and roll risk must be compared against race pressure."

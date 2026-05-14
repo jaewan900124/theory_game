@@ -1,0 +1,13 @@
+game_id: tictactoe
+game_form: finite perfect-information board game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  board_reading: {type: object, required: true, instruction: "Reconstruct all occupied cells by player from board or public move history."}
+  immediate_win_actions: {type: list, required: true, instruction: "Legal actions that complete my three-in-a-row."}
+  immediate_block_actions: {type: list, required: true, instruction: "Legal actions that block opponent's immediate three-in-a-row."}
+  fork_creation_actions: {type: list, required: true, instruction: "Legal actions creating at least two next-turn winning threats."}
+  fork_block_actions: {type: list, required: true, instruction: "Legal actions preventing opponent fork threats."}
+  heuristic_tiebreak_center_corner_edge: {type: object, required: true, instruction: "Classify legal actions as center, corner, or edge only as a heuristic tie-breaker after tactical checks."}
+common_failure_modes: [missed_fork, false_immediate_win, false_block, illegal_square]
+invalid_claims: [claiming_win_without_named_line, claiming_block_without_opponent_two_in_row, selecting_occupied_square]
+objective_alignment_notes: "Environment objective is win/draw/loss; immediate win and forced block dominate positional preferences."

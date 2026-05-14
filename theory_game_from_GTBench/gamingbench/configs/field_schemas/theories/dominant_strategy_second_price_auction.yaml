@@ -1,0 +1,8 @@
+theory_id: dominant_strategy_second_price_auction
+required_theory_evidence_fields:
+  truthful_bid_deviation_check: {type: object, required: true, instruction: "Compare truthful bid to overbid and underbid deviations."}
+  payment_rule_check: {type: string, required: true, instruction: "Verify winner pays second price, not own bid."}
+  dominated_deviation_actions: {type: list, required: true, instruction: "Legal deviations discouraged by dominance."}
+theory_operations: [verify_second_price_rule, compare_truthful_bid_deviations, choose_dominant_truthful_bid]
+decision_implications: "Truthful bid is the default dominant-strategy action when legal."
+invalid_theory_claims: [applying_first_price_shading, saying_own_bid_is_payment, treating_truthful_bid_as_belief_dependent]

@@ -8,10 +8,12 @@ import pyspiel
 
 
 class Pig(OpenSpielGame):
+    WIN_SCORE = 30
+
     def __init__(self) -> None:
         super().__init__("pig")
         self.game = pyspiel.load_game(
-            "pig", {'winscore': 20})
+            "pig", {'winscore': self.WIN_SCORE})
         self.env = self.game.new_initial_state()
         pass
 
@@ -35,6 +37,7 @@ class Pig(OpenSpielGame):
             'self_current_score': num2 if current_player_idx == 1 else num1,
             'opponent_current_score': num2 if current_player_idx == 0 else num1,
             'turn_total_score': num3,
+            'target_score': self.WIN_SCORE,
 
         }
         return res

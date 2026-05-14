@@ -1,6 +1,6 @@
 
 def _construct_head_prompt():
-    return """Pig is a fast-paced dice game where players risk accumulating points with each roll but risk losing them all if they roll a 1. Each player must decide when to stop rolling and bank their points, aiming to be the first to reach 100 points.
+    return """Pig is a fast-paced dice game where players risk accumulating points with each roll but risk losing them all if they roll a 1. Each player must decide when to stop rolling and bank their points, aiming to be the first to reach 30 points.
     You are playing Pig with the other. """
 
 
@@ -17,5 +17,4 @@ def construct_observation_prompt(observations):
     The legal moves are: {legal_move_str}."""
 
     return _construct_head_prompt() + '\n' + prompt
-
 

@@ -1,0 +1,18 @@
+game_id: kuhn_poker
+game_form: imperfect-information extensive-form poker game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary, private_information_used, hidden_information_not_assumed]
+required_derived_fields:
+  turn_and_history_perspective: {type: object, required: true, instruction: "Interpret public betting history from my current player's perspective."}
+  my_player_id: {type: string_or_integer, required: true, instruction: "My player index or role if provided."}
+  current_actor: {type: string, required: true, instruction: "Who is to act now."}
+  is_my_turn: {type: boolean, required: true, instruction: "Whether the current actor is me."}
+  public_history: {type: string_or_list, required: true, instruction: "Public pass/bet history exactly as observed."}
+  private_card_fields: {type: object, required: true, instruction: "My known private card and rank class."}
+  legal_action_context: {type: object, required: true, instruction: "Meaning of Pass/Bet in this one-round Kuhn information set: check/bet before any bet, fold/call when facing a bet; no raise action exists."}
+  facing_bet: {type: boolean, required: true, instruction: "Whether I am responding to an opponent bet."}
+  possible_opponent_cards_excluding_private_card: {type: list, required: true, instruction: "Possible opponent cards after excluding my known private card."}
+  opponent_card_belief_probabilities: {type: object, required: true, instruction: "Probability model over opponent cards if provided; unavailable otherwise."}
+  hand_strength_class: {type: string, required: true, instruction: "Weak, medium, or strong within Kuhn deck."}
+common_failure_modes: [wrong_turn_perspective, confusing_call_with_bet, hidden_card_assumption, history_misread]
+invalid_claims: [claiming_opponent_card_known, saying_i_bet_when_history_shows_opponent_bet, selecting_action_not_legal_in_context]
+objective_alignment_notes: "Environment objective is expected Kuhn poker payoff under one ante each, one betting round, and no further raises; information-set value depends on card, history, and legal action context."

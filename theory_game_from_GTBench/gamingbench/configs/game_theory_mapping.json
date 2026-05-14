@@ -1,0 +1,344 @@
+{
+  "tictactoe": {
+    "display_name": "Tic-Tac-Toe",
+    "game_type": "finite extensive-form game with perfect information",
+    "solution_concept": "backward-induction-style lookahead; subgame-perfect reasoning; maxmin defense",
+    "osborne_rubinstein_mapping": [
+      "Extensive games with perfect information",
+      "Subgame-perfect equilibrium and backward induction",
+      "Strictly competitive strategic reasoning"
+    ],
+    "why_fixed": "The full board, move order, legal actions, and terminal win/draw condition are publicly observed. The game is deterministic and zero-sum, so the relevant analysis is lookahead over legal continuations.",
+    "required_state_fields": [
+      "board",
+      "self_mark",
+      "opponent_mark",
+      "self_actions",
+      "opponent_actions",
+      "legal_actions",
+      "winning_lines",
+      "immediate_win",
+      "immediate_block",
+      "fork_creation",
+      "fork_prevention",
+      "continuation_value"
+    ],
+    "analysis_steps": [
+      "Check whether a legal action wins immediately.",
+      "Check whether the opponent has an immediate winning threat that must be blocked.",
+      "Check fork creation and fork prevention opportunities.",
+      "If no immediate tactic dominates, compare continuation value using center, corner, and line-control principles.",
+      "Choose one legal action that is stable under opponent best response."
+    ],
+    "output_focus": "Explain the move as a consequence of immediate tactics or best continuation value, not as a generic preference."
+  },
+  "connect4": {
+    "display_name": "Connect4",
+    "game_type": "finite extensive-form game with perfect information",
+    "solution_concept": "backward-induction-style lookahead; threat-space reasoning; maxmin defense",
+    "osborne_rubinstein_mapping": [
+      "Extensive games with perfect information",
+      "Subgame-perfect equilibrium and backward induction",
+      "Strictly competitive strategic reasoning"
+    ],
+    "why_fixed": "The board, move history, gravity rule, and legal columns are public. The game is deterministic and adversarial, so analysis should evaluate forced threats and opponent replies.",
+    "required_state_fields": [
+      "board",
+      "column_heights",
+      "self_disc",
+      "opponent_disc",
+      "self_actions",
+      "opponent_actions",
+      "legal_actions",
+      "immediate_win",
+      "immediate_block",
+      "vertical_threats",
+      "horizontal_threats",
+      "diagonal_threats",
+      "unsafe_columns",
+      "continuation_value"
+    ],
+    "analysis_steps": [
+      "Check legal columns that create an immediate four-in-a-row.",
+      "Check legal columns that block an opponent immediate win.",
+      "Identify columns that create two-way threats or allow opponent forced wins.",
+      "Prefer central columns only when they do not miss immediate tactics.",
+      "Choose one legal column with the best defensive and offensive continuation."
+    ],
+    "output_focus": "Mention the column-level tactical reason: win, block, threat creation, threat prevention, or safe central control."
+  },
+  "breakthrough": {
+    "display_name": "Breakthrough",
+    "game_type": "finite extensive-form game with perfect information",
+    "solution_concept": "backward-induction-style race analysis; capture and promotion threat analysis",
+    "osborne_rubinstein_mapping": [
+      "Extensive games with perfect information",
+      "Subgame-perfect equilibrium and backward induction",
+      "Strictly competitive strategic reasoning"
+    ],
+    "why_fixed": "All pieces, legal moves, captures, and promotion targets are public. The game is deterministic and strictly competitive, so each move should be evaluated by race-to-goal and capture continuations.",
+    "required_state_fields": [
+      "board",
+      "self_pieces",
+      "opponent_pieces",
+      "legal_actions",
+      "capture_moves",
+      "promotion_distance",
+      "opponent_promotion_threats",
+      "defended_pieces",
+      "unsafe_advances",
+      "material_balance",
+      "race_value"
+    ],
+    "analysis_steps": [
+      "Check whether a legal move reaches the opponent home row.",
+      "Check whether the opponent has an immediate promotion threat.",
+      "Evaluate captures and whether captured squares are safe.",
+      "Evaluate pawn advances by promotion distance and opponent counter-captures.",
+      "Choose one legal move that improves race value or prevents a decisive opponent race threat."
+    ],
+    "output_focus": "Explain the move in terms of promotion race, capture value, and opponent counterplay."
+  },
+  "nim": {
+    "display_name": "Nim",
+    "game_type": "finite extensive-form game with perfect information",
+    "solution_concept": "backward induction; combinatorial-game state analysis",
+    "osborne_rubinstein_mapping": [
+      "Extensive games with perfect information",
+      "Backward induction",
+      "Dominated-action avoidance"
+    ],
+    "why_fixed": "The pile sizes and legal removals are public and deterministic. The state has a compact combinatorial value, so optimal play is derived from terminal-state backward induction.",
+    "required_state_fields": [
+      "pile_sizes",
+      "legal_actions",
+      "nim_sum",
+      "terminal_distance",
+      "winning_state",
+      "target_zero_nim_sum_move",
+      "misere_rule_if_applicable",
+      "opponent_response_class"
+    ],
+    "prompt_state_fields": [
+      "1. pile_sizes = current remaining matches in each pile; a legal action may reduce exactly one pile.",
+      "2. legal_move_effect = for each candidate action, form the next pile_sizes after removing matches from one pile.",
+      "3. last_match_loses = this is misere Nim: the player forced to take the final remaining match loses.",
+      "4. large_pile_count = number of piles with more than 1 match after a candidate action.",
+      "5. singleton_count = number of piles with exactly 1 match after a candidate action.",
+      "6. phase_classification = if large_pile_count is at least 2, use normal_phase; if large_pile_count is 0 or 1, use endgame_phase.",
+      "7. nim_sum = in normal_phase, xor all nonzero next-state pile sizes; nim_sum 0 is the target losing state to give the opponent.",
+      "8. normal_target_move = in normal_phase, prefer a move whose next-state nim_sum becomes 0.",
+      "9. misere_endgame_target = in endgame_phase, use singleton parity and prefer a move that forces the opponent toward taking the final match.",
+      "10. opponent_position_value = judge each candidate by whether the opponent receives a losing state under backward induction."
+    ],
+    "analysis_steps": [
+      "Follow the field order: first build each candidate next state, then count large and singleton piles.",
+      "Classify each candidate next state as normal_phase or endgame_phase.",
+      "For normal_phase candidates, use nim-sum reasoning and prefer next-state nim_sum 0 for the opponent.",
+      "For endgame_phase candidates, use singleton parity and prefer a state that forces the opponent toward taking the final match.",
+      "Compare opponent_position_value across candidates.",
+      "Output exactly one legal action that removes from one pile and gives the opponent the lowest backward-induction value."
+    ],
+    "output_focus": "Report the state value and the target pile reduction."
+  },
+  "pig": {
+    "display_name": "Pig",
+    "game_type": "stochastic dynamic decision problem with chance nodes",
+    "solution_concept": "expected-value stopping analysis; dynamic risk/reward comparison",
+    "osborne_rubinstein_mapping": [
+      "Extensive games with chance",
+      "Dynamic decision making",
+      "Expected payoff reasoning"
+    ],
+    "why_fixed": "The decision alternates between player choices and die-roll chance events. The relevant problem is whether to continue rolling or stop based on expected value and bust risk.",
+    "required_state_fields": [
+      "self_score",
+      "opponent_score",
+      "turn_total",
+      "target_score",
+      "legal_actions",
+      "bust_probability",
+      "safe_roll_probability",
+      "expected_safe_roll_gain",
+      "expected_roll_value",
+      "bank_value",
+      "score_after_stop",
+      "stop_wins_now",
+      "roll_has_no_bust_loss",
+      "score_gap",
+      "self_distance_to_target",
+      "opponent_distance_to_target",
+      "finish_threshold",
+      "chance_events"
+    ],
+    "prompt_state_fields": [
+      "bank_value = turn_total.",
+      "score_after_stop = self_score + turn_total.",
+      "stop_wins_now = score_after_stop >= target_score.",
+      "bust_loss = turn_total; if turn_total is 0, rolling has no current turn points to lose.",
+      "roll_has_no_bust_loss = turn_total == 0.",
+      "score_gap = self_score - opponent_score."
+    ],
+    "analysis_steps": [
+      "Check whether stopping reaches the target score.",
+      "If the current turn total is 0, stopping banks 0 and gives up the turn, so rolling is usually preferred.",
+      "Estimate the value of banking the current turn total.",
+      "Estimate the expected value and bust risk of rolling.",
+      "Account for the score gap and opponent proximity to the target.",
+      "Choose roll or stop based on expected continuation value."
+    ],
+    "output_focus": "Explain the stopping or rolling decision by comparing banked value, bust risk, and score race."
+  },
+  "first_sealed_auction": {
+    "display_name": "First-price sealed-bid auction",
+    "game_type": "Bayesian private-value strategic game",
+    "solution_concept": "bid shading and expected payoff maximization under hidden opponent valuation",
+    "osborne_rubinstein_mapping": [
+      "Bayesian games",
+      "Private values",
+      "Auction examples"
+    ],
+    "why_fixed": "Each bidder knows its own valuation but not the opponent valuation. The action is a bid chosen under uncertainty, so the central tradeoff is win probability versus surplus.",
+    "required_state_fields": [
+      "private_valuation",
+      "bid_range",
+      "legal_actions",
+      "opponent_value_belief",
+      "surplus_if_win",
+      "win_probability_belief",
+      "expected_payoff",
+      "risk_of_overbidding"
+    ],
+    "analysis_steps": [
+      "Use the private valuation as an upper bound for rational bids.",
+      "Form a belief over the opponent valuation or bid.",
+      "Compare expected payoff across candidate bids.",
+      "Shade below valuation unless a higher bid is justified by win probability.",
+      "Choose one legal bid."
+    ],
+    "output_focus": "State the private value, shaded bid logic, and expected surplus tradeoff."
+  },
+  "kuhn_poker": {
+    "display_name": "Kuhn Poker",
+    "game_type": "imperfect-information extensive-form game",
+    "solution_concept": "information-set reasoning; belief updating; mixed-strategy bluff/call incentives",
+    "osborne_rubinstein_mapping": [
+      "Extensive games with imperfect information",
+      "Sequential equilibrium",
+      "Mixed strategies"
+    ],
+    "why_fixed": "A player observes its private card and public betting history but not the opponent card. Decisions require beliefs over hidden cards and incentives to bet, pass, call, or bluff.",
+    "required_state_fields": [
+      "private_card",
+      "public_betting_history",
+      "legal_actions",
+      "pot_size",
+      "card_rank_strength",
+      "opponent_card_belief",
+      "bluff_incentive",
+      "call_or_fold_threshold",
+      "showdown_value"
+    ],
+    "analysis_steps": [
+      "Identify the private card and public betting history.",
+      "Update beliefs about the opponent card from the observed actions.",
+      "Compare betting, passing, calling, or folding by expected value.",
+      "Account for bluffing and induced-call incentives.",
+      "Choose one legal action from the current information set."
+    ],
+    "output_focus": "Explain the action through card strength, belief over opponent card, and betting-history incentives."
+  },
+  "liars_dice": {
+    "display_name": "Liar's Dice",
+    "game_type": "imperfect-information extensive-form game with chance",
+    "solution_concept": "Bayesian belief updating; bluff detection; mixed-strategy bidding",
+    "osborne_rubinstein_mapping": [
+      "Extensive games with imperfect information",
+      "Belief-based sequential reasoning",
+      "Mixed strategies"
+    ],
+    "why_fixed": "Each player observes private dice and public bids but not the opponent dice. Legal bids and liar calls depend on posterior beliefs and bluff incentives.",
+    "required_state_fields": [
+      "self_dice",
+      "public_bid_history",
+      "last_bid",
+      "legal_actions",
+      "opponent_dice_belief",
+      "claim_probability",
+      "liar_call_value",
+      "raise_options",
+      "bluff_risk",
+      "chance_events"
+    ],
+    "analysis_steps": [
+      "Condition on the private die or dice.",
+      "Update belief about opponent dice from the public bid history.",
+      "Estimate whether the last claim is likely true.",
+      "Compare calling liar against raising the bid.",
+      "Choose one legal bid or liar call."
+    ],
+    "output_focus": "Explain whether the action is a truthful raise, strategic bluff, or liar call based on belief."
+  },
+  "negotiation": {
+    "display_name": "Negotiation",
+    "game_type": "bargaining game with private preferences and strategic communication",
+    "solution_concept": "bargaining reasoning; private-preference inference; acceptance threshold analysis",
+    "osborne_rubinstein_mapping": [
+      "Bargaining games",
+      "Nash bargaining",
+      "Bayesian private preferences",
+      "Strategic communication"
+    ],
+    "why_fixed": "Players know their own values but not the opponent's exact preferences. Offers and utterances reveal or obscure information, so actions should balance own payoff and agreement probability.",
+    "required_state_fields": [
+      "item_pool",
+      "self_value_vector",
+      "legal_actions",
+      "most_recent_proposal",
+      "most_recent_utterance",
+      "public_history",
+      "opponent_preference_belief",
+      "self_payoff_by_candidate",
+      "acceptance_threshold",
+      "concession_or_signal_value"
+    ],
+    "analysis_steps": [
+      "Compute which items are most valuable to self.",
+      "Infer possible opponent preferences from proposals and utterances.",
+      "Evaluate whether accepting beats continuing.",
+      "For proposals, trade away low-value items while retaining high-value items.",
+      "For utterances, decide whether to reveal, obscure, or strategically signal preferences."
+    ],
+    "output_focus": "Explain the proposal or acceptance by own payoff, opponent uncertainty, and agreement feasibility."
+  },
+  "prisoners_dilemma": {
+    "display_name": "Iterated Prisoner's Dilemma",
+    "game_type": "repeated strategic game",
+    "solution_concept": "history-dependent repeated-game reasoning; cooperation, retaliation, and forgiveness",
+    "osborne_rubinstein_mapping": [
+      "Prisoner's Dilemma as a strategic game",
+      "Repeated games",
+      "History-dependent strategies"
+    ],
+    "why_fixed": "The one-shot game has a defection incentive, but repetition makes current actions affect future cooperation. Public history determines whether to cooperate, punish, or forgive.",
+    "required_state_fields": [
+      "round_index",
+      "public_action_history",
+      "self_previous_actions",
+      "opponent_previous_actions",
+      "legal_actions",
+      "last_opponent_action",
+      "cooperation_rate",
+      "defection_or_punishment_state",
+      "future_interaction_value"
+    ],
+    "analysis_steps": [
+      "Identify whether this is the first round or a later repeated interaction.",
+      "Summarize the opponent's recent cooperation or defection.",
+      "Compare one-shot defection incentive with future cooperation value.",
+      "Punish recent defection when needed, but return to cooperation if the history supports forgiveness.",
+      "Choose Silent or Testify according to the repeated-game strategy."
+    ],
+    "output_focus": "Explain the action through public history, repeated-game incentives, and retaliation/forgiveness logic."
+  }
+}

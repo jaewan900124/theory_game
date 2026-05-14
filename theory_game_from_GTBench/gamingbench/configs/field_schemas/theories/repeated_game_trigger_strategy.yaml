@@ -1,0 +1,9 @@
+theory_id: repeated_game_trigger_strategy
+required_theory_evidence_fields:
+  history_condition: {type: object, required: true, instruction: "Observed condition that activates cooperation, punishment, or forgiveness."}
+  trigger_condition: {type: string, required: true, instruction: "Specific trigger rule applied in this state."}
+  long_term_incentive_check: {type: object, required: true, instruction: "Compare one-shot gain/loss with future cooperation value."}
+  recommended_strategy_state: {type: string, required: true, instruction: "cooperate, punish, forgive, or exploit-resistant fallback."}
+theory_operations: [summarize_history, detect_trigger_condition, compare_current_and_future_incentives]
+decision_implications: "Cooperate only when history makes future cooperation credible; punish persistent defection."
+invalid_theory_claims: [cooperating_unconditionally_against_defection, ignoring_last_opponent_action, confusing_self_history_with_opponent_history]

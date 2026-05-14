@@ -1,0 +1,14 @@
+game_id: centipede_game
+game_form: finite perfect-information sequential game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  current_node: {type: string, required: true, instruction: "Current decision node or move index."}
+  current_actor: {type: string, required: true, instruction: "Player who acts at this node."}
+  take_action_payoff: {type: object, required: true, instruction: "Payoffs if current actor takes/stops now."}
+  pass_action_continuation: {type: object, required: true, instruction: "Next node and payoffs if current actor passes/continues."}
+  remaining_depth: {type: integer_or_unknown, required: true, instruction: "Number of decision nodes remaining if known."}
+  backward_induction_action: {type: string, required: true, instruction: "Action implied by backward induction from current node."}
+  efficiency_tradeoff: {type: object, required: true, instruction: "Compare BI action with total-surplus continuation if relevant."}
+common_failure_modes: [wrong_node_owner, ignoring_terminal_continuation, confusing_social_surplus_with_individual_payoff]
+invalid_claims: [using_future_cooperation_without_node_payoff_check, selecting_action_unavailable_at_current_node]
+objective_alignment_notes: "Backward induction maximizes current player's strategic payoff, not total surplus."

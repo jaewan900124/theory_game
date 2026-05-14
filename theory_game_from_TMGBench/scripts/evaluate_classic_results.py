@@ -10,6 +10,20 @@ from dataset.utils import get_Nash_equilibrium
 MATRIX_ROW_RE = re.compile(
     r"^\|[^|]*A(?P<row>[12])[^|]*\|\s*(?P<a11>\d+)\s*\\\s*(?P<b11>\d+)\s*\|\s*(?P<a12>\d+)\s*\\\s*(?P<b12>\d+)\s*\|"
 )
+PROMPTINGS = (
+    "theory_refotom",
+    "theory_resotom",
+    "theory_fotom",
+    "theory_sotom",
+    "theory_cot",
+    "resotom",
+    "refotom",
+    "sotom",
+    "fotom",
+    "theory",
+    "direct",
+    "cot",
+)
 
 
 def parse_payoff_matrix(path):
@@ -39,8 +53,11 @@ def normalize_choice_set(response):
 
 def parse_result_filename(path):
     family, rest = path.stem.split("_", 1)
-    model, prompting = rest.rsplit("_", 1)
-    return family, model, prompting
+    for prompting in PROMPTINGS:
+        suffix = f"_{prompting}"
+        if rest.endswith(suffix):
+            return family, rest[: -len(suffix)], prompting
+    raise ValueError(f"Could not parse result filename: {path.name}")
 
 
 def evaluate_file(result_path, dataset_dir):

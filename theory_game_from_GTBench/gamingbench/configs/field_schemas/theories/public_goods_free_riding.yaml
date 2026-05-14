@@ -1,0 +1,9 @@
+theory_id: public_goods_free_riding
+required_theory_evidence_fields:
+  individual_payoff_by_contribution: {type: object, required: true, instruction: "My payoff by contribution holding beliefs about others fixed."}
+  social_payoff_by_contribution: {type: object, required: true, instruction: "Group payoff implication by contribution."}
+  free_riding_best_response: {type: object, required: true, instruction: "Private best response incentive to reduce contribution."}
+  social_vs_private_objective_gap: {type: string, required: true, instruction: "Where group optimum differs from individual incentive."}
+theory_operations: [separate_private_and_group_payoffs, compute_free_riding_incentive, compare_social_and_private_optima]
+decision_implications: "Do not treat social optimum as individual best response unless incentives align."
+invalid_theory_claims: [maximizing_group_payoff_as_private_payoff, assuming_others_contribute_without_belief, ignoring_private_cost]

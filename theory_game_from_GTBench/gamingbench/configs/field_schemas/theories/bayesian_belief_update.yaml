@@ -1,0 +1,9 @@
+theory_id: bayesian_belief_update
+required_theory_evidence_fields:
+  known_private_information: {type: object, required: true, instruction: "Private facts known to me."}
+  public_history_likelihood: {type: object, required: true, instruction: "How public actions affect beliefs over hidden states."}
+  posterior_belief_over_hidden_states: {type: object, required: true, instruction: "Belief over unknown states without claiming certainty."}
+  expected_value_by_action: {type: object, required: true, instruction: "Expected value or direction for each relevant legal action."}
+theory_operations: [condition_on_private_information, update_from_public_history, compare_expected_values]
+decision_implications: "Choose the action with best belief-conditioned value while preserving uncertainty."
+invalid_theory_claims: [assuming_hidden_information, using_prior_without_public_history, treating_belief_as_known_fact]

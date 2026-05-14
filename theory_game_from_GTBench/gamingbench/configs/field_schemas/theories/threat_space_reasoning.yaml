@@ -1,0 +1,8 @@
+theory_id: threat_space_reasoning
+required_theory_evidence_fields:
+  forcing_threats_created: {type: list, required: true, instruction: "Threats my legal actions create that require opponent response."}
+  forcing_threats_faced: {type: list, required: true, instruction: "Opponent threats that must be answered now."}
+  unsafe_action_filter: {type: list, required: true, instruction: "Candidate actions that allow an immediate opponent win or decisive threat."}
+theory_operations: [identify_immediate_threats, filter_unsafe_moves, compare_forcing_lines]
+decision_implications: "Do not choose a non-forcing positional move when a forced win/block exists."
+invalid_theory_claims: [calling_non_immediate_threat_forced, ignoring_opponent_immediate_win, using_center_or_race_value_before_threat_filter]

@@ -18,20 +18,22 @@ class ToTAgent(BaseAgent):
         self.n_evaluate_sample = config.n_evaluate_sample
         self.n_select_sample = config.n_select_sample
         self.prompt_sample = config.prompt_sample
+        self.step_prompt_constructor = construct_step_prompt
+        self.voting_prompt_constructor = construct_voting_prompt
 
     def step(self, observations):
-        self.logger.info('-' * 20 + 'ToTAgent Begin' + '-' * 20)
+        self.logger.info('-' * 20 + f'{self.agent_name} Begin' + '-' * 20)
         # we follow the official tot implementation: https://github.com/princeton-nlp/tree-of-thought-llm/blob/master/src/tot/methods/bfs.py
         env_name = observations['env_name']
         system_prompt = construct_system_prompt(env_name)
         observation_prompt = construct_observation_prompt(observations, environment_name=env_name)
 
-        step_instruct = construct_step_prompt(observations)
+        step_instruct = self.step_prompt_constructor(observations)
         step_prompt = step_instruct['prompt']
         step_regex = step_instruct['regex']
         stop_signs = step_instruct['stop_signs']
 
-        voting_instruct = construct_voting_prompt(observations)
+        voting_instruct = self.voting_prompt_constructor(observations)
         voting_prompt = voting_instruct['prompt']
         voting_regex = voting_instruct['regex']
 
@@ -67,7 +69,7 @@ class ToTAgent(BaseAgent):
 
         parsed_moves = self.parse_with_regex(ys, step_regex)
         parsed_moves = self.post_processing(parsed_moves, majority_vote=True)
-        self.logger.info('-' * 20 + 'ToTAgent End' + '-' * 20)
+        self.logger.info('-' * 20 + f'{self.agent_name} End' + '-' * 20)
         return parsed_moves, query_list
 
     def _get_samples(self, messages, y, n_generate_sample, stop):

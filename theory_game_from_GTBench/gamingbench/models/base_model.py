@@ -11,6 +11,8 @@ class BaseModel(object):
         self.timeout = config.timeout
         self.temperature = config.temperature
         self.nick_name = config.nick_name
+        self.think = getattr(config, "think", None)
+        self.ollama_base_url = getattr(config, "ollama_base_url", None)
 
     def query(self, messages, n, stop, prompt_type):
         pass

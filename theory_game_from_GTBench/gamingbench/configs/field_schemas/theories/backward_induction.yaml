@@ -1,0 +1,8 @@
+theory_id: backward_induction
+required_theory_evidence_fields:
+  current_node_value: {type: object, required: true, instruction: "Value of the current decision node for each legal action."}
+  continuation_value_by_action: {type: object, required: true, instruction: "Opponent-reply-aware continuation value after each candidate action."}
+  terminal_or_tactical_priority: {type: list, required: true, instruction: "Immediate terminal wins/losses or forced blocks that dominate deeper preferences."}
+theory_operations: [evaluate_legal_successors, compare_opponent_best_replies, prefer_forced_win_or_best_continuation]
+decision_implications: "Choose immediate win first, then forced defense, then action with best continuation value."
+invalid_theory_claims: [ignoring_current_node_owner, selecting_action_without_successor_value, preferring_position_over_immediate_loss]

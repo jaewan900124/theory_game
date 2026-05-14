@@ -1,0 +1,71 @@
+game_aliases:
+  tic_tac_toe: tictactoe
+  tictactoe: tictactoe
+  first_price_auction: first_price_auction
+  first_sealed_auction: first_price_auction
+  iterated_prisoners_dilemma: iterated_prisoners_dilemma
+  prisoners_dilemma: iterated_prisoners_dilemma
+  python_iterated_prisoners_dilemma: iterated_prisoners_dilemma
+
+theory_aliases:
+  backward-induction-style lookahead: backward_induction
+  subgame-perfect reasoning: backward_induction
+  maxmin defense: best_response_and_dominance
+  threat-space reasoning: threat_space_reasoning
+  bayesian belief updating: bayesian_belief_update
+  bluff detection: bayesian_belief_update
+  mixed-strategy bidding: mixed_strategy_equilibrium
+  bid shading: private_value_first_price_auction
+  expected payoff maximization under hidden opponent valuation: private_value_first_price_auction
+  truthful bidding: dominant_strategy_second_price_auction
+  history-dependent repeated-game reasoning: repeated_game_trigger_strategy
+  cooperation, retaliation, and forgiveness: repeated_game_trigger_strategy
+  best-response theory: best_response_and_dominance
+  dominance theory: best_response_and_dominance
+  mixed-strategy equilibrium: mixed_strategy_equilibrium
+  risk dominance: risk_and_payoff_dominance
+  payoff dominance: risk_and_payoff_dominance
+  signaling equilibrium: sequential_equilibrium_signaling
+  public goods free riding: public_goods_free_riding
+
+default_theories_by_game:
+  tictactoe:
+    - backward_induction
+    - best_response_and_dominance
+  connect4:
+    - backward_induction
+    - threat_space_reasoning
+  breakthrough:
+    - backward_induction
+    - threat_space_reasoning
+  liars_dice:
+    - bayesian_belief_update
+    - mixed_strategy_equilibrium
+  kuhn_poker:
+    - bayesian_belief_update
+    - mixed_strategy_equilibrium
+  first_price_auction:
+    - private_value_first_price_auction
+  second_price_auction:
+    - dominant_strategy_second_price_auction
+  iterated_prisoners_dilemma:
+    - repeated_game_trigger_strategy
+  matching_pennies:
+    - mixed_strategy_equilibrium
+    - best_response_and_dominance
+  stag_hunt:
+    - risk_and_payoff_dominance
+  centipede_game:
+    - backward_induction
+  signaling_game:
+    - sequential_equilibrium_signaling
+    - bayesian_belief_update
+  public_goods_game:
+    - public_goods_free_riding
+    - best_response_and_dominance
+  nim:
+    - backward_induction
+  pig:
+    - stochastic_stopping_expected_value
+  negotiation:
+    - bargaining_private_preferences

@@ -1,0 +1,7 @@
+agent_name: TheoryInteractionFieldHighDistill
+agent_class: TheoryInteractionFieldAgent
+num_generations: 1
+majority_vote: False
+engineering_profile: high_engineering
+engineering_profile_mode: distill
+engineering_profile_strict: True

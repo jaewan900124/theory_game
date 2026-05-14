@@ -1,0 +1,8 @@
+theory_id: risk_and_payoff_dominance
+required_theory_evidence_fields:
+  payoff_dominant_equilibrium: {type: object, required: true, instruction: "Equilibrium with highest joint or individual coordinated payoff."}
+  risk_dominant_equilibrium: {type: object, required: true, instruction: "Equilibrium with safer basin under uncertainty."}
+  belief_threshold_for_risky_coordination: {type: object, required: true, instruction: "Belief needed to justify payoff-dominant action."}
+theory_operations: [identify_coordination_equilibria, compare_payoff_dominance, compare_risk_dominance]
+decision_implications: "Choose payoff-dominant only when belief clears risk threshold; otherwise choose risk-dominant safe action."
+invalid_theory_claims: [equating_payoff_dominance_with_safety, ignoring_failed_coordination_loss]

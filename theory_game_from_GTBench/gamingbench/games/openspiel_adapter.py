@@ -36,6 +36,10 @@ class OpenSpielGame:
     def play(self, agent_list, model_list, tracker):
         self.status = "Normal"
         _match = GameMatch()
+        _match.set_player_order(
+            [agent.agent_name for agent in agent_list],
+            [model.nick_name for model in model_list],
+        )
 
         num_step = 0
         while not self.env.is_terminal():
@@ -183,16 +187,22 @@ class OpenSpielGame:
                         agent.inform_action(self.env, player_idx, game_action)
 
         results = self.env.returns()
+        player_names = [
+            agent_list[idx].agent_name + "_" + agent_list[idx].model.nick_name
+            for idx in range(len(agent_list))
+        ]
+        _match.set_scores({
+            player_names[idx]: results[idx]
+            for idx in range(len(player_names))
+        })
         if results[0] > results[1]:
             # player 0 wins
-            winner_name = agent_list[0].agent_name + \
-                "_"+agent_list[0].model.nick_name
+            winner_name = player_names[0]
             _match.loser_score = results[1]
             _match.winner_score = results[0]
         elif results[1] > results[0]:
             # player 1 wins
-            winner_name = agent_list[1].agent_name + \
-                "_"+agent_list[1].model.nick_name
+            winner_name = player_names[1]
             _match.loser_score = results[0]
             _match.winner_score = results[1]
         else:

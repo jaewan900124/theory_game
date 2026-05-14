@@ -15,7 +15,9 @@ class LLMModel(BaseModel):
             max_tokens=self.max_tokens,
             n=n,
             timeout=self.timeout,
-            stop=stop
+            stop=stop,
+            think=self.think,
+            base_url=self.ollama_base_url,
         )
         generations = responses['generations']
         completion_tokens = responses['completion_tokens']

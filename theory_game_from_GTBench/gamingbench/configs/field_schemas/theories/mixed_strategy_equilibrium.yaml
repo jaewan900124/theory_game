@@ -1,0 +1,8 @@
+theory_id: mixed_strategy_equilibrium
+required_theory_evidence_fields:
+  pure_equilibrium_check: {type: object, required: true, instruction: "Whether a pure equilibrium or pure best action is determined."}
+  mixing_support: {type: list, required: true, instruction: "Actions in the mixed support if no pure action is determined."}
+  indifference_or_randomization_reason: {type: string, required: true, instruction: "Why uncertainty or mixing remains."}
+theory_operations: [check_pure_best_responses, identify_mixing_support, represent_uncertainty]
+decision_implications: "If theory does not determine one pure action, expose uncertainty and choose a legal fallback from support."
+invalid_theory_claims: [claiming_unique_pure_action_when_mixed_required, hiding_uncertainty, selecting_outside_support]

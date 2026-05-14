@@ -6,9 +6,12 @@ import threading
 from gamingbench.utils import utils
 from gamingbench.environments.base_env import BaseGameEnv
 import json
+import time
+import traceback
 
 games = ['tictactoe', 'connect4', 'texasholdem', 'neuron_poker', 'backgammon', 'breakthrough',
          'first_sealed_auction', 'gin_rummy', 'liars_dice', 'negotiation', 'nim', 'pig', 'kuhn_poker',
+         'kuhn_poker_history10',
          'prisoners_dilemma']
 
 
@@ -38,8 +41,20 @@ def get_args():
 
     parser.add_argument('--api-keys', default='', nargs='+')
 
-    parser.add_argument('--exchange-first-player',
-                        default=False, action='store_true')
+    exchange_group = parser.add_mutually_exclusive_group()
+    exchange_group.add_argument(
+        '--exchange-first-player',
+        dest='exchange_first_player',
+        default=True,
+        action='store_true',
+        help='Swap agent/model order for the second half of matches. Enabled by default to reduce first-player or role-order bias.',
+    )
+    exchange_group.add_argument(
+        '--no-exchange-first-player',
+        dest='exchange_first_player',
+        action='store_false',
+        help='Disable agent/model order swapping. Use only for games or diagnostics where role order should stay fixed.',
+    )
     parser.add_argument('--num-workers', default=1, type=int)
     parser.add_argument('--threshold-matches', default=50, type=int)
     args = parser.parse_args()
@@ -48,6 +63,11 @@ def get_args():
 
 
 def run_game(game_name):
+    if game_name == 'kuhn_poker_history10' and args.num_workers != 1:
+        raise ValueError(
+            "kuhn_poker_history10 requires --num-workers 1 so previous-match history stays chronological."
+        )
+
     log_root = os.path.join(args.exp_root, game_name)
     pathlib.Path(log_root).mkdir(parents=True, exist_ok=True)
     agent_names = [a.split('/')[-1].split('.')[0] for a in args.agent_configs]
@@ -98,6 +118,7 @@ def run_game(game_name):
     game_env.set_game(game)
 
     lock = threading.Lock()
+    recent_match_history_by_slot = {0: [], 1: []} if game_name == 'kuhn_poker_history10' else None
 
     if args.num_workers == 1:
         results = []
@@ -111,7 +132,8 @@ def run_game(game_name):
                 'reversed_models': reversed_models,
                 'result_path': result_path,
                 'args': args,
-                'lock': lock
+                'lock': lock,
+                'recent_match_history_by_slot': recent_match_history_by_slot,
             }
             results.append(run_match(match_arg))
     else:
@@ -126,7 +148,8 @@ def run_game(game_name):
                 'reversed_agents': reversed_agents,
                 'result_path': result_path,
                 'args': args,
-                'lock': lock
+                'lock': lock,
+                'recent_match_history_by_slot': recent_match_history_by_slot,
             })
         results = utils.parallel_func(run_match, match_arg_list,
                                       num_workers=args.num_workers)
@@ -150,6 +173,27 @@ def pick_out_invalid_matches(results):
     return invalid_matches_param
 
 
+def save_error(args, game_name, stage, exc):
+    error_root = os.path.join(args.exp_root, game_name)
+    pathlib.Path(error_root).mkdir(parents=True, exist_ok=True)
+    record = {
+        "time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "game_name": game_name,
+        "stage": stage,
+        "error_type": type(exc).__name__,
+        "error": str(exc),
+        "traceback": traceback.format_exc(),
+    }
+
+    pathlib.Path(args.exp_root).mkdir(parents=True, exist_ok=True)
+    with open(os.path.join(args.exp_root, "errors.jsonl"), "a") as file:
+        file.write(json.dumps(record) + "\n")
+
+    with open(os.path.join(error_root, "error.log"), "a") as file:
+        file.write("=" * 80 + "\n")
+        file.write(json.dumps(record, indent=2) + "\n")
+
+
 def run_match(params):
     match_idx = params['match_idx']
     game_name = params['game_name']
@@ -158,6 +202,7 @@ def run_match(params):
     models = params['models']
     reversed_models = params['reversed_models']
     result_path = params['result_path']
+    recent_match_history_by_slot = params.get('recent_match_history_by_slot')
 
     args = params['args']
     game_env = BaseGameEnv()
@@ -181,6 +226,7 @@ def run_match(params):
         reversed_model_configs.reverse()
         for config_path in reversed_model_configs:
             game_env.append_models_config(utils.load_config(config_path))
+        slot_by_player = {0: 1, 1: 0}
     else:
         game_env.set_agents(agents)
         game_env.set_models(models)
@@ -190,9 +236,26 @@ def run_match(params):
 
         for config_path in args.model_configs:
             game_env.append_models_config(utils.load_config(config_path))
+        slot_by_player = {0: 0, 1: 1}
+
+    if recent_match_history_by_slot is not None and hasattr(game, 'set_recent_match_history_by_player'):
+        game.set_recent_match_history_by_player({
+            player_idx: list(recent_match_history_by_slot[slot_by_player[player_idx]][-10:])
+            for player_idx in range(2)
+        })
 
     game_env.play()
+    if recent_match_history_by_slot is not None and hasattr(game, 'summarize_completed_match_for_players'):
+        match = game_env.history_tracker.matches[-1]
+        if match.status == "Normal":
+            per_player_summaries = game.summarize_completed_match_for_players(match)
+            for player_idx in range(2):
+                slot = slot_by_player[player_idx]
+                recent_match_history_by_slot[slot].append(per_player_summaries[player_idx])
+                if len(recent_match_history_by_slot[slot]) > 10:
+                    recent_match_history_by_slot[slot] = recent_match_history_by_slot[slot][-10:]
     res = game_env.history_tracker.to_dict()
+    pathlib.Path(os.path.dirname(result_path)).mkdir(parents=True, exist_ok=True)
     with params['lock']:
         with open(result_path, 'a') as file:
             file.writelines(json.dumps(res) + '\n')
@@ -213,7 +276,11 @@ def main(args):
     utils.set_seed(args.seed)
 
     for game_name in args.game_names:
-        run_game(game_name)
+        try:
+            run_game(game_name)
+        except Exception as exc:
+            save_error(args, game_name, "run_game", exc)
+            utils.LLMBenchLogger(None).exception(f"Failed to run game {game_name}")
 
 
 if __name__ == '__main__':

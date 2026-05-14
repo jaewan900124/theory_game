@@ -1,5 +1,6 @@
 
 import re
+import time
 from gamingbench.utils.history_tracker import Query
 from gamingbench.utils import utils
 
@@ -26,8 +27,14 @@ class BaseAgent(object):
         if self.model == None:
             raise NotImplementedError
         assert prompt_type in ['move', 'plan', 'vote']
+        started_at = time.time()
         generations, completion_tokens, prompt_tokens = self.model.query(
             messages, n, stop, prompt_type)
+        elapsed = time.time() - started_at
+        self.logger.info(
+            f"LLM query completed: model={self.model.nick_name}, "
+            f"prompt_type={prompt_type}, elapsed={elapsed:.3f}s, "
+            f"prompt_tokens={prompt_tokens}, completion_tokens={completion_tokens}")
         query = self._prompt_to_query(
             messages, prompt_type, generations, token_size=completion_tokens + prompt_tokens)
         return generations, query

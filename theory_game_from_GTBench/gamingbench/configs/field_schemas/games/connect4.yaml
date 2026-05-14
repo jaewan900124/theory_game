@@ -1,0 +1,14 @@
+game_id: connect4
+game_form: finite perfect-information board game with gravity
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  board_reconstruction: {type: object, required: true, instruction: "Reconstruct discs by column and row using gravity and public history."}
+  column_heights: {type: object, required: true, instruction: "Compute current height for each column."}
+  playable_row_by_column: {type: object, required: true, instruction: "Map each legal column to the row where my disc would land."}
+  immediate_win_columns: {type: list, required: true, instruction: "Legal columns that create my four-in-a-row after gravity drop."}
+  immediate_block_columns: {type: list, required: true, instruction: "Legal columns that block opponent's immediate four-in-a-row."}
+  dangerous_moves_that_enable_opponent_win: {type: list, required: true, instruction: "Legal columns that allow an opponent immediate win on the next turn."}
+  heuristic_tiebreak_center_distance_by_column: {type: object, required: true, instruction: "Distance of each legal column from center; lower is more central; use only as a heuristic tie-breaker after tactical checks."}
+common_failure_modes: [gravity_error, wrong_column_height, missed_vertical_win, missed_immediate_block, unsafe_enabling_move]
+invalid_claims: [claiming_full_column_is_playable, ignoring_playable_row, marking_center_control_above_immediate_block]
+objective_alignment_notes: "Environment objective is connect-four win; immediate win/block and unsafe-move avoidance dominate center preference."

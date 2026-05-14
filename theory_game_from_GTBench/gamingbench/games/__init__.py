@@ -7,4 +7,5 @@ from gamingbench.games.negotiation import Negotiation
 from gamingbench.games.nim import Nim
 from gamingbench.games.pig import Pig
 from gamingbench.games.kuhn_poker import KuhnPoker
+from gamingbench.games.kuhn_poker_history10 import KuhnPokerHistory10
 from gamingbench.games.prisoners_dilemma import PrisonersDilemma

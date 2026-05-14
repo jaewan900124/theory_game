@@ -1,0 +1,13 @@
+game_id: signaling_game
+game_form: imperfect-information signaling game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary, private_information_used, hidden_information_not_assumed]
+required_derived_fields:
+  sender_type_if_known: {type: string_or_null, required: true, instruction: "Known sender type only if privately observed by my role."}
+  observed_signal: {type: string_or_null, required: true, instruction: "Public signal observed before current response, if any."}
+  receiver_belief_after_signal: {type: object, required: true, instruction: "Belief over sender types after signal without assuming hidden type."}
+  available_responses: {type: list, required: true, instruction: "Legal responses or signals available now."}
+  pooling_or_separating_candidate: {type: object, required: true, instruction: "Candidate equilibrium pattern relevant to current information set."}
+  incentive_compatibility_relevant_payoffs: {type: object, required: true, instruction: "Payoff checks for type/signal/response incentives."}
+common_failure_modes: [assuming_unobserved_type, ignoring_signal_belief_update, missing_incentive_compatibility]
+invalid_claims: [claiming_receiver_knows_type_from_signal_without_belief, using_unavailable_signal_or_response]
+objective_alignment_notes: "Sequential equilibrium requires belief consistency and incentive compatibility under current information."

@@ -1,0 +1,14 @@
+game_id: second_price_auction
+game_form: Bayesian private-value second-price auction
+required_state_fields: [my_role, current_turn_owner, legal_actions, private_information_used, hidden_information_not_assumed]
+required_derived_fields:
+  private_valuation: {type: number, required: true, instruction: "My known private value."}
+  bid_space: {type: list, required: true, instruction: "Legal bid actions converted to numeric bids."}
+  truthful_bid: {type: string_or_number, required: true, instruction: "Legal bid closest to private valuation."}
+  overbid_deviation_risk: {type: object, required: true, instruction: "Risk of winning at a price above value when bidding above value."}
+  underbid_deviation_risk: {type: object, required: true, instruction: "Risk of losing profitable wins when bidding below value."}
+  dominant_strategy_check: {type: object, required: true, instruction: "Check truthful bidding against overbid and underbid deviations."}
+  tie_handling_if_known: {type: string, required: true, instruction: "Tie rule if provided, otherwise mark unknown."}
+common_failure_modes: [applying_first_price_shading, hidden_value_assumption, truthful_bid_not_checked]
+invalid_claims: [saying_shading_is_dominant_in_second_price, claiming_payment_equals_own_bid, assuming_opponent_value_known]
+objective_alignment_notes: "Theory objective and payoff objective align around truthful bidding when payment is second price."

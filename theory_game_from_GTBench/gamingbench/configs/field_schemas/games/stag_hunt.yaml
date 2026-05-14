@@ -1,0 +1,13 @@
+game_id: stag_hunt
+game_form: simultaneous coordination game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  payoff_matrix_reading: {type: object, required: true, instruction: "Read individual payoff by action profile."}
+  risk_dominant_action: {type: string, required: true, instruction: "Action with lower downside under uncertainty."}
+  payoff_dominant_action: {type: string, required: true, instruction: "Action in the payoff-superior coordinated equilibrium."}
+  belief_about_opponent_cooperation: {type: object, required: true, instruction: "Belief or uncertainty about opponent choosing cooperative action."}
+  coordination_risk: {type: object, required: true, instruction: "Loss from failed coordination."}
+  safe_action_value: {type: object, required: true, instruction: "Value of safe action under uncertainty."}
+common_failure_modes: [confusing_payoff_and_risk_dominance, assuming_coordination_without_evidence]
+invalid_claims: [claiming_payoff_dominant_is_riskless, ignoring_belief_threshold]
+objective_alignment_notes: "Decision depends on belief threshold between payoff-dominant coordination and risk-dominant safety."

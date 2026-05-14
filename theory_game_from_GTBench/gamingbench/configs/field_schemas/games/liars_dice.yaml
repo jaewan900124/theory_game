@@ -1,0 +1,16 @@
+game_id: liars_dice
+game_form: imperfect-information chance game with public bids
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary, private_information_used, hidden_information_not_assumed]
+required_derived_fields:
+  bid_semantics: {type: object, required: true, instruction: "Interpret a bid as at least quantity dice showing exactly the named face, not a face range."}
+  current_bid_quantity: {type: integer_or_null, required: true, instruction: "Quantity in the current public bid, if any."}
+  current_bid_face: {type: integer_or_null, required: true, instruction: "Face value in the current public bid, if any."}
+  minimum_next_bid_rule: {type: string, required: true, instruction: "State the legal rule for the next raise."}
+  legal_raise_space: {type: list, required: true, instruction: "Legal non-Liar raises from legal_actions."}
+  my_dice_evidence: {type: object, required: true, instruction: "Known private dice evidence relevant to the current bid."}
+  unknown_dice_count: {type: integer, required: true, instruction: "Number of dice not observed by me."}
+  estimated_probability_current_bid_true: {type: number_or_null, required: true, instruction: "Probability estimate conditioned only on my dice and public history."}
+  challenge_or_raise_comparison: {type: object, required: true, instruction: "Compare Liar versus legal raises with uncertainty explicit."}
+common_failure_modes: [face_range_misread, hidden_die_assumption, illegal_raise, overconfident_probability]
+invalid_claims: [treating_bid_face_as_at_least_face, claiming_opponent_die_known, using_unlisted_raise]
+objective_alignment_notes: "Environment objective is winning the challenge/bidding sequence; belief estimates must not assume hidden dice."

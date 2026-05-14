@@ -1,0 +1,8 @@
+theory_id: sequential_equilibrium_signaling
+required_theory_evidence_fields:
+  belief_after_signal: {type: object, required: true, instruction: "Receiver belief after observed signal."}
+  sequential_rationality_check: {type: object, required: true, instruction: "Best response given belief at current information set."}
+  incentive_compatibility_check: {type: object, required: true, instruction: "Whether sender types prefer the proposed signal pattern."}
+theory_operations: [update_belief_after_signal, check_receiver_best_response, check_sender_incentives]
+decision_implications: "Choose a signal/response consistent with beliefs and incentive compatibility."
+invalid_theory_claims: [assuming_type_from_signal, ignoring_off_path_uncertainty, claiming_equilibrium_without_ic]

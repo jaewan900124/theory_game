@@ -1,0 +1,7 @@
+agent_name: TheoryInteractionFieldHighReasoning
+agent_class: TheoryInteractionFieldAgent
+num_generations: 1
+majority_vote: False
+engineering_profile: high_engineering
+engineering_profile_mode: reasoning
+engineering_profile_strict: True

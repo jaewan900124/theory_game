@@ -1,0 +1,14 @@
+game_id: iterated_prisoners_dilemma
+game_form: repeated strategic game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  history_summary: {type: object, required: true, instruction: "Summarize self and opponent action history separately."}
+  opponent_recent_actions: {type: list, required: true, instruction: "Most recent opponent actions in order."}
+  opponent_cooperation_rate: {type: number, required: true, instruction: "Observed cooperation rate."}
+  opponent_defection_rate: {type: number, required: true, instruction: "Observed defection rate."}
+  pattern_detection: {type: object, required: true, instruction: "Detect always defect, tit-for-tat, cooperation, or noisy pattern."}
+  trigger_strategy_state: {type: object, required: true, instruction: "State whether cooperation, punishment, or forgiveness condition applies."}
+  next_action_implications: {type: object, required: true, instruction: "Compare Silent and Testify for current and future consequences."}
+common_failure_modes: [unconditional_cooperation_against_defection, ignoring_recent_history, confusing_self_and_opponent_actions]
+invalid_claims: [claiming_trust_when_opponent_always_defects, using_history_without_separating_players]
+objective_alignment_notes: "Repeated-game theory may favor cooperation only when future cooperation is credible in observed history."

@@ -1,0 +1,16 @@
+game_id: negotiation
+game_form: bargaining game with private preferences and strategic communication
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary, private_information_used, hidden_information_not_assumed]
+required_derived_fields:
+  item_pool: {type: object, required: true, instruction: "Available item counts from public state."}
+  self_value_vector: {type: object, required: true, instruction: "My known private values for items."}
+  current_stage: {type: string, required: true, instruction: "Proposal, utterance, agreement, or other current turn type."}
+  latest_offer_if_any: {type: object, required: true, instruction: "Most recent concrete proposal if present."}
+  self_payoff_of_latest_offer: {type: number_or_null, required: true, instruction: "Payoff of accepting the latest offer using my private values."}
+  legal_agree_available: {type: boolean, required: true, instruction: "Whether <Agree> is currently legal."}
+  acceptance_threshold_model: {type: object, required: true, instruction: "Availability/status of a deterministic acceptance threshold model; unavailable if no threshold is specified by rules."}
+  proposal_payoff_by_candidate: {type: object, required: true, instruction: "Self payoff for relevant legal proposal candidates."}
+  opponent_preference_belief_model: {type: object, required: true, instruction: "Availability/status of a deterministic opponent-preference belief model; unavailable if no model is provided."}
+common_failure_modes: [never_agreeing, assuming_opponent_values, accepting_without_self_payoff_check, invalid_allocation]
+invalid_claims: [using_guessed_opponent_values_as_fact, ignoring_legal_agree, proposing_quantities_outside_pool]
+objective_alignment_notes: "No agreement can yield zero payoff; accept when current offer clears threshold instead of endlessly counter-proposing."

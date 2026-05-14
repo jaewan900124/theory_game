@@ -12,12 +12,13 @@ from tqdm import tqdm
 
 from models.gemma import Gemma
 from models.gpt4 import GPT4
+from models.llama3 import Llama3
 from models.utils import tocls
 from scripts.utils import color_print, parse_choice_combinations
 
-def evaluate(llm, path, family, id, prompting, result_folder, show_response=False, num_tries=4):
+def evaluate(llm, path, family, id, prompting, result_folder, show_response=False, num_tries=4, overwrite=False):
     output_path = f"{result_folder}/story-based/{family}_{id}_{llm}_{prompting}.json"
-    if os.path.exists(output_path):
+    if os.path.exists(output_path) and not overwrite:
         with open(output_path, "r") as file:
             if json.load(file).get("tries", 0) > 0:
                 return
@@ -31,9 +32,12 @@ def evaluate(llm, path, family, id, prompting, result_folder, show_response=Fals
     question = "[Question]\n" + prompts["question"] + "\n" + prompts[prompting] + "\n[/Question]"
 
     responses = []
+    raw_responses = []
+    parse_errors = []
     for tries in range(num_tries):
         llm.set_context(setting, role="system")
         response = llm.invoke(desc + "\n" + question)
+        raw_responses.append(response)
         if show_response:
             print(f"\n===== {family}_{id} try {tries + 1} raw response =====")
             print(response)
@@ -45,12 +49,16 @@ def evaluate(llm, path, family, id, prompting, result_folder, show_response=Fals
         except Exception as e:
             color_print(e, "red")
             color_print(response[:500], "yellow")
+            parse_errors.append({"try": tries + 1, "error": str(e), "raw": response})
             continue
     print(responses)
     with open(output_path, "w") as file:
         json.dump({
+            "attempted_tries": len(raw_responses),
             "tries": len(responses),
             "responses": responses,
+            "raw_responses": raw_responses,
+            "parse_errors": parse_errors,
         }, file)
 
 if __name__ == '__main__':
@@ -63,6 +71,7 @@ if __name__ == '__main__':
     parser.add_argument("--delay", "-d", type=str)
     parser.add_argument("--show_response", action="store_true")
     parser.add_argument("--tries", type=int, default=4)
+    parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
 
     datasets_path = "dataset/story-based"
@@ -76,7 +85,7 @@ if __name__ == '__main__':
     )""")
 
     for id, layer, row, column in tqdm(product(range(0, 5),range(1, 5), range(1, 7), range(1, 7)), total=5 * 4 * 6 * 6):
-        evaluate(llm, datasets_path, f"{layer}{row}{column}", id, args.prompting, result_folder, args.show_response, args.tries)
+        evaluate(llm, datasets_path, f"{layer}{row}{column}", id, args.prompting, result_folder, args.show_response, args.tries, args.overwrite)
         time.sleep(float(args.delay))
 
 # 

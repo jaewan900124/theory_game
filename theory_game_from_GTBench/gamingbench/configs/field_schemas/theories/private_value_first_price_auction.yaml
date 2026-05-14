@@ -1,0 +1,9 @@
+theory_id: private_value_first_price_auction
+required_theory_evidence_fields:
+  private_value_bound: {type: object, required: true, instruction: "My value and legal bids relative to that value."}
+  bid_shading_evidence: {type: object, required: true, instruction: "How much each candidate bid shades below value."}
+  win_probability_assumption_by_bid: {type: object, required: true, instruction: "Explicit assumption for bid winning probability."}
+  expected_surplus_by_bid: {type: object, required: true, instruction: "win_probability * (value - bid) for compared bids when possible."}
+theory_operations: [bound_by_private_value, estimate_bid_win_probability, trade_off_surplus_and_win_probability]
+decision_implications: "Prefer best expected surplus unless environment objective prioritizes win-rate."
+invalid_theory_claims: [claiming_opponent_value_known, maximizing_surplus_without_win_probability, ignoring_objective_mismatch]

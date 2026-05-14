@@ -1,0 +1,14 @@
+game_id: first_price_auction
+game_form: Bayesian private-value sealed-bid auction
+required_state_fields: [my_role, current_turn_owner, legal_actions, private_information_used, hidden_information_not_assumed]
+required_derived_fields:
+  private_valuation: {type: number, required: true, instruction: "My known private value."}
+  bid_space: {type: list, required: true, instruction: "Legal bid actions converted to numeric bids."}
+  overbid_actions: {type: list, required: true, instruction: "Legal bids above private valuation, if any."}
+  zero_surplus_actions: {type: list, required: true, instruction: "Legal bids equal to private valuation."}
+  positive_surplus_actions: {type: list, required: true, instruction: "Legal bids below private valuation."}
+  objective_sensitive_bid_fields: {type: object, required: true, instruction: "Separate win-rate pressure from expected-surplus pressure."}
+  win_probability_surplus_tradeoff: {type: object, required: true, instruction: "Compare candidate bids by assumed win probability and surplus if win."}
+common_failure_modes: [over_shading_under_win_rate_metric, hidden_value_assumption, overbid_without_reason, objective_mismatch]
+invalid_claims: [claiming_opponent_value_known, ignoring_legal_bid_range, confusing_highest_surplus_with_highest_win_probability]
+objective_alignment_notes: "Theory objective is expected surplus; some experiments score winner count, which can favor more aggressive bids."

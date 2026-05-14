@@ -1,0 +1,8 @@
+theory_id: best_response_and_dominance
+required_theory_evidence_fields:
+  payoff_by_action_profile: {type: object, required: true, instruction: "Individual payoff implications by action profile when available."}
+  best_response_by_belief_or_opponent_action: {type: object, required: true, instruction: "Best response conditional on opponent action or belief."}
+  dominated_actions: {type: list, required: true, instruction: "Actions worse against all relevant opponent actions, if any."}
+theory_operations: [read_individual_payoffs, compute_best_responses, eliminate_dominated_actions]
+decision_implications: "Avoid dominated actions and choose best response under stated belief or current node."
+invalid_theory_claims: [confusing_total_payoff_with_individual_payoff, claiming_dominance_without_all_cases, ignoring_opponent_action_space]

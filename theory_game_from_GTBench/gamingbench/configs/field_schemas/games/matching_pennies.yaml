@@ -1,0 +1,13 @@
+game_id: matching_pennies
+game_form: simultaneous zero-sum matrix game
+required_state_fields: [my_role, current_turn_owner, legal_actions, public_state_summary]
+required_derived_fields:
+  payoff_matrix_reading: {type: object, required: true, instruction: "Read individual payoff by action profile."}
+  my_available_actions: {type: list, required: true, instruction: "My legal actions."}
+  opponent_available_actions: {type: list, required: true, instruction: "Opponent possible actions if provided by rules."}
+  best_response_by_opponent_action: {type: object, required: true, instruction: "My best response to each opponent action."}
+  pure_strategy_equilibrium_check: {type: object, required: true, instruction: "Check whether any pure action profile is mutual best response."}
+  mixed_strategy_support: {type: object, required: true, instruction: "Support and mixing logic if pure equilibrium is absent."}
+common_failure_modes: [claiming_pure_equilibrium_when_none, confusing_zero_sum_payoffs, deterministic_exploitability]
+invalid_claims: [claiming_dominant_pure_action_without_matrix_support, treating_randomization_as_illegal_when_mixing_is_theory]
+objective_alignment_notes: "Environment action is pure in one play; mixed equilibrium may imply uncertainty among legal pure actions."

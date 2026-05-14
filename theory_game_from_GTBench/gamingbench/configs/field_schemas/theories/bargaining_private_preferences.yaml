@@ -1,0 +1,9 @@
+theory_id: bargaining_private_preferences
+required_theory_evidence_fields:
+  self_payoff_by_candidate: {type: object, required: true, instruction: "Payoff of accept/proposal actions using my values."}
+  opponent_preference_belief: {type: object, required: true, instruction: "Belief from public history, not hidden facts."}
+  agreement_probability_by_action: {type: object, required: true, instruction: "Likelihood direction that candidate reaches agreement."}
+  acceptance_or_concession_threshold: {type: object, required: true, instruction: "Threshold for accepting or conceding."}
+theory_operations: [compute_self_payoff, infer_beliefs_from_history, compare_agreement_payoff_tradeoff]
+decision_implications: "Accept offers above threshold; otherwise propose high self-payoff allocations with plausible agreement chance."
+invalid_theory_claims: [assuming_opponent_values, ignoring_disagreement_payoff, counterproposing_when_agree_is_better]

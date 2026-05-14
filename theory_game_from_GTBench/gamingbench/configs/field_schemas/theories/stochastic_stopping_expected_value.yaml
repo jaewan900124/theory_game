@@ -1,0 +1,9 @@
+theory_id: stochastic_stopping_expected_value
+required_theory_evidence_fields:
+  certain_stop_value: {type: object, required: true, instruction: "Certain score outcome from stopping."}
+  chance_event_distribution: {type: object, required: true, instruction: "Roll outcomes and bust probability."}
+  expected_roll_value: {type: object, required: true, instruction: "Expected continuation value of rolling."}
+  race_adjusted_decision: {type: string, required: true, instruction: "How score race changes stop/roll priority."}
+theory_operations: [compute_stop_value, compute_roll_bust_risk, compare_risk_adjusted_continuation]
+decision_implications: "Stop if it wins now or banking is strategically sufficient; roll when risk is justified by race pressure."
+invalid_theory_claims: [ignoring_chance_node, confusing_turn_total_with_permanent_score, rolling_when_stop_wins_now]

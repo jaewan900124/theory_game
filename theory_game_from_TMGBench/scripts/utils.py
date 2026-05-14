@@ -24,13 +24,13 @@ def color_print(text, color):
 
 
 def parse_choice_combinations(response):
-    candidates = []
     code_blocks = re.findall(r"```(?:python|py)?\s*\n?(.*?)```", response, re.DOTALL | re.IGNORECASE)
-    candidates.extend(code_blocks)
-    candidates.append(response)
 
-    for candidate in candidates:
-        for text in _extract_list_candidates(candidate):
+    # Benchmark prompts require Python-style output. Keep parsing strict so
+    # reasoning text like "check (A1, B1), then (A2, B2)" is not mistaken for
+    # the final answer.
+    for candidate in code_blocks:
+        for text in _extract_list_candidates(candidate, allow_any_list=True):
             try:
                 parsed = ast.literal_eval(text)
             except Exception:
@@ -40,19 +40,34 @@ def parse_choice_combinations(response):
             if normalized is not None:
                 return normalized
 
-        fallback = _parse_choice_pairs_from_text(candidate)
-        if fallback is not None:
-            return fallback
+        if _mentions_empty_answer(candidate):
+            return []
+
+    for text in _extract_list_candidates(response, allow_any_list=False):
+        try:
+            parsed = ast.literal_eval(text)
+        except Exception:
+            continue
+
+        normalized = _normalize_choice_combinations(parsed)
+        if normalized is not None:
+            return normalized
+
+    if _mentions_empty_answer(response):
+        return []
 
     raise ValueError("No valid choice combination list found")
 
 
-def _extract_list_candidates(text):
+def _extract_list_candidates(text, allow_any_list=False):
     answer_match = re.search(r"answer\s*=", text, re.DOTALL)
     if answer_match:
         extracted = _extract_balanced_list(text, answer_match.end())
         if extracted is not None:
             yield extracted
+
+    if not allow_any_list:
+        return
 
     start = 0
     while True:
@@ -161,11 +176,15 @@ def _parse_choice_pairs_from_text(text):
     if pairs:
         return pairs
 
-    if re.search(
-        r"\bempty\s+list\b|\banswer\s*=\s*\[\s*\]|\[\s*\]|\bno\s+pure\b|\bno\s+pure-strategy\b|\bno\s+pure\s+strategy\b|\bno\s+pure\s+nash\b|\bno\s+pure-strategy\s+nash\b|\bno\s+pure\s+strategy\s+nash\b",
-        text,
-        re.IGNORECASE,
-    ):
+    if _mentions_empty_answer(text):
         return []
 
     return None
+
+
+def _mentions_empty_answer(text):
+    return re.search(
+        r"\bempty\s+list\b|\banswer\s*=\s*\[\s*\]|\[\s*\]|\bno\s+pure\b|\bno\s+pure-strategy\b|\bno\s+pure\s+strategy\b|\bno\s+pure\s+nash\b|\bno\s+pure-strategy\s+nash\b|\bno\s+pure\s+strategy\s+nash\b",
+        text,
+        re.IGNORECASE,
+    ) is not None
