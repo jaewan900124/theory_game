@@ -1,0 +1,7 @@
+game,matches,ok,failed,mean_score,std_score,win_rate
+air_land_sea,5,5,0,0.8133212560386474,0.14303361744820758,1.0
+arctic_scavengers,2,0,2,,,
+are_you_the_traitor,6,6,0,1.0,0.0,1.0
+santorini,6,6,0,0.6666666666666666,0.4714045207910317,0.6666666666666666
+sea_battle,11,11,0,0.0,0.0,0.0
+two_rooms_and_a_boom,6,6,0,0.5,0.5,0.5

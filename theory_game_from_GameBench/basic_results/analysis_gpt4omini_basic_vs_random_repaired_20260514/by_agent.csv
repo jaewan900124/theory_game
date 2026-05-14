@@ -1,0 +1,2 @@
+agent,games_with_scores,matches,ok,failed,macro_mean_score,macro_win_rate
+basic_openai_gpt_4o_mini,3,14,13,1,0.4826110578245209,0.5555555555555556

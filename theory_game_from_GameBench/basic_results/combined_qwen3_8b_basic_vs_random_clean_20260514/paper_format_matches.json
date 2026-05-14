@@ -1,0 +1,172 @@
+[
+  {
+    "game": "air_land_sea",
+    "basic_ollama_qwen3_8b": 0.8888888888888888,
+    "random": 0.1111111111111111
+  },
+  {
+    "game": "air_land_sea",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "air_land_sea",
+    "basic_ollama_qwen3_8b": 0.5652173913043478,
+    "random": 0.43478260869565216
+  },
+  {
+    "game": "air_land_sea",
+    "basic_ollama_qwen3_8b": 0.8,
+    "random": 0.2
+  },
+  {
+    "game": "air_land_sea",
+    "basic_ollama_qwen3_8b": 0.8125,
+    "random": 0.1875
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "santorini",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "santorini",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "santorini",
+    "basic_ollama_qwen3_8b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "santorini",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "santorini",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "santorini",
+    "basic_ollama_qwen3_8b": 1.0,
+    "random": 0.0
+  }
+]

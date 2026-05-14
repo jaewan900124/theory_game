@@ -1,0 +1,2 @@
+game,comparison,model_name,matches,ok,failed,base_mean_score,high_reasoning_mean_score
+santorini,base_vs_high_reasoning,gemma4:31b,5,1,4,1.0,0.0

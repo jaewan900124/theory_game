@@ -1,0 +1,2 @@
+agent,game,matches,ok,failed,mean_score,win_rate
+basic_ollama_gemma4_31b,codenames,5,5,0,0.3333333333333333,0.4

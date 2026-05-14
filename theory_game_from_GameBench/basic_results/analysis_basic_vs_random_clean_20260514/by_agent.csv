@@ -1,0 +1,3 @@
+agent,games_with_scores,matches,ok,failed,macro_mean_score,macro_win_rate
+basic_ollama_qwen3_8b,5,34,34,0,0.5959975845410628,0.6333333333333333
+basic_openai_gpt_4o_mini,7,41,41,0,0.3519916674803893,0.3476808905380334

@@ -1,0 +1,2 @@
+game,mode,matches,ok,failed,mean_score,std_score,win_rate
+air_land_sea,high_reasoning,3,3,0,0.6944444444444444,0.27498597046143514,0.6666666666666666

@@ -1,0 +1,20 @@
+[
+  {
+    "run_dir": "experiments/gemma4_31b_gamebench_theory_vs_random_20260514/high_reasoning_gemma4_31b_codenames_dualgpu_20260514_154406",
+    "games": [
+      "codenames"
+    ],
+    "records": 5,
+    "ok": 5,
+    "failed": 0
+  },
+  {
+    "run_dir": "experiments/gemma4_31b_gamebench_theory_vs_random_20260514/high_distill_gemma4_31b_codenames_dualgpu_20260514_154446",
+    "games": [
+      "codenames"
+    ],
+    "records": 5,
+    "ok": 5,
+    "failed": 0
+  }
+]

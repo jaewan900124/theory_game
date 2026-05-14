@@ -1,0 +1,50 @@
+{
+  "run_id": "high_reasoning_gemma4_31b_codenames_dualgpu_20260514_154406",
+  "created_at": "2026-05-14 16:17:59 KST",
+  "config": {
+    "games": [
+      "codenames"
+    ],
+    "modes": [
+      "high_reasoning"
+    ],
+    "match_plan": "paper_gpt4_random",
+    "match_counts": {
+      "codenames": 5
+    },
+    "num_matches": 5,
+    "model_name": "gemma4:31b",
+    "backend": "ollama",
+    "base_url": "http://127.0.0.1:11439",
+    "temperature": 1.0,
+    "max_tokens": 1100,
+    "timeout": 240,
+    "match_timeout_seconds": 600,
+    "response_retries": 3,
+    "seed": 0,
+    "seating": "balanced",
+    "opponent": "random"
+  },
+  "by_game_mode": [
+    {
+      "game": "codenames",
+      "mode": "high_reasoning",
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "mean_score": 0.6133986928104576,
+      "std_score": 0.3325468101213236,
+      "win_rate": 0.8
+    }
+  ],
+  "by_mode": [
+    {
+      "mode": "high_reasoning",
+      "games": 1,
+      "overall_mean_score": 0.6133986928104576,
+      "overall_win_rate": 0.8,
+      "failures": 0
+    }
+  ],
+  "failures": []
+}

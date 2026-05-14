@@ -1,0 +1,57 @@
+{
+  "run_id": "high_reasoning_qwen3_8b_random_s0b_20260514_114235",
+  "created_at": "2026-05-14 11:56:15 KST",
+  "config": {
+    "games": [
+      "air_land_sea",
+      "arctic_scavengers",
+      "codenames",
+      "hive",
+      "pit"
+    ],
+    "modes": [
+      "high_reasoning"
+    ],
+    "match_plan": "paper_gpt4_random",
+    "match_counts": {
+      "air_land_sea": 5,
+      "arctic_scavengers": 7,
+      "codenames": 5,
+      "hive": 5,
+      "pit": 3
+    },
+    "num_matches": 5,
+    "model_name": "qwen3:8b",
+    "backend": "ollama",
+    "base_url": "http://127.0.0.1:11439",
+    "temperature": 1.0,
+    "max_tokens": 1100,
+    "timeout": 240,
+    "response_retries": 3,
+    "seed": 0,
+    "seating": "random",
+    "opponent": "random"
+  },
+  "by_game_mode": [
+    {
+      "game": "air_land_sea",
+      "mode": "high_reasoning",
+      "matches": 3,
+      "ok": 3,
+      "failed": 0,
+      "mean_score": 0.6944444444444444,
+      "std_score": 0.27498597046143514,
+      "win_rate": 0.6666666666666666
+    }
+  ],
+  "by_mode": [
+    {
+      "mode": "high_reasoning",
+      "games": 1,
+      "overall_mean_score": 0.6944444444444444,
+      "overall_win_rate": 0.6666666666666666,
+      "failures": 0
+    }
+  ],
+  "failures": []
+}

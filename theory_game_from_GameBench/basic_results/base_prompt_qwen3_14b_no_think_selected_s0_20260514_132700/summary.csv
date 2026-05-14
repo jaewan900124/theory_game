@@ -1,0 +1,6 @@
+game,planned_matches,matches,ok,failed,mean_score,std_score,win_rate
+codenames,5,5,5,0,0.24,0.3878143885933063,0.2
+santorini,6,6,2,4,1.0,0.0,1.0
+are_you_the_traitor,6,6,2,4,1.0,0.0,1.0
+air_land_sea,5,5,5,0,0.46088462262375307,0.27040336646530516,0.6
+two_rooms_and_a_boom,6,6,6,0,0.8333333333333334,0.37267799624996495,0.8333333333333334

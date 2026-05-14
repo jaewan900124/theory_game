@@ -1,0 +1,27 @@
+[
+  {
+    "game": "codenames",
+    "theory_high_distill_ollama_gemma4_31b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "codenames",
+    "theory_high_distill_ollama_gemma4_31b": 0.6111111111111112,
+    "random": 0.3888888888888889
+  },
+  {
+    "game": "codenames",
+    "theory_high_distill_ollama_gemma4_31b": 0.8,
+    "random": 0.2
+  },
+  {
+    "game": "codenames",
+    "theory_high_distill_ollama_gemma4_31b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "codenames",
+    "theory_high_distill_ollama_gemma4_31b": 0.75,
+    "random": 0.25
+  }
+]

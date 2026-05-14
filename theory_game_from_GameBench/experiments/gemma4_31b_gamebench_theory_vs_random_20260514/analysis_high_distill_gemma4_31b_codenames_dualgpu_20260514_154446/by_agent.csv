@@ -1,0 +1,2 @@
+agent,games_with_scores,matches,ok,failed,macro_mean_score,macro_win_rate
+theory_high_distill_ollama_gemma4_31b,1,5,5,0,0.8322222222222222,1.0

@@ -1,0 +1,67 @@
+[
+  {
+    "game": "hive",
+    "basic_openai_gpt_4o_mini": 0.5,
+    "random": 0.5
+  },
+  {
+    "game": "hive",
+    "basic_openai_gpt_4o_mini": 0.5,
+    "random": 0.5
+  },
+  {
+    "game": "hive",
+    "basic_openai_gpt_4o_mini": 0.5,
+    "random": 0.5
+  },
+  {
+    "game": "hive",
+    "basic_openai_gpt_4o_mini": 0.5,
+    "random": 0.5
+  },
+  {
+    "game": "pit",
+    "basic_openai_gpt_4o_mini": 0.5660377358490566,
+    "random": 0.4339622641509434
+  },
+  {
+    "game": "pit",
+    "basic_openai_gpt_4o_mini": 0.2413793103448276,
+    "random": 0.7586206896551724
+  },
+  {
+    "game": "pit",
+    "basic_openai_gpt_4o_mini": 0.5360824742268041,
+    "random": 0.4639175257731959
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "game": "codenames",
+    "theory_high_reasoning_ollama_gemma4_31b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "codenames",
+    "theory_high_reasoning_ollama_gemma4_31b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "codenames",
+    "theory_high_reasoning_ollama_gemma4_31b": 0.75,
+    "random": 0.25
+  },
+  {
+    "game": "codenames",
+    "theory_high_reasoning_ollama_gemma4_31b": 0.6111111111111112,
+    "random": 0.3888888888888889
+  },
+  {
+    "game": "codenames",
+    "theory_high_reasoning_ollama_gemma4_31b": 0.7058823529411765,
+    "random": 0.29411764705882354
+  }
+]

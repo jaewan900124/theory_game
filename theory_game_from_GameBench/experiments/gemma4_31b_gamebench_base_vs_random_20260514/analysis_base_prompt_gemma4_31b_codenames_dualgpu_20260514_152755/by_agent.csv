@@ -1,0 +1,2 @@
+agent,games_with_scores,matches,ok,failed,macro_mean_score,macro_win_rate
+basic_ollama_gemma4_31b,1,5,5,0,0.3333333333333333,0.4

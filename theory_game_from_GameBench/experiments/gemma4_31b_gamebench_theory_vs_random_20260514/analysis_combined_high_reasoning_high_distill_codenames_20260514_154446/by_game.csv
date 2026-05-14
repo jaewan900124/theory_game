@@ -1,0 +1,3 @@
+agent,game,matches,ok,failed,mean_score,win_rate
+theory_high_distill_ollama_gemma4_31b,codenames,5,5,0,0.8322222222222222,1.0
+theory_high_reasoning_ollama_gemma4_31b,codenames,5,5,0,0.6133986928104576,0.8

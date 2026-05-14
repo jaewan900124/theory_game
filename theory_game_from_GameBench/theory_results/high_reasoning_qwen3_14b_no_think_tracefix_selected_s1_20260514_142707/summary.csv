@@ -1,0 +1,3 @@
+game,mode,matches,ok,failed,mean_score,std_score,win_rate
+codenames,high_reasoning,5,5,0,0.4,0.4898979485566356,0.4
+santorini,high_reasoning,4,4,0,0.5,0.5,0.5

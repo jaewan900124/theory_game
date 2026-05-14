@@ -1,0 +1,2 @@
+game,comparison,model_name,matches,ok,failed,base_mean_score,high_reasoning_mean_score
+codenames,base_vs_high_reasoning,gemma4:31b,5,5,0,0.08421052631578947,0.9157894736842105

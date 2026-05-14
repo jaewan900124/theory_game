@@ -1,0 +1,4 @@
+game,matches,ok,failed,mean_score,std_score,win_rate
+hive,5,4,1,0.5,0.0,0.5
+pit,3,3,0,0.4478331734735628,0.1464962516592109,0.6666666666666666
+two_rooms_and_a_boom,6,6,0,0.5,0.5,0.5

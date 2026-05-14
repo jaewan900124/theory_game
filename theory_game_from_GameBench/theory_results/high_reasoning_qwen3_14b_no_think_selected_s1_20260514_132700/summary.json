@@ -1,0 +1,78 @@
+{
+  "run_id": "high_reasoning_qwen3_14b_no_think_selected_s1_20260514_132700",
+  "created_at": "2026-05-14 14:37:00 KST",
+  "config": {
+    "games": [
+      "codenames",
+      "santorini",
+      "are_you_the_traitor",
+      "air_land_sea",
+      "two_rooms_and_a_boom"
+    ],
+    "modes": [
+      "high_reasoning"
+    ],
+    "match_plan": "paper_gpt4_random",
+    "match_counts": {
+      "codenames": 5,
+      "santorini": 6,
+      "are_you_the_traitor": 6,
+      "air_land_sea": 5,
+      "two_rooms_and_a_boom": 6
+    },
+    "num_matches": 5,
+    "model_name": "qwen3:14b",
+    "backend": "ollama",
+    "base_url": "http://127.0.0.1:11441",
+    "temperature": 1.0,
+    "max_tokens": 1100,
+    "timeout": 240,
+    "match_timeout_seconds": 600,
+    "response_retries": 3,
+    "seed": 0,
+    "seating": "random",
+    "opponent": "random"
+  },
+  "by_game_mode": [
+    {
+      "game": "are_you_the_traitor",
+      "mode": "high_reasoning",
+      "matches": 6,
+      "ok": 6,
+      "failed": 0,
+      "mean_score": 1.0,
+      "std_score": 0.0,
+      "win_rate": 1.0
+    },
+    {
+      "game": "codenames",
+      "mode": "high_reasoning",
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "mean_score": 0.4,
+      "std_score": 0.4898979485566356,
+      "win_rate": 0.4
+    },
+    {
+      "game": "santorini",
+      "mode": "high_reasoning",
+      "matches": 6,
+      "ok": 6,
+      "failed": 0,
+      "mean_score": 0.16666666666666666,
+      "std_score": 0.37267799624996495,
+      "win_rate": 0.16666666666666666
+    }
+  ],
+  "by_mode": [
+    {
+      "mode": "high_reasoning",
+      "games": 3,
+      "overall_mean_score": 0.5222222222222223,
+      "overall_win_rate": 0.5222222222222223,
+      "failures": 0
+    }
+  ],
+  "failures": []
+}

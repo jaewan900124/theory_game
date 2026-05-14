@@ -1,0 +1,69 @@
+{
+  "created_at": "2026-05-14 14:18:34 KST",
+  "run_dirs": [
+    "basic_results/combined_gpt4omini_basic_vs_random_repaired_20260514"
+  ],
+  "total_records": 14,
+  "ok_records": 13,
+  "failed_records": 1,
+  "by_game": [
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "hive",
+      "matches": 5,
+      "ok": 4,
+      "failed": 1,
+      "mean_score": 0.5,
+      "win_rate": 0.5
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "pit",
+      "matches": 3,
+      "ok": 3,
+      "failed": 0,
+      "mean_score": 0.4478331734735628,
+      "win_rate": 0.6666666666666666
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "two_rooms_and_a_boom",
+      "matches": 6,
+      "ok": 6,
+      "failed": 0,
+      "mean_score": 0.5,
+      "win_rate": 0.5
+    }
+  ],
+  "by_agent": [
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "games_with_scores": 3,
+      "matches": 14,
+      "ok": 13,
+      "failed": 1,
+      "macro_mean_score": 0.4826110578245209,
+      "macro_win_rate": 0.5555555555555556
+    }
+  ],
+  "bradley_terry": null,
+  "bradley_terry_error": "ModuleNotFoundError: No module named 'choix'",
+  "failures": [
+    {
+      "game": "hive",
+      "agent_type_id": "basic_openai_gpt_4o_mini",
+      "model": "gpt-4o-mini",
+      "backend": "openai",
+      "opponent": "random",
+      "match_index": 3,
+      "seed": 177398120,
+      "swapped_seating": false,
+      "status": "failed",
+      "agent_score": null,
+      "opponent_score": null,
+      "error": "TimeoutError: match timeout exceeded",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/scripts/run_basic_prompt_grid.py\", line 235, in run_match\n    agent_score, opponent_score = game.play()\n                                  ^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/hive/game.py\", line 343, in play\n    self.play_turn()\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/hive/game.py\", line 262, in play_turn\n    observation, actions = self.get_observation(agent)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/hive/game.py\", line 80, in get_observation\n    observation = self.generate_observation(agent)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/hive/game.py\", line 96, in generate_observation\n    image = self.board.display_board(interactive=self.interactive_mode)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/hive/board.py\", line 177, in display_board\n    return self.visualizer.draw_board(interactive)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/hive/board.py\", line 67, in draw_board\n    plt.savefig('images/board_' + str(self.counter) + '.png', format='png')\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/pyplot.py\", line 1134, in savefig\n    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/figure.py\", line 3390, in savefig\n    self.canvas.print_figure(fname, **kwargs)\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/backend_bases.py\", line 2193, in print_figure\n    result = print_method(\n             ^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/backend_bases.py\", line 2043, in <lambda>\n    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(\n                                                                 ^^^^^\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py\", line 497, in print_png\n    self._print_pil(filename_or_obj, \"png\", pil_kwargs, metadata)\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py\", line 445, in _print_pil\n    FigureCanvasAgg.draw(self)\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py\", line 388, in draw\n    self.figure.draw(self.renderer)\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/artist.py\", line 95, in draw_wrapper\n    result = draw(artist, renderer, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/artist.py\", line 72, in draw_wrapper\n    return draw(artist, renderer)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/figure.py\", line 3154, in draw\n    mimage._draw_list_compositing_images(\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/image.py\", line 132, in _draw_list_compositing_images\n    a.draw(renderer)\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/artist.py\", line 72, in draw_wrapper\n    return draw(artist, renderer)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/axes/_base.py\", line 3070, in draw\n    mimage._draw_list_compositing_images(\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/image.py\", line 132, in _draw_list_compositing_images\n    a.draw(renderer)\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/artist.py\", line 72, in draw_wrapper\n    return draw(artist, renderer)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/text.py\", line 797, in draw\n    textrenderer.draw_text(gc, x, y, clean_line,\n  File \"/home/nlpgpu7/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py\", line 194, in draw_text\n    font.set_text(s, 0, flags=get_hinting_flag())\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/scripts/run_basic_prompt_grid.py\", line 30, in _handle_match_timeout\n    raise MatchTimeout(\"match timeout exceeded\")\nMatchTimeout: match timeout exceeded\n",
+      "source_run_dir": "basic_results/combined_gpt4omini_basic_vs_random_repaired_20260514"
+    }
+  ]
+}

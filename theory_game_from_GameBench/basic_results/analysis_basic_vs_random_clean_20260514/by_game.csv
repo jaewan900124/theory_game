@@ -1,0 +1,14 @@
+agent,game,matches,ok,failed,mean_score,win_rate
+basic_ollama_qwen3_8b,air_land_sea,5,5,0,0.8133212560386474,1.0
+basic_ollama_qwen3_8b,arctic_scavengers,2,0,2,,
+basic_ollama_qwen3_8b,are_you_the_traitor,6,6,0,1.0,1.0
+basic_ollama_qwen3_8b,santorini,6,6,0,0.6666666666666666,0.6666666666666666
+basic_ollama_qwen3_8b,sea_battle,11,11,0,0.0,0.0
+basic_ollama_qwen3_8b,two_rooms_and_a_boom,6,6,0,0.5,0.5
+basic_openai_gpt_4o_mini,air_land_sea,5,5,0,0.6301754385964913,0.6
+basic_openai_gpt_4o_mini,arctic_scavengers,7,7,0,0.14285714285714285,0.14285714285714285
+basic_openai_gpt_4o_mini,are_you_the_traitor,6,6,0,0.8333333333333334,0.8333333333333334
+basic_openai_gpt_4o_mini,codenames,5,5,0,0.6,0.6
+basic_openai_gpt_4o_mini,santorini,6,6,0,0.16666666666666666,0.16666666666666666
+basic_openai_gpt_4o_mini,sea_battle,11,11,0,0.09090909090909091,0.09090909090909091
+basic_openai_gpt_4o_mini,two_rooms_and_a_boom,1,1,0,0.0,0.0

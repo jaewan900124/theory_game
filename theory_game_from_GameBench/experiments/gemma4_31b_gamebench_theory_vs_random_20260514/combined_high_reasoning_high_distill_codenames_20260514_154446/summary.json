@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-05-14 16:50:38 KST",
+  "agent_type_ids": [
+    "theory_high_distill_ollama_gemma4_31b",
+    "theory_high_reasoning_ollama_gemma4_31b"
+  ],
+  "total_records": 10,
+  "ok_records": 10,
+  "failed_records": 0,
+  "by_agent_game": [
+    {
+      "agent": "theory_high_distill_ollama_gemma4_31b",
+      "game": "codenames",
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "mean_score": 0.8322222222222222,
+      "std_score": 0.1503247513358912,
+      "win_rate": 1.0
+    },
+    {
+      "agent": "theory_high_reasoning_ollama_gemma4_31b",
+      "game": "codenames",
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "mean_score": 0.6133986928104576,
+      "std_score": 0.3325468101213236,
+      "win_rate": 0.8
+    }
+  ],
+  "by_agent": [
+    {
+      "agent": "theory_high_distill_ollama_gemma4_31b",
+      "games_with_scores": 1,
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "macro_mean_score": 0.8322222222222222,
+      "macro_win_rate": 1.0
+    },
+    {
+      "agent": "theory_high_reasoning_ollama_gemma4_31b",
+      "games_with_scores": 1,
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "macro_mean_score": 0.6133986928104576,
+      "macro_win_rate": 0.8
+    }
+  ],
+  "failures": [],
+  "source_manifest": [
+    {
+      "run_dir": "experiments/gemma4_31b_gamebench_theory_vs_random_20260514/high_reasoning_gemma4_31b_codenames_dualgpu_20260514_154406",
+      "games": [
+        "codenames"
+      ],
+      "records": 5,
+      "ok": 5,
+      "failed": 0
+    },
+    {
+      "run_dir": "experiments/gemma4_31b_gamebench_theory_vs_random_20260514/high_distill_gemma4_31b_codenames_dualgpu_20260514_154446",
+      "games": [
+        "codenames"
+      ],
+      "records": 5,
+      "ok": 5,
+      "failed": 0
+    }
+  ]
+}

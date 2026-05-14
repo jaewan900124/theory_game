@@ -1,0 +1,5 @@
+game,mode,matches,ok,failed,mean_score,std_score,win_rate
+are_you_the_traitor,high_reasoning,6,6,0,0.8333333333333334,0.37267799624996495,0.8333333333333334
+santorini,high_reasoning,6,6,0,0.3333333333333333,0.4714045207910317,0.3333333333333333
+sea_battle,high_reasoning,11,10,1,0.0,0.0,0.0
+two_rooms_and_a_boom,high_reasoning,2,2,0,1.0,0.0,1.0

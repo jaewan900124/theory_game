@@ -1,0 +1,207 @@
+[
+  {
+    "game": "air_land_sea",
+    "basic_openai_gpt_4o_mini": 0.6666666666666666,
+    "random": 0.3333333333333333
+  },
+  {
+    "game": "air_land_sea",
+    "basic_openai_gpt_4o_mini": 0.4,
+    "random": 0.6
+  },
+  {
+    "game": "air_land_sea",
+    "basic_openai_gpt_4o_mini": 0.6842105263157895,
+    "random": 0.3157894736842105
+  },
+  {
+    "game": "air_land_sea",
+    "basic_openai_gpt_4o_mini": 0.4,
+    "random": 0.6
+  },
+  {
+    "game": "air_land_sea",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "arctic_scavengers",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "arctic_scavengers",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "arctic_scavengers",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "arctic_scavengers",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "arctic_scavengers",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "arctic_scavengers",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "arctic_scavengers",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "codenames",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "codenames",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "codenames",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "codenames",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "codenames",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "are_you_the_traitor",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "sea_battle",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "two_rooms_and_a_boom",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "santorini",
+    "basic_openai_gpt_4o_mini": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "santorini",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "santorini",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "santorini",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "santorini",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "santorini",
+    "basic_openai_gpt_4o_mini": 0.0,
+    "random": 1.0
+  }
+]

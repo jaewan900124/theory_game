@@ -1,0 +1,34 @@
+{
+  "created_at": "2026-05-14 15:41:21 KST",
+  "run_dirs": [
+    "experiments/gemma4_31b_gamebench_base_vs_random_20260514/base_prompt_gemma4_31b_codenames_dualgpu_20260514_152755"
+  ],
+  "total_records": 5,
+  "ok_records": 5,
+  "failed_records": 0,
+  "by_game": [
+    {
+      "agent": "basic_ollama_gemma4_31b",
+      "game": "codenames",
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "mean_score": 0.3333333333333333,
+      "win_rate": 0.4
+    }
+  ],
+  "by_agent": [
+    {
+      "agent": "basic_ollama_gemma4_31b",
+      "games_with_scores": 1,
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "macro_mean_score": 0.3333333333333333,
+      "macro_win_rate": 0.4
+    }
+  ],
+  "bradley_terry": null,
+  "bradley_terry_error": "ModuleNotFoundError: No module named 'choix'",
+  "failures": []
+}

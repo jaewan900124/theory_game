@@ -1,0 +1,4 @@
+agent,game,matches,ok,failed,mean_score,win_rate
+basic_openai_gpt_4o_mini,hive,5,4,1,0.5,0.5
+basic_openai_gpt_4o_mini,pit,3,3,0,0.4478331734735628,0.6666666666666666
+basic_openai_gpt_4o_mini,two_rooms_and_a_boom,6,6,0,0.5,0.5

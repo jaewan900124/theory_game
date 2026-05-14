@@ -1,0 +1,185 @@
+{
+  "created_at": "2026-05-14 11:33:45 KST",
+  "run_dirs": [
+    "basic_results/combined_qwen3_8b_basic_vs_random_clean_20260514",
+    "basic_results/combined_gpt4omini_basic_vs_random_clean_20260514"
+  ],
+  "total_records": 77,
+  "ok_records": 75,
+  "failed_records": 2,
+  "by_game": [
+    {
+      "agent": "basic_ollama_qwen3_8b",
+      "game": "air_land_sea",
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "mean_score": 0.8133212560386474,
+      "win_rate": 1.0
+    },
+    {
+      "agent": "basic_ollama_qwen3_8b",
+      "game": "arctic_scavengers",
+      "matches": 2,
+      "ok": 0,
+      "failed": 2,
+      "mean_score": null,
+      "win_rate": null
+    },
+    {
+      "agent": "basic_ollama_qwen3_8b",
+      "game": "are_you_the_traitor",
+      "matches": 6,
+      "ok": 6,
+      "failed": 0,
+      "mean_score": 1.0,
+      "win_rate": 1.0
+    },
+    {
+      "agent": "basic_ollama_qwen3_8b",
+      "game": "santorini",
+      "matches": 6,
+      "ok": 6,
+      "failed": 0,
+      "mean_score": 0.6666666666666666,
+      "win_rate": 0.6666666666666666
+    },
+    {
+      "agent": "basic_ollama_qwen3_8b",
+      "game": "sea_battle",
+      "matches": 11,
+      "ok": 11,
+      "failed": 0,
+      "mean_score": 0.0,
+      "win_rate": 0.0
+    },
+    {
+      "agent": "basic_ollama_qwen3_8b",
+      "game": "two_rooms_and_a_boom",
+      "matches": 6,
+      "ok": 6,
+      "failed": 0,
+      "mean_score": 0.5,
+      "win_rate": 0.5
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "air_land_sea",
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "mean_score": 0.6301754385964913,
+      "win_rate": 0.6
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "arctic_scavengers",
+      "matches": 7,
+      "ok": 7,
+      "failed": 0,
+      "mean_score": 0.14285714285714285,
+      "win_rate": 0.14285714285714285
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "are_you_the_traitor",
+      "matches": 6,
+      "ok": 6,
+      "failed": 0,
+      "mean_score": 0.8333333333333334,
+      "win_rate": 0.8333333333333334
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "codenames",
+      "matches": 5,
+      "ok": 5,
+      "failed": 0,
+      "mean_score": 0.6,
+      "win_rate": 0.6
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "santorini",
+      "matches": 6,
+      "ok": 6,
+      "failed": 0,
+      "mean_score": 0.16666666666666666,
+      "win_rate": 0.16666666666666666
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "sea_battle",
+      "matches": 11,
+      "ok": 11,
+      "failed": 0,
+      "mean_score": 0.09090909090909091,
+      "win_rate": 0.09090909090909091
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "game": "two_rooms_and_a_boom",
+      "matches": 1,
+      "ok": 1,
+      "failed": 0,
+      "mean_score": 0.0,
+      "win_rate": 0.0
+    }
+  ],
+  "by_agent": [
+    {
+      "agent": "basic_ollama_qwen3_8b",
+      "games_with_scores": 5,
+      "matches": 34,
+      "ok": 34,
+      "failed": 0,
+      "macro_mean_score": 0.5959975845410628,
+      "macro_win_rate": 0.6333333333333333
+    },
+    {
+      "agent": "basic_openai_gpt_4o_mini",
+      "games_with_scores": 7,
+      "matches": 41,
+      "ok": 41,
+      "failed": 0,
+      "macro_mean_score": 0.3519916674803893,
+      "macro_win_rate": 0.3476808905380334
+    }
+  ],
+  "bradley_terry": null,
+  "bradley_terry_error": "ModuleNotFoundError: No module named 'choix'",
+  "failures": [
+    {
+      "game": "arctic_scavengers",
+      "agent_type_id": "basic_ollama_qwen3_8b",
+      "model": "qwen3:8b",
+      "backend": "ollama",
+      "opponent": "random",
+      "match_index": 0,
+      "seed": 333919843,
+      "swapped_seating": false,
+      "status": "failed",
+      "agent_score": null,
+      "opponent_score": null,
+      "error": "TimeoutError: match timeout exceeded",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/scripts/run_basic_prompt_grid.py\", line 235, in run_match\n    agent_score, opponent_score = game.play()\n                                  ^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/arctic_scavengers/arctic_scavengers.py\", line 501, in play\n    self.play_skirmish(player, 1-initiator)\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/arctic_scavengers/arctic_scavengers.py\", line 480, in play_skirmish\n    action = player.agent.take_action(self.rules, observation, available_actions, show_state=self.show_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/agents/basic_prompt_agent.py\", line 228, in take_action\n    raw_response = self._completion(messages)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/agents/basic_prompt_agent.py\", line 182, in _completion\n    completion = generate_completion(\n                 ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/agents/backends/__init__.py\", line 19, in generate_completion\n    return generate_ollama(\n           ^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/agents/backends/ollama_backend.py\", line 47, in generate_ollama\n    with urllib.request.urlopen(req, timeout=timeout) as resp:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 216, in urlopen\n    return opener.open(url, data, timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 519, in open\n    response = self._open(req, data)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 536, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 496, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 1377, in http_open\n    return self.do_open(http.client.HTTPConnection, req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 1352, in do_open\n    r = h.getresponse()\n        ^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/http/client.py\", line 1374, in getresponse\n    response.begin()\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/http/client.py\", line 318, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/http/client.py\", line 279, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/socket.py\", line 705, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/scripts/run_basic_prompt_grid.py\", line 30, in _handle_match_timeout\n    raise MatchTimeout(\"match timeout exceeded\")\nMatchTimeout: match timeout exceeded\n",
+      "source_run_dir": "basic_results/combined_qwen3_8b_basic_vs_random_clean_20260514"
+    },
+    {
+      "game": "arctic_scavengers",
+      "agent_type_id": "basic_ollama_qwen3_8b",
+      "model": "qwen3:8b",
+      "backend": "ollama",
+      "opponent": "random",
+      "match_index": 1,
+      "seed": 333919844,
+      "swapped_seating": true,
+      "status": "failed",
+      "agent_score": null,
+      "opponent_score": null,
+      "error": "TimeoutError: match timeout exceeded",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/scripts/run_basic_prompt_grid.py\", line 227, in run_match\n    opponent_score, agent_score = game.play()\n                                  ^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/arctic_scavengers/arctic_scavengers.py\", line 503, in play\n    self.play_skirmish(player, initiator)\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/games/arctic_scavengers/arctic_scavengers.py\", line 480, in play_skirmish\n    action = player.agent.take_action(self.rules, observation, available_actions, show_state=self.show_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/agents/basic_prompt_agent.py\", line 228, in take_action\n    raw_response = self._completion(messages)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/agents/basic_prompt_agent.py\", line 182, in _completion\n    completion = generate_completion(\n                 ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/agents/backends/__init__.py\", line 19, in generate_completion\n    return generate_ollama(\n           ^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/agents/backends/ollama_backend.py\", line 47, in generate_ollama\n    with urllib.request.urlopen(req, timeout=timeout) as resp:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 216, in urlopen\n    return opener.open(url, data, timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 519, in open\n    response = self._open(req, data)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 536, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 496, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 1377, in http_open\n    return self.do_open(http.client.HTTPConnection, req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/urllib/request.py\", line 1352, in do_open\n    r = h.getresponse()\n        ^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/http/client.py\", line 1374, in getresponse\n    response.begin()\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/http/client.py\", line 318, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/http/client.py\", line 279, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/anaconda3/envs/ellt_conda/lib/python3.11/socket.py\", line 705, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nlpgpu7/jaewanpark/project/theory_game/theory_game_from_GameBench/scripts/run_basic_prompt_grid.py\", line 30, in _handle_match_timeout\n    raise MatchTimeout(\"match timeout exceeded\")\nMatchTimeout: match timeout exceeded\n",
+      "source_run_dir": "basic_results/combined_qwen3_8b_basic_vs_random_clean_20260514"
+    }
+  ]
+}

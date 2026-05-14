@@ -1,0 +1,58 @@
+{
+  "run_id": "high_reasoning_gpt4omini_tracefix_selected_20260514_145037",
+  "created_at": "2026-05-14 14:53:33 KST",
+  "config": {
+    "games": [
+      "codenames",
+      "santorini",
+      "are_you_the_traitor",
+      "air_land_sea",
+      "two_rooms_and_a_boom"
+    ],
+    "modes": [
+      "high_reasoning"
+    ],
+    "match_plan": "paper_gpt4_random",
+    "match_counts": {
+      "codenames": 5,
+      "santorini": 6,
+      "are_you_the_traitor": 6,
+      "air_land_sea": 5,
+      "two_rooms_and_a_boom": 6
+    },
+    "num_matches": 5,
+    "model_name": "gpt-4o-mini",
+    "backend": "openai",
+    "base_url": null,
+    "temperature": 1.0,
+    "max_tokens": 1100,
+    "timeout": 240,
+    "match_timeout_seconds": 600,
+    "response_retries": 3,
+    "seed": 0,
+    "seating": "balanced",
+    "opponent": "random"
+  },
+  "by_game_mode": [
+    {
+      "game": "codenames",
+      "mode": "high_reasoning",
+      "matches": 3,
+      "ok": 3,
+      "failed": 0,
+      "mean_score": 0.3333333333333333,
+      "std_score": 0.4714045207910317,
+      "win_rate": 0.3333333333333333
+    }
+  ],
+  "by_mode": [
+    {
+      "mode": "high_reasoning",
+      "games": 1,
+      "overall_mean_score": 0.3333333333333333,
+      "overall_win_rate": 0.3333333333333333,
+      "failures": 0
+    }
+  ],
+  "failures": []
+}

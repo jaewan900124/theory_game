@@ -1,0 +1,27 @@
+[
+  {
+    "game": "codenames",
+    "basic_ollama_gemma4_31b": 0.6666666666666666,
+    "random": 0.3333333333333333
+  },
+  {
+    "game": "codenames",
+    "basic_ollama_gemma4_31b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "codenames",
+    "basic_ollama_gemma4_31b": 0.0,
+    "random": 1.0
+  },
+  {
+    "game": "codenames",
+    "basic_ollama_gemma4_31b": 1.0,
+    "random": 0.0
+  },
+  {
+    "game": "codenames",
+    "basic_ollama_gemma4_31b": 0.0,
+    "random": 1.0
+  }
+]

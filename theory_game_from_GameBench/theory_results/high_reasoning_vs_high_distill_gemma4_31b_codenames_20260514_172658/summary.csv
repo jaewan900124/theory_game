@@ -1,0 +1,2 @@
+game,comparison,model_name,matches,ok,failed,high_reasoning_mean_score,high_distill_mean_score
+codenames,high_reasoning_vs_high_distill,gemma4:31b,5,5,0,0.36432748538011694,0.6356725146198831

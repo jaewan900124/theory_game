@@ -1,0 +1,47 @@
+[
+  {
+    "run_dir": "basic_results/basic_prompt_gpt4omini_random_s0_20260514_111310",
+    "games": [
+      "air_land_sea"
+    ],
+    "records": 0,
+    "warning": "matches.jsonl missing"
+  },
+  {
+    "run_dir": "basic_results/basic_prompt_gpt4omini_random_s0_remain_20260514_111910",
+    "games": [
+      "arctic_scavengers",
+      "codenames"
+    ],
+    "records": 0,
+    "warning": "matches.jsonl missing"
+  },
+  {
+    "run_dir": "basic_results/basic_prompt_gpt4omini_random_s1_20260514_111310",
+    "games": [
+      "are_you_the_traitor",
+      "sea_battle"
+    ],
+    "records": 0,
+    "warning": "matches.jsonl missing"
+  },
+  {
+    "run_dir": "basic_results/basic_prompt_gpt4omini_random_santorini_20260514_112310",
+    "games": [
+      "santorini"
+    ],
+    "records": 0,
+    "warning": "matches.jsonl missing"
+  },
+  {
+    "run_dir": "basic_results/basic_prompt_gpt4omini_random_missing_hive_pit_two_rooms_20260514_125900",
+    "games": [
+      "hive",
+      "pit",
+      "two_rooms_and_a_boom"
+    ],
+    "records": 14,
+    "ok": 13,
+    "failed": 1
+  }
+]
