@@ -171,6 +171,6 @@ def action_feedback_message(
         "Return valid JSON only.\n"
         f"Valid actions: {valid_actions}\n"
         f"{field_application_instruction}"
-        "Copy one valid action id exactly into 'selected_action'.\n"
+        "Copy one valid action id exactly into 'action' or 'selected_action'.\n"
         "If you choose an openended action, include an 'openended_response' string."
     )

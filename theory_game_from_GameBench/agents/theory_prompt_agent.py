@@ -16,6 +16,13 @@ from prompts.high_distill import build_high_distill_prompt
 from prompts.high_reasoning import build_high_reasoning_prompt
 
 
+BASE_SYSTEM_MESSAGE = (
+    "You are an agent playing a game. Select the action that maximizes "
+    "your probability of winning."
+)
+DEFAULT_THEORY_SYSTEM_MESSAGE = "Choose the legal action that best advances your chance of winning."
+
+
 def _slug(value: str) -> str:
     return re.sub(r"[^a-zA-Z0-9]+", "_", value).strip("_").lower()
 
@@ -67,7 +74,16 @@ class TheoryPromptAgent(Agent):
         else:
             raise ValueError(f"Unsupported agent_mode: {self.agent_mode}")
         if self.system_message:
-            messages[0]["content"] = self.system_message + "\n\n" + messages[0]["content"]
+            system_message = self.system_message
+            if (
+                self.agent_mode == "field_rationale"
+                and system_message == DEFAULT_THEORY_SYSTEM_MESSAGE
+            ):
+                system_message = BASE_SYSTEM_MESSAGE
+            if messages[0]["content"]:
+                messages[0]["content"] = system_message + "\n\n" + messages[0]["content"]
+            else:
+                messages[0]["content"] = system_message
         return messages
 
     def take_action(

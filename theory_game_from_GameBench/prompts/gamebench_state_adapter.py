@@ -19,7 +19,9 @@ def normalize_gamebench_state(
 
     details = rules.additional_details or {}
     detail_lines = []
+    detail_headings = {}
     if isinstance(details, dict):
+        detail_headings = {f"H{i + 1}": key for i, key in enumerate(details)}
         for key, value in details.items():
             detail_lines.append(f"- {key}: {value}")
 
@@ -51,6 +53,7 @@ def normalize_gamebench_state(
         "rules_title": rules.title,
         "rules_summary": rules.summary,
         "rules_details_text": "\n".join(detail_lines),
+        "rules_detail_headings": detail_headings,
         "observation_text": observation.text,
         "action_instructions": available_actions.instructions,
         "predefined_actions": predefined,

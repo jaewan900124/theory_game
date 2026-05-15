@@ -7,22 +7,93 @@ from prompts.theory_fields import (
 )
 
 
-def _baseline_actions_block(state, schema):
-    lines = [
-        "Return actions in json with the following keys.",
-        json.dumps(schema, indent=2),
-    ]
+ACTION_FORMAT_INSTRUCTIONS_NO_OPENENDED = """\
+Return actions in json with the following keys.
+{
+    "action": str,
+}
+"""
+
+ACTION_FORMAT_INSTRUCTIONS_WITH_OPENENDED = """\
+Return actions in json with the following keys.
+{
+    "action": str,
+    "openended_response": Optional[str],
+}
+Include the openended response only if you have chosen an openended action.
+"""
+
+
+def _base_actions_block(state):
+    valid_actions = []
+    lines = []
     if state["openended_actions"]:
+        lines.append(ACTION_FORMAT_INSTRUCTIONS_WITH_OPENENDED.rstrip())
         lines.append("The following are openended actions you can take")
         lines.append(str(list(state["openended_actions"].keys())))
+        valid_actions += list(state["openended_actions"])
+    else:
+        lines.append(ACTION_FORMAT_INSTRUCTIONS_NO_OPENENDED.rstrip())
     if state["predefined_actions"]:
         lines.append("The following are predefined actions you can take:")
         lines.append(str(list(state["predefined_actions"].keys())))
-    if state["predefined_actions_text"] or state["openended_actions_text"]:
+        valid_actions += list(state["predefined_actions"])
+    if any(
+        state["predefined_actions"].get(action) is not None
+        or state["openended_actions"].get(action)
+        for action in valid_actions
+    ):
         lines.append(
             "Return the action Explain(<action>) to receive additional info about what any of the above actions do."
         )
+    lines.extend(
+        [
+            "",
+            "To summarize, if you choose a predefined action, you must return json with an 'action' key which contains one of the following valid actions:",
+            str(list(state["predefined_actions"])),
+            "Or if you choose an openended action, you must return json with an 'action' key which contains one of the following valid actions and an 'openended_response' key which contains your response to the prompt:",
+            str(list(state["openended_actions"])),
+            "Return valid JSON only.",
+        ]
+    )
     return "\n".join(lines)
+
+
+def _field_register_block(field_register):
+    return "\n".join(f"- {field}" for field in field_register)
+
+
+def _field_rationale_extension(schema, field_register, include_analysis=True):
+    analysis_rules = ""
+    if include_analysis:
+        analysis_rules = """\
+- field_analysis must contain exactly one object per used field, in the same order.
+- Each field_analysis object must have:
+  - "field": one exact field name from used_fields
+  - "value": a short phrase explaining how that field supports the action
+- Keep each field_analysis.value short.
+"""
+    return f"""\
+
+Additionally, include a compact field rationale in the same JSON object:
+{json.dumps(schema, indent=2)}
+
+# Field Register
+{_field_register_block(field_register)}
+
+# Field Selection Rule
+Select 2 to 4 fields from the Field Register.
+Prefer the smallest sufficient set of fields for the decision.
+Use only fields that directly affect the chosen action; do not include fields that are only generally relevant.
+Use 4 fields only when multiple competing factors materially affect the decision.
+
+Additional rules:
+- Keep the original base action interface: action must contain exactly one valid action id from the available actions.
+- If the chosen action is openended, provide a concrete openended_response.
+- If the chosen action is predefined, set openended_response to null.
+- used_fields must contain 2 to 4 field names copied exactly from the Field Register.
+{analysis_rules}- Return valid JSON only.
+"""
 
 
 def build_field_rationale_prompt(state, output_mode="compact"):
@@ -33,6 +104,17 @@ def build_field_rationale_prompt(state, output_mode="compact"):
 
     base_prompt = f"""You are playing a game called {state['rules_title']}. The rules are as follows:
 {state['rules_summary']}
+"""
+
+    if state.get("rules_detail_headings"):
+        base_prompt += (
+            "The following are headings with additional information about "
+            "the rules that you can expand by taking the action "
+            "Explain(<heading key>).\n"
+        )
+        base_prompt += json.dumps(state["rules_detail_headings"], indent=4)
+
+    base_prompt += f"""
 
 # Observation
 The following describes the current state of the game:
@@ -44,11 +126,11 @@ The following describes the current state of the game:
 
     if output_mode == "debug":
         prompt = f"""{base_prompt}
-{_baseline_actions_block(state, output_schema)}
+{_base_actions_block(state)}
 
 # Field Register
 Use only fields from the following fixed field register:
-{chr(10).join(f"- {field}" for field in field_register)}
+{_field_register_block(field_register)}
 
 Rules:
 - Choose exactly one valid action id from the available actions.
@@ -60,35 +142,20 @@ Rules:
 """
     elif output_mode == "compact_basis":
         compact_schema = {
-            "selected_action": "copy exactly one valid action id from the available actions",
-            "openended_response": "concrete string when selected_action is openended, otherwise null",
+            "action": "copy exactly one valid action id from the available actions",
+            "openended_response": "concrete string when action is openended, otherwise null",
             "used_fields": [
                 "copy 2 to 4 field names exactly from the field register"
             ],
         }
         prompt = f"""{base_prompt}
-{_baseline_actions_block(state, compact_schema)}
-
-# Field Register
-{chr(10).join(f"- {field}" for field in field_register)}
-
-# Field Selection Rule
-Select 2 to 4 fields from the Field Register.
-Prefer the smallest sufficient set of fields for the decision.
-Use only fields that directly affect the chosen action.
-Do not include fields that are only generally relevant.
-Use 4 fields only when multiple competing factors materially affect the decision.
-
-Rules:
-- Choose exactly one valid action id from the available actions.
-- If the chosen action is openended, provide a concrete openended_response.
-- used_fields must contain 2 to 4 field names copied exactly from the field register.
-- Return valid JSON only.
+{_base_actions_block(state)}
+{_field_rationale_extension(compact_schema, field_register, include_analysis=False)}
 """
     elif output_mode == "compact_field_analysis":
         compact_schema = {
-            "selected_action": "copy exactly one valid action id from the available actions",
-            "openended_response": "concrete string when selected_action is openended, otherwise null",
+            "action": "copy exactly one valid action id from the available actions",
+            "openended_response": "concrete string when action is openended, otherwise null",
             "used_fields": [
                 "copy 2 to 4 field names exactly from the field register"
             ],
@@ -100,33 +167,13 @@ Rules:
             ],
         }
         prompt = f"""{base_prompt}
-{_baseline_actions_block(state, compact_schema)}
-
-# Field Register
-{chr(10).join(f"- {field}" for field in field_register)}
-
-# Field Selection Rule
-Select 2 to 4 fields from the Field Register.
-Prefer the smallest sufficient set of fields for the decision.
-Use only fields that directly affect the chosen action; do not include fields that are only generally relevant.
-Use 4 fields only when multiple competing factors materially affect the decision.
-
-Rules:
-- selected_action must contain exactly one valid action id from the available actions.
-- If the chosen action is openended, provide a concrete openended_response.
-- If the chosen action is predefined, set openended_response to null.
-- used_fields must contain 2 to 4 field names copied exactly from the Field Register.
-- field_analysis must contain exactly one object per used field, in the same order.
-- Each field_analysis object must have:
-  - "field": one exact field name from used_fields
-  - "value": a short phrase explaining how that field supports the selected action
-- Keep each field_analysis.value short.
-- Return valid JSON only.
+{_base_actions_block(state)}
+{_field_rationale_extension(compact_schema, field_register, include_analysis=True)}
 """
     else:
         compact_schema = {
-            "selected_action": "copy exactly one valid action id from the available actions",
-            "openended_response": "concrete string when selected_action is openended, otherwise null",
+            "action": "copy exactly one valid action id from the available actions",
+            "openended_response": "concrete string when action is openended, otherwise null",
             "used_fields": [
                 "copy 2 to 4 field names exactly from the field register"
             ],
@@ -138,35 +185,14 @@ Rules:
             ],
         }
         prompt = f"""{base_prompt}
-{_baseline_actions_block(state, compact_schema)}
-
-# Field Register
-{chr(10).join(f"- {field}" for field in field_register)}
-
-# Field Selection Rule
-Select 2 to 4 fields from the Field Register.
-Prefer the smallest sufficient set of fields for the decision.
-Use only fields that directly affect the chosen action.
-Do not include fields that are only generally relevant.
-Use 4 fields only when multiple competing factors materially affect the decision.
-
-Rules:
-- Choose exactly one valid action id from the available actions.
-- selected_action must be exactly one valid action id from the available actions.
-- If the chosen action is openended, provide a concrete openended_response.
-- used_fields must contain 2 to 4 field names copied exactly from the field register.
-- field_analysis must contain exactly one object per used field, in the same order.
-- Each field_analysis object must have:
-  - "field": one exact field name from used_fields
-  - "value": a short phrase explaining how that field supports the selected action
-- Keep each field_analysis.value short.
-- Return valid JSON only.
+{_base_actions_block(state)}
+{_field_rationale_extension(compact_schema, field_register, include_analysis=True)}
 """
 
     return [
         {
             "role": "system",
-            "content": "You are a precise strategic game agent. Return valid JSON only.",
+            "content": "",
         },
         {
             "role": "user",
