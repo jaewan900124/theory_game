@@ -63,7 +63,7 @@ def _field_register_block(field_register):
     return "\n".join(f"- {field}" for field in field_register)
 
 
-def _field_rationale_extension(schema, field_register, include_analysis=True):
+def _field_rationale_extension(extra_schema, field_register, include_analysis=True):
     analysis_rules = ""
     if include_analysis:
         analysis_rules = """\
@@ -75,8 +75,9 @@ def _field_rationale_extension(schema, field_register, include_analysis=True):
 """
     return f"""\
 
-Additionally, include a compact field rationale in the same JSON object:
-{json.dumps(schema, indent=2)}
+Additional decision support:
+Use the Field Register only as a compact way to explain the reasoning behind your selected action.
+Do not treat the fields as additional game rules or extra available actions.
 
 # Field Register
 {_field_register_block(field_register)}
@@ -87,10 +88,11 @@ Prefer the smallest sufficient set of fields for the decision.
 Use only fields that directly affect the chosen action; do not include fields that are only generally relevant.
 Use 4 fields only when multiple competing factors materially affect the decision.
 
-Additional rules:
-- Keep the original base action interface: action must contain exactly one valid action id from the available actions.
-- If the chosen action is openended, provide a concrete openended_response.
-- If the chosen action is predefined, set openended_response to null.
+In the final JSON response, keep the original base action interface unchanged.
+Add these keys:
+{json.dumps(extra_schema, indent=2)}
+
+Rules:
 - used_fields must contain 2 to 4 field names copied exactly from the Field Register.
 {analysis_rules}- Return valid JSON only.
 """
@@ -141,52 +143,46 @@ Rules:
 - Return valid JSON only.
 """
     elif output_mode == "compact_basis":
-        compact_schema = {
-            "action": "copy exactly one valid action id from the available actions",
-            "openended_response": "concrete string when action is openended, otherwise null",
+        extra_schema = {
             "used_fields": [
-                "copy 2 to 4 field names exactly from the field register"
+                "2 to 4 field names copied exactly from the Field Register"
             ],
         }
         prompt = f"""{base_prompt}
 {_base_actions_block(state)}
-{_field_rationale_extension(compact_schema, field_register, include_analysis=False)}
+{_field_rationale_extension(extra_schema, field_register, include_analysis=False)}
 """
     elif output_mode == "compact_field_analysis":
-        compact_schema = {
-            "action": "copy exactly one valid action id from the available actions",
-            "openended_response": "concrete string when action is openended, otherwise null",
+        extra_schema = {
             "used_fields": [
-                "copy 2 to 4 field names exactly from the field register"
+                "2 to 4 field names copied exactly from the Field Register"
             ],
             "field_analysis": [
                 {
                     "field": "one exact field name from used_fields",
-                    "value": "short phrase explaining why that field supports the action",
+                    "value": "short phrase explaining why that field supports the selected action",
                 }
             ],
         }
         prompt = f"""{base_prompt}
 {_base_actions_block(state)}
-{_field_rationale_extension(compact_schema, field_register, include_analysis=True)}
+{_field_rationale_extension(extra_schema, field_register, include_analysis=True)}
 """
     else:
-        compact_schema = {
-            "action": "copy exactly one valid action id from the available actions",
-            "openended_response": "concrete string when action is openended, otherwise null",
+        extra_schema = {
             "used_fields": [
-                "copy 2 to 4 field names exactly from the field register"
+                "2 to 4 field names copied exactly from the Field Register"
             ],
             "field_analysis": [
                 {
                     "field": "one exact field name from used_fields",
-                    "value": "short phrase explaining why that field supports the action",
+                    "value": "short phrase explaining why that field supports the selected action",
                 }
             ],
         }
         prompt = f"""{base_prompt}
 {_base_actions_block(state)}
-{_field_rationale_extension(compact_schema, field_register, include_analysis=True)}
+{_field_rationale_extension(extra_schema, field_register, include_analysis=True)}
 """
 
     return [

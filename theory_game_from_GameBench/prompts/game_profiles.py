@@ -53,7 +53,10 @@ GAME_PROFILES = {
 
 
 GAME_PROFILE_ALIASES = {
+    "air land and sea": "air_land_sea",
     "air_land_and_sea": "air_land_sea",
+    "sea battle": "sea_battle",
+    "two rooms and a boom": "two_rooms_and_a_boom",
 }
 
 
