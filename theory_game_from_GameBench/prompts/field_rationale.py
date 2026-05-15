@@ -7,17 +7,29 @@ from prompts.theory_fields import (
 )
 
 
+def _baseline_actions_block(state, schema):
+    lines = [
+        "Return actions in json with the following keys.",
+        json.dumps(schema, indent=2),
+    ]
+    if state["openended_actions"]:
+        lines.append("The following are openended actions you can take")
+        lines.append(str(list(state["openended_actions"].keys())))
+    if state["predefined_actions"]:
+        lines.append("The following are predefined actions you can take:")
+        lines.append(str(list(state["predefined_actions"].keys())))
+    if state["predefined_actions_text"] or state["openended_actions_text"]:
+        lines.append(
+            "Return the action Explain(<action>) to receive additional info about what any of the above actions do."
+        )
+    return "\n".join(lines)
+
+
 def build_field_rationale_prompt(state, output_mode="compact"):
     output_schema = high_reasoning_output_schema()
     mapping = theory_mapping_for_game(state.get("game_id"))
     active_context = state.get("prompt_context")
     field_register = field_register_for_prompt(mapping, active_context)
-
-    action_notes = []
-    if state["predefined_actions_text"]:
-        action_notes.append("Predefined actions:\n" + state["predefined_actions_text"])
-    if state["openended_actions_text"]:
-        action_notes.append("Openended actions:\n" + state["openended_actions_text"])
 
     base_prompt = f"""You are playing a game called {state['rules_title']}. The rules are as follows:
 {state['rules_summary']}
@@ -32,11 +44,7 @@ The following describes the current state of the game:
 
     if output_mode == "debug":
         prompt = f"""{base_prompt}
-Return actions in json with the following keys.
-{json.dumps(output_schema, indent=2)}
-
-The following are available actions:
-{chr(10).join(action_notes)}
+{_baseline_actions_block(state, output_schema)}
 
 # Field Register
 Use only fields from the following fixed field register:
@@ -59,14 +67,9 @@ Rules:
             ],
         }
         prompt = f"""{base_prompt}
-Return actions in json with the following keys.
-{json.dumps(compact_schema, indent=2)}
-
-The following are available actions:
-{chr(10).join(action_notes)}
+{_baseline_actions_block(state, compact_schema)}
 
 # Field Register
-Select 2 to 4 fields only from the following list:
 {chr(10).join(f"- {field}" for field in field_register)}
 
 # Field Selection Rule
@@ -97,28 +100,22 @@ Rules:
             ],
         }
         prompt = f"""{base_prompt}
-Return actions in json with the following keys.
-{json.dumps(compact_schema, indent=2)}
-
-The following are available actions:
-{chr(10).join(action_notes)}
+{_baseline_actions_block(state, compact_schema)}
 
 # Field Register
-Select 2 to 4 fields only from the following list:
 {chr(10).join(f"- {field}" for field in field_register)}
 
 # Field Selection Rule
 Select 2 to 4 fields from the Field Register.
 Prefer the smallest sufficient set of fields for the decision.
-Use only fields that directly affect the chosen action.
-Do not include fields that are only generally relevant.
+Use only fields that directly affect the chosen action; do not include fields that are only generally relevant.
 Use 4 fields only when multiple competing factors materially affect the decision.
 
 Rules:
-- Choose exactly one valid action id from the available actions.
-- selected_action must be exactly one valid action id from the available actions.
+- selected_action must contain exactly one valid action id from the available actions.
 - If the chosen action is openended, provide a concrete openended_response.
-- used_fields must contain 2 to 4 field names copied exactly from the field register.
+- If the chosen action is predefined, set openended_response to null.
+- used_fields must contain 2 to 4 field names copied exactly from the Field Register.
 - field_analysis must contain exactly one object per used field, in the same order.
 - Each field_analysis object must have:
   - "field": one exact field name from used_fields
@@ -141,14 +138,9 @@ Rules:
             ],
         }
         prompt = f"""{base_prompt}
-Return actions in json with the following keys.
-{json.dumps(compact_schema, indent=2)}
-
-The following are available actions:
-{chr(10).join(action_notes)}
+{_baseline_actions_block(state, compact_schema)}
 
 # Field Register
-Select 2 to 4 fields only from the following list:
 {chr(10).join(f"- {field}" for field in field_register)}
 
 # Field Selection Rule

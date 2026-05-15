@@ -7,17 +7,29 @@ from prompts.theory_fields import (
 )
 
 
+def _baseline_actions_block(state, schema):
+    lines = [
+        "Return actions in json with the following keys.",
+        json.dumps(schema, indent=2),
+    ]
+    if state["openended_actions"]:
+        lines.append("The following are openended actions you can take")
+        lines.append(str(list(state["openended_actions"].keys())))
+    if state["predefined_actions"]:
+        lines.append("The following are predefined actions you can take:")
+        lines.append(str(list(state["predefined_actions"].keys())))
+    if state["predefined_actions_text"] or state["openended_actions_text"]:
+        lines.append(
+            "Return the action Explain(<action>) to receive additional info about what any of the above actions do."
+        )
+    return "\n".join(lines)
+
+
 def build_field_program_prompt(state, output_mode="compact"):
     mapping = theory_mapping_for_game(state.get("game_id"))
     active_context = state.get("prompt_context")
     program_rules = program_for_prompt(mapping, active_context)
     verifier_checks = verifier_checks_for_prompt(mapping, active_context)
-
-    action_notes = []
-    if state["predefined_actions_text"]:
-        action_notes.append("Predefined actions:\n" + state["predefined_actions_text"])
-    if state["openended_actions_text"]:
-        action_notes.append("Openended actions:\n" + state["openended_actions_text"])
 
     base_prompt = f"""You are playing a game called {state['rules_title']}. The rules are as follows:
 {state['rules_summary']}
@@ -49,11 +61,7 @@ The following describes the current state of the game:
             ],
         }
         prompt = f"""{base_prompt}
-Return actions in json with the following keys.
-{json.dumps(debug_schema, indent=2)}
-
-The following are available actions:
-{chr(10).join(action_notes)}
+{_baseline_actions_block(state, debug_schema)}
 
 # Decision Program
 - P0. Choose only from the current available action ids.
@@ -77,11 +85,7 @@ Rules:
             "used_rule": "copy the final program rule label most responsible for the selection",
         }
         prompt = f"""{base_prompt}
-Return actions in json with the following keys.
-{json.dumps(compact_schema, indent=2)}
-
-The following are available actions:
-{chr(10).join(action_notes)}
+{_baseline_actions_block(state, compact_schema)}
 
 # Decision Program
 - P0. Choose only from the current available action ids.
@@ -110,11 +114,7 @@ Rules:
             ],
         }
         prompt = f"""{base_prompt}
-Return actions in json with the following keys.
-{json.dumps(compact_schema, indent=2)}
-
-The following are available actions:
-{chr(10).join(action_notes)}
+{_baseline_actions_block(state, compact_schema)}
 
 # Decision Program
 - P0. Choose only from the current available action ids.
@@ -143,11 +143,7 @@ Rules:
             "used_rule": "copy the final program rule label most responsible for the selection",
         }
         prompt = f"""{base_prompt}
-Return actions in json with the following keys.
-{json.dumps(compact_schema, indent=2)}
-
-The following are available actions:
-{chr(10).join(action_notes)}
+{_baseline_actions_block(state, compact_schema)}
 
 # Decision Program
 - P0. Choose only from the current available action ids.
