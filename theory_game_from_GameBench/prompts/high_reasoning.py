@@ -7,7 +7,7 @@ from prompts.theory_fields import (
 )
 
 
-def build_high_reasoning_prompt(state):
+def build_high_reasoning_prompt(state, output_mode="compact"):
     profile = state.get("profile", {})
     output_schema = high_reasoning_output_schema()
     mapping = theory_mapping_for_game(state.get("game_id"))
@@ -30,7 +30,7 @@ def build_high_reasoning_prompt(state):
             f"- {action}: {example}" for action, example in openended_examples.items()
         )
 
-    prompt = f"""You are a strategic game-playing agent using high_reasoning engineered field reasoning.
+    base_prompt = f"""You are a strategic game-playing agent using high_reasoning engineered field reasoning.
 
 Game: {state['rules_title']}
 Strategic style: {profile_style}
@@ -53,7 +53,10 @@ Action instructions:
 Available actions:
 {chr(10).join(action_notes)}
 {example_text}
+"""
 
+    if output_mode == "debug":
+        prompt = f"""{base_prompt}
 Use the engineered field register above. Do not invent or redefine fields.
 Output JSON only.
 Requirements:
@@ -76,6 +79,73 @@ Requirements:
 
 Return valid JSON with exactly this shape:
 {json.dumps(output_schema, indent=2)}
+"""
+    elif output_mode == "compact_basis":
+        compact_schema = {
+            "selected_action": "copy exactly one valid action id from the available actions",
+            "openended_response": "concrete string when selected_action is openended, otherwise null",
+            "used_fields": [
+                "copy 1 to 3 field names from the field register that most directly supported the selected action"
+            ],
+        }
+        prompt = f"""{base_prompt}
+Use the engineered field register above internally. Do not invent or redefine fields.
+Use only the current observation, available actions, rules, and reference basis.
+Choose exactly one action id copied from the available actions.
+If the chosen action is openended, provide a concrete openended_response.
+Set used_fields to 1 to 3 exact field names from the field register that most directly supported the selected action.
+Run the verifier checks before returning the final JSON, but do not expand them in the output.
+Return only the final action JSON with the three schema keys below and no other keys or text.
+
+Return valid JSON with exactly this shape:
+{json.dumps(compact_schema, indent=2)}
+"""
+    elif output_mode == "compact_field_analysis":
+        compact_schema = {
+            "selected_action": "copy exactly one valid action id from the available actions",
+            "openended_response": "concrete string when selected_action is openended, otherwise null",
+            "used_fields": [
+                "copy 1 to 2 field names from the field register that most directly supported the selected action"
+            ],
+            "field_analysis": [
+                {
+                    "field": "one exact field name from used_fields",
+                    "value": "short phrase, maximum 12 words, computed for this decision",
+                }
+            ],
+        }
+        prompt = f"""{base_prompt}
+Use the engineered field register above internally. Do not invent or redefine fields.
+Use only the current observation, available actions, rules, and reference basis.
+Choose exactly one action id copied from the available actions.
+selected_action must be exactly one action id from the Available actions list.
+Do not append explanations, coordinates, punctuation, or action descriptions to selected_action.
+If the chosen action is openended, provide a concrete openended_response.
+If the chosen openended action is STOP, openended_response must be a valid STOP command string such as ["STOP", ""] or ["STOP", []], matching the action instructions.
+Set used_fields to 1 to 2 exact field names from the field register that most directly supported the selected action.
+Include field_analysis with exactly one object per used_fields entry, in the same order.
+Keep every field_analysis.value to a short phrase, maximum 12 words.
+Put any short rationale only in field_analysis.value.
+Run the verifier checks before returning the final JSON, but do not expand them in the output.
+Return only the final action JSON with the four schema keys below and no other keys or text.
+
+Return valid JSON with exactly this shape:
+{json.dumps(compact_schema, indent=2)}
+"""
+    else:
+        compact_schema = {
+            "selected_action": "copy exactly one valid action id from the available actions",
+            "openended_response": "concrete string when selected_action is openended, otherwise null",
+        }
+        prompt = f"""{base_prompt}
+Use the engineered field register above internally. Do not invent or redefine fields.
+Use only the current observation, available actions, rules, and reference basis.
+Choose exactly one action id copied from the available actions.
+If the chosen action is openended, provide a concrete openended_response.
+Return only the final action JSON with the two schema keys below and no other keys or text.
+
+Return valid JSON with exactly this shape:
+{json.dumps(compact_schema, indent=2)}
 """
     return [
         {

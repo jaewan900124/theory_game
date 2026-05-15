@@ -34,6 +34,7 @@ GAME_PROFILES = {
             "HIRE": "['HIRE', ['Medicine'], 'Brawler']",
             "SNIPER": "['SNIPER', 'Refugee']",
             "SABOTEUR": "['SABOTEUR', 'Refugee']",
+            "STOP": "['STOP', '']",
         },
     },
     "are_you_the_traitor": {

@@ -26,12 +26,13 @@ class TheoryPromptAgent(Agent):
     model_name: str = "qwen3:14b"
     system_message: str = "Choose the legal action that best advances your chance of winning."
     temperature: float = 0.2
-    max_tokens: int = 1100
+    max_tokens: int = 2048
     timeout: int = 120
     response_retries: int = 3
     base_url: str = None
     api_key: str = None
     transparent_reasoning: bool = False
+    prompt_output_mode: str = "compact"
     traces: List[Dict[str, Any]] = field(default_factory=list)
 
     def __post_init__(self):
@@ -46,9 +47,13 @@ class TheoryPromptAgent(Agent):
 
     def _messages_for_state(self, state: Dict[str, Any]):
         if self.agent_mode == "high_reasoning":
-            messages = build_high_reasoning_prompt(state)
+            messages = build_high_reasoning_prompt(
+                state, output_mode=self.prompt_output_mode
+            )
         elif self.agent_mode == "high_distill":
-            messages = build_high_distill_prompt(state)
+            messages = build_high_distill_prompt(
+                state, output_mode=self.prompt_output_mode
+            )
         else:
             raise ValueError(f"Unsupported agent_mode: {self.agent_mode}")
         if self.system_message:
@@ -76,6 +81,7 @@ class TheoryPromptAgent(Agent):
         messages = self._messages_for_state(state)
         valid_predefined = state["predefined_actions"]
         valid_openended = state["openended_actions"]
+        require_field_application = self.prompt_output_mode == "debug"
 
         last_error = None
         raw_response = ""
@@ -100,10 +106,12 @@ class TheoryPromptAgent(Agent):
                     valid_openended,
                     profile=state.get("profile"),
                     allow_fallback=False,
+                    require_field_application=require_field_application,
                 )
                 self.traces.append(
                     {
                         "mode": self.agent_mode,
+                        "prompt_output_mode": self.prompt_output_mode,
                         "backend": self.backend,
                         "model_name": self.model_name,
                         "observation": state["observation_text"],
@@ -129,6 +137,7 @@ class TheoryPromptAgent(Agent):
                             raw_response,
                             valid_predefined,
                             valid_openended,
+                            require_field_application=require_field_application,
                         ),
                     }
                 )
@@ -139,10 +148,12 @@ class TheoryPromptAgent(Agent):
             valid_openended,
             profile=state.get("profile"),
             allow_fallback=True,
+            require_field_application=False,
         )
         self.traces.append(
             {
                 "mode": self.agent_mode,
+                "prompt_output_mode": self.prompt_output_mode,
                 "backend": self.backend,
                 "model_name": self.model_name,
                 "observation": state["observation_text"],

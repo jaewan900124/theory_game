@@ -3,6 +3,7 @@ import ast
 import base64
 from io import BytesIO
 import json
+import random
 import re
 from typing import Any, Dict, List, Optional
 
@@ -66,6 +67,13 @@ def _first_action(available_actions: AvailableActions) -> Optional[str]:
     for action_id in available_actions.openended:
         return action_id
     return None
+
+
+def _random_action_id(available_actions: AvailableActions) -> Optional[str]:
+    action_ids = list(available_actions.predefined) + list(available_actions.openended)
+    if not action_ids:
+        return None
+    return random.choice(action_ids)
 
 
 def _action_details(available_actions: AvailableActions, action_id: str) -> str:
@@ -343,6 +351,11 @@ class BasicPromptAgent(Agent):
                 }
             )
 
+        fallback_action_id = _random_action_id(available_actions)
+        fallback_openended_response = None
+        if fallback_action_id in available_actions.openended:
+            fallback_openended_response = ""
+
         self.traces.append(
             {
                 "backend": self.backend,
@@ -352,10 +365,14 @@ class BasicPromptAgent(Agent):
                 "raw_response": raw_response,
                 "error": last_error,
                 "fallback_used": True,
+                "fallback_reason": "random_valid_action_after_retries",
                 "action": {
-                    "action_id": None,
-                    "openended_response": None,
+                    "action_id": fallback_action_id,
+                    "openended_response": fallback_openended_response,
                 },
             }
         )
-        return Action(action_id=None)
+        return Action(
+            action_id=fallback_action_id,
+            openended_response=fallback_openended_response,
+        )

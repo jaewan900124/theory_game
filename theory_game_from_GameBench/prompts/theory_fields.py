@@ -1717,15 +1717,34 @@ def _tuple_coordinate_actions(predefined_actions):
 
 def _detect_are_you_role_overlay(observation_text):
     text = (observation_text or "").lower()
-    if "as the traitor" in text or "i am player 0" in text:
+    if "i am player 0" in text or "as the traitor" in text or "i am the traitor" in text:
         return "traitor_undercover"
-    if "evil wizard" in text or "i am player 1" in text:
+    if (
+        "i am player 1" in text
+        or "i am the evil wizard" in text
+        or "as the evil wizard" in text
+    ):
         return "evil_wizard_deception"
-    if "good wizard" in text or "i am player 2" in text:
+    if (
+        "i am player 2" in text
+        or "i am the good wizard" in text
+        or "as the good wizard" in text
+    ):
         return "good_wizard_trust_building"
-    if "keyholder" in text or "key holder" in text or "i am player 3" in text:
+    if (
+        "i am player 3" in text
+        or "i am the keyholder" in text
+        or "i am the key holder" in text
+        or "as the keyholder" in text
+        or "as the key holder" in text
+    ):
         return "key_holder_screening"
-    if "as a guard" in text or "i am player 4" in text:
+    if (
+        "i am player 4" in text
+        or "i am a guard" in text
+        or "as a guard" in text
+        or "in my role as a guard" in text
+    ):
         return "guard_traitor_hunt"
     return None
 

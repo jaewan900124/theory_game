@@ -71,7 +71,10 @@ def parse_args():
         "--match-timeout-seconds",
         type=int,
         default=0,
-        help="Optional wall-clock timeout per match; timed-out matches are recorded as failures.",
+        help=(
+            "Optional wall-clock timeout per match. Use 0 to follow each "
+            "game's rule-defined termination without an external match timer."
+        ),
     )
     parser.add_argument("--response-retries", type=int, default=3)
     parser.add_argument("--show-state", action="store_true")

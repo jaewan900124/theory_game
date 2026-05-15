@@ -81,6 +81,7 @@ def parse_action_response_with_metadata(
     openended: Dict[str, str],
     profile: Optional[Dict[str, Any]] = None,
     allow_fallback: bool = True,
+    require_field_application: bool = True,
 ) -> tuple[Action, Dict[str, Any]]:
     payload = _load_json_like(raw_text)
     metadata: Dict[str, Any] = {
@@ -92,8 +93,12 @@ def parse_action_response_with_metadata(
         "action_type": None,
         "openended_response_fallback_used": False,
         "field_application_present": isinstance(payload.get("field_application"), dict),
+        "used_rule": payload.get("used_rule"),
+        "used_fields": payload.get("used_fields"),
+        "rule_analysis": payload.get("rule_analysis"),
+        "field_analysis": payload.get("field_analysis"),
     }
-    if not metadata["field_application_present"] and not allow_fallback:
+    if require_field_application and not metadata["field_application_present"] and not allow_fallback:
         raise ValueError("Model output did not include the required field_application object.")
 
     selected_action = (
@@ -153,13 +158,19 @@ def action_feedback_message(
     raw_text: str,
     predefined: Dict[str, str],
     openended: Dict[str, str],
+    require_field_application: bool = True,
 ) -> str:
     valid_actions: List[str] = list(predefined.keys()) + list(openended.keys())
+    field_application_instruction = (
+        "Include the required field_application object that applies the predefined theory fields.\n"
+        if require_field_application
+        else ""
+    )
     return (
         "Your previous response was invalid or incomplete.\n"
         "Return valid JSON only.\n"
         f"Valid actions: {valid_actions}\n"
-        "Include the required field_application object that applies the predefined theory fields.\n"
+        f"{field_application_instruction}"
         "Copy one valid action id exactly into 'selected_action'.\n"
         "If you choose an openended action, include an 'openended_response' string."
     )

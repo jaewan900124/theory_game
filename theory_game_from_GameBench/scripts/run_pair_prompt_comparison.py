@@ -18,7 +18,7 @@ sys.path.insert(0, str(ROOT))
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/gamebench-mpl")
 
 import api.util as util  # noqa: E402
-from agents.random_agent import RandomAgent  # noqa: E402
+from agents.basic_prompt_agent import BasicPromptAgent  # noqa: E402
 from agents.theory_prompt_agent import TheoryPromptAgent  # noqa: E402
 
 
@@ -42,35 +42,36 @@ GAME_PATHS = {
     "two_rooms_and_a_boom": "games.two_rooms_and_a_boom.two_rooms.TwoRoomsAndaBoom",
 }
 
-
-DEFAULT_MODES = ["high_reasoning", "high_distill"]
+PROMPT_CHOICES = ["base", "high_reasoning", "high_distill"]
 
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Run GameBench TheoryPromptAgent high_reasoning/high_distill against RandomAgent."
+        description="Run head-to-head GameBench prompt-agent comparisons."
     )
     parser.add_argument("--run-id", default=None)
     parser.add_argument("--output-root", default="theory_results")
     parser.add_argument("--games", nargs="+", default=["all"], choices=["all", *GAME_PATHS])
-    parser.add_argument("--modes", nargs="+", default=DEFAULT_MODES, choices=DEFAULT_MODES)
-    parser.add_argument(
-        "--match-plan",
-        default="fixed",
-        choices=["fixed", "paper_gpt4_random"],
-        help=(
-            "fixed uses --num-matches for every game. paper_gpt4_random reuses "
-            "the per-game match counts found in matches.json for gpt-4 vs random."
-        ),
-    )
+    parser.add_argument("--comparison", required=True)
+    parser.add_argument("--left-agent", required=True, choices=PROMPT_CHOICES)
+    parser.add_argument("--right-agent", required=True, choices=PROMPT_CHOICES)
     parser.add_argument("--num-matches", type=int, default=5)
-    parser.add_argument("--model-name", default="qwen3:8b")
+    parser.add_argument("--model-name", default="gemma4:31b")
     parser.add_argument("--backend", default="ollama", choices=["ollama", "openai"])
     parser.add_argument("--base-url", default=os.environ.get("OLLAMA_BASE_URL"))
     parser.add_argument("--api-key", default=None)
-    parser.add_argument("--temperature", type=float, default=0.2)
+    parser.add_argument("--left-model-name", default=None)
+    parser.add_argument("--right-model-name", default=None)
+    parser.add_argument("--left-backend", default=None, choices=["ollama", "openai"])
+    parser.add_argument("--right-backend", default=None, choices=["ollama", "openai"])
+    parser.add_argument("--left-base-url", default=None)
+    parser.add_argument("--right-base-url", default=None)
+    parser.add_argument("--left-api-key", default=None)
+    parser.add_argument("--right-api-key", default=None)
+    parser.add_argument("--temperature", type=float, default=1.0)
     parser.add_argument("--max-tokens", type=int, default=2048)
-    parser.add_argument("--timeout", type=int, default=120)
+    parser.add_argument("--timeout", type=int, default=240)
+    parser.add_argument("--response-retries", type=int, default=3)
     parser.add_argument(
         "--match-timeout-seconds",
         type=int,
@@ -80,7 +81,6 @@ def parse_args():
             "game's rule-defined termination without an external match timer."
         ),
     )
-    parser.add_argument("--response-retries", type=int, default=3)
     parser.add_argument("--show-state", action="store_true")
     parser.add_argument("--transparent-reasoning", action="store_true")
     parser.add_argument(
@@ -99,14 +99,9 @@ def parse_args():
     parser.add_argument(
         "--seating",
         default="balanced",
-        choices=["balanced", "random", "theory_first"],
-        help="How to assign TheoryPromptAgent to player/team slots across matches.",
+        choices=["balanced", "random", "left_first"],
     )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Print the planned jobs and import game classes, but do not run matches or write results.",
-    )
+    parser.add_argument("--dry-run", action="store_true")
     return parser.parse_args()
 
 
@@ -114,27 +109,6 @@ def selected_games(game_args):
     if "all" in game_args:
         return list(GAME_PATHS)
     return game_args
-
-
-def paper_gpt4_random_counts():
-    counts = {game: 0 for game in GAME_PATHS}
-    matches_path = ROOT / "matches.json"
-    if not matches_path.exists():
-        return counts
-    for match in util.load_json(str(matches_path)):
-        if match.get("game") not in counts:
-            continue
-        agent_keys = {key for key in match if key != "game"}
-        if agent_keys == {"gpt-4", "random"}:
-            counts[match["game"]] += 1
-    return counts
-
-
-def planned_match_counts(args, games):
-    if args.match_plan == "fixed":
-        return {game: args.num_matches for game in games}
-    counts = paper_gpt4_random_counts()
-    return {game: counts.get(game, 0) for game in games}
 
 
 def write_json(path, payload):
@@ -158,37 +132,59 @@ def seed_everything(seed):
         pass
 
 
-def stable_seed(base_seed, game_key, mode, match_index):
-    text = f"{base_seed}:{game_key}:{mode}:{match_index}"
+def stable_seed(base_seed, game_key, comparison, match_index):
+    text = f"{base_seed}:{game_key}:{comparison}:{match_index}"
     total = 0
     for char in text:
         total = (total * 131 + ord(char)) % 1_000_000_007
     return total
 
 
-def theory_kwargs(args, mode):
+def agent_runtime_config(args, side):
+    prefix = f"{side}_"
     return {
-        "agent_mode": mode,
+        "backend": getattr(args, f"{prefix}backend") or args.backend,
+        "model_name": getattr(args, f"{prefix}model_name") or args.model_name,
+        "base_url": getattr(args, f"{prefix}base_url") or args.base_url,
+        "api_key": getattr(args, f"{prefix}api_key") or args.api_key,
+    }
+
+
+def build_agent(agent_kind, args, side=None):
+    runtime = agent_runtime_config(args, side) if side else {
         "backend": args.backend,
         "model_name": args.model_name,
+        "base_url": args.base_url,
+        "api_key": args.api_key,
+    }
+    common = {
+        "backend": runtime["backend"],
+        "model_name": runtime["model_name"],
         "temperature": args.temperature,
         "max_tokens": args.max_tokens,
         "timeout": args.timeout,
         "response_retries": args.response_retries,
-        "base_url": args.base_url,
-        "api_key": args.api_key,
+        "base_url": runtime["base_url"],
+        "api_key": runtime["api_key"],
         "transparent_reasoning": args.transparent_reasoning,
+    }
+    if agent_kind == "base":
+        return BasicPromptAgent, common
+    return TheoryPromptAgent, {
+        **common,
+        "agent_mode": agent_kind,
         "prompt_output_mode": args.prompt_output_mode,
     }
 
 
-def theory_agent_id(args, mode):
-    agent = TheoryPromptAgent(team_id=-1, agent_id=-1, **theory_kwargs(args, mode))
+def agent_type_id(agent_kind, args, side=None):
+    agent_class, kwargs = build_agent(agent_kind, args, side)
+    agent = agent_class(team_id=-1, agent_id=-1, **kwargs)
     return agent.agent_type_id
 
 
 def choose_swapped(args, match_index):
-    if args.seating == "theory_first":
+    if args.seating == "left_first":
         return False
     if args.seating == "balanced":
         return bool(match_index % 2)
@@ -248,31 +244,40 @@ def collect_traces(game):
     return traces
 
 
-def run_match(args, game_key, mode, match_index):
-    match_seed = stable_seed(args.seed, game_key, mode, match_index)
+def run_match(args, game_key, match_index):
+    match_seed = stable_seed(args.seed, game_key, args.comparison, match_index)
     seed_everything(match_seed)
     if args.seating == "random":
         random.seed(match_seed)
     swapped = choose_swapped(args, match_index)
-    kwargs = theory_kwargs(args, mode)
-    opponent_kwargs = {}
-    agent_id = theory_agent_id(args, mode)
-    game = None
 
+    left_class, left_kwargs = build_agent(args.left_agent, args, "left")
+    right_class, right_kwargs = build_agent(args.right_agent, args, "right")
+    left_id = agent_type_id(args.left_agent, args, "left")
+    right_id = agent_type_id(args.right_agent, args, "right")
+    left_runtime = agent_runtime_config(args, "left")
+    right_runtime = agent_runtime_config(args, "right")
+
+    game = None
     record = {
         "game": game_key,
-        "mode": mode,
-        "agent_type_id": agent_id,
+        "comparison": args.comparison,
         "model": args.model_name,
-        "backend": args.backend,
-        "opponent": "random",
+        "base_url": args.base_url,
+        "left_model": left_runtime["model_name"],
+        "right_model": right_runtime["model_name"],
+        "left_backend": left_runtime["backend"],
+        "right_backend": right_runtime["backend"],
+        "left_base_url": left_runtime["base_url"],
+        "right_base_url": right_runtime["base_url"],
         "match_index": match_index,
-        "seed": match_seed,
         "swapped_seating": swapped,
         "status": "started",
-        "agent_score": None,
-        "opponent_score": None,
+        f"{args.left_agent}_score": None,
+        f"{args.right_agent}_score": None,
         "error": None,
+        "left_agent_type_id": left_id,
+        "right_agent_type_id": right_id,
     }
     try:
         old_handler = None
@@ -283,31 +288,31 @@ def run_match(args, game_key, mode, match_index):
         if swapped:
             game = game_class(
                 show_state=args.show_state,
-                agent_1_kwargs=opponent_kwargs,
-                agent_2_kwargs=kwargs,
+                agent_1_kwargs=right_kwargs,
+                agent_2_kwargs=left_kwargs,
             )
-            game.init_game(RandomAgent, TheoryPromptAgent)
-            opponent_score, agent_score = game.play()
+            game.init_game(right_class, left_class)
+            right_score, left_score = game.play()
         else:
             game = game_class(
                 show_state=args.show_state,
-                agent_1_kwargs=kwargs,
-                agent_2_kwargs=opponent_kwargs,
+                agent_1_kwargs=left_kwargs,
+                agent_2_kwargs=right_kwargs,
             )
-            game.init_game(TheoryPromptAgent, RandomAgent)
-            agent_score, opponent_score = game.play()
+            game.init_game(left_class, right_class)
+            left_score, right_score = game.play()
         record.update(
             {
                 "status": "ok",
-                "agent_score": float(agent_score),
-                "opponent_score": float(opponent_score),
+                f"{args.left_agent}_score": float(left_score),
+                f"{args.right_agent}_score": float(right_score),
             }
         )
     except MatchTimeout as exc:
         record.update(
             {
                 "status": "failed",
-                "error": f"TimeoutError: {exc}",
+                "error": f"MatchTimeout: {exc}",
                 "traceback": traceback.format_exc(),
             }
         )
@@ -328,135 +333,138 @@ def run_match(args, game_key, mode, match_index):
     return record
 
 
-def summarize(records, args, run_id, match_counts=None):
+def summarize(records, args, run_id):
     groups = {}
+    left_key = f"{args.left_agent}_score"
+    right_key = f"{args.right_agent}_score"
     for record in records:
-        key = (record["game"], record["mode"])
-        groups.setdefault(key, []).append(record)
+        groups.setdefault(record["game"], []).append(record)
 
-    by_game_mode = []
-    for (game, mode), items in sorted(groups.items()):
+    by_game = []
+    for game, items in sorted(groups.items()):
         ok_items = [item for item in items if item["status"] == "ok"]
-        scores = [item["agent_score"] for item in ok_items]
-        wins = [
-            1.0 if item["agent_score"] > item["opponent_score"]
-            else 0.5 if item["agent_score"] == item["opponent_score"]
-            else 0.0
-            for item in ok_items
-        ]
-        by_game_mode.append(
+        left_scores = [item[left_key] for item in ok_items]
+        right_scores = [item[right_key] for item in ok_items]
+        by_game.append(
             {
                 "game": game,
-                "mode": mode,
+                "comparison": args.comparison,
+                "model_name": args.model_name,
+                "left_model_name": agent_runtime_config(args, "left")["model_name"],
+                "right_model_name": agent_runtime_config(args, "right")["model_name"],
+                "left_backend": agent_runtime_config(args, "left")["backend"],
+                "right_backend": agent_runtime_config(args, "right")["backend"],
                 "matches": len(items),
                 "ok": len(ok_items),
                 "failed": len(items) - len(ok_items),
-                "mean_score": mean(scores) if scores else None,
-                "std_score": pstdev(scores) if len(scores) > 1 else 0.0 if scores else None,
-                "win_rate": mean(wins) if wins else None,
+                f"{args.left_agent}_mean_score": mean(left_scores) if left_scores else None,
+                f"{args.right_agent}_mean_score": mean(right_scores) if right_scores else None,
             }
         )
 
-    by_mode = []
-    for mode in args.modes:
-        rows = [row for row in by_game_mode if row["mode"] == mode and row["mean_score"] is not None]
-        by_mode.append(
-            {
-                "mode": mode,
-                "games": len(rows),
-                "overall_mean_score": mean([row["mean_score"] for row in rows]) if rows else None,
-                "overall_win_rate": mean([row["win_rate"] for row in rows]) if rows else None,
-                "failures": sum(row["failed"] for row in by_game_mode if row["mode"] == mode),
-            }
-        )
-
-    return {
+    ok_items = [item for item in records if item["status"] == "ok"]
+    summary = {
         "run_id": run_id,
         "created_at": time.strftime("%Y-%m-%d %H:%M:%S %Z"),
         "config": {
             "games": selected_games(args.games),
-            "modes": args.modes,
-            "match_plan": args.match_plan,
-            "match_counts": match_counts,
-            "num_matches": args.num_matches,
+            "comparison": args.comparison,
+            "left_agent": args.left_agent,
+            "right_agent": args.right_agent,
             "model_name": args.model_name,
-            "backend": args.backend,
             "base_url": args.base_url,
+            "left_model_name": agent_runtime_config(args, "left")["model_name"],
+            "right_model_name": agent_runtime_config(args, "right")["model_name"],
+            "left_backend": agent_runtime_config(args, "left")["backend"],
+            "right_backend": agent_runtime_config(args, "right")["backend"],
+            "left_base_url": agent_runtime_config(args, "left")["base_url"],
+            "right_base_url": agent_runtime_config(args, "right")["base_url"],
+            "num_matches": args.num_matches,
             "temperature": args.temperature,
             "max_tokens": args.max_tokens,
             "timeout": args.timeout,
-            "match_timeout_seconds": args.match_timeout_seconds,
             "response_retries": args.response_retries,
             "prompt_output_mode": args.prompt_output_mode,
+            "match_timeout_seconds": args.match_timeout_seconds,
             "seed": args.seed,
             "seating": args.seating,
-            "opponent": "random",
         },
-        "by_game_mode": by_game_mode,
-        "by_mode": by_mode,
+        "matches": len(records),
+        "ok": len(ok_items),
+        "failed": len(records) - len(ok_items),
+        "by_game": by_game,
         "failures": [record for record in records if record["status"] != "ok"],
     }
+    if ok_items:
+        summary[f"{args.left_agent}_mean_score"] = mean(item[left_key] for item in ok_items)
+        summary[f"{args.right_agent}_mean_score"] = mean(item[right_key] for item in ok_items)
+    else:
+        summary[f"{args.left_agent}_mean_score"] = None
+        summary[f"{args.right_agent}_mean_score"] = None
+    return summary
 
 
 def write_summary_csv(path, summary):
     path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = [
         "game",
-        "mode",
+        "comparison",
+        "model_name",
+        "left_model_name",
+        "right_model_name",
+        "left_backend",
+        "right_backend",
         "matches",
         "ok",
         "failed",
-        "mean_score",
-        "std_score",
-        "win_rate",
+        f"{summary['config']['left_agent']}_mean_score",
+        f"{summary['config']['right_agent']}_mean_score",
     ]
     with path.open("w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
-        for row in summary["by_game_mode"]:
+        for row in summary["by_game"]:
             writer.writerow(row)
 
 
 def main():
     args = parse_args()
     games = selected_games(args.games)
-    match_counts = planned_match_counts(args, games)
-    run_id = args.run_id or f"theory_prompt_{args.model_name.replace(':', '_')}_{time.strftime('%Y%m%d_%H%M%S')}"
+    run_id = args.run_id or (
+        f"{args.comparison}_{args.model_name.replace(':', '_')}_{time.strftime('%Y%m%d_%H%M%S')}"
+    )
     output_dir = Path(args.output_root) / run_id
 
     if args.dry_run:
         print(f"run_id={run_id}")
         print(f"output_dir={output_dir}")
-        for mode in args.modes:
-            print(f"mode={mode} agent_id={theory_agent_id(args, mode)}")
+        print(f"left_agent={args.left_agent} agent_id={agent_type_id(args.left_agent, args, 'left')}")
+        print(f"right_agent={args.right_agent} agent_id={agent_type_id(args.right_agent, args, 'right')}")
         for game_key in games:
             try:
                 util.import_class(GAME_PATHS[game_key])
                 import_status = "ok"
             except Exception as exc:
                 import_status = f"import_failed ({type(exc).__name__}: {exc})"
-            print(f"game={game_key} matches_per_mode={match_counts.get(game_key, 0)} import={import_status}")
+            print(f"game={game_key} matches={args.num_matches} import={import_status}")
         return
 
     records = []
     matches_path = output_dir / "matches.jsonl"
+    transcript_root = output_dir / "transcripts"
+    left_key = f"{args.left_agent}_score"
+    right_key = f"{args.right_agent}_score"
     for game_key in games:
-        for mode in args.modes:
-            transcript_path = output_dir / "transcripts" / game_key / f"{mode}_vs_random.jsonl"
-            planned_matches = match_counts.get(game_key, 0)
-            for match_index in range(planned_matches):
-                print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] {game_key} {mode} match {match_index + 1}/{planned_matches}")
-                record = run_match(args, game_key, mode, match_index)
-                records.append({k: v for k, v in record.items() if k != "agent_traces"})
-                append_jsonl(matches_path, {k: v for k, v in record.items() if k != "agent_traces"})
-                append_jsonl(transcript_path, record)
-                summary = summarize(records, args, run_id, match_counts)
-                write_json(output_dir / "summary.json", summary)
-                write_summary_csv(output_dir / "summary.csv", summary)
-                print(
-                    f"  status={record['status']} agent_score={record['agent_score']} "
-                    f"opponent_score={record['opponent_score']}"
-                )
+        for match_index in range(args.num_matches):
+            print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] {game_key} {args.comparison} match {match_index + 1}/{args.num_matches}")
+            record = run_match(args, game_key, match_index)
+            records.append({k: v for k, v in record.items() if k != "agent_traces"})
+            append_jsonl(matches_path, {k: v for k, v in record.items() if k != "agent_traces"})
+            append_jsonl(transcript_root / game_key / f"{args.comparison}.jsonl", record)
+            summary = summarize(records, args, run_id)
+            write_json(output_dir / "summary.json", summary)
+            write_summary_csv(output_dir / "summary.csv", summary)
+            print(f"  status={record['status']} {left_key}={record[left_key]} {right_key}={record[right_key]}")
 
     print(f"Saved matches: {matches_path}")
     print(f"Saved summary: {output_dir / 'summary.json'}")
