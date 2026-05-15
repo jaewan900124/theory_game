@@ -43,12 +43,12 @@ GAME_PATHS = {
 }
 
 
-DEFAULT_MODES = ["high_reasoning", "high_distill"]
+DEFAULT_MODES = ["high_reasoning", "field_rationale", "field_program", "high_distill"]
 
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Run GameBench TheoryPromptAgent high_reasoning/high_distill against RandomAgent."
+        description="Run GameBench TheoryPromptAgent modes against RandomAgent."
     )
     parser.add_argument("--run-id", default=None)
     parser.add_argument("--output-root", default="theory_results")

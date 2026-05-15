@@ -2022,6 +2022,29 @@ def _verifier_for_context(mapping, active_context):
     return mapping.get("verifier_checks", GENERIC_THEORY_MAPPING["verifier_checks"])
 
 
+def field_register_for_prompt(mapping, active_context=None):
+    fields = list(mapping.get("required_state_fields", []))
+    active_fields = []
+    if active_context:
+        active_fields = list(active_context.get("active_fields") or [])
+    seen = set()
+    ordered = []
+    for field in fields + active_fields:
+        if field in seen:
+            continue
+        seen.add(field)
+        ordered.append(field)
+    return ordered
+
+
+def program_for_prompt(mapping, active_context=None):
+    return list(_program_for_context(mapping, active_context))
+
+
+def verifier_checks_for_prompt(mapping, active_context=None):
+    return list(_verifier_for_context(mapping, active_context))
+
+
 def format_theory_mapping_section(mapping, *, distilled: bool, active_context=None) -> str:
     role_or_phase_section = "" if active_context else _role_or_phase_lines(mapping)
     active_context_section = _active_context_lines(active_context)

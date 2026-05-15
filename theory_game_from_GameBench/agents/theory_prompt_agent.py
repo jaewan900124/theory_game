@@ -10,6 +10,8 @@ from agents.action_parser import (
 from agents.backends import generate_completion
 from prompts.gamebench_state_adapter import normalize_gamebench_state
 from prompts.game_profiles import canonical_game_id
+from prompts.field_program import build_field_program_prompt
+from prompts.field_rationale import build_field_rationale_prompt
 from prompts.high_distill import build_high_distill_prompt
 from prompts.high_reasoning import build_high_reasoning_prompt
 
@@ -48,6 +50,14 @@ class TheoryPromptAgent(Agent):
     def _messages_for_state(self, state: Dict[str, Any]):
         if self.agent_mode == "high_reasoning":
             messages = build_high_reasoning_prompt(
+                state, output_mode=self.prompt_output_mode
+            )
+        elif self.agent_mode == "field_rationale":
+            messages = build_field_rationale_prompt(
+                state, output_mode=self.prompt_output_mode
+            )
+        elif self.agent_mode == "field_program":
+            messages = build_field_program_prompt(
                 state, output_mode=self.prompt_output_mode
             )
         elif self.agent_mode == "high_distill":

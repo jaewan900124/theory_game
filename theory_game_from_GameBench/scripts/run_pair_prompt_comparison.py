@@ -42,7 +42,7 @@ GAME_PATHS = {
     "two_rooms_and_a_boom": "games.two_rooms_and_a_boom.two_rooms.TwoRoomsAndaBoom",
 }
 
-PROMPT_CHOICES = ["base", "high_reasoning", "high_distill"]
+PROMPT_CHOICES = ["base", "high_reasoning", "field_rationale", "field_program", "high_distill"]
 
 
 def parse_args():
@@ -244,6 +244,24 @@ def collect_traces(game):
     return traces
 
 
+def score_key(args, side):
+    agent = args.left_agent if side == "left" else args.right_agent
+    if args.left_agent == args.right_agent:
+        return f"{side}_{agent}_score"
+    return f"{agent}_score"
+
+
+def mean_score_key(args, side):
+    return score_key(args, side).replace("_score", "_mean_score")
+
+
+def mean_score_key_from_config(config, side):
+    agent = config["left_agent"] if side == "left" else config["right_agent"]
+    if config["left_agent"] == config["right_agent"]:
+        return f"{side}_{agent}_mean_score"
+    return f"{agent}_mean_score"
+
+
 def run_match(args, game_key, match_index):
     match_seed = stable_seed(args.seed, game_key, args.comparison, match_index)
     seed_everything(match_seed)
@@ -257,6 +275,8 @@ def run_match(args, game_key, match_index):
     right_id = agent_type_id(args.right_agent, args, "right")
     left_runtime = agent_runtime_config(args, "left")
     right_runtime = agent_runtime_config(args, "right")
+    left_score_key = score_key(args, "left")
+    right_score_key = score_key(args, "right")
 
     game = None
     record = {
@@ -273,8 +293,8 @@ def run_match(args, game_key, match_index):
         "match_index": match_index,
         "swapped_seating": swapped,
         "status": "started",
-        f"{args.left_agent}_score": None,
-        f"{args.right_agent}_score": None,
+        left_score_key: None,
+        right_score_key: None,
         "error": None,
         "left_agent_type_id": left_id,
         "right_agent_type_id": right_id,
@@ -304,8 +324,8 @@ def run_match(args, game_key, match_index):
         record.update(
             {
                 "status": "ok",
-                f"{args.left_agent}_score": float(left_score),
-                f"{args.right_agent}_score": float(right_score),
+                left_score_key: float(left_score),
+                right_score_key: float(right_score),
             }
         )
     except MatchTimeout as exc:
@@ -335,8 +355,10 @@ def run_match(args, game_key, match_index):
 
 def summarize(records, args, run_id):
     groups = {}
-    left_key = f"{args.left_agent}_score"
-    right_key = f"{args.right_agent}_score"
+    left_key = score_key(args, "left")
+    right_key = score_key(args, "right")
+    left_mean_key = mean_score_key(args, "left")
+    right_mean_key = mean_score_key(args, "right")
     for record in records:
         groups.setdefault(record["game"], []).append(record)
 
@@ -357,8 +379,8 @@ def summarize(records, args, run_id):
                 "matches": len(items),
                 "ok": len(ok_items),
                 "failed": len(items) - len(ok_items),
-                f"{args.left_agent}_mean_score": mean(left_scores) if left_scores else None,
-                f"{args.right_agent}_mean_score": mean(right_scores) if right_scores else None,
+                left_mean_key: mean(left_scores) if left_scores else None,
+                right_mean_key: mean(right_scores) if right_scores else None,
             }
         )
 
@@ -396,11 +418,11 @@ def summarize(records, args, run_id):
         "failures": [record for record in records if record["status"] != "ok"],
     }
     if ok_items:
-        summary[f"{args.left_agent}_mean_score"] = mean(item[left_key] for item in ok_items)
-        summary[f"{args.right_agent}_mean_score"] = mean(item[right_key] for item in ok_items)
+        summary[left_mean_key] = mean(item[left_key] for item in ok_items)
+        summary[right_mean_key] = mean(item[right_key] for item in ok_items)
     else:
-        summary[f"{args.left_agent}_mean_score"] = None
-        summary[f"{args.right_agent}_mean_score"] = None
+        summary[left_mean_key] = None
+        summary[right_mean_key] = None
     return summary
 
 
@@ -417,8 +439,8 @@ def write_summary_csv(path, summary):
         "matches",
         "ok",
         "failed",
-        f"{summary['config']['left_agent']}_mean_score",
-        f"{summary['config']['right_agent']}_mean_score",
+        mean_score_key_from_config(summary["config"], "left"),
+        mean_score_key_from_config(summary["config"], "right"),
     ]
     with path.open("w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
@@ -452,8 +474,8 @@ def main():
     records = []
     matches_path = output_dir / "matches.jsonl"
     transcript_root = output_dir / "transcripts"
-    left_key = f"{args.left_agent}_score"
-    right_key = f"{args.right_agent}_score"
+    left_key = score_key(args, "left")
+    right_key = score_key(args, "right")
     for game_key in games:
         for match_index in range(args.num_matches):
             print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] {game_key} {args.comparison} match {match_index + 1}/{args.num_matches}")
