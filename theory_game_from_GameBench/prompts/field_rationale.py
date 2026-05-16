@@ -70,8 +70,7 @@ def _field_rationale_extension(extra_schema, field_register, include_analysis=Tr
 - field_analysis must contain exactly one object per used field, in the same order.
 - Each field_analysis object must have:
   - "field": one exact field name from used_fields
-  - "value": a short phrase explaining how that field supports the action
-- Keep each field_analysis.value short.
+  - "value": one concise sentence, up to 30 words, stating the current observed value of this field and how it directly affected the selected action
 """
     return f"""\
 
@@ -83,17 +82,17 @@ Do not treat the fields as additional game rules or extra available actions.
 {_field_register_block(field_register)}
 
 # Field Selection Rule
-Select 2 to 4 fields from the Field Register.
+Select 2 to 6 fields from the Field Register.
 Prefer the smallest sufficient set of fields for the decision.
 Use only fields that directly affect the chosen action; do not include fields that are only generally relevant.
-Use 4 fields only when multiple competing factors materially affect the decision.
+Use more than 5 fields only when multiple competing factors materially affect the decision.
 
 In the final JSON response, keep the original base action interface unchanged.
 Add these keys:
 {json.dumps(extra_schema, indent=2)}
 
 Rules:
-- used_fields must contain 2 to 4 field names copied exactly from the Field Register.
+- used_fields must contain 2 to 6 field names copied exactly from the Field Register.
 {analysis_rules}- Return valid JSON only.
 """
 
@@ -145,7 +144,7 @@ Rules:
     elif output_mode == "compact_basis":
         extra_schema = {
             "used_fields": [
-                "2 to 4 field names copied exactly from the Field Register"
+                "2 to 6 field names copied exactly from the Field Register"
             ],
         }
         prompt = f"""{base_prompt}
@@ -155,12 +154,12 @@ Rules:
     elif output_mode == "compact_field_analysis":
         extra_schema = {
             "used_fields": [
-                "2 to 4 field names copied exactly from the Field Register"
+                "2 to 6 field names copied exactly from the Field Register"
             ],
             "field_analysis": [
                 {
                     "field": "one exact field name from used_fields",
-                    "value": "short phrase explaining why that field supports the selected action",
+                    "value": "one concise sentence, up to 30 words, stating the current observed value of this field and how it directly affected the selected action",
                 }
             ],
         }
@@ -171,12 +170,12 @@ Rules:
     else:
         extra_schema = {
             "used_fields": [
-                "2 to 4 field names copied exactly from the Field Register"
+                "2 to 6 field names copied exactly from the Field Register"
             ],
             "field_analysis": [
                 {
                     "field": "one exact field name from used_fields",
-                    "value": "short phrase explaining why that field supports the selected action",
+                    "value": "one concise sentence, up to 30 words, stating the current observed value of this field and how it directly affected the selected action",
                 }
             ],
         }

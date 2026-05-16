@@ -110,7 +110,7 @@ Return valid JSON with exactly this shape:
             "field_analysis": [
                 {
                     "field": "one exact field name from used_fields",
-                    "value": "short phrase, maximum 12 words, computed for this decision",
+                    "value": "short phrase, maximum 30 words, computed for this decision",
                 }
             ],
         }
@@ -124,7 +124,7 @@ If the chosen action is openended, provide a concrete openended_response.
 If the chosen openended action is STOP, openended_response must be a valid STOP command string such as ["STOP", ""] or ["STOP", []], matching the action instructions.
 Set used_fields to 1 to 2 exact field names from the field register that most directly supported the selected action.
 Include field_analysis with exactly one object per used_fields entry, in the same order.
-Keep every field_analysis.value to a short phrase, maximum 12 words.
+Keep every field_analysis.value to a short phrase, maximum 30 words.
 Put any short rationale only in field_analysis.value.
 Run the verifier checks before returning the final JSON, but do not expand them in the output.
 Return only the final action JSON with the four schema keys below and no other keys or text.

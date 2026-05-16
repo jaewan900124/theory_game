@@ -18,3 +18,4 @@ logs/
 .vscode/
 
 theory_game_from_TMGBench/ref/
+qwen35_tokenizer_qwen2fast/

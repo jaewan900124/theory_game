@@ -21,10 +21,14 @@ def generate_openai(
     temperature=0.2,
     max_tokens=512,
     timeout=120,
+    base_url=None,
     api_key=None,
     json_mode=True,
 ):
-    client = openai.Client(api_key=_resolve_api_key(api_key))
+    client_kwargs = {"api_key": _resolve_api_key(api_key)}
+    if base_url:
+        client_kwargs["base_url"] = base_url.rstrip("/") + "/"
+    client = openai.Client(**client_kwargs)
     kwargs = {
         "model": model_name,
         "messages": messages,

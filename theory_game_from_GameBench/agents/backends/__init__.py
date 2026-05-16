@@ -32,6 +32,7 @@ def generate_completion(
             temperature=temperature,
             max_tokens=max_tokens,
             timeout=timeout,
+            base_url=base_url,
             api_key=api_key,
             json_mode=json_mode,
         )
