@@ -19,8 +19,10 @@ OUTPUT_ROOT_THEORY="${OUTPUT_ROOT_THEORY:-theory_results}"
 OUTPUT_ROOT_BASIC="${OUTPUT_ROOT_BASIC:-basic_results}"
 COMBINED_ROOT="${COMBINED_ROOT:-combined_results}"
 
-MAIN_TIMEOUT="${MAIN_TIMEOUT:-600}"
-ARCTIC_TIMEOUT="${ARCTIC_TIMEOUT:-60}"
+# Paper-style GameBench evaluation should let each game terminate by its own
+# rule-defined end condition. Set these env vars only for debugging stuck runs.
+MAIN_TIMEOUT="${MAIN_TIMEOUT:-0}"
+ARCTIC_TIMEOUT="${ARCTIC_TIMEOUT:-0}"
 REQUEST_TIMEOUT="${REQUEST_TIMEOUT:-240}"
 MAX_TOKENS="${MAX_TOKENS:-1100}"
 TEMP="${TEMP:-1.0}"

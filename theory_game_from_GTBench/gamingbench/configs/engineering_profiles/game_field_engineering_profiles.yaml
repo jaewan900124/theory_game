@@ -492,3 +492,36 @@ games:
       still_forbidden:
         - direct_action_trigger_rule
         - precommitted_repeated_game_policy
+
+  iterated_prisoners_dilemma:
+    rationale: "Repeated-game structure may be summarized, but trigger strategies must not be directly encoded as fixed answers."
+    low_engineering:
+      allowed_fields:
+        - opponent_recent_actions
+        - cooperation_rate
+        - opponent_cooperation_rate
+        - opponent_defection_rate
+        - pattern_detection
+        - next_action_implications
+      forbidden_patterns:
+        - if_opponent_defected_then_testify
+        - fixed_tit_for_tat_output
+    high_engineering:
+      allowed_fields:
+        - history_summary
+        - opponent_defection_count
+        - opponent_cooperation_count
+        - trigger_strategy_state
+        - opponent_recent_defection
+        - stage_game_payoff_bounds_by_action
+        - stage_game_worst_case_payoff_by_action
+        - strictly_dominant_stage_actions
+        - future_interaction_value
+        - opponent_recent_actions
+        - opponent_cooperation_rate
+        - opponent_defection_rate
+        - pattern_detection
+        - next_action_implications
+      still_forbidden:
+        - direct_action_trigger_rule
+        - precommitted_repeated_game_policy

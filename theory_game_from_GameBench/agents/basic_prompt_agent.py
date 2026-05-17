@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Optional
 
 from api.classes import Action, Agent, AvailableActions, Observation, Rules
 from agents.backends import generate_completion
+from agents.trace_utils import action_trace_fields, format_action_id_reference
 
 
 ACTION_FORMAT_INSTRUCTIONS_NO_OPENENDED = """\
@@ -98,6 +99,7 @@ class BasicPromptAgent(Agent):
     base_url: str = None
     api_key: str = None
     transparent_reasoning: bool = False
+    include_action_id_reference: bool = False
     traces: List[Dict[str, Any]] = field(default_factory=list)
 
     def __post_init__(self):
@@ -159,6 +161,17 @@ class BasicPromptAgent(Agent):
             prompt += "The following are predefined actions you can take:\n"
             prompt += str(list(available_actions.predefined)) + "\n"
             valid_actions += list(available_actions.predefined)
+
+        if self.include_action_id_reference:
+            action_reference = format_action_id_reference(
+                available_actions.predefined,
+                available_actions.openended,
+                game_id=_slug(rules.title),
+                observation_text=observation.text,
+                action_instructions=available_actions.instructions,
+            )
+            if action_reference:
+                prompt += "\n" + action_reference + "\n"
 
         if any(
             available_actions.predefined.get(action) is not None
@@ -321,20 +334,28 @@ class BasicPromptAgent(Agent):
                     action_id=selected_action,
                     openended_response=openended_response,
                 )
-                self.traces.append(
-                    {
-                        "backend": self.backend,
-                        "model_name": self.model_name,
-                        "observation": str(observation.text),
-                        "messages": messages,
-                        "raw_response": raw_response,
-                        "parsed_response": payload,
-                        "action": {
-                            "action_id": action.action_id,
-                            "openended_response": action.openended_response,
-                        },
-                    }
+                trace = {
+                    "backend": self.backend,
+                    "model_name": self.model_name,
+                    "observation": str(observation.text),
+                    "messages": messages,
+                    "raw_response": raw_response,
+                    "parsed_response": payload,
+                    "action": {
+                        "action_id": action.action_id,
+                        "openended_response": action.openended_response,
+                    },
+                }
+                trace.update(
+                    action_trace_fields(
+                        available_actions,
+                        action.action_id,
+                        game_id=_slug(rules.title),
+                        observation_text=observation.text,
+                        action_instructions=available_actions.instructions,
+                    )
                 )
+                self.traces.append(trace)
                 return action
 
             last_error = f"Invalid action: {selected_action}"
@@ -356,22 +377,30 @@ class BasicPromptAgent(Agent):
         if fallback_action_id in available_actions.openended:
             fallback_openended_response = ""
 
-        self.traces.append(
-            {
-                "backend": self.backend,
-                "model_name": self.model_name,
-                "observation": str(observation.text),
-                "messages": messages,
-                "raw_response": raw_response,
-                "error": last_error,
-                "fallback_used": True,
-                "fallback_reason": "random_valid_action_after_retries",
-                "action": {
-                    "action_id": fallback_action_id,
-                    "openended_response": fallback_openended_response,
-                },
-            }
+        trace = {
+            "backend": self.backend,
+            "model_name": self.model_name,
+            "observation": str(observation.text),
+            "messages": messages,
+            "raw_response": raw_response,
+            "error": last_error,
+            "fallback_used": True,
+            "fallback_reason": "random_valid_action_after_retries",
+            "action": {
+                "action_id": fallback_action_id,
+                "openended_response": fallback_openended_response,
+            },
+        }
+        trace.update(
+            action_trace_fields(
+                available_actions,
+                fallback_action_id,
+                game_id=_slug(rules.title),
+                observation_text=observation.text,
+                action_instructions=available_actions.instructions,
+            )
         )
+        self.traces.append(trace)
         return Action(
             action_id=fallback_action_id,
             openended_response=fallback_openended_response,

@@ -84,6 +84,14 @@ def parse_args():
     parser.add_argument("--show-state", action="store_true")
     parser.add_argument("--transparent-reasoning", action="store_true")
     parser.add_argument(
+        "--include-action-id-reference",
+        action="store_true",
+        help=(
+            "Append a structured action id -> meaning reference block to prompts "
+            "without changing the original valid action id lists."
+        ),
+    )
+    parser.add_argument(
         "--prompt-output-mode",
         default="compact",
         choices=["compact", "compact_basis", "compact_field_analysis", "debug"],
@@ -167,6 +175,7 @@ def build_agent(agent_kind, args, side=None):
         "base_url": runtime["base_url"],
         "api_key": runtime["api_key"],
         "transparent_reasoning": args.transparent_reasoning,
+        "include_action_id_reference": args.include_action_id_reference,
     }
     if agent_kind == "base":
         return BasicPromptAgent, common
@@ -407,6 +416,7 @@ def summarize(records, args, run_id):
             "timeout": args.timeout,
             "response_retries": args.response_retries,
             "prompt_output_mode": args.prompt_output_mode,
+            "include_action_id_reference": args.include_action_id_reference,
             "match_timeout_seconds": args.match_timeout_seconds,
             "seed": args.seed,
             "seating": args.seating,

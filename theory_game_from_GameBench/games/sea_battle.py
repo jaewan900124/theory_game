@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+import os
 import random
 from abc import abstractmethod
 from typing import List, Dict, Optional, Tuple, ClassVar
@@ -70,6 +71,9 @@ class Player:
 @dataclass
 class SeaBattle(Game):
     id : str = "sea_battle"
+    max_rounds: int = field(
+        default_factory=lambda: int(os.environ.get("GAMEBENCH_SEA_BATTLE_MAX_ROUNDS", "40"))
+    )
     rules : Rules = field(default_factory=lambda: Rules(
         title="Sea Battle",
         summary="Sink all of your opponent team's ships before they sink all of your team's ships.",
@@ -79,7 +83,8 @@ class SeaBattle(Game):
             "Winning": "A team wins if they have at least one live ship when all of their opponents have sunken.",
             "Board": "The board is a 24x24 grid. Some squares are occupied by rocks and some are occupied by players' ships.",
             "Gameplay": "Each turn, all players choose how they want to move and how they want to shoot. All players' choices are executed simultaneously.",
-            "Teams": "At the start of the game, there are three players on each team."
+            "Teams": "At the start of the game, there are three players on each team.",
+            "Round limit": "If the round limit is reached, the winner is decided by remaining team ship health."
         }
     ))
 
@@ -253,12 +258,27 @@ class SeaBattle(Game):
             else:
                 self.log("Cannonball did not collide with anything is will now halt.")
 
+    def score_by_remaining_health(self) -> Tuple[float, float]:
+        team_health = [0, 0]
+        for player in self._players:
+            remaining = max(player.damage.threshold - player.damage.damage, 0)
+            team_health[player.agent.team_id] += remaining
+        total = sum(team_health)
+        if total == 0:
+            return (0.5, 0.5)
+        return (team_health[0] / total, team_health[1] / total)
+
     def play(self) -> Tuple[float, float]:
+        rounds_played = 0
         while True:
+            if self.max_rounds > 0 and rounds_played >= self.max_rounds:
+                return self.score_by_remaining_health()
+
             for player in self.players:
                 observation, available_actions = self.get_observation(player.agent)
                 action = player.agent.take_action(self.rules, observation, available_actions, show_state=self.show_state)
                 self.update(action, available_actions, player.agent)
+            rounds_played += 1
 
             if len(self.players) == 0:
                 return (0.5, 0.5)

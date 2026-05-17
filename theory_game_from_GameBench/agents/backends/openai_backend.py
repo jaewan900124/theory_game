@@ -25,19 +25,29 @@ def generate_openai(
     api_key=None,
     json_mode=True,
 ):
-    client_kwargs = {"api_key": _resolve_api_key(api_key)}
+    resolved_api_key = api_key
+    if not resolved_api_key and base_url:
+        resolved_api_key = os.environ.get("OPENAI_API_KEY", "EMPTY")
+    client_kwargs = {"api_key": _resolve_api_key(resolved_api_key)}
     if base_url:
         client_kwargs["base_url"] = base_url.rstrip("/") + "/"
     client = openai.Client(**client_kwargs)
+    token_limit_key = (
+        "max_completion_tokens"
+        if model_name.lower().startswith("gpt-5")
+        else "max_tokens"
+    )
     kwargs = {
         "model": model_name,
         "messages": messages,
         "temperature": temperature,
-        "max_tokens": max_tokens,
         "timeout": timeout,
+        token_limit_key: max_tokens,
     }
     if json_mode:
         kwargs["response_format"] = {"type": "json_object"}
+    if base_url and "qwen" in model_name.lower():
+        kwargs["extra_body"] = {"chat_template_kwargs": {"enable_thinking": False}}
     response = client.chat.completions.create(**kwargs)
     choice = response.choices[0].message.content
     usage = response.usage

@@ -10,6 +10,16 @@ def _env_bool(name, default=False):
     return value.lower() in {"1", "true", "yes", "on"}
 
 
+def _env_int(name):
+    value = os.environ.get(name)
+    if value is None:
+        return None
+    try:
+        return int(value)
+    except ValueError:
+        return None
+
+
 def generate_ollama(
     *,
     messages,
@@ -34,6 +44,9 @@ def generate_ollama(
         },
         "think": _env_bool("OLLAMA_THINK", False),
     }
+    num_ctx = _env_int("OLLAMA_NUM_CTX")
+    if num_ctx is not None:
+        payload["options"]["num_ctx"] = num_ctx
     if json_mode:
         payload["format"] = "json"
 

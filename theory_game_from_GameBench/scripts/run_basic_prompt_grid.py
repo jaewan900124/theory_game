@@ -79,6 +79,14 @@ def parse_args():
     parser.add_argument("--response-retries", type=int, default=3)
     parser.add_argument("--show-state", action="store_true")
     parser.add_argument("--transparent-reasoning", action="store_true")
+    parser.add_argument(
+        "--include-action-id-reference",
+        action="store_true",
+        help=(
+            "Append a structured action id -> meaning reference block to prompts "
+            "without changing the original valid action id lists."
+        ),
+    )
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument(
         "--seating",
@@ -140,6 +148,7 @@ def basic_kwargs(args):
         "base_url": args.base_url,
         "api_key": args.api_key,
         "transparent_reasoning": args.transparent_reasoning,
+        "include_action_id_reference": args.include_action_id_reference,
     }
 
 
@@ -358,6 +367,7 @@ def summarize(records, args, run_id, match_counts):
             "timeout": args.timeout,
             "match_timeout_seconds": args.match_timeout_seconds,
             "response_retries": args.response_retries,
+            "include_action_id_reference": args.include_action_id_reference,
             "seed": args.seed,
             "seating": args.seating,
             "opponent": "random",

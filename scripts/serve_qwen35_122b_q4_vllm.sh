@@ -4,11 +4,15 @@ set -euo pipefail
 # This starts inference and will load the model onto the selected GPUs.
 # Run only when you are ready to use the two A100s.
 LOCAL_DIR="${LOCAL_DIR:-/home/user/.cache/huggingface/qwen35-122b-a10b-gptq-4bit}"
-TOKENIZER_DIR="${TOKENIZER_DIR:-/tmp/qwen35-tokenizer-qwen2fast}"
+TOKENIZER_DIR="${TOKENIZER_DIR:-/home/user/.cache/huggingface/qwen35-122b-a10b-base-tokenizer}"
 PORT="${PORT:-8000}"
 GPU_IDS="${GPU_IDS:-0,1}"
 MAX_MODEL_LEN="${MAX_MODEL_LEN:-32768}"
 VLLM_BIN="${VLLM_BIN:-/home/user/miniconda3/envs/hf/bin/vllm}"
+REASONING_PARSER="${REASONING_PARSER:-}"
+DTYPE="${DTYPE:-float16}"
+TENSOR_PARALLEL_SIZE="${TENSOR_PARALLEL_SIZE:-2}"
+ENFORCE_EAGER="${ENFORCE_EAGER:-0}"
 
 if [[ ! -d "${LOCAL_DIR}" ]]; then
   echo "Missing local model dir: ${LOCAL_DIR}"
@@ -29,14 +33,26 @@ fi
 
 export CUDA_VISIBLE_DEVICES="${GPU_IDS}"
 
-exec "${VLLM_BIN}" serve "${LOCAL_DIR}" \
+args=(
+  serve "${LOCAL_DIR}"
   --served-model-name qwen35-122b-a10b-q4 \
   --tokenizer "${TOKENIZER_DIR}" \
-  --tensor-parallel-size 2 \
+  --tensor-parallel-size "${TENSOR_PARALLEL_SIZE}" \
   --gpu-memory-utilization 0.92 \
   --max-model-len "${MAX_MODEL_LEN}" \
-  --reasoning-parser qwen3 \
-  --dtype float16 \
+  --dtype "${DTYPE}" \
+  --generation-config vllm \
   --trust-remote-code \
   --skip-mm-profiling \
   --port "${PORT}"
+)
+
+if [[ -n "${REASONING_PARSER}" ]]; then
+  args+=(--reasoning-parser "${REASONING_PARSER}")
+fi
+
+if [[ "${ENFORCE_EAGER}" == "1" ]]; then
+  args+=(--enforce-eager)
+fi
+
+exec "${VLLM_BIN}" "${args[@]}"
