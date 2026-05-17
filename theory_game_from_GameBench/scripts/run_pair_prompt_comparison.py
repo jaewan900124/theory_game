@@ -42,7 +42,14 @@ GAME_PATHS = {
     "two_rooms_and_a_boom": "games.two_rooms_and_a_boom.two_rooms.TwoRoomsAndaBoom",
 }
 
-PROMPT_CHOICES = ["base", "high_reasoning", "field_rationale", "field_program", "high_distill"]
+PROMPT_CHOICES = [
+    "base",
+    "high_reasoning",
+    "field_rationale",
+    "field_rationale_checked",
+    "field_program",
+    "high_distill",
+]
 
 
 def parse_args():
@@ -68,6 +75,17 @@ def parse_args():
     parser.add_argument("--right-base-url", default=None)
     parser.add_argument("--left-api-key", default=None)
     parser.add_argument("--right-api-key", default=None)
+    parser.add_argument("--left-checker-backend", default=None, choices=["ollama", "openai"])
+    parser.add_argument("--right-checker-backend", default=None, choices=["ollama", "openai"])
+    parser.add_argument("--left-checker-model-name", default=None)
+    parser.add_argument("--right-checker-model-name", default=None)
+    parser.add_argument("--left-checker-base-url", default=None)
+    parser.add_argument("--right-checker-base-url", default=None)
+    parser.add_argument("--left-checker-api-key", default=None)
+    parser.add_argument("--right-checker-api-key", default=None)
+    parser.add_argument("--checker-temperature", type=float, default=0.2)
+    parser.add_argument("--checker-max-tokens", type=int, default=1024)
+    parser.add_argument("--checker-timeout", type=int, default=300)
     parser.add_argument("--temperature", type=float, default=1.0)
     parser.add_argument("--max-tokens", type=int, default=2048)
     parser.add_argument("--timeout", type=int, default=240)
@@ -179,9 +197,25 @@ def build_agent(agent_kind, args, side=None):
     }
     if agent_kind == "base":
         return BasicPromptAgent, common
+    effective_agent_kind = (
+        "field_rationale" if agent_kind == "field_rationale_checked" else agent_kind
+    )
+    checker_config = {}
+    if agent_kind == "field_rationale_checked":
+        checker_config = {
+            "enable_field_checker": True,
+            "checker_backend": getattr(args, f"{side}_checker_backend") or runtime["backend"],
+            "checker_model_name": getattr(args, f"{side}_checker_model_name") or runtime["model_name"],
+            "checker_base_url": getattr(args, f"{side}_checker_base_url") or runtime["base_url"],
+            "checker_api_key": getattr(args, f"{side}_checker_api_key") or runtime["api_key"],
+            "checker_temperature": args.checker_temperature,
+            "checker_max_tokens": args.checker_max_tokens,
+            "checker_timeout": args.checker_timeout,
+        }
     return TheoryPromptAgent, {
         **common,
-        "agent_mode": agent_kind,
+        **checker_config,
+        "agent_mode": effective_agent_kind,
         "prompt_output_mode": args.prompt_output_mode,
     }
 
@@ -299,6 +333,10 @@ def run_match(args, game_key, match_index):
         "right_backend": right_runtime["backend"],
         "left_base_url": left_runtime["base_url"],
         "right_base_url": right_runtime["base_url"],
+        "left_checker_model": args.left_checker_model_name,
+        "right_checker_model": args.right_checker_model_name,
+        "left_checker_base_url": args.left_checker_base_url,
+        "right_checker_base_url": args.right_checker_base_url,
         "match_index": match_index,
         "swapped_seating": swapped,
         "status": "started",
@@ -410,6 +448,15 @@ def summarize(records, args, run_id):
             "right_backend": agent_runtime_config(args, "right")["backend"],
             "left_base_url": agent_runtime_config(args, "left")["base_url"],
             "right_base_url": agent_runtime_config(args, "right")["base_url"],
+            "left_checker_backend": args.left_checker_backend,
+            "right_checker_backend": args.right_checker_backend,
+            "left_checker_model_name": args.left_checker_model_name,
+            "right_checker_model_name": args.right_checker_model_name,
+            "left_checker_base_url": args.left_checker_base_url,
+            "right_checker_base_url": args.right_checker_base_url,
+            "checker_temperature": args.checker_temperature,
+            "checker_max_tokens": args.checker_max_tokens,
+            "checker_timeout": args.checker_timeout,
             "num_matches": args.num_matches,
             "temperature": args.temperature,
             "max_tokens": args.max_tokens,

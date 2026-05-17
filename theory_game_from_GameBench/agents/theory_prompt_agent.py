@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+import json
 import re
 from typing import Any, Dict, List
 
@@ -8,7 +9,7 @@ from agents.action_parser import (
     parse_action_response_with_metadata,
 )
 from agents.backends import generate_completion
-from agents.trace_utils import action_trace_fields
+from agents.trace_utils import action_trace_fields, format_action_id_reference
 from prompts.gamebench_state_adapter import normalize_gamebench_state
 from prompts.game_profiles import canonical_game_id
 from prompts.field_program import build_field_program_prompt
@@ -45,6 +46,14 @@ class TheoryPromptAgent(Agent):
     transparent_reasoning: bool = False
     prompt_output_mode: str = "compact"
     include_action_id_reference: bool = False
+    enable_field_checker: bool = False
+    checker_backend: str = "ollama"
+    checker_model_name: str = None
+    checker_base_url: str = None
+    checker_api_key: str = None
+    checker_temperature: float = 0.2
+    checker_max_tokens: int = 1024
+    checker_timeout: int = 240
     traces: List[Dict[str, Any]] = field(default_factory=list)
 
     def __post_init__(self):
@@ -52,6 +61,10 @@ class TheoryPromptAgent(Agent):
         model_slug = _slug(self.model_name)
         mode_slug = _slug(self.agent_mode)
         self.agent_type_id = f"theory_{mode_slug}_{backend_slug}_{model_slug}"
+        if self.enable_field_checker:
+            checker_backend_slug = _slug(self.checker_backend)
+            checker_model_slug = _slug(self.checker_model_name or "checker")
+            self.agent_type_id += f"_checked_by_{checker_backend_slug}_{checker_model_slug}"
 
     def print(self, *args, **kwargs):
         if self.transparent_reasoning:
@@ -90,6 +103,191 @@ class TheoryPromptAgent(Agent):
             else:
                 messages[0]["content"] = system_message
         return messages
+
+    def _checker_messages_for_state(
+        self,
+        state: Dict[str, Any],
+        draft_response: str,
+        draft_payload: Dict[str, Any],
+        draft_action: Action,
+    ) -> List[Dict[str, str]]:
+        valid_predefined = list(state["predefined_actions"].keys())
+        valid_openended = list(state["openended_actions"].keys())
+        action_reference = ""
+        if self.include_action_id_reference:
+            action_reference = format_action_id_reference(
+                state["predefined_actions"],
+                state["openended_actions"],
+                game_id=state.get("game_id"),
+                observation_text=state.get("observation_text", ""),
+                action_instructions=state.get("action_instructions", ""),
+            )
+        action_reference_block = (
+            f"\n# Action ID Reference\n{action_reference}\n"
+            if action_reference
+            else ""
+        )
+        draft_action_meaning = (
+            state["predefined_actions"].get(draft_action.action_id)
+            or state["openended_actions"].get(draft_action.action_id)
+            or ""
+        )
+        prompt = f"""You are an action checker for a game-playing agent.
+
+Your job is only to check for direct contradiction between the draft field_analysis text and the draft action meaning.
+
+Default to keeping the draft action.
+
+Rules:
+- Treat the draft used_fields and field_analysis as fixed text evidence.
+- Do not replace, rewrite, expand, or ignore the draft field_analysis.
+- Do not choose a better action.
+- Do not infer a new strategy, missing tactical reason, or board evaluation.
+- Do not use outside game knowledge.
+- Action ids are opaque labels. Numeric ids such as "0", "1", "2", or "3" have no meaning by themselves.
+- Use # Available Action Details only to map action ids to meanings.
+- Keep the draft action if its meaning is compatible with the field_analysis.
+- Keep the draft action if the field_analysis is incomplete, ambiguous, underspecified, or compatible with multiple actions.
+- Keep the draft action if another action also seems reasonable.
+- Correct the action only when the field_analysis explicitly entails a different legal action and the draft action meaning directly contradicts that text.
+- If you correct, choose the smallest legal correction that removes the contradiction. Explain the exact contradiction.
+- If the chosen action is openended, keep or minimally adjust openended_response so it matches the corrected action.
+
+Return valid JSON only with these keys:
+{{
+  "action": "one valid action id",
+  "openended_response": "only if the chosen action is openended",
+  "checker_verdict": "keep or corrected",
+  "checker_reason": "one short sentence; for keep say why there is no direct contradiction, for corrected name the contradiction"
+}}
+
+Valid predefined actions: {valid_predefined}
+Valid openended actions: {valid_openended}
+
+# Available Action Details
+Predefined actions:
+{json.dumps(state["predefined_actions"], ensure_ascii=False, indent=2)}
+
+Openended actions:
+{json.dumps(state["openended_actions"], ensure_ascii=False, indent=2)}
+{action_reference_block}
+
+# Draft Field Rationale JSON
+{json.dumps(draft_payload, ensure_ascii=False, indent=2)}
+
+# Draft Parsed Action
+{json.dumps(
+    {
+        "action": draft_action.action_id,
+        "meaning": draft_action_meaning,
+        "openended_response": draft_action.openended_response,
+    },
+    ensure_ascii=False,
+    indent=2,
+)}
+"""
+        return [
+            {
+                "role": "system",
+                "content": (
+                    "You verify a game-playing field rationale and return only "
+                    "the final legal action JSON."
+                ),
+            },
+            {"role": "user", "content": prompt},
+        ]
+
+    def _run_field_checker(
+        self,
+        state: Dict[str, Any],
+        draft_response: str,
+        draft_parse_metadata: Dict[str, Any],
+        draft_action: Action,
+    ) -> tuple[Action, Dict[str, Any]]:
+        checker_model = self.checker_model_name or self.model_name
+        checker_messages = self._checker_messages_for_state(
+            state,
+            draft_response,
+            draft_parse_metadata.get("payload") or {},
+            draft_action,
+        )
+        valid_predefined = state["predefined_actions"]
+        valid_openended = state["openended_actions"]
+        attempts = []
+        last_error = None
+        for _ in range(self.response_retries):
+            completion = generate_completion(
+                self.checker_backend,
+                messages=checker_messages,
+                model_name=checker_model,
+                temperature=self.checker_temperature,
+                max_tokens=self.checker_max_tokens,
+                timeout=self.checker_timeout,
+                base_url=self.checker_base_url,
+                api_key=self.checker_api_key,
+                json_mode=True,
+            )
+            raw_checker_response = completion["content"]
+            self.print("checker response:", raw_checker_response)
+            try:
+                checked_action, checked_parse_metadata = parse_action_response_with_metadata(
+                    raw_checker_response,
+                    valid_predefined,
+                    valid_openended,
+                    profile=state.get("profile"),
+                    allow_fallback=False,
+                    require_field_application=False,
+                )
+                return checked_action, {
+                    "enabled": True,
+                    "backend": self.checker_backend,
+                    "model_name": checker_model,
+                    "base_url": self.checker_base_url,
+                    "messages": checker_messages,
+                    "raw_response": raw_checker_response,
+                    "parsed_response": checked_parse_metadata.get("payload"),
+                    "parse": checked_parse_metadata,
+                    "action_changed": (
+                        checked_action.action_id != draft_action.action_id
+                        or checked_action.openended_response != draft_action.openended_response
+                    ),
+                    "fallback_used": False,
+                    "attempts": attempts,
+                }
+            except ValueError as exc:
+                last_error = str(exc)
+                attempts.append(
+                    {
+                        "raw_response": raw_checker_response,
+                        "error": last_error,
+                    }
+                )
+                checker_messages.append(
+                    {"role": "assistant", "content": raw_checker_response}
+                )
+                checker_messages.append(
+                    {
+                        "role": "user",
+                        "content": action_feedback_message(
+                            raw_checker_response,
+                            valid_predefined,
+                            valid_openended,
+                            require_field_application=False,
+                        ),
+                    }
+                )
+
+        return draft_action, {
+            "enabled": True,
+            "backend": self.checker_backend,
+            "model_name": checker_model,
+            "base_url": self.checker_base_url,
+            "messages": checker_messages,
+            "error": last_error,
+            "fallback_used": True,
+            "fallback_reason": "checker_failed_after_retries_kept_draft_action",
+            "attempts": attempts,
+        }
 
     def take_action(
         self,
@@ -155,33 +353,47 @@ class TheoryPromptAgent(Agent):
                     require_field_application=require_field_application,
                     field_schema=field_schema,
                 )
+                final_action = action
+                checker_trace = {"enabled": False}
+                if self.enable_field_checker:
+                    final_action, checker_trace = self._run_field_checker(
+                        state,
+                        raw_response,
+                        parse_metadata,
+                        action,
+                    )
                 trace = {
                     "mode": self.agent_mode,
                     "prompt_output_mode": self.prompt_output_mode,
                     "backend": self.backend,
                     "model_name": self.model_name,
+                    "field_checker": checker_trace,
                     "observation": state["observation_text"],
                     "prompt_context": state.get("prompt_context"),
                     "messages": messages,
                     "raw_response": raw_response,
                     "parsed_response": parse_metadata.get("payload"),
                     "parse": parse_metadata,
-                    "action": {
+                    "draft_action": {
                         "action_id": action.action_id,
                         "openended_response": action.openended_response,
+                    },
+                    "action": {
+                        "action_id": final_action.action_id,
+                        "openended_response": final_action.openended_response,
                     },
                 }
                 trace.update(
                     action_trace_fields(
                         available_actions,
-                        action.action_id,
+                        final_action.action_id,
                         game_id=state.get("game_id"),
                         observation_text=state["observation_text"],
                         action_instructions=state["action_instructions"],
                     )
                 )
                 self.traces.append(trace)
-                return action
+                return final_action
             except ValueError as exc:
                 last_error = str(exc)
                 last_field_error = (
