@@ -2037,6 +2037,269 @@ def field_register_for_prompt(mapping, active_context=None):
     return ordered
 
 
+REQUIRED_FIELD_SETS_BY_GAME_CONTEXT = {
+    "air_land_sea": {
+        "normal_deploy_improvise_withdraw": [
+            "playable_faceup_cards_by_matching_theater",
+            "playable_facedown_cards_by_theater",
+            "withdrawal_points_given_remaining_hand",
+            "current_theater_majority_status",
+            "card_conservation_value",
+            "faceup_deploy_control_swing",
+            "facedown_improvise_information_value",
+            "action_risk_by_commitment_and_information",
+            "candidate_card_or_withdraw_values",
+        ],
+        "tactical_effect_resolution": [
+            "triggering_tactical_card",
+            "legal_effect_targets_or_extra_play_options",
+            "own_vs_opponent_card_ownership",
+            "control_swing_after_effect",
+            "reveal_or_cover_information_cost",
+            "effect_target_risk_by_option",
+            "do_nothing_or_skip_value_if_available",
+            "candidate_effect_target_values",
+        ],
+    },
+    "arctic_scavengers": {
+        "resource_gathering": [
+            "available_standard_and_modifier_cards",
+            "unused_once_per_round_actions",
+            "dig_draw_hunt_hire_trash_feasibility",
+            "food_and_medicine_budget",
+            "deck_improvement_vs_skirmish_cost",
+            "resource_action_cost_or_risk",
+            "candidate_resource_action_values",
+            "openended_list_command",
+        ],
+        "interrupt_response": [
+            "opponent_announced_action",
+            "available_sniper_or_saboteur_cards",
+            "valid_interrupt_targets",
+            "value_of_canceling_opponent_action",
+            "discard_cost_of_interrupt",
+            "interrupt_target_or_discard_risk",
+            "interrupt_feasibility_by_action",
+            "candidate_interrupt_values",
+        ],
+        "skirmish_action": [
+            "own_visible_fight_and_people_score",
+            "opponent_visible_fight_and_people_score",
+            "sniper_or_saboteur_targets",
+            "contested_resource_value",
+            "skirmish_action_risk",
+            "candidate_skirmish_action_values",
+        ],
+        "dig_card_selection": [
+            "drawn_junkyard_cards",
+            "card_added_to_reserve_value",
+            "cards_returned_to_junkyard_cost",
+            "card_keep_risk_or_opportunity_cost",
+            "candidate_dig_keep_values",
+        ],
+    },
+    "are_you_the_traitor": {
+        "target_selection": [
+            "role_context_from_observation",
+            "players_available_to_question_or_accuse",
+            "information_gain_by_target",
+            "team_objective_alignment",
+            "risk_of_revealing_private_role",
+            "candidate_target_values",
+        ],
+        "question_generation": [
+            "role_context_from_observation",
+            "current_conversation_history",
+            "diagnostic_question_candidates",
+            "information_to_elicit_or_hide",
+            "question_leakage_risk",
+            "candidate_question_values",
+        ],
+        "answer_generation": [
+            "role_context_from_observation",
+            "current_conversation_history",
+            "question_asked",
+            "safe_answer_consistent_with_role",
+            "deception_or_revelation_risk",
+            "candidate_answer_values",
+        ],
+        "stop_or_continue_accusation": [
+            "role_context_from_observation",
+            "current_conversation_history",
+            "accusation_confidence",
+            "wrong_accusation_penalty",
+            "continue_conversation_value",
+            "stop_now_expected_value",
+            "candidate_stop_or_pass_values",
+        ],
+        "accused_selection": [
+            "role_context_from_observation",
+            "players_available_to_question_or_accuse",
+            "traitor_or_target_suspicion_by_player",
+            "team_objective_alignment",
+            "accusation_confidence",
+            "wrong_accusation_risk",
+            "candidate_accusation_values",
+        ],
+    },
+    "codenames": {
+        "submit_clue": [
+            "own_team_unrevealed_words_with_private_types",
+            "opponent_neutral_and_assassin_words_to_avoid",
+            "safe_target_cluster_for_this_clue",
+            "expected_operative_interpretation_for_each_clue",
+            "clue_ambiguity_or_forbidden_word_risk",
+            "clue_number_risk_budget_by_candidate",
+        ],
+        "guess_or_end_turn": [
+            "current_clue_and_guess_limit",
+            "unrevealed_candidate_words",
+            "semantic_match_to_current_clue",
+            "public_history_from_last_hint_and_guesses",
+            "unknown_assassin_risk",
+            "unknown_opponent_or_neutral_risk",
+            "guess_vs_end_turn_value",
+            "candidate_guess_or_end_turn_values",
+        ],
+    },
+    "hive": {
+        "piece_type_selection": [
+            "list_place_or_list_move_actions",
+            "queen_placement_deadline",
+            "piece_type_attack_defense_role",
+            "followup_move_count_after_listing",
+            "queen_timing_or_exposure_risk",
+            "candidate_piece_action_values",
+        ],
+        "placement_hex_choice": [
+            "legal_hexes_for_active_piece",
+            "adjacency_to_own_and_opponent_pieces",
+            "queen_pressure_created",
+            "future_mobility_preserved",
+            "queen_exposure_or_mobility_risk",
+            "candidate_placement_hex_values",
+        ],
+        "movement_hex_choice": [
+            "active_piece_current_hex",
+            "legal_destination_hexes",
+            "one_hive_and_slide_legality",
+            "queen_surround_progress",
+            "own_queen_escape_squares",
+            "own_queen_trap_risk",
+            "candidate_movement_hex_values",
+        ],
+    },
+    "pit": {
+        "offer_trade": [
+            "own_surplus_commodities",
+            "target_corner_commodity",
+            "bull_or_bear_exposure",
+            "quantity_to_offer_without_harming_target",
+            "signal_leakage_from_offer",
+            "offer_signal_or_target_set_risk",
+            "candidate_offer_values",
+        ],
+        "accept_trade": [
+            "pending_trade_offered_commodity_and_quantity",
+            "requested_response_commodity_cost",
+            "target_corner_progress_before_after_trade",
+            "bull_or_bear_risk_change",
+            "accept_vs_make_new_offer_value",
+            "candidate_accept_or_offer_values",
+        ],
+    },
+    "santorini": {
+        "placement_phase": [
+            "own_unplaced_pawn",
+            "empty_board_squares",
+            "centrality_and_future_mobility_value",
+            "pair_spacing_between_own_pawns",
+            "opponent_placement_pressure",
+            "placement_safety_or_containment_risk",
+            "candidate_placement_values",
+        ],
+        "move_build_phase": [
+            "legal_move_squares",
+            "legal_build_squares_after_move",
+            "immediate_win_moves",
+            "opponent_immediate_win_threats",
+            "mobility_after_action",
+            "height_access_to_level_three",
+            "candidate_move_build_values",
+        ],
+    },
+    "sea_battle": {
+        "simultaneous_move_and_shoot": [
+            "candidate_first_movement_claims",
+            "candidate_second_movement_claims_after_turn",
+            "rock_collision_risk",
+            "ship_collision_risk_with_teammates_and_opponents",
+            "post_move_left_and_right_shot_lanes",
+            "expected_damage_dealt_minus_taken",
+            "own_damage_survival_margin",
+            "nearest_teammate_spacing",
+            "nearest_opponent_bearing",
+            "focus_fire_or_evasion_value",
+        ],
+    },
+    "two_rooms_and_a_boom": {
+        "target_selection": [
+            "own_team_and_special_role",
+            "roommates_available_to_question",
+            "claims_heard_so_far",
+            "diagnostic_question_targets",
+            "safe_claim_or_answer_policy",
+            "information_leakage_risk",
+            "candidate_target_values",
+        ],
+        "question_generation": [
+            "own_team_and_special_role",
+            "claims_heard_so_far",
+            "diagnostic_question_targets",
+            "safe_claim_or_answer_policy",
+            "information_leakage_risk",
+            "candidate_question_values",
+        ],
+        "answer_generation": [
+            "own_team_and_special_role",
+            "question_asked",
+            "safe_claim_or_answer_policy",
+            "information_leakage_risk",
+            "candidate_answer_values",
+        ],
+        "leader_hostage_trade": [
+            "eligible_hostages_to_trade",
+            "posterior_president_location",
+            "posterior_bomber_location",
+            "team_goal_same_or_separate",
+            "trade_effect_on_final_co_location",
+            "trade_information_leakage_risk",
+            "candidate_trade_values",
+        ],
+    },
+    "tic_tac_toe": {
+        "mark_empty_square": [
+            "board_state",
+            "legal_empty_squares",
+            "own_immediate_wins",
+            "opponent_immediate_wins",
+            "fork_threats",
+            "candidate_action_values",
+        ],
+    },
+}
+
+
+def required_fields_for_prompt(game_id, active_context=None):
+    game_key = canonical_game_id(game_id)
+    context_name = None
+    if active_context:
+        context_name = active_context.get("active_action_space_program")
+    return list(
+        REQUIRED_FIELD_SETS_BY_GAME_CONTEXT.get(game_key, {}).get(context_name, [])
+    )
+
+
 def program_for_prompt(mapping, active_context=None):
     return list(_program_for_context(mapping, active_context))
 

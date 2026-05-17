@@ -6,6 +6,7 @@ from typing import Any, Dict, List
 from api.classes import Action, Agent, AvailableActions, Observation, Rules
 from agents.action_parser import (
     action_feedback_message,
+    _load_json_like,
     parse_action_response_with_metadata,
 )
 from agents.backends import generate_completion
@@ -16,7 +17,11 @@ from prompts.field_program import build_field_program_prompt
 from prompts.field_rationale import build_field_rationale_prompt
 from prompts.high_distill import build_high_distill_prompt
 from prompts.high_reasoning import build_high_reasoning_prompt
-from prompts.theory_fields import field_register_for_prompt, theory_mapping_for_game
+from prompts.theory_fields import (
+    field_register_for_prompt,
+    required_fields_for_prompt,
+    theory_mapping_for_game,
+)
 
 
 BASE_SYSTEM_MESSAGE = (
@@ -104,6 +109,97 @@ class TheoryPromptAgent(Agent):
                 messages[0]["content"] = system_message
         return messages
 
+    def _field_value_repair_messages_for_state(
+        self,
+        state: Dict[str, Any],
+        draft_payload: Dict[str, Any],
+    ) -> List[Dict[str, str]]:
+        mapping = theory_mapping_for_game(state.get("game_id"))
+        valid_fields = field_register_for_prompt(
+            mapping, state.get("prompt_context")
+        )
+        required_fields = []
+        if self.prompt_output_mode == "required_field_analysis":
+            required_fields = required_fields_for_prompt(
+                state.get("game_id"), state.get("prompt_context")
+            )
+        field_selection_rule = (
+            "- used_fields must exactly equal # Required Field Set, in the same order.\n"
+            "- Do not add optional fields or remove required fields."
+            if required_fields
+            else "- Keep 2 to 6 fields."
+        )
+        field_count_rule = (
+            f"- Return exactly {len(required_fields)} fields."
+            if required_fields
+            else "- Keep 2 to 6 fields."
+        )
+        prompt = f"""You are a field-selection and field-value repair agent for a game-playing field-rationale agent.
+
+Your job is to check and, if needed, repair only the draft used_fields and field_analysis.
+
+Rules:
+- Use only the current observation, rules summary, action instructions, and available action details.
+- Do not choose or change the action.
+- Do not invent new game state.
+- Select fields only from # Field Register.
+- Check field selection first: fields should be the smallest sufficient set that materially affects the current action choice.
+- Mark field selection as repaired when a selected field is irrelevant, redundant, unavailable for the current action context, or when an important decision-critical field is missing.
+- Keep each original field when it is valid, grounded, and useful.
+- Repair field_analysis.value when it states a concrete false fact, misses a required current-state constraint, invents unavailable cards/resources/roles, misreads a visible score, or applies the rule objective backwards.
+{field_count_rule}
+{field_selection_rule}
+- Each field_analysis entry must have the same field name and order as used_fields.
+- Each field_analysis.value must be one concise sentence.
+
+Return valid JSON only with these keys:
+{{
+  "used_fields": ["2 to 6 field names"],
+  "field_analysis": [
+    {{"field": "same field name as used_fields entry", "value": "corrected grounded value"}}
+  ],
+  "field_selection_verdict": "keep or repaired",
+  "field_selection_reason": "one short sentence naming why the selected fields are sufficient or what was repaired",
+  "field_value_verdict": "keep or repaired",
+  "field_value_reason": "one short sentence naming the key grounded fact or repair"
+}}
+
+# Field Register
+{json.dumps(valid_fields, ensure_ascii=False, indent=2)}
+
+# Required Field Set
+{json.dumps(required_fields, ensure_ascii=False, indent=2)}
+
+# Rules Summary
+{state.get("rules_summary", "")}
+
+# Action Instructions
+{state.get("action_instructions", "")}
+
+# Observation
+{state.get("observation_text", "")}
+
+# Available Action Details
+Predefined actions:
+{json.dumps(state["predefined_actions"], ensure_ascii=False, indent=2)}
+
+Openended actions:
+{json.dumps(state["openended_actions"], ensure_ascii=False, indent=2)}
+
+# Draft Field Rationale JSON
+{json.dumps(draft_payload, ensure_ascii=False, indent=2)}
+"""
+        return [
+            {
+                "role": "system",
+                "content": (
+                    "You repair game-playing field values and return only "
+                    "the corrected field rationale JSON."
+                ),
+            },
+            {"role": "user", "content": prompt},
+        ]
+
     def _checker_messages_for_state(
         self,
         state: Dict[str, Any],
@@ -132,37 +228,43 @@ class TheoryPromptAgent(Agent):
             or state["openended_actions"].get(draft_action.action_id)
             or ""
         )
-        prompt = f"""You are an action checker for a game-playing agent.
+        prompt = f"""You are an action checker for a game-playing field-rationale agent.
 
-Your job is only to check for direct contradiction between the draft field_analysis text and the draft action meaning.
+The field/value repair agent has already checked and repaired the field_analysis.
+Your job is only to check whether the draft action matches the checked field/value analysis and the available action details.
 
 Default to keeping the draft action.
 
 Rules:
-- Treat the draft used_fields and field_analysis as fixed text evidence.
-- Do not replace, rewrite, expand, or ignore the draft field_analysis.
-- Do not choose a better action.
-- Do not infer a new strategy, missing tactical reason, or board evaluation.
-- Do not use outside game knowledge.
 - Action ids are opaque labels. Numeric ids such as "0", "1", "2", or "3" have no meaning by themselves.
 - Use # Available Action Details only to map action ids to meanings.
-- Keep the draft action if its meaning is compatible with the field_analysis.
-- Keep the draft action if the field_analysis is incomplete, ambiguous, underspecified, or compatible with multiple actions.
-- Keep the draft action if another action also seems reasonable.
-- Correct the action only when the field_analysis explicitly entails a different legal action and the draft action meaning directly contradicts that text.
-- If you correct, choose the smallest legal correction that removes the contradiction. Explain the exact contradiction.
-- If the chosen action is openended, keep or minimally adjust openended_response so it matches the corrected action.
+- Treat the checked field_analysis as the fixed evidence for the action decision.
+- Do not rewrite fields or field values.
+- Do not choose a better action just because it also seems reasonable.
+- Correct the action only when the draft action is illegal, impossible, malformed for the selected action, directly contradicts the checked field/value analysis, or is clearly dominated by another legal action under the checked field/value analysis.
+- Keep the draft action if several legal actions are plausibly close in value.
+- If the chosen action is openended, keep or minimally adjust openended_response so it matches the chosen action and the required response format.
 
 Return valid JSON only with these keys:
 {{
   "action": "one valid action id",
   "openended_response": "only if the chosen action is openended",
+  "action_verdict": "keep or corrected",
   "checker_verdict": "keep or corrected",
-  "checker_reason": "one short sentence; for keep say why there is no direct contradiction, for corrected name the contradiction"
+  "checker_reason": "one short sentence naming the action rationale or correction"
 }}
 
 Valid predefined actions: {valid_predefined}
 Valid openended actions: {valid_openended}
+
+# Rules Summary
+{state.get("rules_summary", "")}
+
+# Action Instructions
+{state.get("action_instructions", "")}
+
+# Observation
+{state.get("observation_text", "")}
 
 # Available Action Details
 Predefined actions:
@@ -172,7 +274,7 @@ Openended actions:
 {json.dumps(state["openended_actions"], ensure_ascii=False, indent=2)}
 {action_reference_block}
 
-# Draft Field Rationale JSON
+# Checked Field Rationale JSON
 {json.dumps(draft_payload, ensure_ascii=False, indent=2)}
 
 # Draft Parsed Action
@@ -205,10 +307,17 @@ Openended actions:
         draft_action: Action,
     ) -> tuple[Action, Dict[str, Any]]:
         checker_model = self.checker_model_name or self.model_name
+        draft_payload = draft_parse_metadata.get("payload") or {}
+        field_value_trace = self._run_field_value_repair(
+            state,
+            draft_payload,
+            checker_model,
+        )
+        checked_field_payload = field_value_trace.get("repaired_payload") or draft_payload
         checker_messages = self._checker_messages_for_state(
             state,
             draft_response,
-            draft_parse_metadata.get("payload") or {},
+            checked_field_payload,
             draft_action,
         )
         valid_predefined = state["predefined_actions"]
@@ -243,6 +352,7 @@ Openended actions:
                     "backend": self.checker_backend,
                     "model_name": checker_model,
                     "base_url": self.checker_base_url,
+                    "field_value_repair": field_value_trace,
                     "messages": checker_messages,
                     "raw_response": raw_checker_response,
                     "parsed_response": checked_parse_metadata.get("payload"),
@@ -282,11 +392,139 @@ Openended actions:
             "backend": self.checker_backend,
             "model_name": checker_model,
             "base_url": self.checker_base_url,
+            "field_value_repair": field_value_trace,
             "messages": checker_messages,
             "error": last_error,
             "fallback_used": True,
             "fallback_reason": "checker_failed_after_retries_kept_draft_action",
             "attempts": attempts,
+        }
+
+    def _run_field_value_repair(
+        self,
+        state: Dict[str, Any],
+        draft_payload: Dict[str, Any],
+        checker_model: str,
+    ) -> Dict[str, Any]:
+        mapping = theory_mapping_for_game(state.get("game_id"))
+        valid_fields = set(
+            field_register_for_prompt(mapping, state.get("prompt_context"))
+        )
+        required_fields = []
+        if self.prompt_output_mode == "required_field_analysis":
+            required_fields = required_fields_for_prompt(
+                state.get("game_id"), state.get("prompt_context")
+            )
+        repair_messages = self._field_value_repair_messages_for_state(
+            state,
+            draft_payload,
+        )
+        attempts = []
+        last_error = None
+        for _ in range(self.response_retries):
+            completion = generate_completion(
+                self.checker_backend,
+                messages=repair_messages,
+                model_name=checker_model,
+                temperature=self.checker_temperature,
+                max_tokens=self.checker_max_tokens,
+                timeout=self.checker_timeout,
+                base_url=self.checker_base_url,
+                api_key=self.checker_api_key,
+                json_mode=True,
+            )
+            raw_repair_response = completion["content"]
+            self.print("field value repair response:", raw_repair_response)
+            try:
+                repaired_payload = _load_json_like(raw_repair_response)
+                repaired_used_fields = repaired_payload.get("used_fields")
+                repaired_field_analysis = repaired_payload.get("field_analysis")
+                if not isinstance(repaired_used_fields, list):
+                    raise ValueError("field repair did not return used_fields list")
+                if not isinstance(repaired_field_analysis, list):
+                    raise ValueError("field repair did not return field_analysis list")
+                if required_fields:
+                    if repaired_used_fields != required_fields:
+                        raise ValueError(
+                            "field repair used_fields must exactly match required fields: "
+                            f"{required_fields}"
+                        )
+                elif len(repaired_used_fields) < 2 or len(repaired_used_fields) > 6:
+                    raise ValueError("field repair must return 2 to 6 used_fields")
+                invalid_fields = [
+                    field for field in repaired_used_fields if field not in valid_fields
+                ]
+                if invalid_fields:
+                    raise ValueError(
+                        f"field repair returned invalid fields: {invalid_fields}"
+                    )
+                if len(repaired_used_fields) != len(repaired_field_analysis):
+                    raise ValueError("field repair used_fields and field_analysis length differ")
+                for index, analysis in enumerate(repaired_field_analysis):
+                    if not isinstance(analysis, dict):
+                        raise ValueError("field_analysis entries must be objects")
+                    if analysis.get("field") != repaired_used_fields[index]:
+                        raise ValueError("field_analysis fields must match used_fields order")
+                    value = analysis.get("value")
+                    if not isinstance(value, str) or not value.strip():
+                        raise ValueError("field_analysis.value must be a non-empty string")
+
+                checked_payload = dict(draft_payload)
+                checked_payload["used_fields"] = repaired_used_fields
+                checked_payload["field_analysis"] = repaired_field_analysis
+                return {
+                    "enabled": True,
+                    "backend": self.checker_backend,
+                    "model_name": checker_model,
+                    "base_url": self.checker_base_url,
+                    "messages": repair_messages,
+                    "raw_response": raw_repair_response,
+                    "parsed_response": repaired_payload,
+                    "repaired_payload": checked_payload,
+                    "field_selection_changed": (
+                        repaired_used_fields != draft_payload.get("used_fields")
+                    ),
+                    "field_values_changed": (
+                        repaired_field_analysis != draft_payload.get("field_analysis")
+                    ),
+                    "fallback_used": False,
+                    "attempts": attempts,
+                }
+            except ValueError as exc:
+                last_error = str(exc)
+                attempts.append(
+                    {
+                        "raw_response": raw_repair_response,
+                        "error": last_error,
+                    }
+                )
+                repair_messages.append(
+                    {"role": "assistant", "content": raw_repair_response}
+                )
+                repair_messages.append(
+                    {
+                        "role": "user",
+                        "content": (
+                            "Your previous response was invalid. Return valid JSON "
+                            "with used_fields, field_analysis, field_value_verdict, "
+                            "and field_value_reason only."
+                        ),
+                    }
+                )
+
+        return {
+            "enabled": True,
+            "backend": self.checker_backend,
+            "model_name": checker_model,
+            "base_url": self.checker_base_url,
+            "messages": repair_messages,
+            "error": last_error,
+            "fallback_used": True,
+            "fallback_reason": "field_value_repair_failed_kept_draft_fields",
+            "attempts": attempts,
+            "repaired_payload": draft_payload,
+            "field_selection_changed": False,
+            "field_values_changed": False,
         }
 
     def take_action(
@@ -317,10 +555,16 @@ Openended actions:
             valid_fields = field_register_for_prompt(
                 mapping, state.get("prompt_context")
             )
+            required_fields = []
+            if self.prompt_output_mode == "required_field_analysis":
+                required_fields = required_fields_for_prompt(
+                    state.get("game_id"), state.get("prompt_context")
+                )
             field_schema = {
                 "valid_fields": valid_fields,
-                "min_fields": 2,
-                "max_fields": 6,
+                "required_fields": required_fields,
+                "min_fields": len(required_fields) if required_fields else 2,
+                "max_fields": len(required_fields) if required_fields else 6,
                 "require_used_fields": True,
                 "require_field_analysis": self.prompt_output_mode != "compact_basis",
                 "max_analysis_words": 30,

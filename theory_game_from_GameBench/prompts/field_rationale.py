@@ -4,6 +4,7 @@ from agents.trace_utils import format_action_id_reference
 from prompts.theory_fields import (
     field_register_for_prompt,
     high_reasoning_output_schema,
+    required_fields_for_prompt,
     theory_mapping_for_game,
 )
 
@@ -121,6 +122,35 @@ Rules:
 """
 
 
+def _required_field_rationale_extension(extra_schema, field_register, required_fields):
+    return f"""\
+
+Additional decision support:
+Use the Required Field Set as the fixed checklist for selecting the action.
+Do not select fields yourself. Do not add optional fields.
+Do not treat the fields as additional game rules or extra available actions.
+
+# Field Register
+{_field_register_block(field_register)}
+
+# Required Field Set
+{_field_register_block(required_fields)}
+
+Return the original action fields required below, and also include these additional fields.
+These key names are not Field Register fields:
+{json.dumps(extra_schema, indent=2)}
+
+Rules:
+- used_fields must exactly equal the Required Field Set above, in the same order.
+- field_analysis must contain exactly one object per required field, in the same order.
+- Each field_analysis object must have:
+  - "field": one exact field name from the Required Field Set
+  - "value": one concise sentence, up to 30 words, naming the concrete words, risks, counts, clue links, or candidate values computed for this field
+- Compute field values only from the current observation, rules, and available actions.
+- Do not invent hidden information unavailable to the current role.
+"""
+
+
 def build_field_rationale_prompt(
     state,
     output_mode="compact",
@@ -130,6 +160,7 @@ def build_field_rationale_prompt(
     mapping = theory_mapping_for_game(state.get("game_id"))
     active_context = state.get("prompt_context")
     field_register = field_register_for_prompt(mapping, active_context)
+    required_fields = required_fields_for_prompt(state.get("game_id"), active_context)
 
     base_prompt = f"""You are playing a game called {state['rules_title']}. The rules are as follows:
 {state['rules_summary']}
@@ -229,6 +260,47 @@ Rules:
 {_actions_block(
     state,
     _field_rationale_extension(extra_schema, field_register, include_analysis=True),
+    include_action_id_reference=include_action_id_reference,
+)}
+"""
+    elif output_mode == "required_field_analysis":
+        if not required_fields:
+            extra_schema = {
+                "used_fields": [
+                    "2 to 6 field names copied exactly from the Field Register"
+                ],
+                "field_analysis": [
+                    {
+                        "field": "one exact field name from used_fields",
+                        "value": "one concise sentence, up to 30 words, naming the concrete words, risks, counts, or clue links computed for this field",
+                    }
+                ],
+            }
+            prompt = f"""{base_prompt}
+{_actions_block(
+    state,
+    _field_rationale_extension(extra_schema, field_register, include_analysis=True),
+    include_action_id_reference=include_action_id_reference,
+)}
+"""
+        else:
+            extra_schema = {
+                "used_fields": required_fields,
+                "field_analysis": [
+                    {
+                        "field": "one exact field name from the Required Field Set",
+                        "value": "one concise sentence, up to 30 words, naming the concrete words, risks, counts, clue links, or candidate values computed for this field",
+                    }
+                ],
+            }
+            prompt = f"""{base_prompt}
+{_actions_block(
+    state,
+    _required_field_rationale_extension(
+        extra_schema,
+        field_register,
+        required_fields,
+    ),
     include_action_id_reference=include_action_id_reference,
 )}
 """

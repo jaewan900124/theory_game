@@ -88,6 +88,7 @@ def _field_validation_error(payload: Dict[str, Any], field_schema: Dict[str, Any
     max_fields = int(field_schema.get("max_fields", len(valid_fields) or 9999))
     require_used_fields = field_schema.get("require_used_fields", True)
     require_field_analysis = field_schema.get("require_field_analysis", False)
+    required_fields = field_schema.get("required_fields") or []
 
     used_fields = payload.get("used_fields")
     if used_fields is None:
@@ -102,6 +103,11 @@ def _field_validation_error(payload: Dict[str, Any], field_schema: Dict[str, Any
     invalid_fields = [field for field in used_fields if field not in valid_field_set]
     if invalid_fields:
         return f"used_fields contains invalid fields: {invalid_fields}"
+    if required_fields and used_fields != required_fields:
+        return (
+            "used_fields must exactly match the required field set in order: "
+            f"{required_fields}"
+        )
 
     field_analysis = payload.get("field_analysis")
     if not require_field_analysis:

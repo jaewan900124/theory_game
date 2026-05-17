@@ -94,13 +94,20 @@ def parse_args():
     parser.add_argument(
         "--prompt-output-mode",
         default="compact",
-        choices=["compact", "compact_basis", "compact_field_analysis", "debug"],
+        choices=[
+            "compact",
+            "compact_basis",
+            "compact_field_analysis",
+            "required_field_analysis",
+            "debug",
+        ],
         help=(
             "compact asks theory agents to return only selected_action and "
             "openended_response; compact_basis also asks for used_rule or "
             "used_fields; compact_field_analysis adds a short analysis for "
-            "those selected rules/fields; debug also asks for computed_fields "
-            "and decision traces."
+            "those selected rules/fields; required_field_analysis fixes the "
+            "required fields by action context and asks for their values; "
+            "debug also asks for computed_fields and decision traces."
         ),
     )
     parser.add_argument("--seed", type=int, default=0)

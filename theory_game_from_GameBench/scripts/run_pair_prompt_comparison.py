@@ -47,6 +47,7 @@ PROMPT_CHOICES = [
     "high_reasoning",
     "field_rationale",
     "field_rationale_checked",
+    "field_rationale_with_checker",
     "field_program",
     "high_distill",
 ]
@@ -112,13 +113,20 @@ def parse_args():
     parser.add_argument(
         "--prompt-output-mode",
         default="compact",
-        choices=["compact", "compact_basis", "compact_field_analysis", "debug"],
+        choices=[
+            "compact",
+            "compact_basis",
+            "compact_field_analysis",
+            "required_field_analysis",
+            "debug",
+        ],
         help=(
             "compact asks theory agents to return only selected_action and "
             "openended_response; compact_basis also asks for used_rule or "
             "used_fields; compact_field_analysis adds a short analysis for "
-            "those selected rules/fields; debug also asks for computed_fields "
-            "and decision traces."
+            "those selected rules/fields; required_field_analysis fixes the "
+            "required fields by action context and asks for their values; "
+            "debug also asks for computed_fields and decision traces."
         ),
     )
     parser.add_argument("--seed", type=int, default=0)
@@ -197,11 +205,10 @@ def build_agent(agent_kind, args, side=None):
     }
     if agent_kind == "base":
         return BasicPromptAgent, common
-    effective_agent_kind = (
-        "field_rationale" if agent_kind == "field_rationale_checked" else agent_kind
-    )
+    checked_kinds = {"field_rationale_checked", "field_rationale_with_checker"}
+    effective_agent_kind = "field_rationale" if agent_kind in checked_kinds else agent_kind
     checker_config = {}
-    if agent_kind == "field_rationale_checked":
+    if agent_kind in checked_kinds:
         checker_config = {
             "enable_field_checker": True,
             "checker_backend": getattr(args, f"{side}_checker_backend") or runtime["backend"],
